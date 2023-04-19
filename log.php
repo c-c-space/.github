@@ -6,7 +6,7 @@ $timestamp = date("j.M.y.D g:i:s A T");
 
 $year = date("Y");
 $month = date("m");
-$source_file = "/ver/log/". $year . $month .".csv";
+$source_file = "ver/log/". $year . $month .".csv";
 
 define("LOGFILE", $source_file);
 $data = json_decode(file_get_contents('php://input'), true);
