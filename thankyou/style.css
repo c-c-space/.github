@@ -1,0 +1,143 @@
+html,
+body {
+  font-size: 16px;
+}
+
+.hue,
+.saturation,
+.lightness {
+  filter: invert();
+}
+
+.hue,
+.saturation,
+.lightness {
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hue,
+.saturation,
+.lightness {
+  font-size: 95%;
+  padding: 0.25rem;
+  margin: 0;
+}
+
+.hue {
+  top: 0;
+  width: 100%;
+}
+
+.saturation,
+.lightness {
+  width: 100vh;
+  top: 100vh;
+}
+
+.saturation {
+  left: 0;
+  transform-origin: left top;
+  transform: rotate(270deg);
+}
+
+.lightness {
+  right: 0;
+  transform-origin: right top;
+  transform: rotate(90deg);
+}
+
+#sketch,
+#saveImg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#sketch {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#saveImg {
+  appearance : none;
+  background: transparent;
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  font-size: 125%;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem;
+  outline: none;
+  pointer-events: auto;
+  user-select: text;
+  transition: 1s;
+  width: calc(100% - 2rem);
+  z-index: 10;
+}
+
+#saveImg:focus {
+  filter: drop-shadow(0 0 0.1rem);
+}
+
+#saveImg:active {
+  filter: invert(1);
+}
+
+#you,
+#submit {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .hue,
+  .saturation,
+  .lightness {
+    font-size: 2.5vw;
+  }
+
+  #saveImg {
+    border: 0.25vw solid;
+    border-radius: 4.5vw;
+    font-size: 3vw;
+    padding: 1.25vw 2vw;
+    margin: 2.5vw;
+    width: calc(100% - 5vw);
+  }
+
+  #saveImg:focus {
+    filter: drop-shadow(0 0 0.25vw);
+  }
+}
+@media print {
+  .hue,
+  .saturation,
+  .lightness {
+    font-family: Arial, sans-serif;
+    font-size: 7.5vw;
+    position: static;
+    text-align: left;
+    transform: rotate(0);
+    transform-origin: left top;
+    width: auto;
+    height: auto;
+  }
+
+  .hue span,
+  .saturation span,
+  .lightness span {
+    font-family: "Times New Roman", serif;
+    font-size: 111%;
+    font-style: italic;
+  }
+}

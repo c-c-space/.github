@@ -1,0 +1,86 @@
+#menu,
+#hello,
+#yourinfo,
+#now,
+.noprint {
+  display: none;
+}
+
+#you,
+#submit {
+  color: #fff;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  user-select: none;
+}
+
+#you div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#you div p {
+  font-size: 100%;
+  padding: 1rem;
+  margin: 0;
+}
+
+#you img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 7.5rem;
+}
+
+#submit {
+  top: 100vh;
+  color: #000;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+
+#submit h2,
+#submit p,
+#submit small {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#submit h2,
+#submit p {
+  max-width: 75%;
+  line-height: 150%;
+}
+
+#submit small {
+  max-width: 90%;
+}
+
+#submit h2{
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#submit h2 strong,
+#submit p {
+  font-size: 125%;
+}
+
+#submit small {
+  font-size: 75%;
+}

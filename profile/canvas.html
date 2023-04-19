@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="/js/index.js" async></script>
+  <link rel="stylesheet" href="style.css" />
+  <style type="text/css">
+  p,
+  pre,
+  #change,
+  #create {
+    font-family: "ipag", monospace;
+  }
+
+  p,
+  #change {
+    transform: scale(1, 1.25);
+  }
+  </style>
+</head>
+
+<body>
+  <script src="/js/menu.js"></script>
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/ver/" target="_parent">
+        <p><b>Index | creative-community.space</b></p>
+        <u>更新履歴</u>
+      </a>
+    </nav>
+  </header>
+
+  <section id="create" class="hidden">
+    <div>
+      <input type="text" id="textHere" placeholder="Text Here">
+      <button onclick="drawingText()">drawingText()</button>
+    </div>
+    <button type="button" onclick="changeHidden()">How to Coding</button>
+  </section>
+
+  <main id="logo">
+    <pre>
+<u>drawingText()</u>
+
+入力欄のテキストをすべてのキャンバス要素に描画
+
+入力欄にテキストを入力 →
+drawingText() ボタンを押す
+    </pre>
+    <section>
+      <p>
+        <small>ファビコン</small><br/>
+        30 × 30 px
+      </p>
+      <canvas id="icon" width="30" height="30"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>iOS端末用Webクリップアイコン</small><br/>
+        180 × 180 px
+      </p>
+      <canvas id="apple" width="180" height="180"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Android端末用Webクリップアイコン</small><br/>
+        192 × 192 px
+      </p>
+      <canvas id="android" width="192" height="192"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Instagram用アイコン</small><br/>
+        320 × 320 px
+      </p>
+      <canvas id="instagram" width="320" height="320"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Twitter用アイコン</small><br/>
+        400 × 400 px
+      </p>
+      <canvas id="twitter" width="400" height="400"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>YouTube用アイコン</small><br/>
+        800 × 800 px
+      </p>
+      <canvas id="youtube" width="800" height="800"></canvas>
+    </section>
+  </main>
+
+  <main id="howto" hidden>
+    <section>
+      <pre id="js"></pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  async function script() {
+    fetch('script.js')
+    .then(response => response.text())
+    .then(script => {
+      document.querySelector('#js').innerText = script;
+    });
+  }
+  script();
+
+  function changeHidden() {
+    const mainAll = document.querySelectorAll('main');
+    mainAll.forEach(main => {
+      if (main.hidden == false) {
+        main.style.display = 'none';
+        main.hidden = true;
+      } else {
+        main.hidden = false;
+        main.style.display = 'flex';
+      }
+    })
+  }
+  </script>
+</body>
+</html>

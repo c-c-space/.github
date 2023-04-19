@@ -1,0 +1,29 @@
+{
+  "title" : "Logo",
+  "description" : "フォント IPA Gothic(Ver.003.02) // 文字情報技術促進協議会",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "summary.png",
+
+  "contents" : [
+    {
+      "date" : "フォント",
+      "name" : "IPA Gothic(Ver.003.02)",
+      "url" : "/ver/logo/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "drawingText()",
+      "name" : "テキストの描画",
+      "url" : "/ver/logo/canvas.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title" : "Your Drawing is Seems So Beautiful",
+  "description" : "OMG! Your Drawing is Seems So Beautiful",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML graffiti",
+      "name" : "Your Drawing is Seems So Beautiful",
+      "url" : "/thankyou/",
+      "type" : "news",
+      "caption" : "inline-block",
+      "note" : "Only for PC"
+    },
+    {
+      "date" : "Touch.js",
+      "name" : "Touch The Screen to Drawing",
+      "url" : "/thankyou/touch.html",
+      "type" : "news",
+      "caption" : "inline-block",
+      "note" : "Only for Mobile"
+    },
+    {
+      "date" : "Colors and Symbols that Suits on Today",
+      "name" : "今日の気持ちを知る・表す",
+      "url" : "/sign/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}

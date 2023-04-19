@@ -1,0 +1,56 @@
+#howto,
+#howto pre {
+  font-family: "ipag", "Arial Narrow", monospace;
+}
+
+#howto font {
+  font-family: "Yu Gothic", "游ゴシック体", sans-serif;
+}
+
+#howto {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+#howto summary {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+#howto pre {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#howto pre,
+#howto font {
+  font-size: 75%;
+}
+
+#howto pre {
+  padding: 0.25rem;
+}
+
+#howto summary b {
+  font-size: 100%;
+  font-weight: 500;
+  padding: 0 0.25rem;
+}
+
+@media screen and (max-width: 750px) {
+  #howto {
+    font-size: 4vw;
+    padding: 2.5vw;
+  }
+
+  #howto summary,
+  #howto pre {
+    padding: 1vw;
+  }
+
+  #howto summary b {
+    padding: 0 0.5vw;
+  }
+}

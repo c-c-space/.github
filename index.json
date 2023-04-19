@@ -1,0 +1,37 @@
+{
+  "title" : "Index",
+  "description" : "このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "ver/card.png",
+
+  "contents" : [
+    {
+      "date" : "Speech to Text to Text to Speech",
+      "name" : "Hello こんにちは",
+      "url" : "/hello/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "Colors and Symbols that Suits on You",
+      "name" : "自分の気持ちを知る・表す",
+      "url" : "/sign/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "HTML graffiti",
+      "name" : "Your Drawing is Seems So Beautiful",
+      "url" : "/thankyou/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}

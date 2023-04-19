@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="/js/index.js" async></script>
+  <script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', event => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      let howto = document.querySelector('#howto');
+      howto.style.display = "none";
+    }
+  })
+  </script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/controls.css" />
+  <link rel="stylesheet" href="../../profile/howto.css" />
+  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
+</head>
+
+<body>
+  <script src="/js/menu.js"></script>
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/" target="_parent">
+        <p><b>creative-community.space</b></p>
+        <u>Index</u>
+      </a>
+    </nav>
+  </header>
+
+  <details id="howto" class="folder hidden">
+    <summary><b>SpeechRecognition.js</b></summary>
+    <pre>
+<font color="red">// Web Speech API の 音声認識を設定</font>
+SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
+let recognition = new SpeechRecognition();
+
+<font color="red">// 音声認識の開始・停止</font>
+const speechBtn = document.querySelector('#speech-btn');
+
+let speechToText = false;
+
+const stop = () => {
+  recognition.stop();
+  speechBtn.textContent = "Speech to Text";
+  speechBtn.style.color = "#000";
+  speechBtn.style.background = "#fff";
+};
+
+const start = () => {
+  recognition.start();
+  speechBtn.textContent = "Stop";
+  speechBtn.style.color = "#fff";
+  speechBtn.style.background = "red";
+};
+
+speechBtn.addEventListener("click", event => {
+  speechToText ? stop() : start();
+  speechToText = !speechToText;
+})
+
+<font color="red">// 音声認識結果の受け取り</font>
+const readme = document.querySelector('#readme');
+
+recognition.interimResults = true;
+recognition.continuous = true;
+
+let finalTranscript = '';
+recognition.onresult = (event) => {
+  let interimTranscript = '';
+  for (let i = event.resultIndex; i < event.results.length; i++) {
+    let transcript = event.results[i][0].transcript;
+    if (event.results[i].isFinal) {
+      finalTranscript += transcript;
+    } else {
+      interimTranscript = transcript;
+    }
+  }
+  readme.innerHTML = finalTranscript + '<i style="color:#aaa;">' + interimTranscript + '</i>';
+}
+
+<font color="red">// select 要素の生成</font>
+const voiceSelect = document.querySelector('#voice-select');
+
+function appendVoices() {
+  const voices = speechSynthesis.getVoices();
+  voiceSelect.innerHTML = '';
+  voices.forEach(voice => {
+    const option = document.createElement('option');
+    option.value = voice.name;
+    option.lang = voice.lang;
+    option.text = `${voice.name} (${voice.lang})`;
+    option.setAttribute('id', voice.name);
+    voiceSelect.appendChild(option);
+  });
+
+  const lang = document.createElement('option');
+  lang.text = `Select a Language & Voice`;
+  lang.setAttribute('selected', true);
+  lang.setAttribute('disabled', true);
+  lang.setAttribute('hidden', true);
+  voiceSelect.appendChild(lang);
+}
+
+appendVoices()
+speechSynthesis.onvoiceschanged = e => {
+  appendVoices()
+}
+
+voiceSelect.addEventListener('change', (event) => {
+  const selectLang = voiceSelect.selectedIndex;
+  recognition.lang = voiceSelect.options[selectLang].lang;
+});
+    </pre>
+  </details>
+
+  <main id="hello">
+    <section>
+      <label for="voice-select">言語・声の種類を選択</label><br/>
+      <select id="voice-select" name="voice" required></select>
+      <p>
+        <label for="speech-btn">音声認識（選択した言語の音声をテキストに変換）</label><br/>
+        <button type="button" id="speech-btn">Speech to Text</button>
+      </p>
+    </section>
+    <hr/>
+    <section id="readme" contenteditable="true"></section>
+  </main>
+
+  <script src="recognition.js"></script>
+</body>
+</html>

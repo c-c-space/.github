@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="/js/index.js" async></script>
+  <link rel="stylesheet" href="style.css" />
+  <style type="text/css">
+  p,
+  pre,
+  #change {
+    font-family: "ipag", monospace;
+  }
+
+  #change {
+    filter: invert();
+    mix-blend-mode: difference;
+  }
+
+  p,
+  #change {
+    transform: scale(1, 1.25);
+  }
+  </style>
+</head>
+<body onload="draw();">
+  <script src="/js/menu.js"></script>
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/ver/" target="_parent">
+        <p><b>Index | creative-community.space</b></p>
+        <u>更新履歴</u>
+      </a>
+    </nav>
+  </header>
+
+  <button id="change" class="hidden" type="button" onclick="changeHidden()">How to Coding</button>
+
+  <main id="logo">
+    <section>
+      <p>
+        <small>ファビコン</small><br/>
+        30 × 30 px
+      </p>
+      <canvas id="icon" width="30" height="30"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>iOS端末用Webクリップアイコン</small><br/>
+        180 × 180 px
+      </p>
+      <canvas id="apple" width="180" height="180"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Android端末用Webクリップアイコン</small><br/>
+        192 × 192 px
+      </p>
+      <canvas id="android" width="192" height="192"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Instagram用アイコン</small><br/>
+        320 × 320 px
+      </p>
+      <canvas id="instagram" width="320" height="320"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Twitter用アイコン</small><br/>
+        400 × 400 px
+      </p>
+      <canvas id="twitter" width="400" height="400"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>YouTube用アイコン</small><br/>
+        800 × 800 px
+      </p>
+      <canvas id="youtube" width="800" height="800"></canvas>
+    </section>
+    <pre>
+<u>ダウンロード</u>
+
+アイコンを右クリック
+名前をつけて画像を保存
+    </pre>
+    <pre>
+<u>フォント</u>
+
+IPA Font (IPAGothic/IPAPGothic)
+IPAゴシック/IPA Pゴシック (Ver.003.03)
+
+by 文字情報技術促進協議会
+
+https://moji.or.jp/ipafont/ipa00303/
+
+    </pre>
+  </main>
+
+  <main id="howto" hidden>
+    <section>
+      <pre>
+@font-face {
+  font-family: "ipag";
+  src: url("/ipag.ttc");
+}
+
+.cc {
+  display: inline-block;
+  font-family: "ipag", monospace;
+  font-weight: 500;
+  transform: scale(1, 1.25);
+}
+      </pre>
+    </section>
+    <section>
+      <pre>
+// menu.css
+
+#js-button {
+  appearance: none;
+  outline: none;
+}
+
+#js-button,
+#js-button b {
+  box-sizing: border-box;
+}
+
+#js-button {
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  display: grid;
+  place-items: center;
+}
+
+#js-button b::before {
+  content: 'CC';
+  display: inline-block;
+  font-family: "ipag", monospace;
+  transform: scale(1, 1.25);
+}
+
+#js-button {
+  border: solid 0.2rem;
+  font-size: 1.75rem;
+  margin: 1rem;
+  width: 3.33rem;
+  height: 3.33rem;
+}
+
+@media screen and (max-width: 750px) {
+  #js-button {
+    border: solid 0.45vw;
+    font-size: 4vw;
+    margin: 2.5%;
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
+
+      </pre>
+    </section>
+  </main>
+  <script type="text/javascript">
+  function changeHidden() {
+    const mainAll = document.querySelectorAll('main');
+    mainAll.forEach(main => {
+      if (main.hidden == false) {
+        main.style.display = 'none';
+        main.hidden = true;
+      } else {
+        main.hidden = false;
+        main.style.display = 'flex';
+      }
+    })
+  }
+
+  // canvas要素に円と文字を描画
+  function draw() {
+    const canvasAll = document.querySelectorAll('canvas');
+    for  (let canvas of canvasAll) {
+      if (canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+
+        const circle = new Path2D();
+        const x = (canvas.width / 2);
+        const y = (canvas.height / 2);
+
+        circle.arc(x, y, canvas.width/2.5, 0, Math.PI * 2, true);
+        ctx.lineWidth = canvas.width/10;
+        ctx.strokeStyle = '#000';
+        ctx.fillStyle = '#fff';
+        ctx.stroke(circle);
+        ctx.fill(circle);
+
+        ctx.font = `${x * 1.23}px 'ipag', monospace`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = '#000';
+        ctx.fillText('CC', x, y, x);
+        ctx.scale(1, 1.25);
+      }
+    }
+  }
+  </script>
+</body>
+</html>

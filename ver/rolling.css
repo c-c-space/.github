@@ -1,0 +1,57 @@
+html {
+  height: -webkit-fill-available;
+}
+
+html,
+#rolling {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#rolling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  z-index: 1;
+}
+
+#rolling {
+  display: flex;
+  font-size: 2.5vw;
+  overflow: hidden;
+  pointer-events:none;
+  user-select:none;
+}
+
+#rolling .col {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 2.5vw;
+}
+
+#rolling .col a {
+  color: inherit;
+  background: transparent;
+  filter: invert(0);
+  position: relative;
+  z-index: 10;
+  text-decoration: none;
+  pointer-events:auto;
+  user-select:auto;
+  transition: 1s;
+  transition-property: background filter;
+}
+
+#rolling .col a:hover {
+  background: #fff;
+  filter: invert(1);
+}
+
+hr {
+  border: none;
+}
