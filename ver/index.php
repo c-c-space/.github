@@ -19,6 +19,10 @@ function h($str)
 
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
+  html {
+    height: -webkit-fill-available;
+  }
+
   #rolling a,
   #rolling u {
     display: inline-block;
