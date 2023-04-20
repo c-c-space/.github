@@ -7,24 +7,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../style.css">
   <style type="text/css">
-  .box {
-    font-family: -apple-system, 'Hiragino Kaku Gothic ProN', 'BlinkMacSystemFont', 'メイリオ', Sans-Serif;
+  @font-face {
+    font-family: "ipag";
+    src: url("https://creative-community.space/profile/ipag.ttc");
   }
 
-  .box {
-    font-size: 2rem;
+  #log ul li {
+    font-family: "ipag", monospace;
+    font-weight: 500;
+    transform: scale(1, 1.25);
   }
 
-  #random {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  @media screen and (max-width: 550px) {
-    .box {
-      font-size: 5vw;
-    }
+  main {
+    overflow: auto;
   }
   </style>
 </head>
@@ -32,7 +27,7 @@
   <button type="button" id="mainBtn" onclick="changeHidden()">ORG</button>
   <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
 
-  <main>
+  <main id="log">
     <?php require('log.php'); ?>
   </main>
 

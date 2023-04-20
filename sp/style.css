@@ -1,17 +1,3 @@
-#rolling {
-  font-family: -apple-system, 'Hiragino Kaku Gothic ProN', 'BlinkMacSystemFont', 'メイリオ', Sans-Serif;
-}
-
-#mainBtn,
-.backBtn {
-  font-family: 'Times New Roman', serif;
-  font-weight: 500;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  transform: scale(1, 1.1);
-  word-spacing: -0.25ch;
-}
-
 main,
 #mainBtn,
 .backBtn {

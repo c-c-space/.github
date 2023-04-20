@@ -7,33 +7,58 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="org/style.css" />
   <link rel="stylesheet" href="../ver/rolling.css" />
+  <style type="text/css">
+    #rolling {
+      font-family: -apple-system, 'Hiragino Kaku Gothic ProN', 'BlinkMacSystemFont', 'メイリオ', Sans-Serif;
+    }
+
+    .pehu {
+      font-family: "SimSong", "MS Mincho", serif;
+    }
+
+    .list *,
+    #mainBtn,
+    .backBtn {
+      font-family: 'Times New Roman', serif;
+      font-weight: 500;
+      font-stretch: condensed;
+      font-variant: common-ligatures tabular-nums;
+      transform: scale(1, 1.1);
+      word-spacing: -0.25ch;
+    }
+
+    .list {
+      width: 90%;
+      max-width: 750px;
+    }
+  </style>
 
   <script type="text/javascript">
-  async function infoHTML() {
-    fetch('info.html')
-    .then(response => response.text())
-    .then(infoHTML => {
-      document.querySelector('#info').innerHTML = infoHTML;
-    });
-  }
+    async function infoHTML() {
+      fetch('info.html')
+      .then(response => response.text())
+      .then(infoHTML => {
+        document.querySelector('#info').innerHTML = infoHTML;
+      });
+    }
 
-  infoHTML();
+    infoHTML();
 
-  function changeHidden() {
-    const mainBtn = document.querySelector('#mainBtn');
-    const mainAll = document.querySelectorAll('#submit, main');
-    mainAll.forEach(main => {
-      if (main.hidden == false) {
-        mainBtn.value = "?"
-        main.style.display = 'none';
-        main.hidden = true;
-      } else {
-        mainBtn.value = "×"
-        main.hidden = false;
-        main.style.display = 'flex';
-      }
-    })
-  }
+    function changeHidden() {
+      const mainBtn = document.querySelector('#mainBtn');
+      const mainAll = document.querySelectorAll('#submit, main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          mainBtn.value = "?"
+          main.style.display = 'none';
+          main.hidden = true;
+        } else {
+          mainBtn.value = "×"
+          main.hidden = false;
+          main.style.display = 'flex';
+        }
+      })
+    }
   </script>
 </head>
 

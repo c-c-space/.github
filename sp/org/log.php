@@ -10,7 +10,7 @@ $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
 ?>
 
-<ul>
+<ul class="list">
   <?php
   while ($row = fgetcsv($fp)) {
     $rows[] = $row;
