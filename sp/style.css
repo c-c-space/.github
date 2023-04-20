@@ -26,7 +26,7 @@
   flex-flow: column;
   align-items: center;
   justify-items: center;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
   margin: 0;
   overflow: auto;
 }
@@ -71,6 +71,6 @@ input[type="button"] {
   }
 
   #info {
-    padding: 7.5vw 0;
+    padding: 7.5vw 0 0;
   }
 }
