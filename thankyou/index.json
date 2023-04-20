@@ -24,14 +24,6 @@
       "type" : "news",
       "caption" : "inline-block",
       "note" : "Only for Touch Device"
-    },
-    {
-      "date" : "Colors and Symbols that Suits on Today",
-      "name" : "今日の気持ちを知る・表す",
-      "url" : "/sign/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
     }
   ]
 }
