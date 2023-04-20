@@ -50,21 +50,6 @@
     </nav>
   </header>
 
-  <main id="log">
-    <div>
-      <h1>
-        <b>Hello こんにちは</b><br/>
-        <code id="lastModified"></code>
-      </h1>
-      <h2>
-        <span class="realtimeuserscounter"><b></b></span>
-      </h2>
-    </div>
-    <section>
-      <?php require('log.php'); ?>
-    </section>
-  </main>
-
   <main id="hello" hidden>
     <form method="post">
       <section>
@@ -102,6 +87,22 @@
       </section>
     </form>
   </main>
+  <script src="js/recognition.js"></script>
+
+  <main id="log">
+    <div>
+      <h1>
+        <b>Hello こんにちは</b><br/>
+        <code id="lastModified"></code>
+      </h1>
+      <h2>
+        <span class="realtimeuserscounter"><b></b></span>
+      </h2>
+    </div>
+    <section>
+      <?php require('log.php'); ?>
+    </section>
+  </main>
 
   <nav id="now" class="hidden">
     <section class="controls">
@@ -111,6 +112,7 @@
     </section>
     <button id="openModal" class="color bgcolor" type="button">?</button>
   </nav>
+  <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3>Hello | creative-community.space</h3>
@@ -124,22 +126,19 @@
     <br/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor">
-    <option value="16px" selected>Medium</option></select>
-    <br/>
-    <label for="color">Color</label>
-    <select class="color bgcolor" id="color"></select>
-    <hr/>
-    <section id="about"></section>
-    <button class="color bgcolor" id="closeButton">Close</button>
-  </dialog>
+      <option value="16px" selected>Medium</option></select>
+      <br/>
+      <label for="color">Color</label>
+      <select class="color bgcolor" id="color"></select>
+      <hr/>
+      <section id="about"></section>
+      <button class="color bgcolor" id="closeButton">Close</button>
+    </dialog>
 
+    <script src="/coding/yourinfo/jscolor.js"></script>
+    <script src="js/storage.js"></script>
 
-  <script src="js/recognition.js"></script>
-  <script src="js/controls.js"></script>
-  <script src="/coding/yourinfo/jscolor.js"></script>
-  <script src="js/storage.js"></script>
-
-  <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/realtimeusers.js"></script>
-</body>
-</html>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/realtimeusers.js"></script>
+  </body>
+  </html>
