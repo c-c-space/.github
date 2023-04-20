@@ -68,7 +68,6 @@ h3 {
 #log div,
 #log section ul {
   width: 100%;
-  mix-blend-mode: difference;
 }
 
 #log div {
@@ -80,6 +79,7 @@ h3 {
   right: 0;
   height: 100vh;
   max-height: -webkit-fill-available;
+  mix-blend-mode: difference;
   z-index: 0;
 }
 
@@ -90,6 +90,7 @@ h3 {
 
 #log section {
   position: relative;
+  mix-blend-mode: difference;
   z-index: 1;
 }
 
