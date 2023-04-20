@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
+  #js-button {
+    mix-blend-mode: difference;
+  }
+
   #js-button,
   #contents a {
     filter: invert();
