@@ -124,8 +124,7 @@
     </select>
     <br/>
     <label for="bgcolor">Background Color</label>
-    <select class="color bgcolor" id="bgcolor">
-      <option value="16px" selected>Medium</option></select>
+    <select class="color bgcolor" id="bgcolor"></select>
       <br/>
       <label for="color">Color</label>
       <select class="color bgcolor" id="color"></select>
