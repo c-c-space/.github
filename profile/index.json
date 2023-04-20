@@ -12,7 +12,7 @@
     {
       "date" : "フォント",
       "name" : "IPA Gothic(Ver.003.02)",
-      "url" : "/ver/logo/",
+      "url" : "/profile/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
@@ -20,7 +20,7 @@
     {
       "date" : "drawingText()",
       "name" : "テキストの描画",
-      "url" : "/ver/logo/canvas.html",
+      "url" : "/profile/canvas.html",
       "type" : "news",
       "caption" : "none",
       "note" : ""

@@ -10,10 +10,7 @@
 // <input type="text" id="textHere" value="Text Here">
 // <button onclick="drawingText()">drawingText()</button>
 
-
-
 // 入力欄のテキストをすべてのキャンバス要素に描画
-
 function drawingText() {
   const text = document.querySelector('#textHere');
 

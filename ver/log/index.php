@@ -99,7 +99,7 @@ flock($fp, LOCK_SH);
         <p><b>Index | creative-community.space</b></p>
         <u>更新情報</u>
       </a>
-      <a href="/log/" target="_parent">
+      <a href="/ver/log/" target="_parent">
         <i>Access Log</i>
         <p>あなたの通信情報／ブラウザ等情報</p>
       </a>
