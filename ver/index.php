@@ -60,9 +60,9 @@ function h($str)
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/" target="_parent">
+      <a href="/ver/" target="_parent">
         <p><b>Index | creative-community.space</b></p>
-        <u>準備中</u>
+        <u>更新履歴</u>
       </a>
     </nav>
   </header>
