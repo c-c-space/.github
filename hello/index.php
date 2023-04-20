@@ -125,18 +125,18 @@
     <br/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
-      <br/>
-      <label for="color">Color</label>
-      <select class="color bgcolor" id="color"></select>
-      <hr/>
-      <section id="about"></section>
-      <button class="color bgcolor" id="closeButton">Close</button>
-    </dialog>
+    <br/>
+    <label for="color">Color</label>
+    <select class="color bgcolor" id="color"></select>
+    <hr/>
+    <section id="about"></section>
+    <button class="color bgcolor" id="closeButton">Close</button>
+  </dialog>
 
-    <script src="/coding/yourinfo/jscolor.js"></script>
-    <script src="js/storage.js"></script>
+  <script src="/coding/yourinfo/jscolor.js"></script>
+  <script src="js/storage.js"></script>
 
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/realtimeusers.js"></script>
-  </body>
-  </html>
+  <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/realtimeusers.js"></script>
+</body>
+</html>
