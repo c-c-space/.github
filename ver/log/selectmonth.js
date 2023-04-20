@@ -1,12 +1,5 @@
 'use strict'
 
-const selectmonthCSS = document.createElement("link")
-selectmonthCSS.href = "/ver/log/selectmonth.css"
-selectmonthCSS.type = "text/css"
-selectmonthCSS.rel = "stylesheet"
-
-document.getElementsByTagName("head")[0].appendChild(selectmonthCSS);
-
 const date = new Date()
 const year = date.getFullYear()
 const month = date.getMonth()

@@ -42,6 +42,7 @@ flock($fp, LOCK_SH);
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="selectmonth.css" />
   <link rel="icon" href="/profile/icon.png" type="image/png">
   <link rel="icon" href="/profile/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/profile/apple.png" sizes="180x180" type="image/png">
@@ -154,7 +155,7 @@ flock($fp, LOCK_SH);
     <select id="month" name="month"></select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="/js/selectmonth.js"></script>
+  <script src="selectmonth.js"></script>
 
   <video id="userMedia" autoplay playsinline></video>
 </body>
