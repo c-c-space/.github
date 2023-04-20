@@ -10,14 +10,6 @@
 
   "contents" : [
     {
-      "date" : "Speech to Text to Text to Speech",
-      "name" : "Hello こんにちは",
-      "url" : "/hello/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
       "date" : "SpeechRecognition.js",
       "name" : "音声認識 | Speech Recognition",
       "url" : "/hello/js/recognition.html",
