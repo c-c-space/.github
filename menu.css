@@ -67,7 +67,6 @@ body {
 
 #menu,
 #contents,
-#js-button,
 #js-button b {
   box-sizing: border-box;
   padding: 0;
@@ -99,7 +98,6 @@ body {
 
 #js-button {
   background-color: transparent;
-  border-radius: 50%;
   color: #000;
   display: grid;
   place-items: center;
@@ -110,8 +108,11 @@ body {
 }
 
 #js-button {
+  box-sizing: border-box;
   border: solid 0.2rem;
+  border-radius: 50%;
   font-size: 1.75rem;
+  padding: 0;
   margin: 1rem;
   width: 3.33rem;
   height: 3.33rem;

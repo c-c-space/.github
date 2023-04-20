@@ -1,0 +1,21 @@
+{
+  "title" : "Hello",
+  "description" : "Speech to Text to Text to Speech",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "../card.png",
+
+  "contents" : [
+    {
+      "date" : "Speech to Text to Text to Speech",
+      "name" : "Hello こんにちは",
+      "url" : "/hello/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}
