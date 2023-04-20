@@ -17,11 +17,6 @@
     mix-blend-mode: difference;
   }
 
-  #js-button,
-  #contents a {
-    filter: invert();
-  }
-
   #log button {
     color: inherit;
   }
