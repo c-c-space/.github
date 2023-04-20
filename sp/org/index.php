@@ -4,14 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../org/style.css">
   <style type="text/css">
-  @font-face {
-    font-family: "ipag";
-    src: url("https://creative-community.space/profile/ipag.ttc");
-  }
-
+  button,
   #log ul li {
     font-family: "ipag", monospace;
     font-weight: 500;
@@ -20,6 +16,17 @@
 
   main {
     overflow: auto;
+  }
+
+  #log ul li {
+    margin: 1rem;
+    line-height: 150%;
+  }
+
+  @media screen and (max-width: 550px) {
+    #log ul li {
+      margin: 2.5vw;
+    }
   }
   </style>
 </head>

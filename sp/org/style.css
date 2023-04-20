@@ -4,7 +4,6 @@
   flex-flow: wrap;
   font-size: 0.75rem;
   padding: 0;
-  margin: 1rem auto;
   list-style: none;
   list-style-position: inside;
 }
@@ -13,7 +12,6 @@
   box-sizing: border-box;
   display: inline-block;
   padding: 0.25rem;
-  margin: 0;
 }
 
 .list .must {
@@ -72,9 +70,7 @@
 
 @media screen and (max-width: 550px) {
   .list {
-    font-size: 2.5vw;
-    padding: 2.5vw;
-    margin: 2.5vw auto;
+    font-size: 2.25vw;
   }
 
   .list * {
