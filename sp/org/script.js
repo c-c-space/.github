@@ -91,7 +91,7 @@ for (let target of radio_btns) {
   })
 }
 
-let viewAll = document.querySelector("#viewAll")
+let viewAll = document.querySelector(".viewAll")
 viewAll.addEventListener('click', () => {
   let orgAll = document.querySelectorAll('.list li')
   for (let org of orgAll) {
