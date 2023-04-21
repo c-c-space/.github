@@ -94,8 +94,6 @@ function multi_filter(org = "") {
       for (let iii of orgAll) {
         if (!iii.classList.contains("hidden")) {
           iii.classList.add("hidden");
-        } else {
-          iii.classList.remove("hidden");
         }
       }
     })
