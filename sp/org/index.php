@@ -36,7 +36,7 @@
 
   #modal {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 2.5vh auto;
     max-width: 95%;
     max-height: 95%;
     overflow: auto;
