@@ -84,8 +84,13 @@ function multi_filter(all = "") {
     i.addEventListener('change', () => {
       let name = i.getAttribute("name");
       let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
-      for (let thisis of thisAll) {
-        thisis.style.display = "inline-block"
+      for (let ii of thisAll) {
+        if (!ii.classList.contains(hidden)) {
+          ii.classList.add(hidden);
+        } else {
+          // アイテムが存在する場合に実行する文
+          ii.classList.remove(hidden);
+        }
       }
 
       let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)

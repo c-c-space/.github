@@ -14,6 +14,10 @@
   padding: 0.25rem;
 }
 
+.list .hidden {
+  display: none;
+}
+
 .list .must {
   font-weight: 900;
 }
