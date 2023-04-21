@@ -77,7 +77,7 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-let radioAll = document.querySelectorAll("feel input[type='radio']")
+let radioAll = document.querySelectorAll("#feel input[type='radio']")
 
 for (let i of radioAll) {
   i.addEventListener('change', () => {
