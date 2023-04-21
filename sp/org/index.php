@@ -6,21 +6,35 @@
   <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../org/style.css">
+  <link rel="stylesheet" href="../org/submit.css">
   <style type="text/css">
+  #modal h1,
+  #modal p,
   button,
   #log ul li {
     font-family: "ipag", monospace;
     font-weight: 500;
+    line-height: 150%;
     transform: scale(1, 1.25);
+  }
+
+  #submit legend b,
+  #submit legend small,
+  #weight label,
+  #size label {
+    font-family: "ipag", monospace;
   }
 
   main {
     overflow: auto;
   }
 
+  #modal h1 {
+    margin: 0 0 1rem;
+  }
+
   #log ul li {
     margin: 1rem;
-    line-height: 150%;
   }
 
   @media screen and (max-width: 550px) {
@@ -28,37 +42,63 @@
       margin: 2.5vw;
     }
   }
+
+  #happy:checked~li:not(.happy),
+  #hearts:checked~li:not(.hearts),
+  #tongue:checked~li:not(.tongue),
+  #thinking:checked~li:not(.thinking),
+  #neutral:checked~li:not(.neutral),
+  #relieved:checked~li:not(.relieved),
+  #dizzy:checked~li:not(.dizzy),
+  #frowning:checked~li:not(.frowning),
+  #crying:checked~li:not(.crying),
+  #steam:checked~a:not(.steam) {
+    display: none;
+  }
   </style>
 </head>
 <body>
-  <button type="button" id="mainBtn" onclick="changeHidden()">ORG</button>
+  <button type="button" id="mainBtn" onclick="onModal()">ORG</button>
   <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
 
   <main id="log">
     <?php require('log.php'); ?>
   </main>
 
+  <dialog id="modal">
+    <h1>言葉の強さと方向と感情</h1>
+    <p>
+      いま考えていること、覚えておきたいこと、適当なタイピング、どんな内容でも構いません。<br/>
+      下記の入力フォームへ自由に文字を入力してみましょう。
+    </p>
+    <form id="submit"></form>
+    <button class="color bgcolor" id="closeButton">Close</button>
+  </dialog>
+
   <main id="readme" hidden></main>
   <script type="text/javascript">
-  async function readme() {
-    fetch('readme.md')
+  async function submit() {
+    fetch('submit.html')
     .then(response => response.text())
-    .then(readme => {
-      document.querySelector('#readme').innerHTML = readme.replace(/\n/g, "<br>")
+    .then(submit => {
+      document.querySelector('#submit').innerHTML = submit
     });
   }
-  readme();
+  submit();
 
-  function changeHidden() {
-    const mainAll = document.querySelectorAll('main');
-    mainAll.forEach(main => {
-      if (main.hidden == false) {
-        main.hidden = true;
-      } else {
-        main.hidden = false;
-      }
-    })
+  const dialogModal = document.querySelector('#modal');
+  function onModal() {
+    if (typeof dialogModal.showModal === "function") {
+      dialogModal.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
   }
+
+  const closeButton = document.querySelector('#closeButton');
+  closeButton.addEventListener('click', () => {
+    dialogModal.close();
+  });
   </script>
 </body>
 </html>
