@@ -89,7 +89,7 @@ function multi_filter(all = "") {
           ii.classList.add("hidden");
         } else {
           // アイテムが存在する場合に実行する文
-          ii.classList.remove(hidden);
+          ii.classList.remove("hidden");
         }
       }
 
