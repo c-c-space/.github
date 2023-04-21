@@ -101,11 +101,3 @@ function multi_filter(org = "") {
 multi_filter("#weight input[type='radio']");
 multi_filter("#size input[type='radio']");
 multi_filter("#feel input[type='radio']");
-
-let viewAll = document.querySelector(".viewAll")
-viewAll.addEventListener('click', () => {
-  let orgAll = document.querySelectorAll('.list li')
-  for (let org of orgAll) {
-    org.style.display = "inline-block"
-  }
-})
