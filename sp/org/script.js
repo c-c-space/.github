@@ -11,7 +11,7 @@ const arrBtn1 = document.querySelector('#weight');
 Object.entries(arr1).forEach(eachArr1 => {
   const arrInput1 = document.createElement ('input');
   arrInput1.setAttribute('type', 'radio');
-  arrInput1.setAttribute('name', 'feel');
+  arrInput1.setAttribute('name', 'weight');
   arrInput1.setAttribute('id', eachArr1[0]);
   arrInput1.value = eachArr1[0];
   arrBtn1.appendChild(arrInput1);
@@ -35,7 +35,7 @@ const arrBtn2 = document.querySelector('#size');
 Object.entries(arr2).forEach(eachArr2 => {
   const arrInput2 = document.createElement ('input');
   arrInput2.setAttribute('type', 'radio');
-  arrInput2.setAttribute('name', 'feel');
+  arrInput2.setAttribute('name', 'size');
   arrInput2.setAttribute('id', eachArr2[0]);
   arrInput2.value = eachArr2[0];
   arrBtn2.appendChild(arrInput2);
