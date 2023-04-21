@@ -52,7 +52,7 @@
   #dizzy:checked~li:not(.dizzy),
   #frowning:checked~li:not(.frowning),
   #crying:checked~li:not(.crying),
-  #steam:checked~a:not(.steam) {
+  #steam:checked~li:not(.steam) {
     display: none;
   }
   </style>
@@ -71,20 +71,13 @@
       いま考えていること、覚えておきたいこと、適当なタイピング、どんな内容でも構いません。<br/>
       下記の入力フォームへ自由に文字を入力してみましょう。
     </p>
-    <form id="submit"></form>
+    <form id="submit">
+<?php require('submit.html'); ?>
+</form>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
 
-  <main id="readme" hidden></main>
   <script type="text/javascript">
-  async function submit() {
-    fetch('submit.html')
-    .then(response => response.text())
-    .then(submit => {
-      document.querySelector('#submit').innerHTML = submit
-    });
-  }
-  submit();
 
   const dialogModal = document.querySelector('#modal');
   function onModal() {
