@@ -26,4 +26,4 @@ flock($fp, LOCK_SH);
   <?php endif; ?>
 </ul>
 
-<button id="viewAll">Close</button>
+<button id="viewAll">View All</button>
