@@ -94,11 +94,6 @@ function multi_filter(org = "") {
           ii.classList.remove("hidden");
         }
       }
-
-      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
-      for (let org of orgAll) {
-        org.style.display = "none"
-      }
     })
   }
 }
