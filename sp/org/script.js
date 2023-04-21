@@ -8,11 +8,11 @@ let arr1 = {
   'cant' : '10 ~ 0',
 }
 
-const arrBtn1 = document.querySelector('#arr1')
+const arrBtn1 = document.querySelector('#weight')
 Object.entries(arr1).forEach(eachArr1 => {
   const arrInput1 = document.createElement ('input')
   arrInput1.setAttribute('type', 'radio')
-  arrInput1.setAttribute('name', 'arr1')
+  arrInput1.setAttribute('name', 'weight')
   arrInput1.setAttribute('id', eachArr1[0])
   arrInput1.value = eachArr1[0]
   arrBtn1.appendChild(arrInput1)
@@ -32,11 +32,11 @@ let arr2 = {
   'unknown' : '?',
 }
 
-const arrBtn2 = document.querySelector('#arr2')
+const arrBtn2 = document.querySelector('#size')
 Object.entries(arr2).forEach(eachArr2 => {
   const arrInput2 = document.createElement ('input')
   arrInput2.setAttribute('type', 'radio')
-  arrInput2.setAttribute('name', 'arr2')
+  arrInput2.setAttribute('name', 'size')
   arrInput2.setAttribute('id', eachArr2[0])
   arrInput2.value = eachArr2[0]
   arrBtn2.appendChild(arrInput2)
@@ -61,11 +61,11 @@ let arr3 = {
   'steam' : '😤',
 }
 
-const arrBtn3 = document.querySelector('#arr3')
+const arrBtn3 = document.querySelector('#feel')
 Object.entries(arr3).forEach(eachArr3 => {
   const arrInput3 = document.createElement ('input')
   arrInput3.setAttribute('type', 'radio')
-  arrInput3.setAttribute('name', 'arr3')
+  arrInput3.setAttribute('name', 'feel')
   arrInput3.setAttribute('id', eachArr3[0])
   arrInput3.value = eachArr3[0]
   arrBtn3.appendChild(arrInput3)
@@ -77,7 +77,7 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-let radio_btns = document.querySelectorAll("#arr3 input[type='radio']")
+let radio_btns = document.querySelectorAll("#feel input[type='radio']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
     let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
@@ -85,7 +85,7 @@ for (let target of radio_btns) {
       thisis.style.display = "inline-block"
     }
 
-    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    let orgAll = document.querySelectorAll(`.list li:not([data-active='${target.value}'])`)
     for (let org of orgAll) {
       org.style.display = "none"
     }
