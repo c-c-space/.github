@@ -94,10 +94,6 @@ for (let i of radioAll) {
   })
 }
 
-multi_filter("weight input[type='radio']");
-multi_filter("size input[type='radio']");
-multi_filter("feel input[type='radio']");
-
 let viewAll = document.querySelector(".viewAll")
 viewAll.addEventListener('click', () => {
   let orgAll = document.querySelectorAll('.list li')
