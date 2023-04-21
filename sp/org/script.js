@@ -87,6 +87,8 @@ function multi_filter(org = "") {
       for (let ii of thisAll) {
         if (!ii.classList.contains("hidden")) {
           ii.classList.add("hidden");
+        } else {
+          ii.classList.remove("hidden");
         }
       }
     })
