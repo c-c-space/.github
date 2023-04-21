@@ -96,9 +96,9 @@ function multi_filter(all = "") {
   }
 }
 
-multi_filter("weight");
-multi_filter("size");
-multi_filter("feel");
+multi_filter("weight input[type='radio']");
+multi_filter("size input[type='radio']");
+multi_filter("feel input[type='radio']");
 
 let viewAll = document.querySelector(".viewAll")
 viewAll.addEventListener('click', () => {
