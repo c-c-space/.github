@@ -77,8 +77,8 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-function multi_filter(radioAll = "") {
-  let radioAll = document.querySelectorAll(radioAll)
+function multi_filter(all = "") {
+  let radioAll = document.querySelectorAll(all)
 
   for (let i of radioAll) {
     i.addEventListener('change', () => {
