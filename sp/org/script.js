@@ -77,36 +77,6 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-let radio_btns = document.querySelectorAll("#arr1 input[type='radio']")
-for (let target of radio_btns) {
-  target.addEventListener('change', () => {
-    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
-    for (let thisis of thisAll) {
-      thisis.style.display = "inline-block"
-    }
-
-    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
-    for (let org of orgAll) {
-      org.style.display = "none"
-    }
-  })
-}
-
-let radio_btns = document.querySelectorAll("#arr2 input[type='radio']")
-for (let target of radio_btns) {
-  target.addEventListener('change', () => {
-    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
-    for (let thisis of thisAll) {
-      thisis.style.display = "inline-block"
-    }
-
-    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
-    for (let org of orgAll) {
-      org.style.display = "none"
-    }
-  })
-}
-
 let radio_btns = document.querySelectorAll("#arr3 input[type='radio']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
