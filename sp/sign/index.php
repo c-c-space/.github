@@ -1,7 +1,5 @@
 <?php
 $title = "自分の気持ちを知る・表す";
-$year = "2021";
-$month = "03";
 
 mb_language("ja");
 mb_internal_encoding("UTF-8");
@@ -78,7 +76,7 @@ fclose($fp);
   </main>
   <script src="/sign/js/flash.js"></script>
 
-  <?php require('/sign/now.php'); ?>
+  <?php require('/sign/beta/now.php'); ?>
   <script src="/sign/js/viewall.js"></script>
 </body>
 </html>
