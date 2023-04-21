@@ -18,7 +18,7 @@ flock($fp, LOCK_SH);
   ?>
   <?php if (!empty($rows)) : ?>
     <?php shuffle($rows); foreach ($rows as $row):?>
-      <li class="<?= h($row[1]) ?> <?= h($row[2]) ?> <?= h($row[3]) ?>" data-arr1="<?= h($row[1]) ?>" data-arr2="<?= h($row[2]) ?>" data-arr3="<?= h($row[3]) ?>">
+      <li class="<?= h($row[1]) ?> <?= h($row[2]) ?> <?= h($row[3]) ?>" data-weight="<?= h($row[1]) ?>" data-size="<?= h($row[2]) ?>" data-feel="<?= h($row[3]) ?>">
         <?= h($row[0]) ?>
       </li>
     <?php endforeach; ?>
