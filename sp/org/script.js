@@ -77,8 +77,8 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-function multi_filter(all = "") {
-  let radioAll = document.querySelectorAll(all)
+function multi_filter(org = "") {
+  let radioAll = document.querySelectorAll(org)
 
   for (let i of radioAll) {
     i.addEventListener('change', () => {
@@ -87,8 +87,10 @@ function multi_filter(all = "") {
       for (let ii of thisAll) {
         if (!ii.classList.contains("hidden")) {
           ii.classList.add("hidden");
+          ii.classList.remove("org");
         } else {
           // アイテムが存在する場合に実行する文
+          ii.classList.add("org");
           ii.classList.remove("hidden");
         }
       }
