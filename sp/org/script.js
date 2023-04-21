@@ -87,9 +87,6 @@ function multi_filter(org = "") {
       for (let ii of thisAll) {
         if (!ii.classList.contains("hidden")) {
           ii.classList.add("hidden");
-        } else {
-          // アイテムが存在する場合に実行する文
-          ii.classList.remove("hidden");
         }
       }
     })
