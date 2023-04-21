@@ -29,6 +29,19 @@
     overflow: auto;
   }
 
+  #happy:checked~li:not(.happy),
+  #hearts:checked~li:not(.hearts),
+  #tongue:checked~li:not(.tongue),
+  #thinking:checked~li:not(.thinking),
+  #neutral:checked~li:not(.neutral),
+  #relieved:checked~li:not(.relieved),
+  #dizzy:checked~li:not(.dizzy),
+  #frowning:checked~li:not(.frowning),
+  #crying:checked~li:not(.crying),
+  #steam:checked~li:not(.steam) {
+    display: none;
+  }
+
   #modal h1 {
     margin: 0 0 1rem;
   }
@@ -41,19 +54,6 @@
     #log ul li {
       margin: 2.5vw;
     }
-  }
-
-  #happy:checked~li:not(.happy),
-  #hearts:checked~li:not(.hearts),
-  #tongue:checked~li:not(.tongue),
-  #thinking:checked~li:not(.thinking),
-  #neutral:checked~li:not(.neutral),
-  #relieved:checked~li:not(.relieved),
-  #dizzy:checked~li:not(.dizzy),
-  #frowning:checked~li:not(.frowning),
-  #crying:checked~li:not(.crying),
-  #steam:checked~li:not(.steam) {
-    display: none;
   }
   </style>
 </head>
@@ -71,13 +71,19 @@
       いま考えていること、覚えておきたいこと、適当なタイピング、どんな内容でも構いません。<br/>
       下記の入力フォームへ自由に文字を入力してみましょう。
     </p>
-    <form id="submit">
-<?php require('submit.html'); ?>
-</form>
+    <form id="submit"></form>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
 
   <script type="text/javascript">
+  async function submit() {
+    fetch('submit.html')
+    .then(response => response.text())
+    .then(submit => {
+      document.querySelector('#submit').innerHTML = submit
+    });
+  }
+  submit();
 
   const dialogModal = document.querySelector('#modal');
   function onModal() {
