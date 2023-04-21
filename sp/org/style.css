@@ -14,10 +14,6 @@
   padding: 0.25rem;
 }
 
-.list .org {
-  display: inline-block;
-}
-
 .list .hidden {
   display: none;
 }
