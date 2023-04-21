@@ -83,12 +83,21 @@ function multi_filter(org = "") {
   for (let i of radioAll) {
     i.addEventListener('change', () => {
       let name = i.getAttribute("name");
-      let thisAll = document.querySelectorAll(`.list li([data-${name}='${i.value}'])`)
+      let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
       for (let ii of thisAll) {
         if (!ii.classList.contains("hidden")) {
-          ii.classList.add("hidden");
-        } else {
           ii.classList.remove("hidden");
+        } else {
+          ii.classList.add("hidden");
+        }
+      }
+
+      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
+      for (let iii of orgAll) {
+        if (!iii.classList.contains("hidden")) {
+          iii.classList.add("hidden");
+        } else {
+          iii.classList.remove("hidden");
         }
       }
     })
