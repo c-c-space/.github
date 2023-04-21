@@ -70,7 +70,7 @@
     <br/>
 
     <form id="submit">
-      <fieldset id="weight">
+      <fieldset id="arr1">
         <legend>
           <i>%</i>
           <b>強さ</b>
@@ -78,7 +78,7 @@
         </legend>
       </fieldset>
 
-      <fieldset id="size">
+      <fieldset id="arr2">
         <legend>
           <i>to</i>
           <b>方向</b>
@@ -86,7 +86,7 @@
         </legend>
       </fieldset>
 
-      <fieldset id="feel">
+      <fieldset id="arr3">
         <legend>
           <i>emoji</i>
           <b>感情</b>

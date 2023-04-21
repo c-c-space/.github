@@ -61,7 +61,6 @@ document.addEventListener('readystatechange', event => {
       randomRGBbg.addEventListener('mouseleave', function(event) {
         event.target.style.background = "";
       });
-
     }
   }
 

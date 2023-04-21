@@ -1,3 +1,4 @@
+// arr1
 let arr1 = {
   'must' : '100 ~ 90',
   'should' : '90 ~ 70',
@@ -7,11 +8,11 @@ let arr1 = {
   'cant' : '10 ~ 0',
 }
 
-const arrBtn1 = document.querySelector('#weight')
+const arrBtn1 = document.querySelector('#arr1')
 Object.entries(arr1).forEach(eachArr1 => {
   const arrInput1 = document.createElement ('input')
   arrInput1.setAttribute('type', 'radio')
-  arrInput1.setAttribute('name', 'weight')
+  arrInput1.setAttribute('name', 'arr1')
   arrInput1.setAttribute('id', eachArr1[0])
   arrInput1.value = eachArr1[0]
   arrBtn1.appendChild(arrInput1)
@@ -22,7 +23,7 @@ Object.entries(arr1).forEach(eachArr1 => {
   arrBtn1.appendChild(arrLabel1)
 })
 
-
+// arr2
 let arr2 = {
   'positive' : '+',
   'negative' : '-',
@@ -31,11 +32,11 @@ let arr2 = {
   'unknown' : '?',
 }
 
-const arrBtn2 = document.querySelector('#size')
+const arrBtn2 = document.querySelector('#arr2')
 Object.entries(arr2).forEach(eachArr2 => {
   const arrInput2 = document.createElement ('input')
   arrInput2.setAttribute('type', 'radio')
-  arrInput2.setAttribute('name', 'size')
+  arrInput2.setAttribute('name', 'arr2')
   arrInput2.setAttribute('id', eachArr2[0])
   arrInput2.value = eachArr2[0]
   arrBtn2.appendChild(arrInput2)
@@ -46,7 +47,7 @@ Object.entries(arr2).forEach(eachArr2 => {
   arrBtn2.appendChild(arrLabel2)
 })
 
-
+// arr3
 let arr3 = {
   'happy' : '🙂',
   'hearts' : '🥰',
@@ -60,11 +61,11 @@ let arr3 = {
   'steam' : '😤',
 }
 
-const arrBtn3 = document.querySelector('#feel')
+const arrBtn3 = document.querySelector('#arr3')
 Object.entries(arr3).forEach(eachArr3 => {
   const arrInput3 = document.createElement ('input')
   arrInput3.setAttribute('type', 'radio')
-  arrInput3.setAttribute('name', 'feel')
+  arrInput3.setAttribute('name', 'arr3')
   arrInput3.setAttribute('id', eachArr3[0])
   arrInput3.value = eachArr3[0]
   arrBtn3.appendChild(arrInput3)
@@ -75,16 +76,46 @@ Object.entries(arr3).forEach(eachArr3 => {
   arrBtn3.appendChild(arrLabel3)
 })
 
-
-let radio_btns = document.querySelectorAll("#feel input[type='radio']")
+// .list li の表示・非表示
+let radio_btns = document.querySelectorAll("#arr1 input[type='radio']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
-    let thisAll = document.querySelectorAll(`.list li.${target.value}`)
+    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
     for (let thisis of thisAll) {
       thisis.style.display = "inline-block"
     }
 
-    let orgAll = document.querySelectorAll(`.list li:not(.${target.value})`)
+    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    for (let org of orgAll) {
+      org.style.display = "none"
+    }
+  })
+}
+
+let radio_btns = document.querySelectorAll("#arr2 input[type='radio']")
+for (let target of radio_btns) {
+  target.addEventListener('change', () => {
+    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    for (let thisis of thisAll) {
+      thisis.style.display = "inline-block"
+    }
+
+    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    for (let org of orgAll) {
+      org.style.display = "none"
+    }
+  })
+}
+
+let radio_btns = document.querySelectorAll("#arr3 input[type='radio']")
+for (let target of radio_btns) {
+  target.addEventListener('change', () => {
+    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    for (let thisis of thisAll) {
+      thisis.style.display = "inline-block"
+    }
+
+    let orgAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
     for (let org of orgAll) {
       org.style.display = "none"
     }
