@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../org/style.css">
+  <link rel="stylesheet" href="../org/submit.css">
+  <style type="text/css">
+  #modal h1,
+  #modal p,
+  button,
+  #log ul li {
+    font-family: "ipag", monospace;
+    line-height: 150%;
+    transform: scale(1, 1.25);
+  }
+
+  #submit legend b,
+  #submit legend small,
+  #weight label,
+  #size label {
+    font-family: "ipag", monospace;
+  }
+
+  #modal h1,
+  #modal p,
+  button {
+    font-weight: 500;
+  }
+
+  main {
+    overflow: auto;
+  }
+
+  #modal {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 95%;
+    max-height: 95%;
+    overflow: auto;
+  }
+
+  #modal h1 {
+    margin: 0 0 1rem;
+  }
+
+  #log ul li {
+    margin: 1rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    #log ul li {
+      margin: 2.5vw;
+    }
+  }
+  </style>
+</head>
+<body>
+  <button type="button" id="mainBtn" onclick="onModal()">ORG</button>
+  <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
+
+  <dialog id="modal">
+    <h1>言葉の強さと方向と感情</h1>
+    <p>
+      2021年10月10日(日) - 30日(土)<br/>
+      展覧会「新しい生活を集める」へ ご来場した皆様の感想
+    </p>
+    <br/>
+    <button class="color bgcolor" id="closeButton">Close</button>
+  </dialog>
+
+  <form id="submit">
+    <fieldset id="weight">
+      <legend>
+        <i>%</i>
+        <b>強さ</b>
+        <small>文字の太さは言葉の強さを表します</small>
+      </legend>
+    </fieldset>
+
+    <fieldset id="size">
+      <legend>
+        <i>to</i>
+        <b>方向</b>
+        <small>文字の大きさは感情の方向を表します</small>
+      </legend>
+    </fieldset>
+
+    <fieldset id="feel" class="search-box">
+      <legend>
+        <i>emoji</i>
+        <b>感情</b>
+        <small>感想を絵文字によって絞り込むことができます</small>
+      </legend>
+
+      <input type="radio" name="feel" value="happy" id="happy" required>
+      <label for="happy">🙂</label>
+
+      <input type="radio" name="feel" value="hearts" id="hearts" required>
+      <label for="hearts">🥰</label>
+
+      <input type="radio" name="feel" value="tongue" id="tongue" required>
+      <label for="tongue">😜</label>
+
+      <input type="radio" name="feel" value="thinking" id="thinking" required>
+      <label for="thinking">🤔</label>
+
+      <input type="radio" name="feel" value="neutral" id="neutral" required>
+      <label for="neutral">😐</label>
+
+      <input type="radio" name="feel" value="relieved" id="relieved" required>
+      <label for="relieved">😌</label>
+
+      <input type="radio" name="feel" value="dizzy" id="dizzy" required>
+      <label for="dizzy">😵</label>
+
+      <input type="radio" name="feel" value="frowning" id="frowning" required>
+      <label for="frowning">😮</label>
+
+      <input type="radio" name="feel" value="crying" id="crying" required>
+      <label for="crying">😢</label>
+
+      <input type="radio" name="feel" value="steam" id="steam" required>
+      <label for="steam">😤</label>
+    </fieldset>
+  </form>
+
+  <main id="log">
+
+<ul class="list">
+              <li class="can unknown tongue">
+        宗教団体      </li>
+          <li class="can unknown thinking">
+        トリップ効果      </li>
+          <li class="can unknown steam">
+        言葉からは逃げられないのか      </li>
+          <li class="can both happy">
+        それぐらいがいいね      </li>
+          <li class="must positive frowning">
+        子供はすぐに気がついた      </li>
+          <li class="can both tongue">
+        エラーがある      </li>
+          <li class="should positive relieved">
+        へえ、おもしろいね~      </li>
+          <li class="should both thinking">
+        管が生き物っぽい      </li>
+          <li class="must both happy">
+        迷子のまま辿り着きました      </li>
+          <li class="should positive happy">
+        いいね！      </li>
+          <li class="must positive hearts">
+        ふらっとフラット      </li>
+          <li class="must positive happy">
+        HTMLを額に入れて展示      </li>
+          <li class="may both hearts">
+        旅の途中      </li>
+          <li class="must positive hearts">
+        ウッキッキーありがとう      </li>
+          <li class="should positive hearts">
+        ぐっ💓      </li>
+          <li class="should positive happy">
+        アートの街 北加賀屋      </li>
+          <li class="should positive happy">
+        気負わない      </li>
+          <li class="should negative neutral">
+        不安      </li>
+          <li class="must unknown thinking">
+        誰か来ますか？      </li>
+          <li class="must positive hearts">
+        CSS      </li>
+          <li class="can neither neutral">
+        何もない      </li>
+          <li class="should negative dizzy">
+        なんか      </li>
+          <li class="can unknown thinking">
+        お金につなげる      </li>
+          <li class="can unknown thinking">
+        わくわくを持たせるかどうか      </li>
+          <li class="should positive relieved">
+        さんきゅー      </li>
+          <li class="must positive hearts">
+        嬉しい      </li>
+          <li class="must positive happy">
+        こんなアートがもっとみたい      </li>
+          <li class="may positive frowning">
+        沈殿物を攪拌する      </li>
+          <li class="must both happy">
+        意味はわからなくても雰囲気はわかる      </li>
+          <li class="should both thinking">
+        大人はかしこまって集中してる      </li>
+          <li class="can both tongue">
+        人と話すのは苦手      </li>
+          <li class="must unknown dizzy">
+        自分の欲望を満たすため？      </li>
+          <li class="must neither neutral">
+        本当に思っていること      </li>
+          <li class="must both crying">
+        忙しい人には伝わらない      </li>
+          <li class="must neither hearts">
+        アート手袋      </li>
+          <li class="can neither relieved">
+        こういうのに共感する人がいる      </li>
+          <li class="must unknown thinking">
+        例えば、さっきまでそこにいた知らない誰かのことを思い出してみよう      </li>
+          <li class="can unknown thinking">
+        カメラ小僧      </li>
+          <li class="should both tongue">
+        作者のアイデアを業者が形にするタイプの作品ではない      </li>
+          <li class="must positive happy">
+        贅沢      </li>
+          <li class="must both thinking">
+        自然にあるものの魅力を引き立てる装置      </li>
+          <li class="must positive hearts">
+        初めてのインディーズ展覧会      </li>
+          <li class="must positive happy">
+        お互いにお互いを否定したり誰かを傷つけたりする言葉は避けて話そう      </li>
+          <li class="can both frowning">
+        監視されてる      </li>
+          <li class="must both hearts">
+        誰もうまくできない      </li>
+          <li class="must neither relieved">
+        ほこりを拭いた      </li>
+          <li class="should both tongue">
+        恥ずかしくない      </li>
+          <li class="must positive frowning">
+        湯楽の松の木      </li>
+          <li class="should neither thinking">
+        デジタルアート      </li>
+          <li class="may unknown relieved">
+        bad dream      </li>
+          <li class="must positive happy">
+        自分で作る      </li>
+          <li class="must both relieved">
+        騒ぎ立てたくない      </li>
+          <li class="should unknown tongue">
+        よくわからない      </li>
+          <li class="should unknown frowning">
+        初めての卓球      </li>
+          <li class="can unknown thinking">
+        閉めてると開けないといけない      </li>
+          <li class="must unknown thinking">
+        考えること      </li>
+          <li class="cant unknown hearts">
+        無心      </li>
+          <li class="should neither thinking">
+        二人組      </li>
+          <li class="could both happy">
+        窓の中      </li>
+          <li class="should both relieved">
+        作者が作ったツールにお客さんが参加することで作品が完成する      </li>
+          <li class="must both thinking">
+        優しい気持ち      </li>
+          <li class="must positive hearts">
+        またきます！      </li>
+          <li class="should positive relieved">
+        爽やか      </li>
+          <li class="should neither relieved">
+        NIKKI      </li>
+          <li class="must positive happy">
+        面白い      </li>
+          <li class="should positive happy">
+        paperC      </li>
+          <li class="must unknown tongue">
+        不気味      </li>
+      </ul>
+  </main>
+
+  <script type="text/javascript">
+  let radio_btns = document.querySelectorAll("input[type='radio'][name='feel']");
+
+  for (let target of radio_btns) {
+    target.addEventListener('change', () => {
+      let thisAll = document.querySelectorAll(`li.${target.value}`);
+      for (let thisis of thisAll) {
+        thisis.style.display = "inline-block"
+      }
+
+      let orgAll = document.querySelectorAll(`li:not(.${target.value})`);
+      for (let org of orgAll) {
+        org.style.display = "none"
+      }
+    })
+  }
+
+  const dialogModal = document.querySelector('#modal');
+  function onModal() {
+    if (typeof dialogModal.showModal === "function") {
+      dialogModal.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  }
+
+  const closeButton = document.querySelector('#closeButton');
+  closeButton.addEventListener('click', () => {
+    dialogModal.close();
+  });
+  </script>
+</body>
+</html>

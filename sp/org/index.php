@@ -34,23 +34,6 @@
     overflow: auto;
   }
 
-  #happy:checked ~ li:not(.happy) {
-    display: none;
-  }
-
-  #happy:checked~li:not(.happy),
-  #hearts:checked~li:not(.hearts),
-  #tongue:checked~li:not(.tongue),
-  #thinking:checked~li:not(.thinking),
-  #neutral:checked~li:not(.neutral),
-  #relieved:checked~li:not(.relieved),
-  #dizzy:checked~li:not(.dizzy),
-  #frowning:checked~li:not(.frowning),
-  #crying:checked~li:not(.crying),
-  #steam:checked~li:not(.steam) {
-    display: none;
-  }
-
   #modal {
     box-sizing: border-box;
     margin: 0 auto;
@@ -78,62 +61,6 @@
   <button type="button" id="mainBtn" onclick="onModal()">ORG</button>
   <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
 
-  <form id="submit">
-    <fieldset id="weight">
-      <legend>
-        <i>%</i>
-        <b>強さ</b>
-        <small>文字の太さは言葉の強さを表します</small>
-      </legend>
-    </fieldset>
-
-    <fieldset id="size">
-      <legend>
-        <i>to</i>
-        <b>方向</b>
-        <small>文字の大きさは感情の方向を表します</small>
-      </legend>
-    </fieldset>
-
-    <fieldset id="feel" class="search-box">
-      <legend>
-        <i>emoji</i>
-        <b>感情</b>
-        <small>感想を絵文字によって絞り込むことができます</small>
-      </legend>
-
-      <input type="radio" name="feel" value="happy" id="happy" required>
-      <label for="happy">🙂</label>
-
-      <input type="radio" name="feel" value="hearts" id="hearts" required>
-      <label for="hearts">🥰</label>
-
-      <input type="radio" name="feel" value="tongue" id="tongue" required>
-      <label for="tongue">😜</label>
-
-      <input type="radio" name="feel" value="thinking" id="thinking" required>
-      <label for="thinking">🤔</label>
-
-      <input type="radio" name="feel" value="neutral" id="neutral" required>
-      <label for="neutral">😐</label>
-
-      <input type="radio" name="feel" value="relieved" id="relieved" required>
-      <label for="relieved">😌</label>
-
-      <input type="radio" name="feel" value="dizzy" id="dizzy" required>
-      <label for="dizzy">😵</label>
-
-      <input type="radio" name="feel" value="frowning" id="frowning" required>
-      <label for="frowning">😮</label>
-
-      <input type="radio" name="feel" value="crying" id="crying" required>
-      <label for="crying">😢</label>
-
-      <input type="radio" name="feel" value="steam" id="steam" required>
-      <label for="steam">😤</label>
-    </fieldset>
-  </form>
-
   <dialog id="modal">
     <h1>言葉の強さと方向と感情</h1>
     <p>
@@ -141,6 +68,62 @@
       展覧会「新しい生活を集める」へ ご来場した皆様の感想
     </p>
     <br/>
+
+    <form id="submit">
+      <fieldset id="weight">
+        <legend>
+          <i>%</i>
+          <b>強さ</b>
+          <small>文字の太さは言葉の強さを表します</small>
+        </legend>
+      </fieldset>
+
+      <fieldset id="size">
+        <legend>
+          <i>to</i>
+          <b>方向</b>
+          <small>文字の大きさは感情の方向を表します</small>
+        </legend>
+      </fieldset>
+
+      <fieldset id="feel" class="search-box">
+        <legend>
+          <i>emoji</i>
+          <b>感情</b>
+          <small>感想を絵文字によって絞り込むことができます</small>
+        </legend>
+
+        <input type="radio" name="feel" value="happy" id="happy" required>
+        <label for="happy">🙂</label>
+
+        <input type="radio" name="feel" value="hearts" id="hearts" required>
+        <label for="hearts">🥰</label>
+
+        <input type="radio" name="feel" value="tongue" id="tongue" required>
+        <label for="tongue">😜</label>
+
+        <input type="radio" name="feel" value="thinking" id="thinking" required>
+        <label for="thinking">🤔</label>
+
+        <input type="radio" name="feel" value="neutral" id="neutral" required>
+        <label for="neutral">😐</label>
+
+        <input type="radio" name="feel" value="relieved" id="relieved" required>
+        <label for="relieved">😌</label>
+
+        <input type="radio" name="feel" value="dizzy" id="dizzy" required>
+        <label for="dizzy">😵</label>
+
+        <input type="radio" name="feel" value="frowning" id="frowning" required>
+        <label for="frowning">😮</label>
+
+        <input type="radio" name="feel" value="crying" id="crying" required>
+        <label for="crying">😢</label>
+
+        <input type="radio" name="feel" value="steam" id="steam" required>
+        <label for="steam">😤</label>
+      </fieldset>
+    </form>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
 
@@ -149,6 +132,22 @@
   </main>
 
   <script type="text/javascript">
+  let radio_btns = document.querySelectorAll("input[type='radio'][name='feel']");
+
+  for (let target of radio_btns) {
+    target.addEventListener('change', () => {
+      let thisAll = document.querySelectorAll(`li.${target.value}`);
+      for (let thisis of thisAll) {
+        thisis.style.display = "inline-block"
+      }
+
+      let orgAll = document.querySelectorAll(`li:not(.${target.value})`);
+      for (let org of orgAll) {
+        org.style.display = "none"
+      }
+    })
+  }
+
   const dialogModal = document.querySelector('#modal');
   function onModal() {
     if (typeof dialogModal.showModal === "function") {
