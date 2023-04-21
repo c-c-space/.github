@@ -76,7 +76,7 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 
-let radio_btns = document.querySelectorAll("input[type='radio'][name='feel']")
+let radio_btns = document.querySelectorAll("input[type='radio']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
     let thisAll = document.querySelectorAll(`.list li.${target.value}`)
