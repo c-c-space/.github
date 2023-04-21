@@ -72,11 +72,11 @@ fclose($fp);
   #fff);">
 
   <main>
-    <?php require('/sign/beta/viewall.php'); ?>
+    <?php require('../../sign/beta/viewall.php'); ?>
   </main>
-  <script src="/sign/js/flash.js"></script>
+  <script src="../../sign/js/flash.js"></script>
 
-  <?php require('/sign/beta/now.php'); ?>
-  <script src="/sign/js/viewall.js"></script>
+  <?php require('../../sign/beta/now.php'); ?>
+  <script src="../../sign/js/viewall.js"></script>
 </body>
 </html>
