@@ -1,88 +1,31 @@
-<fieldset id="weight">
-  <legend>
-    <i>%</i>
-    <b>強さ</b>
-    <small>入力した文字に抱く気持ちの強さを選択しましょう</small>
-  </legend>
+<link rel="stylesheet" href="../org/submit.css">
 
-  <input type="radio" name="weight" value="must" id="must" required>
-  <label for="must">100 ~ 90</label>
+<form id="submit">
+  <fieldset id="weight">
+    <legend>
+      <i>%</i>
+      <b>強さ</b>
+      <small>入力した文字に抱く気持ちの強さを選択しましょう</small>
+    </legend>
+  </fieldset>
 
-  <input type="radio" name="weight" value="should" id="should" required>
-  <label for="should">90 ~ 70</label>
+  <fieldset id="size">
+    <legend>
+      <i>to</i>
+      <b>方向</b>
+      <small>入力した文字が向いている思考の方向を選択しましょう</small>
+    </legend>
+  </fieldset>
 
-  <input type="radio" name="weight" value="can" id="can" required>
-  <label for="can" class="label">70 ~ 50</label>
+  <fieldset id="feel">
+    <legend>
+      <i>emoji</i>
+      <b>感情</b>
+      <small>いまの自分を表す絵文字を選択しましょう</small>
+    </legend>
+  </fieldset>
 
-  <input type="radio" name="weight" value="may" id="may" required>
-  <label for="may">50 ~ 30</label>
+  <button type="submit" name="next">Submit | 投稿する</button>
+</form>
 
-  <input type="radio" name="weight" value="could" id="could" required>
-  <label for="could">30 ~ 10</label>
-
-  <input type="radio" name="weight" value="cant" id="cant" required>
-  <label for="cant">10 ~ 0</label>
-</fieldset>
-
-<fieldset id="size">
-  <legend>
-    <i>to</i>
-    <b>方向</b>
-    <small>入力した文字が向いている思考の方向を選択しましょう</small>
-  </legend>
-
-  <input type="radio" name="size" value="positive" id="positive" required>
-  <label for="positive"> + </label>
-
-  <input type="radio" name="size" value="negative" id="negative" required>
-  <label for="negative"> - </label>
-
-  <input type="radio" name="size" value="both" id="both" required>
-  <label for="both"> ± </label>
-
-  <input type="radio" name="size" value="neither" id="neither" required>
-  <label for="neither"> = </label>
-
-  <input type="radio" name="size" value="unknown" id="unknown" required>
-  <label for="unknown"> ? </label>
-</fieldset>
-
-<fieldset id="feel" class="search-box">
-  <legend>
-    <i>emoji</i>
-    <b>感情</b>
-    <small>いまの自分を表す絵文字を選択しましょう</small>
-  </legend>
-
-  <input type="radio" name="feel" value="happy" id="happy" required>
-  <label for="happy">🙂</label>
-
-  <input type="radio" name="feel" value="hearts" id="hearts" required>
-  <label for="hearts">🥰</label>
-
-  <input type="radio" name="feel" value="tongue" id="tongue" required>
-  <label for="tongue">😜</label>
-
-  <input type="radio" name="feel" value="thinking" id="thinking" required>
-  <label for="thinking">🤔</label>
-
-  <input type="radio" name="feel" value="neutral" id="neutral" required>
-  <label for="neutral">😐</label>
-
-  <input type="radio" name="feel" value="relieved" id="relieved" required>
-  <label for="relieved">😌</label>
-
-  <input type="radio" name="feel" value="dizzy" id="dizzy" required>
-  <label for="dizzy">😵</label>
-
-  <input type="radio" name="feel" value="frowning" id="frowning" required>
-  <label for="frowning">😮</label>
-
-  <input type="radio" name="feel" value="crying" id="crying" required>
-  <label for="crying">😢</label>
-
-  <input type="radio" name="feel" value="steam" id="steam" required>
-  <label for="steam">😤</label>
-</fieldset>
-
-<button type="submit" name="next">Submit | 投稿する</button>
+<script src="script.js"></script>

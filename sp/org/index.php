@@ -86,42 +86,12 @@
         </legend>
       </fieldset>
 
-      <fieldset id="feel" class="search-box">
+      <fieldset id="feel">
         <legend>
           <i>emoji</i>
           <b>感情</b>
           <small>感想を絵文字によって絞り込むことができます</small>
         </legend>
-
-        <input type="radio" name="feel" value="happy" id="happy" required>
-        <label for="happy">🙂</label>
-
-        <input type="radio" name="feel" value="hearts" id="hearts" required>
-        <label for="hearts">🥰</label>
-
-        <input type="radio" name="feel" value="tongue" id="tongue" required>
-        <label for="tongue">😜</label>
-
-        <input type="radio" name="feel" value="thinking" id="thinking" required>
-        <label for="thinking">🤔</label>
-
-        <input type="radio" name="feel" value="neutral" id="neutral" required>
-        <label for="neutral">😐</label>
-
-        <input type="radio" name="feel" value="relieved" id="relieved" required>
-        <label for="relieved">😌</label>
-
-        <input type="radio" name="feel" value="dizzy" id="dizzy" required>
-        <label for="dizzy">😵</label>
-
-        <input type="radio" name="feel" value="frowning" id="frowning" required>
-        <label for="frowning">😮</label>
-
-        <input type="radio" name="feel" value="crying" id="crying" required>
-        <label for="crying">😢</label>
-
-        <input type="radio" name="feel" value="steam" id="steam" required>
-        <label for="steam">😤</label>
       </fieldset>
     </form>
     <button class="color bgcolor" id="closeButton">Close</button>
@@ -131,23 +101,8 @@
     <?php require('log.php'); ?>
   </main>
 
+  <script src="script.js"></script>
   <script type="text/javascript">
-  let radio_btns = document.querySelectorAll("input[type='radio'][name='feel']");
-
-  for (let target of radio_btns) {
-    target.addEventListener('change', () => {
-      let thisAll = document.querySelectorAll(`li.${target.value}`);
-      for (let thisis of thisAll) {
-        thisis.style.display = "inline-block"
-      }
-
-      let orgAll = document.querySelectorAll(`li:not(.${target.value})`);
-      for (let org of orgAll) {
-        org.style.display = "none"
-      }
-    })
-  }
-
   const dialogModal = document.querySelector('#modal');
   function onModal() {
     if (typeof dialogModal.showModal === "function") {
