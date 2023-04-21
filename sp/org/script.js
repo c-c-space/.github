@@ -85,7 +85,7 @@ function multi_filter(org = "") {
       let name = i.getAttribute("name");
       let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
       for (let ii of orgAll) {
-        if (ii.classList.contains("hidden")) {
+        if (!ii.classList.contains("hidden")) {
           ii.classList.add("hidden");
         } else {
           ii.classList.remove("hidden");
