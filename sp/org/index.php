@@ -58,7 +58,7 @@
   </style>
 </head>
 <body>
-  <button type="button" id="mainBtn" onclick="onModal()">ORG</button>
+  <button type="button" id="mainBtn" class="viewAll" onclick="onModal()">ORG</button>
   <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
 
   <dialog id="modal">
