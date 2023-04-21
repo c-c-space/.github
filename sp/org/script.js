@@ -80,12 +80,12 @@ Object.entries(arr3).forEach(eachArr3 => {
 let radio_btns = document.querySelectorAll("#feel input[type='radio']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
-    let thisAll = document.querySelectorAll(`.list li[data-active='${target.value}']`)
+    let thisAll = document.querySelectorAll(`.list li[data-arr3='${target.value}']`)
     for (let thisis of thisAll) {
       thisis.style.display = "inline-block"
     }
 
-    let orgAll = document.querySelectorAll(`.list li:not([data-active='${target.value}'])`)
+    let orgAll = document.querySelectorAll(`.list li:not([data-arr3='${target.value}'])`)
     for (let org of orgAll) {
       org.style.display = "none"
     }
