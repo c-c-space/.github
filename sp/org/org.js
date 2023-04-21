@@ -5,9 +5,9 @@ function multi_filter(h, t, s, r = "") {
   let result = document.querySelector(r);
   let result_msg = "";
 
-  if (radios) {
+  if (selects) {
     //****** for all select ******
-    for (let i of radios) {
+    for (let i of selects) {
       i.addEventListener("change", () => {
         let hidden_num = 0;
         //*** for each target ***
@@ -15,7 +15,7 @@ function multi_filter(h, t, s, r = "") {
           //*** delete hidden class ***
           ii.classList.remove(hidden);
           //*** check target every select ***
-          for (let iii of radios) {
+          for (let iii of selects) {
             //*** get select name value / option value / target data attribute ***
             let value = iii.value;
             let name = iii.getAttribute("name");

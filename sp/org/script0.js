@@ -77,28 +77,21 @@ Object.entries(arr3).forEach(eachArr3 => {
 })
 
 // .list li の表示・非表示
-function multi_filter(radioAll = "") {
-  let radioAll = document.querySelectorAll(radioAll)
+let radio_btns = document.querySelectorAll("#feel input[type='radio']")
 
-  for (let i of radioAll) {
-    i.addEventListener('change', () => {
-      let name = i.getAttribute("name");
-      let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
-      for (let thisis of thisAll) {
-        thisis.style.display = "inline-block"
-      }
+for (let target of radio_btns) {
+  target.addEventListener('change', () => {
+    let thisAll = document.querySelectorAll(`.list li[data-arr3='${target.value}']`)
+    for (let thisis of thisAll) {
+      thisis.style.display = "inline-block"
+    }
 
-      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
-      for (let org of orgAll) {
-        org.style.display = "none"
-      }
-    })
-  }
+    let orgAll = document.querySelectorAll(`.list li:not([data-arr3='${target.value}'])`)
+    for (let org of orgAll) {
+      org.style.display = "none"
+    }
+  })
 }
-
-multi_filter("weight");
-multi_filter("size");
-multi_filter("feel");
 
 let viewAll = document.querySelector(".viewAll")
 viewAll.addEventListener('click', () => {
