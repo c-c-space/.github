@@ -7,20 +7,20 @@ let arr1 = {
   'cant' : '10 ~ 0',
 }
 
-const arrBtn1 = document.querySelector('#weight');
+const arrBtn1 = document.querySelector('#weight')
 Object.entries(arr1).forEach(eachArr1 => {
-  const arrInput1 = document.createElement ('input');
-  arrInput1.setAttribute('type', 'radio');
-  arrInput1.setAttribute('name', 'weight');
-  arrInput1.setAttribute('id', eachArr1[0]);
-  arrInput1.value = eachArr1[0];
-  arrBtn1.appendChild(arrInput1);
+  const arrInput1 = document.createElement ('input')
+  arrInput1.setAttribute('type', 'radio')
+  arrInput1.setAttribute('name', 'weight')
+  arrInput1.setAttribute('id', eachArr1[0])
+  arrInput1.value = eachArr1[0]
+  arrBtn1.appendChild(arrInput1)
 
-  const arrLabel1 = document.createElement ('label');
-  arrLabel1.setAttribute('for', eachArr1[0]);
-  arrLabel1.innerText = eachArr1[1];
-  arrBtn1.appendChild(arrLabel1);
-});
+  const arrLabel1 = document.createElement ('label')
+  arrLabel1.setAttribute('for', eachArr1[0])
+  arrLabel1.innerText = eachArr1[1]
+  arrBtn1.appendChild(arrLabel1)
+})
 
 
 let arr2 = {
@@ -31,20 +31,20 @@ let arr2 = {
   'unknown' : '?',
 }
 
-const arrBtn2 = document.querySelector('#size');
+const arrBtn2 = document.querySelector('#size')
 Object.entries(arr2).forEach(eachArr2 => {
-  const arrInput2 = document.createElement ('input');
-  arrInput2.setAttribute('type', 'radio');
-  arrInput2.setAttribute('name', 'size');
-  arrInput2.setAttribute('id', eachArr2[0]);
-  arrInput2.value = eachArr2[0];
-  arrBtn2.appendChild(arrInput2);
+  const arrInput2 = document.createElement ('input')
+  arrInput2.setAttribute('type', 'radio')
+  arrInput2.setAttribute('name', 'size')
+  arrInput2.setAttribute('id', eachArr2[0])
+  arrInput2.value = eachArr2[0]
+  arrBtn2.appendChild(arrInput2)
 
-  const arrLabel2 = document.createElement ('label');
-  arrLabel2.setAttribute('for', eachArr2[0]);
-  arrLabel2.innerText = eachArr2[1];
-  arrBtn2.appendChild(arrLabel2);
-});
+  const arrLabel2 = document.createElement ('label')
+  arrLabel2.setAttribute('for', eachArr2[0])
+  arrLabel2.innerText = eachArr2[1]
+  arrBtn2.appendChild(arrLabel2)
+})
 
 
 let arr3 = {
@@ -60,33 +60,41 @@ let arr3 = {
   'steam' : '😤',
 }
 
-const arrBtn3 = document.querySelector('#feel');
+const arrBtn3 = document.querySelector('#feel')
 Object.entries(arr3).forEach(eachArr3 => {
-  const arrInput3 = document.createElement ('input');
-  arrInput3.setAttribute('type', 'radio');
-  arrInput3.setAttribute('name', 'feel');
-  arrInput3.setAttribute('id', eachArr3[0]);
-  arrInput3.value = eachArr3[0];
-  arrBtn3.appendChild(arrInput3);
+  const arrInput3 = document.createElement ('input')
+  arrInput3.setAttribute('type', 'radio')
+  arrInput3.setAttribute('name', 'feel')
+  arrInput3.setAttribute('id', eachArr3[0])
+  arrInput3.value = eachArr3[0]
+  arrBtn3.appendChild(arrInput3)
 
-  const arrLabel3 = document.createElement ('label');
-  arrLabel3.setAttribute('for', eachArr3[0]);
-  arrLabel3.innerText = eachArr3[1];
-  arrBtn3.appendChild(arrLabel3);
-});
+  const arrLabel3 = document.createElement ('label')
+  arrLabel3.setAttribute('for', eachArr3[0])
+  arrLabel3.innerText = eachArr3[1]
+  arrBtn3.appendChild(arrLabel3)
+})
 
 
 let radio_btns = document.querySelectorAll("input[type='radio'][name='feel']")
 for (let target of radio_btns) {
   target.addEventListener('change', () => {
-    let thisAll = document.querySelectorAll(`li.${target.value}`)
+    let thisAll = document.querySelectorAll(`.list li.${target.value}`)
     for (let thisis of thisAll) {
       thisis.style.display = "inline-block"
     }
 
-    let orgAll = document.querySelectorAll(`li:not(.${target.value})`)
+    let orgAll = document.querySelectorAll(`.list li:not(.${target.value})`)
     for (let org of orgAll) {
       org.style.display = "none"
     }
   })
+}
+
+let viewAll = document.querySelector("#viewAll")
+viewAll.addEventListener('click', () => {
+  let orgAll = document.querySelectorAll('.list li')
+  for (let org of orgAll) {
+    org.style.display = "inline-block"
+  }
 }

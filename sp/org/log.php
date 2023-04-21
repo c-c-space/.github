@@ -25,3 +25,5 @@ flock($fp, LOCK_SH);
   <?php else : ?>
   <?php endif; ?>
 </ul>
+
+<button id="viewAll">Close</button>

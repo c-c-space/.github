@@ -94,7 +94,7 @@
         </legend>
       </fieldset>
     </form>
-    <button class="color bgcolor" id="closeButton">Close</button>
+    <button id="closeButton">Close</button>
   </dialog>
 
   <main id="log">
