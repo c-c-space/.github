@@ -1,0 +1,21 @@
+{
+  "title" : "大 chotto crazy 2021",
+  "description" : "クリエイティブ・コミュニティスペース ペフ が 実現したい 10 のこと",
+  "author" : "We Support your Amazing Ideas and Creative Challenges",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "ver/card.png",
+
+  "contents" : [
+    {
+      "date" : "Index",
+      "name" : "creative-community.space",
+      "url" : "/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}
