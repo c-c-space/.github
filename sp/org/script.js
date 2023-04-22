@@ -68,9 +68,10 @@ function org(org = "") {
       for (let ii of orgAll) {
         ii.classList.remove("hidden")
         for (let iii of radioAll) {
+          let value = iii.value;
           let name = iii.getAttribute("name")
           let item_data = ii.getAttribute("data-" + name)
-          if (item_data && !ii.classList.contains("hidden")) {
+          if (value !== item_data && !ii.classList.contains("hidden")) {
             ii.classList.add("hidden")
           }
         }
