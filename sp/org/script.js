@@ -76,7 +76,7 @@ function org(org = "") {
           let item_data = document.querySelectorAll(`.list li[data-${name}='${value}']`)
 
           //*** set hidden class ***
-          if (value && value !== "all" && value !== item_data && !ii.classList.contains(hidden)) {
+          if (item_data && !ii.classList.contains(hidden)) {
             ii.classList.add(hidden);
           }
         }
