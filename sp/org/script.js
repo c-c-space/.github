@@ -71,7 +71,7 @@ function org(org = "") {
           let value = iii.value;
           let name = iii.getAttribute("name")
           let item_data = ii.getAttribute("data-" + name)
-          if (value !== item_data && !ii.classList.contains("hidden")) {
+          if (item_data && !ii.classList.contains("hidden")) {
             ii.classList.add("hidden")
           }
         }
