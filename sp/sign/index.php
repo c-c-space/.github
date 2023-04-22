@@ -84,7 +84,7 @@ fclose($fp);
   <?php endif;?>
   #fff);">
 
-  <button type="button" id="mainBtn" class="viewAll" onclick="onModal()">Sign</button>
+  <button type="button" id="mainBtn" class="viewAll" onclick="onModal()">?</button>
   <button type="button" class="backBtn" onclick="window.history.back(); return false;">↩︎</button>
 
   <dialog id="modal">
