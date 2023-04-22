@@ -32,15 +32,13 @@ radio(weight, "weight");
 radio(size, "size");
 radio(feel, "feel");
 
-org("weight");
-org("size");
 org("feel");
 
 // ラジオボタンの生成
 function radio(arr, name = "") {
-  let orgEach = arr + "Each"
-  let orgRadio = arr + "Radio"
-  let orgLabel = arr + "Label"
+  let orgEach = arr + 'Each'
+  let orgRadio = arr + 'Radio'
+  let orgLabel = arr + 'Label'
 
   let orgInput = document.querySelector(`#${name}`)
   Object.entries(arr).forEach(orgEach => {
@@ -61,21 +59,25 @@ function radio(arr, name = "") {
 // アイテムの表示・非表示
 function org(org = "") {
   let radioAll = document.querySelectorAll(`#${org} input[type='radio']`)
-  for (let i of radioAll) {
-    i.addEventListener('change', () => {
-      let name = i.getAttribute("name");
-      let value = i.value;
-      let thisAll = document.querySelectorAll(`.list li[data-${name}='${value}']`)
-      for (let ii of thisAll) {
-        ii.classList.remove("hidden");
-      }
+  let targets = document.querySelectorAll('.list li');
 
-      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${value}'])`)
-      for (let iii of orgAll) {
-        if (!iii.classList.contains("hidden")) {
-          iii.classList.add("hidden");
+  if (radioAll) {
+    for (let i of radioAll) {
+      i.addEventListener('change', () => {
+        let name = i.getAttribute('name')
+        let value = i.value
+        let thisAll = document.querySelectorAll(`.list li[data-${name}='${value}']`)
+        for (let ii of thisAll) {
+          ii.classList.remove('hidden')
         }
-      }
-    })
+
+        let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${value}'])`)
+        for (let iii of orgAll) {
+          if (!iii.classList.contains('hidden')) {
+            iii.classList.add('hidden')
+          }
+        }
+      })
+    }
   }
 }
