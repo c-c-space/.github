@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="../org/style.css">
   <link rel="stylesheet" href="../org/submit.css">
   <style type="text/css">
+  #modal h1,
+  #modal p,
+  button,
   #log ul li {
     font-family: "ipag", monospace;
     line-height: 150%;

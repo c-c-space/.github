@@ -60,6 +60,17 @@ fclose($fp);
   body {
     min-height: -webkit-fill-available;
   }
+
+  #modal h1,
+  #modal p,
+  button {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    word-spacing: -0.25ch;
+  }
   </style>
 </head>
 
