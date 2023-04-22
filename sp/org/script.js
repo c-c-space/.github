@@ -61,20 +61,18 @@ function radio(arr, name = "") {
 // アイテムの表示・非表示
 function org(org = "") {
   let radioAll = document.querySelectorAll(`#${org} input[type='radio']`)
+  let orgAll = document.querySelectorAll('.list li')
 
   for (let i of radioAll) {
     i.addEventListener('change', () => {
-      let name = i.getAttribute("name")
-      let thisAll = document.querySelectorAll(`.list li`)
-      for (let ii of thisAll) {
+      for (let ii of orgAll) {
         ii.classList.remove("hidden")
-        let orgAll = document.querySelectorAll(`.list li`)
-        for (let iii of orgAll) {
+        for (let iii of radioAll) {
           let value = iii.value;
           let name = iii.getAttribute("name");
           let item_data = ii.getAttribute("data-" + name);
-          if (value && value !== "all" && value !== item_data && !ii.classList.contains("hidden")) {
-            ii.classList.add("hidden")
+          if (value && value !== "all" && value !== item_data && !ii.classList.contains(hidden)) {
+            iii.classList.add("hidden")
           }
         }
       }
