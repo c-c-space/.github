@@ -32,9 +32,7 @@ radio(weight, "weight");
 radio(size, "size");
 radio(feel, "feel");
 
-org("weight");
-org("size");
-org("feel");
+org("submit");
 
 // ラジオボタンの生成
 function radio(arr, name = "") {
@@ -61,19 +59,18 @@ function radio(arr, name = "") {
 // アイテムの表示・非表示
 function org(org = "") {
   let radioAll = document.querySelectorAll(`#${org} input[type='radio']`)
-  let orgAll = document.querySelectorAll('.list li')
-
   for (let i of radioAll) {
     i.addEventListener('change', () => {
-      for (let ii of orgAll) {
-        ii.classList.remove("hidden")
-        for (let iii of radioAll) {
-          let value = iii.value;
-          let name = iii.getAttribute("name")
-          let item_data = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
-          if (item_data && !ii.classList.contains("hidden")) {
-            ii.classList.add("hidden")
-          }
+      let name = i.getAttribute("name");
+      let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
+      for (let ii of thisAll) {
+        ii.classList.remove("hidden");
+      }
+
+      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
+      for (let iii of orgAll) {
+        if (!iii.classList.contains("hidden")) {
+          iii.classList.add("hidden");
         }
       }
     })
