@@ -1,0 +1,70 @@
+#html {
+  font-size: 2rem;
+  animation: 5s linear infinite fontmotion;
+}
+
+
+@media screen and (max-width: 750px) {
+  #html {
+    font-size: 4.5vw;
+  }
+}
+
+.doctype::after {
+  content: '<!DOCTYPE html>';
+  display: block;
+  clear: both;
+}
+
+.HTMLcomments::before {
+  content: '<!-- ';
+}
+
+.HTMLcomments::after {
+  content: ' -->';
+}
+
+.html::before {
+  content: '<html ';
+}
+
+.html::after {
+  content: '</html>';
+}
+
+.head::before {
+  content: '<head>';
+}
+
+.head::after {
+  content: '</head>';
+}
+
+.title::before {
+  content: '<title>';
+}
+
+.title::after {
+  content: '</title>';
+}
+
+.meta::before {
+  content: '<meta ';
+}
+
+.meta::after {
+  content: '>';
+}
+
+.body::before {
+  content: '<body>';
+}
+
+.body_tag::before {
+  content: '<body ';
+}
+
+.body::after,
+.body_tag::after {
+  content: '</body>';
+}

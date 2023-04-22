@@ -1,0 +1,13 @@
+.box {
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 550px) {
+  .box {
+    padding: 3vw;
+  }
+}

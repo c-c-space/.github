@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../org/style.css">
   <link rel="stylesheet" href="../org/submit.css">
+  <link rel="stylesheet" href="../img/style.css" />
   <style type="text/css">
   #modal h1,
   #modal p,
@@ -32,6 +33,10 @@
     margin: 1rem;
   }
 
+  #modal {
+    width: 95%;
+  }
+
   @media screen and (max-width: 550px) {
     #log ul li {
       margin: 2.5vw;
@@ -49,8 +54,8 @@
       2021年10月10日(日) - 30日(土)<br/>
       展覧会「新しい生活を集める」へ ご来場した皆様の感想
     </p>
+    <ul class="images"></ul>
     <br/>
-
     <form id="submit">
       <fieldset id="weight">
         <legend>
@@ -82,6 +87,27 @@
   <main id="log">
     <?php require('log.php'); ?>
   </main>
+
+  <script type="text/javascript">
+  const now = new Date();
+  const hour = now.getHours();
+
+  if (hour >= 11 && hour <= 15) {
+    images = {
+      'day/001.gif': ['言葉の強さと方向と感情'],
+      'day/002.gif': ['手指消毒'],
+    }
+  } else if (hour >= 16 && hour <= 20) {
+    images = {
+      'night/001.gif': ['言葉の強さと方向と感情'],
+    }
+  } else {
+    images = {
+      'close/001.jpg': ['言葉の強さと方向と感情'],
+    }
+  }
+  </script>
+  <script src="../img/script.js"></script>
 
   <script src="script.js"></script>
   <script src="../dialog.js"></script>

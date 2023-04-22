@@ -45,13 +45,11 @@ fclose($fp);
   <meta name="twitter:image" content="../card.png" />
 
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../coding/images.css" />
+  <link rel="stylesheet" href="../img/style.css" />
   <link rel="stylesheet" href="/sign/style.css" />
   <link rel="stylesheet" href="/sign/css/flash.css" />
   <link rel="stylesheet" href="/sign/css/viewall.css" />
 
-  <link rel="icon" href="../icon.png" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="../icon.png" type="image/png">
   <style type="text/css">
   html {
     height: -webkit-fill-available;
@@ -70,6 +68,10 @@ fclose($fp);
     font-variant: common-ligatures tabular-nums;
     transform: scale(1, 1.1);
     word-spacing: -0.25ch;
+  }
+
+  #modal {
+    width: 95%;
   }
   </style>
 </head>
@@ -102,16 +104,7 @@ fclose($fp);
   const now = new Date();
   const hour = now.getHours();
 
-  if (hour >= 0 && hour <= 10) {
-    images = {
-      'close/001.jpeg': ['令和三年三月の気持ちを表す色を印刷した布'],
-      'close/002.jpeg': ['布が松の木の枝に絡まってほつれている'],
-      'close/003.jpeg': ['松の木にほつれた糸が絡まっている'],
-      'close/004.jpeg': ['布の切断面もほつれている'],
-      'close/005.jpeg': ['ピントがぶれている写真'],
-      'close/006.jpeg': ['今は布を手製の木枠に貼っています'],
-    }
-  } else if (hour >= 11 && hour <= 15) {
+  if (hour >= 11 && hour <= 15) {
     images = {
       'day/001.gif': ['楽観のテクニック'],
       'day/002.gif': ['楽観のテクニック'],
@@ -126,7 +119,7 @@ fclose($fp);
       'night/003.gif': ['楽観のテクニック'],
       'night/004.gif': ['楽観のテクニック'],
     }
-  } else if (hour >= 21 && hour <= 23) {
+  } else {
     images = {
       'close/001.jpeg': ['令和三年三月の気持ちを表す色を印刷した布'],
       'close/002.jpeg': ['布が松の木の枝に絡まってほつれている'],
@@ -137,7 +130,7 @@ fclose($fp);
     }
   }
   </script>
-  <script src="../coding/images.js"></script>
+  <script src="../img/script.js"></script>
 
   <main>
     <?php require('../../sign/beta/viewall.php'); ?>
