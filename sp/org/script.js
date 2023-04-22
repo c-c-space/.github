@@ -32,6 +32,8 @@ radio(weight, "weight");
 radio(size, "size");
 radio(feel, "feel");
 
+org("weight");
+org("size");
 org("feel");
 
 // ラジオボタンの生成
