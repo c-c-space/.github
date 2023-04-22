@@ -3,6 +3,33 @@
   src: url("https://creative-community.space/profile/ipag.ttc");
 }
 
+#modal {
+  border: 0.1rem solid #000;
+  box-sizing: border-box;
+  margin: 2.5vh auto;
+  max-width: 95%;
+  max-height: 95%;
+  overflow: auto;
+}
+
+#modal h1,
+#modal p,
+button {
+  font-family: "ipag", monospace;
+  line-height: 150%;
+  transform: scale(1, 1.25);
+}
+
+#modal h1 {
+  margin: 0 0 1rem;
+}
+
+#modal h1,
+#modal p,
+button {
+  font-weight: 500;
+}
+
 #mainBtn,
 .backBtn {
   position: fixed;
@@ -20,15 +47,6 @@
 #mainBtn,
 .backBtn {
   z-index: 100;
-}
-
-#info {
-  flex-flow: column;
-  align-items: center;
-  justify-items: center;
-  padding: 2.5rem 0 0;
-  margin: 0;
-  overflow: auto;
 }
 
 button,
@@ -60,6 +78,11 @@ input[type="button"] {
 }
 
 @media screen and (max-width: 550px) {
+  #modal {
+    font-size: 3.33vw;
+    border: 0.5vw solid;
+  }
+
   button,
   input[type="button"] {
     font-size: 7.5vw;
@@ -68,9 +91,5 @@ input[type="button"] {
 
   input[type="button"] {
     padding: 0.5vw 3.5vw;
-  }
-
-  #info {
-    padding: 7.5vw 0 0;
   }
 }

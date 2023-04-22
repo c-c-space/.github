@@ -1,9 +1,5 @@
-#modal,
 #submit fieldset {
   border: 0.1rem solid #000;
-}
-
-#submit fieldset {
   display: block;
   font-size: 1rem;
   text-align: center;
@@ -18,7 +14,6 @@
   position: relative;
 }
 
-#modal h1,
 #submit legend b {
   color: #fff;
   display: block;
@@ -79,18 +74,9 @@
 }
 
 @media screen and (max-width: 550px) {
-
-  #modal,
   #submit fieldset {
     font-size: 3.33vw;
-  }
-
-  #modal,
-  #submit fieldset {
     border: 0.5vw solid;
-  }
-
-  #submit fieldset {
     margin: 2.5vw auto;
   }
 
@@ -99,10 +85,8 @@
     padding: 1.25vw 2.5vw;
   }
 
-  #modal h1,
   #submit legend b {
     text-shadow: 0.25vw 0.25vw #000;
-    transform: scale(1, 1.5);
   }
 
   #submit legend b {

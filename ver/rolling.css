@@ -5,7 +5,6 @@ main {
   margin: 0;
 }
 
-body,
 #rolling {
   position: fixed;
   top: 0;

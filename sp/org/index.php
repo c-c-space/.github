@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="../org/style.css">
   <link rel="stylesheet" href="../org/submit.css">
   <style type="text/css">
-  #modal h1,
-  #modal p,
-  button,
   #log ul li {
     font-family: "ipag", monospace;
     line-height: 150%;
@@ -24,26 +21,8 @@
     font-family: "ipag", monospace;
   }
 
-  #modal h1,
-  #modal p,
-  button {
-    font-weight: 500;
-  }
-
   main {
     overflow: auto;
-  }
-
-  #modal {
-    box-sizing: border-box;
-    margin: 2.5vh auto;
-    max-width: 95%;
-    max-height: 95%;
-    overflow: auto;
-  }
-
-  #modal h1 {
-    margin: 0 0 1rem;
   }
 
   #log ul li {
@@ -102,20 +81,6 @@
   </main>
 
   <script src="script.js"></script>
-  <script type="text/javascript">
-  const dialogModal = document.querySelector('#modal');
-  function onModal() {
-    if (typeof dialogModal.showModal === "function") {
-      dialogModal.showModal();
-    } else {
-      alert("The <dialog> API is not supported by this browser");
-    }
-  }
-
-  const closeButton = document.querySelector('#closeButton');
-  closeButton.addEventListener('click', () => {
-    dialogModal.close();
-  });
-  </script>
+  <script src="../dialog.js"></script>
 </body>
 </html>

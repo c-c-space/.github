@@ -31,11 +31,13 @@
     height: -webkit-fill-available;
   }
 
-  #info iframe {
-    width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
-    filter: invert(1);
+  #info {
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    padding: 2.5rem 0 0;
+    margin: 0;
+    overflow: auto;
   }
 
   .list {
@@ -45,6 +47,10 @@
   }
 
   @media screen and (max-width: 550px) {
+    #info {
+      padding: 7.5vw 0 0;
+    }
+
     .list {
       margin: 2.5vw auto;
     }
