@@ -68,10 +68,13 @@ function org(org = "") {
       let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
       for (let ii of thisAll) {
         ii.classList.remove("hidden")
-        let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
+        let orgAll = document.querySelectorAll(`.list li`)
         for (let iii of orgAll) {
-          if (!iii.classList.contains("hidden")) {
-            iii.classList.add("hidden")
+          let value = iii.value;
+          let name = iii.getAttribute("name");
+          let item_data = ii.getAttribute("data-" + name);
+          if (value && value !== "all" && value !== item_data && !ii.classList.contains("hidden")) {
+            ii.classList.add("hidden")
           }
         }
       }
