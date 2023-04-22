@@ -72,7 +72,7 @@ function org(org = "") {
           let name = iii.getAttribute("name");
           let item_data = ii.getAttribute("data-" + name);
           if (value && value !== "all" && value !== item_data && !ii.classList.contains("hidden")) {
-            iii.classList.add("hidden")
+            ii.classList.add("hidden")
           }
         }
       }
