@@ -62,18 +62,15 @@ function org(org = "") {
 
   for (let i of radioAll) {
     i.addEventListener('change', () => {
-      let name = i.getAttribute("name");
+      let name = i.getAttribute("name")
       let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
       for (let ii of thisAll) {
-        if (ii.classList.contains("hidden")) {
-          ii.classList.remove("hidden");
-        }
-      }
-
-      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
-      for (let iii of orgAll) {
-        if (!iii.classList.contains("hidden")) {
-          iii.classList.add("hidden");
+        ii.classList.remove("hidden")
+        let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
+        for (let iii of orgAll) {
+          if (!iii.classList.contains("hidden")) {
+            iii.classList.add("hidden")
+          }
         }
       }
     })
