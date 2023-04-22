@@ -4,32 +4,32 @@
 
 @font-face {
   font-family: "Quarantype-Oblique";
-  src: url('/sp/howto/Quarantype-Oblique.otf');
+  src: url('/sp/coding/Quarantype-Oblique.otf');
 }
 
 @font-face {
   font-family: "Quarantype";
-  src: url('/sp/howto/Quarantype-Regular.otf');
+  src: url('/sp/coding/Quarantype-Regular.otf');
 }
 
 @font-face {
   font-family: "Orchard";
-  src: url('/sp/howto/Orchard-Linear.otf');
+  src: url('/sp/coding/Orchard-Linear.otf');
 }
 
 @font-face {
   font-family: "Kipper";
-  src: url('/sp/howto/Kipper.otf'  );
+  src: url('/sp/coding/Kipper.otf'  );
 }
 
 @font-face {
   font-family: "floraandfauna";
-  src: url('/sp/howto/floraandfauna.otf');
+  src: url('/sp/coding/floraandfauna.otf');
 }
 
 @font-face {
   font-family: "inscrutable";
-  src: url('/sp/howto/inscrutable.otf');
+  src: url('/sp/coding/inscrutable.otf');
 }
 
 @-webkit-keyframes fontmotion {
