@@ -67,7 +67,7 @@ function org(org = "") {
     i.addEventListener('change', () => {
       for (let ii of orgAll) {
         //*** delete hidden class ***
-        ii.classList.remove(hidden);
+        ii.classList.remove("hidden");
         //*** check target every select ***
         for (let iii of radioAll) {
           //*** get radio name & value / target data attribute ***
@@ -76,8 +76,8 @@ function org(org = "") {
           let item_data = document.querySelectorAll(`.list li[data-${name}='${value}']`)
 
           //*** set hidden class ***
-          if (item_data && !ii.classList.contains(hidden)) {
-            ii.classList.add(hidden);
+          if (item_data && !ii.classList.contains("hidden")) {
+            ii.classList.add("hidden");
           }
         }
       }
