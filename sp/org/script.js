@@ -65,7 +65,7 @@ function org(org = "") {
   for (let i of radioAll) {
     i.addEventListener('change', () => {
       let name = i.getAttribute("name")
-      let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
+      let thisAll = document.querySelectorAll(`.list li`)
       for (let ii of thisAll) {
         ii.classList.remove("hidden")
         let orgAll = document.querySelectorAll(`.list li`)
