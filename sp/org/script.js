@@ -44,14 +44,14 @@ function radio(arr, name = "") {
 
   let orgInput = document.querySelector(`#${name}`)
   Object.entries(arr).forEach(orgEach => {
-    const orgRadio = document.createElement ('input')
+    const orgRadio = document.createElement('input')
     orgRadio.setAttribute('type', 'radio')
     orgRadio.setAttribute('name', `${name}`)
     orgRadio.setAttribute('id', orgEach[0])
     orgRadio.value = orgEach[0]
     orgInput.appendChild(orgRadio)
 
-    const orgLabel = document.createElement ('label')
+    const orgLabel = document.createElement('label')
     orgLabel.setAttribute('for', orgEach[0])
     orgLabel.innerText = orgEach[1]
     orgInput.appendChild(orgLabel)
@@ -70,10 +70,31 @@ function org(org = "") {
         for (let iii of radioAll) {
           let value = iii.value;
           let name = iii.getAttribute("name")
-          let item_data = ii.getAttribute("data-" + name)
+          let item_data = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
           if (item_data && !ii.classList.contains("hidden")) {
             ii.classList.add("hidden")
           }
+        }
+      }
+    })
+  }
+}
+
+// アイテムの表示・非表示
+function org(org = "") {
+  let radioAll = document.querySelectorAll(`#${org} input[type='radio']`)
+  for (let i of radioAll) {
+    i.addEventListener('change', () => {
+      let name = i.getAttribute("name");
+      let thisAll = document.querySelectorAll(`.list li[data-${name}='${i.value}']`)
+      for (let ii of thisAll) {
+        ii.classList.remove("hidden");
+      }
+
+      let orgAll = document.querySelectorAll(`.list li:not([data-${name}='${i.value}'])`)
+      for (let iii of orgAll) {
+        if (!iii.classList.contains("hidden")) {
+          iii.classList.add("hidden");
         }
       }
     })
