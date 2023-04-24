@@ -1,3 +1,13 @@
+'use strict'
+
+const menuCSS = document.createElement("link");
+menuCSS.href = "https://creative-community.space/ver/rolling.css";
+menuCSS.type = "text/css";
+menuCSS.rel = "stylesheet";
+
+document.getElementsByTagName("head")[0].appendChild(menuCSS);
+
+
 var leading = 0
 var wheel = 0
 var offset = 0
