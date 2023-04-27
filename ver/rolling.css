@@ -31,8 +31,7 @@ body {
   margin: 0;
 }
 
-#rolling .col a,
-#rolling .col u {
+#rolling .col a {
   color: inherit;
   background: transparent;
   filter: invert(0);
@@ -45,12 +44,7 @@ body {
   transition-property: background filter;
 }
 
-#rolling .col a:hover,
-#rolling .col u:hover {
+#rolling .col a:hover {
   background: #fff;
   filter: invert(1);
-}
-
-#rolling .col u:hover {
-  cursor: help;
 }
