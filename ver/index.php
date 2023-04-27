@@ -15,6 +15,7 @@ function h($str)
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
 
+  <script src="readyState.js"></script>
   <script src="/js/index.js" async></script>
 
   <link rel="stylesheet" href="rolling.css" />
