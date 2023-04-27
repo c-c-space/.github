@@ -26,6 +26,13 @@ $os = $_SERVER["HTTP_USER_AGENT"];
     filter: invert();
   }
 
+  #menu label {
+    text-shadow:
+    1px 1px 0 #fff,
+    2px 2px 0 #fff,
+    3px 3px 0 #fff;
+  }
+
   header,
   main,
   #sketch,

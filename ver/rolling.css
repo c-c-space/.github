@@ -1,26 +1,18 @@
-body,
-main {
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+body,
 #rolling {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 body {
-  width: 100%;
   height: 100vh;
   max-height: -webkit-fill-available;
-}
-
-main {
-  width: 100%;
-  height: 100%;
 }
 
 #rolling {
@@ -29,16 +21,19 @@ main {
   overflow: hidden;
   pointer-events:none;
   user-select:none;
-  z-index: 1;
+  position: fixed;
+  height: 100%;
 }
 
 #rolling .col {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0 2.5vw;
+  padding: 0 1.5vw;
+  margin: 0;
+  line-height: 150%;
 }
 
-#rolling .col a {
+#rolling .col a,
+#rolling .col u {
   color: inherit;
   background: transparent;
   filter: invert(0);
@@ -51,11 +46,12 @@ main {
   transition-property: background filter;
 }
 
-#rolling .col a:hover {
+#rolling .col a:hover,
+#rolling .col u:hover {
   background: #fff;
   filter: invert(1);
 }
 
-hr {
-  border: none;
+#rolling .col u:hover {
+  cursor: help;
 }
