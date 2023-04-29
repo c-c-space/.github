@@ -20,7 +20,6 @@ hr {
 }
 
 #hello h1,
-#hello h2,
 #hello #readme b {
   font-style: normal;
   font-weight: 400;
@@ -70,18 +69,12 @@ main {
   padding: 0.75rem 1rem 5rem;
 }
 
-#hello h2 {
-  font-size: 175%;
-  padding: 1rem;
-  margin: 0;
-}
-
 #hello #readme {
   padding: 0 1.5rem 1rem;
   font-size: 200%;
 }
 
-#hello #readme p {
+#hello p {
   font-size: 125%;
   line-height: 150%;
 }
@@ -89,7 +82,6 @@ main {
 #hello a {
   border: 0.1rem solid;
   border-radius: 3rem;
-  font-size: 125%;
   padding: 0.5rem 0.75rem;
   margin: 0.25rem 0.5rem 0.25rem 0;
 }

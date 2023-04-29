@@ -1,7 +1,5 @@
 'use strict'
 
-const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-
 function changeHidden() {
   const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
@@ -32,7 +30,6 @@ function createVideo() {
 }
 
 document.addEventListener('readystatechange', event => {
-
   if (event.target.readyState === 'loading') {
     // 文書の読み込み中に実行する
   }
@@ -58,14 +55,45 @@ document.addEventListener('readystatechange', event => {
     }
 
     else {
-      const greeting = document.querySelector('#readme h1 b')
-      greeting.innerText = "Welcome ようこそ"
+      const welcome = document.querySelector('#readme h1')
+      welcome.innerHTML = "Welcome ようこそ"
+      const yourStrage = document.querySelector('#readme p')
+      yourStrage.style.pointerEvents = "auto"
+      yourStrage.style.userSelect = "text"
 
-      const ip = document.querySelector('#readme h1 code')
-      const os = document.querySelector('#readme p')
+      if(localStorage.getItem('sign')) {
+        async function readme() {
+          fetch('readme.md')
+          .then(response => response.text())
+          .then(readme => {
+            yourStrage.innerHTML = readme;
+          });
+        }
+        readme();
+      } else {
+        let yourSign = JSON.parse(localStorage.getItem('sign'))
+        yourStrage.innerHTML = `You Posted<br/>
+        <a href="/sign/">${yourSign.length}</a> Colors & Symbols
+        `
+      }
 
-      ip.innerText = yourInfo.ip
+      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
+
+      const ip = document.createElement('p')
+      ip.innerText = "IP " + yourInfo.ip
+      submit.appendChild(ip)
+
+      const os = document.createElement('p')
       os.innerText = yourInfo.os
+      submit.appendChild(os)
     }
+
+    const resetBtn = document.createElement('button')
+    resetBtn.setAttribute('type','button')
+    resetBtn.textContent = 'Clear All'
+    submit.appendChild(resetBtn)
+    resetBtn.addEventListener('click', function () {
+      localStorage.clear()
+    })
   }
 });
