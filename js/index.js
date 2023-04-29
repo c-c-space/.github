@@ -113,6 +113,4 @@ function indexObject(obj) {
   }
 }
 
-window.addEventListener('readystatechange', event => {
-  indexJSON();
-});
+indexJSON();
