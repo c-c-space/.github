@@ -63,13 +63,12 @@ document.addEventListener('readystatechange', event => {
 
       if(!localStorage.getItem('sign')) {
         let yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML = `準備中 | Under Construction
-        `
+        yourStrage.innerHTML = `準備中 | Under Construction`
       }
 
       else {
         let yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML = `<u>You Posted</u><br/>
+        yourStrage.innerHTML = `<u>Your Date</u><br/>
         <a href="/sign/">${yourSign.length}</a> Colors & Symbols
         `
       }

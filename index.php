@@ -45,6 +45,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <link rel="apple-touch-icon-precomposed" href="profile/apple.png" sizes="180x180" type="image/png">
 </head>
 <body>
+  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
