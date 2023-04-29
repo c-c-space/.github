@@ -71,7 +71,7 @@ document.addEventListener('readystatechange', event => {
 
       if(localStorage.getItem('geolocation')) {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        yourStrage.innerHTML += `<br/>Latitude: <b>${geolocation.latitude} °</b>, Longitude: <b>${geolocation.longitude}</b>`
+        yourStrage.innerHTML += `<br/>Latitude: ${geolocation.latitude} °, Longitude: ${geolocation.longitude}`
       }
 
       const os = document.createElement('p')
