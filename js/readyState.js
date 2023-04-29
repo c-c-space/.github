@@ -72,10 +72,6 @@ document.addEventListener('readystatechange', event => {
 
       ip.innerText = yourInfo.ip
       os.innerText = yourInfo.os
-
-      const sign = document.createElement('h2')
-      sign.innerHTML = '<a href="/sign/">自分の気持ちを知る・表す</a><br/>Colors & Symbols That Suits on You'
-      submit.appendChild(sign)
     }
   }
 });
