@@ -62,15 +62,12 @@ document.addEventListener('readystatechange', event => {
       yourStrage.style.userSelect = 'text'
 
       if(!localStorage.getItem('sign')) {
-        async function readme() {
-          fetch('readme.md')
-          .then(response => response.text())
-          .then(readme => {
-            yourStrage.innerHTML = readme;
-          });
-        }
-        readme();
-      } else {
+        let yourSign = JSON.parse(localStorage.getItem('sign'))
+        yourStrage.innerHTML = `準備中 | Under Construction
+        `
+      }
+
+      else {
         let yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML = `<u>You Posted</u><br/>
         <a href="/sign/">${yourSign.length}</a> Colors & Symbols
@@ -80,7 +77,8 @@ document.addEventListener('readystatechange', event => {
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
 
       const os = document.createElement('p')
-      os.innerText = 'by ' + yourInfo.os
+      os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
+      os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
       submit.appendChild(os)
 
       const resetBtn = document.createElement('button')

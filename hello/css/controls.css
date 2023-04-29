@@ -12,8 +12,7 @@ textarea {
 input[type="button"],
 input[type="submit"],
 select,
-button,
-#readme {
+button {
   appearance : none;
   cursor: pointer;
   outline: none;
