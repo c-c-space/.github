@@ -12,6 +12,11 @@ hr {
   font-size: 4vw;
 }
 
+#hello h2 {
+  font-size: 4vw;
+  padding: 0.5vw;
+}
+
 #hello small {
   margin: 5vw 0 0;
 }

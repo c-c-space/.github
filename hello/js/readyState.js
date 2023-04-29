@@ -14,6 +14,15 @@ function ChangeHidden() {
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'loading') {
   } else if (event.target.readyState === 'complete') {
+    const greeting = document.querySelector('#log div h1 b')
+
+    let timeframe = (new Date()).getHours()
+    if (timeframe <= 5) { greeting.innerText = "Good Night おやすみ" }	// 0時から5時
+    else if (timeframe <= 11) { greeting.innerText = "Good Moning おはよう" }	// 6時から11時
+    else if (timeframe <= 17) { greeting.innerText = "Hello こんにちは" }	// 12時から17時
+    else if (timeframe <= 22 ) { greeting.innerText = "Good Evening こんばんは" }	// 18時から22時
+    else { greeting.innerText = "Good Night おやすみ" }
+
     const mainLog = document.querySelector('#log')
     const logAll = document.querySelector('#log section')
     const lastModified = document.querySelector('#lastModified')

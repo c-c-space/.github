@@ -13,6 +13,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/index.js" async></script>
   <script src="js/hello.js"></script>
+  <script src="js/readyState.js"></script>
   <link rel="stylesheet" href="hello/style.css" />
   <link rel="stylesheet" href="hello/css/controls.css" />
   <link rel="stylesheet" href="ver/log/style.css" />

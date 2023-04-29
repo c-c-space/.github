@@ -34,21 +34,7 @@ function setLOG() {
   }
 
   submitLOG();
-
-  let yourinfo = document.querySelector('#yourinfo');
-  yourinfo.remove();
-
-  const headMenu = document.querySelector('#menu');
-  headMenu.hidden = false;
-  headMenu.animate (
-    [
-      {opacity: 0},
-      {opacity: 1}
-    ], {
-      duration: 1000,
-      easing: 'ease-in-out',
-      fill: 'both'
-    }
-  )
-  headMenu.classList.toggle('active');
+  setTimeout(() => {
+    location.reload()
+  }, 1500)
 }

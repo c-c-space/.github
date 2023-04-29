@@ -92,7 +92,7 @@
   <main id="log">
     <div>
       <h1>
-        <b>Hello こんにちは</b><br/>
+        <b></b><br/>
         <code id="lastModified"></code>
       </h1>
       <h2>
