@@ -50,7 +50,7 @@ hr {
 }
 
 #hello .submit {
-  margin: 1.25% 1vw;
+  margin: 1.25% 0.5%;
 }
 
 input[type="button"]:focus,
