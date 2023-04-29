@@ -79,12 +79,8 @@ document.addEventListener('readystatechange', event => {
 
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
 
-      const ip = document.createElement('p')
-      ip.innerText = "IP " + yourInfo.ip
-      submit.appendChild(ip)
-
       const os = document.createElement('p')
-      os.innerText = yourInfo.os
+      os.innerText = "by " + yourInfo.os
       submit.appendChild(os)
     }
 
