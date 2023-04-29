@@ -61,7 +61,7 @@ document.addEventListener('readystatechange', event => {
       yourStrage.style.pointerEvents = "auto"
       yourStrage.style.userSelect = "text"
 
-      if(localStorage.getItem('sign')) {
+      if(!localStorage.getItem('sign')) {
         async function readme() {
           fetch('readme.md')
           .then(response => response.text())
