@@ -60,23 +60,24 @@ document.addEventListener('readystatechange', event => {
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
+      yourStrage.innerHTML = "<u>Your Date</u>"
 
       if(!localStorage.getItem('sign')) {
-        let yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML = `準備中 | Under Construction`
+        yourStrage.innerHTML += `<br/><a href="/sign/">Not Signed Yet</a>`
+      } else {
+        const yourSign = JSON.parse(localStorage.getItem('sign'))
+        yourStrage.innerHTML += `<br/><a href="/sign/">${yourSign.length}</a> Colors & Symbols`
       }
 
-      else {
-        let yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML = `<u>Your Date</u><br/>
-        <a href="/sign/">${yourSign.length}</a> Colors & Symbols
-        `
+      if(localStorage.getItem('geolocation')) {
+        const geolocation = JSON.parse(localStorage.getItem('geolocation'))
+        yourStrage.innerHTML += `<br/>Latitude: <b>${geolocation.latitude} °</b>, Longitude: <b>${geolocation.longitude}</b>`
       }
-
-      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
 
       const os = document.createElement('p')
+      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
+
       os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
       submit.appendChild(os)
 
