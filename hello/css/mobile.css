@@ -9,7 +9,7 @@ hr {
 }
 
 #hello #readme {
-  padding: 0 2.5% 1.25%;
+  padding: 0 2.5%;
 }
 
 #hello small {
@@ -47,6 +47,10 @@ hr {
   border-radius: 5vw;
   font-size: 4vw;
   padding: 2vw 2.5vw;
+}
+
+#hello .submit {
+  margin: 1.25% 1vw;
 }
 
 input[type="button"]:focus,

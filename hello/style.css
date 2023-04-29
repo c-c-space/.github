@@ -70,7 +70,7 @@ main {
 }
 
 #hello #readme {
-  padding: 0 1.5rem 1rem;
+  padding: 0 1.5rem;
   font-size: 200%;
 }
 
@@ -84,4 +84,8 @@ main {
   border-radius: 3rem;
   padding: 0.5rem 0.75rem;
   margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+#hello .submit {
+  margin: 1rem 0.5rem;
 }
