@@ -56,10 +56,10 @@ document.addEventListener('readystatechange', event => {
 
     else {
       const welcome = document.querySelector('#readme h1')
-      welcome.innerHTML = "Welcome ようこそ"
+      welcome.innerHTML = 'Welcome ようこそ'
       const yourStrage = document.querySelector('#readme p')
-      yourStrage.style.pointerEvents = "auto"
-      yourStrage.style.userSelect = "text"
+      yourStrage.style.pointerEvents = 'auto'
+      yourStrage.style.userSelect = 'text'
 
       if(!localStorage.getItem('sign')) {
         async function readme() {
@@ -72,7 +72,7 @@ document.addEventListener('readystatechange', event => {
         readme();
       } else {
         let yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML = `You Posted<br/>
+        yourStrage.innerHTML = `<u>You Posted</u><br/>
         <a href="/sign/">${yourSign.length}</a> Colors & Symbols
         `
       }
@@ -80,16 +80,16 @@ document.addEventListener('readystatechange', event => {
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
 
       const os = document.createElement('p')
-      os.innerText = "by " + yourInfo.os
+      os.innerText = 'by ' + yourInfo.os
       submit.appendChild(os)
-    }
 
-    const resetBtn = document.createElement('button')
-    resetBtn.setAttribute('type','button')
-    resetBtn.textContent = 'Clear All'
-    submit.appendChild(resetBtn)
-    resetBtn.addEventListener('click', function () {
-      localStorage.clear()
-    })
+      const resetBtn = document.createElement('button')
+      resetBtn.setAttribute('type','button')
+      resetBtn.textContent = 'Clear All'
+      submit.appendChild(resetBtn)
+      resetBtn.addEventListener('click', function () {
+        localStorage.clear()
+      })
+    }
   }
 });
