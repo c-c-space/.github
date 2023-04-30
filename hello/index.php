@@ -53,7 +53,7 @@
 <body>
   <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
-    <button class="color" id="js-button"><b></b></button>
+    <button class="color bgcolor" id="js-button"><b></b></button>
     <nav id="contents">
       <a href="/" target="_parent">
         <p><b>creative-community.space</b></p>
