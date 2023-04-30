@@ -17,7 +17,7 @@ function createVideo() {
   userMedia.style.width = window.innerWidth
   userMedia.style.height = window.innerHeight
 
-  const media = navigator.mediaDevices.getUserMedia({
+  let media = navigator.mediaDevices.getUserMedia({
     video: true,
     video: { facingMode: 'environment' }, //背面カメラ
     //video: { facingMode: "user" }, //インカメラ
@@ -55,7 +55,7 @@ document.addEventListener('readystatechange', event => {
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        const media = media.stop();
+        media.stop();
 
         userMedia.remove()
       })
