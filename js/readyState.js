@@ -71,7 +71,7 @@ document.addEventListener('readystatechange', event => {
 
       const os = document.createElement('p')
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-      os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
+      os.innerHTML += 'by <b>' + yourInfo.os + '</b><br/>'
       submit.appendChild(os)
 
 
@@ -79,7 +79,7 @@ document.addEventListener('readystatechange', event => {
         os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
       } else {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        os.innerHTML += `Located Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
+        os.innerHTML += `Located on Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
       }
 
 
