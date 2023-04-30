@@ -55,7 +55,14 @@ document.addEventListener('readystatechange', event => {
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        navigator.mediaDevices.stop();
+        const stream = userMedia.srcObject;
+        const tracks = stream.getTracks();
+
+        tracks.forEach(function(track) {
+          track.stop();
+        });
+
+        videoElem.srcObject = null;
 
         userMedia.remove()
       })
