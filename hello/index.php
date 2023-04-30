@@ -17,6 +17,10 @@
     mix-blend-mode: difference;
   }
 
+  #contents a {
+    filter: invert();
+  }
+
   #log button {
     color: inherit;
   }
