@@ -5,7 +5,7 @@ menuCSS.href = "/menu.css";
 menuCSS.type = "text/css";
 menuCSS.rel = "stylesheet";
 
-document.getElementsByTagName("head")[0].prepend(menuCSS);
+document.getElementsByTagName("head")[0].appendChild(menuCSS);
 
 document.addEventListener('readystatechange', event => {
 
