@@ -55,10 +55,10 @@ document.addEventListener('readystatechange', event => {
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        const media = navigator.mediaDevices.getUserMedia({
-          video: false,
+        {
           audio: false,
-        });
+          video: false
+        }
         media.then((stream) => {
           userMedia.srcObject = stream;
         });
