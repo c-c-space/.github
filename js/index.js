@@ -99,7 +99,7 @@ function indexObject(obj) {
     const contentU = document.createElement('u');
 
     contentA.href = content.url;
-    contentA.setAttribute("class", 'list_item ' + content.type);
+    contentA.setAttribute("class", 'list_item color ' + content.type);
     contentA.setAttribute("data-type", content.type);
     contentI.innerHTML = content.date;
     contentP.innerHTML = content.name;

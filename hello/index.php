@@ -38,7 +38,7 @@
   <header id="menu" hidden>
     <button id="js-button" class="color"><b></b></button>
     <nav id="contents">
-      <a href="/" target="_parent">
+      <a class="color" href="/" target="_parent">
         <p><b>creative-community.space</b></p>
         <u>Index</u>
       </a>
