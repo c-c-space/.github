@@ -53,32 +53,31 @@ document.addEventListener('readystatechange', event => {
         changeHidden()
       })
     } else {
+      createVideo()
+
       const welcome = document.querySelector('#readme h1')
       welcome.innerHTML = 'Welcome ようこそ'
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
-
-      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-      yourStrage.innerHTML = "IP " + yourInfo.ip
+      yourStrage.innerHTML = "<u>You Posted</u><br/>"
 
       if(!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += `<br/><a href="/sign/">0</a> Colors & Symbols`
+        yourStrage.innerHTML += `<a href="/sign/">0</a>`
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML += `<br/><a href="/sign/">${yourSign.length}</a> Colors & Symbols`
+        yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
+      yourStrage.innerHTML += ` Colors & Symbols<br/>`
 
-      const os = document.createElement('p')
-
-      os.innerHTML += 'by <b>' + yourInfo.os + '</b><br/>'
-      submit.appendChild(os)
-
+      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
+      submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'
       if(localStorage.getItem('geolocation')) {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        os.innerHTML += `Located on Latitude: <b>${geolocation.latitude}°</b>, Longitude: <b>${geolocation.longitude}°</b><br/>`
+        submit.innerHTML += `<p>Located on Latitude: <b>${geolocation.latitude}°</b> Longitude: <b>${geolocation.longitude}°</b></p>`
+      } else {
+        submit.innerHTML += '<p>Enterd from <b>' + yourInfo.ip + '</b></p>'
       }
-
 
       const resetBtn = document.createElement('button')
       resetBtn.setAttribute('type','button')
@@ -88,7 +87,7 @@ document.addEventListener('readystatechange', event => {
         localStorage.clear()
         setTimeout(() => {
           location.reload()
-        }, 1500)
+        }, 1000)
       })
     }
   }

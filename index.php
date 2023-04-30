@@ -123,9 +123,10 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <footer id="now" class="hsl"></footer>
   <script src="js/now.js"></script>
 
-  <div id="sketch"></div>
-  <script src="thankyou/hsl.js"></script>
-  <script src="thankyou/sketch.js"></script>
+  <div id="sketch">
+    <script src="thankyou/hsl.js"></script>
+    <script src="thankyou/sketch.js"></script>
+  </div>
   <script type="text/javascript">
   const COLOURS = ['#EEE'];
   let radius = 0;
