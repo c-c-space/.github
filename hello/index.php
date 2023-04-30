@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
-  #menu a {
+  #contents a {
     filter: invert();
     mix-blend-mode: difference;
   }
@@ -43,7 +43,7 @@
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a class="color" href="/" target="_parent">
+      <a href="/" target="_parent">
         <p><b>creative-community.space</b></p>
         <u>Index</u>
       </a>
