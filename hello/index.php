@@ -43,7 +43,7 @@
 
 <body>
   <script src="/js/menu.js"></script>
-  <header id="menu" class="bgcolor" hidden>
+  <header id="menu" class="bgcolor" style="background:#000;" hidden>
     <button class="color" id="js-button"><b></b></button>
     <nav id="contents">
       <a href="/" target="_parent">
