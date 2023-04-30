@@ -55,9 +55,7 @@ document.addEventListener('readystatechange', event => {
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        media.then((stream) => {
-          userMedia.stop();
-        });
+        const media = media.stop();
 
         userMedia.remove()
       })
