@@ -56,7 +56,7 @@ document.addEventListener('readystatechange', event => {
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
         userMedia.remove()
-        media.stop();
+        userMedia.stop();
       })
     } else {
       const welcome = document.querySelector('#readme h1')
