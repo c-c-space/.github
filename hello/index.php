@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
-  body {
+  body,
+  #js-button {
     background: #fff;
   }
 
@@ -21,12 +22,10 @@
     background: #000;
   }
 
-  #js-button,
   #contents {
     mix-blend-mode: difference;
   }
 
-  #js-button,
   #contents a {
     filter: invert();
   }
