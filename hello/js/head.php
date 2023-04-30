@@ -4,24 +4,22 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-$morning = fopen("morning.csv", 'r');
-$afternoon = fopen("afternoon.csv", 'r');
-$evening = fopen("evening.csv", 'r');
-$night = fopen("night.csv", 'r');
-
-while ($row = fgetcsv($morning)) {
-  $rows[] = $row;
+if (date("H") >= 6 and date("H") <= 11) {
+  $timeframe = "morning";
+} elseif (date("H") >= 12 and date("H") <= 17) {
+  $timeframe = "afternoon";
+} elseif (date("H") >= 18 and date("H") <= 23) {
+  $timeframe = "evening";
+} else {
+  $timeframe = "night";
 }
 
-while ($row = fgetcsv($afternoon)) {
-  $rows[] = $row;
+if (isset($_GET["timeframe"])) {
+  $timeframe = $_GET["timeframe"];
 }
 
-while ($row = fgetcsv($evening)) {
-  $rows[] = $row;
-}
-
-while ($row = fgetcsv($night)) {
+$source_file = fopen($timeframe . ".csv", 'r');
+while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
 }
 
