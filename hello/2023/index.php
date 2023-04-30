@@ -4,7 +4,7 @@
   <script src="../js/main.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>Hello | creative-community.space</h3>
+    <h3>2023 | Message Board</h3>
     <br/>
     <form method="GET">
       <label for="timeframe">Time Frame</label><br/>
