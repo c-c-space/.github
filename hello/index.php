@@ -14,12 +14,9 @@
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
   #menu {
+    color: #fff;
     filter: invert();
     mix-blend-mode: difference;
-  }
-
-  #js-button {
-    color: #fff;
   }
 
   #log button {
