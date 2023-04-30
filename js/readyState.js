@@ -77,7 +77,7 @@ document.addEventListener('readystatechange', event => {
         os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
       } else {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        os.innerHTML += `Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
+        os.innerHTML += `on Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
       }
 
       os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
