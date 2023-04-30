@@ -26,6 +26,7 @@ button {
 }
 
 #modal select,
+#modal input[type="submit"],
 #closeButton {
   border: 0.1rem solid;
   border-radius: 3rem;

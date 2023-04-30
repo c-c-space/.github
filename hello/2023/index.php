@@ -5,6 +5,7 @@
 
   <dialog id="modal" class="color bgcolor">
     <h3>Hello | creative-community.space</h3>
+    <br/>
     <form method="GET">
       <label for="timeframe">Time Frame</label>
       <select class="color bgcolor" id="timeframe" name="timeframe">
@@ -15,6 +16,7 @@
       </select>
       <button class="color bgcolor" type="submit">View The Collection</button>
     </form>
+    <br/>
     <section>
       <label for="fontSize">Font Size</label>
       <select class="color bgcolor" id="fontSize">
@@ -31,7 +33,6 @@
       <label for="color">Color</label>
       <select class="color bgcolor" id="color"></select>
     </section>
-    <section id="about"></section>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
   <script src="/coding/yourinfo/jscolor.js"></script>
