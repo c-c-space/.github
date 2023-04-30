@@ -62,8 +62,6 @@ document.addEventListener('readystatechange', event => {
           track.stop();
         });
 
-        videoElem.srcObject = null;
-
         userMedia.remove()
       })
     } else {
