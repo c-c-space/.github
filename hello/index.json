@@ -13,7 +13,7 @@
       "date" : "Speech to Text to Text to Speech",
       "name" : "Hello こんにちは",
       "url" : "/hello/",
-      "type" : "color",
+      "type" : "news",
       "caption" : "none",
       "note" : ""
     },
@@ -21,7 +21,7 @@
       "date" : "Colors and Symbols that Suits on You",
       "name" : "自分の気持ちを知る・表す",
       "url" : "/sign/",
-      "type" : "color",
+      "type" : "news",
       "caption" : "none",
       "note" : ""
     }
