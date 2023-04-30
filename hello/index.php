@@ -36,9 +36,9 @@
 
 <body>
   <script src="/js/menu.js"></script>
-  <header id="menu" hidden>
+  <header id="menu" class="bgcolor" hidden>
     <button class="color" id="js-button"><b></b></button>
-    <nav id="contents" class="bgcolor">
+    <nav id="contents">
       <a href="/" target="_parent">
         <p><b>creative-community.space</b></p>
         <u>Index</u>
