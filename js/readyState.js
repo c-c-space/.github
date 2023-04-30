@@ -92,6 +92,9 @@ document.addEventListener('readystatechange', event => {
       submit.appendChild(resetBtn)
       resetBtn.addEventListener('click', function () {
         localStorage.clear()
+        setTimeout(() => {
+          location.reload()
+        }, 1500)
       })
     }
   }
