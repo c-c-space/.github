@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
-  #contents a {
+  #contents {
     filter: invert();
     mix-blend-mode: difference;
   }
