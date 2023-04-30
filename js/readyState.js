@@ -71,13 +71,16 @@ document.addEventListener('readystatechange', event => {
 
       const os = document.createElement('p')
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-      os.innerHTML += 'by <b>' + yourInfo.os + '</b><br/>'
-      submit.appendChild(os)
 
 
       if(!localStorage.getItem('geolocation')) {
         os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
-      } else {
+      }
+
+      os.innerHTML += 'by <b>' + yourInfo.os + '</b><br/>'
+      submit.appendChild(os)
+
+      if(localStorage.getItem('geolocation')) {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
         os.innerHTML += `Located on Latitude: <b>${geolocation.latitude}°</b>, Longitude: <b>${geolocation.longitude}°</b><br/>`
       }
