@@ -7,13 +7,14 @@
     <h3>Hello | creative-community.space</h3>
     <br/>
     <form method="GET">
-      <label for="timeframe">Time Frame</label>
+      <label for="timeframe">Time Frame</label><br/>
       <select class="color bgcolor" id="timeframe" name="timeframe">
         <option value="night">00:00:00 - 05:59:59</option>
         <option value="morning">06:00:00 - 11:59:59</option>
         <option value="afternoon">12:00:00 - 17:59:59</option>
         <option value="evening">18:00:00 - 23:59:59</option>
       </select>
+      <br/>
       <button class="color bgcolor" type="submit">View The Collection</button>
     </form>
     <br/>
@@ -33,6 +34,7 @@
       <label for="color">Color</label>
       <select class="color bgcolor" id="color"></select>
     </section>
+    <br/>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
   <script src="/coding/yourinfo/jscolor.js"></script>
