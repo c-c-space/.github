@@ -71,17 +71,17 @@ document.addEventListener('readystatechange', event => {
 
       const os = document.createElement('p')
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
+      os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
+      submit.appendChild(os)
 
 
       if(!localStorage.getItem('geolocation')) {
         os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
       } else {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        os.innerHTML += `on Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
+        os.innerHTML += `Located Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
       }
 
-      os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
-      submit.appendChild(os)
 
       const resetBtn = document.createElement('button')
       resetBtn.setAttribute('type','button')
