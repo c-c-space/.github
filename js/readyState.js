@@ -69,14 +69,16 @@ document.addEventListener('readystatechange', event => {
         yourStrage.innerHTML += `<br/><a href="/sign/">${yourSign.length}</a> Colors & Symbols`
       }
 
-      if(localStorage.getItem('geolocation')) {
-        const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        yourStrage.innerHTML += `<br/>Latitude: ${geolocation.latitude} °, Longitude: ${geolocation.longitude}`
-      }
-
       const os = document.createElement('p')
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-      os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
+
+
+      if(!localStorage.getItem('geolocation')) {
+        os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
+      } else {
+        const geolocation = JSON.parse(localStorage.getItem('geolocation'))
+        os.innerHTML += `Latitude: ${geolocation.latitude}°, Longitude: ${geolocation.longitude}°<br/>`
+      }
 
       os.innerHTML += 'by <b>' + yourInfo.os + '</b>'
       submit.appendChild(os)
