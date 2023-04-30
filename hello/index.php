@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
   #menu {
-    filter: invert(0);
+    filter: invert(1);
     mix-blend-mode: difference;
   }
 
