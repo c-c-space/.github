@@ -15,7 +15,6 @@
   <style type="text/css">
   #menu {
     filter: invert(1);
-    mix-blend-mode: difference;
   }
 
   #log button {
