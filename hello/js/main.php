@@ -1,7 +1,7 @@
 <main id="log">
   <div>
     <h1>
-      <b>Hello こんにちは</b><br/>
+      <b></b><br/>
       <code id="lastModified"></code>
     </h1>
     <h2>
@@ -41,3 +41,14 @@
   </section>
   <button id="openModal" class="color bgcolor" type="button">?</button>
 </nav>
+
+<script type="text/javascript">
+const greeting = document.querySelector('#log div h1 b')
+
+let timeframe = (new Date()).getHours()
+if (timeframe <= 5) { greeting.innerText = "Good Night おやすみ" }	// 0時から5時
+else if (timeframe <= 11) { greeting.innerText = "Good Moning おはよう" }	// 6時から11時
+else if (timeframe <= 17) { greeting.innerText = "Hello こんにちは" }	// 12時から17時
+else if (timeframe <= 22 ) { greeting.innerText = "Good Evening こんばんは" }	// 18時から22時
+else { greeting.innerText = "Good Night おやすみ" }
+</script>
