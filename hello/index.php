@@ -17,10 +17,12 @@
     background: #000;
   }
 
+  #js-button,
   #contents {
     mix-blend-mode: difference;
   }
 
+  #js-button,
   #contents a {
     filter: invert();
   }
