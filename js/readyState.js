@@ -55,10 +55,7 @@ document.addEventListener('readystatechange', event => {
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        {
-          audio: false,
-          video: false
-        }
+        stream.getTracks().forEach(track => track.stop())
         media.then((stream) => {
           userMedia.srcObject = stream;
         });
