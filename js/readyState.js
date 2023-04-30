@@ -52,9 +52,12 @@ document.addEventListener('readystatechange', event => {
         createVideo()
         changeHidden()
       })
-    } else {
-      createVideo()
 
+      const backBtn = document.querySelector('#back-btn')
+      backBtn.addEventListener('click', function () {
+        userMedia.remove()
+      })
+    } else {
       const welcome = document.querySelector('#readme h1')
       welcome.innerHTML = 'Welcome ようこそ'
       const yourStrage = document.querySelector('#readme p')
