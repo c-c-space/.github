@@ -13,13 +13,6 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
-  #contents {
-    mix-blend-mode: difference;
-  }
-
-  #contents a {
-    filter: invert();
-  }
 
   #log button {
     color: inherit;
@@ -45,7 +38,7 @@
   <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button class="color" id="js-button"><b></b></button>
-    <nav id="contents">
+    <nav id="contents" class="bgcolor">
       <a href="/" target="_parent">
         <p><b>creative-community.space</b></p>
         <u>Index</u>
