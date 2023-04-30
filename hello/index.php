@@ -18,6 +18,11 @@
     mix-blend-mode: difference;
   }
 
+  #js-button,
+  #contents a {
+      color: #fff;
+  }
+
   #log button {
     color: inherit;
   }
