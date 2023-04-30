@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
+  #menu {
+    background: #000;
+  }
+
   #contents {
     mix-blend-mode: difference;
   }
@@ -43,7 +47,7 @@
 
 <body>
   <script src="/js/menu.js"></script>
-  <header id="menu" class="bgcolor" style="background:#000;" hidden>
+  <header id="menu" class="bgcolor" hidden>
     <button class="color" id="js-button"><b></b></button>
     <nav id="contents">
       <a href="/" target="_parent">
