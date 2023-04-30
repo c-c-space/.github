@@ -52,30 +52,24 @@ document.addEventListener('readystatechange', event => {
         createVideo()
         changeHidden()
       })
-    }
-
-    else {
+    } else {
       const welcome = document.querySelector('#readme h1')
       welcome.innerHTML = 'Welcome ようこそ'
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
-      yourStrage.innerHTML = "<u>Your Date</u>"
+
+      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
+      yourStrage.innerHTML = "IP " + yourInfo.ip
 
       if(!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += `<br/><a href="/sign/">Not Signed Yet</a>`
+        yourStrage.innerHTML += `<br/><a href="/sign/">0</a> Colors & Symbols`
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML += `<br/><a href="/sign/">${yourSign.length}</a> Colors & Symbols`
       }
 
       const os = document.createElement('p')
-      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-
-
-      if(!localStorage.getItem('geolocation')) {
-        os.innerHTML += 'Enterd from <b>' + yourInfo.ip + '</b><br/>'
-      }
 
       os.innerHTML += 'by <b>' + yourInfo.os + '</b><br/>'
       submit.appendChild(os)
