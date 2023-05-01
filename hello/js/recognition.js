@@ -10,7 +10,7 @@ let speechToText = false;
 const stop = () => {
   recognition.stop();
   speechBtn.textContent = "Speech to Text";
-  speechBtn.style.color = "#000";
+  speechBtn.style.color = "inherit";
   speechBtn.style.background = "inherit";
 };
 
