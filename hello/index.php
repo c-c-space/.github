@@ -126,7 +126,7 @@
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>Hello | creative-community.space</h3>
+    <h3>掲示板 | Message Board</h3>
     <br/>
     <label for="fontSize">Font Size</label>
     <select class="color bgcolor" id="fontSize">
