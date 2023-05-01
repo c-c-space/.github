@@ -10,6 +10,14 @@
 
   "contents" : [
     {
+      "date" : "Access Log",
+      "name" : "あなたの通信情報／ブラウザ等情報",
+      "url" : "/ver/log/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
       "date" : "Speech to Text to Text to Speech",
       "name" : "掲示板 Message Board",
       "url" : "/hello/",
