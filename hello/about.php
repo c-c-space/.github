@@ -5,6 +5,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
 ?>
 
 <h3>このページについて</h3>
+<hr/>
 <button id="enter-btn" type="button" class="color bgcolor" onclick="setLOG()">Enter</button>
 <hr/>
 <p><u>Your Info</u></p>
@@ -15,4 +16,3 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   echo "<small id='os'>" . $os . "</small>";
   ?>
 </p>
-<hr/>
