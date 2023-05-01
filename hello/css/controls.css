@@ -39,7 +39,6 @@ button {
 #hello input[type="button"],
 #hello select,
 #openModal,
-#enterBtn,
 .controls input[type="button"] {
   border: 0.1rem solid;
   border-radius: 3rem;
