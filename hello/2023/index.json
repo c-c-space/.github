@@ -1,5 +1,5 @@
 {
-  "title" : "Message Board",
+  "title" : "Hello",
   "description" : "Speech to Text to Text to Speech",
   "author" : "creative-community.space",
   "email" : "pehu@creative-community.space",
@@ -11,7 +11,7 @@
   "contents" : [
     {
       "date" : "Speech to Text to Text to Speech",
-      "name" : "掲示板 | Message Board",
+      "name" : "掲示板 Message Board",
       "url" : "/hello/",
       "type" : "news",
       "caption" : "none",

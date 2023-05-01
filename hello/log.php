@@ -4,19 +4,18 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 if (date("H") >= 6 and date("H") <= 11) {
-  $hello = "morning";
+  $timeframe = "morning";
 } elseif (date("H") >= 12 and date("H") <= 17) {
-  $hello = "afternoon";
+  $timeframe = "afternoon";
 } elseif (date("H") >= 18 and date("H") <= 23) {
-  $hello = "evening";
+  $timeframe = "evening";
 } else {
-  $hello = "night";
+  $timeframe = "night";
 }
 
-$source_file = date("Y"). "/". $hello . ".csv";
+$source_file = date("Y"). "/". $timeframe . ".csv";
 
-function h($str)
-{
+function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 

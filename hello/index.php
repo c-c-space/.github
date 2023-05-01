@@ -124,8 +124,10 @@
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>掲示板 | Message Board</h3>
-    <br/>
+    <h3>Hello | creative-community.space</h3>
+    <button class="color bgcolor" id="closeButton">×</button>
+    <section id="about"></section>
+    <hr/>
     <label for="fontSize">Font Size</label>
     <select class="color bgcolor" id="fontSize">
       <option value="13px">Small</option>
@@ -138,10 +140,6 @@
     <br/>
     <label for="color">Color</label>
     <select class="color bgcolor" id="color"></select>
-    <hr/>
-    <section id="about"></section>
-    <br/>
-    <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
 
   <script src="/coding/yourinfo/jscolor.js"></script>

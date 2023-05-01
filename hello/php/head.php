@@ -5,7 +5,7 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 if (date("H") >= 6 and date("H") <= 11) {
-  $greeting = "Good Moning おはよう";
+  $greeting = "Good Morning おはよう";
   $timeframe = "morning";
 } elseif (date("H") >= 12 and date("H") <= 17) {
   $greeting = "Hello こんにちは";

@@ -132,6 +132,12 @@ h3 {
   backdrop-filter: blur(0.25rem);
 }
 
+#modal #closeButton {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
 @media screen and (max-width: 750px) {
   h1,
   #log,
