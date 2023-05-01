@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="/js/index.js" async></script>
-  <script type="text/javascript">
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    location.replace('touch.html')
-  }
-  </script>
-
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../hello/style.css" />
   <link rel="stylesheet" href="../hello/css/mobile.css" media="screen and (max-width: 750px)" />
-
   <style>
+  #js-button,
+  #contents a {
+    filter: invert();
+  }
+
+  header {
+    mix-blend-mode: difference;
+  }
+
   #hello {
     display: grid;
     place-items: center;
@@ -65,8 +66,12 @@
     }
   }
   </style>
-
   <link rel="stylesheet" href="print.css" media="print"/>
+  <script type="text/javascript">
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    location.replace('touch.html')
+  }
+  </script>
 </head>
 
 <body>
