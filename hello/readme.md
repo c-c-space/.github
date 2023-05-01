@@ -1,7 +1,7 @@
 # これは、音声認識・音声合成を使った掲示板です。
 
 *ウェブ音声 API (Web Speech API)* で **音声をテキストに変換・テキストを音声に変換**
-掲示板の投稿を記録・内容を生成します。
+投稿を記録・内容を生成します。
 
 ### [Speech Recognition](/hello/js/recognition.html)
 ### [Text to Speech](/hello/js/synthesis.html)
