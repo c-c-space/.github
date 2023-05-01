@@ -27,7 +27,7 @@ document.addEventListener('readystatechange', event => {
     const logAll = document.querySelector('#log section')
     const lastModified = document.querySelector('#lastModified')
 
-    if(!localStorage.getItem('yourInfo')) {
+    if(localStorage.getItem('yourInfo')) {
       document.querySelector('#now .controls').remove()
 
       async function about() {
@@ -56,7 +56,7 @@ document.addEventListener('readystatechange', event => {
       enterBtn.setAttribute('type','button')
       enterBtn.setAttribute('id','enter-btn')
       enterBtn.setAttribute('onclick','ChangeHidden()')
-      enterBtn.innerText = '掲示板 Message Board'
+      enterBtn.innerText = 'Speech to Text to Text to Speech'
       mainLog.prepend(enterBtn)
 
       lastModified.innerHTML =
