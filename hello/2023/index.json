@@ -10,17 +10,9 @@
 
   "contents" : [
     {
-      "date" : "Message Board",
-      "name" : "掲示板",
+      "date" : "Speech to Text to Text to Speech",
+      "name" : "掲示板 | Message Board",
       "url" : "/hello/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "Message Board",
-      "name" : "2023",
-      "url" : "/hello/2023/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
