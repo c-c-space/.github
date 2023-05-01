@@ -18,7 +18,7 @@
     <h3>掲示板 | Message Board</h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
+    <form method="GET">
       <select class="color bgcolor" name="timeframe">
         <option selected disabled>時間帯 Time Frame</option>
         <option value="night">00:00:00 - 05:59:59</option>
