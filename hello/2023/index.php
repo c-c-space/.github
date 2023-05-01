@@ -17,8 +17,7 @@
       <br/>
       <button class="color bgcolor" type="submit">View The Collection</button>
     </form>
-    <br/>
-    <section>
+    <section hidden>
       <label for="fontSize">Font Size</label>
       <select class="color bgcolor" id="fontSize">
         <option value="13px">Small</option>
