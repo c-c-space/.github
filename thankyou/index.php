@@ -184,8 +184,8 @@
       let sraw = parseInt(100 - Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
       let lraw = parseInt(Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
 
-      document.querySelector('#saturationcount').innerText = hueraw + '%';
-      document.querySelector('#lightnesscount').innerText = hueraw + '%';
+      document.querySelector('#saturationcount').innerText = sraw + '%';
+      document.querySelector('#lightnesscount').innerText = lraw + '%';
 
       document.body.style.background = 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)';
 
