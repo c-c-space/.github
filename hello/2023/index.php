@@ -16,6 +16,7 @@
 
   <dialog id="modal" class="color bgcolor">
     <h3>掲示板 | Message Board</h3>
+    <button class="color bgcolor" id="closeButton">×</button>
     <br/>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
       <select class="color bgcolor" name="timeframe">
@@ -41,8 +42,6 @@
       <label for="color">Color</label>
       <select class="color bgcolor" id="color"></select>
     </section>
-    <br/>
-    <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
   <script src="/coding/yourinfo/jscolor.js"></script>
   <script src="../js/storage.js"></script>

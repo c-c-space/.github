@@ -88,7 +88,7 @@ document.addEventListener('readystatechange', event => {
 
         const helloJSON = JSON.stringify(thisHello);
         async function submitThis() {
-          let url = 'submit.php';
+          let url = 'submit.php'
           let response = await fetch(url, {
             method: 'POST',
             headers: {

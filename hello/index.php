@@ -134,7 +134,7 @@
       <option value="16px" selected>Medium</option>
       <option value="20px">Large</option>
     </select>
-    <br/>
+    <hr/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
     <br/>
