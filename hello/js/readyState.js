@@ -27,7 +27,7 @@ document.addEventListener('readystatechange', event => {
     const logAll = document.querySelector('#log section')
     const lastModified = document.querySelector('#lastModified')
 
-    if(localStorage.getItem('yourInfo')) {
+    if(!localStorage.getItem('yourInfo')) {
       document.querySelector('#now .controls').remove()
 
       async function about() {

@@ -125,7 +125,7 @@
 
   <dialog id="modal" class="color bgcolor">
     <h3>Hello | creative-community.space</h3>
-    <button class="color bgcolor" id="closeButton">×</button>
+    <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
     <hr/>
     <label for="fontSize">Font Size</label>
@@ -141,6 +141,7 @@
     <label for="color">Color</label>
     <select class="color bgcolor" id="color"></select>
   </dialog>
+  <script src="/js/log.js"></script>
 
   <script src="/coding/yourinfo/jscolor.js"></script>
   <script src="js/storage.js"></script>
