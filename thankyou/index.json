@@ -10,8 +10,8 @@
 
   "contents" : [
     {
-      "date" : "Thank You for Visiting",
-      "name" : "Your Drawing is Seems So Beautiful",
+      "date" : "Your Drawing is Seems So Beautiful",
+      "name" : "Thank You for Visiting",
       "url" : "/thankyou/",
       "type" : "news",
       "caption" : "inline-block",
