@@ -20,15 +20,10 @@ button {
 
 .range label,
 .range code,
-#hello code {
-  word-break: break-all;
-}
-
-.range label,
-.range code,
 #hello code,
 #modal code {
   font-family: "ipag", "Arial Narrow", monospace;
+  word-break: break-all;
 }
 
 #modal select,
