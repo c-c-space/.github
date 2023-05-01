@@ -127,7 +127,6 @@
     <h3>掲示板 Message Board</h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
-    <hr/>
     <label for="fontSize">Font Size</label>
     <select class="color bgcolor" id="fontSize">
       <option value="13px">Small</option>
