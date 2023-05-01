@@ -104,6 +104,14 @@ flock($fp, LOCK_SH);
         <i>Access Log</i>
         <p>あなたの通信情報／ブラウザ等情報</p>
       </a>
+      <a href="/hello/" target="_parent">
+        <i>Speech to Text to Text to Speech</i>
+        <p>掲示板 Message Board</p>
+      </a>
+      <a href="/thankyou/" target="_parent">
+        <i>Your Drawing is Seems So Beautiful</i>
+        <p>Thank You for Visiting</p>
+      </a>
     </nav>
   </header>
 
