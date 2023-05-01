@@ -17,9 +17,9 @@ document.addEventListener('readystatechange', event => {
     } else {
       yourStorage.innerHTML = `
       <span>あなたの通信情報／ブラウザ等情報</span>
-      <span>${yourInfo.port}</span>
-      <span>${yourInfo.ip}</span>
-      <span>${yourInfo.os}</span>
+      <span><button id="update" type="button" onclick="setLOG()">Update</button></span>
+      <span><small id="hqdn">${yourInfo.port}</small> <small id="ip">${yourInfo.ip}</small></span>
+      <span id="os">${yourInfo.os}</span>
       `;
     }
   } else if (event.target.readyState === 'complete') {

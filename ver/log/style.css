@@ -6,6 +6,7 @@
 
 #yourinfo p,
 #log,
+#update,
 #now select,
 #now button {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
@@ -53,6 +54,30 @@
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
+}
+
+#update {
+  appearance : none;
+  background: transparent;
+  border: 0.09rem solid;
+  border-radius: 2.5rem;
+  color: #000;
+  font-size: 100%;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  transition: 1s;
+}
+
+#update:hover {
+  cursor: pointer;
+}
+
+#update:focus {
+  filter: drop-shadow(0 0 0.1rem);
+}
+
+#update:active {
+  filter: invert(1);
 }
 
 #log,

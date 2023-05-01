@@ -143,13 +143,15 @@ flock($fp, LOCK_SH);
     </li>
     <li id="yourInfo">
       <span>あなたの通信情報／ブラウザ等情報</span>
+      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
       <?php
-      echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
-      echo "<span id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</span>";
+      echo "<span><small id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</small>";
+      echo "<small id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</small></span>";
       echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
       ?>
     </li>
   </ul>
+  <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
     <select id="month" name="month"></select>
