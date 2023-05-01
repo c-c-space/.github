@@ -91,7 +91,7 @@ document.addEventListener('readystatechange', event => {
 
       const resetBtn = document.createElement('button')
       resetBtn.setAttribute('type','button')
-      resetBtn.textContent = 'Delete All | すべて削除'
+      resetBtn.textContent = 'Delete All すべて削除'
       submit.appendChild(resetBtn)
       resetBtn.addEventListener('click', function () {
         localStorage.clear()
