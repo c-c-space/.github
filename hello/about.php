@@ -9,8 +9,8 @@ $os = $_SERVER["HTTP_USER_AGENT"];
 <hr/>
 -->
 
-<p><u>Your Info</u></p>
 <p>
+  <u>Your Info</u>
   <?php
   echo "IP <code id='ip'>" . $ip . "</code> | ";
   echo "PORT <code id='hqdn'>" . $hqdn . "</code><br/>";
