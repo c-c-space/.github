@@ -27,23 +27,8 @@
         <option value="evening">18:00:00 - 23:59:59</option>
       </select>
       <button class="color bgcolor" type="submit">GET</button>
-      <select hidden>
-        <label for="bgcolor">Background Color</label>
-        <select class="color bgcolor" id="bgcolor"></select>
-        <br/>
-        <label for="color">Color</label>
-        <select class="color bgcolor" id="color"></select>
-        <hr/>
-        <label for="fontSize">Font Size</label>
-        <select class="color bgcolor" id="fontSize">
-          <option value="13px">Small</option>
-          <option value="16px" selected>Medium</option>
-          <option value="20px">Large</option>
-        </select>
-      </select>
     </form>
   </dialog>
-  <script src="/coding/yourinfo/jscolor.js"></script>
   <script src="../js/storage.js"></script>
 </body>
 </html>
