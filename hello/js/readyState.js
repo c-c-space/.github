@@ -48,7 +48,7 @@ document.addEventListener('readystatechange', event => {
       }
       readmeMD();
 
-      lastModified.innerHTML = document.URL
+      lastModified.innerHTML = navigator.userAgent
 
       logAll.style.padding = "1rem 0.5rem"
     } else {
