@@ -87,7 +87,7 @@
 
   <main id="hello">
     <h1>
-      <sup>Thank you for visiting</sup><br/>
+      <sup>Thank You for Visiting</sup><br/>
       <i class="hsl">Your Drawing is Seems So Beautiful</i>
     </h1>
     <section>
