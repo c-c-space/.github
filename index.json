@@ -10,14 +10,6 @@
 
   "contents" : [
     {
-      "date" : "Colors and Symbols that Suits on You",
-      "name" : "自分の気持ちを知る・表す",
-      "url" : "/sign/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
       "date" : "Speech to Text to Text to Speech",
       "name" : "掲示板 Message Board",
       "url" : "/hello/",
@@ -26,7 +18,7 @@
       "note" : ""
     },
     {
-      "date" : "HTML graffiti",
+      "date" : "Thank You for Visiting",
       "name" : "Your Drawing is Seems So Beautiful",
       "url" : "/thankyou/",
       "type" : "news",
