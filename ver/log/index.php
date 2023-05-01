@@ -141,7 +141,7 @@ flock($fp, LOCK_SH);
         ?>
       </span>
     </li>
-    <li id="yourInfo" onclick="setLOG()">
+    <li id="yourInfo">
       <span>あなたの通信情報／ブラウザ等情報</span>
       <?php
       echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
@@ -156,7 +156,6 @@ flock($fp, LOCK_SH);
     <button type="submit">Access Log</button>
   </form>
   <script src="selectmonth.js"></script>
-  <script src="/js/log.js"></script>
 
   <video id="userMedia" autoplay playsinline></video>
 </body>
