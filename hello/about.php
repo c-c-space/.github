@@ -12,4 +12,4 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   ?>
 </p>
 <br/>
-<button type="button" id="enterBtn" onclick="setLOG()">Enter</button>
+<button type="button" class="color bgcolor" id="enterBtn" onclick="setLOG()">Enter</button>
