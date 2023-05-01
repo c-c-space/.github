@@ -4,7 +4,7 @@ $hqdn = $_SERVER["REMOTE_PORT"];
 $os = $_SERVER["HTTP_USER_AGENT"];
 ?>
 
-<p>Your Info</p>
+<p><u>Your Info</u></p>
 <p>
   <?php
   echo "IP <code id='ip'>" . $ip . "</code> | ";
