@@ -26,7 +26,7 @@
         <option value="afternoon">12:00:00 - 17:59:59</option>
         <option value="evening">18:00:00 - 23:59:59</option>
       </select>
-      <select>
+      <section hidden>
         <label for="bgcolor">Background Color</label>
         <select class="color bgcolor" id="bgcolor"></select>
         <br/>
@@ -39,7 +39,7 @@
           <option value="16px" selected>Medium</option>
           <option value="20px">Large</option>
         </select>
-      </select>
+      </section>
       <button class="color bgcolor" type="submit">GET</button>
     </form>
   </dialog>
