@@ -11,7 +11,7 @@ const stop = () => {
   recognition.stop();
   speechBtn.textContent = "Speech to Text";
   speechBtn.style.color = "#000";
-  speechBtn.style.background = "#fff";
+  speechBtn.style.background = "inherit";
 };
 
 const start = () => {
