@@ -5,7 +5,7 @@
       <code id="lastModified"></code>
     </h1>
     <h2>
-      <span class="realtimeuserscounter">
+      <span>
         <b><?php echo $post;?></b> Posts
       </span>
     </h2>
