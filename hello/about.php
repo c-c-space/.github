@@ -9,7 +9,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <?php
   echo "IP <code id='ip'>" . $ip . "</code> | ";
   echo "PORT <code id='hqdn'>" . $hqdn . "</code><br/>";
-  echo "<code id='os'>" . $os . "</code>";
+  echo "<small id='os'>" . $os . "</small>";
   ?>
 </p>
 <br/>
