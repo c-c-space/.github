@@ -27,17 +27,17 @@ document.addEventListener('readystatechange', event => {
     const logAll = document.querySelector('#log section')
     const lastModified = document.querySelector('#lastModified')
 
-    if(!localStorage.getItem('yourInfo')) {
-      document.querySelector('#now').remove()
+    if(localStorage.getItem('yourInfo')) {
+      document.querySelector('#now .controls').remove()
 
-      const backBtn = document.createElement('button')
-      backBtn.setAttribute('type','button')
-      backBtn.setAttribute('id','back-btn')
-      backBtn.setAttribute('onclick','location.replace("/")')
-      backBtn.innerText = 'creative-community.space'
-      mainLog.prepend(backBtn)
-
-      lastModified.innerHTML = document.URL
+      async function about() {
+        fetch('about.php')
+        .then(response => response.text())
+        .then(about => {
+          document.querySelector('#about').innerHTML = about
+        });
+      }
+      about();
 
       async function readmeMD() {
         fetch('readme.md')
@@ -47,6 +47,8 @@ document.addEventListener('readystatechange', event => {
         });
       }
       readmeMD();
+
+      lastModified.innerHTML = document.URL
 
       logAll.style.padding = "1rem 0.5rem"
     } else {
