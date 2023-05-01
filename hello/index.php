@@ -127,18 +127,18 @@
     <h3>掲示板 Message Board</h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
+    <label for="bgcolor">Background Color</label>
+    <select class="color bgcolor" id="bgcolor"></select>
+    <br/>
+    <label for="color">Color</label>
+    <select class="color bgcolor" id="color"></select>
+    <hr/>
     <label for="fontSize">Font Size</label>
     <select class="color bgcolor" id="fontSize">
       <option value="13px">Small</option>
       <option value="16px" selected>Medium</option>
       <option value="20px">Large</option>
     </select>
-    <hr/>
-    <label for="bgcolor">Background Color</label>
-    <select class="color bgcolor" id="bgcolor"></select>
-    <br/>
-    <label for="color">Color</label>
-    <select class="color bgcolor" id="color"></select>
   </dialog>
   <script src="/js/log.js"></script>
 

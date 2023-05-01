@@ -28,20 +28,6 @@
       </select>
       <button class="color bgcolor" type="submit">GET</button>
     </form>
-    <section hidden>
-      <label for="fontSize">Font Size</label>
-      <select class="color bgcolor" id="fontSize">
-        <option value="13px">Small</option>
-        <option value="16px" selected>Medium</option>
-        <option value="20px">Large</option>
-      </select>
-      <br/>
-      <label for="bgcolor">Background Color</label>
-      <select class="color bgcolor" id="bgcolor"></select>
-      <br/>
-      <label for="color">Color</label>
-      <select class="color bgcolor" id="color"></select>
-    </section>
   </dialog>
   <script src="/coding/yourinfo/jscolor.js"></script>
   <script src="../js/storage.js"></script>
