@@ -145,8 +145,8 @@ flock($fp, LOCK_SH);
       <span>あなたの通信情報／ブラウザ等情報</span>
       <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
       <?php
-      echo "<span><small id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</small>";
-      echo "<small id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</small></span>";
+      echo "<span><small id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</small>";
+      echo "<small id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</small></span>";
       echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
       ?>
     </li>
