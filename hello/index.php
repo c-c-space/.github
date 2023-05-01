@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="/js/index.js" async></script>
   <script src="js/readyState.js" async></script>
-
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
@@ -142,6 +140,7 @@
     <select class="color bgcolor" id="color"></select>
     <hr/>
     <section id="about"></section>
+    <br/>
     <button class="color bgcolor" id="closeButton">Close</button>
   </dialog>
 

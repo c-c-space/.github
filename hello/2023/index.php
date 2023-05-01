@@ -1,4 +1,4 @@
-<?php require('../js/head.php'); ?>
+<?php require('../php/head.php'); ?>
 <body>
   <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
@@ -11,22 +11,21 @@
     </nav>
   </header>
 
-  <?php require('../js/main.php'); ?>
+  <?php require('../php/main.php'); ?>
   <script src="../js/main.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>2023 | Message Board</h3>
+    <h3>掲示板 | Message Board</h3>
     <br/>
-    <form method="GET">
-      <label for="timeframe">Time Frame</label><br/>
-      <select class="color bgcolor" id="timeframe" name="timeframe">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
+      <select class="color bgcolor" name="timeframe">
+        <option selected disabled>時間帯 Time Frame</option>
         <option value="night">00:00:00 - 05:59:59</option>
         <option value="morning">06:00:00 - 11:59:59</option>
         <option value="afternoon">12:00:00 - 17:59:59</option>
         <option value="evening">18:00:00 - 23:59:59</option>
       </select>
-      <br/>
-      <button class="color bgcolor" type="submit">View The Collection</button>
+      <button class="color bgcolor" type="submit">GET</button>
     </form>
     <section hidden>
       <label for="fontSize">Font Size</label>
@@ -37,9 +36,7 @@
       </select>
       <br/>
       <label for="bgcolor">Background Color</label>
-      <select class="color bgcolor" id="bgcolor">
-        <option value="16px" selected>Medium</option>
-      </select>
+      <select class="color bgcolor" id="bgcolor"></select>
       <br/>
       <label for="color">Color</label>
       <select class="color bgcolor" id="color"></select>

@@ -17,10 +17,10 @@ document.addEventListener('readystatechange', event => {
     const greeting = document.querySelector('#log div h1 b')
 
     let timeframe = (new Date()).getHours()
-    if (timeframe <= 5) { greeting.innerText = "Good Night おやすみ" }	// 0時から5時
-    else if (timeframe <= 11) { greeting.innerText = "Good Moning おはよう" }	// 6時から11時
-    else if (timeframe <= 17) { greeting.innerText = "Hello こんにちは" }	// 12時から17時
-    else if (timeframe <= 22 ) { greeting.innerText = "Good Evening こんばんは" }	// 18時から22時
+    if (timeframe <= 5) { greeting.innerText = "Good Night おやすみ" }
+    else if (timeframe <= 11) { greeting.innerText = "Good Moning おはよう" }
+    else if (timeframe <= 17) { greeting.innerText = "Hello こんにちは" }
+    else if (timeframe <= 22 ) { greeting.innerText = "Good Evening こんばんは" }
     else { greeting.innerText = "Good Night おやすみ" }
 
     const mainLog = document.querySelector('#log')
@@ -54,7 +54,7 @@ document.addEventListener('readystatechange', event => {
       enterBtn.setAttribute('type','button')
       enterBtn.setAttribute('id','enter-btn')
       enterBtn.setAttribute('onclick','ChangeHidden()')
-      enterBtn.innerText = 'Speech to Text to Text to Speech'
+      enterBtn.innerText = '掲示板 Message Board'
       mainLog.prepend(enterBtn)
 
       lastModified.innerHTML =

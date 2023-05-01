@@ -22,7 +22,6 @@ window.addEventListener('load', (event) => {
   }
 
   const lastModified = document.querySelector('#lastModified');
-
   lastModified.innerHTML =
   'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>'
 });

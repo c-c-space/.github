@@ -18,9 +18,17 @@
       "note" : ""
     },
     {
-      "date" : "Colors and Symbols that Suits on You",
-      "name" : "自分の気持ちを知る・表す",
-      "url" : "/sign/",
+      "date" : "SpeechRecognition.js",
+      "name" : "音声認識 | Speech Recognition",
+      "url" : "/hello/recognition.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "SpeechSynthesis.js",
+      "name" : "音声合成 | Text to Speech",
+      "url" : "/hello/synthesis.html",
       "type" : "news",
       "caption" : "none",
       "note" : ""
