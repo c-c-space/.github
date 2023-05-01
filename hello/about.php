@@ -13,3 +13,6 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   ?>
 </p>
 <button id="enter-btn" type="button" class="color bgcolor" onclick="setLOG()">Enter</button>
+<hr/>
+<h3>このページについて</h3>
+<hr/>
