@@ -15,7 +15,7 @@
   <script src="../js/main.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>掲示板 | Message Board</h3>
+    <h3>2023 | Message Board</h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
     <form method="GET">
