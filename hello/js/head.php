@@ -42,7 +42,18 @@ function h($str) {
   <link rel="stylesheet" href="../css/log.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
   <style type="text/css">
-  #js-button,
+  #menu {
+    background: #000;
+  }
+
+  #js-button {
+    background: #fff;
+  }
+
+  #contents {
+    mix-blend-mode: difference;
+  }
+
   #contents a {
     filter: invert();
   }
