@@ -19,7 +19,7 @@
   }
   </style>
 </head>
-<body>
+<body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
@@ -44,10 +44,23 @@
         </u>
       </span>
     </li>
+    <li>
+      <span id="status">(Online or Offline?)</span>
+      <?php
+      echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
+      echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
+      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
+      ?>
+    </li>
     <li id="info">
       <span>
         <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
       </span>
+      <?php
+      echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
+      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
+      echo "<span>USER AGENT " . $_SERVER['HTTP_USER_AGENT'] . "</span>";
+      ?>
     </li>
   </ul>
 
@@ -78,6 +91,11 @@
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
     battery.style.display = "none"
+  }
+
+  function update(online) {
+    document.querySelector('#status').textContent =
+    online ? 'You are: Online' : 'You are: Offline';
   }
 
   async function about() {

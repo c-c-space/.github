@@ -15,26 +15,6 @@ if(localStorage.getItem('sign')) {
   log.prepend(sign)
 }
 
-if(!localStorage.getItem('yourInfo')) {
-} else {
-  document.body.setAttribute('ononline','update(true)')
-  document.body.setAttribute('onoffline','update(false)')
-  document.body.setAttribute('onload','update(navigator.onLine)')
-
-  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-  const info = document.querySelector("#info")
-  info.innerHTML += `
-  <span><u id="status">(Online or Offline?)</u></span>
-  <span>IP ${yourInfo.ip} | PORT ${yourInfo.port}</span>
-  <span>USER AGENT ${yourInfo.os}</span>
-  `
-
-  function update(online) {
-    document.querySelector('#status').textContent =
-    online ? 'You are: Online' : 'You are: Offline';
-  }
-}
-
 const newColorAll = document.querySelectorAll('#log li span')
 for (const newColor of newColorAll) {
   newColor.classList.add("color")
