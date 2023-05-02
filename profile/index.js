@@ -3,7 +3,6 @@ const info = document.querySelector('#info')
 if(localStorage.getItem('sign')) {
   const yourSign = JSON.parse(localStorage.getItem('sign'))
   const sign = document.createElement("li")
-  sign.setAttribute('id','sign')
   sign.innerHTML += `
   <span>自分の気持ちを知る・表す</span>
   <span>
