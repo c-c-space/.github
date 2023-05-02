@@ -59,11 +59,11 @@
 #update {
   appearance : none;
   background: transparent;
-  border: 0.09rem solid;
+  border: 0.1rem solid;
   border-radius: 2.5rem;
   color: #000;
-  font-size: 100%;
-  padding: 0.25rem 0.5rem;
+  font-size: 125%;
+  padding: 0.321rem 0.75rem;
   outline: none;
   transition: 1s;
 }
