@@ -31,25 +31,27 @@
     </nav>
   </header>
 
-  <ul id="log">
-    <li id="battery">
-      <span>バッテリー状態</span>
-      <span id="level"></span>
-      <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
-      <span>
-        <b id="charging"></b>
-        <u>
-          <i id="chargingTime"></i>
-          <i id="dischargingTime"></i>
-        </u>
-      </span>
-    </li>
-<li id="info">
-  <span>
-  <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
-  </span>
-</li>
-  </ul>
+  <main>
+    <ul id="log">
+      <li id="battery">
+        <span>バッテリー状態</span>
+        <span id="level"></span>
+        <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
+        <span>
+          <b id="charging"></b>
+          <u>
+            <i id="chargingTime"></i>
+            <i id="dischargingTime"></i>
+          </u>
+        </span>
+      </li>
+      <li id="info">
+        <span>
+          <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
+        </span>
+      </li>
+    </ul>
+  </main>
 
   <dialog id="modal" class="color bgcolor">
     <section id="about"></section>
