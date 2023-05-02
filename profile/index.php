@@ -49,7 +49,7 @@
       </span>
     </li>
     <li>
-      <span><button id="status" type="button" onclick="setLOG()">(Online or Offline?)</button></span>
+      <span><button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button></span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
       echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
