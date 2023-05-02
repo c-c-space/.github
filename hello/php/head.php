@@ -91,4 +91,10 @@ function h($str) {
     }
   }
   </style>
+
+  <script type="text/javascript">
+  if(!localStorage.getItem('yourInfo')) {
+    window.location.assign('/hello/');
+  }
+  </script>
 </head>
