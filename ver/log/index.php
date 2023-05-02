@@ -4,7 +4,6 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 $title = 'Access Log | creative-community.space';
-$description = 'アクセス履歴 | あなたの通信情報／ブラウザ等情報';
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
@@ -15,6 +14,8 @@ $month = date("m");
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
+
+$description = $year .' 年 '. $month .' 月 の アクセス履歴';
 
 $source_file = $year . $month . ".csv";
 $fp = fopen($source_file, 'r');
@@ -102,7 +103,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="/ver/log/" target="_parent">
         <i>Access Log</i>
-        <p>あなたの通信情報／ブラウザ等情報</p>
+        <p>アクセス履歴</p>
       </a>
       <a href="/hello/" target="_parent">
         <i>Speech to Text to Text to Speech</i>
