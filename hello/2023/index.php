@@ -38,7 +38,7 @@
       <button class="color bgcolor" type="submit">GET</button>
     </form>
   </dialog>
-  <script src="/coding/yourinfo/jscolor.js"></script>
-  <script src="../js/storage.js"></script>
+  <script src="../../profile/jscolor.js"></script>
+  <script src="../../profile/setStyles.js"></script>
 </body>
 </html>

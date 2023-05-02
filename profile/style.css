@@ -1,0 +1,172 @@
+body {
+  font-size: 1rem;
+  min-height: -webkit-fill-available;
+}
+
+body,
+h1,
+hr {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#log,
+#log button,
+#modal,
+#modal button,
+#modal select,
+#now select {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+#log,
+#log li {
+  padding: 0.25rem;
+}
+
+#log,
+#now,
+#modal {
+  box-sizing: border-box;
+  position: fixed;
+  margin: 0;
+}
+
+#log * {
+  box-sizing: border-box;
+}
+
+#log,
+#now,
+#battery span:last-of-type {
+  display: flex;
+}
+
+#log {
+  align-items: stretch;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: start;
+  list-style: none;
+  overflow: auto;
+  z-index: 2;
+}
+
+#now,
+#battery span:last-of-type {
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#now {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+#log li {
+  font-size: 75%;
+}
+
+#log li:last-of-type,
+#log button,
+#modal button,
+#modal select,
+#now select {
+  font-size: 100%;
+}
+
+#level,
+h2,
+#modal font {
+  font-size: 125%;
+}
+
+#modal small {
+  font-weight: 500;
+}
+
+#log li {
+  flex: 1 250px;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+  max-width: 100%;
+}
+
+#log li:last-of-type {
+  flex: 2 500px;
+}
+
+#log li span {
+  display: block;
+  padding: 0.25rem;
+  word-wrap: break-word;
+}
+
+#log li span:first-of-type {
+  float: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#log li span:nth-of-type(2),
+#log li span:nth-of-type(3) {
+  float: right;
+}
+
+#log li span:last-of-type {
+  clear: both;
+  width: 100%;
+}
+
+form select,
+#log button,
+#modal button,
+#modal select,
+#now select {
+  appearance : none;
+  outline: none;
+  border: solid 2px;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  pointer-events: auto;
+  user-select: auto;
+  cursor: pointer;
+}
+
+#modal {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#closeButton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+meter {
+  width: 2.5rem;
+  height: 1.25rem;
+}
+
+meter::-webkit-meter-horizontal-bar {
+  border: none;
+}
+
+meter::-webkit-meter-horizontal-optimum-value {
+  background: blue;
+}
+
+meter::-webkit-meter-horizontal-suboptimal-value {
+  background: yellow;
+}
+
+meter::-webkit-meter-horizontal-even-less-good-value {
+  background: red;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="/js/index.js" async></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../ver/log/style.css" />
+</head>
+<body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
+  <script src="/js/menu.js"></script>
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/" target="_parent">
+        <p><b>Index | creative-community.space</b></p>
+        <u>準備中</u>
+      </a>
+    </nav>
+  </header>
+
+  <ul id="log">
+    <li id="battery">
+      <span>バッテリー状態</span>
+      <span id="level"></span>
+      <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
+      <span>
+        <b id="charging"></b>
+        <u>
+          <i id="chargingTime"></i>
+          <i id="dischargingTime"></i>
+        </u>
+      </span>
+    </li>
+    <li id="sign"></li>
+    <li id="info"></li>
+  </ul>
+
+  <dialog id="modal" class="color bgcolor">
+    <section id="about"></section>
+    <button class="color bgcolor" id="closeButton">Close 閉じる</button>
+  </dialog>
+
+  <nav id="now">
+    <section>
+      <select class="color bgcolor" id="bgcolor">
+        <option selected disabled>Background Color</option>
+      </select>
+      <select class="color bgcolor" id="color">
+        <option selected disabled>Color</option>
+      </select>
+    </section>
+    <section>
+      <select class="color bgcolor" id="fontSize">
+        <option selected disabled>Font Size</option>
+        <option value="13px">Small</option>
+        <option value="16px">Medium</option>
+        <option value="20px">Large</option>
+      </select>
+    </section>
+  </nav>
+
+  <script type="text/javascript">
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const battery = document.querySelector('#battery')
+    battery.style.display = "none"
+  }
+
+  async function about() {
+    fetch('about.html')
+    .then(response => response.text())
+    .then(about => {
+      document.querySelector('#about').innerHTML = about
+    });
+  }
+  about();
+
+  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
+  const info = document.querySelector('#info')
+  info.innerHTML += `
+  <span>
+  <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
+  </span>
+  `
+
+  info.innerHTML += `
+  <span><u id="status">(Online or Offline?)</u></span>
+  <span>IP ${yourInfo.ip} | PORT ${yourInfo.port}</span>
+  <span>USER AGENT ${yourInfo.os}</span>
+  `
+
+  const yourSign = JSON.parse(localStorage.getItem('sign'))
+  const sign = document.querySelector('#sign')
+  sign.innerHTML += `
+  <span>自分の気持ちを知る・表す</span>
+  <span>
+  <button class="color bgcolor" onclick="location.replace('/sign/')">Sign</button>
+  </span>
+  <span></span>
+  <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
+  `
+
+  function update(online) {
+    document.querySelector('#status').textContent =
+    online ? 'You are: Online' : 'You are: Offline';
+  }
+
+  const newColorAll = document.querySelectorAll('#log li span')
+  for (const newColor of newColorAll) {
+    newColor.classList.add("color")
+  }
+  </script>
+
+  <script src="setStyles.js"></script>
+  <script src="jscolor.js"></script>
+  <script src="battery.js"></script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 *ウェブ音声 API (Web Speech API)* で **音声をテキストに変換・テキストを音声に変換**
 投稿を記録・内容を生成します。
 
-### [Speech Recognition](/hello/js/recognition.html)
-### [Text to Speech](/hello/js/synthesis.html)
+### [Speech Recognition](recognition.html)
+### [Text to Speech](synthesis.html)
 
 ---
 
