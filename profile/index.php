@@ -54,7 +54,7 @@
     </li>
     <li id="info">
       <span>
-        <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
+        <button id="openModal" class="color bgcolor">通信情報／ブラウザ等情報</button>
       </span>
       <?php
       echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
