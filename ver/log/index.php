@@ -97,12 +97,9 @@ flock($fp, LOCK_SH);
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/ver/" target="_parent">
-        <p><b>Index | creative-community.space</b></p>
-        <u>更新情報</u>
-      </a>
       <a href="/ver/log/" target="_parent">
-        <p>アクセス履歴 | Access Log</p>
+        <p><b>Access Log | creative-community.space</b></p>
+        <u>アクセス履歴</u>
       </a>
       <a href="/hello/" target="_parent">
         <i>Speech to Text to Text to Speech</i>
