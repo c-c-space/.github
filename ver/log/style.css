@@ -1,10 +1,8 @@
-#yourinfo strong,
 #log li:nth-last-child(1) span:first-of-type {
   font-family: "ipag", "Yu Gothic", "游ゴシック体", monospace;
   transform: scale(1, 1.25);
 }
 
-#yourinfo p,
 #log,
 #update,
 #now select,
@@ -12,22 +10,10 @@
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#yourinfo strong,
-#yourinfo p {
-  display: block;
-  font-size: 150%;
-}
-
-#yourinfo code {
-  font-family: inherit;
-}
-
-#yourinfo,
 #log li span {
   color: #000;
 }
 
-#yourinfo,
 #log li span,
 #now {
   pointer-events: none;
@@ -40,15 +26,6 @@
   user-select: text;
 }
 
-#yourinfo form {
-  padding: 1.25rem 1rem;
-}
-
-#yourinfo span {
-  display: block;
-}
-
-#yourinfo form section,
 #now {
   box-sizing: border-box;
   display: flex;
@@ -176,15 +153,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  #yourinfo form {
-    padding: 3.33% 2.5%;
-  }
-
-  #yourinfo strong,
-  #yourinfo p {
-    font-size: 4vw;
-  }
-
   #now time {
     font-size: 4.5vw;
     padding: 2.5%;
