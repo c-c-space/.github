@@ -30,6 +30,14 @@ document.addEventListener('readystatechange', event => {
     if(!localStorage.getItem('yourInfo')) {
       document.querySelector('#now .controls').remove()
 
+      const backBtn = document.createElement('button')
+      backBtn.setAttribute('type','button')
+      backBtn.setAttribute('id','backBtn')
+      backBtn.setAttribute('onclick','location.replace("/")')
+      backBtn.classList.add("color")
+      backBtn.innerText = 'creative-community.space'
+      document.querySelector('#now').prepend(backBtn)
+
       async function about() {
         fetch('about.php')
         .then(response => response.text())

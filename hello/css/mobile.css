@@ -26,6 +26,7 @@ hr {
 #hello input[type="button"],
 #hello select,
 #openModal,
+#backBtn,
 .controls input[type="button"] {
   border: 0.25vw solid;
   border-radius: 4.5vw;

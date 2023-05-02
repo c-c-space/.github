@@ -38,6 +38,7 @@ button {
 
 #hello input[type="button"],
 #hello select,
+#backBtn,
 #openModal,
 .controls input[type="button"] {
   border: 0.1rem solid;
