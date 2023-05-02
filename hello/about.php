@@ -17,5 +17,5 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   echo "<small id='os'>" . $os . "</small>";
   ?>
 </p>
-<button id="enter-btn" type="button" class="color bgcolor" onclick="setLOG()">Enter</button>
+<button id="enterBtn" type="button" class="color bgcolor" onclick="setLOG()">Enter</button>
 <hr/>

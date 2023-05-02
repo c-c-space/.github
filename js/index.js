@@ -66,8 +66,8 @@ function indexHead(obj) {
   const twitterIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
   twitterIMG.setAttribute("name", "twitter:image");
-  ogIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
-  twitterIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
+  ogIMG.setAttribute("content", obj['src']);
+  twitterIMG.setAttribute("content", obj['src']);
   head.appendChild(ogIMG);
   head.appendChild(twitterIMG);
 
@@ -82,7 +82,7 @@ function indexHead(obj) {
   head.appendChild(ogURL);
 
   const iconCC = document.createElement( "link" );
-  iconCC.href = "/profile/icon.png";
+  iconCC.href = "/ver/icon.png";
   iconCC.type = "text/css";
   iconCC.rel = "icon";
   head.appendChild(iconCC);

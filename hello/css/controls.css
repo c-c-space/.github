@@ -55,6 +55,7 @@ button {
 
 #hello input[type="submit"],
 #hello button,
+#enterBtn,
 #enter-btn,
 #back-btn {
   border: 0.1rem solid;

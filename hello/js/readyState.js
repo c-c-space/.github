@@ -48,9 +48,8 @@ document.addEventListener('readystatechange', event => {
       }
       readmeMD();
 
-      lastModified.innerHTML = navigator.userAgent
-
       logAll.style.padding = "1rem 0.5rem"
+      lastModified.innerHTML = navigator.userAgent
     } else {
       const enterBtn = document.createElement('button')
       enterBtn.setAttribute('type','button')

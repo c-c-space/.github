@@ -41,8 +41,8 @@ $os = $_SERVER["HTTP_USER_AGENT"];
     mix-blend-mode: difference;
   }
   </style>
-  <link rel="icon" href="profile/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="profile/apple.png" sizes="180x180" type="image/png">
+  <link rel="icon" href="ver/icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
 <body>
   <script src="/js/menu.js"></script>
@@ -103,7 +103,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   </main>
 
   <section id="you">
-    <img class="hsl" src="profile/qr.png">
+    <img class="hsl" src="ver/qr.png">
     <div>
       <p class="cc">creative-community.space</p>
       <p class="cc">come on join us :)</p>
