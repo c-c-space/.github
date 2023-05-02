@@ -35,8 +35,7 @@ hr {
 }
 
 #log,
-#modal,
-#closeButton {
+#modal {
   position: fixed;
   margin: 0;
 }
@@ -110,8 +109,7 @@ form select,
 }
 
 #closeButton {
-  top: 1rem;
-  right: 1rem;
+  float: right;
 }
 
 meter {
