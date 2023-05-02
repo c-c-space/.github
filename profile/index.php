@@ -81,7 +81,7 @@
     <section>
       <select class="color bgcolor" id="fontSize">
         <option value="13px">Small</option>
-        <option value="16px">Medium</option>
+        <option value="16px" selected>Medium</option>
         <option value="20px">Large</option>
       </select>
     </section>
