@@ -105,6 +105,10 @@ flock($fp, LOCK_SH);
         <p><b>Access Log | creative-community.space</b></p>
         <u>アクセス履歴</u>
       </a>
+      <a href="/profile/" target="_parent">
+        <i>The Information About Network & Browser</i>
+        <p>通信情報／ブラウザ等情報</p>
+      </a>
       <a href="/hello/" target="_parent">
         <i>Speech to Text to Text to Speech</i>
         <p>掲示板 Message Board</p>
