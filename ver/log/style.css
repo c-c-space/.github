@@ -114,6 +114,7 @@
 #log li span {
   display: block;
   margin: 0.25rem;
+  word-wrap: break-word;
 }
 
 #log li span:first-of-type {

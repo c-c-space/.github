@@ -3,42 +3,45 @@ body {
   min-height: -webkit-fill-available;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body,
-h1,
-hr {
-  border: none;
+h1 {
   padding: 0;
   margin: 0;
 }
 
-#log,
+hr {
+  border: none;
+  margin: 1rem;
+}
+
 #log button,
 #modal,
 #modal button,
-#modal select,
-#now select {
+#modal select {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#log,
-#log li {
+#now,
+#log li span {
   padding: 0.25rem;
 }
 
+#now select {
+  margin: 0.25rem;
+}
+
 #log,
-#now,
-#modal {
-  box-sizing: border-box;
+#modal,
+#closeButton {
   position: fixed;
   margin: 0;
 }
 
-#log * {
-  box-sizing: border-box;
-}
-
 #log,
-#now,
 #battery span:last-of-type {
   display: flex;
 }
@@ -52,23 +55,11 @@ hr {
   z-index: 2;
 }
 
-#now,
 #battery span:last-of-type {
   flex-flow: row;
   justify-content: space-between;
   padding: 0.5rem;
   margin: 0;
-}
-
-#now {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-}
-
-#log li {
-  font-size: 75%;
 }
 
 #log li:last-of-type,
@@ -89,38 +80,8 @@ h2,
   font-weight: 500;
 }
 
-#log li {
-  flex: 1 250px;
-  margin: 0;
-  pointer-events: none;
-  user-select: none;
-  max-width: 100%;
-}
-
 #log li:last-of-type {
   flex: 2 500px;
-}
-
-#log li span {
-  display: block;
-  padding: 0.25rem;
-  word-wrap: break-word;
-}
-
-#log li span:first-of-type {
-  float: left;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-#log li span:nth-of-type(2),
-#log li span:nth-of-type(3) {
-  float: right;
-}
-
-#log li span:last-of-type {
-  clear: both;
-  width: 100%;
 }
 
 form select,
@@ -149,7 +110,6 @@ form select,
 }
 
 #closeButton {
-  position: fixed;
   top: 1rem;
   right: 1rem;
 }
