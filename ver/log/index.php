@@ -128,27 +128,27 @@ flock($fp, LOCK_SH);
     fclose($fp);
     ?>
     <li>
-      <span>アクセス履歴</span>
-      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
       <span>
         <?php
         echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
         ?>
       </span>
+      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
+      <span>アクセス履歴</span>
       <span>
         <b><?php echo sizeof(file($source_file)); ?></b>
         people entered
         <?php
         echo $_SERVER['HTTPS'] . " ";
         echo $_SERVER['SERVER_NAME'] . "<br/>";
+        echo $_SERVER['SERVER_PROTOCOL'] . " ";
 
         $hostname = $_SERVER['SERVER_NAME'];
         $hostip = gethostbyname($hostname);
         echo $hostip . " ";
 
         echo $_SERVER['SERVER_PORT'] . " ";
-        echo $_SERVER['SERVER_SOFTWARE'] . " ";
-        echo $_SERVER['SERVER_PROTOCOL'];
+        echo $_SERVER['SERVER_SOFTWARE'];
         ?>
       </span>
     </li>

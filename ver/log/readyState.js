@@ -13,6 +13,8 @@ document.addEventListener('readystatechange', event => {
       }
       const nowForm = document.querySelector('form');
       nowForm.innerHTML = `<button type="button" onclick="location.replace('/')">creative-community.space</button>`
+    } else {
+      document.querySelector('#update').remove()
     }
   } else if (event.target.readyState === 'complete') {
     const userMedia = document.querySelector("#userMedia")
