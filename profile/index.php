@@ -45,7 +45,7 @@
       </span>
     </li>
     <li>
-      <span id="status">(Online or Offline?)</span>
+      <span><b id="status">(Online or Offline?)</b></span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
       echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
