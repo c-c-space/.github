@@ -56,10 +56,13 @@ h3 {
   margin: 0.25rem;
 }
 
-#log code {
+#log h1 code {
   display: block;
-  font-size: 55%;
   line-height: 125%;
+}
+
+#log code {
+  font-size: 55%;
   word-break: break-all;
 }
 
