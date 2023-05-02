@@ -17,6 +17,10 @@ if(localStorage.getItem('sign')) {
 
 if(!localStorage.getItem('yourInfo')) {
 } else {
+  document.body.setAttribute('ononline','update(true)')
+  document.body.setAttribute('onoffline','update(false)')
+  document.body.setAttribute('onload','update(navigator.onLine)')
+
   const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
   const info = document.querySelector("#info")
   info.innerHTML += `
