@@ -77,6 +77,11 @@ flock($fp, LOCK_SH);
     transition: all 500ms ease;
   }
 
+  body {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
   @media print {
     body {
       height: 100vh;
