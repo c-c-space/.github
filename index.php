@@ -40,39 +40,6 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   #userMedia {
     mix-blend-mode: difference;
   }
-
-  #modal {
-    position: fixed;
-    margin: 0;
-  }
-
-  #modal {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: auto;
-    width: 95%;
-    height: 95%;
-    max-width: 750px;
-  }
-
-  #modal font {
-    font-size: 125%;
-  }
-
-  #modal small {
-    font-weight: 500;
-  }
-
-  #modal #closeButton {
-    float: right;
-  }
-
-  #modal,
-  #modal button,
-  #modal select {
-    font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
-  }
   </style>
   <link rel="icon" href="ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -119,7 +86,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
 
   <main id="yourinfo" hidden>
     <form method="post">
-      <button type="button" id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
+      <strong>あなたの通信情報／ブラウザ等情報</strong>
       <p>
         <?php
         echo "<span>IP <code id='ip'>" . $ip . "</code></span>";
@@ -156,41 +123,11 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <footer id="now" class="hsl"></footer>
   <script src="js/now.js"></script>
 
-  <dialog id="modal" class="color bgcolor">
-    <button class="color bgcolor" id="closeButton">Close 閉じる</button>
-    <section id="about"></section>
-  </dialog>
-
   <div id="sketch">
     <script src="thankyou/hsl.js"></script>
     <script src="thankyou/sketch.js"></script>
   </div>
   <script type="text/javascript">
-  async function about() {
-    fetch('profile/about.html')
-    .then(response => response.text())
-    .then(about => {
-      document.querySelector('#about').innerHTML = about
-    });
-  }
-  about();
-
-  const dialogModal = document.querySelector('#modal');
-  const openModal = document.querySelector('#openModal');
-
-  openModal.addEventListener('click', function onModal() {
-    if (typeof dialogModal.showModal === "function") {
-      dialogModal.showModal();
-    } else {
-      alert("The <dialog> API is not supported by this browser");
-    }
-  });
-
-  const closeButton = document.querySelector('#closeButton');
-  closeButton.addEventListener('click', () => {
-    dialogModal.close();
-  });
-
   const COLOURS = ['#EEE'];
   let radius = 0;
 
