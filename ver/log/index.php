@@ -126,13 +126,15 @@ flock($fp, LOCK_SH);
     }
     fclose($fp);
     ?>
-    <li class="log">
-      <?php
-      echo "<span>アクセス履歴</span>";
-      echo "<span><b>" . $year . "</b> 年</span>";
-      echo "<span><b>" . $month . "</b> 月</span>";
-      ?>
-      <span class="realtimeuserscounter">
+    <li>
+      <span>アクセス履歴</span>
+      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
+      <span>
+        <?php
+        echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
+        ?>
+      </span>
+      <span>
         <b><?php echo sizeof(file($source_file)); ?></b>
         people entered
         <?php
@@ -148,15 +150,6 @@ flock($fp, LOCK_SH);
         echo $_SERVER['SERVER_SOFTWARE'];
         ?>
       </span>
-    </li>
-    <li id="yourInfo">
-      <span>あなたの通信情報／ブラウザ等情報</span>
-      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
-      <?php
-      echo "<span><small id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</small>";
-      echo "<small id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</small></span>";
-      echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
-      ?>
     </li>
   </ul>
   <script src="/js/log.js"></script>
