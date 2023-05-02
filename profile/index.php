@@ -92,6 +92,11 @@
   </nav>
 
   <script type="text/javascript">
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const battery = document.querySelector('#battery')
+    battery.style.display = "none"
+  }
+
   function update(online) {
     document.querySelector('#status').textContent =
     online ? 'You are: Online' : 'You are: Offline';
