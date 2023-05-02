@@ -18,23 +18,11 @@ if(localStorage.getItem('sign')) {
 if(!localStorage.getItem('yourInfo')) {
 } else {
   const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
-  const info = document.createElement("li")
-  info.setAttribute('id','info')
+  const info = document.querySelector("#info")
   info.innerHTML += `
-  <span>
-  <button id="openModal" class="color bgcolor">あなたの通信情報／ブラウザ等情報</button>
-  </span>
-  <span><u id="status">(Online or Offline?)</u></span>
   <span>IP ${yourInfo.ip} | PORT ${yourInfo.port}</span>
   <span>USER AGENT ${yourInfo.os}</span>
   `
-
-  function update(online) {
-    document.querySelector('#status').textContent =
-    online ? 'You are: Online' : 'You are: Offline';
-  }
-
-  log.appendChild(info)
 }
 
 const newColorAll = document.querySelectorAll('#log li span')
