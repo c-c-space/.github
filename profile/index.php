@@ -29,8 +29,8 @@
     <button id="js-button"><b></b></button>
     <nav id="contents">
       <a href="/" target="_parent">
-        <p><b>Index | creative-community.space</b></p>
-        <u>準備中</u>
+        <p><b>creative-community.space</b></p>
+        <u>Index</u>
       </a>
     </nav>
   </header>
@@ -49,7 +49,7 @@
       </span>
     </li>
     <li>
-      <span><b id="status">(Online or Offline?)</b></span>
+      <span><button id="status" type="button" onclick="setLOG()">(Online or Offline?)</button></span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
       echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
@@ -61,12 +61,17 @@
         <button id="openModal" class="color bgcolor">通信情報／ブラウザ等情報</button>
       </span>
       <?php
-      echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
-      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
-      echo "<span>USER AGENT " . $_SERVER['HTTP_USER_AGENT'] . "</span>";
+      $ip = $_SERVER["REMOTE_ADDR"];
+      $hqdn = $_SERVER["REMOTE_PORT"];
+      $os = $_SERVER["HTTP_USER_AGENT"];
+
+      echo "<span>IP <code id='ip'>" . $ip . "</code></span>";
+      echo "<span>PORT <code id='hqdn'>" . $hqdn . "</code></span>";
+      echo "<span>USER AGENT <code id='os'>" . $os . "</code></span>";
       ?>
     </li>
   </ul>
+  <script src="../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <button class="color bgcolor" id="closeButton">Close 閉じる</button>
