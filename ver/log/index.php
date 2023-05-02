@@ -66,8 +66,7 @@ flock($fp, LOCK_SH);
     filter: blur(0.25rem);
   }
 
-  #log li:nth-last-child(1),
-  #log li:nth-last-child(2) {
+  #log li:nth-last-child(1) {
     filter: blur(0);
   }
 
