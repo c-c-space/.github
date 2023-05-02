@@ -16,7 +16,6 @@ if(localStorage.getItem('sign')) {
 }
 
 if(!localStorage.getItem('yourInfo')) {
-  location.replace("/")
 } else {
   const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
   const info = document.createElement("li")
