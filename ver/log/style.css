@@ -1,3 +1,11 @@
+body {
+  min-height: -webkit-fill-available;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #log li:nth-last-child(1) span:first-of-type {
   font-family: "ipag", "Yu Gothic", "游ゴシック体", monospace;
   transform: scale(1, 1.25);
