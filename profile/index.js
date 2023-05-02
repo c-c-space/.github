@@ -12,7 +12,7 @@ if(localStorage.getItem('sign')) {
   <span></span>
   <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
   `
-  info.after(before)
+  info.before(sign)
 }
 
 const newColorAll = document.querySelectorAll('#log li span')
