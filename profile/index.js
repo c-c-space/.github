@@ -4,7 +4,7 @@ if(localStorage.getItem('geolocation')) {
   const yourGEO = JSON.parse(localStorage.getItem('geolocation'))
   const geolocation = document.createElement("li")
   geolocation.innerHTML += `
-  <span>現在地</span>
+  <span>行ったことのない場所へ行く</span>
   <span>
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
