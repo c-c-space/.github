@@ -79,8 +79,8 @@ hr {
   font-size: 100%;
 }
 
-#level,
 h2,
+#level,
 #modal font {
   font-size: 125%;
 }
@@ -145,6 +145,7 @@ form select,
   overflow: auto;
   width: 95%;
   height: 95%;
+  max-width: 750px;
 }
 
 #closeButton {
