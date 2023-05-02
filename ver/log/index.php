@@ -102,8 +102,7 @@ flock($fp, LOCK_SH);
         <u>更新情報</u>
       </a>
       <a href="/ver/log/" target="_parent">
-        <i>Access Log</i>
-        <p>アクセス履歴</p>
+        <p>アクセス履歴 | Access Log</p>
       </a>
       <a href="/hello/" target="_parent">
         <i>Speech to Text to Text to Speech</i>
