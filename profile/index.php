@@ -17,6 +17,10 @@
   header {
     mix-blend-mode: difference;
   }
+
+  #log span {
+    word-break: break-all;
+  }
   </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
