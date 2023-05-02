@@ -140,7 +140,6 @@ flock($fp, LOCK_SH);
         people entered
         <?php
         echo $_SERVER['HTTPS'] . " ";
-        echo $_SERVER['SERVER_PROTOCOL'] . " ";
         echo $_SERVER['SERVER_NAME'] . "<br/>";
 
         $hostname = $_SERVER['SERVER_NAME'];
@@ -148,7 +147,8 @@ flock($fp, LOCK_SH);
         echo $hostip . " ";
 
         echo $_SERVER['SERVER_PORT'] . " ";
-        echo $_SERVER['SERVER_SOFTWARE'];
+        echo $_SERVER['SERVER_SOFTWARE'] . " ";
+        echo $_SERVER['SERVER_PROTOCOL'];
         ?>
       </span>
     </li>
