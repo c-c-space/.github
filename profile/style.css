@@ -143,8 +143,8 @@ form select,
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
-  max-width: 95%;
-  max-height: 95%;
+  width: 95%;
+  height: 95%;
 }
 
 #closeButton {
