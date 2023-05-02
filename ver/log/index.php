@@ -117,6 +117,14 @@ flock($fp, LOCK_SH);
   </header>
 
   <ul id="log" class="hidden">
+    <li hidden>
+      <span>Your Info</span>
+      <?php
+      echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
+      echo "<span id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</span>";
+      echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
+      ?>
+    </li>
     <?php
     while ($line = fgetcsv($fp)) {
       echo "<li class='log'>";
