@@ -57,7 +57,9 @@ h3 {
 }
 
 #log code {
+  display: block;
   font-size: 55%;
+  line-height: 125%;
   word-break: break-all;
 }
 
