@@ -28,6 +28,12 @@ if(!localStorage.getItem('yourInfo')) {
   <span>IP ${yourInfo.ip} | PORT ${yourInfo.port}</span>
   <span>USER AGENT ${yourInfo.os}</span>
   `
+
+  function update(online) {
+    document.querySelector('#status').textContent =
+    online ? 'You are: Online' : 'You are: Offline';
+  }
+
   log.appendChild(info)
 }
 
