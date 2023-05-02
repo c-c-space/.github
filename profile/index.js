@@ -1,4 +1,4 @@
-const battery = document.querySelector('#battery')
+const info = document.querySelector('#info')
 
 if(localStorage.getItem('sign')) {
   const yourSign = JSON.parse(localStorage.getItem('sign'))
@@ -12,7 +12,7 @@ if(localStorage.getItem('sign')) {
   <span></span>
   <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
   `
-  battery.after(sign)
+  info.after(before)
 }
 
 const newColorAll = document.querySelectorAll('#log li span')
