@@ -24,7 +24,8 @@ hr {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#now {
+#now,
+#log li span {
   padding: 0.25rem;
 }
 
