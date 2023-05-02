@@ -130,7 +130,7 @@ flock($fp, LOCK_SH);
     <li>
       <span>
         <?php
-        echo $year . " 年 " . $month . " 月";
+        echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
         ?>
       </span>
       <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
