@@ -2,8 +2,7 @@
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 
-function h($str)
-{
+function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 ?>
@@ -70,25 +69,7 @@ function h($str)
     <section class="col">
       <u>creative-community.space</u><br/>
       <br/>
-      <?php
-      $sp_file = "csv/special.csv";
-      $special = fopen($sp_file, 'r');
-      flock($special, LOCK_SH);
-
-      while ($sp = fgetcsv($special)) {
-        $spAll[] = $sp;
-      }
-      ?>
-      <?php if (!empty($spAll)) : ?>
-        <?php foreach ($spAll as $sp) : ?>
-          <i><?= h($sp[0]) ?></i><br/>
-          <a href="<?= h($sp[2]) ?>"><?= h($sp[1]) ?></a><br/>
-          <small style="display:<?= h($sp[3]) ?>;"><?= h($sp[4]) ?></small>
-          <br/>
-        <?php endforeach; ?>
-      <?php else : ?>
-      <?php endif; ?>
-      <br/>
+      <?php require('theme.html'); ?>
     </section>
     <section class="col">
       <u>New Contents</u><br/>
