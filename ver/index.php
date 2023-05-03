@@ -61,6 +61,7 @@ function h($str) {
   #rolling small {
     font-size: 55%;
     margin: 0;
+    line-height: 75%;
   }
   </style>
 </head>
