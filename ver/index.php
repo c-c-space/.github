@@ -39,7 +39,7 @@ function h($str) {
   }
 
   #rolling b {
-    font-size: 111%;
+    font-size: 120%;
     font-style: italic;
   }
 
