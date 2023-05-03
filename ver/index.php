@@ -81,7 +81,7 @@ function h($str) {
     <section class="col">
       <u>creative-community.space</u><br/>
       <br/>
-      <?php require('theme.html'); ?>
+      <?php require('readme.html'); ?>
     </section>
     <section class="col">
       <u>New Contents</u><br/>
