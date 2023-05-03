@@ -53,11 +53,11 @@ function h($str) {
     font-size: 90%;
   }
 
-  #rolling strong,
   #rolling u {
     font-size: 75%;
   }
 
+  #rolling strong,
   #rolling small {
     font-size: 55%;
     margin: 0;
