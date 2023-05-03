@@ -41,6 +41,10 @@ function h($str) {
   #rolling b {
     font-size: 111%;
     font-style: italic;
+  }
+
+  #rolling b,
+  #rolling strong {
     font-weight: 500;
   }
 
@@ -49,6 +53,7 @@ function h($str) {
     font-size: 90%;
   }
 
+  #rolling strong,
   #rolling u {
     font-size: 75%;
   }
