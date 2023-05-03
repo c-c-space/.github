@@ -78,7 +78,7 @@ function h($str) {
   </header>
 
   <main id="rolling">
-    <section class="col">
+    <section class="col" style="width="45%">
       <u>creative-community.space</u><br/>
       <br/>
       <?php require('theme.html'); ?>
