@@ -83,7 +83,7 @@ function h($str) {
   </header>
 
   <main id="rolling">
-    <section class="col" style="width:50vw;">
+    <section class="col">
       <u>creative-community.space</u><br/>
       <br/>
       <?php require('about.html'); ?>
