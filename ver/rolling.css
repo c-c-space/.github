@@ -29,7 +29,8 @@ body {
   width: 50%;
 }
 
-#rolling :nth-child(2) {
+#rolling :nth-child(2),
+#rolling :nth-child(3) {
   width: 25%;
 }
 
