@@ -32,11 +32,7 @@ if(localStorage.getItem('sign')) {
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
   const init = function() {
-    document.getElementById('network').textContent += ' Network Information: ' + connectionInfo.type;
-    document.getElementById('network').textContent += ' ' + connectionInfo.effectiveType;
-    document.getElementById('network').textContent += ' ' + connectionInfo.downlink + ' Mb/s';
-    document.getElementById('network').textContent += ' ' + connectionInfo.downlinkMax + ' Mb/s';
-    document.getElementById('network').textContent += ' ' + connectionInfo.rtt + ' ms';
+    document.getElementById('network').innerHTML = 'Network Type <b>' + connectionInfo.effectiveType + '</b> | Downlink <b>' + connectionInfo.downlink + '</b> Mb/s' + ' | RTT <b>' + connectionInfo.rtt + '</b> ms';
   };
   init();
 
@@ -81,7 +77,7 @@ function windowScreen() {
 
 const memory = navigator.deviceMemory
 const hardware = navigator.hardwareConcurrency
-document.querySelector('#navigator').innerText = `This device has at least ${memory} GiB of RAM | ${hardware} CPU available.`
+document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`
 
 
 const newColorAll = document.querySelectorAll('#log li span')
