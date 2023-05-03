@@ -54,8 +54,8 @@ function h($str) {
     font-size: 90%;
   }
 
-  #rolling i {
-    margin-bottom: 1vw;
+  #rolling a {
+    margin: 1vw 0;
   }
 
   #rolling u {
