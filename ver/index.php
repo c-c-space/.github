@@ -17,10 +17,19 @@ function h($str) {
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
-  #rolling :first-child,
-  #rolling :nth-child(2),
-  #rolling :nth-child(3) {
-    width: 33.333%;
+  #rolling {
+    display: flex;
+    font-size: 2.5vw;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+    position: fixed;
+    height: 100%;
+  }
+
+  #rolling .col {
+    width: -webkit-calc(100% / 3);
+  	width: calc(100% / 3);
   }
 
   #rolling a,
