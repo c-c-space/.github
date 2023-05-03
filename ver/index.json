@@ -9,21 +9,6 @@
   "src" : "card.png",
 
   "contents" : [
-    {
-      "date" : "7.23 - 8.21.2022",
-      "name" : "The Things I (We) Own, in 3D",
-      "url" : "/org/3d/",
-      "type" : "news",
-      "caption" : "inline-block",
-      "note" : "at BnA Alter Museum"
-    },
-    {
-      "date" : "10.10 - 30.2021",
-      "name" : "展覧会「新しい生活を集める」",
-      "url" : "/sp/",
-      "type" : "news",
-      "caption" : "inline-block",
-      "note" : "at 音ビル"
-    }
+    
   ]
 }

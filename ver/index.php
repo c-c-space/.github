@@ -61,7 +61,7 @@ function h($str)
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/ver/" target="_parent">
+      <a href="#" onclick="window.location.reload();">
         <p><b>Index | creative-community.space</b></p>
         <u>更新履歴</u>
       </a>
