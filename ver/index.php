@@ -21,6 +21,11 @@ function h($str) {
     width: 40%;
   }
 
+  #rolling :nth-child(2),
+  #rolling :nth-child(3) {
+    width: 25%;
+  }
+
   #rolling a,
   #rolling u,
   #rolling i {
