@@ -69,7 +69,30 @@ function h($str)
   </header>
 
   <main id="rolling">
-    <section class="col hsl">
+    <section class="col">
+      <u>creative-community.space</u><br/>
+      <br/>
+      <?php
+      $sp_file = "csv/special.csv";
+      $special = fopen($sp_file, 'r');
+      flock($special, LOCK_SH);
+
+      while ($sp = fgetcsv($special)) {
+        $spAll[] = $sp;
+      }
+      ?>
+      <?php if (!empty($spAll)) : ?>
+        <?php foreach ($spAll as $sp) : ?>
+          <i><?= h($sp[0]) ?></i><br/>
+          <a href="<?= h($sp[2]) ?>"><?= h($sp[1]) ?></a><br/>
+          <small style="display:<?= h($sp[3]) ?>;"><?= h($sp[4]) ?></small>
+          <br/>
+        <?php endforeach; ?>
+      <?php else : ?>
+      <?php endif; ?>
+      <br/>
+    </section>
+    <section class="col">
       <u>New Contents</u><br/>
       <br/>
       <?php
@@ -92,7 +115,7 @@ function h($str)
       <?php endif; ?>
       <br/>
     </section>
-    <section class="col hsl">
+    <section class="col">
       <u>Version Up</u><br/>
       <br/>
       <?php
