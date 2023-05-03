@@ -23,7 +23,7 @@ function h($str) {
 
   #rolling :nth-child(2),
   #rolling :nth-child(3) {
-    width: 25%;
+    width: 30%;
   }
 
   #rolling a,
