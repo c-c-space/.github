@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style>
+  meter {
+    width: 100%;
+    height: 350px;
+  }
+
+  meter::-webkit-meter-horizontal-bar {
+    border: double 5px #000;
+  }
+
+  meter::-webkit-meter-horizontal-optimum-value {
+    background: blue;
+  }
+
+  meter::-webkit-meter-horizontal-suboptimal-value {
+    background: yellow;
+  }
+
+  meter::-webkit-meter-horizontal-even-less-good-value {
+    background: red;
+  }
+
+  @media screen and (max-width: 750px) {
+    meter {
+      height: 45vw;
+    }
+  }
+  </style>
+</head>
+<body class="readme">
+  <details>
+    <summary>
+      <font>Battery Status API</font><br/>
+      <code>システムのバッテリーに関する情報を提供する バッテリー状態 API</code>
+    </summary>
+    <pre>
+navigator<code class="red">.getBattery</code>().then((battery) => {
+  function updateAllBatteryInfo() {
+    updateChargeInfo();
+    updateLevelInfo();
+    updateChargingInfo();
+    updateDischargingInfo();
+  }
+  updateAllBatteryInfo();
+
+  battery.addEventListener("chargingchange", () => {
+    updateChargeInfo();
+  });
+  function updateChargeInfo() {
+    document.querySelector('#charging').innerText = `${<code class="red">battery.charging</code> ? "充電中" : "放電中"}`;
+  }
+
+  battery.addEventListener("levelchange", () => {
+    updateLevelInfo();
+  });
+  function updateLevelInfo() {
+    document.querySelector('#level').innerText = `${<code class="red">battery.level</code> * 100} %`;
+  }
+
+  battery.addEventListener("chargingtimechange", () => {
+    updateChargingInfo();
+  });
+  function updateChargingInfo() {
+    if (<code class="red">battery.chargingTime</code> === Infinity) {
+      document.querySelector('#chargingTime').innerText = '-';
+    } else {
+      document.querySelector('#chargingTime').innerText = `${<code class="red">battery.chargingTime</code>} 秒`;
+    }
+  }
+
+  battery.addEventListener("dischargingtimechange", () => {
+    updateDischargingInfo();
+  });
+  function updateDischargingInfo() {
+    if (<code class="red">battery.dischargingTime</code> === Infinity) {
+      document.querySelector('#dischargingTime').innerText = '-';
+    } else {
+      document.querySelector('#dischargingTime').innerText = `${<code class="red">battery.dischargingTime</code>} 秒`;
+    }
+  }
+});
+    </pre>
+  </details>
+  <hr/>
+
+  <meter id="progress" min="0" low="10" high="20" max="100"></meter>
+
+  <table class="size">
+    <tbody>
+      <tr>
+        <td>battery.charging</td>
+        <td>現在充電されているかどうか</td>
+        <td id="charging" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>battery.level</td>
+        <td>現在の充電レベル</td>
+        <td id="level" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>battery.chargingTime </td>
+        <td>完全に充電されるまでの残り時間</td>
+        <td id="chargingTime" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>battery.dischargingTime</td>
+        <td>完全に放電されるまでの残り時間</td>
+        <td id="dischargingTime" class="nowValue"></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr/>
+  <table class="size">
+    <tbody>
+      <tr>
+        <td><button onclick="location.assign('/coding/js/window/')">Window API</button></td>
+        <td>バッテリー状態 API</td>
+        <td style="text-align: right;"><button onclick="history.back()">↩︎</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="battery.js" defer></script>
+</body>
+</html>

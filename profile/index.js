@@ -28,6 +28,62 @@ if(localStorage.getItem('sign')) {
   info.before(sign)
 }
 
+
+const connectionInfo = navigator.connection;
+if (connectionInfo !== undefined) {
+  const init = function() {
+    document.getElementById('network').textContent += ' Network Information: ' + connectionInfo.type;
+    document.getElementById('network').textContent += ' ' + connectionInfo.effectiveType;
+    document.getElementById('network').textContent += ' ' + connectionInfo.downlink + ' Mb/s';
+    document.getElementById('network').textContent += ' ' + connectionInfo.downlinkMax + ' Mb/s';
+    document.getElementById('network').textContent += ' ' + connectionInfo.rtt + ' ms';
+  };
+  init();
+
+  if ('onchange' in connectionInfo) {
+    connectionInfo.addEventListener('change', init);
+  } else if ('ontypechange' in connectionInfo) {
+    connectionInfo.addEventListener('typechange', init);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+  windowScreen();
+}, false);
+
+window.onresize = tmResize;
+function tmResize() {
+  if (typeof pageResize == "function") {
+    pageResize();
+  }
+}
+
+function pageOnload() {
+  windowScreen();
+}
+function pageResize() {
+  windowScreen();
+}
+
+function windowScreen() {
+  const outScreenWidth = document.getElementById("outScreenWidth")
+  outScreenWidth.innerText = screen.availWidth;
+
+  const outScreenheight = document.getElementById("outScreenheight")
+  outScreenheight.innerText = screen.availHeight;
+
+  const outInnerWidth = document.getElementById("outInnerWidth")
+  outInnerWidth.innerText = window.innerWidth;
+
+  const outInnerHeight = document.getElementById("outInnerHeight")
+  outInnerHeight.innerText = window.innerHeight;
+}
+
+const memory = navigator.deviceMemory
+const hardware = navigator.hardwareConcurrency
+document.querySelector('#navigator').innerText = `This device has at least ${memory} GiB of RAM | ${hardware} CPU available.`
+
+
 const newColorAll = document.querySelectorAll('#log li span')
 for (const newColor of newColorAll) {
   newColor.classList.add("color")

@@ -54,6 +54,22 @@
         </u>
       </span>
     </li>
+    <li id="screen">
+      <span>
+        <u>Screen Size</u>
+      </span>
+      <span>Width: <code id="outInnerWidth"></code> px</span>
+      <span>Height: <code id="outInnerHeight"></code> px</span>
+      <span id="network"></span>
+    </li>
+    <li id="window">
+      <span>
+        <u>Window Size</u>
+      </span>
+      <span>Width: <code id="outScreenWidth"></code> px</span>
+      <span>Height: <code id="outScreenheight"></code> px</span>
+      <span id="navigator"></span>
+    </li>
     <li>
       <span><button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button></span>
       <?php
