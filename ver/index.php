@@ -17,11 +17,9 @@ function h($str) {
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
-  #rolling a {
-    display: block;
-  }
-
-  #rolling u {
+  #rolling a,
+  #rolling u,
+  #rolling i {
     display: inline-block;
   }
 
@@ -54,6 +52,10 @@ function h($str) {
   #rolling a,
   #rolling i {
     font-size: 90%;
+  }
+
+  #rolling i {
+    margin-bottom: 1vw;
   }
 
   #rolling u {
