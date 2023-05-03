@@ -13,7 +13,7 @@ navigator.getBattery().then((battery) => {
   });
 
   function updateChargeInfo() {
-    document.querySelector('#charging').innerText = `${battery.charging ? "充電中" : "放電中"}`;
+    document.querySelector('#charging').innerText = `${battery.charging ? "Charging" : "Discharging"}`;
   }
 
   battery.addEventListener("levelchange", () => {
@@ -31,9 +31,9 @@ navigator.getBattery().then((battery) => {
 
   function updateChargingInfo() {
     if (battery.chargingTime === Infinity) {
-      document.querySelector('#chargingTime').innerText = '-';
+      document.querySelector('#chargingTime').innerHTML = '-';
     } else {
-      document.querySelector('#chargingTime').innerText = `${battery.chargingTime} 秒`;
+      document.querySelector('#chargingTime').innerHTML = `<b>${battery.chargingTime}</b> Sec`;
     }
   }
 
@@ -43,9 +43,9 @@ navigator.getBattery().then((battery) => {
 
   function updateDischargingInfo() {
     if (battery.dischargingTime === Infinity) {
-      document.querySelector('#dischargingTime').innerText = '-';
+      document.querySelector('#dischargingTime').innerHTML = '-';
     } else {
-      document.querySelector('#dischargingTime').innerText = `${battery.dischargingTime} 秒`;
+      document.querySelector('#dischargingTime').innerHTML = `<b>${battery.dischargingTime}</b> Sec`;
     }
   }
 });

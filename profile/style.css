@@ -49,7 +49,7 @@ hr {
 #battery span:last-of-type {
   flex-flow: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   margin: 0;
 }
 

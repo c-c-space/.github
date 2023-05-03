@@ -43,14 +43,14 @@
 
   <ul id="log">
     <li id="battery">
-      <span>バッテリー状態</span>
+      <span>Battery Status</span>
       <span id="level"></span>
       <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
       <span>
         <b id="charging"></b>
         <u>
-          <i id="chargingTime"></i>
-          <i id="dischargingTime"></i>
+          <small id="chargingTime"></small>
+          <small id="dischargingTime"></small>
         </u>
       </span>
     </li>
