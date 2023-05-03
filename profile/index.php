@@ -34,9 +34,9 @@
   <header id="menu" hidden>
     <button id="js-button" class="color bgcolor"><b></b></button>
     <nav id="contents">
-      <a href="/" target="_parent">
+      <a href="#" onclick="window.history.back(); return false;">
         <p><b>creative-community.space</b></p>
-        <u>Index</u>
+        <u>↩︎</u>
       </a>
     </nav>
   </header>
