@@ -55,7 +55,7 @@ function h($str) {
   }
 
   #rolling a {
-    margin: 1vw 0;
+    margin: 1vw 0 1.5vw;
   }
 
   #rolling u {
