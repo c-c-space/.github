@@ -55,7 +55,7 @@ function h($str) {
 
   #rolling small {
     font-size: 55%;
-    margin: 1vw 0 0;
+    margin: 0;
   }
   </style>
 </head>
