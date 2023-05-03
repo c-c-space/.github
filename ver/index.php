@@ -17,7 +17,10 @@ function h($str) {
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
-  #rolling a,
+  #rolling a {
+    display: block;
+  }
+
   #rolling u {
     display: inline-block;
   }
