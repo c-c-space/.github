@@ -17,6 +17,10 @@ function h($str) {
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
+  #rolling :first-child {
+    width: 40%;
+  }
+
   #rolling :nth-child(2),
   #rolling :nth-child(3) {
     width: 30%;
