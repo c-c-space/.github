@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../ver/log/style.css" />
   <style>
-  #js-button,
-  #contents a,
-  main {
-    filter: invert();
+  #menu {
+    background: #000;
   }
 
-  header {
+  #js-button {
+    background: #fff;
+  }
+
+  #contents {
     mix-blend-mode: difference;
+  }
+
+  #contents a {
+    filter: invert();
   }
 
   #log span {
