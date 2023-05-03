@@ -15,10 +15,6 @@
     background: #000;
   }
 
-  #js-button {
-    background: #fff;
-  }
-
   #contents {
     mix-blend-mode: difference;
   }
