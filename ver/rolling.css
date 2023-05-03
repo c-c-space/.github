@@ -25,6 +25,14 @@ body {
   height: 100%;
 }
 
+#rolling :first-child {
+  width: 50%;
+}
+
+#rolling :nth-child(2) {
+  width: 25%;
+}
+
 #rolling .col {
   box-sizing: border-box;
   padding: 0 1.5vw;
