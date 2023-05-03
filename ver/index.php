@@ -29,12 +29,19 @@ function h($str) {
     transform: scale(1, 1.25);
   }
 
+  #rolling b,
   #rolling i {
     font-family: "Times New Roman", serif;
   }
 
   #rolling small {
     font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+  }
+
+  #rolling b {
+    font-size: 111%;
+    font-style: italic;
+    font-weight: 500;
   }
 
   #rolling a,
