@@ -87,7 +87,6 @@ function h($str) {
       <u>creative-community.space</u><br/>
       <br/>
       <?php require('about.html'); ?>
-      <br/>
       <?php
       $sp_file = "csv/special.csv";
       $special = fopen($sp_file, 'r');
