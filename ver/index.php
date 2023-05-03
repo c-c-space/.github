@@ -18,12 +18,12 @@ function h($str) {
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
   #rolling :first-child {
-    width: 50%;
+    width: 45%;
   }
 
   #rolling :nth-child(2),
   #rolling :nth-child(3) {
-    width: 25%;
+    width: 27.5%;
   }
 
   #rolling a,
