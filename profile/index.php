@@ -16,7 +16,6 @@
     background: #fff;
   }
 
-  #js-button,
   #contents {
     mix-blend-mode: difference;
   }
