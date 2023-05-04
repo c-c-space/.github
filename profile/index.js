@@ -32,7 +32,10 @@ if(localStorage.getItem('sign')) {
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
   const init = function() {
-    document.getElementById('network').innerHTML = 'Network Type <b>' + connectionInfo.effectiveType + '</b> | Downlink <b>' + connectionInfo.downlink + '</b> Mb/s' + ' | RTT <b>' + connectionInfo.rtt + '</b> ms';
+    document.getElementById('network').innerHTML =
+    'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
+    + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
+    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms';
   };
   init();
 
