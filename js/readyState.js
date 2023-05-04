@@ -12,7 +12,7 @@ function changeHidden() {
 }
 
 function createVideo() {
-  document.body.insertAdjacentHTML ('beforeend', '<video id="userMedia" autoplay playsinline><track default kind="subtitles" srclang="ja" src="/index.vtt"></video>')
+  document.body.insertAdjacentHTML ('beforeend', '<video id="userMedia" autoplay playsinline></video>')
   const userMedia = document.querySelector('#userMedia')
   userMedia.style.width = window.innerWidth
   userMedia.style.height = window.innerHeight

@@ -21,10 +21,6 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <link rel="stylesheet" href="thankyou/print.css" media="print"/>
   <link rel="stylesheet" href="hello/css/mobile.css" media="screen and (max-width: 750px)" />
   <style>
-  #userMedia::cue {
-    font-size: 1rem;
-  }
-
   #js-button,
   #contents a,
   main {
