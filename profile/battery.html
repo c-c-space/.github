@@ -4,44 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../ver/howto.css" />
   <style>
-  meter {
+  #howto details {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  #howto meter {
     width: 100%;
     height: 350px;
   }
 
-  meter::-webkit-meter-horizontal-bar {
+  #howto meter::-webkit-meter-horizontal-bar {
     border: double 5px #000;
   }
 
-  meter::-webkit-meter-horizontal-optimum-value {
-    background: blue;
-  }
-
-  meter::-webkit-meter-horizontal-suboptimal-value {
-    background: yellow;
-  }
-
-  meter::-webkit-meter-horizontal-even-less-good-value {
-    background: red;
-  }
-
   @media screen and (max-width: 750px) {
-    meter {
+    #howto meter {
       height: 45vw;
     }
   }
   </style>
 </head>
-<body class="readme">
+<body id="howto">
   <details>
     <summary>
       <font>Battery Status API</font><br/>
       <code>システムのバッテリーに関する情報を提供する バッテリー状態 API</code>
+      <meter id="progress" min="0" low="10" high="20" max="100"></meter>
     </summary>
+    <aside id="links">
+      <a href="https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API">
+        <i>Battery Status API</i>
+        <p>バッテリー状態 API</p>
+      </a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery">
+        <i>Battery Status API</i>
+        <p>getBattery()</p>
+      </a>
+    </aside>
+    <br/>
     <pre>
 navigator<code class="red">.getBattery</code>().then((battery) => {
   function updateAllBatteryInfo() {
@@ -90,10 +93,7 @@ navigator<code class="red">.getBattery</code>().then((battery) => {
 });
     </pre>
   </details>
-  <hr/>
-
-  <meter id="progress" min="0" low="10" high="20" max="100"></meter>
-
+  <br/>
   <table class="size">
     <tbody>
       <tr>
@@ -115,16 +115,6 @@ navigator<code class="red">.getBattery</code>().then((battery) => {
         <td>battery.dischargingTime</td>
         <td>完全に放電されるまでの残り時間</td>
         <td id="dischargingTime" class="nowValue"></td>
-      </tr>
-    </tbody>
-  </table>
-  <hr/>
-  <table class="size">
-    <tbody>
-      <tr>
-        <td><button onclick="location.assign('/coding/js/window/')">Window API</button></td>
-        <td>バッテリー状態 API</td>
-        <td style="text-align: right;"><button onclick="history.back()">↩︎</button></td>
       </tr>
     </tbody>
   </table>

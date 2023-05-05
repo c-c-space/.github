@@ -1,15 +1,92 @@
 #howto,
-#howto pre {
+#howto pre,
+table.size td:first-child {
   font-family: "ipag", "Arial Narrow", monospace;
 }
 
-#howto font {
+table.size td:first-child {
+  transform: scale(1, 1.25);
+}
+
+#howto code,
+#howto font,
+table.size td:nth-child(2) {
   font-family: "Yu Gothic", "游ゴシック体", sans-serif;
 }
 
+table.size .nowValue {
+  font-family: "Arial Narrow", Arial, "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
 #howto {
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 1rem;
+}
+
+#howto summary,
+#howto summary b,
+#howto code,
+#howto font,
+table.size .nowValue,
+table.size td:first-child {
+  font-size: 125%;
+}
+
+#howto pre,
+#howto a {
+  font-size: 100%;
+}
+
+#howto a i {
+  font-size: 75%;
+}
+
+#howto a {
+  text-decoration: none;
+  transition: 1s;
+}
+
+#howto a,
+#howto a i,
+#howto a p {
+  display: inline-block;
+}
+
+#howto a {
+  color: #000;
+  border-bottom: 0.1rem solid transparent;
+}
+
+#howto a:hover {
+  border-bottom: 0.1rem solid;
+}
+
+#howto a {
+  padding: 0;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+#howto a i {
+  padding: 0;
+  margin: 0 0.25rem 0 0;
+}
+
+#howto a p {
+  padding: 0.25rem;
+  margin: 0;
+}
+
+#howto .red {
+  color: red;
+}
+
+#howto pre {
+  padding: 0.25rem;
+}
+
+#howto summary b {
+  font-weight: 500;
+  padding: 0 0.25rem;
 }
 
 #howto summary {
@@ -24,24 +101,40 @@
   overflow-x: auto;
 }
 
-#howto pre,
-#howto font {
-  font-size: 75%;
+table.size {
+  box-sizing: border-box;
+  width: 100%;
 }
 
-#howto pre {
-  padding: 0.25rem;
+table.size tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
 }
 
-#howto summary b {
-  font-size: 100%;
-  font-weight: 500;
-  padding: 0 0.25rem;
+table.size td {
+  box-sizing: border-box;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+table.size td:first-child {
+  width: 15rem;
+}
+
+table.size td:nth-child(2) {
+  width: 45%;
+}
+
+table.size .nowValue {
+  text-align: right;
+  word-break: break-all;
+  width: 5rem;
 }
 
 @media screen and (max-width: 750px) {
   #howto {
-    font-size: 4vw;
+    font-size: 2.5vw;
     padding: 2.5vw;
   }
 
@@ -50,7 +143,73 @@
     padding: 1vw;
   }
 
+  #howto a {
+    color: #000;
+    border-bottom: 0.05vw solid transparent;
+  }
+
+  #howto a:hover {
+    border-bottom: 0.05vw solid;
+  }
+
+  #howto a {
+    padding: 0;
+    margin: 1vw 1vw 0 0;
+  }
+
+  #howto a i {
+    padding: 0;
+    margin: 0 0.5vw 0 0;
+  }
+
+  #howto a p {
+    padding: 0.5vw;
+    margin: 0;
+  }
+
   #howto summary b {
-    padding: 0 0.5vw;
+    padding: 0 1vw;
+  }
+
+  table.size {
+    font-size: 75%;
+  }
+
+  table.size tr {
+    margin: 1vw 0;
+  }
+
+  table.size td:first-child {
+    width: 30%;
+  }
+
+  table.size td:nth-child(2) {
+    width: 45%;
+  }
+
+  table.size .nowValue {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  table.size {
+    font-size: 111%;
+  }
+
+  table.size tr,
+  table.size td {
+    display: block;
+  }
+
+  table.size td:first-child,
+  table.size td:nth-child(2) {
+    float: left;
+    width: 80%;
+  }
+
+  table.size .nowValue {
+    display: inline-block;
+    width: 20%;
   }
 }

@@ -13,7 +13,7 @@ navigator.getBattery().then((battery) => {
   });
 
   function updateChargeInfo() {
-    document.querySelector('#charging').innerText = `${battery.charging ? "Charging" : "Discharging"}`;
+    document.querySelector('#charging').innerText = `${battery.charging ? "充電中" : "放電中"}`;
   }
 
   battery.addEventListener("levelchange", () => {
