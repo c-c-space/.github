@@ -40,57 +40,59 @@
         <p>バッテリー状態 API</p>
       </a>
       <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery">
-        <i>Battery Status API</i>
-        <p>getBattery()</p>
+        <i>Navigator</i>
+        <p>.getBattery()</p>
       </a>
     </aside>
+    <p>バッテリー状態 API は、システムのバッテリー充電レベルに関する情報の提供、およびバッテリーレベルや充電状態が変化したときに発生するイベントによる通知を可能にします。</p>
+    <p>これは、バッテリーが消耗したときにバッテリー消費を減らすためアプリのリソース使用状況を調整したり、データを失わないためにバッテリーが切れる前に変更点を保存したりするために使用できます。</p>
     <br/>
     <pre>
-navigator<code class="red">.getBattery</code>().then((battery) => {
-  function updateAllBatteryInfo() {
-    updateChargeInfo();
-    updateLevelInfo();
-    updateChargingInfo();
-    updateDischargingInfo();
-  }
-  updateAllBatteryInfo();
+      navigator<code class="red">.getBattery</code>().then((battery) => {
+        function updateAllBatteryInfo() {
+          updateChargeInfo();
+          updateLevelInfo();
+          updateChargingInfo();
+          updateDischargingInfo();
+        }
+        updateAllBatteryInfo();
 
-  battery.addEventListener("chargingchange", () => {
-    updateChargeInfo();
-  });
-  function updateChargeInfo() {
-    document.querySelector('#charging').innerText = `${<code class="red">battery.charging</code> ? "充電中" : "放電中"}`;
-  }
+        battery.addEventListener("chargingchange", () => {
+          updateChargeInfo();
+        });
+        function updateChargeInfo() {
+          document.querySelector('#charging').innerText = `${<code class="red">battery.charging</code> ? "充電中" : "放電中"}`;
+        }
 
-  battery.addEventListener("levelchange", () => {
-    updateLevelInfo();
-  });
-  function updateLevelInfo() {
-    document.querySelector('#level').innerText = `${<code class="red">battery.level</code> * 100} %`;
-  }
+        battery.addEventListener("levelchange", () => {
+          updateLevelInfo();
+        });
+        function updateLevelInfo() {
+          document.querySelector('#level').innerText = `${<code class="red">battery.level</code> * 100} %`;
+        }
 
-  battery.addEventListener("chargingtimechange", () => {
-    updateChargingInfo();
-  });
-  function updateChargingInfo() {
-    if (<code class="red">battery.chargingTime</code> === Infinity) {
-      document.querySelector('#chargingTime').innerText = '-';
-    } else {
-      document.querySelector('#chargingTime').innerText = `${<code class="red">battery.chargingTime</code>} 秒`;
-    }
-  }
+        battery.addEventListener("chargingtimechange", () => {
+          updateChargingInfo();
+        });
+        function updateChargingInfo() {
+          if (<code class="red">battery.chargingTime</code> === Infinity) {
+            document.querySelector('#chargingTime').innerText = '-';
+          } else {
+            document.querySelector('#chargingTime').innerText = `${<code class="red">battery.chargingTime</code>} 秒`;
+          }
+        }
 
-  battery.addEventListener("dischargingtimechange", () => {
-    updateDischargingInfo();
-  });
-  function updateDischargingInfo() {
-    if (<code class="red">battery.dischargingTime</code> === Infinity) {
-      document.querySelector('#dischargingTime').innerText = '-';
-    } else {
-      document.querySelector('#dischargingTime').innerText = `${<code class="red">battery.dischargingTime</code>} 秒`;
-    }
-  }
-});
+        battery.addEventListener("dischargingtimechange", () => {
+          updateDischargingInfo();
+        });
+        function updateDischargingInfo() {
+          if (<code class="red">battery.dischargingTime</code> === Infinity) {
+            document.querySelector('#dischargingTime').innerText = '-';
+          } else {
+            document.querySelector('#dischargingTime').innerText = `${<code class="red">battery.dischargingTime</code>} 秒`;
+          }
+        }
+      });
     </pre>
   </details>
   <br/>

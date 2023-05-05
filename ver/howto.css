@@ -8,6 +8,7 @@ table.size td:first-child {
   transform: scale(1, 1.25);
 }
 
+#howto p,
 #howto code,
 #howto font,
 table.size td:nth-child(2) {
