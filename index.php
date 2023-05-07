@@ -1,9 +1,3 @@
-<?php
-$ip = $_SERVER["REMOTE_ADDR"];
-$hqdn = $_SERVER["REMOTE_PORT"];
-$os = $_SERVER["HTTP_USER_AGENT"];
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>

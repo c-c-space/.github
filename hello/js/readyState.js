@@ -17,11 +17,11 @@ document.addEventListener('readystatechange', event => {
     const greeting = document.querySelector('#log div h1 b')
 
     let timeframe = (new Date()).getHours()
-    if (timeframe <= 5) { greeting.innerText = "Good Night おやすみ" }
-    else if (timeframe <= 11) { greeting.innerText = "Good Morning おはよう" }
-    else if (timeframe <= 17) { greeting.innerText = "Hello こんにちは" }
-    else if (timeframe <= 23 ) { greeting.innerText = "Good Evening こんばんは" }
-    else { greeting.innerText = "Good Night おやすみ" }
+    if (timeframe <= 5) {greeting.innerText = "Good Night おやすみ"}
+    else if (timeframe <= 11) {greeting.innerText = "Good Morning おはよう"}
+    else if (timeframe <= 17) {greeting.innerText = "Hello こんにちは"}
+    else if (timeframe <= 23 ) {greeting.innerText = "Good Evening こんばんは"}
+    else {greeting.innerText = "Good Night おやすみ"}
 
     const mainLog = document.querySelector('#log')
     const logAll = document.querySelector('#log section')
@@ -33,19 +33,18 @@ document.addEventListener('readystatechange', event => {
       const backBtn = document.createElement('button')
       backBtn.setAttribute('type','button')
       backBtn.setAttribute('id','backBtn')
+      backBtn.setAttribute('class','color bgcolor')
       backBtn.setAttribute('onclick','location.replace("/")')
-      backBtn.classList.add("color")
       backBtn.innerText = 'creative-community.space'
       document.querySelector('#now').prepend(backBtn)
 
-      async function about() {
-        fetch('about.php')
-        .then(response => response.text())
-        .then(about => {
-          document.querySelector('#about').innerHTML = about
-        });
-      }
-      about();
+      const enterBtn = document.createElement('button')
+      enterBtn.setAttribute('type','button')
+      enterBtn.setAttribute('id','enterBtn')
+      enterBtn.setAttribute('class','color bgcolor')
+      enterBtn.setAttribute('onclick','setLOG()')
+      enterBtn.innerText = 'Enter'
+      document.querySelector('#about').appendChild(enterBtn)
 
       async function readmeMD() {
         fetch('readme.md')

@@ -41,3 +41,5 @@
   </section>
   <button id="openModal" class="color bgcolor" type="button">?</button>
 </nav>
+
+<script src="../js/main.js"></script>

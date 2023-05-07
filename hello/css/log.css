@@ -133,6 +133,12 @@ h3 {
   overflow: auto;
 }
 
+#modal span {
+  display: block;
+  font-size: 111%;
+  line-height: 150%;
+}
+
 #modal::backdrop {
   backdrop-filter: blur(0.25rem);
 }
