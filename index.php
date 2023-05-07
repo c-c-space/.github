@@ -49,7 +49,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a <?php echo isset($is_home) ? '': 'href="/" target="_parent"' ?> >
+      <a href="/" target="_parent">
         <p><b>Index | creative-community.space</b></p>
         <u>準備中</u>
       </a>
