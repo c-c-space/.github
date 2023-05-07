@@ -1,3 +1,33 @@
+<?php
+mb_language("ja");
+mb_internal_encoding("UTF-8");
+date_default_timezone_set('Asia/Tokyo');
+
+if (date("H") >= 6 and date("H") <= 11) {
+  $timeframe = "morning";
+} elseif (date("H") >= 12 and date("H") <= 17) {
+  $timeframe = "afternoon";
+} elseif (date("H") >= 18 and date("H") <= 23) {
+  $timeframe = "evening";
+} else {
+  $timeframe = "night";
+}
+
+$source_file = date("Y"). "/". $timeframe . ".csv";
+while ($row = fgetcsv($fp)) {
+  $rows[] = $row;
+}
+
+$post = count($rows);
+
+function h($str) {
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+$fp = fopen($source_file, 'a+b');
+flock($fp, LOCK_SH);
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -98,29 +128,8 @@
   </main>
   <script src="js/recognition.js"></script>
 
-  <main id="log">
-    <div>
-      <h1>
-        <b></b><br/>
-        <code id="lastModified"></code>
-      </h1>
-      <h2>
-        <span class="realtimeuserscounter"><b></b></span>
-      </h2>
-    </div>
-    <section>
-      <?php require('log.php'); ?>
-    </section>
-  </main>
-
-  <nav id="now" class="hidden">
-    <section class="controls">
-      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
-    </section>
-    <button id="openModal" class="color bgcolor" type="button">?</button>
-  </nav>
+  <?php require('php/log.php'); ?>
+  <?php require('php/controls.php'); ?>
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">

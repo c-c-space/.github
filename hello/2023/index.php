@@ -9,13 +9,15 @@ require_once('../php/head.php');
     <nav id="contents"></nav>
   </header>
 
-  <?php require_once('../php/main.php'); ?>
+  <?php require('../php/log.php'); ?>
+  <?php require('../php/controls.php'); ?>
+  <script src="../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3>2023 | Message Board</h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
-    <?php require_once('../php/timeframe.php'); ?>
+    <?php require('../php/timeframe.php'); ?>
   </dialog>
   <script src="../../profile/setStyles.js"></script>
 </body>
