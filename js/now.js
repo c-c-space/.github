@@ -9,6 +9,7 @@ const now = document.querySelector("#now");
 
 const showDate = document.createElement('time');
 showDate.setAttribute('id','showDate');
+
 const showTime = document.createElement('time');
 showTime.setAttribute('id','showTime');
 

@@ -10,7 +10,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/index.js" async></script>
   <script src="js/hello.js"></script>
   <script src="js/readyState.js"></script>
@@ -49,7 +49,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/" target="_parent">
+      <a <?php echo isset($is_home) ? '': 'href="/" target="_parent"' ?> >
         <p><b>Index | creative-community.space</b></p>
         <u>準備中</u>
       </a>
@@ -60,7 +60,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
     <section id="readme">
       <h1>
         <b>Hello こんにちは</b><br />
-        IP <code><?php echo $ip; ?></code>
+        IP <code><?php echo $_SERVER["REMOTE_ADDR"];?></code>
       </h1>
       <p>Thank you for visiting
         <u data-id="website">The Website</u>
@@ -86,18 +86,7 @@ $os = $_SERVER["HTTP_USER_AGENT"];
 
   <main id="yourinfo" hidden>
     <form method="post">
-      <strong>あなたの通信情報／ブラウザ等情報</strong>
-      <p>
-        <?php
-        echo "<span>IP <code id='ip'>" . $ip . "</code></span>";
-        echo "<span>PORT <code id='hqdn'>" . $hqdn . "</code></span>";
-        echo "<span>USER AGENT <code id='os'>" . $os . "</code></span>";
-        ?>
-      </p>
-      <section>
-        <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
-        <button type="button" id="back-btn" onclick="changeHidden()">Back</button>
-      </section>
+      <?php require('yourinfo.php'); ?>
     </form>
     <script src="js/log.js"></script>
   </main>
@@ -120,13 +109,10 @@ $os = $_SERVER["HTTP_USER_AGENT"];
     <small class="cc">このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
   </aside>
 
-  <footer id="now" class="hsl"></footer>
-  <script src="js/now.js"></script>
+  <div id="sketch"></div>
+  <script src="thankyou/hsl.js"></script>
+  <script src="thankyou/sketch.js"></script>
 
-  <div id="sketch">
-    <script src="thankyou/hsl.js"></script>
-    <script src="thankyou/sketch.js"></script>
-  </div>
   <script type="text/javascript">
   const COLOURS = ['#EEE'];
   let radius = 0;
@@ -159,5 +145,8 @@ $os = $_SERVER["HTTP_USER_AGENT"];
     }
   });
   </script>
+
+  <footer id="now" class="hsl"></footer>
+  <script src="js/now.js"></script>
 </body>
 </html>
