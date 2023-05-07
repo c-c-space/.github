@@ -158,8 +158,5 @@ flock($fp, LOCK_SH);
 
   <script src="../profile/jscolor.js"></script>
   <script src="../profile/setStyles.js"></script>
-
-  <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/realtimeusers.js"></script>
 </body>
 </html>
