@@ -18,17 +18,18 @@ if (date("H") >= 6 and date("H") <= 11) {
 }
 
 $source_file = date("Y"). "/". $timeframe . ".csv";
-while ($row = fgetcsv($fp)) {
-  $rows[] = $row;
-}
-
-$post = count($rows);
 
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
 $fp = fopen($source_file, 'a+b');
+while ($row = fgetcsv($fp)) {
+  $rows[] = $row;
+}
+
+$post = count($rows);
+
 flock($fp, LOCK_SH);
 ?>
 
