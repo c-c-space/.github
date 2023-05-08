@@ -1,3 +1,12 @@
+<?php
+mb_language("ja");
+mb_internal_encoding("UTF-8");
+
+function h($str) {
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
