@@ -18,14 +18,6 @@
       "note" : ""
     },
     {
-      "date" : "Battery Status API",
-      "name" : "バッテリー状態 API",
-      "url" : "/profile/battery.html",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
       "date" : "Network Information API",
       "name" : "Online or Offline?",
       "url" : "/coding/js/window/online/",
