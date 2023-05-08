@@ -18,17 +18,17 @@
       "note" : ""
     },
     {
-      "date" : "Speech to Text to Text to Speech",
-      "name" : "掲示板 Message Board",
-      "url" : "/hello/",
+      "date" : "Battery Status API",
+      "name" : "バッテリー状態 API",
+      "url" : "/profile/battery.html",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "Your Drawing is Seems So Beautiful",
-      "name" : "Thank You for Visiting",
-      "url" : "/thankyou/",
+      "date" : "Network Information API",
+      "name" : "Online or Offline?",
+      "url" : "/coding/js/window/online/",
       "type" : "news",
       "caption" : "none",
       "note" : ""

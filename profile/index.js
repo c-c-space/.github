@@ -1,8 +1,8 @@
-const info = document.querySelector('#info')
+const info = document.querySelector('#info');
 
 if(localStorage.getItem('geolocation')) {
-  const yourGEO = JSON.parse(localStorage.getItem('geolocation'))
-  const geolocation = document.createElement("li")
+  const yourGEO = JSON.parse(localStorage.getItem('geolocation'));
+  const geolocation = document.createElement("li");
   geolocation.innerHTML += `
   <span>行ったことのない場所へ行く</span>
   <span>
@@ -11,12 +11,12 @@ if(localStorage.getItem('geolocation')) {
   <span></span>
   <span>Latitude: <b>${yourGEO.latitude}°</b> Longitude: <b>${yourGEO.longitude}°</b></span>
   `
-  info.before(geolocation)
+  info.before(geolocation);
 }
 
 if(localStorage.getItem('sign')) {
-  const yourSign = JSON.parse(localStorage.getItem('sign'))
-  const sign = document.createElement("li")
+  const yourSign = JSON.parse(localStorage.getItem('sign'));
+  const sign = document.createElement("li");
   sign.innerHTML += `
   <span>自分の気持ちを知る・表す</span>
   <span>
@@ -25,9 +25,8 @@ if(localStorage.getItem('sign')) {
   <span></span>
   <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
   `
-  info.before(sign)
+  info.before(sign);
 }
-
 
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
@@ -35,7 +34,7 @@ if (connectionInfo !== undefined) {
     document.getElementById('network').innerHTML =
     'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
     + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
-    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms';
+    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
   };
   init();
 
@@ -45,6 +44,11 @@ if (connectionInfo !== undefined) {
     connectionInfo.addEventListener('typechange', init);
   }
 }
+
+const memory = navigator.deviceMemory;
+const hardware = navigator.hardwareConcurrency;
+document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
+
 
 window.addEventListener("DOMContentLoaded", function () {
   windowScreen();
@@ -65,25 +69,20 @@ function pageResize() {
 }
 
 function windowScreen() {
-  const outScreenWidth = document.getElementById("outScreenWidth")
+  const outScreenWidth = document.getElementById("outScreenWidth");
   outScreenWidth.innerText = screen.availWidth;
 
-  const outScreenheight = document.getElementById("outScreenheight")
+  const outScreenheight = document.getElementById("outScreenheight");
   outScreenheight.innerText = screen.availHeight;
 
-  const outInnerWidth = document.getElementById("outInnerWidth")
+  const outInnerWidth = document.getElementById("outInnerWidth");
   outInnerWidth.innerText = window.innerWidth;
 
-  const outInnerHeight = document.getElementById("outInnerHeight")
+  const outInnerHeight = document.getElementById("outInnerHeight");
   outInnerHeight.innerText = window.innerHeight;
 }
 
-const memory = navigator.deviceMemory
-const hardware = navigator.hardwareConcurrency
-document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`
-
-
-const newColorAll = document.querySelectorAll('#log li span')
+const newColorAll = document.querySelectorAll('#log li span');
 for (const newColor of newColorAll) {
-  newColor.classList.add("color")
+  newColor.classList.add("color");
 }

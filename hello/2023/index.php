@@ -11,7 +11,6 @@ require_once('../php/head.php');
 
   <?php require('../php/log.php'); ?>
   <?php require('../php/controls.php'); ?>
-  <script src="../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3>2023 | Message Board</h3>
@@ -20,5 +19,6 @@ require_once('../php/head.php');
     <?php require('../php/timeframe.php'); ?>
   </dialog>
   <script src="../../profile/setStyles.js"></script>
+  <script src="../js/log.js"></script>
 </body>
 </html>

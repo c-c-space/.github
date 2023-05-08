@@ -54,6 +54,8 @@
         </u>
       </span>
     </li>
+    <script src="battery.js"></script>
+
     <li id="screen">
       <span>
         <u>Screen Size</u>
@@ -70,17 +72,21 @@
       <span>Height: <code id="outScreenheight"></code> px</span>
       <span id="navigator"></span>
     </li>
+
     <li>
-      <span><button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button></span>
+      <span>
+        <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
+      </span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
       echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
       echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
       ?>
     </li>
+
     <li id="info">
       <span>
-        <button id="openModal" class="color bgcolor">通信情報／ブラウザ等情報</button>
+        <button id="openModal" class="color bgcolor" type="button">通信情報／ブラウザ等情報</button>
       </span>
       <?php
       $ip = $_SERVER["REMOTE_ADDR"];
@@ -116,6 +122,7 @@
         <option value="20px">Large</option>
       </select>
     </section>
+    <script src="jscolor.js"></script>
   </nav>
 
   <script type="text/javascript">
@@ -141,7 +148,5 @@
 
   <script src="index.js"></script>
   <script src="setStyles.js"></script>
-  <script src="jscolor.js"></script>
-  <script src="battery.js"></script>
 </body>
 </html>

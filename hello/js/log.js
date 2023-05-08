@@ -1,3 +1,5 @@
+'use strict'
+
 window.addEventListener('load', (event) => {
   const helloLiAll = document.querySelectorAll('#log ul li button')
   for (const helloLi of helloLiAll) {

@@ -154,9 +154,8 @@ flock($fp, LOCK_SH);
       <option value="20px">Large</option>
     </select>
   </dialog>
-  <script src="/js/log.js"></script>
-
   <script src="../profile/jscolor.js"></script>
   <script src="../profile/setStyles.js"></script>
+  <script src="/js/log.js"></script>
 </body>
 </html>

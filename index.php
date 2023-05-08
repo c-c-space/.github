@@ -53,17 +53,19 @@
   <main id="hello">
     <section id="readme">
       <h1>
-        <b>Hello こんにちは</b><br />
+        <b>Hello こんにちは</b><br>
         IP <code><?php echo $_SERVER["REMOTE_ADDR"];?></code>
       </h1>
-      <p>Thank you for visiting
+      <p>
+        Thank you for visiting
         <u data-id="website">The Website</u>
-        <b id="website" class="hide">that
+        <b id="website" class="hide">
+          that
           <u data-id="create">Creates</u>
           <b id="create" class="hide">beautiful things through</b>
           <u data-id="communicate">Communication</u>
           <b id="communicate" class="hide">that everyone can do</b>
-          <br />
+          <br>
           <small>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
         </b>
       </p>

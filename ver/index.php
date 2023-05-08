@@ -1,12 +1,3 @@
-<?php
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-
-function h($str) {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -96,7 +87,14 @@ function h($str) {
     <section class="col">
       <u>creative-community.space</u><br/>
       <br/>
-      <?php require('about.html'); ?>
+      This is <b>The Website</b>
+      that <b>Creates</b> beautiful things through
+      <b>Communication</b> that everyone can do<br>
+      <br>
+      <small style="display:block;">このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small><br>
+      <br>
+      <u>In Real Life</u><br/>
+      <br/>
       <?php
       $sp_file = "csv/special.csv";
       $special = fopen($sp_file, 'r');
@@ -106,8 +104,6 @@ function h($str) {
         $spAll[] = $sp;
       }
       ?>
-      <u>In Real Life</u><br/>
-      <br/>
       <?php if (!empty($spAll)) : ?>
         <?php foreach ($spAll as $sp) : ?>
           <i><?= h($sp[0]) ?></i><br/>
