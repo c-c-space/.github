@@ -3,7 +3,6 @@
 "4.11.2023","drawingText()","/ver/icon/canvas.html","block","入力欄のテキストを すべてのキャンバス要素 に描画"
 "4.2.2023","音声合成 Text to Speech","/hello/synthesis.html","block","ウェブ音声 API (Web Speech API) で テキストを音声に変換"
 "4.2.2023","音声認識 Speech Recognition","/hello/recognition.html","block","ウェブ音声 API (Web Speech API) で 音声をテキストに変換"
-"10.1.2022","通信情報／ブラウザ等情報","/profile/","block","The Information About Network & Browser for connection to The Internet"
 "10.1.2022","毎日の色と記号","/sign/collection/","block","日毎に 色と記号 の投稿を記録"
 "9.27.2022","Touch.js","/thankyou/touch.html","block","Touch The Screen to Drawing"
 "9.27.2022","Members Only","/sign/members/","block","令和三年十月から令和四年九月の色と記号"
