@@ -82,9 +82,8 @@ function indexHead(obj) {
   head.appendChild(ogURL);
 
   const iconCC = document.createElement( "link" );
-  iconCC.href = "/ver/icon.png";
-  iconCC.type = "text/css";
   iconCC.rel = "icon";
+  iconCC.href = "/ver/icon.png";
   head.appendChild(iconCC);
 }
 
