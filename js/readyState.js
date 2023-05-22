@@ -80,11 +80,19 @@ document.addEventListener('readystatechange', event => {
       }
       yourStrage.innerHTML += ` Colors & Symbols<br/>`
 
+      if(!localStorage.getItem('map')) {
+        yourStrage.innerHTML += `<a href="/map/">0</a>`
+      } else {
+        const yourMap = JSON.parse(localStorage.getItem('map'))
+        yourStrage.innerHTML += `<a href="/map/">${yourMap.length}</a>`
+      }
+      yourStrage.innerHTML += ` Location<br/>`
+
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'
       if(localStorage.getItem('geolocation')) {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        submit.innerHTML += `<p>Located on Latitude: <b>${geolocation.latitude}°</b> Longitude: <b>${geolocation.longitude}°</b></p>`
+        submit.innerHTML += `<p>Last Known Location: Latitude: <b>${geolocation.latitude}°</b> Longitude: <b>${geolocation.longitude}°</b></p>`
       } else {
         submit.innerHTML += '<p>Enterd from <b>' + yourInfo.ip + '</b></p>'
       }
