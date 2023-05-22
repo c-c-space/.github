@@ -92,7 +92,7 @@ document.addEventListener('readystatechange', event => {
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'
       if(localStorage.getItem('geolocation')) {
         const geolocation = JSON.parse(localStorage.getItem('geolocation'))
-        submit.innerHTML += `<p>Last Known Location: Latitude: <b>${geolocation.latitude}°</b> Longitude: <b>${geolocation.longitude}°</b></p>`
+        submit.innerHTML += `<p>Last Known Location: Latitude <b>${geolocation.latitude}°</b> Longitude <b>${geolocation.longitude}°</b></p>`
       } else {
         submit.innerHTML += '<p>Enterd from <b>' + yourInfo.ip + '</b></p>'
       }
