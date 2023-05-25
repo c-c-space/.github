@@ -12,7 +12,7 @@ if(localStorage.getItem('geolocation')) {
   <span>Last Known Location: <b>${yourGEO.latitude}</b>, <b>${yourGEO.longitude}</b></span>
   `
 
-  info.before(geolocation);
+  info.after(geolocation);
 }
 
 if(localStorage.getItem('sign')) {
@@ -26,7 +26,7 @@ if(localStorage.getItem('sign')) {
   <span></span>
   <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
   `
-  info.before(sign);
+  info.after(sign);
 }
 
 const connectionInfo = navigator.connection;
