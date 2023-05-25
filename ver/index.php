@@ -93,7 +93,7 @@ function h($str) {
       </a>
       <a href="/ver/log/">
         <i>アクセス履歴</i>
-        <p><?php echo $year; ?> | Access Log</p>
+        <p><b><?php echo $year; ?> | Access Log</b></p>
       </a>
     </nav>
   </header>

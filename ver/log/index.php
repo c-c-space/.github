@@ -103,10 +103,11 @@ flock($fp, LOCK_SH);
     <nav id="contents">
       <a href="#" onclick="window.history.back(); return false;">
         <p><b>creative-community.space</b></p>
+        <u>↩︎</u>
       </a>
       <a href="/ver/" target="_parent">
         <i>更新履歴</i>
-        <p>New Contents & Version Up</p>
+        <p><b>New Contents & Version Up</b></p>
       </a>
     </nav>
   </header>
