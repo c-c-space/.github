@@ -91,9 +91,9 @@ function h($str) {
       <a href="#" onclick="window.history.back(); return false;">
         <p><b>creative-community.space</b></p>
       </a>
-      <a href="#" onclick="window.location.reload();">
-        <p><b>アクセス履歴</b></p>
-        <u><?php echo $year; ?> | Access Log</u>
+      <a href="/ver/log/">
+        <i>アクセス履歴</i>
+        <p><?php echo $year; ?> | Access Log</p>
       </a>
     </nav>
   </header>
