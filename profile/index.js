@@ -2,14 +2,13 @@ const info = document.querySelector('#info');
 
 if(localStorage.getItem('geolocation')) {
   const yourGEO = JSON.parse(localStorage.getItem('geolocation'));
-  const yourMap = JSON.parse(localStorage.getItem('map'));
   const geolocation = document.createElement("li");
   geolocation.innerHTML += `
   <span>行ったことのない場所へ行く</span>
   <span>
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
-  <span>You Posted <b>${yourMap.length}</b> Location</span>
+  <span></span>
   <span>Last Known Location: <b>${yourGEO.latitude}</b>, <b>${yourGEO.longitude}</b></span>
   `
   info.before(geolocation);
