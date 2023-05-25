@@ -56,16 +56,6 @@
     </li>
     <script src="battery.js"></script>
 
-    <li>
-      <span>
-        <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
-      </span>
-      <?php
-      echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
-      echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
-      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
-      ?>
-    </li>
     <li id="screen">
       <span>
         <u>Screen Size</u>
@@ -81,6 +71,17 @@
       <span>Width: <code id="outScreenWidth"></code> px</span>
       <span>Height: <code id="outScreenheight"></code> px</span>
       <span id="navigator"></span>
+    </li>
+
+    <li>
+      <span>
+        <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
+      </span>
+      <?php
+      echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
+      echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
+      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
+      ?>
     </li>
 
     <li id="info">
