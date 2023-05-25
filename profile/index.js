@@ -8,15 +8,16 @@ if(localStorage.getItem('geolocation')) {
   <span>
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
+  <span></span>
   `
   if(!localStorage.getItem('map')) {
-    geolocation.innerHTML += `<span>You Posted <b>0</b> Location</span>`
+    geolocation.innerHTML += `<span>You Posted <b>0</b> Location<br/>`
   } else {
     const yourMap = JSON.parse(localStorage.getItem('map'))
-    geolocation.innerHTML += `<span>You Posted <b>${yourMap.length}</b> Location</span>`
+    geolocation.innerHTML += `<span>You Posted <b>${yourMap.length}</b> Location<br/>`
   }
   geolocation.innerHTML += `
-  <span>Last Known Location: <b>${yourGEO.latitude}</b>, <b>${yourGEO.longitude}</b></span>
+  Last Known Location: <b>${yourGEO.latitude}</b>, <b>${yourGEO.longitude}</b></span>
   `
 
   info.before(geolocation);
