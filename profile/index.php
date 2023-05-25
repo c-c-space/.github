@@ -56,6 +56,16 @@
     </li>
     <script src="battery.js"></script>
 
+    <li>
+      <span>
+        <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
+      </span>
+      <?php
+      echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
+      echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
+      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
+      ?>
+    </li>
     <li id="screen">
       <span>
         <u>Screen Size</u>
@@ -74,17 +84,6 @@
     </li>
 
     <li id="info">
-      <span>
-        <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
-      </span>
-      <?php
-      echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
-      echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
-      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
-      ?>
-    </li>
-
-    <li>
       <span>
         <button id="openModal" class="color bgcolor" type="button">通信情報／ブラウザ等情報</button>
       </span>
