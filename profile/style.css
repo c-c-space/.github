@@ -71,7 +71,8 @@ h2,
   font-weight: 500;
 }
 
-#log li:last-of-type {
+#log li:last-of-type,
+#log #info {
   flex: 2 500px;
 }
 
