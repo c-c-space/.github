@@ -73,7 +73,7 @@
       <span id="navigator"></span>
     </li>
 
-    <li>
+    <li id="info">
       <span>
         <button id="status" class="color bgcolor" type="button" onclick="setLOG()">(Online or Offline?)</button>
       </span>
@@ -84,7 +84,7 @@
       ?>
     </li>
 
-    <li id="info">
+    <li>
       <span>
         <button id="openModal" class="color bgcolor" type="button">通信情報／ブラウザ等情報</button>
       </span>
