@@ -101,21 +101,12 @@ flock($fp, LOCK_SH);
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/ver/log/" target="_parent">
-        <p><b>Access Log | creative-community.space</b></p>
-        <u>アクセス履歴</u>
+      <a href="#" onclick="window.history.back(); return false;">
+        <p><b>creative-community.space</b></p>
       </a>
-      <a href="/profile/" target="_parent">
-        <i>The Information About Network & Browser</i>
-        <p>通信情報／ブラウザ等情報</p>
-      </a>
-      <a href="/hello/" target="_parent">
-        <i>Speech to Text to Text to Speech</i>
-        <p>掲示板 Message Board</p>
-      </a>
-      <a href="/thankyou/" target="_parent">
-        <i>Your Drawing is Seems So Beautiful</i>
-        <p>Thank You for Visiting</p>
+      <a href="/ver/" target="_parent">
+        <i>更新履歴</i>
+        <p>New Contents & Version Up</p>
       </a>
     </nav>
   </header>

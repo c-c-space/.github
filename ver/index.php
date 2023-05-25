@@ -1,6 +1,9 @@
 <?php
 mb_language("ja");
 mb_internal_encoding("UTF-8");
+date_default_timezone_set('Asia/Tokyo');
+
+$year = date("Y");
 
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -85,9 +88,12 @@ function h($str) {
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
+      <a href="#" onclick="window.history.back(); return false;">
+        <p><b>creative-community.space</b></p>
+      </a>
       <a href="#" onclick="window.location.reload();">
-        <p><b>Index | creative-community.space</b></p>
-        <u>更新履歴</u>
+        <p><b>アクセス履歴</b></p>
+        <u><?php echo $year; ?> | Access Log</u>
       </a>
     </nav>
   </header>
