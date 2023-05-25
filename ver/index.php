@@ -90,6 +90,7 @@ function h($str) {
     <nav id="contents">
       <a href="#" onclick="window.history.back(); return false;">
         <p><b>creative-community.space</b></p>
+        <u>↩︎</u>
       </a>
       <a href="/ver/log/">
         <i>アクセス履歴</i>
