@@ -70,6 +70,7 @@ document.addEventListener('readystatechange', event => {
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
+      yourStrage.style.display = 'inline-block'
       yourStrage.innerHTML = "<u>You Posted</u><br/>"
 
       if(!localStorage.getItem('sign')) {
