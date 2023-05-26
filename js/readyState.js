@@ -74,20 +74,20 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML = "<u>You Posted</u><br/>"
 
       if(!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += `<a href="/sign/">0</a>`
+        yourStrage.innerHTML += "<a href="/sign/">0</a>"
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
-      yourStrage.innerHTML += ` Colors & Symbols<br/>`
+      yourStrage.innerHTML += " Colors & Symbols<br/>"
 
       if(!localStorage.getItem('map')) {
-        yourStrage.innerHTML += `<a href="/map/">0</a>`
+        yourStrage.innerHTML += "<a href="/map/">0</a>"
       } else {
         const yourMap = JSON.parse(localStorage.getItem('map'))
         yourStrage.innerHTML += `<a href="/map/">${yourMap.length}</a>`
       }
-      yourStrage.innerHTML += ` Location<br/>`
+      yourStrage.innerHTML += " Location<br/>"
 
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'
