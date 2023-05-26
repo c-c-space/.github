@@ -98,6 +98,7 @@
   justify-content: flex-start;
   list-style: none;
   position: relative;
+  margin-bottom: 5rem;
   width: 100%;
   z-index: 5;
 }
