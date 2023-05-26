@@ -56,17 +56,17 @@
     </li>
     <script src="battery.js"></script>
 
-    <li id="screen">
+    <li id="window">
       <span>
-        <u>Screen Size</u>
+        <u>Window Size</u>
       </span>
       <span>Width: <code id="outInnerWidth"></code> px</span>
       <span>Height: <code id="outInnerHeight"></code> px</span>
       <span id="network"></span>
     </li>
-    <li id="window">
+    <li id="screen">
       <span>
-        <u>Window Size</u>
+        <u>Screen Size</u>
       </span>
       <span>Width: <code id="outScreenWidth"></code> px</span>
       <span>Height: <code id="outScreenheight"></code> px</span>
