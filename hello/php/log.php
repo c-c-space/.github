@@ -7,8 +7,8 @@
     <h2>
       <span>
         Now is The Season named<br/>
-        <strong><?php echo $seasonName;?></strong>
-        <b><?php echo $seasonID;?></b> in
+        <u><?php echo $seasonName;?></u>
+        (<b><?php echo $seasonID;?></b>) in
         <b><?php echo $season;?></b>
       </span>
     </h2>
