@@ -52,7 +52,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   }
 
   #log button b::before {
-    content: "("attr(data-name)")";
+    content: attr(data-name);
   }
   </style>
 </head>
