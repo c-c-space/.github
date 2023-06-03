@@ -6,7 +6,7 @@
     </h1>
     <h2>
       Now is The Season named<br/>
-      <a href="<?php echo $season;?>/<?php echo $seasonName;?>/"><?php echo $seasonName;?></a>
+      <a href="<?php echo $season;?>/<?php echo $seasonID;?>/"><?php echo $seasonName;?></a>
       (<b><?php echo $seasonID;?></b>) in
       <b><?php echo $season;?></b>
     </h2>
