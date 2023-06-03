@@ -4,7 +4,7 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 $season = "秋 Autumn";
-$date = "Aug 8 - Nov 7";
+$date = "August 8 - November 7";
 $description = "「あき」は草木が紅（あか）く染まる季節";
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
@@ -66,8 +66,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       <ul>
         <li>
           <p>
-            <date>Aug 8</date> -
-            <date>Aug 22</date>
+            <date>August 8</date> -
+            <date>August 22</date>
           </p>
           <button type="button" data-date="The Beginning of Autumn" data-hello="この日から立冬の前日までが秋。一年で一番暑い頃であるが、一番暑いと言うことはあとは涼しくなるばかり。暑中見舞いはこの前日まで、この日以降は残暑見舞い。">
             立秋 <b data-name="risshu"></b>
@@ -75,8 +75,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
         <li>
           <p>
-            <date>Aug 23</date> -
-            <date>Sep 7</date>
+            <date>August 23</date> -
+            <date>September 7</date>
           </p>
           <button type="button" data-date="Hot weather abates" data-hello="処暑は暑さが止むと言う意味。萩の花が咲き、朝夕は心地よい涼風が吹く頃だが、台風のシーズンでもある。">
             処暑 <b data-name="shosho"></b>
@@ -84,8 +84,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
         <li>
           <p>
-            <date>Sep 8</date> -
-            <date>Sep 22</date>
+            <date>September 8</date> -
+            <date>September 22</date>
           </p>
           <button type="button" data-date="Dew forms on the leaves" data-hello="野には薄の穂が顔を出し、秋の趣がひとしお感じられる頃。朝夕の心地よい涼風に、幾分の肌寒さを感じさせる冷風が混じり始める。">
             白露 <b data-name="hakuro"></b>
@@ -93,8 +93,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
         <li>
           <p>
-            <date>Sep 23</date> -
-            <date>Oct 7</date>
+            <date>September 23</date> -
+            <date>October 7</date>
           </p>
           <button type="button" data-date="The Autumn Equinox" data-hello="暑い日は減り代わりに冷気を感ずる日が増える。昼と夜の長さがほぼ同じになる、秋の七草が咲き揃う頃。">
             秋分 <b data-name="shuubun"></b>
@@ -102,8 +102,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
         <li>
           <p>
-            <date>Oct 8</date> -
-            <date>Oct 23</date>
+            <date>October 8</date> -
+            <date>October 23</date>
           </p>
           <button type="button" data-date="Weather becomes colder" data-hello="冷たい露の結ぶ頃。秋もいよいよ本番。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。">
             寒露 <b data-name="kanro"></b>
@@ -111,8 +111,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
         <li>
           <p>
-            <date>Oct 24</date> -
-            <date>Nov 7</date>
+            <date>October 24</date> -
+            <date>November 7</date>
           </p>
           <button type="button" data-date="The Season of Frost" data-hello="北国や山間部では、霜が降りて朝には草木が白く化粧をする頃。野の花の数は減り始める、代わって山を紅葉が飾る頃である。">
             霜降 <b data-name="soukou"></b>
