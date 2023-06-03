@@ -26,6 +26,9 @@ document.addEventListener('readystatechange', event => {
     modalH3 = document.querySelector('#modal h3'),
     lastModified = document.querySelector('#lastModified');
 
+    lastModified.innerHTML =
+    'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
     if(!localStorage.getItem('yourInfo')) {
       document.querySelector('#now .controls').remove()
 
@@ -63,9 +66,6 @@ document.addEventListener('readystatechange', event => {
       enterBtn.setAttribute('onclick','ChangeHidden()')
       enterBtn.innerText = 'Speech to Text to Text to Speech'
       mainLog.prepend(enterBtn)
-
-      lastModified.innerHTML =
-      'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
 
       modalH3.innerText = '掲示板 Message Board';
       fetchText('readme.md','#about');
