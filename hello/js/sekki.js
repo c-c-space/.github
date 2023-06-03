@@ -11,7 +11,7 @@ for (const dateLi of dateAll) {
     speechSynthesis.speak(uttr)
 
     const sekkiName = document.querySelector('#log h1 b')
-    sekkiName.innerText = this.dataset.name + this.innerText
+    sekkiName.innerText = this.dataset.name + this.dataset.date + this.innerText
 
     const sekkiDates = document.querySelector('#lastModified')
     sekkiDates.innerText = this.dataset.date
