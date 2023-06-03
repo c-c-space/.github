@@ -5,9 +5,9 @@
       <code id="lastModified"></code>
     </h1>
     <h2>
-<?php echo $seasonName;?><br/>
       <span>
-        Now is The Season named
+        Now is The Season named<br/>
+        <strong><?php echo $seasonName;?></strong>
         <b><?php echo $seasonID;?></b> in
         <b><?php echo $season;?></b>
       </span>
