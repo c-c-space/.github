@@ -22,6 +22,7 @@ async function fetchText(url = '', query = '') {
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'complete') {
     const mainLog = document.querySelector('#log'),
+    enterBtn = document.querySelector('#enter-btn'),
     logAll = document.querySelector('#log section'),
     modalH3 = document.querySelector('#modal h3'),
     lastModified = document.querySelector('#lastModified');
@@ -30,10 +31,15 @@ document.addEventListener('readystatechange', event => {
     'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
 
     if(!localStorage.getItem('yourInfo')) {
+      logAll.style.padding = "1rem 0.5rem"
+      enterBtn.setAttribute('onclick','setLOG()')
+      enterBtn.innerText = 'Enter'
+
       document.querySelector('#log h2 a').removeAttribute('href')
 
-      document.querySelector('#now .controls').remove()
+      fetchText('readme.md','#log section');
 
+      document.querySelector('#now .controls').remove()
       const backBtn = document.createElement('button')
       backBtn.setAttribute('type','button')
       backBtn.setAttribute('id','backBtn')
@@ -49,25 +55,8 @@ document.addEventListener('readystatechange', event => {
       .then(text => {
         document.querySelector('#about').innerHTML = text;
       });
-
-      const enterBtn = document.createElement('button')
-      enterBtn.setAttribute('type','button')
-      enterBtn.setAttribute('id','enterBtn')
-      enterBtn.setAttribute('class','color bgcolor')
-      enterBtn.setAttribute('onclick','setLOG()')
-      enterBtn.innerText = 'Enter'
-      document.querySelector('#about').after(enterBtn)
-
-      fetchText('readme.md','#log section');
-
-      logAll.style.padding = "1rem 0.5rem"
     } else {
-      const enterBtn = document.createElement('button')
-      enterBtn.setAttribute('type','button')
-      enterBtn.setAttribute('id','enter-btn')
       enterBtn.setAttribute('onclick','ChangeHidden()')
-      enterBtn.innerText = 'Speech to Text to Text to Speech'
-      mainLog.prepend(enterBtn)
 
       modalH3.innerText = '掲示板 Message Board';
       fetchText('readme.md','#about');
