@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Tokyo');
 
 $season = "冬 Winter";
 $date = "November 8 - February 3";
-$description = "「ふゆ」は万物が冷ゆ（ひゆ）る季節";
+$description = "「ふゆ」は万物が冷ゆ（ひゆ）る季節。北半球では1年のうちで最も昼（日の出から日没まで）の時間が短い冬至を境に太陽が生まれ変わり、陽気が増え始めるとされている。";
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";

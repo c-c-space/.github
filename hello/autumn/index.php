@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Tokyo');
 
 $season = "秋 Autumn";
 $date = "August 8 - November 7";
-$description = "「あき」は草木が紅（あか）く染まる季節";
+$description = "「あき」は草木が紅（あか）く染まる季節。昼夜の長さがほぼ当分に二分される(日本の場合、実際には昼の方が14分ほど長い)秋分の日は国民の祝日。「祖先をうやまい、なくなつた人々をしのぶ」日。";
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";

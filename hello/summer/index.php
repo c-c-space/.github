@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Tokyo');
 
 $season = "夏 Summer";
 $date = "May 5 - August 7";
-$description = "「なつ」は熱（ねつ）の季節";
+$description = "「なつ」は熱（ねつ）の季節。北半球では1年のうちで最も昼（日の出から日没まで）の時間が長い夏至は、日本の大部分で梅雨の最中。";
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";

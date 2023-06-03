@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Tokyo');
 
 $season = "春 Spring";
 $date = "February 4 - May 4";
-$description = "「はる」は万物が発る季節";
+$description = "「はる」は万物が発る季節。春の真ん中、昼夜の長さがほぼ当分に二分される(日本の場合、実際には昼の方が14分ほど長い)春分の日は国民の祝日。「自然をたたえ、生物をいつくしむ」日。";
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
