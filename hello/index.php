@@ -104,7 +104,7 @@ flock($fp, LOCK_SH);
   <script src="js/recognition.js"></script>
 
   <main id="log">
-    <button type="button" id="enter-btn" class="color bgcolor">Submit a Text of <?php echo $sekkiName;?> <?php echo $sekki;?></button>
+    <button type="button" id="enter-btn" class="color bgcolor">Text of <?php echo $sekkiName;?> <?php echo $sekki;?></button>
     <div>
       <h1>
         <b><?php echo $greeting;?></b><br/>
