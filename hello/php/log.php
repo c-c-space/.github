@@ -5,12 +5,10 @@
       <code id="lastModified"></code>
     </h1>
     <h2>
-      <span>
-        Now is The Season named<br/>
-        <u><?php echo $seasonName;?></u>
-        (<b><?php echo $seasonID;?></b>) in
-        <b><?php echo $season;?></b>
-      </span>
+      Now is The Season named<br/>
+      <u><?php echo $seasonName;?></u>
+      (<b><?php echo $seasonID;?></b>) in
+      <b><?php echo $season;?></b>
     </h2>
   </div>
   <section>
