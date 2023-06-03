@@ -1,6 +1,6 @@
 {
   "title" : "Hello",
-  "description" : "Speech to Text to Text to Speech",
+  "description" : "二十四節気 掲示板",
   "author" : "creative-community.space",
   "email" : "pehu@creative-community.space",
   "type" : "website",
@@ -10,25 +10,33 @@
 
   "contents" : [
     {
-      "date" : "Speech to Text to Text to Speech",
-      "name" : "掲示板 Message Board",
-      "url" : "/hello/",
+      "date" : "Feb 4 - May 4",
+      "name" : "春 Spring",
+      "url" : "spring/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "SpeechRecognition.js",
-      "name" : "音声認識 Speech Recognition",
-      "url" : "/hello/recognition.html",
+      "date" : "May 5 - Aug 7",
+      "name" : "夏 Summer",
+      "url" : "summer/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "SpeechSynthesis.js",
-      "name" : "音声合成 Text to Speech",
-      "url" : "/hello/synthesis.html",
+      "date" : "Aug 8 - Nov 7",
+      "name" : "秋 Autumn",
+      "url" : "autumn/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "Nov 8 - Feb 3",
+      "name" : "冬 Winter",
+      "url" : "winter/",
       "type" : "news",
       "caption" : "none",
       "note" : ""

@@ -1,0 +1,33 @@
+#menu {
+  background: #000;
+}
+
+#js-button {
+  background: #fff;
+}
+
+#contents {
+  mix-blend-mode: difference;
+}
+
+#contents a {
+  filter: invert();
+}
+
+#log button {
+  color: inherit;
+}
+
+#now {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  #now {
+    padding: 2.5%;
+  }
+}

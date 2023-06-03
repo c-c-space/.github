@@ -21,6 +21,5 @@
       <option value="20px">Large</option>
     </select>
   </section>
-  <script src="../../profile/jscolor.js"></script>
   <button class="color bgcolor" type="submit">GET</button>
 </form>

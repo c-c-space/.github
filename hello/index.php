@@ -17,7 +17,7 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
-require('php/24seasons.php');
+require('all/24seasons.php');
 $source_file = $season . "/". $seasonID . "/". $timeframe . ".csv";
 
 function h($str) {
@@ -42,44 +42,10 @@ flock($fp, LOCK_SH);
   <script src="/js/index.js" async></script>
   <script src="js/readyState.js" async></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
-  <style type="text/css">
-  #menu {
-    background: #000;
-  }
-
-  #js-button {
-    background: #fff;
-  }
-
-  #contents {
-    mix-blend-mode: difference;
-  }
-
-  #contents a {
-    filter: invert();
-  }
-
-  #log button {
-    color: inherit;
-  }
-
-  #now {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    bottom: 0;
-    padding: 1rem;
-  }
-
-  @media screen and (max-width: 750px) {
-    #now {
-      padding: 2.5%;
-    }
-  }
-  </style>
 </head>
 
 <body>
@@ -133,7 +99,21 @@ flock($fp, LOCK_SH);
   </main>
   <script src="js/recognition.js"></script>
 
-  <?php require('php/log.php'); ?>
+  <main id="log">
+    <div>
+      <h1>
+        <b><?php echo $greeting;?></b><br/>
+        <code id="lastModified"></code>
+      </h1>
+      <h2>
+        Now is The Season named<br/>
+        <a href="<?php echo $season;?>/<?php echo $seasonID;?>/"><?php echo $seasonName;?></a>
+        (<b><?php echo $seasonID;?></b>) in
+        <b><?php echo $season;?></b>
+      </h2>
+    </div>
+    <?php require('all/log.php'); ?>
+  </main>
   <nav id="now" class="hidden">
     <section class="controls">
       <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
