@@ -1,5 +1,11 @@
 'use strict'
 
+fetch('../all/readme.md')
+.then(response => response.text())
+.then(text => {
+  document.querySelector('#about').innerText = text
+});
+
 const dateAll = document.querySelectorAll('#log ul li button')
 for (const dateLi of dateAll) {
   dateLi.addEventListener('click', function () {

@@ -17,7 +17,7 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
-require('all/24seasons.php');
+require('all/24sekki.php');
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 
 function h($str) {

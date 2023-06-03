@@ -128,7 +128,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
-    <br/>
+    <section id="about"></section>
+    <hr/>
     <form method="GET">
       <section>
         <label for="bgcolor">Background Color</label>
@@ -149,7 +150,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <?php require('../all/controls.html'); ?>
 
-  <script src="../js/sekki.js"></script>
+  <script src="../all/24sekki.js"></script>
   <script src="../../profile/js/jscolor.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
 </body>
