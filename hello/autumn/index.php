@@ -3,6 +3,20 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
+function h($str) {
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+if (date("H") >= 6 and date("H") <= 11) {
+  $timeframe = "morning";
+} elseif (date("H") >= 12 and date("H") <= 17) {
+  $timeframe = "afternoon";
+} elseif (date("H") >= 18 and date("H") <= 23) {
+  $timeframe = "evening";
+} else {
+  $timeframe = "night";
+}
+
 $season = "秋 Autumn";
 $date = "Aug 8 - Nov 7";
 $description = "「あき」は草木が紅（あか）く染まる季節";
@@ -12,6 +26,35 @@ $three = "hakuro";
 $four = "shuubun";
 $five = "kanro";
 $six = "soukou";
+
+$file1 = fopen($one . "/". $timeframe . ".csv", 'a+b');
+$file2 = fopen($two . "/". $timeframe . ".csv", 'a+b');
+$file3 = fopen($three . "/". $timeframe . ".csv", 'a+b');
+$file4 = fopen($four . "/". $timeframe . ".csv", 'a+b');
+$file5 = fopen($five . "/". $timeframe . ".csv", 'a+b');
+$file6 = fopen($six . "/". $timeframe . ".csv", 'a+b');
+
+while ($row = fgetcsv($file1)) {
+  $rows[] = $row;
+}
+while ($row = fgetcsv($file2)) {
+  $rows[] = $row;
+}
+while ($row = fgetcsv($file3)) {
+  $rows[] = $row;
+}
+while ($row = fgetcsv($file4)) {
+  $rows[] = $row;
+}
+while ($row = fgetcsv($file5)) {
+  $rows[] = $row;
+}
+while ($row = fgetcsv($file6)) {
+  $rows[] = $row;
+}
+
+$post = count($rows);
+flock($fp, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
