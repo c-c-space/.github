@@ -47,6 +47,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     line-height: 150%;
   }
 
+  #log button b {
+    font-weight: 500;
+  }
+
   #log button b::before {
     content: "("attr(data-name)")";
   }
@@ -70,7 +74,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>February 18</date>
           </p>
           <button type="button" data-date="The Beginning of Spring" data-hello="この日から立夏の前日までが春。まだ寒さの厳しい時期ではあるが日脚は徐々に伸び、暖かい地方では梅が咲き始める。">
-            立春 <b data-name="risshun"></b>
+            <b data-name="立春"></b> (りっしゅん)
           </button>
         </li>
         <li>
@@ -79,7 +83,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>March 4</date>
           </p>
           <button type="button" data-date="Snow melts into water" data-hello="空から降るものが雪から雨に替わる頃、深く積もった雪も融け始める。春一番が吹き、九州南部ではうぐいすの鳴き声が聞こえ始める。">
-            雨水 <b data-name="usui"></b>
+            <b data-name="雨水"></b> (うすい)
           </button>
         </li>
         <li>
@@ -88,7 +92,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>March 19</date>
           </p>
           <button type="button" data-date="Insects emerge from the ground" data-hello="啓蟄は冬眠をしていた虫が穴から出てくる頃という意味。実際に虫が活動を始めるのはもう少し先。柳の若芽が芽吹き蕗のとうの花が咲く頃。">
-            啓蟄 <b data-name="keichitsu"></b>
+            <b data-name="啓蟄"></b> (けいちつ)
           </button>
         </li>
         <li>
@@ -97,7 +101,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>April 3</date>
           </p>
           <button type="button" data-date="The Spring Equinox" data-hello="この日をはさんで前後7日間が彼岸。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。昼夜の長さがほぼ同じ頃であり、この後は昼の時間が長くなって行く。">
-            春分 <b data-name="shunbun"></b>
+            <b data-name="春分"></b> (しゅんぶん)
           </button>
         </li>
         <li>
@@ -106,7 +110,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>April 18</date>
           </p>
           <button type="button" data-date="Clear and Bright, Plants flower" data-hello="清浄明潔の略。晴れ渡った空には当に清浄明潔という語ふさわしい。地上に目を移せば、百花が咲き競う季節。">
-            清明 <b data-name="seimei"></b>
+            <b data-name="清明"></b> (せいめい)
           </button>
         </li>
         <li>
@@ -115,7 +119,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>May 4</date>
           </p>
           <button type="button" data-date="Spring rains and seed sowing" data-hello="田んぼや畑の準備が整い、それに合わせるように、柔らかな春の雨が降る頃。この頃より変りやすい春の天気も安定し日差しも強まる。">
-            穀雨 <b data-name="kokuu"></b>
+            <b data-name="穀雨"></b> (こくう)
           </button>
         </li>
       </ul>

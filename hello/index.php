@@ -18,7 +18,7 @@ if (date("H") >= 6 and date("H") <= 11) {
 }
 
 require('all/24seasons.php');
-$source_file = $season . "/". $seasonID . "/". $timeframe . ".csv";
+$source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -56,6 +56,12 @@ flock($fp, LOCK_SH);
       <a href="#" onclick="window.history.back(); return false;">
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
+      </a>
+      <a href="<?php echo $season;?>/">
+        <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
+      </a>
+      <a href="<?php echo $season ./. $sekki;?>/">
+        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
@@ -107,8 +113,8 @@ flock($fp, LOCK_SH);
       </h1>
       <h2>
         Now is The Season named<br/>
-        <a href="<?php echo $season;?>/<?php echo $seasonID;?>/"><?php echo $seasonName;?></a>
-        (<b><?php echo $seasonID;?></b>) in
+        <a href="<?php echo $season;?>/<?php echo $sekki;?>/"><?php echo $sekkiName;?></a>
+        (<b><?php echo $sekki;?></b>) in
         <b><?php echo $season;?></b>
       </h2>
     </div>

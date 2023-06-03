@@ -4,99 +4,123 @@ $datetime = date('m-d');
 
 if ($datetime >= '02-04' and $datetime < '02-18') {
   $season = "spring";
-  $seasonName = "立春";
-  $seasonID = "risshun";
+  $sekki = "risshun";
+  $seasonName = "春";
+  $sekkiName = "立春";
 } elseif ($datetime >= '02-19' and $datetime <= '03-04') {
   $season = "spring";
-  $seasonName = "雨水";
-  $seasonID = "usui";
+  $sekki = "usui";
+  $seasonName = "春";
+  $sekkiName = "雨水";
 } elseif ($datetime >= '03-05' and $datetime <= '03-19') {
   $season = "spring";
-  $seasonName = "啓蟄";
-  $seasonID = "keichitsu";
+  $sekki = "keichitsu";
+  $seasonName = "春";
+  $sekkiName = "啓蟄";
 } elseif ($datetime >= '03-20' and $datetime <= '04-03') {
   $season = "spring";
-  $seasonName = "春分";
-  $seasonID = "shunbun";
+  $sekki = "shunbun";
+  $seasonName = "春";
+  $sekkiName = "春分";
 } elseif ($datetime >= '04-04' and $datetime <= '04-18') {
   $season = "spring";
-  $seasonName = "清明";
-  $seasonID = "seimei";
+  $sekki = "seimei";
+  $seasonName = "春";
+  $sekkiName = "清明";
 } elseif ($datetime >= '04-19' and $datetime <= '05-04') {
   $season = "spring";
-  $seasonName = "穀雨";
-  $seasonID = "kokuu";
+  $sekki = "kokuu";
+  $seasonName = "春";
+  $sekkiName = "穀雨";
 } elseif ($datetime >= '05-05' and $datetime <= '05-19') {
   $season = "summer";
-  $seasonName = "立夏";
-  $seasonID = "rikka";
+  $sekki = "rikka";
+  $seasonName = "夏";
+  $sekkiName = "立夏";
 } elseif ($datetime >= '05-20' and $datetime <= '06-04') {
   $season = "summer";
-  $seasonName = "小満";
-  $seasonID = "shouman";
+  $sekki = "shouman";
+  $seasonName = "夏";
+  $sekkiName = "小満";
 } elseif ($datetime >= '06-05' and $datetime <= '06-20') {
   $season = "summer";
-  $seasonName = "芒種";
-  $seasonID = "boushu";
+  $sekki = "boushu";
+  $seasonName = "夏";
+  $sekkiName = "芒種";
 } elseif ($datetime >= '06-21' and $datetime <= '07-06') {
   $season = "summer";
-  $seasonName = "夏至";
-  $seasonID = "geshi";
+  $sekki = "geshi";
+  $seasonName = "夏";
+  $sekkiName = "夏至";
 } elseif ($datetime >= '07-07' and $datetime <= '07-22') {
   $season = "summer";
-  $seasonName = "小暑";
-  $seasonID = "shousho";
+  $sekki = "shousho";
+  $seasonName = "夏";
+  $sekkiName = "小暑";
 } elseif ($datetime >= '07-23' and $datetime <= '08-07') {
   $season = "summer";
-  $seasonName = "大暑";
-  $seasonID = "taisho";
+  $sekki = "taisho";
+  $seasonName = "夏";
+  $sekkiName = "大暑";
 } elseif ($datetime >= '08-08' and $datetime <= '08-22') {
   $season = "autumn";
-  $seasonName = "立秋";
-  $seasonID = "risshu";
+  $sekki = "risshu";
+  $seasonName = "秋";
+  $sekkiName = "立秋";
 } elseif ($datetime >= '08-23' and $datetime <= '09-07') {
   $season = "autumn";
-  $seasonName = "処暑";
-  $seasonID = "shosho";
+  $sekki = "shosho";
+  $seasonName = "秋";
+  $sekkiName = "処暑";
 } elseif ($datetime >= '09-08' and $datetime <= '09-22') {
   $season = "autumn";
-  $seasonName = "白露";
-  $seasonID = "hakuro";
+  $sekki = "hakuro";
+  $seasonName = "秋";
+  $sekkiName = "白露";
 } elseif ($datetime >= '09-23' and $datetime <= '10-07') {
   $season = "autumn";
-  $seasonName = "秋分";
-  $seasonID = "shuubun";
+  $sekki = "shuubun";
+  $seasonName = "秋";
+  $sekkiName = "秋分";
 } elseif ($datetime >= '10-08' and $datetime <= '10-23') {
   $season = "autumn";
-  $seasonName = "寒露";
-  $seasonID = "kanro";
+  $sekki = "kanro";
+  $seasonName = "秋";
+  $sekkiName = "寒露";
 } elseif ($datetime >= '10-24' and $datetime <= '11-07') {
   $season = "autumn";
-  $seasonName = "霜降";
-  $seasonID = "soukou";
+  $sekki = "soukou";
+  $seasonName = "秋";
+  $sekkiName = "霜降";
 } elseif ($datetime >= '11-08' and $datetime <= '11-21') {
   $season = "winter";
-  $seasonName = "立冬";
-  $seasonID = "rittou";
+  $sekki = "rittou";
+  $seasonName = "冬";
+  $sekkiName = "立冬";
 } elseif ($datetime >= '11-22' and $datetime <= '12-06') {
   $season = "winter";
-  $seasonName = "小雪";
-  $seasonID = "shousetsu";
+  $sekki = "shousetsu";
+  $seasonName = "冬";
+  $sekkiName = "小雪";
 } elseif ($datetime >= '12-07' and $datetime <= '12-21') {
   $season = "winter";
-  $seasonName = "大雪";
-  $seasonID = "taisetsu";
+  $sekki = "taisetsu";
+  $seasonName = "冬";
+  $sekkiName = "大雪";
 } elseif ($datetime >= '12-22' and $datetime <= '01-05') {
   $season = "winter";
-  $seasonName = "冬至";
-  $seasonID = "touji";
+  $sekki = "touji";
+  $seasonName = "冬";
+  $sekkiName = "冬至";
 } elseif ($datetime >= '01-06' and $datetime <= '01-19') {
   $season = "winter";
-  $seasonName = "小寒";
-  $seasonID = "shoukan";
+  $sekki = "shoukan";
+  $seasonName = "冬";
+  $sekkiName = "小寒";
 } elseif ($datetime >= '01-20' and $datetime <= '02-03') {
   $season = "winter";
-  $seasonName = "大寒";
-  $seasonID = "daikan";
+  $sekki = "daikan";
+  $seasonName = "冬";
+  $sekkiName = "大寒";
 }
 ?>

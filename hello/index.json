@@ -8,38 +8,5 @@
   "card" : "summary_large_image",
   "src" : "card.png",
 
-  "contents" : [
-    {
-      "date" : "February 4 - May 4",
-      "name" : "春 Spring",
-      "url" : "spring/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "May 5 - August 7",
-      "name" : "夏 Summer",
-      "url" : "summer/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "August 8 - November 7",
-      "name" : "秋 Autumn",
-      "url" : "autumn/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "November 8 - February 3",
-      "name" : "冬 Winter",
-      "url" : "winter/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    }
-  ]
+  "contents" : []
 }
