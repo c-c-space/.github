@@ -59,7 +59,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
         <i>Speech to Text to Text to Speech</i>
-        <p>Posted in <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+        <p>Posted on <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
