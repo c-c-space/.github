@@ -126,5 +126,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <?php require('../all/controls.html'); ?>
 
   <script src="../js/sekki.js"></script>
+  <script src="../../profile/js/jscolor.js"></script>
+  <script src="../../profile/js/setStyles.js"></script>
 </body>
 </html>
