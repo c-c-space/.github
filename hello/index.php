@@ -63,7 +63,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
         <i>二十四節気 | The 24 Solar Terms</i>
-        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+        <p>Hello in <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
