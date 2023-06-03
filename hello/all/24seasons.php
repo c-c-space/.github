@@ -2,6 +2,16 @@
 //現在の日時を取得
 $datetime = date('m-d');
 
+if ($datetime >= '02-04' and $datetime <= '05-04') {
+  $seasonDate = "February 4 - May 4";
+} elseif ($datetime >= '05-05' and $datetime <= '08-07') {
+  $seasonDate = "May 5 - August 7";
+} elseif ($datetime >= '08-08' and $datetime <= '11-07') {
+  $seasonDate = "August 8 - November 7";
+} elseif ($datetime >= '11-08' and $datetime <= '02-03') {
+  $seasonDate = "November 8 - February 3";
+}
+
 if ($datetime >= '02-04' and $datetime < '02-18') {
   $season = "spring";
   $sekki = "risshun";
