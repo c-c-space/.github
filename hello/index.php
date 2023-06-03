@@ -59,9 +59,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
         <i>Now is The Season named</i>
-        <p>
-          <b><?php echo $sekkiName;?></b> <?php echo $sekki;?> in <?php echo $season;?>
-        </p>
+        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?> in <?php echo $season;?></p>
       </a>
     </nav>
   </header>
