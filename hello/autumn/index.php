@@ -65,9 +65,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <div>
       <h1>
         <code id="lastModified"><?php echo $date;?></code>
-        <b><?php echo $description;?></b>
+        <b><?php echo $season;?></b>
       </h1>
-      <h2><?php echo $season;?></h2>
+      <h2><?php echo $description;?></h2>
     </div>
     <section>
       <ul>
