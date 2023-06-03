@@ -130,7 +130,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </main>
   <script src="../js/sekki.js"></script>
 
-  <?php require('../all/controls.php'); ?>
+  <?php require('../all/controls.html'); ?>
   <script src="../js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
