@@ -13,8 +13,7 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
-require('php/24seasons.php');
-
+require('all/24seasons.php');
 $source_file = $season . "/". $seasonID . "/". $timeframe . ".csv";
 
 define("LOGFILE", $source_file);
