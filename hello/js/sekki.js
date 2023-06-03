@@ -4,14 +4,14 @@ const dateAll = document.querySelectorAll('#log ul li button')
 for (const dateLi of dateAll) {
   dateLi.addEventListener('click', function () {
     const uttr = new SpeechSynthesisUtterance()
-    uttr.text = this.innerText + this.dataset.hello
+    uttr.text = this.innerText + this.dataset.date + this.dataset.hello
     uttr.lang = "ja-JP"
     uttr.pitch = 0.9
     uttr.rate = 0.9
     speechSynthesis.speak(uttr)
 
     const sekkiName = document.querySelector('#log h1 b')
-    sekkiName.innerText = this.dataset.name + this.dataset.date + this.innerText
+    sekkiName.innerText = this.dataset.name + this.innerText
 
     const sekkiDates = document.querySelector('#lastModified')
     sekkiDates.innerText = this.dataset.date
