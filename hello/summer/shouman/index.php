@@ -1,24 +1,27 @@
 <?php
-require_once('../php/head.php');
+require_once('../../php/head.php');
 ?>
 
 <body>
-  <script src="/js/menu.js"></script>
-  <header id="menu" class="bgcolor" hidden>
-    <button class="color bgcolor" id="js-button"><b></b></button>
-    <nav id="contents"></nav>
-  </header>
-
-  <?php require('../php/log.php'); ?>
-  <?php require('../php/controls.php'); ?>
+  <main id="log">
+    <div>
+      <h1>
+        <b></b><br/>
+        <code id="lastModified"></code>
+      </h1>
+      <h2></h2>
+    </div>
+    <?php require('../../all/log.php'); ?>
+  </main>
+  <?php require('../../all/controls.html'); ?>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>2023 | Message Board</h3>
+    <h3></h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
-    <?php require('../php/timeframe.php'); ?>
+    <?php require('../../php/timeframe.php'); ?>
   </dialog>
-  <script src="../../profile/setStyles.js"></script>
-  <script src="../js/log.js"></script>
+  <script src="../../../profile/setStyles.js"></script>
+  <script src="../../js/log.js"></script>
 </body>
 </html>

@@ -40,56 +40,11 @@ function h($str) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../css/controls.css" />
-  <link rel="stylesheet" href="../css/log.css" />
-  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
-  <style type="text/css">
-  #menu {
-    background: #000;
-  }
-
-  #js-button {
-    background: #fff;
-  }
-
-  #contents {
-    mix-blend-mode: difference;
-  }
-
-  #contents a {
-    filter: invert();
-  }
-
-  #log button {
-    color: inherit;
-  }
-
-  #readme,
-  #log {
-    pointer-events: auto;
-    user-select: auto;
-  }
-
-  #log section div {
-    pointer-events: none;
-    user-select: none;
-  }
-
-  #now {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    bottom: 0;
-    padding: 1rem;
-  }
-
-  @media screen and (max-width: 750px) {
-    #now {
-      padding: 2.5%;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="/hello/style.css" />
+  <link rel="stylesheet" href="/hello/css/index.css" />
+  <link rel="stylesheet" href="/hello/css/controls.css" />
+  <link rel="stylesheet" href="/hello/css/log.css" />
+  <link rel="stylesheet" href="/hello/css/mobile.css" media="screen and (max-width: 750px)" />
 
   <script type="text/javascript">
   if(!localStorage.getItem('yourInfo')) {
