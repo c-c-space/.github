@@ -43,6 +43,10 @@ h2 {
   font-weight: 500;
 }
 
+h2 b {
+  text-transform: capitalize;
+}
+
 h3 {
   font-size: 125%;
   font-weight: 500;
