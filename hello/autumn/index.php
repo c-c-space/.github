@@ -50,17 +50,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 </head>
 
 <body>
-  <script src="/js/menu.js"></script>
-  <header id="menu" class="bgcolor" hidden>
-    <button class="color bgcolor" id="js-button"><b></b></button>
-    <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
-        <u>↩︎</u>
-      </a>
-    </nav>
-  </header>
-
   <main id="log">
     <div>
       <h1>
