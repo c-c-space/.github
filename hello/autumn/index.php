@@ -136,7 +136,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </dialog>
 
   <?php require('../all/controls.html'); ?>
-  <script src="../js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
