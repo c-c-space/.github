@@ -16,18 +16,6 @@ $three = "hakuro";
 $four = "shuubun";
 $five = "kanro";
 $six = "soukou";
-
-function h($str) {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-
-$fp = fopen('index.csv', 'a+b');
-while ($row = fgetcsv($fp)) {
-  $rows[] = $row;
-}
-
-$post = count($rows);
-flock($fp, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
