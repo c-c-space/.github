@@ -17,7 +17,9 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
-$source_file = date("Y"). "/". $timeframe . ".csv";
+require('php/24seasons.php');
+
+$source_file = $season . "/". $seasonID . "/". $timeframe . ".csv";
 
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -29,7 +31,6 @@ while ($row = fgetcsv($fp)) {
 }
 
 $post = count($rows);
-
 flock($fp, LOCK_SH);
 ?>
 
@@ -134,13 +135,21 @@ flock($fp, LOCK_SH);
   <script src="js/recognition.js"></script>
 
   <?php require('php/log.php'); ?>
-  <?php require('php/controls.php'); ?>
+  <nav id="now" class="hidden">
+    <section class="controls">
+      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
+      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
+      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
+    </section>
+    <button id="openModal" class="color bgcolor" type="button">?</button>
+  </nav>
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>掲示板 Message Board</h3>
+    <h3></h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
+    <hr/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
     <br/>
@@ -154,8 +163,8 @@ flock($fp, LOCK_SH);
       <option value="20px">Large</option>
     </select>
   </dialog>
-  <script src="../profile/jscolor.js"></script>
-  <script src="../profile/setStyles.js"></script>
-  <script src="/js/log.js"></script>
+  <script src="../profile/js/jscolor.js"></script>
+  <script src="../profile/js/setStyles.js"></script>
+  <script src="../js/log.js"></script>
 </body>
 </html>

@@ -11,12 +11,20 @@ function ChangeHidden() {
   })
 };
 
+async function fetchText(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector(query).innerText = text
+  });
+}
+
 document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'loading') {
-  } else if (event.target.readyState === 'complete') {
-    const mainLog = document.querySelector('#log')
-    const logAll = document.querySelector('#log section')
-    const lastModified = document.querySelector('#lastModified')
+  if (event.target.readyState === 'complete') {
+    const mainLog = document.querySelector('#log'),
+    logAll = document.querySelector('#log section'),
+    modalH3 = document.querySelector('#modal h3'),
+    lastModified = document.querySelector('#lastModified');
 
     if(!localStorage.getItem('yourInfo')) {
       document.querySelector('#now .controls').remove()
@@ -29,25 +37,25 @@ document.addEventListener('readystatechange', event => {
       backBtn.innerText = 'creative-community.space'
       document.querySelector('#now').prepend(backBtn)
 
+      modalH3.innerText = 'Submit Your Info to Enter This Site'
+
+      fetch('../yourinfo.php')
+      .then(response => response.text())
+      .then(text => {
+        document.querySelector('#about').innerHTML = text;
+      });
+
       const enterBtn = document.createElement('button')
       enterBtn.setAttribute('type','button')
       enterBtn.setAttribute('id','enterBtn')
       enterBtn.setAttribute('class','color bgcolor')
       enterBtn.setAttribute('onclick','setLOG()')
       enterBtn.innerText = 'Enter'
-      document.querySelector('#about').appendChild(enterBtn)
+      document.querySelector('#about').after(enterBtn)
 
-      async function readmeMD() {
-        fetch('readme.md')
-        .then(response => response.text())
-        .then(readme => {
-          logAll.innerHTML = readme.replace(/\n/g, "<br>")
-        });
-      }
-      readmeMD();
+      fetchText('readme.md','#log section');
 
       logAll.style.padding = "1rem 0.5rem"
-      lastModified.innerHTML = navigator.userAgent
     } else {
       const enterBtn = document.createElement('button')
       enterBtn.setAttribute('type','button')
@@ -57,16 +65,10 @@ document.addEventListener('readystatechange', event => {
       mainLog.prepend(enterBtn)
 
       lastModified.innerHTML =
-      'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>'
+      'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
 
-      async function readmeMD() {
-        fetch('readme.md')
-        .then(response => response.text())
-        .then(readme => {
-          document.querySelector('#about').innerHTML = readme.replace(/\n/g, "<br>")
-        });
-      }
-      readmeMD();
+      modalH3.innerText = '掲示板 Message Board';
+      fetchText('readme.md','#about');
 
       const submitBtn = document.querySelector("#submit-btn")
       submitBtn.addEventListener('click', function () {

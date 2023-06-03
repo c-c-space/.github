@@ -1,16 +1,16 @@
 'use strict'
 
 function setLOG() {
-  const hqdn = document.querySelector('#hqdn').textContent
-  const ip = document.querySelector('#ip').textContent
-  const os = document.querySelector('#os').textContent
+  const hqdn = document.querySelector('#hqdn').textContent,
+  ip = document.querySelector('#ip').textContent,
+  os = document.querySelector('#os').textContent;
 
   const yourInfo = {
     port : hqdn,
     ip : ip,
     os : os
   }
-
+  
   const yourJSON = JSON.stringify(yourInfo)
   localStorage.setItem('yourInfo', yourJSON)
 

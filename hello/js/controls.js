@@ -1,15 +1,15 @@
 // 変数の設定
-const txtSpeech = document.querySelector('#readme')
-const speakBtn = document.querySelector('#speak-btn')
-const cancelBtn = document.querySelector('#cancel-btn')
-const pauseBtn = document.querySelector('#pause-btn')
-const resumeBtn = document.querySelector('#resume-btn')
+const txtSpeech = document.querySelector('#readme'),
+speakBtn = document.querySelector('#speak-btn'),
+cancelBtn = document.querySelector('#cancel-btn'),
+pauseBtn = document.querySelector('#pause-btn'),
+resumeBtn = document.querySelector('#resume-btn');
 
 // ピッチとレートの値の更新
-const pitch = document.querySelector("#pitch")
-const rate = document.querySelector("#rate")
-const pitchValue = document.querySelector(".pitch-value")
-const rateValue = document.querySelector(".rate-value")
+const pitch = document.querySelector("#pitch"),
+rate = document.querySelector("#rate"),
+pitchValue = document.querySelector(".pitch-value"),
+rateValue = document.querySelector(".rate-value");
 
 pitchValue.textContent = pitch.value
 rateValue.textContent = rate.value
