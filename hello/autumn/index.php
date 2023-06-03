@@ -104,8 +104,6 @@ $six = "soukou";
     <h3><?php echo $season;?></h3>
     <button class="color bgcolor" id="closeButton">×</button>
   </dialog>
-  <script src="../../profile/js/jscolor.js"></script>
-  <script src="../../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>
 </body>
 </html>
