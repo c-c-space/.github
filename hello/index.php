@@ -58,7 +58,7 @@ flock($fp, LOCK_SH);
         <u>↩︎</u>
       </a>
       <a href="<?php echo $season;?>/">
-        <i><?php echo $seasonDate;?></i>
+        <i>二十四節気 | 24 Sekki</i>
         <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
@@ -134,7 +134,7 @@ flock($fp, LOCK_SH);
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>掲示板 Message Board</h3>
+    <h3>Speech to Text to Text to Speech</h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
     <hr/>
