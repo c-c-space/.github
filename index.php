@@ -82,7 +82,14 @@
 
   <main id="yourinfo" hidden>
     <form method="post">
-      <?php require('yourinfo.php'); ?>
+      <strong>あなたの通信情報／ブラウザ等情報</strong>
+      <p>
+        <?php require('yourinfo.php'); ?>
+      </p>
+      <section>
+        <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
+        <button type="button" id="back-btn" onclick="changeHidden()">Back</button>
+      </section>
     </form>
     <script src="js/log.js"></script>
   </main>
