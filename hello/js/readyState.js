@@ -40,7 +40,7 @@ document.addEventListener('readystatechange', event => {
       fetch('../yourinfo.php')
       .then(response => response.text())
       .then(text => {
-        document.querySelector('#about').innerHTML = text;
+        document.querySelector('#log section').innerHTML = text;
       });
 
       document.querySelector('#now .controls').remove()
