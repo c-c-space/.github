@@ -57,6 +57,12 @@ flock($fp, LOCK_SH);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
+      <a href="<?php echo $season;?>/">
+        <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
+      </a>
+      <a href="<?php echo $season;?>/<?php echo $sekki;?>">
+        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+      </a>
     </nav>
   </header>
 
