@@ -17,6 +17,8 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
+require('php/24seasons.php');
+
 $source_file = "2023/". $timeframe . ".csv";
 
 function h($str) {
