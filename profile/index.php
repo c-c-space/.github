@@ -122,7 +122,7 @@
         <option value="20px">Large</option>
       </select>
     </section>
-    <script src="jscolor.js"></script>
+    <script src="js/jscolor.js"></script>
   </nav>
 
   <script type="text/javascript">
@@ -147,6 +147,6 @@
   </script>
 
   <script src="index.js"></script>
-  <script src="setStyles.js"></script>
+  <script src="js/setStyles.js"></script>
 </body>
 </html>
