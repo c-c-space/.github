@@ -122,7 +122,23 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <h3><?php echo $season;?></h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
-    <?php require('../all/timeframe.php'); ?>
+    <form method="GET">
+      <section>
+        <label for="bgcolor">Background Color</label>
+        <select class="color bgcolor" id="bgcolor"></select>
+        <br/>
+        <label for="color">Color</label>
+        <select class="color bgcolor" id="color"></select>
+        <hr/>
+        <label for="fontSize">Font Size</label>
+        <select class="color bgcolor" id="fontSize">
+          <option value="13px">Small</option>
+          <option value="16px" selected>Medium</option>
+          <option value="20px">Large</option>
+        </select>
+      </section>
+      <button class="color bgcolor" type="submit">GET</button>
+    </form>
   </dialog>
 
   <?php require('../all/controls.html'); ?>
