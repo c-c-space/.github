@@ -106,8 +106,8 @@ $six = "soukou";
     <br/>
     <?php require('../all/timeframe.php'); ?>
   </dialog>
-  <script src="../../profile/jscolor.js"></script>
-  <script src="../../profile/setStyles.js"></script>
+  <script src="../../profile/js/jscolor.js"></script>
+  <script src="../../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>
 </body>
 </html>
