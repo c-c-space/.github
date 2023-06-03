@@ -130,7 +130,7 @@ flock($fp, LOCK_SH);
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3></h3>
+    <h3>掲示板 Message Board</h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
     <hr/>

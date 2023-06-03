@@ -33,11 +33,15 @@ document.addEventListener('readystatechange', event => {
     if(!localStorage.getItem('yourInfo')) {
       logAll.style.padding = "1rem 0.5rem"
       enterBtn.setAttribute('onclick','setLOG()')
-      enterBtn.innerText = 'Enter'
+      enterBtn.innerText = 'Submit Your Info to Enter This Site'
 
       document.querySelector('#log h2 a').removeAttribute('href')
 
-      fetchText('readme.md','#log section');
+      fetch('../yourinfo.php')
+      .then(response => response.text())
+      .then(text => {
+        document.querySelector('#about').innerHTML = text;
+      });
 
       document.querySelector('#now .controls').remove()
       const backBtn = document.createElement('button')
@@ -47,18 +51,9 @@ document.addEventListener('readystatechange', event => {
       backBtn.setAttribute('onclick','location.replace("/")')
       backBtn.innerText = 'creative-community.space'
       document.querySelector('#now').prepend(backBtn)
-
-      modalH3.innerText = 'Submit Your Info to Enter This Site'
-
-      fetch('../yourinfo.php')
-      .then(response => response.text())
-      .then(text => {
-        document.querySelector('#about').innerHTML = text;
-      });
+      fetchText('readme.md','#about');
     } else {
       enterBtn.setAttribute('onclick','ChangeHidden()')
-
-      modalH3.innerText = '掲示板 Message Board';
       fetchText('readme.md','#about');
 
       const submitBtn = document.querySelector("#submit-btn")
