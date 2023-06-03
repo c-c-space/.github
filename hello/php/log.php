@@ -5,6 +5,7 @@
       <code id="lastModified"></code>
     </h1>
     <h2>
+<?php echo $seasonName;?><br/>
       <span>
         Now is The Season named
         <b><?php echo $seasonID;?></b> in
