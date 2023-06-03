@@ -121,6 +121,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
     <button class="color bgcolor" id="closeButton">×</button>
+    <br/>
+    <?php require('../all/timeframe.php'); ?>
   </dialog>
 
   <?php require('../all/controls.html'); ?>
