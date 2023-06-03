@@ -34,27 +34,32 @@ $file4 = fopen($four . "/". $timeframe . ".csv", 'a+b');
 $file5 = fopen($five . "/". $timeframe . ".csv", 'a+b');
 $file6 = fopen($six . "/". $timeframe . ".csv", 'a+b');
 
-while ($row = fgetcsv($file1)) {
-  $rows[] = $row;
+while ($row1 = fgetcsv($file1)) {
+  $rows[] = $row1;
 }
-while ($row = fgetcsv($file2)) {
-  $rows[] = $row;
+while ($row2 = fgetcsv($file2)) {
+  $rows[] = $row2;
 }
-while ($row = fgetcsv($file3)) {
-  $rows[] = $row;
+while ($row3 = fgetcsv($file3)) {
+  $rows[] = $row3;
 }
-while ($row = fgetcsv($file4)) {
-  $rows[] = $row;
+while ($row4 = fgetcsv($file4)) {
+  $rows[] = $row4;
 }
-while ($row = fgetcsv($file5)) {
-  $rows[] = $row;
+while ($row5 = fgetcsv($file5)) {
+  $rows[] = $row5;
 }
-while ($row = fgetcsv($file6)) {
-  $rows[] = $row;
+while ($row6 = fgetcsv($file6)) {
+  $rows[] = $row6;
 }
 
 $post = count($rows);
-flock($fp, LOCK_SH);
+flock($file1, LOCK_SH);
+flock($file2, LOCK_SH);
+flock($file3, LOCK_SH);
+flock($file4, LOCK_SH);
+flock($file5, LOCK_SH);
+flock($file6, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
