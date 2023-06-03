@@ -30,11 +30,7 @@ function createVideo() {
 }
 
 document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'loading') {
-    // 文書の読み込み中に実行する
-  }
-
-  else if (event.target.readyState === 'interactive') {
+  if (event.target.readyState === 'interactive') {
   }
 
   else if (event.target.readyState === 'complete') {
@@ -74,7 +70,7 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML = "<u>You Posted</u><br/>"
 
       if(!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += "<a href="/sign/">0</a>"
+        yourStrage.innerHTML += `<a href="/sign/">0</a>`
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
@@ -82,7 +78,7 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML += " Colors & Symbols<br/>"
 
       if(!localStorage.getItem('map')) {
-        yourStrage.innerHTML += "<a href="/map/">0</a>"
+        yourStrage.innerHTML += `<a href="/map/">0</a>`
       } else {
         const yourMap = JSON.parse(localStorage.getItem('map'))
         yourStrage.innerHTML += `<a href="/map/">${yourMap.length}</a>`
