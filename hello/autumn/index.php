@@ -128,18 +128,14 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </ul>
     </section>
   </main>
-  <?php require('../all/controls.html'); ?>
-
-  <script src="../js/sekki.js"></script>
-
-  <dialog id="modal" class="color bgcolor">
-    <h3></h3>
-    <button type="button" class="color bgcolor" id="closeButton">×</button>
-  </dialog>
 
   <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
     <button class="color bgcolor" id="closeButton">×</button>
   </dialog>
+
+  <?php require('../all/controls.html'); ?>
+
+  <script src="../js/sekki.js"></script>
 </body>
 </html>
