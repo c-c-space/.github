@@ -103,8 +103,6 @@ $six = "soukou";
   <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
     <button class="color bgcolor" id="closeButton">×</button>
-    <br/>
-    <?php require('../all/timeframe.php'); ?>
   </dialog>
   <script src="../../profile/js/jscolor.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
