@@ -30,6 +30,8 @@ document.addEventListener('readystatechange', event => {
     'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
 
     if(!localStorage.getItem('yourInfo')) {
+      document.querySelector('#log h2 a').removeAttribute('href')
+
       document.querySelector('#now .controls').remove()
 
       const backBtn = document.createElement('button')
