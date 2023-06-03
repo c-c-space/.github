@@ -47,11 +47,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     line-height: 150%;
   }
 
-  #log button b {
-    font-weight: 500;
-  }
-
-  #log button b::before {
+  #log button::before {
     content: attr(data-name);
   }
   </style>
@@ -73,8 +69,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 8</date> -
             <date>November 21</date>
           </p>
-          <button type="button" data-date="Snow appears on distant mountains" data-hello="この日から立春の前日までが冬。日は短くなり時雨が降る季節。北国や高山からは初雪の知らせも届き、関東では空っ風が吹く頃。">
-            <b data-name="立冬"></b> (りっとう)
+          <button type="button" data-name="立冬" data-date="Snow appears on distant mountains" data-hello="この日から立春の前日までが冬。日は短くなり時雨が降る季節。北国や高山からは初雪の知らせも届き、関東では空っ風が吹く頃。">
+            (りっとう)
           </button>
         </li>
         <li>
@@ -82,8 +78,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 22</date> -
             <date>December 6</date>
           </p>
-          <button type="button" data-date="Plants come into full leaf" data-hello="陽射しは弱まり、冷え込みが厳しくなる季節。木々の葉は落ち、平地にも初雪が舞い始める頃。">
-            <b data-name="小雪"></b> (しょうせつ)
+          <button type="button" data-name="小雪" data-date="Plants come into full leaf" data-hello="陽射しは弱まり、冷え込みが厳しくなる季節。木々の葉は落ち、平地にも初雪が舞い始める頃。">
+            (しょうせつ)
           </button>
         </li>
         <li>
@@ -91,8 +87,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>December 7</date> -
             <date>December 21</date>
           </p>
-          <button type="button" data-date="Cold winds blow from Siberia" data-hello="朝夕には池や川に氷を見るようになる。大地の霜柱を踏むのもこの頃から。山々は雪の衣を纏って冬の姿となる頃。">
-            <b data-name="大雪"></b> (たいせつ)
+          <button type="button" data-name="大雪" data-date="Cold winds blow from Siberia" data-hello="朝夕には池や川に氷を見るようになる。大地の霜柱を踏むのもこの頃から。山々は雪の衣を纏って冬の姿となる頃。">
+            (たいせつ)
           </button>
         </li>
         <li>
@@ -100,8 +96,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>December 22</date> -
             <date>January 5</date>
           </p>
-          <button type="button" data-date="The Winter Solstice" data-hello="一年中で最も夜の長い日。この日より日が伸び始めることから、古くはこの日を年の始点と考えられた。冬至南瓜や柚湯の慣習が残る日。">
-            <b data-name="冬至"></b> (とうじ)
+          <button type="button" data-name="冬至" data-date="The Winter Solstice" data-hello="一年中で最も夜の長い日。この日より日が伸び始めることから、古くはこの日を年の始点と考えられた。冬至南瓜や柚湯の慣習が残る日。">
+            (とうじ)
           </button>
         </li>
         <li>
@@ -109,8 +105,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>January 6</date> -
             <date>January 19</date>
           </p>
-          <button type="button" data-date="Cold weather nears its peak" data-hello="この日は寒の入り、これから節分までの期間が「寒」である。寒さはこれからが本番。池や川の氷も厚みをます頃。">
-            <b data-name="小寒"></b> (しょうかん)
+          <button type="button" data-name="小寒" data-date="Cold weather nears its peak" data-hello="この日は寒の入り、これから節分までの期間が「寒」である。寒さはこれからが本番。池や川の氷も厚みをます頃。">
+            (しょうかん)
           </button>
         </li>
         <li>
@@ -118,8 +114,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>January 20</date> -
             <date>February 3</date>
           </p>
-          <button type="button" data-date="Coldest time of the year" data-hello="一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うことである。春はもう目前。">
-            <b data-name="大寒"></b> (だいかん)
+          <button type="button" data-name="大寒" data-date="Coldest time of the year" data-hello="一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うことである。春はもう目前。">
+            (だいかん)
           </button>
         </li>
       </ul>

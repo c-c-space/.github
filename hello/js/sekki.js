@@ -6,12 +6,12 @@ for (const dateLi of dateAll) {
     const uttr = new SpeechSynthesisUtterance()
     uttr.text = this.innerText + this.dataset.hello
     uttr.lang = "ja-JP"
-    uttr.pitch = 1
-    uttr.rate = 1
+    uttr.pitch = 0.9
+    uttr.rate = 0.9
     speechSynthesis.speak(uttr)
 
     const sekkiName = document.querySelector('#log h1 b')
-    sekkiName.innerText = this.innerText
+    sekkiName.innerText = this.dataset.name + this.innerText
 
     const sekkiDates = document.querySelector('#lastModified')
     sekkiDates.innerText = this.dataset.date
