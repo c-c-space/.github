@@ -18,8 +18,7 @@ if (date("H") >= 6 and date("H") <= 11) {
 }
 
 require('php/24seasons.php');
-
-$source_file = "2023/". $timeframe . ".csv";
+$source_file = $season . "/". $seasonID . "/". $timeframe . ".csv";
 
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
