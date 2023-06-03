@@ -57,13 +57,13 @@ flock($fp, LOCK_SH);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-      <a href="<?php echo $season;?>/">
-        <i>四季 | Four Seasons</i>
-        <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
-      </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
-        <i>二十四節気 | The 24 Solar Terms</i>
-        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+        <i>Now is The Season named</i>
+        <p>
+          <b><?php echo $sekkiName;?></b>
+          <?php echo $sekki;?> in
+          <?php echo $season;?>
+        </p>
       </a>
     </nav>
   </header>
