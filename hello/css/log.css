@@ -48,7 +48,8 @@ h2 a {
   color: inherit;
 }
 
-h2 b {
+h2 b,
+#log button b {
   text-transform: capitalize;
 }
 
