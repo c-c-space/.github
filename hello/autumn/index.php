@@ -46,6 +46,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     font-size: 100%;
     line-height: 150%;
   }
+
+  #log button b::before {
+    content: "("attr(data-name)")";
+  }
   </style>
 </head>
 
@@ -66,7 +70,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Aug 22</date>
           </p>
           <button type="button" data-date="The Beginning of Autumn" data-hello="この日から立冬の前日までが秋。一年で一番暑い頃であるが、一番暑いと言うことはあとは涼しくなるばかり。暑中見舞いはこの前日まで、この日以降は残暑見舞い。">
-            立秋 (<b>risshu</b>)
+            立秋 <b data-name="risshu"></b>
           </button>
         </li>
         <li>
@@ -75,7 +79,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Sep 7</date>
           </p>
           <button type="button" data-date="Hot weather abates" data-hello="処暑は暑さが止むと言う意味。萩の花が咲き、朝夕は心地よい涼風が吹く頃だが、台風のシーズンでもある。">
-            処暑 (<b>shosho</b>)
+            処暑 <b data-name="shosho"></b>
           </button>
         </li>
         <li>
@@ -84,7 +88,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Sep 22</date>
           </p>
           <button type="button" data-date="Dew forms on the leaves" data-hello="野には薄の穂が顔を出し、秋の趣がひとしお感じられる頃。朝夕の心地よい涼風に、幾分の肌寒さを感じさせる冷風が混じり始める。">
-            白露 (<b>hakuro</b>)
+            白露 <b data-name="hakuro"></b>
           </button>
         </li>
         <li>
@@ -93,7 +97,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Oct 7</date>
           </p>
           <button type="button" data-date="The Autumn Equinox" data-hello="暑い日は減り代わりに冷気を感ずる日が増える。昼と夜の長さがほぼ同じになる、秋の七草が咲き揃う頃。">
-            秋分 (<b>shuubun</b>)
+            秋分 <b data-name="shuubun"></b>
           </button>
         </li>
         <li>
@@ -102,7 +106,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Oct 23</date>
           </p>
           <button type="button" data-date="Weather becomes colder" data-hello="冷たい露の結ぶ頃。秋もいよいよ本番。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。">
-            寒露 (<b>kanro</b>)
+            寒露 <b data-name="kanro"></b>
           </button>
         </li>
         <li>
@@ -111,7 +115,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Nov 7</date>
           </p>
           <button type="button" data-date="The Season of Frost" data-hello="北国や山間部では、霜が降りて朝には草木が白く化粧をする頃。野の花の数は減り始める、代わって山を紅葉が飾る頃である。">
-            霜降 (<b>soukou</b>)
+            霜降 <b data-name="soukou"></b>
           </button>
         </li>
       </ul>
