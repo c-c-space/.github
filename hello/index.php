@@ -58,8 +58,8 @@ flock($fp, LOCK_SH);
         <u>↩︎</u>
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
-        <i>Now is The Season named</i>
-        <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?> in <?php echo $season;?></p>
+        <i>Speech to Text to Text to Speech</i>
+        <p>Posted in <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
