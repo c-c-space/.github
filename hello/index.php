@@ -58,11 +58,11 @@ flock($fp, LOCK_SH);
         <u>↩︎</u>
       </a>
       <a href="<?php echo $season;?>/">
-        <i>Now is The Season</i>
+        <i>四季 | Four Seasons</i>
         <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>">
-        <i>二十四節気</i>
+        <i>二十四節気 | The 24 Solar Terms</i>
         <p><b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
