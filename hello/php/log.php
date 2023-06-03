@@ -6,7 +6,9 @@
     </h1>
     <h2>
       <span>
-        <b><?php echo $seasonName;?></b> Posts
+        Now is The
+        <b><?php echo $season;?></b> in
+        <b><?php echo $seasonName;?></b>
       </span>
     </h2>
   </div>
