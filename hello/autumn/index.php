@@ -26,40 +26,6 @@ $three = "hakuro";
 $four = "shuubun";
 $five = "kanro";
 $six = "soukou";
-
-$file1 = fopen($one . "/". $timeframe . ".csv", 'a+b');
-$file2 = fopen($two . "/". $timeframe . ".csv", 'a+b');
-$file3 = fopen($three . "/". $timeframe . ".csv", 'a+b');
-$file4 = fopen($four . "/". $timeframe . ".csv", 'a+b');
-$file5 = fopen($five . "/". $timeframe . ".csv", 'a+b');
-$file6 = fopen($six . "/". $timeframe . ".csv", 'a+b');
-
-while ($row1 = fgetcsv($file1)) {
-  $rows[] = $row1;
-}
-while ($row2 = fgetcsv($file2)) {
-  $rows[] = $row2;
-}
-while ($row3 = fgetcsv($file3)) {
-  $rows[] = $row3;
-}
-while ($row4 = fgetcsv($file4)) {
-  $rows[] = $row4;
-}
-while ($row5 = fgetcsv($file5)) {
-  $rows[] = $row5;
-}
-while ($row6 = fgetcsv($file6)) {
-  $rows[] = $row6;
-}
-
-$post = count($rows);
-flock($file1, LOCK_SH);
-flock($file2, LOCK_SH);
-flock($file3, LOCK_SH);
-flock($file4, LOCK_SH);
-flock($file5, LOCK_SH);
-flock($file6, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
@@ -129,7 +95,6 @@ flock($file6, LOCK_SH);
       </h1>
       <h2><?php echo $description;?></h2>
     </div>
-    <?php require('../all/log.php'); ?>
   </main>
 
   <?php require('../all/controls.html'); ?>
