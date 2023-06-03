@@ -6,7 +6,7 @@
     </h1>
     <h2>
       <span>
-        <b><?php echo $seasonName;?></b>
+        <b><?php echo $post;?></b> Posts
       </span>
     </h2>
   </div>
