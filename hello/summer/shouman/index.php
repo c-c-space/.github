@@ -29,7 +29,7 @@ require_once('../../all/head.php');
     require('../../all/log.php');
     ?>
   </main>
-  <?php require('../../all/controls.php'); ?>
+  <?php require('../../all/controls.html'); ?>
   <script src="../../js/controls.js"></script>
 </body>
 </html>
