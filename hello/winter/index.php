@@ -150,8 +150,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <?php require('../all/controls.html'); ?>
 
-  <script src="../all/24sekki.js"></script>
   <script src="color.js"></script>
+  <script src="../all/24sekki.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
 </body>
 </html>

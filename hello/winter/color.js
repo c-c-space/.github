@@ -1,5 +1,3 @@
-"use strict"
-
 let colors = {
   '緋褪色（ひさめいろ）':'#e09285',
   '蜜柑茶（みかんちゃ）':'#cf6a38',
@@ -70,14 +68,4 @@ let colors = {
   '藍鼠（あいねず）':'#6B818E',
   '飴色（あめいろ）':'#E5B36E',
   '紫紺（しこん）':'#460e44',
-}
-
-let namesForm = document.querySelectorAll('#bgcolor, #color')
-for (const names of namesForm) {
-  Object.entries(colors).forEach(eachArr => {
-    let option = document.createElement('option')
-    option.textContent = Object.values(eachArr)[0]
-    option.value = Object.values(eachArr)[1]
-    names.appendChild(option)
-  })
 }
