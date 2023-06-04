@@ -1,5 +1,4 @@
 <?php
-$season = "summer";
 $sekki = "shouman";
 $seasonName = "夏";
 $sekkiName = "小満";
