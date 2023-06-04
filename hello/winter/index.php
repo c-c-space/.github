@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 8</date> -
             <date>November 21</date>
           </p>
-          <button type="button" data-name="立冬" data-date="Snow appears on distant mountains" data-hello="木枯らしが吹き、日は短くなり時雨が降る。北国や高山からは初雪の知らせも届き、冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。">
+          <button type="button" data-name="立冬" data-date="The Beginning of Winter" data-hello="木枯らしが吹き、日は短くなり時雨が降る。北国や高山からは初雪の知らせも届き、冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。">
             (りっとう)
           </button>
         </li>
@@ -80,7 +80,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 22</date> -
             <date>December 6</date>
           </p>
-          <button type="button" data-name="小雪" data-date="Plants come into full leaf" data-hello="陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める「お歳暮」の準備をする期間。">
+          <button type="button" data-name="小雪" data-date="Snow appears on distant mountains" data-hello="陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める「お歳暮」の準備をする期間。">
             (しょうせつ)
           </button>
         </li>
