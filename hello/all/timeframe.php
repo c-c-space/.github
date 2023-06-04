@@ -7,7 +7,7 @@
     <option value="evening">18:00:00 - 23:59:59</option>
   </select>
   <hr/>
-  <section>
+  <section hidden>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
     <br/>
