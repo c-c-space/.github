@@ -20,13 +20,13 @@ if (date("H") >= 6 and date("H") <= 11) {
 require('all/24sekki.php');
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 
-function h($str) {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-
 $fp = fopen($source_file, 'a+b');
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
+}
+
+function h($str) {
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
 $post = count($rows);

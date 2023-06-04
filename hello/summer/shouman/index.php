@@ -14,6 +14,7 @@ require_once('../../php/head.php');
     <?php require('../../all/log.php'); ?>
   </main>
   <?php require('../../all/controls.html'); ?>
+  <script src="../../js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3></h3>
@@ -21,6 +22,7 @@ require_once('../../php/head.php');
     <br/>
     <?php require('../../php/timeframe.php'); ?>
   </dialog>
+  <script src="../../../profile/js/jscolor.js"></script>
   <script src="../../../profile/setStyles.js"></script>
   <script src="../../js/log.js"></script>
 </body>

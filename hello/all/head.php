@@ -26,11 +26,12 @@ while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
 }
 
-$post = count($rows);
-
 function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
+
+$post = count($rows);
+flock($source_file, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +40,6 @@ function h($str) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="/hello/style.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
   <link rel="stylesheet" href="/hello/css/controls.css" />
