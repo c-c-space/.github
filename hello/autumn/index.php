@@ -136,6 +136,13 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <br/>
         <label for="color">Color</label>
         <select class="color bgcolor" id="color"></select>
+        <hr/>
+        <label for="fontSize" hidden>Font Size</label>
+        <select class="color bgcolor" id="fontSize" hidden>
+          <option value="13px">Small</option>
+          <option value="16px" selected>Medium</option>
+          <option value="20px">Large</option>
+        </select>
       </section>
     </form>
   </dialog>
