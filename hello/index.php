@@ -152,7 +152,19 @@ fclose($fp);
       <option value="20px">Large</option>
     </select>
   </dialog>
-  <script src="../profile/js/jscolor.js"></script>
+
+  <script src="<?php echo $season;?>/color.js"></script>
+  <script type="text/javascript">
+  let namesForm = document.querySelectorAll('#bgcolor, #color')
+  for (const names of namesForm) {
+    Object.entries(colors).forEach(eachArr => {
+      let option = document.createElement('option')
+      option.textContent = Object.values(eachArr)[0]
+      option.value = Object.values(eachArr)[1]
+      names.appendChild(option)
+    })
+  }
+  </script>
   <script src="../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>
 </body>
