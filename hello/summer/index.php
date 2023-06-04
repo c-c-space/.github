@@ -129,7 +129,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
-    <hr/>
     <form method="GET">
       <section>
         <label for="bgcolor">Background Color</label>
