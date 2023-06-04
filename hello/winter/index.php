@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 8</date> -
             <date>November 21</date>
           </p>
-          <button type="button" data-name="立冬" data-date="The Beginning of Winter" data-hello="木枯らしが吹き、日は短くなり時雨が降る。北国や高山からは初雪の知らせも届き、冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。">
+          <button type="button" data-name="立冬" data-date="The Beginning of Winter" data-hello="日は短くなり時雨が降る。木枯らしが吹き、北国や高山からは初雪の知らせも届く頃。冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。">
             (りっとう)
           </button>
         </li>
@@ -80,7 +80,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>November 22</date> -
             <date>December 6</date>
           </p>
-          <button type="button" data-name="小雪" data-date="Snow appears on distant mountains" data-hello="陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める「お歳暮」の準備をする期間。">
+          <button type="button" data-name="小雪" data-date="Snow appears on distant mountains" data-hello="陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める。「お歳暮」の準備をする期間。">
             (しょうせつ)
           </button>
         </li>
@@ -89,7 +89,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>December 7</date> -
             <date>December 21</date>
           </p>
-          <button type="button" data-name="大雪" data-date="Cold winds blow from Siberia" data-hello="山々は雪の衣を纏って冬の姿となり、動物たちが冬ごもりに入る時期。鮭が川を遡上し、鱈など冬の魚の漁も盛んになる。">
+          <button type="button" data-name="大雪" data-date="Cold winds blow from Siberia" data-hello="山々は雪の衣を纏って冬の姿となり、動物たちが冬ごもりに入る時期。鮭が川を遡上し、鱈など冬の魚の漁が盛んになる。">
             (たいせつ)
           </button>
         </li>
@@ -98,7 +98,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>December 22</date> -
             <date>January 5</date>
           </p>
-          <button type="button" data-name="冬至" data-date="The Winter Solstice" data-hello="一年中で最も夜が長い頃。この日より日が伸び始めることから、古くはこの日を年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。">
+          <button type="button" data-name="冬至" data-date="The Winter Solstice" data-hello="冬至日より日が伸び始めることから、古くには年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。">
             (とうじ)
           </button>
         </li>
@@ -107,7 +107,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>January 6</date> -
             <date>January 19</date>
           </p>
-          <button type="button" data-name="小寒" data-date="Cold weather nears its peak" data-hello="「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」である。寒さはこれからが本番。「寒中見舞い」を出しはじめる時期。">
+          <button type="button" data-name="小寒" data-date="Cold weather nears its peak" data-hello="「寒の入り」といい、寒さが厳しくなる頃。寒さはこれからが本番。これから節分までの期間が「寒」である。「寒中見舞い」を出しはじめる時期。">
             (しょうかん)
           </button>
         </li>
