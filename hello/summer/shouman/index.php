@@ -37,7 +37,7 @@ require_once('../../all/head.php');
     <?php require('../../all/timeframe.php'); ?>
   </dialog>
   <script src="../../../profile/js/jscolor.js"></script>
-  <script src="../../../profile/setStyles.js"></script>
+  <script src="../../../profile/js/setStyles.js"></script>
 
   <?php require('../../all/controls.html'); ?>
   <script src="../../js/log.js"></script>
