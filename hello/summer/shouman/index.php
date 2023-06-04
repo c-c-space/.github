@@ -7,14 +7,14 @@ $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
-require_once('../php/head.php');
+require_once('../../all/head.php');
 ?>
 
 <body>
   <main id="log">
     <div>
       <h1>
-      <code id="lastModified"></code><br/>
+        <code id="lastModified"></code><br/>
         <b><?php echo $season;?></b>
       </h1>
       <h2><?php echo $description;?></h2>
