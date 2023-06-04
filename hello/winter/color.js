@@ -76,8 +76,8 @@ let namesForm = document.querySelectorAll('#bgcolor, #color')
 for (const names of namesForm) {
   Object.entries(colors).forEach(eachArr => {
     let option = document.createElement('option')
-    option.textContent = Object.values(eachArr)
-    option.value = Object.values(eachArr)
+    option.textContent = Object.values(eachArr[0])
+    option.value = Object.values(eachArr[1])
     names.appendChild(option)
   })
 }
