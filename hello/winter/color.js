@@ -77,7 +77,6 @@ for (const names of namesForm) {
   for (let i = 0; i < colors.length; i++) {
     let option = document.createElement('option')
     option.textContent = Object.keys(colors[i])
-    option.value = Object.values(colors[i])
     names.appendChild(option)
   }
 }
