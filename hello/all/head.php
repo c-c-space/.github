@@ -27,6 +27,7 @@ while ($row = fgetcsv($source_file)) {
 }
 
 $post = count($rows);
+fclose($source_file);
 ?>
 
 <!DOCTYPE html>
