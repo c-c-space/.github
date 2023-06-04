@@ -21,11 +21,11 @@ require('all/24sekki.php');
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 
 $fp = fopen($source_file, 'a+b');
-
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
-$post = sizeof(file($fp));
+
+$post = count($rows);
 flock($fp, LOCK_SH);
 ?>
 
