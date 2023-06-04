@@ -14,8 +14,11 @@ require_once('../../all/head.php');
   <main id="log">
     <div>
       <h1>
-        <code id="lastModified"><?php echo $greeting;?></code>
-        <b><?php echo $season;?></b>
+        <b>
+          <code><?php echo $greeting;?></code>
+          <?php echo $season;?>
+        </b>
+        <code id="lastModified"></code>
       </h1>
       <h2><?php echo $post;?> Posts</h2>
     </div>
