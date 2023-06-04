@@ -17,11 +17,7 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
-if (isset($_GET["timeframe"])) {
-  $timeframe = $_GET["timeframe"];
-}
-
-$source_file = fopen($timeframe . ".csv", 'r');
+$source_file = fopen($timeframe.".csv", 'r');
 while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
 }
@@ -31,7 +27,6 @@ function h($str) {
 }
 
 $post = count($rows);
-flock($source_file, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
