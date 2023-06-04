@@ -7,7 +7,7 @@
         <code>Rate 0.9</code>
       </p>
       <p>
-        <button type="button" data-name="" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="<?php echo $description;?>">
+        <button type="button" data-name="" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="<?php echo $hello;?>">
           <?php echo $date;?>
         </button>
       </p>
