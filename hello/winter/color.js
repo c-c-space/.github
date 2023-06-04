@@ -1,6 +1,6 @@
 "use strict"
 
-let colors = [
+let colors = {
   '緋褪色（ひさめいろ）':'#e09285',
   '蜜柑茶（みかんちゃ）':'#cf6a38',
   '亜麻色（あまいろ）':'#E8DABE',
@@ -69,8 +69,8 @@ let colors = [
   '丹色（にいろ）':'#E45E32',
   '藍鼠（あいねず）':'#6B818E',
   '飴色（あめいろ）':'#E5B36E',
-  '紫紺（しこん）':'#460e44'
-]
+  '紫紺（しこん）':'#460e44',
+}
 
 let namesForm = document.querySelectorAll('#bgcolor, #color')
 for (const names of namesForm) {
