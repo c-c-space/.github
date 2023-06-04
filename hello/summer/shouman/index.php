@@ -1,9 +1,11 @@
 <?php
 
-$season = "小満 shouman";
+$sekkiName = "小満";
 $date = "May 20 - Jun 4";
 $description = "Plants come into full leaf";
-$title = $season .' | '. $date;
+$hello = "あらゆる生命が満ちていく頃。陽気がよくなり、草木などの生物が次第に生長して生い茂る。西日本でははしり梅雨が現れる。";
+
+$title = $sekkiName .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
@@ -16,11 +18,11 @@ require_once('../../all/head.php');
       <h1>
         <b>
           <code><?php echo $greeting;?></code>
-          <?php echo $season;?>
+          <?php echo $sekkiName;?>
         </b><br/>
         <code id="lastModified"><?php echo $date;?></code>
       </h1>
-      <h2><?php echo $post;?> Posts</h2>
+      <h2><?php echo $description;?></h2>
     </div>
     <?php
     function h($str) {
@@ -35,7 +37,7 @@ require_once('../../all/head.php');
   <dialog id="modal" class="color bgcolor">
     <h3>
       <small><?php echo $date;?></small><br/>
-      <?php echo $season;?>
+      <?php echo $sekkiName;?>
     </h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
