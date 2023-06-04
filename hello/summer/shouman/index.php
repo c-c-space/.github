@@ -30,6 +30,6 @@ require_once('../../all/head.php');
     ?>
   </main>
   <?php require('../../all/controls.html'); ?>
-  <script src="../../js/controls.js"></script>
+  <script src="../../js/log.js"></script>
 </body>
 </html>
