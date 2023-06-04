@@ -17,61 +17,85 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekki = "risshun";
   $seasonName = "春";
   $sekkiName = "立春";
+  $date = "February 4 - February 18";
+  $description = "The Beginning of Spring";
 } elseif ($datetime >= '02-19' and $datetime <= '03-04') {
   $season = "spring";
   $sekki = "usui";
   $seasonName = "春";
   $sekkiName = "雨水";
+  $date = "February 19 - March 4";
+  $description = "Snow melts into water";
 } elseif ($datetime >= '03-05' and $datetime <= '03-19') {
   $season = "spring";
   $sekki = "keichitsu";
   $seasonName = "春";
   $sekkiName = "啓蟄";
+  $date = "March 5 - March 19";
+  $description = "Insects emerge from the ground";
 } elseif ($datetime >= '03-20' and $datetime <= '04-03') {
   $season = "spring";
   $sekki = "shunbun";
   $seasonName = "春";
   $sekkiName = "春分";
+  $date = "March 20 - April 3";
+  $description = "The Spring Equinox";
 } elseif ($datetime >= '04-04' and $datetime <= '04-18') {
   $season = "spring";
   $sekki = "seimei";
   $seasonName = "春";
   $sekkiName = "清明";
+  $date = "April 4 - April 18";
+  $description = "Clear and Bright, Plants flower";
 } elseif ($datetime >= '04-19' and $datetime <= '05-04') {
   $season = "spring";
   $sekki = "kokuu";
   $seasonName = "春";
   $sekkiName = "穀雨";
+  $date = "April 19 - May 4";
+  $description = "Spring rains and seed sowing";
 } elseif ($datetime >= '05-05' and $datetime <= '05-19') {
   $season = "summer";
   $sekki = "rikka";
   $seasonName = "夏";
   $sekkiName = "立夏";
+  $date = "May 5 - May 19";
+  $description = "The Beginning of Summer";
 } elseif ($datetime >= '05-20' and $datetime <= '06-04') {
   $season = "summer";
   $sekki = "shouman";
   $seasonName = "夏";
   $sekkiName = "小満";
+  $date = "May 20 - Jun 4";
+  $description = "Plants come into full leaf";
 } elseif ($datetime >= '06-05' and $datetime <= '06-20') {
   $season = "summer";
   $sekki = "boushu";
   $seasonName = "夏";
   $sekkiName = "芒種";
+  $date = "Jun 5 - Jun 20";
+  $description = "Time to plant rice seedlings";
 } elseif ($datetime >= '06-21' and $datetime <= '07-06') {
   $season = "summer";
   $sekki = "geshi";
   $seasonName = "夏";
   $sekkiName = "夏至";
+  $date = "Jun 21 - July 6";
+  $description = "The Summer Solstice";
 } elseif ($datetime >= '07-07' and $datetime <= '07-22') {
   $season = "summer";
   $sekki = "shousho";
   $seasonName = "夏";
   $sekkiName = "小暑";
+  $date = "July 7 - July 22";
+  $description = "End of the rainy season";
 } elseif ($datetime >= '07-23' and $datetime <= '08-07') {
   $season = "summer";
   $sekki = "taisho";
   $seasonName = "夏";
   $sekkiName = "大暑";
+  $date = "July 23 - August 7";
+  $description = "Hottest time of the year";
 } elseif ($datetime >= '08-08' and $datetime <= '08-22') {
   $season = "autumn";
   $sekki = "risshu";

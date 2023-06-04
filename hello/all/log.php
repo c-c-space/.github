@@ -4,13 +4,13 @@
       <?php shuffle($rows); foreach ($rows as $row):?>
         <li>
           <p>
-            <code>Google 日本語 (ja-JP)</code>
-            <code>Pitch 0.9</code>
-            <code>Rate 0.9</code>
+            <code><?= h($row[1]) ?> (<?= h($row[2]) ?>)</code>
+            <code>Pitch <?= h($row[3]) ?></code>
+            <code>Rate <?= h($row[4]) ?></code>
           </p>
           <p>
-            <button type="button" data-name="Google 日本語" lang="ja-JP" data-pitch="0.9" data-rate="0.9" data-hello="<?php echo $description;?>">
-              <?php echo $date;?>
+            <button type="button" data-name="<?= h($row[1]) ?>" lang="<?= h($row[2]) ?>" data-pitch="<?= h($row[3]) ?>" data-rate="<?= h($row[4]) ?>" data-hello="<?= h($row[5]) ?>">
+              <?= h($row[0]) ?>
             </button>
           </p>
         </li>
