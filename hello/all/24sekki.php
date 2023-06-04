@@ -19,7 +19,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "立春";
   $date = "February 4 - February 18";
   $description = "The Beginning of Spring";
-  $hello = "___";
+  $hello = "旧暦では、一年のはじまりは立春から。まだ寒さの厳しい時期だが日脚は徐々に伸び、暖かい地方では梅が咲き始める。";
 } elseif ($datetime >= '02-19' and $datetime <= '03-04') {
   $season = "spring";
   $sekki = "usui";
@@ -27,7 +27,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "雨水";
   $date = "February 19 - March 4";
   $description = "Snow melts into water";
-  $hello = "___";
+  $hello = "空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。春一番が吹き、草木がほんのり色づく様子や、春霞を楽しめる季節。";
 } elseif ($datetime >= '03-05' and $datetime <= '03-19') {
   $season = "spring";
   $sekki = "keichitsu";
@@ -35,7 +35,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "啓蟄";
   $date = "March 5 - March 19";
   $description = "Insects emerge from the ground";
-  $hello = "___";
+  $hello = "冬眠をしていた虫が穴から出てくる頃。蝶々が飛びはじめ、柳の若芽が芽吹き、蕗のとうの花や桃の花が咲く頃。";
 } elseif ($datetime >= '03-20' and $datetime <= '04-03') {
   $season = "spring";
   $sekki = "shunbun";
@@ -43,7 +43,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "春分";
   $date = "March 20 - April 3";
   $description = "The Spring Equinox";
-  $hello = "___";
+  $hello = "春分日をはさんで前後7日間が彼岸。雀が巣をつくり始め、桜が開花する頃。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。";
 } elseif ($datetime >= '04-04' and $datetime <= '04-18') {
   $season = "spring";
   $sekki = "seimei";
@@ -51,7 +51,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "清明";
   $date = "April 4 - April 18";
   $description = "Clear and Bright, Plants flower";
-  $hello = "___";
+  $hello = "清浄明潔の略。晴れ渡った空には当に清浄明潔という語にふさわしい。つばめが飛来し、爽やかな風が吹く頃。地上に目を移せば、百花が咲き競う。";
 } elseif ($datetime >= '04-19' and $datetime <= '05-04') {
   $season = "spring";
   $sekki = "kokuu";
@@ -59,7 +59,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "穀雨";
   $date = "April 19 - May 4";
   $description = "Spring rains and seed sowing";
-  $hello = "___";
+  $hello = "田んぼや畑の準備が整い、それに合わせるように柔らかな春の雨が降る頃。この頃より変りやすい春の天気も安定し日差しも強まる。植物が緑一色に輝きはじめる。";
 } elseif ($datetime >= '05-05' and $datetime <= '05-19') {
   $season = "summer";
   $sekki = "rikka";

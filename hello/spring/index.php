@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>February 4</date> -
             <date>February 18</date>
           </p>
-          <button type="button" data-name="立春" data-date="The Beginning of Spring" data-hello="旧暦では「一年のはじまりは立春から」。まだ寒さの厳しい時期だが日脚は徐々に伸び、暖かい地方では梅が咲き始める。">
+          <button type="button" data-name="立春" data-date="The Beginning of Spring" data-hello="旧暦では、一年のはじまりは立春から。まだ寒さの厳しい時期だが日脚は徐々に伸び、暖かい地方では梅が咲き始める。">
             (りっしゅん)
           </button>
         </li>
@@ -98,7 +98,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>March 20</date> -
             <date>April 3</date>
           </p>
-          <button type="button" data-name="春分" data-date="The Spring Equinox" data-hello="雀が巣をつくり始め、桜が開花する頃。春分日をはさんで前後7日間が彼岸。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。">
+          <button type="button" data-name="春分" data-date="The Spring Equinox" data-hello="春分日をはさんで前後7日間が彼岸。雀が巣をつくり始め、桜が開花する頃。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。">
             (しゅんぶん)
           </button>
         </li>
@@ -107,7 +107,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>April 4</date> -
             <date>April 18</date>
           </p>
-          <button type="button" data-name="清明" data-date="Clear and Bright, Plants flower" data-hello="清浄明潔の略。晴れ渡った空には当に清浄明潔という語ふさわしい。つばめが飛来し、爽やかな風が吹く頃。地上に目を移せば、百花が咲き競う。">
+          <button type="button" data-name="清明" data-date="Clear and Bright, Plants flower" data-hello="清浄明潔の略。晴れ渡った空には当に清浄明潔という語にふさわしい。つばめが飛来し、爽やかな風が吹く頃。地上に目を移せば、百花が咲き競う。">
             (せいめい)
           </button>
         </li>
