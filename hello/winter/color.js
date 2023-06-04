@@ -69,7 +69,7 @@ let colors = [
   '丹色（にいろ）':'#E45E32',
   '藍鼠（あいねず）':'#6B818E',
   '飴色（あめいろ）':'#E5B36E',
-  '紫紺（しこん）':'#460e44',
+  '紫紺（しこん）':'#460e44'
 ]
 
 let namesForm = document.querySelectorAll('#bgcolor, #color')
