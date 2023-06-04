@@ -17,6 +17,10 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
+if (isset($_GET["timeframe"])) {
+  $timeframe = $_GET["timeframe"];
+}
+
 $source_file = fopen($timeframe.".csv", 'r');
 while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
