@@ -128,7 +128,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
-    <section id="about"></section>
+    <p id="about"></p>
     <form method="GET">
       <section>
         <label for="bgcolor">Background Color</label>
@@ -137,8 +137,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <label for="color">Color</label>
         <select class="color bgcolor" id="color"></select>
         <hr/>
-        <label for="fontSize">Font Size</label>
-        <select class="color bgcolor" id="fontSize">
+        <label for="fontSize" hidden>Font Size</label>
+        <select class="color bgcolor" id="fontSize" hidden>
           <option value="13px">Small</option>
           <option value="16px" selected>Medium</option>
           <option value="20px">Large</option>
