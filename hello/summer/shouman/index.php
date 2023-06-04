@@ -17,7 +17,7 @@ require_once('../../all/head.php');
         <code id="lastModified"></code><br/>
         <b><?php echo $season;?></b>
       </h1>
-      <h2><?php echo $description;?></h2>
+      <h2><?php echo $post;?> Posts</h2>
     </div>
     <?php
     function h($str) {
