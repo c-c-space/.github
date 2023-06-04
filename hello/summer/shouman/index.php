@@ -38,11 +38,11 @@ require_once('../../all/head.php');
 
   <dialog id="modal" class="color bgcolor">
     <h3>
-      <small><?php echo $description;?></small><br/>
+      <small><?php echo $date;?></small><br/>
       <?php echo $sekkiName;?> <?php echo $sekki;?>
     </h3>
     <button class="color bgcolor" id="closeButton">×</button>
-    <p><?php echo $date;?></p>
+    <p><?php echo $description;?></p>
     <p><?php echo $hello;?></p>
     <br/>
     <?php require('../../all/timeframe.php'); ?>
