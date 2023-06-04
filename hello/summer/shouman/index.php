@@ -37,6 +37,7 @@ require_once('../../all/head.php');
       <small><?php echo $date;?></small><br/>
       <?php echo $season;?>
     </h3>
+    <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
     <?php require('../../all/timeframe.php'); ?>
