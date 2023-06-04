@@ -1,6 +1,6 @@
 'use strict'
 
-document.querySelector('#about').innerText = `
+document.querySelector('#about').innerHTML = `
 <p></p>
 <p>
 下記のコントロールから日本の伝統的な季節の色を選択し、文字・背景の色を変更できます。<br/>
