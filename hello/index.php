@@ -25,8 +25,7 @@ while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
 
-$post = sizeof(file($fp));
-flock($fp, LOCK_SH);
+$post = count($rows);
 ?>
 
 <!DOCTYPE html>
