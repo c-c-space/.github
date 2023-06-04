@@ -26,6 +26,7 @@ while ($row = fgetcsv($fp)) {
 }
 
 $post = count($rows);
+flock($fp, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
