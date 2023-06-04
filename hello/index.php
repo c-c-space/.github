@@ -117,12 +117,6 @@ flock($fp, LOCK_SH);
         <b><?php echo $season;?></b>
       </h2>
     </div>
-    <?php
-    function h($str) {
-      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-    }
-    require('all/log.php');
-    ?>
   </main>
   <nav id="now" class="hidden">
     <section class="controls">
