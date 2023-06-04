@@ -83,7 +83,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "芒種";
   $date = "Jun 5 - Jun 20";
   $description = "Time to plant rice seedlings";
-  $hello = "稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味であるが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。";
+  $hello = "稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。";
 } elseif ($datetime >= '06-21' and $datetime <= '07-06') {
   $season = "summer";
   $sekki = "geshi";
@@ -91,7 +91,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "夏至";
   $date = "Jun 21 - July 6";
   $description = "The Summer Solstice";
-  $hello = "一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期で、あまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。";
+  $hello = "一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期であまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。";
 } elseif ($datetime >= '07-07' and $datetime <= '07-22') {
   $season = "summer";
   $sekki = "shousho";
@@ -107,7 +107,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "大暑";
   $date = "July 23 - August 7";
   $description = "Hottest time of the year";
-  $hello = "最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる、夏の土用の時期。夏の花が盛りになる頃。";
+  $hello = "最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる。夏の土用の時期。";
 } elseif ($datetime >= '08-08' and $datetime <= '08-22') {
   $season = "autumn";
   $sekki = "risshu";
