@@ -29,6 +29,8 @@ require_once('../../all/head.php');
     require('../../all/log.php');
     ?>
   </main>
+  <?php require('../../all/controls.html'); ?>
+  <script src="../../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
     <h3></h3>
@@ -38,8 +40,5 @@ require_once('../../all/head.php');
   </dialog>
   <script src="../../../profile/js/jscolor.js"></script>
   <script src="../../../profile/js/setStyles.js"></script>
-
-  <?php require('../../all/controls.html'); ?>
-  <script src="../../js/log.js"></script>
 </body>
 </html>
