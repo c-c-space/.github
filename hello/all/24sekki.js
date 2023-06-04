@@ -2,21 +2,6 @@
 
 document.querySelector('#about').innerHTML = `
 <p>
-<u>24 SEKKI</u><br/>
-The year is divided into four seasons, but traditionally the year was also divided into 24 solar terms.
-</p>
-<p>
-<u>二十四節気（にじゅうしせっき）</u><br/>
-4つの季節「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
-</p>
-<p>
-<small>
-二十四節気は、中国の中原の気候をもとに名付けられているため、日本で体感する気候とは季節感が合わない名称や時期があります。<br/>
-また、その年によって節の始まりの日が1日程度前後することがあります。
-</small>
-</p>
-<br/>
-<p>
 <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u><br/>
 下記のコントロールから日本の伝統的な季節の色を選択し、文字・背景の色を変更できます。
 </p>
