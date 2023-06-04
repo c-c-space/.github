@@ -25,10 +25,6 @@ while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
 
-function h($str) {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-
 $post = count($rows);
 flock($fp, LOCK_SH);
 ?>
