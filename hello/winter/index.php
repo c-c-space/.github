@@ -144,7 +144,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
           <option value="20px">Large</option>
         </select>
       </section>
-      <button class="color bgcolor" onclick="location.replace('/hello/') return false;">↩︎</button>
+      <button class="color bgcolor" onclick="location.replace('/hello/');">↩︎</button>
     </form>
   </dialog>
 
