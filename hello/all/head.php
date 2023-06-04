@@ -35,9 +35,9 @@ $post = count($rows);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="/hello/style.css" />
-  <link rel="stylesheet" href="/hello/css/index.css" />
-  <link rel="stylesheet" href="/hello/css/controls.css" />
-  <link rel="stylesheet" href="/hello/css/log.css" />
-  <link rel="stylesheet" href="/hello/css/mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../css/index.css" />
+  <link rel="stylesheet" href="../../css/controls.css" />
+  <link rel="stylesheet" href="../../css/log.css" />
+  <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 750px)" />
 </head>
