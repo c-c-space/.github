@@ -20,14 +20,15 @@ if (date("H") >= 6 and date("H") <= 11) {
 if (isset($_GET["timeframe"])) {
   $timeframe = $_GET["timeframe"];
 }
+$source_file = $timeframe . ".csv";
+$fp = fopen($source_file, 'a+b');
+$post = sizeof(file($source_file));
 
-$source_file = fopen($timeframe.".csv", 'r+');
-while ($row = fgetcsv($source_file)) {
+while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
 
-$post = count($rows);
-fclose($source_file);
+fclose($fp);
 ?>
 
 <!DOCTYPE html>
