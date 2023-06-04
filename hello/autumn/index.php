@@ -80,7 +80,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>August 23</date> -
             <date>September 7</date>
           </p>
-          <button type="button" data-name="処暑" data-date="Hot weather abates" data-hello="暑さが和らぐ頃。マツムシや鈴虫など心地よい虫の声が聞こえ、萩の花が咲き、朝夕は心地よい涼風が吹く。同時に台風の季節も到来する。">
+          <button type="button" data-name="処暑" data-date="Hot weather abates" data-hello="暑さが和らぐ頃。マツムシや鈴虫など心地よい虫の声が聞こえ、朝夕は心地よい涼風が吹く。同時に台風の季節も到来する。">
             (しょしょ)
           </button>
         </li>
@@ -89,7 +89,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>September 8</date> -
             <date>September 22</date>
           </p>
-          <button type="button" data-name="白露" data-date="Dew forms on the leaves" data-hello="野には薄の穂が顔を出し、朝露がつき白い粒のように光って見える頃。朝夕の心地よい涼風に、幾分の肌寒さを感じさせる冷風が混じり始める。">
+          <button type="button" data-name="白露" data-date="Dew forms on the leaves" data-hello="野に顔を出しはじめた薄の穂に朝露がつき、白い粒のように光って見える頃。涼風に幾分の肌寒さを感じさせる冷風が混じり始める。">
             (はくろ)
           </button>
         </li>
@@ -98,7 +98,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>September 23</date> -
             <date>October 7</date>
           </p>
-          <button type="button" data-name="秋分" data-date="The Autumn Equinox" data-hello="「暑さ寒さも彼岸まで」の言葉通り、暑い日は減り代わりに冷気を感ずる日が増える。しだいに秋が深まっていく、秋の七草が咲き揃う頃。">
+          <button type="button" data-name="秋分" data-date="The Autumn Equinox" data-hello="「暑さ寒さも彼岸まで」の言葉通り、暑い日に代わり冷気を感ずる日が増えはじめ、秋が深まっていく。秋の七草が咲き揃う頃。">
             (しゅうぶん)
           </button>
         </li>
@@ -107,7 +107,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>October 8</date> -
             <date>October 23</date>
           </p>
-          <button type="button" data-name="寒露" data-date="Weather becomes colder" data-hello="夜が長くなり、露がつめたく感じられる。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。安定して秋晴れの日が多くなる頃。">
+          <button type="button" data-name="寒露" data-date="Weather becomes colder" data-hello="夜が長くなり露がつめたく感じられる頃。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。安定して秋晴れの日が多くなる。">
             (かんろ)
           </button>
         </li>

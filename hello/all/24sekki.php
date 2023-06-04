@@ -115,7 +115,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "立秋";
   $date = "August 8 - August 22";
   $description = "The Beginning of Autumn";
-  $hello = "___";
+  $hello = "一年で一番暑い頃。一番暑いと言うことはあとは涼しくなるばかり。季節の挨拶が「残暑見舞い」に替わる。";
 } elseif ($datetime >= '08-23' and $datetime <= '09-07') {
   $season = "autumn";
   $sekki = "shosho";
@@ -123,7 +123,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "処暑";
   $date = "August 23 - September 7";
   $description = "Hot weather abates";
-  $hello = "___";
+  $hello = "暑さが和らぐ頃。マツムシや鈴虫など心地よい虫の声が聞こえ、朝夕は心地よい涼風が吹く。同時に台風の季節も到来する。";
 } elseif ($datetime >= '09-08' and $datetime <= '09-22') {
   $season = "autumn";
   $sekki = "hakuro";
@@ -131,7 +131,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "白露";
   $date = "September 8 - September 22";
   $description = "Dew forms on the leaves";
-  $hello = "___";
+  $hello = "野に顔を出しはじめた薄の穂に朝露がつき、白い粒のように光って見える頃。涼風に幾分の肌寒さを感じさせる冷風が混じり始める。";
 } elseif ($datetime >= '09-23' and $datetime <= '10-07') {
   $season = "autumn";
   $sekki = "shuubun";
@@ -139,7 +139,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "秋分";
   $date = "September 23 - October 7";
   $description = "The Autumn Equinox";
-  $hello = "___";
+  $hello = "「暑さ寒さも彼岸まで」の言葉通り、暑い日に代わり冷気を感ずる日が増えはじめ、秋が深まっていく。秋の七草が咲き揃う頃。";
 } elseif ($datetime >= '10-08' and $datetime <= '10-23') {
   $season = "autumn";
   $sekki = "kanro";
@@ -147,7 +147,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "寒露";
   $date = "October 8 - October 23";
   $description = "Weather becomes colder";
-  $hello = "___";
+  $hello = "夜が長くなり露がつめたく感じられる頃。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。安定して秋晴れの日が多くなる。";
 } elseif ($datetime >= '10-24' and $datetime <= '11-07') {
   $season = "autumn";
   $sekki = "soukou";
@@ -155,7 +155,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "霜降";
   $date = "October 24 - November 7";
   $description = "The Season of Frost";
-  $hello = "___";
+  $hello = "北国や山間部では、朝霜が降りて草木が白く化粧をする頃。野の花の数は減り始め、代わって山を紅葉が飾る。人々や動物たちの冬仕度が始まる。";
 } elseif ($datetime >= '11-08' and $datetime <= '11-21') {
   $season = "winter";
   $sekki = "rittou";
