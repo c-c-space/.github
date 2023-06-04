@@ -21,11 +21,7 @@ require('all/24sekki.php');
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 
 $fp = fopen($source_file, 'a+b');
-while ($row = fgetcsv($fp)) {
-  $rows[] = $row;
-}
-
-$post = count($rows);
+$post = sizeof(file($fp));
 flock($fp, LOCK_SH);
 ?>
 
@@ -118,6 +114,9 @@ flock($fp, LOCK_SH);
       </h2>
     </div>
     <?php
+    while ($row = fgetcsv($fp)) {
+      $rows[] = $row;
+    }
     function h($str) {
       return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
     }
