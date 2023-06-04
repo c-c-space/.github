@@ -21,12 +21,6 @@ $source_file = fopen($timeframe.".csv", 'r');
 while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
 }
-
-function h($str) {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-
-$post = count($rows);
 ?>
 
 <!DOCTYPE html>
