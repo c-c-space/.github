@@ -4,9 +4,9 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 $season = "冬 Winter";
-$date = "November 8 - February 3";
+$seasonDate = "November 8 - February 3";
 $description = "「ふゆ」は万物が冷ゆ（ひゆ）る季節。";
-$title = $season .' | '. $date;
+$title = $season .' | '. $seasonDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -57,7 +57,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="log">
     <div>
       <h1>
-        <code id="lastModified"><?php echo $date;?></code>
+        <code id="lastModified"><?php echo $seasonDate;?></code>
         <b><?php echo $season;?></b>
       </h1>
       <h2><?php echo $description;?><br/>
@@ -151,7 +151,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <?php require('../all/controls.html'); ?>
 
   <script src="../all/24sekki.js"></script>
-  <script src="../../profile/js/jscolor.js"></script>
+  <script src="color.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
 </body>
 </html>
