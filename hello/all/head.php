@@ -45,10 +45,4 @@ flock($source_file, LOCK_SH);
   <link rel="stylesheet" href="/hello/css/controls.css" />
   <link rel="stylesheet" href="/hello/css/log.css" />
   <link rel="stylesheet" href="/hello/css/mobile.css" media="screen and (max-width: 750px)" />
-
-  <script type="text/javascript">
-  if(!localStorage.getItem('yourInfo')) {
-    window.location.assign('/hello/');
-  }
-  </script>
 </head>

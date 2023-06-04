@@ -1,5 +1,5 @@
 <?php
-require_once('../../php/head.php');
+require_once('../../all/head.php');
 ?>
 
 <body>
@@ -18,7 +18,7 @@ require_once('../../php/head.php');
     <h3></h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
-    <?php require('../../php/timeframe.php'); ?>
+    <?php require('../../all/timeframe.php'); ?>
   </dialog>
   <script src="../../../profile/js/jscolor.js"></script>
   <script src="../../../profile/setStyles.js"></script>
