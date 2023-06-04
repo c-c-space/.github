@@ -33,7 +33,10 @@ require_once('../../all/head.php');
   <script src="../../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3></h3>
+    <h3>
+      <small><?php echo $date;?></small>
+      <?php echo $season;?>
+    </h3>
     <button class="color bgcolor" id="closeButton">×</button>
     <br/>
     <?php require('../../all/timeframe.php'); ?>
