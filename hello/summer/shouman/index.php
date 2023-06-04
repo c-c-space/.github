@@ -11,7 +11,6 @@ require_once('../../all/head.php');
       </h1>
       <h2></h2>
     </div>
-    <?php require('../../all/log.php'); ?>
   </main>
 </body>
 </html>
