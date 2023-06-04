@@ -3,8 +3,8 @@
 document.querySelector('#about').innerHTML = `
 <p></p>
 <p>
-下記のコントロールから日本の伝統的な季節の色を選択し、文字・背景の色を変更できます。<br/>
-<small>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</small>
+<u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u><br/>
+下記のコントロールから日本の伝統的な季節の色を選択し、文字・背景の色を変更できます。
 </p>
 `
 
