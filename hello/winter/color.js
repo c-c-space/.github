@@ -1,7 +1,7 @@
 "use strict"
 
 let colors = [
-  '緋褪色（ひさめいろ）': '#e09285',
+  '緋褪色（ひさめいろ）':'#e09285',
   '蜜柑茶（みかんちゃ）':'#cf6a38',
   '亜麻色（あまいろ）':'#E8DABE',
   '榛摺（はりずり）':'#79520B',
@@ -76,8 +76,8 @@ let namesForm = document.querySelectorAll('#bgcolor, #color')
 for (const names of namesForm) {
   for (let i = 0; i < colors.length; i++) {
     let option = document.createElement('option')
-    option.textContent = Object.value(colors[i])[0]
-    option.value = Object.value(colors[i])[1]
+    option.textContent = Object.value(colors)[0]
+    option.value = Object.value(colors)[1]
     names.appendChild(option)
   }
 }
