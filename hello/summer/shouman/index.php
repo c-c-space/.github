@@ -1,5 +1,5 @@
 <?php
-require_once('../php/head.php');
+require_once('../../all/head.php');
 ?>
 
 <body>
