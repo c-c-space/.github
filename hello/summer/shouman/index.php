@@ -18,7 +18,7 @@ require_once('../../all/head.php');
           <code><?php echo $greeting;?></code>
           <?php echo $season;?>
         </b>
-        <code id="lastModified"></code>
+        <code id="lastModified"><?php echo $date;?></code>
       </h1>
       <h2><?php echo $post;?> Posts</h2>
     </div>
