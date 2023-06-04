@@ -1,6 +1,6 @@
 <?php
 
-$sekkiName = "小満";
+$sekkiName = "小満 shouman";
 $date = "May 20 - Jun 4";
 $description = "Plants come into full leaf";
 $hello = "あらゆる生命が満ちていく頃。陽気がよくなり、草木などの生物が次第に生長して生い茂る。西日本でははしり梅雨が現れる。";
