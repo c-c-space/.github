@@ -21,7 +21,7 @@ if (isset($_GET["timeframe"])) {
   $timeframe = $_GET["timeframe"];
 }
 
-$source_file = fopen($timeframe.".csv", 'r');
+$source_file = fopen($timeframe.".csv", 'a+');
 while ($row = fgetcsv($source_file)) {
   $rows[] = $row;
 }
