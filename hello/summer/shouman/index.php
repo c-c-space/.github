@@ -34,7 +34,7 @@ require_once('../../all/head.php');
 
   <dialog id="modal" class="color bgcolor">
     <h3>
-      <small><?php echo $date;?></small>
+      <small><?php echo $date;?></small><br/>
       <?php echo $season;?>
     </h3>
     <button class="color bgcolor" id="closeButton">×</button>
