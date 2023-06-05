@@ -39,13 +39,13 @@ fclose($fp);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-      <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
-        <i>Speech to Text to Text to Speech</i>
-        <p>View The Collection of <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
-      </a>
       <a href="<?php echo $season;?>/">
         <i><?php echo $seasonDate;?></i>
         <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
+      </a>
+      <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
+        <i>Speech to Text to Text to Speech</i>
+        <p>View The Collection of <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
