@@ -1,0 +1,29 @@
+{
+  "title" : "Hello",
+  "description" : "Speech to Text to Text to Speech",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "___.png",
+
+  "contents" : [
+    {
+      "date" : "Web Speech API",
+      "name" : "SpeechRecognition.js",
+      "url" : "/hello/js/recognition.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "Web Speech API",
+      "name" : "SpeechSynthesis.js",
+      "url" : "/hello/js/synthesis.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}
