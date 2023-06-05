@@ -10,17 +10,17 @@
 
   "contents" : [
     {
-      "date" : "The Information About Network & Browser",
-      "name" : "通信情報／ブラウザ等情報",
-      "url" : "/profile/",
+      "date" : "HTTP/1.1 195.179.236.11",
+      "name" : "アクセス履歴 | Access Log",
+      "url" : "/ver/log/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "HTTP/1.1 195.179.236.11",
-      "name" : "アクセス履歴 | Access Log",
-      "url" : "/ver/log/",
+      "date" : "The Information About Network & Browser",
+      "name" : "通信情報／ブラウザ等情報",
+      "url" : "/profile/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
