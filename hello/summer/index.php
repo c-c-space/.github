@@ -151,7 +151,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <label for="bgcolor">Background Color</label>
         <select class="color bgcolor" id="bgcolor"></select>
         <br/>
-        <label for="color">Color</label>
+        <label for="color">Text Color</label>
         <select class="color bgcolor" id="color"></select>
         <hr/>
         <label for="fontSize" hidden>Font Size</label>
