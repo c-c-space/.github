@@ -10,7 +10,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 $timestamp = date("j.M.y.D g:i:s A T");
 
 $year = "2023";
-$month = date("m");
+$month = "01";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
