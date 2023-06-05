@@ -10,7 +10,7 @@
 
   "contents" : [
     {
-      "date" : "SERVER IP 195.179.236.11 LiteSpeed",
+      "date" : "$_SERVER",
       "name" : "アクセス履歴 | Access Log",
       "url" : "/ver/log/",
       "type" : "news",
