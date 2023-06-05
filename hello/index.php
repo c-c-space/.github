@@ -134,7 +134,6 @@ fclose($fp);
       </h2>
       <p><?php echo $hello;?></p>
     </section>
-    <hr/>
     <p>
       <smal>
         <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
