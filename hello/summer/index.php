@@ -162,7 +162,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
           <option value="20px">Large</option>
         </select>
       </section>
-      <p>コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。</p>
+      コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </form>
   </dialog>
   <?php require('../all/controls.html'); ?>
