@@ -1,9 +1,11 @@
 'use strict'
 
-document.querySelector('#about').innerHTML = `
-<u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u><br/>
-下記のコントロールから日本の伝統的な季節の色を選択し、文字・背景の色を変更できます。
-`
+const selectModal = document.querySelector('#modal select');
+const optionModal = document.querySelectorAll("#modal select option");
+selectModal.addEventListener('change', function() {
+  const index =  this.selectedIndex;
+  window.location.replace(optionModal[index].value);
+});
 
 let namesForm = document.querySelectorAll('#bgcolor, #color')
 for (const names of namesForm) {
