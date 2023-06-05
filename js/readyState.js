@@ -47,8 +47,6 @@ document.addEventListener('readystatechange', event => {
     hello.appendChild(submit)
 
     if(!localStorage.getItem('yourInfo')) {
-      fetchHTML('hello.php','#readme h1')
-
       const submitBtn = document.createElement('button')
       submitBtn.setAttribute('type','button')
       submitBtn.setAttribute('id','submit-btn')
