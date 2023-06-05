@@ -121,7 +121,10 @@ fclose($fp);
   <script src="js/controls.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <h3>Speech to Text to Text to Speech</h3>
+    <h3>
+      <b><?php echo $greeting;?></b><br/>
+      Speech to Text to Text to Speech
+    </h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
     <hr/>
