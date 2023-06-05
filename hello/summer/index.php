@@ -148,12 +148,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
       </p>
       <select class="color bgcolor" id="sekki">
-        <option value="<?php echo $sekki1ID; ?>"><?php echo $sekki1.' ('.$sekki1ID.')'; ?></option>
-        <option value="<?php echo $sekki2ID; ?>"><?php echo $sekki2.' ('.$sekki2ID.')'; ?></option>
-        <option value="<?php echo $sekki3ID; ?>"><?php echo $sekki3.' ('.$sekki3ID.')'; ?></option>
-        <option value="<?php echo $sekki4ID; ?>"><?php echo $sekki4.' ('.$sekki4ID.')'; ?></option>
-        <option value="<?php echo $sekki5ID; ?>"><?php echo $sekki5.' ('.$sekki5ID.')'; ?></option>
-        <option value="<?php echo $sekki6ID; ?>"><?php echo $sekki6.' ('.$sekki6ID.')'; ?></option>
+        <option value="<?php echo $sekki1ID; ?>"><?php echo $sekki1; ?></option>
+        <option value="<?php echo $sekki2ID; ?>"><?php echo $sekki2; ?></option>
+        <option value="<?php echo $sekki3ID; ?>"><?php echo $sekki3; ?></option>
+        <option value="<?php echo $sekki4ID; ?>"><?php echo $sekki4; ?></option>
+        <option value="<?php echo $sekki5ID; ?>"><?php echo $sekki5; ?></option>
+        <option value="<?php echo $sekki6ID; ?>"><?php echo $sekki6; ?></option>
       </select>
     </section>
     <hr/>
