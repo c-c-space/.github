@@ -11,6 +11,14 @@ function changeHidden() {
   })
 }
 
+async function fetchHTML(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(html => {
+    document.querySelector(query).innerHTML = html
+  });
+}
+
 function createVideo() {
   document.body.insertAdjacentHTML ('beforeend', '<video id="userMedia" autoplay playsinline></video>')
   const userMedia = document.querySelector('#userMedia')
@@ -39,6 +47,8 @@ document.addEventListener('readystatechange', event => {
     hello.appendChild(submit)
 
     if(!localStorage.getItem('yourInfo')) {
+      fetchHTML('hello.php','#readme h1')
+
       const submitBtn = document.createElement('button')
       submitBtn.setAttribute('type','button')
       submitBtn.setAttribute('id','submit-btn')
@@ -61,6 +71,8 @@ document.addEventListener('readystatechange', event => {
         userMedia.remove()
       })
     } else {
+      fetchHTML('welcome.php','#readme h1')
+
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
@@ -73,7 +85,7 @@ document.addEventListener('readystatechange', event => {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
-      yourStrage.innerHTML += ' Colors & Symbols<br/>'
+      yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
 
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'

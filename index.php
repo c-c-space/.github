@@ -1,8 +1,3 @@
-<?php
-require('hello/all/greeting.php');
-require('hello/all/24sekki.php');
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -57,10 +52,7 @@ require('hello/all/24sekki.php');
 
   <main id="hello">
     <section id="readme">
-      <h1>
-        <b><?php echo $greeting;?></b><br>
-        IP <code><?php echo $_SERVER["REMOTE_ADDR"];?></code>
-      </h1>
+      <h1></h1>
       <p>
         Thank you for visiting
         <u data-id="website">The Website</u>
