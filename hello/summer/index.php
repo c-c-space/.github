@@ -141,8 +141,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <option value="taisho">July 23 - August 7</option>
       </select>
     </section>
+<hr>
     <form method="GET">
-      <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u><br/>
+      <p><u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u></p>
       <section>
         <label for="bgcolor">Background Color</label>
         <select class="color bgcolor" id="bgcolor"></select>
@@ -158,7 +159,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </select>
       </section>
     </form>
-    <p>コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。</p>
+    コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
   </dialog>
   <?php require('../all/controls.html'); ?>
 
