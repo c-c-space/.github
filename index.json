@@ -18,6 +18,14 @@
       "note" : ""
     },
     {
+      "date" : "HTTP/1.1 195.179.236.11",
+      "name" : "アクセス履歴 | Access Log",
+      "url" : "/ver/log/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
       "date" : "Your Drawing is Seems So Beautiful",
       "name" : "Thank You for Visiting",
       "url" : "/thankyou/",
