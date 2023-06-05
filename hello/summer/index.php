@@ -6,14 +6,6 @@ date_default_timezone_set('Asia/Tokyo');
 $season = "夏 Summer";
 $date = "May 5 - August 7";
 $description = "「なつ」は熱（ねつ）の季節。";
-
-$sekki1 = ""
-$sekki2 = ""
-$sekki3 = ""
-$sekki4 = ""
-$sekki5 = ""
-$sekki6 = ""
-
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
