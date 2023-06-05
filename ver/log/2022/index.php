@@ -163,7 +163,7 @@ flock($fp, LOCK_SH);
       <option disabled selected hidden>Select Month</option>
       <option value="10">2022年10月</option>
       <option value="11">2022年11月</option>
-      <option value="12">2022年11月</option>
+      <option value="12">2022年12月</option>
     </select>
     <button type="submit">Access Log</button>
   </form>
