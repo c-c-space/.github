@@ -131,10 +131,10 @@ fclose($fp);
         Now is The Season named
         <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)
       </h2>
+      <p><?php echo $hello;?></p>
       <h3>
         <?php echo $description;?>
       </h3>
-      <p><?php echo $hello;?></p>
     </section>
     <hr/>
     <label for="bgcolor">Background Color</label>
