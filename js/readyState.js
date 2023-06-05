@@ -62,20 +62,26 @@ document.addEventListener('readystatechange', event => {
       })
     } else {
       const welcome = document.querySelector('#readme h1')
-      welcome.innerHTML = 'Welcome ようこそ'
+      welcome.innerHTML = 'Welcome ようこそ<br/>'
+      welcome.innerHTML += `
+      Now is The Season named
+      <a href="<?php echo $season;?>/<?php echo $sekki;?>/"><?php echo $sekkiName;?></a>
+      (<b><?php echo $sekki;?></b>) in
+      <b><?php echo $season;?></b>
+      `
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
       yourStrage.style.display = 'inline-block'
-      yourStrage.innerHTML = "<u>You Posted</u><br/>"
+      yourStrage.innerHTML = '<u>You Posted</u><br/>'
 
       if(!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += `<a href="/sign/">0</a>`
+        yourStrage.innerHTML += '<a href="/sign/">0</a>'
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
-      yourStrage.innerHTML += " Colors & Symbols<br/>"
+      yourStrage.innerHTML += ' Colors & Symbols<br/>'
 
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'

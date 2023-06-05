@@ -1,5 +1,6 @@
 <?php
 require('hello/all/greeting.php');
+require('hello/all/24sekki.php');
 ?>
 
 <!DOCTYPE html>
