@@ -33,6 +33,10 @@ body {
   src: url("https://creative-community.space/ver/font/ipag.ttc");
 }
 
+#contents a:hover {
+  cursor: pointer;
+}
+
 #contents a p {
   white-space: pre-line;
 }
