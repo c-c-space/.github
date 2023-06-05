@@ -40,7 +40,7 @@ fclose($fp);
         <u>↩︎</u>
       </a>
       <a href="<?php echo $season;?>/">
-        <i>二十四節気 | 24 Sekki</i>
+        <i><?php echo $seasonDate;?></i>
         <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
