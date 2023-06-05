@@ -130,7 +130,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <button class="color bgcolor" id="closeButton">×</button>
     <section>
       <p>
-        <label for="sekki"><u>View the Collection of 24 Sekki in <?php echo $season; ?></u></label></br>
+        <label for="sekki"><u>View the Collection of 24 Sekki</u></label></br>
         下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
       </p>
       <select class="color bgcolor" id="sekki">
