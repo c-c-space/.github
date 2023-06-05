@@ -143,7 +143,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </section>
 <hr>
     <form method="GET">
-      <p><u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u></p>
+      <small><u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u></small>
       <section>
         <label for="bgcolor">Background Color</label>
         <select class="color bgcolor" id="bgcolor"></select>
