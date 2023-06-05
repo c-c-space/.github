@@ -6,6 +6,20 @@ date_default_timezone_set('Asia/Tokyo');
 $season = "夏 Summer";
 $date = "May 5 - August 7";
 $description = "「なつ」は熱（ねつ）の季節。";
+
+$sekki1 = "立夏"
+$sekki1ID = "rikka"
+$sekki2 = "小満"
+$sekki2ID = "shouman"
+$sekki3 = "芒種"
+$sekki3ID = "boushu"
+$sekki4 = "夏至"
+$sekki4ID = "geshi"
+$sekki5 = "小暑"
+$sekki5ID = "shousho"
+$sekki6 = "大暑"
+$sekki6ID = "taisho"
+
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
@@ -71,7 +85,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>May 5</date> -
             <date>May 19</date>
           </p>
-          <button type="button" data-name="立夏" data-date="The Beginning of Summer" data-hello="一年のうちで、もっとも過ごしやすい節。野山が新緑に彩られ、夏の気配が感じられるようになる。かえるが鳴き始め、竹の子が生えてくる頃。">
+          <button type="button" data-name="<?php echo $sekki1; ?>" data-date="The Beginning of Summer" data-hello="一年のうちで、もっとも過ごしやすい節。野山が新緑に彩られ、夏の気配が感じられるようになる。かえるが鳴き始め、竹の子が生えてくる頃。">
             (りっか)
           </button>
         </li>
@@ -80,7 +94,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>May 20</date> -
             <date>Jun 4</date>
           </p>
-          <button type="button" data-name="小満" data-date="Plants come into full leaf" data-hello="あらゆる生命が満ちていく頃。陽気がよくなり、草木などの生物が次第に生長して生い茂る。西日本でははしり梅雨が現れる。">
+          <button type="button" data-name="<?php echo $sekki2; ?>" data-date="Plants come into full leaf" data-hello="あらゆる生命が満ちていく頃。陽気がよくなり、草木などの生物が次第に生長して生い茂る。西日本でははしり梅雨が現れる。">
             (しょうまん)
           </button>
         </li>
@@ -89,7 +103,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Jun 5</date> -
             <date>Jun 20</date>
           </p>
-          <button type="button" data-name="芒種" data-date="Time to plant rice seedlings" data-hello="稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味であるが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。">
+          <button type="button" data-name="<?php echo $sekki3; ?>" data-date="Time to plant rice seedlings" data-hello="稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味であるが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。">
             (ぼうしゅ)
           </button>
         </li>
@@ -98,7 +112,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Jun 21</date> -
             <date>July 6</date>
           </p>
-          <button type="button" data-name="夏至" data-date="The Summer Solstice" data-hello="一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期で、あまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。">
+          <button type="button" data-name="<?php echo $sekki4; ?>" data-date="The Summer Solstice" data-hello="一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期で、あまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。">
             (げし)
           </button>
         </li>
@@ -107,7 +121,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>July 7</date> -
             <date>July 22</date>
           </p>
-          <button type="button" data-name="小暑" data-date="End of the rainy season" data-hello="梅雨明けが近く、本格的な暑さが始まる集中豪雨のシーズン。蓮の花が咲き、蝉の合唱が始まる「暑中見舞い」を出す頃。">
+          <button type="button" data-name="<?php echo $sekki5; ?>" data-date="End of the rainy season" data-hello="梅雨明けが近く、本格的な暑さが始まる集中豪雨のシーズン。蓮の花が咲き、蝉の合唱が始まる「暑中見舞い」を出す頃。">
             (しょうしょ)
           </button>
         </li>
@@ -116,7 +130,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>July 23</date> -
             <date>August 7</date>
           </p>
-          <button type="button" data-name="大暑" data-date="Hottest time of the year" data-hello="最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる、夏の土用の時期。夏の花が盛りになる頃。">
+          <button type="button" data-name="<?php echo $sekki6; ?>" data-date="Hottest time of the year" data-hello="最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる、夏の土用の時期。夏の花が盛りになる頃。">
             (たいしょ)
           </button>
         </li>
@@ -124,10 +138,25 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </section>
   </main>
 
-  <dialog id="modal" class="color bgcolor">
+  <dialog id="modal" class="color bgcolor" open>
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
+    <section>
+      <p>
+        <label for="sekki"><u>View the Collection of 24 Sekki in <?php echo $season; ?></u></label></br>
+        下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
+      </p>
+      <select class="color bgcolor" id="sekki">
+        <option value="<?php echo $sekki1ID; ?>"><?php echo $sekki1.' ('.$sekki1ID.')'; ?></option>
+        <option value="<?php echo $sekki2ID; ?>"><?php echo $sekki2.' ('.$sekki2ID.')'; ?></option>
+        <option value="<?php echo $sekki3ID; ?>"><?php echo $sekki3.' ('.$sekki3ID.')'; ?></option>
+        <option value="<?php echo $sekki4ID; ?>"><?php echo $sekki4.' ('.$sekki4ID.')'; ?></option>
+        <option value="<?php echo $sekki5ID; ?>"><?php echo $sekki5.' ('.$sekki5ID.')'; ?></option>
+        <option value="<?php echo $sekki6ID; ?>"><?php echo $sekki6.' ('.$sekki6ID.')'; ?></option>
+      </select>
+    </section>
+    <hr/>
     <p id="about"></p>
     <form method="GET">
       <section>
