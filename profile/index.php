@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="../ver/log/style.css" />
   <style>
   #menu {
@@ -102,7 +103,7 @@
   <script src="../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <button class="color bgcolor" id="closeButton">Close 閉じる</button>
+    <button id="closeButton">Close 閉じる</button>
     <section id="about"></section>
   </dialog>
 

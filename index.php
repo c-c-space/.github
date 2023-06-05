@@ -10,6 +10,7 @@
   <script src="js/readyState.js"></script>
   <link rel="stylesheet" href="hello/style.css" />
   <link rel="stylesheet" href="hello/css/controls.css" />
+  <link rel="stylesheet" href="profile/css/modal.css" />
   <link rel="stylesheet" href="ver/log/style.css" />
   <link rel="stylesheet" href="thankyou/style.css" />
   <link rel="stylesheet" href="thankyou/print.css" media="print"/>
@@ -85,7 +86,7 @@
 
   <main id="yourinfo" hidden>
     <form method="post">
-      <strong>あなたの通信情報／ブラウザ等情報</strong>
+      <button id="openModal" type="button">あなたの通信情報／ブラウザ等情報</button>
       <p><?php require('yourinfo.php'); ?></p>
       <section>
         <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
@@ -94,6 +95,31 @@
     </form>
     <script src="js/log.js"></script>
   </main>
+
+  <dialog id="modal">
+    <button id="closeButton">Close 閉じる</button>
+    <section id="about"></section>
+  </dialog>
+
+  <script type="text/javascript">
+  const dialogModal = document.querySelector('#modal');
+  const openModal = document.querySelector('#openModal');
+
+  openModal.addEventListener('click', function onModal() {
+    if (typeof dialogModal.showModal === "function") {
+      dialogModal.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  });
+
+  const closeButton = document.querySelector('#closeButton');
+  closeButton.addEventListener('click', () => {
+    dialogModal.close();
+  });
+
+  fetchHTML('profile/about.html','#about')
+  </script>
 
   <section id="you">
     <img class="hsl" src="ver/qr.png">
@@ -148,9 +174,9 @@
       }
     }
   });
-  </script>
+</script>
 
-  <footer id="now" class="hsl"></footer>
-  <script src="js/now.js"></script>
+<footer id="now" class="hsl"></footer>
+<script src="js/now.js"></script>
 </body>
 </html>

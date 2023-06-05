@@ -10,10 +10,7 @@ hr {
 }
 
 #log button,
-#log code,
-#modal,
-#modal button,
-#modal select {
+#log code {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
@@ -26,8 +23,7 @@ hr {
   margin: 0.25rem;
 }
 
-#log,
-#modal {
+#log {
   position: fixed;
   margin: 0;
 }
@@ -55,20 +51,13 @@ hr {
 
 #log li:last-of-type,
 #log button,
-#modal button,
-#modal select,
 #now select {
   font-size: 100%;
 }
 
 h2,
-#level,
-#modal font {
+#level {
   font-size: 125%;
-}
-
-#modal small {
-  font-weight: 500;
 }
 
 #log li:last-of-type,
@@ -78,8 +67,6 @@ h2,
 
 form select,
 #log button,
-#modal button,
-#modal select,
 #now select {
   appearance : none;
   outline: none;
@@ -89,21 +76,6 @@ form select,
   pointer-events: auto;
   user-select: auto;
   cursor: pointer;
-}
-
-#modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: auto;
-  width: 95%;
-  height: 95%;
-  max-width: 750px;
-}
-
-#closeButton {
-  float: right;
-  margin-left: 0.5rem;
 }
 
 meter {

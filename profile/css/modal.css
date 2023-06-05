@@ -1,0 +1,48 @@
+#modal,
+#modal button,
+#modal select {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+#modal font {
+  font-size: 125%;
+}
+
+#modal button,
+#modal select {
+  font-size: 100%;
+}
+
+#modal small {
+  font-weight: 500;
+}
+
+#modal button,
+#modal select {
+  appearance : none;
+  outline: none;
+  border: solid 2px;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  pointer-events: auto;
+  user-select: auto;
+  cursor: pointer;
+}
+
+#closeButton {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+
+#modal {
+  position: fixed;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  width: 95%;
+  height: 95%;
+  max-width: 750px;
+}
