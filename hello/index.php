@@ -122,8 +122,8 @@ fclose($fp);
 
   <dialog id="modal" class="color bgcolor">
     <h3>
-      <u><?php echo $greeting;?></u><br/>
-      Speech to Text to Text to Speech
+      <?php echo $greeting;?><br/>
+      <u><small>Speech to Text to Text to Speech</small></u>
     </h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about"></section>
