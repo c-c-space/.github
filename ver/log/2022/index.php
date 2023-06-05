@@ -10,7 +10,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 $timestamp = date("j.M.y.D g:i:s A T");
 
 $year = "2022";
-$month = date("m");
+$month = "10";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
@@ -159,11 +159,14 @@ flock($fp, LOCK_SH);
   <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
-    <select id="month" name="month"></select>
+    <select id="month" name="month">
+      <option disabled selected hidden>Select Month</option>
+      <option value="10">2022年10月</option>
+      <option value="11">2022年11月</option>
+      <option value="12">2022年11月</option>
+    </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="selectmonth.js"></script>
-
   <video id="userMedia" autoplay playsinline></video>
 </body>
 </html>
