@@ -128,6 +128,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
+    <hr/>
     <section>
       <select class="color bgcolor" id="sekki">
         <option selected disabled>二十四節気 | 24 Sekki</option>
