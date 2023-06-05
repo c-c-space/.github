@@ -27,6 +27,8 @@ hr {
 #hello select,
 #openModal,
 #backBtn,
+#modal button,
+#modal select,
 .controls input[type="button"] {
   border: 0.25vw solid;
   border-radius: 4.5vw;
@@ -85,10 +87,20 @@ button:focus {
 }
 
 #hello label,
-.range label {
+.range label,
+#modal {
   font-size: 3vw;
 }
 
 .range code {
   font-size: 4.5vw;
+}
+
+#openModal {
+  margin-bottom: 1vw;
+}
+
+#closeButton {
+  float: right;
+  margin-left: 1vw;
 }
