@@ -127,6 +127,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
+    <br/>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
     <section>
