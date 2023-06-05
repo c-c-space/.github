@@ -99,6 +99,7 @@
   list-style: none;
   position: relative;
   margin-bottom: 5rem;
+  overflow: auto;
   width: 100%;
   z-index: 5;
 }

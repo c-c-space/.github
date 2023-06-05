@@ -10,17 +10,9 @@
 
   "contents" : [
     {
-      "date" : "Colors and Symbols that Suits on You",
-      "name" : "自分の気持ちを知る・表す",
-      "url" : "/sign/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "Go Out",
-      "name" : "行ったことのない場所へ行く",
-      "url" : "/map/",
+      "date" : "Your Drawing is Seems So Beautiful",
+      "name" : "Thank You for Visiting",
+      "url" : "/thankyou/",
       "type" : "news",
       "caption" : "none",
       "note" : ""

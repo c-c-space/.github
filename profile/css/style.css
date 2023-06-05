@@ -14,8 +14,7 @@ hr {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#now,
-#log li span {
+#now {
   padding: 0.25rem;
 }
 
@@ -23,23 +22,8 @@ hr {
   margin: 0.25rem;
 }
 
-#log {
-  position: fixed;
-  margin: 0;
-}
-
-#log,
 #battery span:last-of-type {
   display: flex;
-}
-
-#log {
-  align-items: stretch;
-  flex-flow: row-reverse wrap-reverse;
-  justify-content: start;
-  list-style: none;
-  overflow: auto;
-  z-index: 2;
 }
 
 #battery span:last-of-type {

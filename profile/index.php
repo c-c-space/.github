@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="../ver/log/style.css" />
   <style>
@@ -55,7 +55,7 @@
         </u>
       </span>
     </li>
-    <script src="battery.js"></script>
+    <script src="js/battery.js"></script>
 
     <li id="window">
       <span>
@@ -123,8 +123,21 @@
         <option value="20px">Large</option>
       </select>
     </section>
-    <script src="js/jscolor.js"></script>
   </nav>
+
+  <?php require('../hello/all/24sekki.php');?>
+  <script src="../hello/<?php echo $season;?>/color.js"></script>
+  <script type="text/javascript">
+  let namesForm = document.querySelectorAll('#bgcolor, #color')
+  for (const names of namesForm) {
+    Object.entries(colors).forEach(eachArr => {
+      let option = document.createElement('option')
+      option.textContent = Object.values(eachArr)[0]
+      option.value = Object.values(eachArr)[1]
+      names.appendChild(option)
+    })
+  }
+  </script>
 
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -137,14 +150,11 @@
     online ? 'You are: Online' : 'You are: Offline';
   }
 
-  async function about() {
-    fetch('about.html')
-    .then(response => response.text())
-    .then(about => {
-      document.querySelector('#about').innerHTML = about
-    });
-  }
-  about();
+  fetch('about.html')
+  .then(response => response.text())
+  .then(about => {
+    document.querySelector('#about').innerHTML = about
+  });
   </script>
 
   <script src="index.js"></script>
