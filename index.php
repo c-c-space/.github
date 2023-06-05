@@ -51,12 +51,11 @@
   </header>
 
   <main id="hello">
+    <?php
+    require('hello/all/greeting.php');
+    ?>
     <section id="readme">
       <h1>
-        <?php
-        require('hello/all/greeting.php');
-        ?>
-
         <b><?php echo $greeting;?></b><br>
         IP <code><?php echo $_SERVER["REMOTE_ADDR"];?></code>
       </h1>
