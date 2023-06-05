@@ -3,7 +3,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-$season = "秋 autumn";
+$season = "秋 Autumn";
 $date = "August 8 - November 7";
 $description = "「あき」は草木が紅（あか）く染まる季節。";
 $title = $season .' | '. $date;

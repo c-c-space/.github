@@ -3,7 +3,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-$season = "冬 winter";
+$season = "冬 Winter";
 $seasonDate = "November 8 - February 3";
 $description = "「ふゆ」は万物が冷ゆ（ひゆ）る季節。";
 $title = $season .' | '. $seasonDate;
