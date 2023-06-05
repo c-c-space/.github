@@ -9,14 +9,14 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
 $timestamp = date("j.M.y.D g:i:s A T");
 
-$year = date("Y");
+$year = "2023";
 $month = date("m");
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
 $description = $year .' 年 '. $month .' 月 の アクセス履歴';
-$source_file = $year.'/'.$month . '.csv';
+$source_file = $month . ".csv";
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
 ?>
@@ -41,9 +41,9 @@ flock($fp, LOCK_SH);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="selectmonth.css" />
-  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../selectmonth.css" />
+  <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -104,13 +104,9 @@ flock($fp, LOCK_SH);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-      <a href="/profile/" target="_parent">
-        <i>The Information About Network & Browser</i>
-        <p><b>通信情報／ブラウザ等情報</b></p>
-      </a>
-      <a href="/ver/" target="_parent">
-        <i>更新履歴</i>
-        <p><b>New Contents & Version Up</b></p>
+      <a href="/ver/log/" target="_parent">
+        <i>HTTP/1.1 on 195.179.236.11</i>
+        <p><b>アクセス履歴 | Access Log</b></p>
       </a>
     </nav>
   </header>
