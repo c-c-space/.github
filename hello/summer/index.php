@@ -129,14 +129,17 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <section>
-      <p><label for="sekki">24 Sekki in <?php echo $season; ?></label></p>
+      <p>
+        <label for="sekki"><u>View the Collection of 24 Sekki in <?php echo $season; ?></u></label></br>
+        下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
+      </p>
       <select class="color bgcolor" id="sekki">
-        <option value="rikka">立夏</option>
-        <option value="rikka">立夏</option>
-        <option value="rikka">立夏</option>
-        <option value="rikka">立夏</option>
-        <option value="rikka">立夏</option>
-        <option value="rikka">立夏</option>
+        <option value="rikka">May 5 - May 19</option>
+        <option value="shouman">May 20 - Jun 4</option>
+        <option value="boushu">Jun 5 - Jun 20</option>
+        <option value="geshi">Jun 21 - July 6</option>
+        <option value="shousho">July 7 - July 22</option>
+        <option value="taisho">July 23 - August 7</option>
       </select>
     </section>
     <hr/>
