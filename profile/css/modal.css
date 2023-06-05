@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+#openModal {
+  margin-bottom: 0.25rem;
+}
+
 #closeButton {
   float: right;
   margin-left: 0.5rem;
