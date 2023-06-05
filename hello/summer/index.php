@@ -144,7 +144,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <hr>
     <form method="GET">
       <p>
-        <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u><br/>
+        <smal><u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u></small><br/>
         コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
       </p>
       <section>
