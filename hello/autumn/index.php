@@ -3,7 +3,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-$season = "秋 Autumn";
+$season = "秋 autumn";
 $date = "August 8 - November 7";
 $description = "「あき」は草木が紅（あか）く染まる季節。";
 $title = $season .' | '. $date;
@@ -128,14 +128,32 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
-    <p id="about"></p>
+    <hr/>
+    <section id="collection">
+      <select class="color bgcolor" id="sekki">
+        <option selected disabled>View The Collection</option>
+        <option value="risshu">August 8 - August 22</option>
+        <option value="shosho">August 23 - September 7</option>
+        <option value="hakuro">September 8 - September 22</option>
+        <option value="shuubun">September 23 - October 7</option>
+        <option value="kanro">October 8 - October 23</option>
+        <option value="soukou">October 24 - November 7</option>
+      </select>
+      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
+      <hr>
+    </section>
     <form method="GET">
+      <p>
+        <smal>
+          <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
+        </small>
+      </p>
       <section>
+        <label for="color">Text Color</label>
+        <select class="color bgcolor" id="color"></select>
+        <br/>
         <label for="bgcolor">Background Color</label>
         <select class="color bgcolor" id="bgcolor"></select>
-        <br/>
-        <label for="color">Color</label>
-        <select class="color bgcolor" id="color"></select>
         <hr/>
         <label for="fontSize" hidden>Font Size</label>
         <select class="color bgcolor" id="fontSize" hidden>
@@ -144,9 +162,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
           <option value="20px">Large</option>
         </select>
       </section>
+      コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </form>
   </dialog>
-
   <?php require('../all/controls.html'); ?>
 
   <script src="color.js"></script>
