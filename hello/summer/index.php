@@ -3,7 +3,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-$season = "夏 Summer";
+$season = "夏 summer";
 $date = "May 5 - August 7";
 $description = "「なつ」は熱（ねつ）の季節。";
 $title = $season .' | '. $date;
