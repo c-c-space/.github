@@ -16,7 +16,6 @@ if (isset($_GET["month"])) {
 }
 
 $description = $year .' 年 '. $month .' 月 の アクセス履歴';
-
 $source_file = $year . $month . ".csv";
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
