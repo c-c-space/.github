@@ -1,8 +1,7 @@
 'use strict'
 
-const hello = document.querySelector('#hello')
-
 window.addEventListener('load', event => {
+  const hello = document.querySelector('#hello')
   const speechAPI = document.createElement('section')
   const voiceSelect = document.createElement('select')
   voiceSelect.setAttribute('id','voice-select')
