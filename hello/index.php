@@ -59,7 +59,7 @@ fclose($fp);
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
         <i>Speech to Text to Text to Speech</i>
-        <p>Posted on <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+        <p>View The Collection of <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
       </a>
     </nav>
   </header>
