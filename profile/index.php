@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../ver/log/style.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modal.css" />
+  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   #menu {
     background: #000;

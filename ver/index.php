@@ -81,6 +81,9 @@ function h($str) {
     margin: 0;
   }
   </style>
+
+  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
 
 <body>
