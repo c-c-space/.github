@@ -17,6 +17,11 @@
   font-weight: 500;
 }
 
+#modal h1 {
+  padding: 0;
+  margin: 0;
+}
+
 #modal button,
 #modal select {
   appearance : none;
