@@ -133,14 +133,13 @@ fclose($fp);
         is <?php echo $description;?>
       </h2>
       <p><?php echo $hello;?></p>
-      <hr/>
-      <p>
-        <smal>
-          <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
-        </small>
-      </p>
-      コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </section>
+    <hr/>
+    <p>
+      <smal>
+        <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
+      </small>
+    </p>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
     <br/>
@@ -153,6 +152,7 @@ fclose($fp);
       <option value="16px" selected>Medium</option>
       <option value="20px">Large</option>
     </select>
+    コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
   </dialog>
 
   <script src="<?php echo $season;?>/color.js"></script>
