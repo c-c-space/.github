@@ -61,14 +61,6 @@ document.addEventListener('readystatechange', event => {
         userMedia.remove()
       })
     } else {
-      const welcome = document.querySelector('#readme h1')
-      welcome.innerHTML = 'Welcome ようこそ<br/>'
-      welcome.innerHTML += `
-      Now is The Season named
-      <a href="<?php echo $season;?>/<?php echo $sekki;?>/"><?php echo $sekkiName;?></a>
-      (<b><?php echo $sekki;?></b>) in
-      <b><?php echo $season;?></b>
-      `
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
       yourStrage.style.userSelect = 'text'
