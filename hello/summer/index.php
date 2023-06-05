@@ -7,12 +7,12 @@ $season = "夏 Summer";
 $date = "May 5 - August 7";
 $description = "「なつ」は熱（ねつ）の季節。";
 
-$sekki1 = "立夏"
-$sekki2 = "小満"
-$sekki3 = "芒種"
-$sekki4 = "夏至"
-$sekki5 = "小暑"
-$sekki6 = "大暑"
+$sekki1 = ""
+$sekki2 = ""
+$sekki3 = ""
+$sekki4 = ""
+$sekki5 = ""
+$sekki6 = ""
 
 $title = $season .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
@@ -79,7 +79,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>May 5</date> -
             <date>May 19</date>
           </p>
-          <button type="button" data-name="<?php echo $sekki1; ?>" data-date="The Beginning of Summer" data-hello="一年のうちで、もっとも過ごしやすい節。野山が新緑に彩られ、夏の気配が感じられるようになる。かえるが鳴き始め、竹の子が生えてくる頃。">
+          <button type="button" data-name="立夏" data-date="The Beginning of Summer" data-hello="一年のうちで、もっとも過ごしやすい節。野山が新緑に彩られ、夏の気配が感じられるようになる。かえるが鳴き始め、竹の子が生えてくる頃。">
             (りっか)
           </button>
         </li>
