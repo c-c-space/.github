@@ -129,11 +129,9 @@ fclose($fp);
     <section id="about">
       <h2>
         <strong><?php echo $sekkiName;?></strong> (<?php echo $sekki;?>)
+        is <?php echo $description;?>
       </h2>
       <p><?php echo $hello;?></p>
-      <h3>
-        <?php echo $description;?>
-      </h3>
     </section>
     <hr/>
     <label for="bgcolor">Background Color</label>
