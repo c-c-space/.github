@@ -127,7 +127,7 @@ fclose($fp);
     </h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about">
-      <p><u><?php echo $date;?></u></p>
+      <p><small><?php echo $date;?></small></p>
       <h2>
         <strong><?php echo $sekkiName;?></strong> (<?php echo $sekki;?>)
         is <?php echo $description;?>
