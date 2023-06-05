@@ -129,8 +129,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <section>
+      <label for="sekki"><u>View the Collection of 24 Sekki</u></label>
       <p>
-        <label for="sekki"><u>View the Collection of 24 Sekki</u></label></br>
         下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
       </p>
       <select class="color bgcolor" id="sekki">
