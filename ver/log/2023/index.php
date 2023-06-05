@@ -100,12 +100,8 @@ flock($fp, LOCK_SH);
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
-        <u>↩︎</u>
-      </a>
       <a href="/ver/log/" target="_parent">
-        <i>HTTP/1.1 on 195.179.236.11</i>
+        <i>creative-community.space</i>
         <p><b>アクセス履歴 | Access Log</b></p>
       </a>
     </nav>
