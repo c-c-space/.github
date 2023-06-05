@@ -128,7 +128,6 @@ fclose($fp);
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about">
       <h2>
-        Now is The Season named
         <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)
       </h2>
       <p><?php echo $hello;?></p>
