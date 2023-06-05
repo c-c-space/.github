@@ -124,16 +124,13 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </section>
   </main>
 
-  <dialog id="modal" class="color bgcolor" open>
+  <dialog id="modal" class="color bgcolor">
     <h3><?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <section>
-      <label for="sekki"><u>View the Collection of 24 Sekki</u></label>
-      <p>
-        下記のコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。
-      </p>
       <select class="color bgcolor" id="sekki">
+        <option selected disabled>二十四節気 | 24 Sekki</option>
         <option value="rikka">May 5 - May 19</option>
         <option value="shouman">May 20 - Jun 4</option>
         <option value="boushu">Jun 5 - Jun 20</option>
@@ -141,6 +138,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <option value="shousho">July 7 - July 22</option>
         <option value="taisho">July 23 - August 7</option>
       </select>
+      <label for="sekki">このコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label>
     </section>
     <hr/>
     <p id="about"></p>
