@@ -2,7 +2,7 @@
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 
-require('all/hello.php');
+require('all/greeting.php');
 require('all/24sekki.php');
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 $fp = fopen($source_file, 'a+b');

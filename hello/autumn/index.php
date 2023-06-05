@@ -1,7 +1,7 @@
 <?php
 mb_language("ja");
 mb_internal_encoding("UTF-8");
-require('../all/hello.php');
+require('../all/greeting.php');
 
 $season = "秋 Autumn";
 $date = "August 8 - November 7";
