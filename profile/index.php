@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
+  <link rel="stylesheet" href="../ver/log/style.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modal.css" />
-  <link rel="stylesheet" href="../ver/log/style.css" />
   <style>
   #menu {
     background: #000;
