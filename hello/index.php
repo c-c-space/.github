@@ -126,7 +126,13 @@ fclose($fp);
       <?php echo $greeting;?>
     </h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
-    <section id="about"></section>
+    <section id="about">
+      <p>
+        <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)<br/>
+        <?php echo $description;?>
+      </p>
+      <p><?php echo $hello;?></p>
+    </section>
     <hr/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
