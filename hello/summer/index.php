@@ -131,7 +131,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <hr/>
     <section>
       <select class="color bgcolor" id="sekki">
-        <option selected disabled>二十四節気 | 24 Sekki</option>
+        <option selected disabled>View The Collection of 24 Sekki</option>
         <option value="rikka">May 5 - May 19</option>
         <option value="shouman">May 20 - Jun 4</option>
         <option value="boushu">Jun 5 - Jun 20</option>
