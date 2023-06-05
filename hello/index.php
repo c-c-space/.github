@@ -129,9 +129,11 @@ fclose($fp);
     <section id="about">
       <h2>
         Now is The Season named
-        <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)<br/>
-        <?php echo $description;?>
+        <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)
       </h2>
+      <h3>
+        <?php echo $description;?>
+      </h3>
       <p><?php echo $hello;?></p>
     </section>
     <hr/>
