@@ -127,10 +127,10 @@ fclose($fp);
     </h3>
     <button type="button" class="color bgcolor" id="closeButton">×</button>
     <section id="about">
-      <p>
+      <h2>
         <b><?php echo $sekkiName;?></b> (<?php echo $sekki;?>)<br/>
         <?php echo $description;?>
-      </p>
+      </h2>
       <p><?php echo $hello;?></p>
     </section>
     <hr/>
