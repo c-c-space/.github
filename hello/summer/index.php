@@ -142,7 +142,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       <br/>
       <label for="sekki">このコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label>
     </section>
-    <hr/>
     <p id="about"></p>
     <form method="GET">
       <section>
