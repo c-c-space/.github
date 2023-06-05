@@ -1,10 +1,15 @@
 'use strict'
 
+const collection = document.querySelector('#collection');
+if(!localStorage.getItem('yourInfo')) {
+  collection.remove()
+}
+
 const selectModal = document.querySelector('#modal select');
 const optionModal = document.querySelectorAll("#modal select option");
 selectModal.addEventListener('change', function() {
   const index =  this.selectedIndex;
-  window.location.replace(optionModal[index].value);
+  window.location.assign(optionModal[index].value);
 });
 
 let namesForm = document.querySelectorAll('#bgcolor, #color')

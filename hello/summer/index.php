@@ -129,7 +129,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
-    <section>
+    <section id="collection">
       <select class="color bgcolor" id="sekki">
         <option selected disabled>View The Collection</option>
         <option value="rikka">May 5 - May 19</option>
@@ -140,8 +140,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <option value="taisho">July 23 - August 7</option>
       </select>
       <p><label for="sekki">このコントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
+      <hr>
     </section>
-    <hr>
     <form method="GET">
       <p>
         <smal>
