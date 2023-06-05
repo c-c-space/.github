@@ -141,7 +141,6 @@ fclose($fp);
       </p>
       コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </section>
-    <hr/>
     <label for="bgcolor">Background Color</label>
     <select class="color bgcolor" id="bgcolor"></select>
     <br/>
