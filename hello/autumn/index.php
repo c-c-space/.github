@@ -1,7 +1,7 @@
 <?php
 mb_language("ja");
 mb_internal_encoding("UTF-8");
-date_default_timezone_set('Asia/Tokyo');
+require('../all/hello.php');
 
 $season = "秋 Autumn";
 $date = "August 8 - November 7";
@@ -54,6 +54,33 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 </head>
 
 <body>
+  <script src="/js/menu.js"></script>
+  <header id="menu" class="bgcolor" hidden>
+    <button class="color bgcolor" id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/hello/">
+        <i>Speech to Text to Text to Speech</i>
+        <p><b><?php echo $greeting; ?></b></p>
+      </a>
+      <a href="/hello/spring">
+        <i>February 4 - May 4</i>
+        <p><b>春</b> Spring</p>
+      </a>
+      <a href="/hello/summer">
+        <i>May 5 - August 7</i>
+        <p><b>夏</b> Summer</p>
+      </a>
+      <a href="/hello/autumn">
+        <i>August 8 - November 7</i>
+        <p><b>秋</b> Autumn</p>
+      </a>
+      <a href="/hello/winter">
+        <i>November 8 - February 3</i>
+        <p><b>冬</b> Winter</p>
+      </a>
+    </nav>
+  </header>
+
   <main id="log">
     <div>
       <h1>
