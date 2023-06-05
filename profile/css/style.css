@@ -33,6 +33,10 @@ hr {
   margin: 0;
 }
 
+#log {
+  padding: 0.25rem;
+}
+
 #log li:last-of-type,
 #log button,
 #now select {
