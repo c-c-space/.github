@@ -44,7 +44,7 @@ require_once('../../all/head.php');
     <p><?php echo $description;?></p>
     <p><?php echo $hello;?></p>
     <br/>
-    <?php require('../../all/timeframe.php'); ?>
+    <?php require('../../all/timeframe.html'); ?>
   </dialog>
   <script src="../color.js"></script>
   <script type="text/javascript">

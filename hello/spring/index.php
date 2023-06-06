@@ -57,7 +57,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
     <button class="color bgcolor" id="js-button"><b></b></button>
-    <?php require('../all/menu.html'); ?>
+    <?php require('../all/menu.php'); ?>
   </header>
 
   <main id="log">
