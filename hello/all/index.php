@@ -104,9 +104,11 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
 
   <main id="hello" hidden>
-    <section id="howto"></section>
+    <h2><?php echo $title; ?></h2>
     <hr>
-    <button type="button" id="back-btn" onclick="ChangeHidden()">Back</button>
+    <section id="readme"></section>
+    <hr>
+    <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
 
   <main id="log">
@@ -364,7 +366,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   fetch('readme.md')
   .then(response => response.text())
   .then(text => {
-    document.querySelector('#howto').innerText = text
+    document.querySelector('#readme').innerText = text
   });
 
   const dateAll = document.querySelectorAll('#log ul li button')
