@@ -24,6 +24,8 @@
 
 summary {
   font-size: 200%;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 #now {
