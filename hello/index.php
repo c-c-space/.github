@@ -53,6 +53,7 @@ fclose($fp);
   </header>
 
   <main id="hello" hidden>
+    <section id="howto"></section>
     <form method="post">
       <section>
         <label for="voice-select">言語・声の種類を選択</label><br/>

@@ -54,6 +54,7 @@ document.addEventListener('readystatechange', event => {
       fetchText('readme.md','#about');
     } else {
       enterBtn.setAttribute('onclick','ChangeHidden()')
+      fetchText('readme.md','#howto')
 
       const submitBtn = document.querySelector("#submit-btn")
       submitBtn.addEventListener('click', function () {
