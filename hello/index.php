@@ -59,39 +59,7 @@ fclose($fp);
     </details>
     <hr>
     <form method="post">
-      <section>
-        <label for="voice-select">言語・声の種類を選択</label><br/>
-        <select id="voice-select" class="color bgcolor" name="voice" required></select>
-        <p>
-          <label for="speech-btn">音声認識（選択した言語の音声をテキストに変換）</label><br/>
-          <button type="button" class="color bgcolor" id="speech-btn">Speech to Text</button>
-        </p>
-      </section>
-      <hr/>
-      <section id="readme" contenteditable="true"></section>
-      <hr/>
-      <br/>
-      <label for="speak-btn">音声合成（テキストを選択した言語・声の音声に変換）</label>
-      <section>
-        <input type="button" class="color bgcolor" id="speak-btn" value="Text to Speech">
-      </section>
-      <br/>
-      <label>音声合成のピッチとレート(速度)を選択</label>
-      <section class="range">
-        <label for="pitch">Pitch</label>
-        <input id="pitch" class="color bgcolor" name="pitch" type="range" min="0" max="2" value="1" step="0.1" />
-        <code class="pitch-value"></code>
-      </section>
-      <section class="range">
-        <label for="rate">Rate</label>
-        <input id="rate" class="color bgcolor" name="rate" type="range" min="0.1" max="2" value="1" step="0.1" />
-        <code class="rate-value"></code>
-      </section>
-      <hr/>
-      <section id="next">
-        <button type="button" class="color bgcolor" id="submit-btn">Submit</button>
-        <button type="button" class="color bgcolor" id="back-btn" onclick="ChangeHidden()">Back</button>
-      </section>
+      <?php require('js/form.html');?>
     </form>
   </main>
   <script src="js/recognition.js"></script>
