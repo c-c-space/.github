@@ -70,6 +70,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     flex: 15%;
   }
 
+  #hello #readme {
+    padding: 1.5rem 0;
+  }
+
   @media screen and (max-width: 1025px) {
     #log section ul {
       font-size: 75%;
@@ -92,6 +96,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       padding: 1.25vw 2vw;
       margin: 0.5vw 1vw 0.5vw 0;
     }
+
+    #hello #readme {
+      padding: 2.5% 0;
+    }
   }
   </style>
 </head>
@@ -104,9 +112,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
 
   <main id="hello" hidden>
-    <hr>
     <section id="readme"></section>
-    <br>
     <hr>
     <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
