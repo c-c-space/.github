@@ -1,4 +1,5 @@
 <?php
+$season = "summer";
 $sekki = "boushu";
 $seasonName = "夏";
 $sekkiName = "芒種";
@@ -23,6 +24,10 @@ require('../../all/greeting.php');
         <i>Speech to Text to Text to Speech</i>
         <p><b><?php echo $greeting; ?></b></p>
       </a>
+      <a href="/hello/<?php echo $season; ?>/">
+        <i><?php echo $sekki; ?> is the season in</i>
+        <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
+      </a>
     </nav>
   </header>
 
@@ -31,7 +36,7 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="七十二候 72 kō">
       <p>
         <b>6月5日 ~ 6月9日頃</b><br/>
-        	螳螂が生まれ出る
+        螳螂が生まれ出る
       </p>
       <p>
         <b>6月10日 ~ 6月15日頃</b><br/>
