@@ -28,8 +28,6 @@ require('../../all/greeting.php');
 
   <main id="hello" hidden>
     <section id="readme"></section>
-    <br>
-    <p>???</p>
     <hr>
     <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
@@ -103,6 +101,15 @@ require('../../all/greeting.php');
   </dialog>
   <script src="../color.js"></script>
   <script type="text/javascript">
+  let namesForm = document.querySelectorAll('#bgcolor, #color')
+  for (const names of namesForm) {
+    Object.entries(colors).forEach(eachArr => {
+      let option = document.createElement('option')
+      option.textContent = Object.values(eachArr)[0]
+      option.value = Object.values(eachArr)[1]
+      names.appendChild(option)
+    })
+  }
   function ChangeHidden() {
     const mainAll = document.querySelectorAll('main');
     mainAll.forEach(main => {
@@ -114,15 +121,11 @@ require('../../all/greeting.php');
     })
   };
 
-  let namesForm = document.querySelectorAll('#bgcolor, #color')
-  for (const names of namesForm) {
-    Object.entries(colors).forEach(eachArr => {
-      let option = document.createElement('option')
-      option.textContent = Object.values(eachArr)[0]
-      option.value = Object.values(eachArr)[1]
-      names.appendChild(option)
-    })
-  }
+  fetch('../../all/72ko.txt')
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector('#readme').innerText = text
+  });
   </script>
   <script src="../../../profile/js/setStyles.js"></script>
 </body>
