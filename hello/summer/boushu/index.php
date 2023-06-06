@@ -100,8 +100,8 @@ require('../../all/greeting.php');
     }
     require('../../all/log.php');
     ?>
+    <?php require('../../all/controls.html'); ?>
   </main>
-  <?php require('../../all/controls.html'); ?>
   <script src="../../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
