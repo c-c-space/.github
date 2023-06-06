@@ -27,7 +27,23 @@ require('../../all/greeting.php');
   </header>
 
   <main id="hello" hidden>
-    <section id="readme"></section>
+    <section id="readme">
+      <strong><?php echo $sekkiName;?> <?php echo $sekki;?></strong>
+      <p>
+        <b>6月5日 ~ 6月9日頃</b><br/>
+        	螳螂が生まれ出る
+      </p>
+      <p>
+        <b>6月10日 ~ 6月15日頃</b><br/>
+        腐った草が蒸れ蛍になる
+      </p>
+      <p>
+        <b>6月16日 ~ 6月20日頃</b><br/>
+        梅の実が黄ばんで熟す
+      </p>
+    </section>
+    <br>
+    <p id="ko"></p>
     <hr>
     <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
@@ -58,7 +74,7 @@ require('../../all/greeting.php');
         </li>
         <li>
           <p>
-            <code>Jun 10 - Jun 14</code>
+            <code>Jun 10 - Jun 15</code>
           </p>
           <p>
             <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rotten grass becomes fireflies">
@@ -68,7 +84,7 @@ require('../../all/greeting.php');
         </li>
         <li>
           <p>
-            <code>Jun 15 - Jun 20</code>
+            <code>Jun 16 - Jun 20</code>
           </p>
           <p>
             <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow">
@@ -124,7 +140,7 @@ require('../../all/greeting.php');
   fetch('../../all/72ko.txt')
   .then(response => response.text())
   .then(text => {
-    document.querySelector('#readme').innerText = text
+    document.querySelector('#ko').innerText = text
   });
   </script>
   <script src="../../../profile/js/setStyles.js"></script>
