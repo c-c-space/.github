@@ -44,7 +44,7 @@ require('../../all/greeting.php');
             <code>Kamakiri shōzu</code>
           </p>
           <p>
-            <button type="button" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Praying mantises hatch">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Praying mantises hatch">
               螳螂生（かまきりしょうず）
             </button>
           </p>
@@ -55,7 +55,7 @@ require('../../all/greeting.php');
             <code>Kusaretaru kusa hotaru to naru</code>
           </p>
           <p>
-            <button type="button" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rotten grass becomes fireflies">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rotten grass becomes fireflies">
               腐草為螢（くされたるくさほたるとなる）
             </button>
           </p>
@@ -66,7 +66,7 @@ require('../../all/greeting.php');
             <code>Ume no mi kibamu</code>
           </p>
           <p>
-            <button type="button" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow">
               梅子黄（うめのみきばむ）
             </button>
           </p>
