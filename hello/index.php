@@ -56,6 +56,7 @@ fclose($fp);
     <details>
       <summary>Speech to Text to Text to Speech</summary>
       <section id="howto"></section>
+      <br>
     </details>
     <hr>
     <form method="post">
@@ -90,7 +91,7 @@ fclose($fp);
     require('all/log.php');
     ?>
   </main>
-  
+
   <nav id="now" class="hidden">
     <section class="controls">
       <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
