@@ -106,6 +106,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="hello" hidden>
     <hr>
     <section id="readme"></section>
+    <br>
     <hr>
     <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
