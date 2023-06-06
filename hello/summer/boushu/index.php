@@ -27,7 +27,7 @@ require('../../all/greeting.php');
   </header>
 
   <main id="hello" hidden>
-    <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
+    <button type="button" class="color bgcolor" onclick="ChangeHidden()">Back</button>
     <section id="readme">
       <b>七十二候 72 kō</b>
       <p>
