@@ -57,6 +57,7 @@ fclose($fp);
       <summary>Speech to Text to Text to Speech</summary>
       <section id="howto"></section>
     </details>
+    <hr>
     <form method="post">
       <section>
         <label for="voice-select">言語・声の種類を選択</label><br/>
