@@ -37,6 +37,40 @@ require('../../all/greeting.php');
       </h1>
       <h2><?php echo $description;?></h2>
     </div>
+    <section>
+      <ul>
+        <li>
+          <p>
+            <code>Jun 5 - Jun 9</code>
+          </p>
+          <p>
+            <button type="button" lang="en-US" data-pitch="0.9" data-rate="0.9" data-hello="Kamakiri shōzu | Praying mantises hatch">
+              螳螂生（かまきりしょうず）
+            </button>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>Jun 10 - Jun 14</code>
+          </p>
+          <p>
+            <button type="button" lang="en-US" data-pitch="0.9" data-rate="0.9" data-hello="Kusaretaru kusa hotaru to naru | Rotten grass becomes fireflies">
+              腐草為螢（くされたるくさほたるとなる）
+            </button>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>Jun 15 - Jun 20</code>
+          </p>
+          <p>
+            <button type="button" lang="en-US" data-pitch="0.9" data-rate="0.9" data-hello="Ume no mi kibamu | Plums turn yellow">
+              梅子黄（うめのみきばむ）
+            </button>
+          </p>
+        </li>
+      </ul>
+    </section>
     <?php
     function h($str) {
       return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');

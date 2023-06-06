@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   }
 
   #hello #readme {
-    padding: 1.5rem 0;
+    margin: 0;
   }
 
   @media screen and (max-width: 1025px) {
@@ -98,7 +98,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     }
 
     #hello #readme {
-      padding: 2.5% 0;
+      margin: 0;
     }
   }
   </style>
@@ -113,6 +113,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <main id="hello" hidden>
     <section id="readme"></section>
+    <br>
+    <p>
+      <a href="https://www.are.na/cc-group/hello-24-sekki-72-ko" target="_blank" rel="nofollow noreferrer">Are.na Channel</a>
+    </p>
     <hr>
     <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
