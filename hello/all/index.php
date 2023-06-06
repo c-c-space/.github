@@ -1,6 +1,7 @@
 <?php
 mb_language("ja");
 mb_internal_encoding("UTF-8");
+require('../all/greeting.php');
 
 $season = "二十四節気";
 $date = "24 Sekki";
