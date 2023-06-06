@@ -42,7 +42,6 @@ require('../../all/greeting.php');
         梅の実が黄ばんで熟す
       </p>
     </section>
-    <br>
     <p id="ko"></p>
   </main>
 
