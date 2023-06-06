@@ -33,6 +33,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="../css/log.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="72ko.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -70,10 +71,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     flex: 15%;
   }
 
-  #hello #readme {
-    margin: 0;
-  }
-
   @media screen and (max-width: 1025px) {
     #log section ul {
       font-size: 75%;
@@ -96,10 +93,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       padding: 1.25vw 2vw;
       margin: 0.5vw 1vw 0.5vw 0;
     }
-
-    #hello #readme {
-      margin: 0;
-    }
   }
   </style>
 </head>
@@ -112,13 +105,14 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
 
   <main id="hello" hidden>
+    <button type="button" onclick="ChangeHidden()">二十四節気 24 Sekki</button>
+    <hr/>
+    <br>
     <section id="readme"></section>
     <br>
     <p>
       <a href="https://www.are.na/cc-group/hello-24-sekki-72-ko" target="_blank" rel="nofollow noreferrer">Are.na Channel</a>
     </p>
-    <hr>
-    <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
 
   <main id="log">
