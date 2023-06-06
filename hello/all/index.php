@@ -52,7 +52,21 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   }
 
   #log section ul {
-    font-size: 85%;
+    font-size: 90%;
+  }
+
+  #log section ul li {
+    flex: 15%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #log section ul {
+      font-size: 75%;
+    }
+
+    #log section ul li {
+      flex: 1 auto;
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -323,7 +337,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
     </section>
   </nav>
-  
+
   <script type="text/javascript">
   function ChangeHidden() {
     const mainAll = document.querySelectorAll('main');
