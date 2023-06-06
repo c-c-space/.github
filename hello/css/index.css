@@ -22,6 +22,10 @@
   color: inherit;
 }
 
+summary {
+  font-size: 200%;
+}
+
 #now {
   position: fixed;
   z-index: 100;
