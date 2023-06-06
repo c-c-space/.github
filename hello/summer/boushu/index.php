@@ -35,15 +35,15 @@ require('../../all/greeting.php');
     <section id="readme">
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
-        <b>6月5日 ~ 6月9日頃</b><br/>
+        <small>6月5日 ~ 6月9日頃</small><br/>
         螳螂が生まれ出る
       </p>
       <p>
-        <b>6月10日 ~ 6月15日頃</b><br/>
-        腐った草が蒸れ蛍になる
+        <small>6月10日 ~ 6月15日頃</small><br/>
+        腐った草の下から蛍が生ずる
       </p>
       <p>
-        <b>6月16日 ~ 6月20日頃</b><br/>
+        <small>6月16日 ~ 6月20日頃</small><br/>
         梅の実が黄ばんで熟す
       </p>
     </section>
