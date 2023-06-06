@@ -27,6 +27,17 @@ fclose($fp);
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
+  <style media="screen">
+  #hello #readme {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 750px) {
+    #hello #readme {
+      margin: 0;
+    }
+  }
+  </style>
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
