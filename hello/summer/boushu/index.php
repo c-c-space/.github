@@ -11,9 +11,21 @@ $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTT
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
 require_once('../../all/head.php');
+require('../../all/greeting.php');
 ?>
 
 <body>
+  <script src="/js/menu.js"></script>
+  <header id="menu" class="bgcolor" hidden>
+    <button class="color bgcolor" id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/hello/">
+        <i>Speech to Text to Text to Speech</i>
+        <p><b><?php echo $greeting; ?></b></p>
+      </a>
+    </nav>
+  </header>
+
   <main id="log">
     <div>
       <h1>
