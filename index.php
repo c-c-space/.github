@@ -46,7 +46,7 @@
     <nav id="contents">
       <a href="/" target="_parent">
         <p><b>Index | creative-community.space</b></p>
-        <u>準備中</u>
+        <u>ver.2.0</u>
       </a>
     </nav>
   </header>
