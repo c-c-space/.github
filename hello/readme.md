@@ -3,6 +3,7 @@
 *ウェブ音声 API (Web Speech API)* で **音声をテキストに変換・テキストを音声に変換**
 投稿を 時間帯・二十四節気 ごとに記録し、ページ内容を生成します。
 
+[Web Speech API](js/)
 ## [Speech Recognition](js/recognition.html)
 ## [Text to Speech](js/synthesis.html)
 
