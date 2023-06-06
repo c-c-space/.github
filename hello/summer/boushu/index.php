@@ -42,6 +42,7 @@ require('../../all/greeting.php');
     }
     require('../../all/log.php');
     ?>
+    <section>
       <ul>
         <li>
           <p>
@@ -77,6 +78,7 @@ require('../../all/greeting.php');
           </p>
         </li>
       </ul>
+    </section>
   </main>
   <?php require('../../all/controls.html'); ?>
   <script src="../../js/log.js"></script>
