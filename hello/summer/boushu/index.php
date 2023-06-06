@@ -27,9 +27,8 @@ require('../../all/greeting.php');
   </header>
 
   <main id="hello" hidden>
-    <button type="button" class="color bgcolor" onclick="ChangeHidden()">Back</button>
     <section id="readme">
-      <b>七十二候 72 kō</b>
+      <button type="button" class="color bgcolor" onclick="ChangeHidden()">七十二候 72 kō</button>
       <p>
         <b>6月5日 ~ 6月9日頃</b><br/>
         	螳螂が生まれ出る
