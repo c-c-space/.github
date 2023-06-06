@@ -33,7 +33,7 @@ require('../../all/greeting.php');
 
   <main id="hello" hidden>
     <section id="readme">
-      <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="七十二候 72 kō">
+      <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <b>6月5日 ~ 6月9日頃</b><br/>
         螳螂が生まれ出る
