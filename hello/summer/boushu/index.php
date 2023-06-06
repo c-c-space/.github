@@ -114,7 +114,6 @@ require('../../all/greeting.php');
     <button class="color bgcolor" id="closeButton">×</button>
     <p><?php echo $description;?></p>
     <p><?php echo $hello;?></p>
-    <br/>
     <?php require('../../all/timeframe.html'); ?>
   </dialog>
   <script src="../color.js"></script>
