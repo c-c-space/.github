@@ -38,7 +38,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style media="screen">
   #log h2 {
-    width: 75%;
+    width: 90%;
     max-width: 550px;
   }
 
