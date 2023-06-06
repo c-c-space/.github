@@ -27,6 +27,7 @@ require('../../all/greeting.php');
   </header>
 
   <main id="hello" hidden>
+    <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
     <section id="readme">
       <b>七十二候 72 kō</b>
       <p>
@@ -44,8 +45,6 @@ require('../../all/greeting.php');
     </section>
     <br>
     <p id="ko"></p>
-    <hr>
-    <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
 
   <main id="log">
@@ -131,10 +130,8 @@ require('../../all/greeting.php');
     mainAll.forEach(main => {
       if (main.hidden == false) {
         main.hidden = true;
-        document.querySelector('#now').style.display = "flex";
       } else {
         main.hidden = false;
-        document.querySelector('#now').style.display = "none";
       }
     })
   };
