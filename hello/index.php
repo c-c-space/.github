@@ -60,6 +60,11 @@ fclose($fp);
     <hr>
     <form method="post">
       <?php require('js/form.html');?>
+      <hr/>
+      <section id="next">
+        <button type="button" class="color bgcolor" id="submit-btn">Submit</button>
+        <button type="button" class="color bgcolor" id="back-btn" onclick="ChangeHidden()">Back</button>
+      </section>
     </form>
   </main>
   <script src="js/recognition.js"></script>
