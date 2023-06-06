@@ -104,7 +104,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
 
   <main id="hello" hidden>
-    <h2><?php echo $title; ?></h2>
     <hr>
     <section id="readme"></section>
     <hr>
