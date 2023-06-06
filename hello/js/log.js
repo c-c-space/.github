@@ -1,6 +1,13 @@
 'use strict'
 
 window.addEventListener('load', (event) => {
+  if(!localStorage.getItem('yourInfo')) {
+    const collectionAll = document.querySelectorAll('.collection')
+    for (const collection of collectionAll) {
+      collection.remove()
+    }
+  }
+  
   const helloLiAll = document.querySelectorAll('#log ul li button')
   for (const helloLi of helloLiAll) {
     helloLi.addEventListener('click', function () {
