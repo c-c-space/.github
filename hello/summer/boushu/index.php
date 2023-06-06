@@ -26,7 +26,16 @@ require('../../all/greeting.php');
     </nav>
   </header>
 
+  <main id="hello" hidden>
+    <section id="readme"></section>
+    <br>
+    <p>???</p>
+    <hr>
+    <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
+  </main>
+
   <main id="log">
+    <button type="button" id="enter-btn" onClick="ChangeHidden()">七十二候 72 kō</button>
     <div>
       <h1>
         <b>
@@ -41,33 +50,30 @@ require('../../all/greeting.php');
         <li>
           <p>
             <code>Jun 5 - Jun 9</code>
-            <code>Kamakiri shōzu</code>
           </p>
           <p>
             <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Praying mantises hatch">
-              螳螂生（かまきりしょうず）
+              螳螂生 <i>Kamakiri shōzu</i>
             </button>
           </p>
         </li>
         <li>
           <p>
             <code>Jun 10 - Jun 14</code>
-            <code>Kusaretaru kusa hotaru to naru</code>
           </p>
           <p>
             <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rotten grass becomes fireflies">
-              腐草為螢（くされたるくさほたるとなる）
+              腐草為螢 <i>Kusaretaru kusa hotaru to naru</i>
             </button>
           </p>
         </li>
         <li>
           <p>
             <code>Jun 15 - Jun 20</code>
-            <code>Ume no mi kibamu</code>
           </p>
           <p>
             <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow">
-              梅子黄（うめのみきばむ）
+              梅子黄 <i>Ume no mi kibamu</i>
             </button>
           </p>
         </li>
@@ -96,6 +102,17 @@ require('../../all/greeting.php');
   </dialog>
   <script src="../color.js"></script>
   <script type="text/javascript">
+  function ChangeHidden() {
+    const mainAll = document.querySelectorAll('main');
+    mainAll.forEach(main => {
+      if (main.hidden == false) {
+        main.hidden = true;
+      } else {
+        main.hidden = false;
+      }
+    })
+  };
+
   let namesForm = document.querySelectorAll('#bgcolor, #color')
   for (const names of namesForm) {
     Object.entries(colors).forEach(eachArr => {
