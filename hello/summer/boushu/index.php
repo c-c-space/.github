@@ -36,12 +36,6 @@ require('../../all/greeting.php');
       </h1>
       <h2><?php echo $description;?></h2>
     </div>
-    <?php
-    function h($str) {
-      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-    }
-    require('../../all/log.php');
-    ?>
     <section>
       <ul>
         <li>
@@ -79,6 +73,12 @@ require('../../all/greeting.php');
         </li>
       </ul>
     </section>
+    <?php
+    function h($str) {
+      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+    }
+    require('../../all/log.php');
+    ?>
   </main>
   <?php require('../../all/controls.html'); ?>
   <script src="../../js/log.js"></script>
