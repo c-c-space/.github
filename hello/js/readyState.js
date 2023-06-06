@@ -1,7 +1,7 @@
 'use strict'
 
 function ChangeHidden() {
-  const mainAll = document.querySelectorAll('main');
+  const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
     if (main.hidden == false) {
       main.hidden = true;
@@ -9,14 +9,14 @@ function ChangeHidden() {
       main.hidden = false;
     }
   })
-};
+}
 
 async function fetchText(url = '', query = '') {
   fetch(url)
   .then(response => response.text())
   .then(text => {
     document.querySelector(query).innerText = text
-  });
+  })
 }
 
 document.addEventListener('readystatechange', event => {
@@ -25,7 +25,7 @@ document.addEventListener('readystatechange', event => {
     enterBtn = document.querySelector('#enter-btn'),
     logAll = document.querySelector('#log section'),
     modalH3 = document.querySelector('#modal h3'),
-    lastModified = document.querySelector('#lastModified');
+    lastModified = document.querySelector('#lastModified')
 
     lastModified.innerHTML =
     'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
@@ -51,7 +51,7 @@ document.addEventListener('readystatechange', event => {
       backBtn.setAttribute('onclick','location.replace("/")')
       backBtn.innerText = 'creative-community.space'
       document.querySelector('#now').prepend(backBtn)
-      fetchText('readme.md','#about');
+      fetchText('readme.md','#about')
     } else {
       enterBtn.setAttribute('onclick','ChangeHidden()')
       fetchText('readme.md','#howto')
@@ -73,7 +73,7 @@ document.addEventListener('readystatechange', event => {
           rate : thisRate
         };
 
-        const helloJSON = JSON.stringify(thisHello);
+        const helloJSON = JSON.stringify(thisHello)
         async function submitThis() {
           let url = 'submit.php'
           let response = await fetch(url, {
@@ -123,4 +123,4 @@ document.addEventListener('readystatechange', event => {
       }, false)
     }
   }
-});
+})

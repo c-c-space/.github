@@ -39,7 +39,13 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <style>
   body {
     background: #000;
+  }
+
+  #hello,
+  #log,
+  #now {
     filter: invert();
+    mix-blend-mode: difference;
   }
 
   #log h2 {
@@ -64,7 +70,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     flex: 15%;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1025px) {
     #log section ul {
       font-size: 75%;
     }
@@ -104,7 +110,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </main>
 
   <main id="log">
-    <button type="button" id="enter-btn" onClick="ChangeHidden()"><?php echo $title; ?></button>
+    <button type="button" id="enter-btn" onClick="ChangeHidden()"><?php echo $greeting; ?></button>
     <div>
       <h1>
         <code id="lastModified"><?php echo $date;?></code>
@@ -355,10 +361,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     })
   };
 
-  fetch('readme.html')
+  fetch('readme.md')
   .then(response => response.text())
   .then(text => {
-    document.querySelector('#howto').innerHTML = text
+    document.querySelector('#howto').innerText = text
   });
 
   const dateAll = document.querySelectorAll('#log ul li button')
