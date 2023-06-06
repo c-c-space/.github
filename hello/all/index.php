@@ -50,17 +50,42 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   #log button::before {
     content: attr(data-name);
   }
+
+  #log section ul {
+    font-size: 85%;
+  }
+
+  @media screen and (max-width: 750px) {
+    body {
+      font-size: 3vw;
+    }
+
+    #log ul li button {
+      border: 0.25vw solid;
+      border-radius: 4.5vw;
+      font-size: 3vw;
+      padding: 1.25vw 2vw;
+      margin: 0.5vw 1vw 0.5vw 0;
+    }
+  }
   </style>
 </head>
 
 <body>
   <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
-    <button class="color bgcolor" id="js-button"><b></b></button>
+    <button type="button" id="js-button"><b></b></button>
     <?php require('../all/menu.php'); ?>
   </header>
 
+  <main id="hello" hidden>
+    <section id="howto"></section>
+    <hr>
+    <button type="button" id="back-btn" onclick="ChangeHidden()">Back</button>
+  </main>
+
   <main id="log">
+    <button type="button" id="enter-btn" onClick="ChangeHidden()"><?php echo $title; ?></button>
     <div>
       <h1>
         <code id="lastModified"><?php echo $date;?></code>
@@ -68,6 +93,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </h1>
       <h2><?php echo $description;?></h2>
     </div>
+    <hr>
     <section>
       <ul>
         <li>
@@ -288,15 +314,32 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
       </ul>
     </section>
+    <nav id="now" class="hidden">
+      <section class="controls">
+        <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
+        <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
+        <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
+      </section>
+    </nav>
   </main>
-  <nav id="now" class="hidden">
-    <section class="controls">
-      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
-    </section>
-  </nav>
   <script type="text/javascript">
+  function ChangeHidden() {
+    const mainAll = document.querySelectorAll('main');
+    mainAll.forEach(main => {
+      if (main.hidden == false) {
+        main.hidden = true;
+      } else {
+        main.hidden = false;
+      }
+    })
+  };
+
+  fetch('readme.html')
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector('#howto').innerHTML = text
+  });
+
   const dateAll = document.querySelectorAll('#log ul li button')
   for (const dateLi of dateAll) {
     dateLi.addEventListener('click', function () {

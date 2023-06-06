@@ -90,6 +90,7 @@ fclose($fp);
     require('all/log.php');
     ?>
   </main>
+  
   <nav id="now" class="hidden">
     <section class="controls">
       <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">

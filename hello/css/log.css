@@ -111,6 +111,7 @@ h3 {
 
 #log section ul {
   display: flex;
+  gap: 1rem;
   flex-flow: wrap row;
   justify-content: space-between;
   list-style: none;
@@ -131,7 +132,6 @@ h3 {
   0.07rem 0.07rem 0 #fff,
   0.08rem 0.08rem 0 #fff,
   0.09rem 0.09rem 0 #fff;
-  gap: 1rem;
 }
 
 #modal {
@@ -168,11 +168,8 @@ h3 {
   }
 
   #log section ul {
-    padding: 0 0 12.5vw;
-  }
-
-  #log section ul li {
     gap: 2.5vw;
+    padding: 0 0 12.5vw;
   }
 
   #log p {
