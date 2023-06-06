@@ -131,10 +131,10 @@ require('../../all/greeting.php');
     mainAll.forEach(main => {
       if (main.hidden == false) {
         main.hidden = true;
-        document.querySelector('#now').hidden = true;
+        document.querySelector('#now').style.display = "flex";
       } else {
         main.hidden = false;
-        document.querySelector('#now').hidden = true;
+        document.querySelector('#now').style.display = "none";
       }
     })
   };
