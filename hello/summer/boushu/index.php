@@ -31,11 +31,12 @@ require('../../all/greeting.php');
     <br>
     <p>???</p>
     <hr>
-    <button type="button" style="float:right;" onclick="ChangeHidden()">Back</button>
+    <button type="button" class="color bgcolor" style="float:right;" onclick="ChangeHidden()">Back</button>
   </main>
 
   <main id="log">
     <button type="button" id="enter-btn" onClick="ChangeHidden()">七十二候 72 kō</button>
+    <hr>
     <div>
       <h1>
         <b>
