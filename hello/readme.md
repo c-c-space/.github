@@ -1,15 +1,18 @@
-# これは、音声認識・音声合成を使った掲示板です。
+# This is a Message Board that works with Web Speech API
+これは、音声認識・音声合成を使った掲示板です。
 
-*ウェブ音声 API (Web Speech API)* で **音声をテキストに変換・テキストを音声に変換**
+*ウェブ音声 API (Web Speech API)* で **音声をテキスト・テキストを音声** に変換
 投稿を 時間帯・二十四節気 ごとに記録し、ページ内容を生成します。
 
-[Web Speech API](js/)
 ## [Speech Recognition](js/recognition.html)
-## [Text to Speech](js/synthesis.html)
+## [Speech Synthesis](js/synthesis.html)
+
+Create Posts with Speech to Text using Speech Recognition
+and Read Posts with Text to Speech using Speech Synthesis
 
 ---
 
-### 1日を 6時間ごとに 4つ の *時間帯* に 区分
+### 1日を 4つ の *時間帯* に 区分
 **二十四節気[^1]** ごとのディレクトリ内の *時間帯* ごとの CSVファイル に投稿を記録します。
 
 | Timeframe  |   From   |    To    |
