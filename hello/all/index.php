@@ -314,14 +314,16 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </li>
       </ul>
     </section>
-    <nav id="now" class="hidden">
-      <section class="controls">
-        <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-        <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-        <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
-      </section>
-    </nav>
   </main>
+
+  <nav id="now" class="hidden">
+    <section class="controls">
+      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
+      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
+      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
+    </section>
+  </nav>
+  
   <script type="text/javascript">
   function ChangeHidden() {
     const mainAll = document.querySelectorAll('main');
