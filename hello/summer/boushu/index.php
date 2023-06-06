@@ -30,7 +30,6 @@ require('../../all/greeting.php');
     <div>
       <h1>
         <b>
-          <code><?php echo $greeting;?></code>
           <?php echo $sekkiName;?> <?php echo $sekki;?>
         </b><br/>
         <code id="lastModified"><?php echo $date;?></code>
