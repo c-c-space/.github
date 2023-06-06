@@ -1,4 +1,4 @@
-# This is a Message Board that works with Web Speech API
+# This is a Online Textboard that works with Web Speech API
 これは、音声認識・音声合成を使った掲示板です。
 
 *ウェブ音声 API (Web Speech API)* で **音声をテキスト・テキストを音声** に変換し投稿を作成
