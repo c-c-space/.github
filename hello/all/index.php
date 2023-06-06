@@ -105,7 +105,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
 
   <main id="hello" hidden>
-    <button type="button" onclick="ChangeHidden()">二十四節気 24 Sekki</button>
+    <input type="button" onclick="ChangeHidden()" value="二十四節気 24 Sekki">
     <hr/>
     <br>
     <section id="readme"></section>
