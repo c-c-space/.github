@@ -28,7 +28,7 @@ require('../../all/greeting.php');
 
   <main id="hello" hidden>
     <section id="readme">
-      <u><?php echo $sekkiName;?> <?php echo $sekki;?></u>
+      <i><?php echo $sekkiName;?> <?php echo $sekki;?></i>
       <p>
         <b>6月5日 ~ 6月9日頃</b><br/>
         	螳螂が生まれ出る
