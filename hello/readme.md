@@ -14,7 +14,7 @@ and Read Posts with Text to Speech using Speech Synthesis
 
 ---
 
-### 1日を 4つ の *時間帯* に 区分
+## 1日を 4つ の *時間帯* に 区分
 投稿を **二十四節気[^1]** ごとのディレクトリ内の *時間帯* ごとの CSVファイル に記録
 
 | Timeframe  |   From   |    To    |
@@ -29,6 +29,6 @@ Add Posts to a CSV files for each *Timeframe* in the directories of **24 Sekki**
 
 ***
 
-[24 Sekki](all) divided each of the Four Seasons into 6 by the movement of the sun.
+### [24 Sekki](all) divided each of the Four Seasons into 6 by the movement of the sun.
 
 [^1]:二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
