@@ -41,11 +41,41 @@ require('../../all/greeting.php');
       </p>
       <p>
         <small>4月25日 ~ 4月29日頃</small><br/>
-        霜が終わり稲の苗が生長する
+        <ruby>
+          霜 <rp>(</rp><rt>しも</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          終 <rp>(</rp><rt>お</rt><rp>)</rp>
+        </ruby>
+        り
+        <ruby>
+          稲 <rp>(</rp><rt>いね</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          稲苗<rp>(</rp><rt>なえ</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          生長<rp>(</rp><rt>せいちょう</rt><rp>)</rp>
+        </ruby>
+        する
       </p>
       <p>
         <small>4月30日 ~ 5月4日頃</small><br/>
-        牡丹の花が咲く
+        <ruby>
+          牡丹 <rp>(</rp><rt>ぼたん</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp><rt>はな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+        </ruby>
+        く
       </p>
     </section>
     <hr>

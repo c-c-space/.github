@@ -37,7 +37,7 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>3月5日 ~ 3月9日頃</small><br/>
-        冬ごもりの虫が出てくる
+        冬籠りの虫が出て来る
       </p>
       <p>
         <small>3月10日 ~ 3月14日頃</small><br/>

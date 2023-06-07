@@ -41,7 +41,7 @@ require('../../all/greeting.php');
       </p>
       <p>
         <small>2月9日 ~ 2月13日頃</small><br/>
-        うぐいすが山里で鳴き始める
+        鶯が山里で鳴き始める
       </p>
       <p>
         <small>2月14日 ~ 2月18日頃</small><br/>
