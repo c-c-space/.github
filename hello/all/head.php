@@ -45,9 +45,9 @@ fclose($fp);
   <meta property="og:url" content="<?php echo $url; ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
-  <meta property="og:image" content="<?php echo $url; ?>summary.png" />
+  <meta property="og:image" content="../summary.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
+  <meta name="twitter:image" content="../summary.png" />
 
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../../css/index.css" />
