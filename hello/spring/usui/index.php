@@ -5,7 +5,7 @@ $seasonName = "春";
 $sekkiName = "雨水";
 $date = "February 19 - March 4";
 $description = "Snow melts into water";
-$hello = "空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。春一番が吹き、草木がほんのり色づく様子や、春霞を楽しめる季節。";
+$hello = "空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。草木がほんのり色づく様子や、春霞を楽しめる季節。";
 
 $title = $sekkiName .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
