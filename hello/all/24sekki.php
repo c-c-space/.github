@@ -135,7 +135,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "立冬";
   $date = "November 8 - November 21";
   $description = "The Beginning of Winter";
-  $hello = "日は短くなり時雨が降る。木枯らしが吹き、北国や高山からは初雪の知らせも届く頃。冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。";
+  $hello = "木枯らしが吹き、北国や高山からは初雪の知らせも届く頃。冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。";
 } elseif ($datetime >= '11-22' and $datetime <= '12-06') {
   $sekki = "shousetsu";
   $sekkiName = "小雪";
@@ -159,7 +159,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekkiName = "小寒";
   $date = "January 6 - January 19";
   $description = "Cold weather nears its peak";
-  $hello = "「寒の入り」といい、寒さが厳しくなる頃。寒さはこれからが本番。これから節分までの期間が「寒」である。「寒中見舞い」を出しはじめる時期。";
+  $hello = "「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」。「寒中見舞い」を出しはじめる時期。";
 } elseif ($datetime >= '01-20' and $datetime <= '02-03') {
   $sekki = "daikan";
   $sekkiName = "大寒";
