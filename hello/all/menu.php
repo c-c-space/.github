@@ -1,4 +1,8 @@
 <nav id="contents">
+  <a href="/hello/">
+    <i>Speech to Text to Text to Speech</i>
+    <p><b><?php echo $greeting; ?></b></p>
+  </a>
   <a onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
     <i><?php echo $seasonDate; ?></i>
     <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
