@@ -37,7 +37,22 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>4月19日 ~ 4月24日頃</small><br/>
-        葦が芽を吹き始める
+        <ruby>
+          葦 <rp>(</rp><rt>あし</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          芽 <rp>(</rp><rt>め</rt><rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          吹 <rp>(</rp><rt>ふ</rt><rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>4月25日 ~ 4月29日頃</small><br/>
