@@ -56,7 +56,6 @@ require('../../all/greeting.php');
       </p>
       <p>
         <small>3月10日 ~ 3月14日頃</small><br/>
-        桃
         <ruby>
           桃 <rp>(</rp><rt>もも</rt><rp>)</rp>
         </ruby>
