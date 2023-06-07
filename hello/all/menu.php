@@ -2,6 +2,7 @@
   <a href="/hello/">
     <i>Speech to Text to Text to Speech</i>
     <p><b><?php echo $greeting; ?></b></p>
+    <u>↩︎</u>
   </a>
   <a onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
     <i><?php echo $seasonDate; ?></i>
