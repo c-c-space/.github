@@ -71,7 +71,7 @@ require('../../all/greeting.php');
             <code>April 19 - April 24</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="First reeds sprout">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Reeds begin to sprout">
               葭始生 <i>Ashi hajimete shōzu</i>
             </button>
           </p>
@@ -81,7 +81,7 @@ require('../../all/greeting.php');
             <code>April 25 - April 29</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Last frost, rice seedlings grow">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Frost is over, rice seedlings grow">
               霜止出苗 <i>Shimo yamite nae izuru</i>
             </button>
           </p>

@@ -71,7 +71,7 @@ require('../../all/greeting.php');
             <code>March 4 - March 8</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Hibernating insects surface">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Insects come out from their winter cages">
               蟄虫啓戸 <i>Sugomori mushito o hiraku</i>
             </button>
           </p>
@@ -81,7 +81,7 @@ require('../../all/greeting.php');
             <code>March 5 - March 14</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="First peach blossoms">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Peach blossoms appear">
               桃始笑 <i>Momo hajimete saku</i>
             </button>
           </p>
@@ -91,7 +91,7 @@ require('../../all/greeting.php');
             <code>March 15 - March 19</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Caterpillars become butterflies">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Green caterpillars become white butterflies">
               菜虫化蝶 <i>Namushi chō to naru</i>
             </button>
           </p>

@@ -79,7 +79,7 @@ require('../../all/greeting.php');
             <code>August 28 - September 2</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Heat starts to die down">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Heat finally subsides">
               天地始粛 <i>Tenchi hajimete samushi</i>
             </button>
           </p>
@@ -89,7 +89,7 @@ require('../../all/greeting.php');
             <code>September 3 - September 7</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rice ripens">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Rice grows">
               禾乃登 <i>Kokumono sunawachi minoru</i>
             </button>
           </p>

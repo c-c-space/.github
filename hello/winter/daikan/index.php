@@ -69,7 +69,7 @@ require('../../all/greeting.php');
             <code>January 20 - January 24</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Butterburs bud">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Butterbur sprouts bud">
               款冬華 <i>Fuki no hana saku</i>
             </button>
           </p>
@@ -79,7 +79,7 @@ require('../../all/greeting.php');
             <code>January 25 - January 29</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Ice thickens on streams">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Ice thickens on the streams">
               水沢腹堅 <i>Sawamizu kōri tsumeru</i>
             </button>
           </p>
@@ -89,7 +89,7 @@ require('../../all/greeting.php');
             <code>January 30 - February 3</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Hens start laying eggs">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Chickens start laying eggs">
               鶏始乳 <i>Niwatori hajimete toya ni tsuku</i>
             </button>
           </p>

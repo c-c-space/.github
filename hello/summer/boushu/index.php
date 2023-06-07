@@ -71,7 +71,7 @@ require('../../all/greeting.php');
             <code>Jun 5 - Jun 9</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Praying mantises hatch">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Praying mantises are born">
               螳螂生 <i>Kamakiri shōzu</i>
             </button>
           </p>
@@ -91,7 +91,7 @@ require('../../all/greeting.php');
             <code>Jun 16 - Jun 20</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Plums turn yellow and ripen">
               梅子黄 <i>Ume no mi kibamu</i>
             </button>
           </p>

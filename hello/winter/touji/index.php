@@ -69,7 +69,7 @@ require('../../all/greeting.php');
             <code>December 22 - December 26</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Self-heal sprouts">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="The summer herb sprouts">
               乃東生 <i>Natsukarekusa shōzu</i>
             </button>
           </p>
@@ -79,7 +79,7 @@ require('../../all/greeting.php');
             <code>December 27 - December 31</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Deer shed antlers">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Big deer shed their antlers">
               麋角解 <i>Sawashika no tsuno otsuru</i>
             </button>
           </p>

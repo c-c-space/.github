@@ -71,7 +71,7 @@ require('../../all/greeting.php');
             <code>July 23 - July 27</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Paulownia trees produce seeds">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Paulownia flowers bud for the next year">
               桐始結花 <i>Kiri hajimete hana o musubu</i>
             </button>
           </p>
@@ -81,7 +81,7 @@ require('../../all/greeting.php');
             <code>July 28 - August 1</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Earth is damp, air is humid">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Damp soil, humid air">
               土潤溽暑 <i>Tsuchi uruōte mushi atsushi</i>
             </button>
           </p>
@@ -91,7 +91,7 @@ require('../../all/greeting.php');
             <code>August 2 - August 7</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Great rains sometimes fall">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Heavy rains sometimes fall">
               大雨時行 <i>Taiu tokidoki furu</i>
             </button>
           </p>

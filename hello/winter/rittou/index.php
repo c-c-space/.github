@@ -79,7 +79,7 @@ require('../../all/greeting.php');
             <code>November 13 - November 17</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Land starts to freeze">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Earth begins to freeze">
               地始凍 <i>Chi hajimete kōru</i>
             </button>
           </p>

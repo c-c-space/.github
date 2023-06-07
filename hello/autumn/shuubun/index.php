@@ -69,7 +69,7 @@ require('../../all/greeting.php');
             <code>September 23 - September 27</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Thunder ceases">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Thunder stops ringing">
               雷乃収声 <i>Kaminari sunawachi koe o osamu</i>
             </button>
           </p>
@@ -79,7 +79,7 @@ require('../../all/greeting.php');
             <code>September 28 - October 2</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Insects hole up underground">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Insects go underground and fill holes">
               蟄虫坏戸 <i>Mushi kakurete to o fusagu</i>
             </button>
           </p>
@@ -89,7 +89,7 @@ require('../../all/greeting.php');
             <code>October 3 - October 7</code>
           </p>
           <p>
-            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Farmers drain fields">
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Farmers drain water from the fields">
               水始涸 <i>Mizu hajimete karuru</i>
             </button>
           </p>
