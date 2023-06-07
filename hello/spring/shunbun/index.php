@@ -5,7 +5,7 @@ $seasonName = "春";
 $sekkiName = "春分";
 $date = "March 20 - April 3";
 $description = "The Spring Equinox";
-$hello = "雀が巣をつくり始め、桜が開花する頃。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。春分日をはさんで前後7日間が彼岸。";
+$hello = "春分日をはさんで前後7日間が彼岸。雀が巣をつくり始め、桜が開花する頃。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。";
 
 $title = $sekkiName .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
