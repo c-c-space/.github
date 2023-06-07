@@ -23,6 +23,7 @@ require('../../all/greeting.php');
       <a href="/hello/">
         <i>Speech to Text to Text to Speech</i>
         <p><b><?php echo $greeting; ?></b></p>
+        <u>↩︎</u>
       </a>
       <a href="/hello/<?php echo $season; ?>/">
         <i><?php echo $sekkiName; ?> is the season in</i>
