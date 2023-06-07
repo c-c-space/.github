@@ -10,6 +10,6 @@
   </a>
   <a onclick="window.location.assign('/hello/<?php echo $season; ?>/<?php echo $sekki; ?>/');">
     <i>Now is the season named</i>
-    <p><b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?> (<?php echo $date; ?>)</p>
+    <p><b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?></p>
   </a>
 </nav>
