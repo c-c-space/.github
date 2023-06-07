@@ -101,6 +101,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
     <button type="button" id="js-button"><b></b></button>
+    <?php require('../all/24sekki.php'); ?>
     <?php require('../all/menu.php'); ?>
   </header>
 

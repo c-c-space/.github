@@ -25,7 +25,7 @@ require('../../all/greeting.php');
         <p><b><?php echo $greeting; ?></b></p>
       </a>
       <a href="/hello/<?php echo $season; ?>/">
-        <i><?php echo $sekkiName; ?> <?php echo $sekki; ?> is the season in</i>
+        <i><?php echo $sekkiName; ?> is the season in</i>
         <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
       </a>
     </nav>
