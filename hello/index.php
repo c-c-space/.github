@@ -57,8 +57,8 @@ fclose($fp);
         <p><b><?php echo $seasonName;?></b> <?php echo $season;?></p>
       </a>
       <a href="<?php echo $season;?>/<?php echo $sekki;?>/">
-        <i>Speech to Text to Text to Speech</i>
-        <p>The Texts of <b><?php echo $sekkiName;?></b> <?php echo $sekki;?></p>
+        <i><?php echo $date; ?></i>
+        <p>Now is the season named <b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?></p>
       </a>
     </nav>
   </header>
