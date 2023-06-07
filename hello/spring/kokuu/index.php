@@ -1,4 +1,5 @@
 <?php
+$season = "spring";
 $sekki = "kokuu";
 $seasonName = "春";
 $sekkiName = "穀雨";
@@ -11,20 +12,92 @@ $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTT
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
 require_once('../../all/head.php');
+require('../../all/greeting.php');
 ?>
 
 <body>
+  <script src="/js/menu.js"></script>
+  <header id="menu" class="bgcolor" hidden>
+    <button class="color bgcolor" id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/hello/">
+        <i>Speech to Text to Text to Speech</i>
+        <p><b><?php echo $greeting; ?></b></p>
+        <u>↩︎</u>
+      </a>
+      <a href="/hello/<?php echo $season; ?>/">
+        <i><?php echo $sekkiName; ?> is the season in</i>
+        <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
+      </a>
+    </nav>
+  </header>
+
+  <main id="hello" hidden>
+    <section id="readme">
+      <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
+      <p>
+        <small>4月19日 ~ 4月24日頃</small><br/>
+        葦が芽を吹き始める
+      </p>
+      <p>
+        <small>4月25日 ~ 4月29日頃</small><br/>
+        霜が終わり稲の苗が生長する
+      </p>
+      <p>
+        <small>4月30日 ~ 5月4日頃</small><br/>
+        牡丹の花が咲く
+      </p>
+    </section>
+    <hr>
+    <p id="ko"></p>
+  </main>
+
   <main id="log">
+    <button type="button" id="enter-btn" onClick="ChangeHidden()">七十二候 72 kō</button>
+    <hr>
     <div>
       <h1>
         <b>
-          <code><?php echo $greeting;?></code>
           <?php echo $sekkiName;?> <?php echo $sekki;?>
         </b><br/>
         <code id="lastModified"><?php echo $date;?></code>
       </h1>
       <h2><?php echo $description;?></h2>
     </div>
+    <section>
+      <ul id="ko">
+        <li>
+          <p>
+            <code>April 19 - April 24</code>
+          </p>
+          <p>
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="First reeds sprout">
+              葭始生 <i>Ashi hajimete shōzu</i>
+            </button>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>April 25 - April 29</code>
+          </p>
+          <p>
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Last frost, rice seedlings grow">
+              霜止出苗 <i>Shimo yamite nae izuru</i>
+            </button>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>April 30 - May 4</code>
+          </p>
+          <p>
+            <button type="button" data-name="Daniel" lang="en-GB" data-pitch="0.9" data-rate="0.9" data-hello="Peonies bloom">
+              牡丹華 <i>Botan hana saku</i>
+            </button>
+          </p>
+        </li>
+      </ul>
+    </section>
     <?php
     function h($str) {
       return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -43,7 +116,6 @@ require_once('../../all/head.php');
     <button class="color bgcolor" id="closeButton">×</button>
     <p><?php echo $description;?></p>
     <p><?php echo $hello;?></p>
-    <br/>
     <?php require('../../all/timeframe.html'); ?>
   </dialog>
   <script src="../color.js"></script>
@@ -57,6 +129,22 @@ require_once('../../all/head.php');
       names.appendChild(option)
     })
   }
+  function ChangeHidden() {
+    const mainAll = document.querySelectorAll('main');
+    mainAll.forEach(main => {
+      if (main.hidden == false) {
+        main.hidden = true;
+      } else {
+        main.hidden = false;
+      }
+    })
+  };
+
+  fetch('../../all/72ko.txt')
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector('#ko').innerText = text
+  });
   </script>
   <script src="../../../profile/js/setStyles.js"></script>
 </body>
