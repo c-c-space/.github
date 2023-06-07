@@ -37,15 +37,60 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>3月20日 ~ 3月24日頃</small><br/>
-        雀が巣を構え始める
+        <ruby>
+          雀 <rp>(</rp><rt>すずめ</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          巣 <rp>(</rp><rt>す</rt><rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          構 <rp>(</rp><rt>かま</rt><rp>)</rp>
+        </ruby>
+        え
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>3月25日 ~ 3月29日頃</small><br/>
-        桜の花が咲き始める
+        <ruby>
+          桜 <rp>(</rp><rt>さくら</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp><rt>はな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>3月30日 ~ 4月3日頃</small><br/>
-        遠くで雷の音がし始める
+        <ruby>
+          遠 <rp>(</rp><rt>とお</rt><rp>)</rp>
+        </ruby>
+        くで
+        <ruby>
+          雷 <rp>(</rp><rt>かみなり</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          音 <rp>(</rp><rt>おと</rt><rp>)</rp>
+        </ruby>
+        がし
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
     </section>
     <hr>

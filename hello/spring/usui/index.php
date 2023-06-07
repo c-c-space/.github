@@ -37,15 +37,56 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>2月19日 ~ 2月23日頃</small><br/>
-        雨が降って土が湿り気を含む
+        <ruby>
+          雨 <rp>(</rp><rt>あめ</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          降 <rp>(</rp><rt>ふ</rt><rp>)</rp>
+        </ruby>
+        って
+        <ruby>
+          土 <rp>(</rp><rt>つち</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          湿 <rp>(</rp><rt>しめ</rt><rp>)</rp>
+        </ruby>
+        り
+        <ruby>
+          気 <rp>(</rp><rt>け</rt><rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          含 <rp>(</rp><rt>ふく</rt><rp>)</rp>
+        </ruby>
+        む
       </p>
       <p>
         <small>2月24日 ~ 2月28日頃</small><br/>
-        霞がたなびき始める
+        <ruby>
+          霞 <rp>(</rp><rt>かすみ</rt><rp>)</rp>
+        </ruby>
+        がたなびき
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>2月29日 ~ 3月4日頃</small><br/>
-        草木が芽吹き始める
+        <ruby>
+          草木 <rp>(</rp><rt>くさき</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          芽吹 <rp>(</rp><rt>めぶ</rt><rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
     </section>
     <hr>

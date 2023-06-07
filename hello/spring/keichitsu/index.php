@@ -37,15 +37,57 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>3月5日 ~ 3月9日頃</small><br/>
-        冬籠りの虫が出て来る
+        <ruby>
+          冬籠 <rp>(</rp><rt>ふゆごも</rt><rp>)</rp>
+        </ruby>
+        りの
+        <ruby>
+          虫 <rp>(</rp><rt>むし</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          出 <rp>(</rp><rt>で</rt><rp>)</rp>
+        </ruby>
+        て
+        <ruby>
+          来 <rp>(</rp><rt>く</rt><rp>)</rp>
+        </ruby>
+        る
       </p>
       <p>
         <small>3月10日 ~ 3月14日頃</small><br/>
-        桃の花が咲き始める
+        桃
+        <ruby>
+          桃 <rp>(</rp><rt>もも</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp><rt>はな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>3月15日 ~ 3月19日頃</small><br/>
-        青虫が羽化して紋白蝶になる
+        <ruby>
+          青虫 <rp>(</rp><rt>あおむし</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          羽化 <rp>(</rp><rt>うか</rt><rp>)</rp>
+        </ruby>
+        して
+        <ruby>
+          紋白蝶 <rp>(</rp><rt>もんしろちょう</rt><rp>)</rp>
+        </ruby>
+        になる
       </p>
     </section>
     <hr>

@@ -37,15 +37,72 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>2月4日 ~ 2月8日頃</small><br/>
-        東風が厚い氷を解かし始める
+        <ruby>
+          東風 <rp>(</rp><rt>とうふう</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          厚 <rp>(</rp><rt>あつ</rt><rp>)</rp>
+        </ruby>
+        い
+        <ruby>
+          氷 <rp>(</rp><rt>こおり</rt><rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          解 <rp>(</rp><rt>と</rt><rp>)</rp>
+        </ruby>
+        かし
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>2月9日 ~ 2月13日頃</small><br/>
-        鶯が山里で鳴き始める
+        <ruby>
+          鶯 <rp>(</rp><rt>うぐいす</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          山里 <rp>(</rp><rt>やまざと</rt><rp>)</rp>
+        </ruby>
+        で
+        <ruby>
+          鳴 <rp>(</rp><rt>な</rt><rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>2月14日 ~ 2月18日頃</small><br/>
-        割れた氷の間から魚が飛び出る
+        <ruby>
+          割 <rp>(</rp><rt>わ</rt><rp>)</rp>
+        </ruby>
+        れた
+        <ruby>
+          氷 <rp>(</rp><rt>こおり</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          間 <rp>(</rp><rt>あいだ</rt><rp>)</rp>
+        </ruby>
+        から
+        <ruby>
+          魚 <rp>(</rp><rt>さかな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          飛 <rp>(</rp><rt>と</rt><rp>)</rp>
+        </ruby>
+        び
+        <ruby>
+          出 <rp>(</rp><rt>で</rt><rp>)</rp>
+        </ruby>
+        る
       </p>
     </section>
     <hr>
