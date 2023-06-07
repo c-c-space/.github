@@ -4,8 +4,10 @@ mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 require('../all/24sekki.php');
 
+$thisSeason = "夏 Summer";
+$thisDate = "May 5 - August 7";
 $description = "「なつ」は熱（ねつ）の季節。";
-$title = $seasonName .' '. $season .' | '. $seasonDate;
+$title = $thisSeason .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -62,8 +64,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="log">
     <div>
       <h1>
-        <code id="lastModified"><?php echo $seasonDate;?></code>
-        <b><?php echo $seasonName;?> <?php echo $season;?></b>
+        <code id="lastModified"><?php echo $thisDate;?></code>
+        <b><?php echo $thisSeason;?></b>
       </h1>
       <h2><?php echo $description;?><br/>
         夏の真ん中、北半球では1年のうちで最も昼（日の出から日没まで）の時間が長い夏至は、日本の大部分で梅雨の最中で、あまり実感されない。
@@ -130,7 +132,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </main>
 
   <dialog id="modal" class="color bgcolor">
-    <h3><?php echo $seasonName;?> <?php echo $season;?></h3>
+    <h3><?php echo $thisSeason;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>

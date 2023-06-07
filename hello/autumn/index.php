@@ -4,8 +4,10 @@ mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 require('../all/24sekki.php');
 
+$thisSeason = "秋 Autumn";
+$thisDate = "August 8 - November 7";
 $description = "「あき」は草木が紅（あか）く染まる季節。";
-$title = $seasonName .' '. $season .' | '. $seasonDate;
+$title = $thisSeason .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -62,8 +64,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="log">
     <div>
       <h1>
-        <code id="lastModified"><?php echo $seasonDate;?></code>
-        <b><?php echo $seasonName;?> <?php echo $season;?></b>
+        <code id="lastModified"><?php echo $thisDate;?></code>
+        <b><?php echo $thisSeason;?></b>
       </h1>
       <h2><?php echo $description;?><br/>
         秋の真ん中、昼夜の長さがほぼ当分に二分される(日本の場合、実際には昼の方が14分ほど長い)秋分の日は国民の祝日。「祖先をうやまい、なくなつた人々をしのぶ」日。
@@ -130,7 +132,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </main>
 
   <dialog id="modal" class="color bgcolor">
-    <h3><?php echo $seasonName;?> <?php echo $season;?></h3>
+    <h3><?php echo $thisSeason;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
