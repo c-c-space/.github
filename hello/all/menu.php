@@ -9,7 +9,7 @@
     <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
   </a>
   <a onclick="window.location.assign('/hello/<?php echo $season; ?>/<?php echo $sekki; ?>/');">
-    <i><?php echo $date; ?></i>
-    <p>Now is the season named <b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?></p>
+    <i>Now is the season named</i>
+    <p><b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?> (<?php echo $date; ?>)</p>
   </a>
 </nav>
