@@ -87,7 +87,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>February 19</date> -
             <date>March 4</date>
           </p>
-          <button type="button" data-name="雨水" data-date="Snow melts into water" data-hello="空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。春一番が吹き、草木がほんのり色づく様子や、春霞を楽しめる季節。">
+          <button type="button" data-name="雨水" data-date="Snow melts into water" data-hello="空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。草木がほんのり色づく様子や、春霞を楽しめる季節。">
             (うすい)
           </button>
         </li>

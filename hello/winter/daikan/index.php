@@ -5,7 +5,7 @@ $seasonName = "冬";
 $sekkiName = "大寒";
 $date = "January 20 - February 3";
 $description = "Coldest time of the year";
-$hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。鶏が卵を産み、蕗の花が咲いたり、春に向けての足音が聞こえはじめる。";
+$hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
 
 $title = $sekkiName .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";

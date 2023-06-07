@@ -96,7 +96,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Jun 5</date> -
             <date>Jun 20</date>
           </p>
-          <button type="button" data-name="芒種" data-date="Time to plant rice seedlings" data-hello="稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味であるが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。">
+          <button type="button" data-name="芒種" data-date="Time to plant rice seedlings" data-hello="稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。">
             (ぼうしゅ)
           </button>
         </li>
@@ -105,7 +105,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>Jun 21</date> -
             <date>July 6</date>
           </p>
-          <button type="button" data-name="夏至" data-date="The Summer Solstice" data-hello="一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期で、あまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。">
+          <button type="button" data-name="夏至" data-date="The Summer Solstice" data-hello="一年で昼の時間が一番長くなる節だが、日本の大部分は梅雨の時期であまり実感されない。花しょうぶや紫陽花などの雨の似合う花が咲き、暑さが増して来る頃。">
             (げし)
           </button>
         </li>
@@ -123,7 +123,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
             <date>July 23</date> -
             <date>August 7</date>
           </p>
-          <button type="button" data-name="大暑" data-date="Hottest time of the year" data-hello="最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる、夏の土用の時期。夏の花が盛りになる頃。">
+          <button type="button" data-name="大暑" data-date="Hottest time of the year" data-hello="最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる。夏の土用の時期。">
             (たいしょ)
           </button>
         </li>
