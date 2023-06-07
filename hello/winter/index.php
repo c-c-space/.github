@@ -2,11 +2,10 @@
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
+require('../all/24sekki.php');
 
-$season = "冬 Winter";
-$seasonDate = "November 8 - February 3";
 $description = "「ふゆ」は万物が冷ゆ（ひゆ）る季節。";
-$title = $season .' | '. $seasonDate;
+$title = $seasonName .' '. $season .' | '. $seasonDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -64,7 +63,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <div>
       <h1>
         <code id="lastModified"><?php echo $seasonDate;?></code>
-        <b><?php echo $season;?></b>
+        <b><?php echo $seasonName;?> <?php echo $season;?></b>
       </h1>
       <h2><?php echo $description;?><br/>
         冬の真ん中、北半球では1年のうちで最も夜（日没から日の出まで）の時間が長い冬至を境に太陽が生まれ変わり、陽気が増え始めるとされている。
@@ -131,7 +130,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </main>
 
   <dialog id="modal" class="color bgcolor">
-    <h3><?php echo $season;?></h3>
+    <h3><?php echo $seasonName;?> <?php echo $season;?></h3>
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
