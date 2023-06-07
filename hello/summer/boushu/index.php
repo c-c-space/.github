@@ -61,7 +61,7 @@ require('../../all/greeting.php');
         </ruby>
         が
         <ruby>
-          蒸 <rp>(</rp><rt>むれ</rt><rp>)</rp>
+          蒸 <rp>(</rp><rt>む</rt><rp>)</rp>
         </ruby>
         れ
         <ruby>
