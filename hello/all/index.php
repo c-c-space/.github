@@ -3,10 +3,10 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 
-$season = "二十四節気";
-$date = "24 Sekki";
-$description = "The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki";
-$title = $season .' | '. $date;
+$sekki24 = "二十四節気";
+$sekkiDate = "24 Sekki";
+$sekkiAbout = "The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki";
+$title = $sekki24 .' | '. $sekkiDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -18,7 +18,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
+  <meta name="description" content="<?php echo $sekkiAbout; ?>">
   <meta property="og:title" content="<?php echo $title; ?>" />
   <meta property="og:site_name" content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
   <meta property="og:url" content="<?php echo $url; ?>" />
@@ -33,7 +33,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="../css/log.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="stylesheet" href="72ko.css" />
+  <link rel="stylesheet" href="../css/72ko.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -120,10 +120,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <button type="button" id="enter-btn" onClick="ChangeHidden()"><?php echo $greeting; ?></button>
     <div>
       <h1>
-        <code id="lastModified"><?php echo $date;?></code>
-        <b><?php echo $season;?></b>
+        <code id="lastModified"><?php echo $sekkiDate;?></code>
+        <b><?php echo $sekki24;?></b>
       </h1>
-      <h2><?php echo $description;?></h2>
+      <h2><?php echo $sekkiAbout;?></h2>
     </div>
     <hr>
     <section>
