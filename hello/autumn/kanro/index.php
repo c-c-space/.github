@@ -37,19 +37,56 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>10月8日 ~ 10月13日頃</small><br/>
-        雁が飛来し始める
+        <ruby>
+          雁 <rp>(</rp><rt>がん</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          飛来 <rp>(</rp><rt>ひらい</rt><rp>)</rp>
+        </ruby>
+        し
+        <ruby>
+          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+        </ruby>
+        める
       </p>
       <p>
         <small>10月14日 ~ 10月18日頃</small><br/>
-        菊の花が咲く
+        <ruby>
+          菊 <rp>(</rp><rt>きく</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp><rt>はな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+        </ruby>
+        く
       </p>
       <p>
         <small>10月19日 ~ 10月23日頃</small><br/>
-        きりぎりすが戸にあって鳴く
+        <ruby>
+          蟋蟀 <rp>(</rp><rt>きりぎりす</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          戸 <rp>(</rp><rt>と</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          辺 <rp>(</rp><rt>あた</rt><rp>)</rp>
+        </ruby>
+        りで
+        <ruby>
+          鳴 <rp>(</rp><rt>な</rt><rp>)</rp>
+        </ruby>
+        く
       </p>
     </section>
     <hr>
-    <p id="ko"></p>
+    <?php require('../../all/72ko.html');?>
   </main>
 
   <main id="log">
@@ -137,12 +174,6 @@ require('../../all/greeting.php');
       }
     })
   };
-
-  fetch('../../all/72ko.txt')
-  .then(response => response.text())
-  .then(text => {
-    document.querySelector('#ko').innerText = text
-  });
   </script>
   <script src="../../../profile/js/setStyles.js"></script>
 </body>

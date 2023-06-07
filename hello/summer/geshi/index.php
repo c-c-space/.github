@@ -37,19 +37,44 @@ require('../../all/greeting.php');
       <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>6月21日 ~ 6月25日頃</small><br/>
-        夏枯草が枯れる
+        <ruby>
+          夏枯草 <rp>(</rp><rt>かごそう</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          枯 <rp>(</rp><rt>か</rt><rp>)</rp>
+        </ruby>
+        れる
       </p>
       <p>
         <small>6月26日 ~ 6月30日頃</small><br/>
-        あやめの花が咲く
+        <ruby>
+          菖蒲 <rp>(</rp><rt>あやめ</rt><rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp><rt>はな</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+        </ruby>
+        く
       </p>
       <p>
         <small>7月1日 ~ 7月6日頃</small><br/>
-        からすびしゃくが生える
+        <ruby>
+          烏柄杓 <rp>(</rp><rt>からすびしゃく</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          生 <rp>(</rp><rt>は</rt><rp>)</rp>
+        </ruby>
+        える
       </p>
     </section>
     <hr>
-    <p id="ko"></p>
+    <?php require('../../all/72ko.html');?>
   </main>
 
   <main id="log">
@@ -139,12 +164,6 @@ require('../../all/greeting.php');
       }
     })
   };
-
-  fetch('../../all/72ko.txt')
-  .then(response => response.text())
-  .then(text => {
-    document.querySelector('#ko').innerText = text
-  });
   </script>
   <script src="../../../profile/js/setStyles.js"></script>
 </body>
