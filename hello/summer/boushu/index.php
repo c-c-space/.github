@@ -65,7 +65,7 @@ require('../../all/greeting.php');
       <h2><?php echo $description;?></h2>
     </div>
     <section>
-      <ul>
+      <ul id="ko">
         <li>
           <p>
             <code>Jun 5 - Jun 9</code>
