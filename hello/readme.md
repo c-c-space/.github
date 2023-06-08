@@ -31,5 +31,7 @@ Add Posts to a CSV files for each *Timeframe* in the directories of **24 Sekki**
 
 ### [24 Sekki](all/index.php) divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.
 
+季節の移り変わりを掲示板に反映させるため、投稿を二十四節気ごとに記録
+トップページには、現在の節気・時間帯の投稿のみを表示します。
+
 [^1]:二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
-この掲示板に季節の移り変わりを反映させる方法として、投稿を二十四節気ごとに記録してページに表示します。
