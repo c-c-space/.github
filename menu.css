@@ -91,7 +91,7 @@ body {
 
 #menu.active {
   height: 100vh;
-  max-height: -webkit-fill-available;
+  max-height: 100%;
 }
 
 #contents a {
