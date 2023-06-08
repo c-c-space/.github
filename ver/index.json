@@ -1,6 +1,6 @@
 {
-  "title" : "更新情報",
-  "description" : "このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。",
+  "title" : "更新履歴",
+  "description" : "New Contents & Version Up",
   "author" : "creative-community.space",
   "email" : "pehu@creative-community.space",
   "type" : "website",
@@ -8,5 +8,18 @@
   "card" : "summary_large_image",
   "src" : "card.png",
 
-  "contents" : []
+  "contents" : [
+    {
+      "date" : "2021.9.16",
+      "name" : "We are Open",
+      "url" : "date/20210916.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.9.16",
+      "name" : "We are Open",
+      "url" : "date/20210916.html",
+      "type" : "news"
+    }
+  ]
 }

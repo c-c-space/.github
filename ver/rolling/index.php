@@ -16,7 +16,7 @@ function h($str) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="readyState.js"></script>
+  <script src="../js/readyState.js"></script>
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="rolling.css" />
   <style type="text/css">
@@ -115,7 +115,7 @@ function h($str) {
       <u>In Real Life</u><br/>
       <br/>
       <?php
-      $sp_file = "csv/special.csv";
+      $sp_file = "../csv/special.csv";
       $special = fopen($sp_file, 'r');
       flock($special, LOCK_SH);
 
@@ -138,7 +138,7 @@ function h($str) {
       <u>New Contents</u><br/>
       <br/>
       <?php
-      $index_file = "csv/index.csv";
+      $index_file = "../csv/index.csv";
       $index = fopen($index_file, 'r');
       flock($index, LOCK_SH);
 
@@ -161,7 +161,7 @@ function h($str) {
       <u>Version Up</u><br/>
       <br/>
       <?php
-      $upgrade_file = "csv/upgrade.csv";
+      $upgrade_file = "../csv/upgrade.csv";
       $upgrade = fopen($upgrade_file, 'r');
       flock($upgrade, LOCK_SH);
 

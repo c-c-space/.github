@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link href="date/style.css" rel="stylesheet" />
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <main>
+    <h1>
+      <small>更新履歴</small><br/>
+      <b>New Contents & Version Up</b>
+    </h1>
+    <nav id="index"></nav>
+  </main>
+  <article></article>
+
+  <script type="text/javascript">
+  const article = document.querySelector('article')
+  async function index(url) {
+    fetch(url)
+    .then(response => response.text())
+    .then(innerHTML => {
+      article.innerHTML = innerHTML
+    })
+    smoothTo()
+  }
+  index("about.html")
+
+  function smoothTo() {
+    const targetOffsetTop = window.pageYOffset + essay.getBoundingClientRect().top
+    window.scrollTo({
+      top: targetOffsetTop,
+      behavior: "smooth"
+    });
+  }
+  </script>
+</body>
+</html>

@@ -9,7 +9,7 @@ document.addEventListener('readystatechange', event => {
     if(!localStorage.getItem('yourInfo')) {
       location.replace('/')
     } else {
-      
+
     }
   }
 
