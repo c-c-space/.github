@@ -115,7 +115,7 @@
   <script src="../js/log.js"></script>
 
   <dialog id="modal" class="color bgcolor">
-    <button id="closeButton">Close 閉じる</button>
+    <button id="closeButton" class="color bgcolor">Close 閉じる</button>
     <section id="about"></section>
   </dialog>
 
