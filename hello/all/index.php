@@ -109,10 +109,19 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <input type="button" onclick="ChangeHidden()" value="二十四節気 24 Sekki">
     <hr/>
     <br>
-    <section id="readme"></section>
+    <section id="readme">
+      The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki.<br/>
+      24 Sekki divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.<br/>
+      <br/>
+      二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。<br/>
+      中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
+    </section>
     <br>
     <p>
-      <a href="https://www.are.na/cc-group/hello-24-sekki-72-ko" target="_blank" rel="nofollow noreferrer">Are.na Channel</a>
+      On This Textboard, Posts are created and read every 24 sekki to representing the changing seasons.
+    </p>
+    <p>
+      この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
   </main>
 
@@ -364,12 +373,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       }
     })
   };
-
-  fetch('readme.md')
-  .then(response => response.text())
-  .then(text => {
-    document.querySelector('#readme').innerText = text
-  });
 
   const dateAll = document.querySelectorAll('#log ul li button')
   for (const dateLi of dateAll) {
