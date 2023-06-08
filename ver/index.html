@@ -15,10 +15,12 @@
     </h1>
     <nav id="index"></nav>
   </main>
-  <article></article>
+  <article>
+    <section></section>
+  </article>
 
   <script type="text/javascript">
-  const article = document.querySelector('article')
+  const article = document.querySelector('article section')
   async function index(url) {
     fetch(url)
     .then(response => response.text())
@@ -27,7 +29,6 @@
     })
     smoothTo()
   }
-  index("about.html")
 
   function smoothTo() {
     const targetOffsetTop = window.pageYOffset + essay.getBoundingClientRect().top
