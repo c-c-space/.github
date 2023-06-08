@@ -11,20 +11,14 @@
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
-  #menu {
-    background: #000;
-  }
-
-  #js-button {
-    background: #fff;
+  #menu,
+  #js-button,
+  #contents a {
+    filter: invert();
   }
 
   #contents {
     mix-blend-mode: difference;
-  }
-
-  #contents a {
-    filter: invert();
   }
 
   #log span {
@@ -44,7 +38,7 @@
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <script src="/js/menu.js"></script>
-  <header id="menu" hidden>
+  <header id="menu" class="color bgcolor" hidden>
     <button id="js-button" class="color bgcolor"><b></b></button>
     <nav id="contents">
       <a href="#" onclick="window.history.back(); return false;">
