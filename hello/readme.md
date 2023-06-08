@@ -2,7 +2,7 @@
 これは、音声認識・音声合成を使った掲示板です。
 
 *ウェブ音声 API (Web Speech API)* で **音声をテキスト・テキストを音声** に変換し投稿を作成
-投稿を時間帯・二十四節気ごとに記録して、時間帯・二十四節気ごとの投稿を掲示板に表示します。
+投稿を時間帯・二十四節気ごとに記録し、時間帯・二十四節気ごとの投稿を掲示板に表示します。
 
 ***
 
@@ -15,7 +15,7 @@ and Read Posts with Text to Speech using Speech Synthesis
 ---
 
 ## 1日を 4つ の *時間帯* に 区分
-投稿を **二十四節気[^1]** ごとのディレクトリ内の *時間帯* ごとの CSVファイル に記録
+投稿を **二十四節気[^1]** ごとのディレクトリ内にある *時間帯* ごとの CSVファイル に記録
 
 | Timeframe  |   From   |    To    |
 |:-----------|:--------:|:--------:|
@@ -31,8 +31,5 @@ Add Posts to a CSV files for each *Timeframe* in the directories of **24 Sekki**
 
 ### On This Textboard, Posts are created and read every 24 sekki to representing the changing seasons.
 [24 Sekki](all/index.php) divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.
-
-季節の移り変わりを掲示板に反映させるため、投稿を二十四節気ごとに記録
-トップページには、現在の節気・時間帯の投稿のみが表示されます。
 
 [^1]:二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
