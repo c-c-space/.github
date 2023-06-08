@@ -16,7 +16,8 @@ article {
   font-family: "Yu Gothic", "游ゴシック体", sans-serif;
 }
 
-article u {
+article u,
+article i {
   font-family: "Times New Roman", serif;
   font-style: italic;
 }
@@ -64,7 +65,8 @@ main h1 b {
 }
 
 article mark,
-article u {
+article u,
+article i {
   font-size: 111%;
 }
 
@@ -99,6 +101,10 @@ main a b {
   width: 100%;
 }
 
+hr {
+  border: none;
+}
+
 @media (orientation: landscape) {
   body {
     display: flex;
@@ -109,7 +115,7 @@ main a b {
   }
 
   hr {
-    margin: 1rem;
+    margin: 1.5rem;
   }
 
   button {
@@ -172,7 +178,12 @@ main a b {
   }
 
   hr {
-    margin: 2vw;
+    margin: 4.5vw;
+  }
+
+  main nav {
+    height: 45vw;
+    overflow: auto;
   }
 
   main h1 b {

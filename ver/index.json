@@ -10,15 +10,111 @@
 
   "contents" : [
     {
-      "date" : "2021.9.27",
+      "date" : "2023.6.6",
+      "name" : "二十四節気 24 Sekki",
+      "url" : "date/hello.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2023.5.22",
+      "name" : "わたしたちがいた場所",
+      "url" : "date/map.html",
+      "type" : "update"
+    },
+    {
+      "date" : "2023.4.18",
+      "name" : "時間帯によって 投稿を記録・内容を生成",
+      "url" : "date/hello.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2023.4.15",
+      "name" : "自分の気持ちを知る・表す",
+      "url" : "date/sign.html",
+      "type" : "update"
+    },
+    {
+      "date" : "2023.4.1",
+      "name" : "Hello こんにちは",
+      "url" : "date/hello.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2022.10.10",
+      "name" : "Access Log",
+      "url" : "date/index.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2022.10.1",
+      "name" : "毎日の色と記号",
+      "url" : "date/sign.html",
+      "type" : "update"
+    },
+    {
+      "date" : "2022.9.27",
+      "name" : "Sign | Members Only",
+      "url" : "date/sign.html",
+      "type" : "update"
+    },
+    {
+      "date" : "2022.9.27",
+      "name" : "Touch.js",
+      "url" : "date/thankyou.html",
+      "type" : "update"
+    },
+    {
+      "date" : "2022.5.22",
+      "name" : "things that i (we) heard",
+      "url" : "date/map.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.11.23",
+      "name" : "valuing an act of valuing",
+      "url" : "date/value.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.10.13",
+      "name" : "Go Out",
+      "url" : "date/map.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.10.10",
       "name" : "Members Only",
-      "url" : "date/20210927.html",
+      "url" : "date/membersonly.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.10.10",
+      "name" : "Logo",
+      "url" : "date/index.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.9.27",
+      "name" : "Sign",
+      "url" : "date/sign.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.9.27",
+      "name" : "Your Drawing is Seems So Beautiful",
+      "url" : "date/thankyou.html",
+      "type" : "news"
+    },
+    {
+      "date" : "2021.9.27",
+      "name" : "How to Coding",
+      "url" : "date/index.html",
       "type" : "news"
     },
     {
       "date" : "2021.9.16",
       "name" : "We are Open",
-      "url" : "date/20210916.html",
+      "url" : "date/index.html",
       "type" : "news"
     }
   ]

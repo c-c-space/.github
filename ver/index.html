@@ -30,6 +30,12 @@
       article.innerHTML = innerHTML
     })
   }
+
+  fetch('../WHOIS.md')
+  .then(response => response.text())
+  .then(innerText => {
+    article.innerText = innerText
+  })
   </script>
 </body>
 </html>
