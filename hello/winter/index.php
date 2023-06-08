@@ -157,10 +157,14 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </p>
       <section>
         <label for="color">Text Color</label>
-        <select class="color bgcolor" id="color"></select>
+        <select class="color bgcolor" id="bgcolor">
+          <option selected>文字の色</option>
+        </select>
         <br/>
         <label for="bgcolor">Background Color</label>
-        <select class="color bgcolor" id="bgcolor"></select>
+        <select class="color bgcolor" id="color">
+          <option selected>背景の色</option>
+        </select>
         <hr/>
         <label for="fontSize" hidden>Font Size</label>
         <select class="color bgcolor" id="fontSize" hidden>
