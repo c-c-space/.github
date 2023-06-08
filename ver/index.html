@@ -22,6 +22,8 @@
   <script type="text/javascript">
   const article = document.querySelector('article section')
   async function index(url) {
+    event.preventDefault();
+
     fetch(url)
     .then(response => response.text())
     .then(innerHTML => {
