@@ -30,6 +30,16 @@
   #log span {
     word-break: break-all;
   }
+
+  @media (orientation: portrait) {
+    #log {
+      margin-bottom: 0.5rem;
+    }
+
+    #now {
+      position: relative;
+    }
+  }
   </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
