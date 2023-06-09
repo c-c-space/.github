@@ -29,6 +29,15 @@
     .then(innerHTML => {
       article.innerHTML = innerHTML
     })
+    smoothTo()
+  }
+
+  function smoothTo() {
+    const targetOffsetTop = window.pageYOffset + essay.getBoundingClientRect().top
+    window.scrollTo({
+      top: targetOffsetTop,
+      behavior: "smooth"
+    });
   }
 
   fetch('date/index.html')
