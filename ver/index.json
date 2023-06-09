@@ -12,109 +12,67 @@
     {
       "date" : "2023.6.6",
       "name" : "二十四節気 24 Sekki",
-      "url" : "date/hello.html",
+      "url" : "date/20230606.html",
       "type" : "news"
     },
     {
       "date" : "2023.5.22",
       "name" : "わたしたちがいた場所",
-      "url" : "date/map.html",
+      "url" : "date/20230522.html",
       "type" : "update"
-    },
-    {
-      "date" : "2023.4.18",
-      "name" : "時間帯によって 投稿を記録・内容を生成",
-      "url" : "date/hello.html",
-      "type" : "news"
     },
     {
       "date" : "2023.4.15",
       "name" : "自分の気持ちを知る・表す",
-      "url" : "date/sign.html",
+      "url" : "date/20230415.html",
       "type" : "update"
     },
     {
       "date" : "2023.4.1",
-      "name" : "Hello こんにちは",
-      "url" : "date/hello.html",
-      "type" : "news"
-    },
-    {
-      "date" : "2022.10.10",
-      "name" : "Access Log",
-      "url" : "date/index.html",
+      "name" : "Speech to Text to Text to Speech",
+      "url" : "date/20230401.html",
       "type" : "news"
     },
     {
       "date" : "2022.10.1",
-      "name" : "毎日の色と記号",
-      "url" : "date/sign.html",
-      "type" : "update"
-    },
-    {
-      "date" : "2022.9.27",
-      "name" : "Sign | Members Only",
-      "url" : "date/sign.html",
-      "type" : "update"
-    },
-    {
-      "date" : "2022.9.27",
-      "name" : "Touch.js",
-      "url" : "date/thankyou.html",
+      "name" : "The Information About Network & Browser",
+      "url" : "date/20221001.html",
       "type" : "update"
     },
     {
       "date" : "2022.5.22",
       "name" : "things that i (we) heard",
-      "url" : "date/map.html",
+      "url" : "date/20220522.html",
       "type" : "news"
     },
     {
       "date" : "2021.11.23",
       "name" : "valuing an act of valuing",
-      "url" : "date/value.html",
+      "url" : "date/20211123.html",
       "type" : "news"
     },
     {
       "date" : "2021.10.13",
       "name" : "Go Out",
-      "url" : "date/map.html",
+      "url" : "date/20211013.html",
       "type" : "news"
     },
     {
       "date" : "2021.10.10",
       "name" : "Members Only",
-      "url" : "date/membersonly.html",
-      "type" : "news"
-    },
-    {
-      "date" : "2021.10.10",
-      "name" : "Logo",
-      "url" : "date/index.html",
+      "url" : "date/20211010.html",
       "type" : "news"
     },
     {
       "date" : "2021.9.27",
-      "name" : "Sign",
-      "url" : "date/sign.html",
-      "type" : "news"
-    },
-    {
-      "date" : "2021.9.27",
-      "name" : "Your Drawing is Seems So Beautiful",
-      "url" : "date/thankyou.html",
-      "type" : "news"
-    },
-    {
-      "date" : "2021.9.27",
-      "name" : "How to Coding",
-      "url" : "date/index.html",
+      "name" : "We are Open",
+      "url" : "date/20210927.html",
       "type" : "news"
     },
     {
       "date" : "2021.9.16",
-      "name" : "We are Open",
-      "url" : "date/index.html",
+      "name" : "Domain Registration",
+      "url" : "date/20210916.html",
       "type" : "news"
     }
   ]
