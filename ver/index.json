@@ -12,68 +12,57 @@
     {
       "date" : "2023.6.6",
       "name" : "二十四節気 24 Sekki",
-      "url" : "date/20230606.html",
-      "type" : "news"
+      "url" : "date/20230606.html"
     },
     {
       "date" : "2023.5.22",
       "name" : "わたしたちがいた場所",
-      "url" : "date/20230522.html",
-      "type" : "update"
+      "url" : "date/20230522.html"
     },
     {
       "date" : "2023.4.15",
       "name" : "自分の気持ちを知る・表す",
-      "url" : "date/20230415.html",
-      "type" : "update"
+      "url" : "date/20230415.html"
     },
     {
       "date" : "2023.4.1",
       "name" : "Speech to Text to Text to Speech",
-      "url" : "date/20230401.html",
-      "type" : "news"
+      "url" : "date/20230401.html"
     },
     {
       "date" : "2022.10.1",
       "name" : "The Information About Network & Browser",
-      "url" : "date/20221001.html",
-      "type" : "update"
+      "url" : "date/20221001.html"
     },
     {
       "date" : "2022.5.22",
       "name" : "things that i (we) heard",
-      "url" : "date/20220522.html",
-      "type" : "news"
+      "url" : "date/20220522.html"
     },
     {
       "date" : "2021.11.23",
       "name" : "valuing an act of valuing",
-      "url" : "date/20211123.html",
-      "type" : "news"
+      "url" : "date/20211123.html"
     },
     {
       "date" : "2021.10.13",
       "name" : "Go Out",
-      "url" : "date/20211013.html",
-      "type" : "news"
+      "url" : "date/20211013.html"
     },
     {
       "date" : "2021.10.10",
       "name" : "Members Only",
-      "url" : "date/20211010.html",
-      "type" : "news"
+      "url" : "date/20211010.html"
     },
     {
       "date" : "2021.9.27",
       "name" : "We are Open",
-      "url" : "date/20210927.html",
-      "type" : "news"
+      "url" : "date/20210927.html"
     },
     {
       "date" : "2021.9.16",
       "name" : "Domain Registration",
-      "url" : "date/20210916.html",
-      "type" : "news"
+      "url" : "date/20210916.html"
     }
   ]
 }

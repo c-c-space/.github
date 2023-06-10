@@ -8,7 +8,8 @@ html {
 }
 
 h1,
-main {
+main,
+pre {
   font-family: "ipag", monospace;
 }
 
@@ -101,6 +102,11 @@ main a b {
   width: 100%;
 }
 
+pre {
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
 hr {
   border: none;
 }
@@ -182,7 +188,7 @@ hr {
   }
 
   main nav {
-    height: 45vw;
+    height: 50vw;
     overflow: auto;
   }
 
@@ -202,10 +208,6 @@ hr {
 
   article time {
     padding: 0.5vw;
-  }
-
-  article {
-    margin-top: 2.5vw;
   }
 }
 
