@@ -1,4 +1,4 @@
-<?php require('../../sp/2021/readme.html'); ?>
+<?php require('../../sp/2021/readme/index.html'); ?>
 <time>2021.9.16</time>
 <p>
   Domain Registration<br/>
