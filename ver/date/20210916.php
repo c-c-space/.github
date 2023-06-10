@@ -8,9 +8,10 @@
   Domain Privacy Protection<br/>
   <strong>739 円</strong> (Year)
 </p>
-<hr>
+<br>
 <p>
   Cloudflare Protection<br/>
   <strong>1,475 円</strong> (Lifetime)
 </p>
+<hr>
 <address>creative-community.space</address>
