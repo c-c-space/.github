@@ -1,12 +1,19 @@
+<style media="screen">
+abbr:hover::after {
+  content: ' (' attr(title) ')';
+  font-size: 75%;
+}
+</style>
+
 <h2>
   <strong>
     How to Coding
     <u>The Website</u>
-    that
-    <u>Creates</u>
-    beautiful things through
-    <u>Communication</u>
-    that everyone can do
+    with
+    <abbr title="HyperText Markup Language">HTML</abbr>,
+    <abbr title="Cascading Style Sheets">CSS</abbr>
+    and
+    <code>JavaScript</code>
   </strong>
 </h2>
 <p>
@@ -19,7 +26,8 @@
   インターネットの基礎技術は、1994年10月1日にティム・バーナーズ＝リーが設立した
   WWWの可能性を全て引き出すための共同事業体
   「ワールド・ワイド・ウェブ・コンソーシアム」（略称「W3C」ダブリュースリーシー）
-  によって確立され、ウェブサイトを構築するために使用されるHTML・CSS・JavaScript等の標準規格が定められていました。</p>
+  によって確立され、ウェブサイトを構築するために使用されるHTML・CSS・JavaScript等の標準規格が定められていました。
+</p>
 <p>
   しかし、理想ばかりを追い求めるW3Cに対して不満を持つウェブ開発者・利用者が現れ、
   2004年6月4日、HTMLの開発再開を提案する団体
