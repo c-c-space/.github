@@ -13,7 +13,7 @@ abbr:hover::after {
     <abbr title="HyperText Markup Language">HTML</abbr>,
     <abbr title="Cascading Style Sheets">CSS</abbr>
     and
-    <code>JavaScript</code>
+    <dfn>JavaScript</dfn>
   </strong>
 </h2>
 <p>
