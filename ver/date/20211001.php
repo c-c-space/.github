@@ -12,15 +12,14 @@
 <p>
   イギリスの計算機科学者「ティム・バーナーズ＝リー」がWWW（ワールドワイドウェブ）の概念をまとめた
   <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="nofollow noreferrer">提案書</a>
-  を発表したインターネットの誕生日1989年3月12日から、インターネットは成長・進化を続け、現在ではありとあらゆるものがインターネットに接続されています。<br/>
-  <small>ちなみに世界初のウェブサイト <a href="http://info.cern.ch/" target="_blank" rel="nofollow noreferrer">info.cern.ch</a> が誕生したのは、1991年8月6日。<br/>スイスのアルプスにある欧州原子核研究機構（CERN）の施設で36歳のティム・バーナーズ＝リーによって公開されました。</small>
+  を発表した1989年3月12日から、インターネットは目覚しく成長・進化を続け、現在では私たちの生活に欠かせない社会基盤（インフラ）となっています。<br/>
+  <small>世界初のウェブサイト <a href="http://info.cern.ch/" target="_blank" rel="nofollow noreferrer">info.cern.ch</a> が誕生したのは、1991年8月6日。<br/>スイスのアルプスにある欧州原子核研究機構（CERN）の施設で36歳のティム・バーナーズ＝リーによって公開されました。</small>
 </p>
 <p>
   インターネットの基礎技術は、1994年10月1日にティム・バーナーズ＝リーが設立した
   WWWの可能性を全て引き出すための共同事業体
   「ワールド・ワイド・ウェブ・コンソーシアム」（略称「W3C」ダブリュースリーシー）
-  によって確立され、ウェブサイトを構築するために使用されるHTML・CSS・JavaScript等のルールのバージョンアップが行われ、
-  W3Cによって定められた仕様がWWWの標準規格とされていました。</p>
+  によって確立され、ウェブサイトを構築するために使用されるHTML・CSS・JavaScript等の標準規格が定められていました。</p>
 <p>
   しかし、理想ばかりを追い求めるW3Cに対して不満を持つウェブ開発者・利用者が現れ、
   2004年6月4日、HTMLの開発再開を提案する団体
@@ -29,7 +28,7 @@
   <small>WHATWGは、Apple・Mozilla・Opera（後にMicrosoftも参加）の開発者たちによって結成されたHTMLの標準規格を作成する団体です。</small>
 </p>
 <p>
-  その後HTMLの仕様が2種類に分断していた時代を経て、2021年1月28日、W3Cが定めていたHTML関連の仕様はすべて廃止され、WHATWGが新たに定めた
+  その後、HTMLの仕様が2種類に分断していた時代を経て、2021年1月28日、W3Cが定めていたHTML関連の仕様はすべて廃止され、WHATWGが新たに定めた
   <a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a>
   が、唯一無二のHTML標準に完全統一されました。<br/>
   <small>HTML Living Standard には、バージョン番号や第何版という概念がなく、日々、改版が進められています。</small>
