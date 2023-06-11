@@ -28,11 +28,11 @@
   が設立されました。<br>
   <small>WHATWGは、Apple・Mozilla・Opera（後にMicrosoftも参加）の開発者たちによって結成されたHTMLの標準規格を作成する団体です。</small>
 </p>
-<br>
 <p>
   その後HTMLの仕様が2種類に分断していた時代を経て、2021年1月28日、W3Cが定めていたHTML関連の仕様はすべて廃止され、WHATWGが新たに定めた
   <a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a>
   が、唯一無二のHTML標準に完全統一されました。<br/>
   <small>HTML Living Standard には、バージョン番号や第何版という概念がなく、日々、改版が進められています。</small>
 </p>
+<hr>
 <?php require('../../sp/2021/readme/howto.html'); ?>
