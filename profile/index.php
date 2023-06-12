@@ -13,7 +13,8 @@
   <style>
   #js-button,
   #contents a,
-  #log {
+  #log,
+  #modal {
     filter: invert();
   }
 
