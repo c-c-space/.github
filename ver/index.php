@@ -11,7 +11,16 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 $description = 'New Contents & Version Up';
 $source_file = 'index.csv';
 $fp = fopen($source_file, 'r');
-flock($fp, LOCK_SH);
+
+function h($str) {
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+while ($row = fgetcsv($fp)) {
+  $rows[] = $row;
+}
+
+fclose($fp);
 ?>
 
 <!DOCTYPE html>
