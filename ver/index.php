@@ -9,7 +9,7 @@ $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTT
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
 $description = 'New Contents & Version Up';
-$source_file = '.csv';
+$source_file = 'index.csv';
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
 ?>
