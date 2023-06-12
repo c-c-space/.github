@@ -56,6 +56,8 @@ fclose($fp);
 
   #log li a {
     color: #000;
+    pointer-events: auto;
+    user-select: auto;
   }
 
   input[type="radio"] {
