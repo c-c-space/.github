@@ -93,13 +93,13 @@ fclose($fp);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-      <a href="/ver/log/" target="_parent">
-        <i>HTTP/1.1 on 195.179.236.11</i>
-        <p><b>アクセス履歴 | Access Log</b></p>
-      </a>
       <a href="/profile/" target="_parent">
         <i>The Information About Network & Browser</i>
         <p><b>通信情報／ブラウザ等情報</b></p>
+      </a>
+      <a href="/ver/log/" target="_parent">
+        <i>HTTP/1.1 on 195.179.236.11</i>
+        <p><b>アクセス履歴 | Access Log</b></p>
       </a>
     </nav>
   </header>

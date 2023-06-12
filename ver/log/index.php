@@ -108,13 +108,13 @@ flock($fp, LOCK_SH);
         <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-      <a href="/profile/" target="_parent">
-        <i>The Information About Network & Browser</i>
-        <p><b>通信情報／ブラウザ等情報</b></p>
-      </a>
       <a href="/ver/" target="_parent">
         <i>更新履歴</i>
         <p><b>New Contents & Version Up</b></p>
+      </a>
+      <a href="/profile/" target="_parent">
+        <i>The Information About Network & Browser</i>
+        <p><b>通信情報／ブラウザ等情報</b></p>
       </a>
     </nav>
   </header>
