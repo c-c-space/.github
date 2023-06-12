@@ -34,6 +34,13 @@
       position: relative;
     }
   }
+
+  @media print{
+    #menu,
+    #now {
+      display: none;
+    }
+  }
   </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
