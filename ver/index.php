@@ -44,7 +44,6 @@ fclose($fp);
   <meta name="twitter:image" content="<?php echo $url; ?>card.png" />
 
   <link rel="stylesheet" href="log/style.css" />
-  <link rel="stylesheet" href="log/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -52,6 +51,10 @@ fclose($fp);
   body {
     padding: 0.5rem;
     margin: 0;
+  }
+
+  #log li {
+    font-size: 111%;
   }
 
   #log li a {
