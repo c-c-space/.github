@@ -10,34 +10,9 @@
 
   "contents" : [
     {
-      "date" : "2023.6.6",
-      "name" : "二十四節気 24 Sekki",
-      "url" : "date/20230606.html"
-    },
-    {
-      "date" : "2023.5.22",
-      "name" : "わたしたちがいた場所",
-      "url" : "date/20230522.html"
-    },
-    {
-      "date" : "2023.4.15",
-      "name" : "自分の気持ちを知る・表す",
-      "url" : "date/20230415.html"
-    },
-    {
-      "date" : "2023.4.1",
-      "name" : "Speech to Text to Text to Speech",
-      "url" : "date/20230401.html"
-    },
-    {
       "date" : "2021.11.23",
       "name" : "valuing an act of valuing",
       "url" : "date/20211123.html"
-    },
-    {
-      "date" : "2021.10.13",
-      "name" : "Go Out",
-      "url" : "date/20211013.html"
     }
   ]
 }

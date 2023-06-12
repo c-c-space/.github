@@ -127,7 +127,7 @@ fclose($fp);
         </span>
         <span>2021</span>
         <span>SEP 16</span>
-        <span>Domain Registration</span>
+        <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
       </li>
     <?php endif; ?>
     <li>
