@@ -123,20 +123,6 @@
     <section id="about"></section>
   </dialog>
 
-  <?php require('../hello/all/24sekki.php');?>
-  <script src="../hello/<?php echo $season;?>/color.js"></script>
-  <script type="text/javascript">
-  let namesForm = document.querySelectorAll('#bgcolor, #color')
-  for (const names of namesForm) {
-    Object.entries(colors).forEach(eachArr => {
-      let option = document.createElement('option')
-      option.textContent = Object.values(eachArr)[0]
-      option.value = Object.values(eachArr)[1]
-      names.appendChild(option)
-    })
-  }
-  </script>
-
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
