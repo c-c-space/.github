@@ -53,10 +53,6 @@ fclose($fp);
     margin: 0;
   }
 
-  #log li {
-    font-size: 100%;
-  }
-
   #log li a {
     color: #000;
     pointer-events: auto;
