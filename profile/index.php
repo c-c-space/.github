@@ -120,24 +120,6 @@
     <section id="about"></section>
   </dialog>
 
-  <nav id="now">
-    <section>
-      <select class="color bgcolor" id="bgcolor">
-        <option selected>Background Color</option>
-      </select>
-      <select class="color bgcolor" id="color">
-        <option selected>Color</option>
-      </select>
-    </section>
-    <section>
-      <select class="color bgcolor" id="fontSize">
-        <option value="13px">Small</option>
-        <option value="16px" selected>Medium</option>
-        <option value="20px">Large</option>
-      </select>
-    </section>
-  </nav>
-
   <?php require('../hello/all/24sekki.php');?>
   <script src="../hello/<?php echo $season;?>/color.js"></script>
   <script type="text/javascript">
@@ -189,6 +171,5 @@
   </script>
 
   <script src="index.js"></script>
-  <script src="js/setStyles.js"></script>
 </body>
 </html>
