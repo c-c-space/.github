@@ -68,7 +68,6 @@ fclose($fp);
     cursor: pointer;
     display: inline-block;
     font-size: 125%;
-    margin: 0 0.25rem 0.25rem 0;
     transition: all 1s;
   }
 
@@ -136,7 +135,7 @@ fclose($fp);
         <input type="radio" name="index" id="update" value="update">
         <label for="update">Version Up</label>
       </span>
-      <span>creative-community.space</span>
+      <span></span>
     </li>
   </ul>
 </body>
