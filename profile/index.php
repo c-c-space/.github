@@ -170,6 +170,24 @@
   });
   </script>
 
+  <video id="userMedia" autoplay playsinline></video>
+  <script type="text/javascript">
+  const userMedia = document.querySelector("#userMedia")
+  userMedia.style.width = window.innerWidth
+  userMedia.style.height = window.innerHeight
+
+  const media = navigator.mediaDevices.getUserMedia({
+    video: true,
+    video: { facingMode: "environment" }, //背面カメラ
+    //video: { facingMode: "user" }, //インカメラ
+    audio: false,
+  });
+
+  media.then((stream) => {
+    userMedia.srcObject = stream;
+  });
+  </script>
+
   <script src="index.js"></script>
   <script src="js/setStyles.js"></script>
 </body>
