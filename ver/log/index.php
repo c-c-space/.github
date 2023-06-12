@@ -92,6 +92,10 @@ flock($fp, LOCK_SH);
     #now * {
       display: none;
     }
+
+    #log li {
+      filter: blur(0);
+    }
   }
   </style>
 </head>
