@@ -102,9 +102,7 @@
     </li>
 
     <li>
-      <span>
-        <button id="openModal" class="color bgcolor" type="button">通信情報／ブラウザ等情報</button>
-      </span>
+      <span>通信情報／ブラウザ等情報</span>
       <?php
       $ip = $_SERVER["REMOTE_ADDR"];
       $hqdn = $_SERVER["REMOTE_PORT"];
@@ -118,11 +116,6 @@
   </ul>
   <script src="../js/log.js"></script>
 
-  <dialog id="modal" class="color bgcolor">
-    <button id="closeButton" class="color bgcolor">Close 閉じる</button>
-    <section id="about"></section>
-  </dialog>
-
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
@@ -133,12 +126,6 @@
     document.querySelector('#status').textContent =
     online ? 'You are: Online' : 'You are: Offline';
   }
-
-  fetch('about.html')
-  .then(response => response.text())
-  .then(about => {
-    document.querySelector('#about').innerHTML = about
-  });
   </script>
 
   <video id="userMedia" autoplay playsinline></video>
