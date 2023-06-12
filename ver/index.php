@@ -67,7 +67,7 @@ fclose($fp);
     color: #000;
     cursor: pointer;
     display: inline-block;
-    font-size: 150%;
+    font-size: 125%;
     margin: 0 0.25rem 0.25rem 0;
     transition: all 1s;
   }
@@ -128,16 +128,16 @@ fclose($fp);
     <?php endif; ?>
     <li>
       <span><?php echo $title;?></span>
-      <span id="showTime"></span>
-      <span id="showDate"></span>
-      <span>
+      <span id="showTime">
         <input type="radio" name="index" id="new" value="new">
         <label for="new">New Contents</label>
+      </span>
+      <span id="showDate">
         <input type="radio" name="index" id="update" value="update">
         <label for="update">Version Up</label>
       </span>
+      <span>creative-community.space</span>
     </li>
   </ul>
-  <script src="../js/now.js"></script>
 </body>
 </html>
