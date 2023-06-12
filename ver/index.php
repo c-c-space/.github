@@ -125,8 +125,8 @@ fclose($fp);
         <span>
           <a href="#">creative-community.space</a>
         </span>
-        <span>THU SEP 16</span>
         <span>2021</span>
+        <span>SEP 16</span>
         <span>Domain Registration</span>
       </li>
     <?php endif; ?>
