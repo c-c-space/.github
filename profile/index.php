@@ -18,7 +18,8 @@
   }
 
   #menu,
-  #log {
+  #log,
+  #contents {
     mix-blend-mode: difference;
   }
 
