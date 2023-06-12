@@ -174,9 +174,12 @@
       }
     }
   });
-</script>
+  </script>
 
-<footer id="now" class="hsl"></footer>
-<script src="js/now.js"></script>
+  <footer id="now" class="hsl">
+    <time id="showDate"></time>
+    <time id=showTime></time>
+  </footer>
+  <script src="js/now.js"></script>
 </body>
 </html>

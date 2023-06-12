@@ -17,3 +17,7 @@
   border-radius: 5vw;
   padding: 1.25vw 2vw;
 }
+
+input[type="radio"]+label {
+  margin: 0 0.5vw 0.5vw 0;
+}

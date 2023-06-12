@@ -5,17 +5,6 @@ function set10(num) {
   return ret;
 }
 
-const now = document.querySelector("#now");
-
-const showDate = document.createElement('time');
-showDate.setAttribute('id','showDate');
-
-const showTime = document.createElement('time');
-showTime.setAttribute('id','showTime');
-
-now.appendChild(showDate);
-now.appendChild(showTime);
-
 function nowOn() {
   const nowTime = new Date();
 
