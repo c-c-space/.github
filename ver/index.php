@@ -54,7 +54,7 @@ fclose($fp);
   }
 
   #log li {
-    font-size: 111%;
+    font-size: 100%;
   }
 
   #log li a {
