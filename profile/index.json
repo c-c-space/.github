@@ -10,17 +10,17 @@
 
   "contents" : [
     {
-      "date" : "HTTP/1.1 on 195.179.236.11",
-      "name" : "アクセス履歴 | Access Log",
-      "url" : "/ver/log/",
+      "date" : "更新履歴",
+      "name" : "New Contents & Version Up",
+      "url" : "/ver/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "更新履歴",
-      "name" : "New Contents & Version Up",
-      "url" : "/ver/",
+      "date" : "HTTP/1.1 on 195.179.236.11",
+      "name" : "アクセス履歴 | Access Log",
+      "url" : "/ver/log/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
