@@ -48,6 +48,19 @@ flock($fp, LOCK_SH);
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
+  header,
+  #log,
+  #now {
+    mix-blend-mode: difference;
+  }
+
+  #js-button,
+  #contents a,
+  #log,
+  #now {
+    filter: invert();
+  }
+
   #log li {
     filter: blur(0.25rem);
   }
@@ -158,5 +171,6 @@ flock($fp, LOCK_SH);
     <button type="submit">Access Log</button>
   </form>
   <script src="selectmonth.js"></script>
+  <script src="../../thankyou/hsl.js"></script>
 </body>
 </html>
