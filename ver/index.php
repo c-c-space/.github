@@ -67,7 +67,6 @@ fclose($fp);
     color: #000;
     cursor: pointer;
     display: inline-block;
-    font-size: 125%;
     transition: all 1s;
   }
 
