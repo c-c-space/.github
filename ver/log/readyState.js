@@ -17,19 +17,5 @@ document.addEventListener('readystatechange', event => {
       document.querySelector('#update').remove()
     }
   } else if (event.target.readyState === 'complete') {
-    const userMedia = document.querySelector("#userMedia")
-    userMedia.style.width = window.innerWidth
-    userMedia.style.height = window.innerHeight
-
-    const media = navigator.mediaDevices.getUserMedia({
-      video: true,
-      video: { facingMode: "environment" }, //背面カメラ
-      //video: { facingMode: "user" }, //インカメラ
-      audio: false,
-    });
-
-    media.then((stream) => {
-      userMedia.srcObject = stream;
-    });
   }
 });

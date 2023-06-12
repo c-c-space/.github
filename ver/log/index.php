@@ -171,7 +171,5 @@ flock($fp, LOCK_SH);
     <button type="submit">Access Log</button>
   </form>
   <script src="selectmonth.js"></script>
-
-  <video id="userMedia" autoplay playsinline></video>
 </body>
 </html>
