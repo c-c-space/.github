@@ -58,7 +58,7 @@
     </nav>
   </header>
 
-  <ul id="log">
+  <ul id="log" class="hidden">
     <li id="battery">
       <span>Battery Status</span>
       <span id="level"></span>
