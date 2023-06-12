@@ -54,6 +54,10 @@ fclose($fp);
     margin: 0;
   }
 
+  #log li a {
+    color: #000;
+  }
+
   input[type="radio"] {
     display: none;
   }
@@ -103,13 +107,23 @@ fclose($fp);
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
         <li class="<?= h($row[0]) ?>">
-          <span><?= h($row[3]) ?></span>
+          <span>
+            <a href="<?= h($row[3]) ?>"><?= h($row[3]) ?></a>
+          </span>
           <span><?= h($row[1]) ?></span>
           <span><?= h($row[2]) ?></span>
           <span><?= h($row[4]) ?></span>
         </li>
       <?php endforeach; ?>
     <?php else : ?>
+      <li class="new">
+        <span>
+          <a href="#">creative-community.space</a>
+        </span>
+        <span>THU SEP 16</span>
+        <span>2021</span>
+        <span>Domain Registration</span>
+      </li>
     <?php endif; ?>
     <li>
       <span><?php echo $title;?></span>
