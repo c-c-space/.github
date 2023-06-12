@@ -12,12 +12,13 @@
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   #menu,
-  #js-button,
+  #log,
   #contents a {
     filter: invert();
   }
 
-  #contents {
+  #menu,
+  #log {
     mix-blend-mode: difference;
   }
 
