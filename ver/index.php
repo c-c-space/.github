@@ -54,12 +54,12 @@ fclose($fp);
   }
 
   input[type="radio"],
-  #new:checked ~ #log li:not(.new),
-  #update:checked ~ #log li:not(.update) {
+  .hidden {
     display: none;
   }
 
-  #log li a {
+  #log li a,
+  input[type="radio"]+label {
     color: #000;
     pointer-events: auto;
     user-select: auto;
@@ -70,7 +70,7 @@ fclose($fp);
     cursor: pointer;
     display: inline-block;
     font-size: 150%;
-    margin: 0 0.25rem 0.25rem 0;
+    margin: 0.25rem;
     transition: all 1s;
   }
 
@@ -109,7 +109,7 @@ fclose($fp);
   <ul id="log" class="hidden">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
-        <li class="<?= h($row[0]) ?>">
+        <li data-index="<?= h($row[0]) ?>">
           <span>
             <a href="<?= h($row[3]) ?>"><?= h($row[3]) ?></a>
           </span>
@@ -119,7 +119,7 @@ fclose($fp);
         </li>
       <?php endforeach; ?>
     <?php else : ?>
-      <li class="new">
+      <li data-index="new">
         <span>
           <a href="#">creative-community.space</a>
         </span>
@@ -128,18 +128,39 @@ fclose($fp);
         <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
       </li>
     <?php endif; ?>
-    <li>
-      <span><?php echo $title;?></span>
-      <span id="showTime"></span>
-      <span id="showDate"></span>
-      <span>
-        <input type="radio" name="index" id="new" value="new">
-        <label for="new">New Contents</label>
-        <input type="radio" name="index" id="update" value="update">
-        <label for="update">Version Up</label>
-      </span>
-    </li>
   </ul>
-  <script src="../js/now.js"></script>
+
+  <form id="now" method="GET" class="hidden">
+    <input type="radio" name="index" id="new" value="new">
+    <label for="new">New Contents</label>
+    <input type="radio" name="index" id="update" value="update">
+    <label for="update">Version Up</label>
+  </form>
+
+  <script type="text/javascript">
+  let targets = document.querySelectorAll("#log li")
+  let filter = document.querySelectorAll('input[name="index"]')
+
+  if (filter) {
+    //****** for all select ******
+    for (let i of filter) {
+      i.addEventListener('change', () => {
+        let value = i.value
+        let name = i.getAttribute('name')
+        //*** for each target ***
+        for (let ii of targets) {
+          //*** delete hidden class ***
+          ii.classList.remove('hidden')
+          //*** check target every select ***
+          let item_data = ii.getAttribute('data-' + name)
+          //*** set hidden class ***
+          if (value && value !== 'all' && value !== item_data && !ii.classList.contains('hidden')) {
+            ii.classList.add('hidden')
+          }
+        }
+      })
+    }
+  }
+  </script>
 </body>
 </html>
