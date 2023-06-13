@@ -97,21 +97,21 @@ fclose($fp);
     <?php else : ?>
       <li data-index="new">
         <span>
-          <a href="/">We are Open</a>
-        </span>
-        <span>2021</span>
-        <span>SEP 27</span>
-        <span>creative-community.space</span>
-      </li>
-    <?php endif; ?>
-      <li data-index="new">
-        <span>
           <a href="#">creative-community.space</a>
         </span>
         <span>2021</span>
         <span>SEP 16</span>
         <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
       </li>
+    <?php endif; ?>
+    <li data-index="new">
+      <span>
+        <a href="/">We are Open</a>
+      </span>
+      <span>2021</span>
+      <span>SEP 27</span>
+      <span>creative-community.space</span>
+    </li>
   </ul>
 
   <script type="text/javascript">
