@@ -40,8 +40,17 @@ input[type="radio"]:checked+label {
   color: #fff;
 }
 
+#now,
 #log {
   font-size: 1rem;
+}
+
+#now {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+#log {
   align-items: stretch;
   display: flex;
   flex-flow: row-reverse wrap-reverse;
@@ -51,16 +60,13 @@ input[type="radio"]:checked+label {
   overflow: auto;
   padding: 0;
   margin: 0.5rem 0 0;
-  width: 100%;
   z-index: 5;
 }
 
 #log li {
-  box-sizing: border-box;
   padding: 0.5rem;
+  width: calc(100% / 3);
   word-wrap: break-word;
-  width: 100%;
-  transition: all 1000ms ease;
 }
 
 #log li span {
@@ -72,8 +78,6 @@ input[type="radio"]:checked+label {
 #log li span:first-of-type {
   float: left;
   font-size: 111%;
-  width: 40%;
-  max-width: 400px;
   text-decoration: underline;
 }
 
@@ -85,25 +89,27 @@ input[type="radio"]:checked+label {
 }
 
 #log li span:last-of-type {
-  float: left;
+  clear: both;
   font-size: 95%;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  #log li {
+    padding: 0.5rem;
+    width: calc(100% / 2);
+    word-wrap: break-word;
+  }
 }
 
 @media (max-width: 750px) {
+  #log li {
+    width: 100%;
+  }
+
   #log li span:first-of-type {
     width: auto;
     max-width: auto;
   }
-
-  #log li span:last-of-type {
-    clear: both;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-#now {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: wrap row;
 }
