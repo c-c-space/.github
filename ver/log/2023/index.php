@@ -92,6 +92,10 @@ flock($fp, LOCK_SH);
     #now * {
       display: none;
     }
+
+    #log li {
+      filter: blur(0);
+    }
   }
   </style>
 </head>
@@ -100,6 +104,14 @@ flock($fp, LOCK_SH);
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
+      <a href="#" onclick="window.history.back(); return false;">
+        <p><b>creative-community.space</b></p>
+        <u>↩︎</u>
+      </a>
+      <a href="/ver/" target="_parent">
+        <i>更新履歴</i>
+        <p><b>New Contents & Version Up</b></p>
+      </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
         <p><b>アクセス履歴 | Access Log</b></p>
@@ -155,11 +167,24 @@ flock($fp, LOCK_SH);
   <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
-    <select id="month" name="month"></select>
+    <select id="month" name="month">
+      <select id="month" name="month">
+        <option disabled selected hidden>Select Month</option>
+        <option value="01"><?php echo $year; ?>年1月</option>
+        <option value="02"><?php echo $year; ?>年2月</option>
+        <option value="03"><?php echo $year; ?>年3月</option>
+        <option value="04"><?php echo $year; ?>年4月</option>
+        <option value="05"><?php echo $year; ?>年5月</option>
+        <option value="06"><?php echo $year; ?>年6月</option>
+        <option value="07"><?php echo $year; ?>年7月</option>
+        <option value="08"><?php echo $year; ?>年8月</option>
+        <option value="09"><?php echo $year; ?>年9月</option>
+        <option value="10"><?php echo $year; ?>年10月</option>
+        <option value="11"><?php echo $year; ?>年11月</option>
+        <option value="12"><?php echo $year; ?>年12月</option>
+      </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="../selectmonth.js"></script>
-
-  <video id="userMedia" autoplay playsinline></video>
+  <script src="../../../thankyou/hsl.js"></script></body>
 </body>
 </html>

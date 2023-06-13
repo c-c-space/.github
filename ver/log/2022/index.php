@@ -92,6 +92,10 @@ flock($fp, LOCK_SH);
     #now * {
       display: none;
     }
+
+    #log li {
+      filter: blur(0);
+    }
   }
   </style>
 </head>
@@ -100,6 +104,14 @@ flock($fp, LOCK_SH);
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
+      <a href="#" onclick="window.history.back(); return false;">
+        <p><b>creative-community.space</b></p>
+        <u>↩︎</u>
+      </a>
+      <a href="/ver/" target="_parent">
+        <i>更新履歴</i>
+        <p><b>New Contents & Version Up</b></p>
+      </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
         <p><b>アクセス履歴 | Access Log</b></p>
@@ -157,12 +169,11 @@ flock($fp, LOCK_SH);
   <form id="now" method="GET" class="hidden">
     <select id="month" name="month">
       <option disabled selected hidden>Select Month</option>
-      <option value="10">2022年10月</option>
-      <option value="11">2022年11月</option>
-      <option value="12">2022年12月</option>
+      <option value="10"><?php echo $year; ?>年10月</option>
+      <option value="11"><?php echo $year; ?>年11月</option>
+      <option value="12"><?php echo $year; ?>年12月</option>
     </select>
     <button type="submit">Access Log</button>
   </form>
-  <video id="userMedia" autoplay playsinline></video>
-</body>
+  <script src="../../../thankyou/hsl.js"></script></body>
 </html>
