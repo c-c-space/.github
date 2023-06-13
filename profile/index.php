@@ -18,6 +18,14 @@
     filter: invert();
   }
 
+  .color {
+    color: #000;
+  }
+
+  .bgcolor {
+    background: #fff;
+  }
+
   #menu,
   #log,
   #modal {
