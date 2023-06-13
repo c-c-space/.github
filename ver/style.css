@@ -31,7 +31,7 @@ input[type="radio"]+label {
   cursor: pointer;
   font-size: 125%;
   padding: 0.25rem;
-  margin: 0.25rem;
+  margin: 0.5rem 0.25rem 0.25rem 0.5rem;
   transition: all 1s;
 }
 
@@ -57,7 +57,7 @@ input[type="radio"]:checked+label {
 
 #log li {
   box-sizing: border-box;
-  padding: 0.25rem;
+  padding: 0.5rem;
   word-wrap: break-word;
   width: 100%;
   transition: all 1000ms ease;
@@ -72,6 +72,8 @@ input[type="radio"]:checked+label {
 #log li span:first-of-type {
   float: left;
   font-size: 111%;
+  width: 40%;
+  max-width: 400px;
   text-decoration: underline;
 }
 
@@ -85,6 +87,19 @@ input[type="radio"]:checked+label {
 #log li span:last-of-type {
   float: left;
   font-size: 95%;
+}
+
+@media (max-width: 750px) {
+  #log li span:first-of-type {
+    width: auto;
+    max-width: auto;
+  }
+
+  #log li span:last-of-type {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 #now {
