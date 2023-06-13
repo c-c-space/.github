@@ -70,7 +70,8 @@ fclose($fp);
     cursor: pointer;
     display: inline-block;
     font-size: 150%;
-    margin: 0.25rem;
+    padding: 0.25rem;
+    margin: 0.5rem;
     transition: all 1s;
   }
 
