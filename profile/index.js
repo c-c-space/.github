@@ -9,7 +9,7 @@ if(localStorage.getItem('sign')) {
   <button class="color bgcolor" onclick="location.assign('/sign/')">Sign</button>
   </span>
   <span></span>
-  <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suits on You</span>
+  <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suit You</span>
   `
   info.before(sign);
 }
