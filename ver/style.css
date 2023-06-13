@@ -53,7 +53,7 @@ input[type="radio"]:checked+label {
 #log {
   align-items: stretch;
   display: flex;
-  flex-flow: row-reverse wrap-reverse;
+  flex-flow: row wrap;
   justify-content: flex-start;
   list-style: none;
   position: relative;
