@@ -65,7 +65,7 @@ input[type="radio"]:checked+label {
 }
 
 #log li {
-  padding: 0.5rem;
+  padding: 1rem;
   width: calc(100% / 3);
   word-wrap: break-word;
 }
@@ -98,7 +98,6 @@ input[type="radio"]:checked+label {
 
 @media (max-width: 1000px) {
   #log li {
-    padding: 1rem;
     width: calc(100% / 2);
     word-wrap: break-word;
   }
