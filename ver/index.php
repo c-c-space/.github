@@ -53,14 +53,16 @@ fclose($fp);
     margin: 0;
   }
 
+  input[type="radio"],
+  #new:checked ~ #log li:not(.new),
+  #update:checked ~ #log li:not(.update) {
+    display: none;
+  }
+
   #log li a {
     color: #000;
     pointer-events: auto;
     user-select: auto;
-  }
-
-  input[type="radio"] {
-    display: none;
   }
 
   input[type="radio"]+label {
