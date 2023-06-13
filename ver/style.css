@@ -64,5 +64,4 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: wrap row;
-  justify-content: space-between;
 }
