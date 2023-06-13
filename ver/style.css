@@ -104,7 +104,17 @@ input[type="radio"]:checked+label {
 }
 
 @media (max-width: 750px) {
+  #now,
+  #log {
+    font-size: 0.95rem;
+  }
+
+  #now {
+    margin: 0;
+  }
+
   #log li {
+    padding: 0.5rem;
     width: 100%;
   }
 
