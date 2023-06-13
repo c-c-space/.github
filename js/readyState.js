@@ -88,7 +88,7 @@ document.addEventListener('readystatechange', event => {
       if(!localStorage.getItem('map')) {
         yourStrage.innerHTML += '<a href="/map/">0</a>'
       } else {
-        const yourLocation = JSON.parse(localStorage.getItem('sign'))
+        const yourLocation = JSON.parse(localStorage.getItem('map'))
         yourLocation.innerHTML += `<a href="/map/profile/">${yourLocation.length}</a>`
       }
       yourStrage.innerHTML += ' Your Location<br/>'
