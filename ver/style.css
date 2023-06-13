@@ -1,5 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+input[type="radio"],
+.hidden {
+  display: none;
 }
 
 #log li a,
@@ -12,6 +22,24 @@
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
+#log li a,
+input[type="radio"]+label {
+  color: #000;
+}
+
+input[type="radio"]+label {
+  cursor: pointer;
+  font-size: 125%;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  transition: all 1s;
+}
+
+input[type="radio"]:checked+label {
+  background-color: #000;
+  color: #fff;
+}
+
 #log {
   font-size: 1rem;
   align-items: stretch;
@@ -22,16 +50,16 @@
   position: relative;
   overflow: auto;
   padding: 0;
-  margin: 0;
+  margin: 0.5rem 0 0;
   width: 100%;
   z-index: 5;
 }
 
 #log li {
-  flex: 1 300px;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 0.25rem;
   word-wrap: break-word;
+  width: 100%;
   transition: all 1000ms ease;
 }
 
@@ -55,9 +83,8 @@
 }
 
 #log li span:last-of-type {
-  clear: both;
+  float: left;
   font-size: 95%;
-  width: 100%;
 }
 
 #now {

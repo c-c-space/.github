@@ -48,38 +48,6 @@ fclose($fp);
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
-  body {
-    padding: 0;
-    margin: 0;
-  }
-
-  input[type="radio"],
-  .hidden {
-    display: none;
-  }
-
-  #log li a,
-  input[type="radio"]+label {
-    color: #000;
-    pointer-events: auto;
-    user-select: auto;
-  }
-
-  input[type="radio"]+label {
-    color: #000;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 150%;
-    padding: 0.25rem;
-    margin: 0.5rem;
-    transition: all 1s;
-  }
-
-  input[type="radio"]:checked+label {
-    background-color: #000;
-    color: #fff;
-  }
-
   @media print {
     #menu {
       display: none;
