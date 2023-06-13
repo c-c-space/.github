@@ -43,6 +43,13 @@ fclose($fp);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>card.png" />
 
+  <script type="text/javascript">
+  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
+  if(!localStorage.getItem('yourInfo')) {
+    location.replace('/')
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
