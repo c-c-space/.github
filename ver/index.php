@@ -133,9 +133,9 @@ fclose($fp);
 
   <form id="now" method="GET" class="hidden">
     <input type="radio" name="index" id="new" value="new">
-    <label for="new">New Contents</label>
+    <label class="cc" for="new">New Contents</label>
     <input type="radio" name="index" id="update" value="update">
-    <label for="update">Version Up</label>
+    <label class="cc" for="update">Version Up</label>
   </form>
 
   <script type="text/javascript">
