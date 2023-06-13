@@ -85,6 +85,14 @@ document.addEventListener('readystatechange', event => {
       }
       yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
 
+      if(!localStorage.getItem('map')) {
+        yourStrage.innerHTML += '<a href="/map/">0</a>'
+      } else {
+        const yourLocation = JSON.parse(localStorage.getItem('sign'))
+        yourLocation.innerHTML += `<a href="/map/">${yourLocation.length}</a>`
+      }
+      yourStrage.innerHTML += ' Your Location<br/>'
+
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'))
       submit.innerHTML += '<p>by <b>' + yourInfo.os + '</b></p>'
       if(localStorage.getItem('geolocation')) {
