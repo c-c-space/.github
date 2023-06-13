@@ -55,7 +55,7 @@
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <script src="/js/menu.js"></script>
-  <header id="menu" class="color bgcolor" hidden>
+  <header id="menu" hidden>
     <button id="js-button" class="color bgcolor"><b></b></button>
     <nav id="contents">
       <a href="#" onclick="window.history.back(); return false;">
