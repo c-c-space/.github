@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+#log li a,
+#log li span:first-of-type {
+  font-family: "ipag", "Yu Gothic", "游ゴシック体", monospace;
+  transform: scale(1, 1.25);
+}
+
+#log {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+#log {
+  font-size: 1rem;
+  align-items: stretch;
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: flex-start;
+  list-style: none;
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  z-index: 5;
+}
+
+#log li {
+  flex: 1 300px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  word-wrap: break-word;
+  transition: all 1000ms ease;
+}
+
+#log li span {
+  display: block;
+  margin: 0.25rem;
+  word-wrap: break-word;
+}
+
+#log li span:first-of-type {
+  float: left;
+  font-size: 111%;
+  text-decoration: underline;
+}
+
+#log li span:nth-of-type(2),
+#log li span:nth-of-type(3) {
+  float: right;
+  font-size: 75%;
+  text-transform: uppercase;
+}
+
+#log li span:last-of-type {
+  clear: both;
+  font-size: 95%;
+  width: 100%;
+}
+
+#now {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}

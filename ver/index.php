@@ -43,13 +43,13 @@ fclose($fp);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>card.png" />
 
-  <link rel="stylesheet" href="log/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   body {
-    padding: 0.5rem;
+    padding: 0;
     margin: 0;
   }
 
@@ -107,6 +107,13 @@ fclose($fp);
     </nav>
   </header>
 
+  <form id="now" method="GET" class="hidden">
+    <input type="radio" name="index" id="new" value="new">
+    <label class="cc" for="new">New Contents</label>
+    <input type="radio" name="index" id="update" value="update">
+    <label class="cc" for="update">Version Up</label>
+  </form>
+
   <ul id="log" class="hidden">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
@@ -130,13 +137,6 @@ fclose($fp);
       </li>
     <?php endif; ?>
   </ul>
-
-  <form id="now" method="GET" class="hidden">
-    <input type="radio" name="index" id="new" value="new">
-    <label class="cc" for="new">New Contents</label>
-    <input type="radio" name="index" id="update" value="update">
-    <label class="cc" for="update">Version Up</label>
-  </form>
 
   <script type="text/javascript">
   let targets = document.querySelectorAll("#log li")
