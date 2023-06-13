@@ -12,7 +12,6 @@
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   #js-button,
-  #contents a,
   #log,
   #modal {
     filter: invert();
