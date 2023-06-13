@@ -45,22 +45,19 @@ input[type="radio"]:checked+label {
   font-size: 1rem;
 }
 
-#now {
+#now,
+#log {
   display: flex;
   flex-flow: wrap row;
 }
 
 #log {
   align-items: stretch;
-  display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
   list-style: none;
-  position: relative;
   overflow: auto;
   padding: 0;
   margin: 0.5rem 0 0;
-  z-index: 5;
 }
 
 #log li {
