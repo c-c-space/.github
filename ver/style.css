@@ -51,13 +51,17 @@ input[type="radio"]:checked+label {
   flex-flow: wrap row;
 }
 
+#now {
+  margin: 0.5rem;
+}
+
 #log {
   align-items: stretch;
   justify-content: flex-start;
   list-style: none;
   overflow: auto;
   padding: 0;
-  margin: 0.5rem 0 0;
+  margin: 0;
 }
 
 #log li {
@@ -94,7 +98,7 @@ input[type="radio"]:checked+label {
 
 @media (max-width: 1000px) {
   #log li {
-    padding: 0.5rem;
+    padding: 1rem;
     width: calc(100% / 2);
     word-wrap: break-word;
   }
