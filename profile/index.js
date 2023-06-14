@@ -9,7 +9,7 @@ if(localStorage.getItem('geolocation')) {
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
   <span></span>
-  <span>Last Known Location : <b>${geolocation.latitude}°</b>, <b>${geolocation.longitude}°</b></span>
+  <span><b>${geolocation.latitude}°</b>, <b>${geolocation.longitude}°</b></span>
   `
   info.before(yourMap);
 }
