@@ -10,7 +10,7 @@ if(localStorage.getItem('geolocation')) {
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
   <span></span>
-  <span>You Posted <b>${yourLocation.length}</b> Your Location</span>
+  <span>You Posted <b>${yourLocation.length}</b> Location</span>
   `
   info.before(yourMap);
 }
