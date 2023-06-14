@@ -2,6 +2,7 @@ const info = document.querySelector('#info');
 
 if(localStorage.getItem('geolocation')) {
   const geolocation = JSON.parse(localStorage.getItem('geolocation'));
+  const yourLocation = JSON.parse(localStorage.getItem('map'))
   const yourMap = document.createElement("li");
   yourMap.innerHTML += `
   <span>行ったことのない場所へ行く</span>
@@ -9,7 +10,7 @@ if(localStorage.getItem('geolocation')) {
   <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
   </span>
   <span></span>
-  <span><b>${geolocation.latitude}°</b>, <b>${geolocation.longitude}°</b></span>
+  <span>You Posted <b>${yourLocation.length}</b> Your Location</span>
   `
   info.before(yourMap);
 }
