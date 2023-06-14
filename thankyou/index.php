@@ -89,9 +89,9 @@
     </nav>
   </header>
 
-  <p class="hue hsl noprint">Hue <span id="huecount"></span></p>
-  <p class="saturation hsl noprint">Saturation <span id="saturationcount"></span></p>
-  <p class="lightness hsl noprint">Lightness <span id="lightnesscount"></span></p>
+  <p class="hue hsl">Hue <span id="huecount"></span></p>
+  <p class="saturation hsl">Saturation <span id="saturationcount"></span></p>
+  <p class="lightness hsl">Lightness <span id="lightnesscount"></span></p>
 
   <main id="hello">
     <h1>
