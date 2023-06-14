@@ -14,16 +14,8 @@
       "name" : "Thank You for Visiting",
       "url" : "/thankyou/",
       "type" : "news",
-      "caption" : "inline-block",
-      "note" : "Only for PC"
-    },
-    {
-      "date" : "Touch.js",
-      "name" : "Touch The Screen to Drawing",
-      "url" : "/thankyou/touch.html",
-      "type" : "news",
-      "caption" : "inline-block",
-      "note" : "Only for Touch Device"
+      "caption" : "none",
+      "note" : ""
     }
   ]
 }
