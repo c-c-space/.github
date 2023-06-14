@@ -1,5 +1,19 @@
 const info = document.querySelector('#info');
 
+if(localStorage.getItem('geolocation')) {
+  const geolocation = JSON.parse(localStorage.getItem('geolocation'));
+  const yourMap = document.createElement("li");
+  yourMap.innerHTML += `
+  <span>行ったことのない場所へ行く</span>
+  <span>
+  <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
+  </span>
+  <span>Last Known Location</span>
+  <span>${geolocation.latitude}°, ${geolocation.longitude}°</span>
+  `
+  info.before(yourMap);
+}
+
 if(localStorage.getItem('sign')) {
   const yourSign = JSON.parse(localStorage.getItem('sign'));
   const sign = document.createElement("li");
