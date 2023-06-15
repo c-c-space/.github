@@ -32,7 +32,8 @@ dialog#modal button {
 }
 
 ul#color p button,
-dialog#modal h1 {
+dialog#modal h1,
+dialog#modal a {
   background: #fff;
   color: #000;
   padding: 0.25rem;
@@ -114,7 +115,7 @@ dialog#modal code {
 
 dialog#modal button {
   background: transparent;
-  font-size: 250%;
+  font-size: 500%;
   padding: 0.5rem 0.25rem;
   margin: 0 0;
 }
@@ -141,6 +142,10 @@ dialog#modal button {
     font-size: 2vw;
     padding: 2vw;
   }
+
+  dialog#modal {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -152,5 +157,9 @@ dialog#modal button {
   ul#color p {
     font-size: 3vw;
     padding: 3vw;
+  }
+
+  dialog#modal {
+    font-size: 3.5vw;
   }
 }

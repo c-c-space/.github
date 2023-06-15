@@ -30,6 +30,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
   <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../css/colors.css" />
+  <link rel="icon" href="/ver/icon.png" type="image/png">
+  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
 
 <body>
@@ -43,10 +46,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </ruby>
     </h1>
     <code id="hex"></code>
-    <p id="note"></p>
-    <p id="description"><?php echo $description; ?></p>
+    <p id="note"><?php echo $description; ?></p>
+    <p id="description">cite from
+      <a href="https://irocore.com/" target="_blank" rel="nofollow noreferrer">伝統色のいろは</a>
+    </p>
     <p id="hidden" hidden></p>
-    <button type="button">↩︎</button>
+    <button type="button">×</button>
   </dialog>
   <main>
     <ul id="color"></ul>
