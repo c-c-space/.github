@@ -119,82 +119,82 @@
       <canvas id="youtube" width="800" height="800"></canvas>
     </section>
     <pre>
-      <u>ダウンロード</u>
+<u>ダウンロード</u>
 
-      アイコンを右クリック
-      名前をつけて画像を保存
+アイコンを右クリック
+名前をつけて画像を保存
     </pre>
     <pre>
-      <u>フォント</u>
+<u>フォント</u>
 
-      IPA Font (IPAGothic/IPAPGothic)
-      IPAゴシック/IPA Pゴシック (Ver.003.03)
+IPA Font (IPAGothic/IPAPGothic)
+IPAゴシック/IPA Pゴシック (Ver.003.03)
 
-      by <a href="https://moji.or.jp/ipafont/ipa00303/" target="_blank" rel="nofollow noreferrer">文字情報技術促進協議会</a>
+by <a href="https://moji.or.jp/ipafont/ipa00303/" target="_blank" rel="nofollow noreferrer">文字情報技術促進協議会</a>
     </pre>
   </main>
 
   <main id="howto" hidden>
     <pre>
-      // フォントの指定 と 変形
+// フォントの指定 と 変形
 
-      @font-face {
-        font-family: "ipag";
-        src: url("/ipag.ttc");
-      }
+@font-face {
+  font-family: "ipag";
+  src: url("/ipag.ttc");
+}
 
-      .cc {
-        display: inline-block;
-        font-family: "ipag", monospace;
-        font-weight: 500;
-        transform: scale(1, 1.25);
-      }
+.cc {
+  display: inline-block;
+  font-family: "ipag", monospace;
+  font-weight: 500;
+  transform: scale(1, 1.25);
+}
     </pre>
     <pre>
-      // CSS で ロゴを描画
+// CSS で ロゴを描画
 
-      #js-button {
-        appearance: none;
-        outline: none;
-      }
+#js-button {
+  appearance: none;
+  outline: none;
+}
 
-      #js-button,
-      #js-button b {
-        box-sizing: border-box;
-      }
+#js-button,
+#js-button b {
+  box-sizing: border-box;
+}
 
-      #js-button {
-        background-color: transparent;
-        border-radius: 50%;
-        color: #000;
-        display: grid;
-        place-items: center;
-      }
+#js-button {
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  display: grid;
+  place-items: center;
+}
 
-      #js-button b::before {
-        content: 'CC';
-        display: inline-block;
-        font-family: "ipag", monospace;
-        transform: scale(1, 1.25);
-      }
+#js-button b::before {
+  content: 'CC';
+  display: inline-block;
+  font-family: "ipag", monospace;
+  transform: scale(1, 1.25);
+}
 
-      #js-button {
-        border: solid 0.2rem;
-        font-size: 1.75rem;
-        margin: 1rem;
-        width: 3.33rem;
-        height: 3.33rem;
-      }
+#js-button {
+  border: solid 0.2rem;
+  font-size: 1.75rem;
+  margin: 1rem;
+  width: 3.33rem;
+  height: 3.33rem;
+}
 
-      @media screen and (max-width: 750px) {
-        #js-button {
-          border: solid 0.45vw;
-          font-size: 4vw;
-          margin: 2.5%;
-          width: 7.5vw;
-          height: 7.5vw;
-        }
-      }
+@media screen and (max-width: 750px) {
+  #js-button {
+    border: solid 0.45vw;
+    font-size: 4vw;
+    margin: 2.5%;
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
 
     </pre>
   </main>
