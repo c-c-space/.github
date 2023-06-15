@@ -145,7 +145,7 @@ fclose($fp);
       <option selected>Background Color</option>
     </select>
     <hr/>
-    <label for="fontSize">Font Size</label>
+    <label for="fontSize">文字の大きさ</label>
     <select class="color bgcolor" id="fontSize">
       <option value="13px">Small</option>
       <option value="16px" selected>Medium</option>
