@@ -6,7 +6,9 @@
 
 タブに表示される画像・ブックマークした際に表示される画像
 ファビコン（favicon）を生成
-`<canvas width="32" height="32"></canvas>`
+```
+<canvas width="32" height="32"></canvas>
+```
 
 HTMLにファビコンを設定
 `<link rel="icon" type="image/png" href="/ver/icon.png" sizes="32x32">`
@@ -14,8 +16,11 @@ HTMLにファビコンを設定
 
 iOS端末・Android端末のホーム画面にショートカット(ブックマーク)を設定する
 Webクリップアイコンを生成
-`<canvas width="180" height="180"></canvas>`
-`<canvas width="192" height="192"></canvas>`
+
+```
+<canvas width="180" height="180"></canvas>
+<canvas width="192" height="192"></canvas>
+```
 
 HTMLにWebクリップアイコンを設定
 ```
@@ -35,14 +40,28 @@ HTMLにWindows用アイコンを設定
 ```
 <!-- Windows Tiles -->
 <meta name="application-name" content="creative-community.space"/>
-<meta name="msapplication-TileImage" content="/ver/icon/tile-medium.jpg"/>
-<meta name="msapplication-square70x70logo" content="/ver/icon/tile-small.jpg"/>
-<meta name="msapplication-square150x150logo" content="/ver/icon/tile-medium.jpg"/>
-<meta name="msapplication-wide310x150logo" content="/ver/icon/tile-wide.jpg"/>
-<meta name="msapplication-square310x310logo" content="/ver/icon/tile-large.jpg"/>
+<meta name="msapplication-TileImage" content="/ver/icon/tile-medium.png"/>
+<meta name="msapplication-square70x70logo" content="/ver/icon/tile-small.png"/>
+<meta name="msapplication-square150x150logo" content="/ver/icon/tile-medium.png"/>
+<meta name="msapplication-wide310x150logo" content="/ver/icon/tile-wide.png"/>
+<meta name="msapplication-square310x310logo" content="/ver/icon/tile-large.png"/>
 <meta name="msapplication-TileColor" content="#fff"/>
 ```
 
+
+
+Twitterカード
+Summary （サマリーカード）を生成
+
+```
+<canvas width="800" height="800"></canvas>
+```
+
+HTMLにSummary （サマリーカード）を設定
+```
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="summary.png">
+```
 
 
 
