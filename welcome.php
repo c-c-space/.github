@@ -7,5 +7,4 @@ Now is The Season named
 <a href="hello/">
 <?php echo $sekkiName;?> (<?php echo $sekki;?>)
 </a>
-in
-<b><?php echo $season;?></b>
+in <b><?php echo $season;?></b>

@@ -8,25 +8,16 @@ menuCSS.rel = "stylesheet";
 document.getElementsByTagName("head")[0].prepend(menuCSS);
 
 document.addEventListener('readystatechange', event => {
-
   if (event.target.readyState === 'loading') {
     // 文書の読み込み中に実行する
-  }
-
-  else if (event.target.readyState === 'interactive') {
-    // 使用するウェブストレージの種類を設定
-    const storage = localStorage;
-
+  } else if (event.target.readyState === 'interactive') {
     const button = document.querySelector('#js-button');
     const menu = document.querySelector('#menu');
     const box = document.querySelector('body');
 
-    // Web Storageにアイテムが存在しているかを確認する
-    if(!storage.getItem('yourInfo')) {
-      // アイテムが存在しない場合に実行する文
+    if(!localStorage.getItem('yourInfo')) {
       menu.hidden = true;
     } else {
-      // アイテムが存在する場合に実行する文
       menu.hidden = false;
     }
 
@@ -34,9 +25,7 @@ document.addEventListener('readystatechange', event => {
       menu.classList.toggle('active');
       box.classList.toggle('open');
     });
-  }
-
-  else if (event.target.readyState === 'complete') {
+  } else if (event.target.readyState === 'complete') {
     // Add .randomRGBbg
     const newRGBbgAll = document.querySelectorAll('#contents a');
     for (const newRGBbg of newRGBbgAll) {
@@ -63,5 +52,4 @@ document.addEventListener('readystatechange', event => {
       });
     }
   }
-
 });

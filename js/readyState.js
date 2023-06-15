@@ -37,11 +37,19 @@ function createVideo() {
   });
 }
 
-document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'interactive') {
-  }
+function deleteVideo() {
+  const stream = userMedia.srcObject;
+  const tracks = stream.getTracks();
 
-  else if (event.target.readyState === 'complete') {
+  tracks.forEach(function(track) {
+    track.stop();
+  });
+
+  userMedia.remove()
+}
+
+document.addEventListener('readystatechange', event => {
+  if (event.target.readyState === 'complete') {
     const submit = document.createElement('section')
     submit.classList.add('submit')
     hello.appendChild(submit)
@@ -52,21 +60,16 @@ document.addEventListener('readystatechange', event => {
       submitBtn.setAttribute('id','submit-btn')
       submitBtn.textContent = 'Your Info'
       submit.appendChild(submitBtn)
+
       submitBtn.addEventListener('click', function () {
-        createVideo()
         changeHidden()
+        createVideo()
       })
 
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
-        const stream = userMedia.srcObject;
-        const tracks = stream.getTracks();
-
-        tracks.forEach(function(track) {
-          track.stop();
-        });
-
-        userMedia.remove()
+        changeHidden()
+        deleteVideo()
       })
     } else {
       fetchHTML('welcome.php','#readme h1')

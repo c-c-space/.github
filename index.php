@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <?php require('ver/icon.html');?>
+
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/index.js" async></script>
   <script src="js/hello.js"></script>
@@ -15,32 +17,9 @@
   <link rel="stylesheet" href="thankyou/style.css" />
   <link rel="stylesheet" href="thankyou/print.css" media="print"/>
   <link rel="stylesheet" href="hello/css/mobile.css" media="screen and (max-width: 750px)" />
-  <style>
-  #js-button,
-  #contents a,
-  main {
-    filter: invert();
-  }
-
-  #menu label {
-    text-shadow:
-    1px 1px 0 #fff,
-    2px 2px 0 #fff,
-    3px 3px 0 #fff;
-  }
-
-  header,
-  main,
-  #sketch,
-  #userMedia {
-    mix-blend-mode: difference;
-  }
-  </style>
-  <link rel="icon" href="ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="ver/icon/apple.png" sizes="180x180" type="image/png">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -50,13 +29,12 @@
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <main id="hello">
-    <?php
-    require('hello/all/greeting.php');
-    ?>
     <section id="readme">
       <h1>
+        <?php require('hello/all/greeting.php');?>
         <b><?php echo $greeting;?></b><br>
         IP <code><?php echo $_SERVER["REMOTE_ADDR"];?></code>
       </h1>
@@ -90,7 +68,7 @@
       <p><?php require('yourinfo.php'); ?></p>
       <section>
         <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
-        <button type="button" id="back-btn" onclick="changeHidden()">Back</button>
+        <button type="button" id="back-btn">Back</button>
       </section>
     </form>
     <script src="js/log.js"></script>
@@ -118,7 +96,7 @@
     dialogModal.close();
   });
 
-  fetchHTML('profile/about.html','#about')
+  fetchHTML('profile/yourinfo.html','#about')
   </script>
 
   <section id="you">

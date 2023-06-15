@@ -1,9 +1,10 @@
 'use strict'
 
 window.addEventListener('load', event => {
-  const hello = document.querySelector('#hello')
-  const speechAPI = document.createElement('section')
-  const voiceSelect = document.createElement('select')
+  const hello = document.querySelector('#hello'),
+  speechAPI = document.createElement('section'),
+  voiceSelect = document.createElement('select');
+
   voiceSelect.setAttribute('id','voice-select')
 
   function appendVoices() {
@@ -24,12 +25,13 @@ window.addEventListener('load', event => {
     appendVoices()
   }
 
-  const playBtn = document.createElement('input')
+  const playBtn = document.createElement('input'),
+  stopBtn = document.createElement('input');
+
   playBtn.setAttribute('type','button')
   playBtn.setAttribute('id','speak-btn')
   playBtn.setAttribute('value','Play')
 
-  const stopBtn = document.createElement('input')
   stopBtn.setAttribute('type','button')
   stopBtn.setAttribute('id','cancel-btn')
   stopBtn.setAttribute('value','Stop')

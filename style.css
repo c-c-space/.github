@@ -1,0 +1,12 @@
+#js-button,
+#contents a,
+main {
+  filter: invert();
+}
+
+header,
+main,
+#sketch,
+#userMedia {
+  mix-blend-mode: difference;
+}
