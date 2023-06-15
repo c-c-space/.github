@@ -71,7 +71,7 @@ section small {
 
 pre {
   box-sizing: border-box;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   overflow: auto;
   max-width: 100%;
 }
