@@ -8,7 +8,9 @@ hr {
   margin: 1rem;
 }
 
-#log span {
+#ip,
+#os,
+#info span {
   word-break: break-all;
 }
 
