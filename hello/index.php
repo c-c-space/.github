@@ -135,11 +135,15 @@ fclose($fp);
         <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
       </small>
     </p>
-    <label for="color">Text Color</label>
-    <select class="color bgcolor" id="color"></select>
+    <label for="color">文字の色</label>
+    <select class="color bgcolor" id="bgcolor">
+      <option selected>Text Color</option>
+    </select>
     <br/>
-    <label for="bgcolor">Background Color</label>
-    <select class="color bgcolor" id="bgcolor"></select>
+    <label for="bgcolor">背景の色</label>
+    <select class="color bgcolor" id="color">
+      <option selected>Background Color</option>
+    </select>
     <hr/>
     <label for="fontSize">Font Size</label>
     <select class="color bgcolor" id="fontSize">
