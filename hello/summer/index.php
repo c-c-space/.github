@@ -167,13 +167,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
           <option selected>Background Color</option>
         </select>
         <hr/>
-        <label for="fontSize">文字の大きさ</label>
-        <select class="color bgcolor" id="fontSize">
+        <label for="fontSize" hidden>文字の大きさ</label>
+        <select class="color bgcolor" id="fontSize" hidden>
           <option value="13px">Small</option>
           <option value="16px" selected>Medium</option>
           <option value="20px">Large</option>
         </select>
-        <hr/>
       </section>
       コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </form>
