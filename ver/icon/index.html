@@ -6,8 +6,21 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" type="image/png" href="/ver/icon.png" sizes="32x32">
+
+  <!-- Web clip Icons -->
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+
+  <!-- Windows Tiles -->
+  <meta name="application-name" content="creative-community.space"/>
+  <meta name="msapplication-TileImage" content="/ver/icon/tile-medium.jpg"/>
+  <meta name="msapplication-square70x70logo" content="/ver/icon/tile-small.jpg"/>
+  <meta name="msapplication-square150x150logo" content="/ver/icon/tile-medium.jpg"/>
+  <meta name="msapplication-wide310x150logo" content="/ver/icon/tile-wide.jpg"/>
+  <meta name="msapplication-square310x310logo" content="/ver/icon/tile-large.jpg"/>
+  <meta name="msapplication-TileColor" content="#fff"/>
 
   <style type="text/css">
   p,
@@ -27,7 +40,7 @@
   }
   </style>
 </head>
-<body onload="draw();">
+<body onload="icon();">
   <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
@@ -45,9 +58,30 @@
     <section>
       <p>
         <small>ファビコン</small><br/>
-        30 × 30 px
+        32 × 32 px
       </p>
-      <canvas id="icon" width="30" height="30"></canvas>
+      <canvas id="icon" width="32" height="32"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(小)</small><br/>
+        70 × 70 px
+      </p>
+      <canvas id="icon" width="70" height="70"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(中)</small><br/>
+        150 × 150 px
+      </p>
+      <canvas id="icon" width="150" height="150"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(ワイド)</small><br/>
+        310 × 150 px
+      </p>
+      <canvas id="icon" width="310" height="150"></canvas>
     </section>
     <section>
       <p>
@@ -65,7 +99,7 @@
     </section>
     <section>
       <p>
-        <small>Instagram用アイコン</small><br/>
+        <small>Windows用アイコン(大)・Instagram用アイコン</small><br/>
         320 × 320 px
       </p>
       <canvas id="instagram" width="320" height="320"></canvas>
@@ -104,8 +138,9 @@ https://moji.or.jp/ipafont/ipa00303/
   </main>
 
   <main id="howto" hidden>
-    <section>
-      <pre>
+    <pre>
+// フォントの指定 と 変形
+
 @font-face {
   font-family: "ipag";
   src: url("/ipag.ttc");
@@ -117,11 +152,9 @@ https://moji.or.jp/ipafont/ipa00303/
   font-weight: 500;
   transform: scale(1, 1.25);
 }
-      </pre>
-    </section>
-    <section>
-      <pre>
-// menu.css
+    </pre>
+    <pre>
+// CSS で ロゴを描画
 
 #js-button {
   appearance: none;
@@ -166,8 +199,7 @@ https://moji.or.jp/ipafont/ipa00303/
   }
 }
 
-      </pre>
-    </section>
+    </pre>
   </main>
   <script type="text/javascript">
   function changeHidden() {
@@ -184,7 +216,7 @@ https://moji.or.jp/ipafont/ipa00303/
   }
 
   // canvas要素に円と文字を描画
-  function draw() {
+  function icon() {
     const canvasAll = document.querySelectorAll('canvas');
     for  (let canvas of canvasAll) {
       if (canvas.getContext) {

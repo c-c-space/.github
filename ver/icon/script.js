@@ -1,5 +1,5 @@
 // キャンバス要素に幅・高さを設定
-// <canvas width="30" height="30"></canvas>
+// <canvas width="32" height="32"></canvas>
 // <canvas width="180" height="180"></canvas>
 // <canvas width="192" height="192"></canvas>
 // <canvas width="320" height="320"></canvas>
