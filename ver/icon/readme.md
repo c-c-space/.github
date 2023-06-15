@@ -10,10 +10,6 @@
 <canvas width="32" height="32"></canvas>
 ```
 
-HTMLにファビコンを設定
-`<link rel="icon" type="image/png" href="/ver/icon.png" sizes="32x32">`
-
-
 iOS端末・Android端末のホーム画面にショートカット(ブックマーク)を設定する
 Webクリップアイコンを生成
 
@@ -22,32 +18,16 @@ Webクリップアイコンを生成
 <canvas width="192" height="192"></canvas>
 ```
 
-HTMLにWebクリップアイコンを設定
-```
-<link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-<link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-```
-
 
 Windowsのスタート画面にウェブページを保存した時に表示される画像
 Windows用アイコンを生成
-`<canvas width="70" height="70"></canvas>`
-`<canvas width="150" height="150"></canvas>`
-`<canvas width="310" height="150"></canvas>`
-`<canvas width="320" height="320"></canvas>`
 
-HTMLにWindows用アイコンを設定
 ```
-<!-- Windows Tiles -->
-<meta name="application-name" content="creative-community.space"/>
-<meta name="msapplication-TileImage" content="/ver/icon/tile-medium.png"/>
-<meta name="msapplication-square70x70logo" content="/ver/icon/tile-small.png"/>
-<meta name="msapplication-square150x150logo" content="/ver/icon/tile-medium.png"/>
-<meta name="msapplication-wide310x150logo" content="/ver/icon/tile-wide.png"/>
-<meta name="msapplication-square310x310logo" content="/ver/icon/tile-large.png"/>
-<meta name="msapplication-TileColor" content="#fff"/>
+<canvas width="70" height="70"></canvas>
+<canvas width="150" height="150"></canvas>
+<canvas width="310" height="150"></canvas>
+<canvas width="320" height="320"></canvas>
 ```
-
 
 
 Twitterカード
@@ -57,13 +37,34 @@ Summary （サマリーカード）を生成
 <canvas width="800" height="800"></canvas>
 ```
 
+***
+
+HTMLにファビコン・Webクリップアイコンを設定
+```
+<link rel="icon" type="image/png" href="/ver/icon.png" sizes="32x32">
+<link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+```
+
+HTMLにWindows用アイコンを設定
+```
+<meta name="application-name" content="creative-community.space"/>
+<meta name="msapplication-TileImage" content="/ver/icon/tile-medium.png"/>
+<meta name="msapplication-square70x70logo" content="/ver/icon/tile-small.png"/>
+<meta name="msapplication-square150x150logo" content="/ver/icon/tile-medium.png"/>
+<meta name="msapplication-wide310x150logo" content="/ver/icon/tile-wide.png"/>
+<meta name="msapplication-square310x310logo" content="/ver/icon/tile-large.png"/>
+<meta name="msapplication-TileColor" content="#fff"/>
+```
+
 HTMLにSummary （サマリーカード）を設定
 ```
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="summary.png">
 ```
 
-
+---
+すべてのキャンバス要素にテキストを描画するJavaScript
 
 ```
 function icon() {
