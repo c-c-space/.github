@@ -35,7 +35,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="about">
     <h1>
       <ruby>
-        <b id="name">日本の伝統的なの色</b>
+        <b id="name">日本の伝統的な季節の色</b>
         <rp>(</rp>
         <rt id="yomi"><?php echo $title; ?></rt>
         <rp>)</rp>
