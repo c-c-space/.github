@@ -1,6 +1,34 @@
 # icon()
 代表的なアイコンサイズのcanvas要素に円と文字を描画しアイコンを作成
 
+```
+function icon() {
+  const canvasAll = document.querySelectorAll('canvas');
+  for  (let canvas of canvasAll) {
+    if (canvas.getContext) {
+      const ctx = canvas.getContext('2d');
+
+      const circle = new Path2D();
+      const x = (canvas.width / 2);
+      const y = (canvas.height / 2);
+
+      circle.arc(x, y, canvas.width/2.5, 0, Math.PI * 2, true);
+      ctx.lineWidth = canvas.width/10;
+      ctx.strokeStyle = '#000';
+      ctx.fillStyle = '#fff';
+      ctx.stroke(circle);
+      ctx.fill(circle);
+
+      ctx.font = `${x * 1.23}px 'ipag', monospace`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillStyle = '#000';
+      ctx.fillText('CC', x, y, x);
+      ctx.scale(1, 1.25);
+    }
+  }
+}
+```
 
 ## キャンバス要素に幅・高さを設定
 
@@ -61,36 +89,4 @@ HTMLにSummary （サマリーカード）を設定
 ```
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="summary.png">
-```
-
----
-すべてのキャンバス要素にテキストを描画するJavaScript
-
-```
-function icon() {
-  const canvasAll = document.querySelectorAll('canvas');
-  for  (let canvas of canvasAll) {
-    if (canvas.getContext) {
-      const ctx = canvas.getContext('2d');
-
-      const circle = new Path2D();
-      const x = (canvas.width / 2);
-      const y = (canvas.height / 2);
-
-      circle.arc(x, y, canvas.width/2.5, 0, Math.PI * 2, true);
-      ctx.lineWidth = canvas.width/10;
-      ctx.strokeStyle = '#000';
-      ctx.fillStyle = '#fff';
-      ctx.stroke(circle);
-      ctx.fill(circle);
-
-      ctx.font = `${x * 1.23}px 'ipag', monospace`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillStyle = '#000';
-      ctx.fillText('CC', x, y, x);
-      ctx.scale(1, 1.25);
-    }
-  }
-}
 ```
