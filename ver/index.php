@@ -29,6 +29,12 @@ fclose($fp);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <script type="text/javascript">
+  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
+  if(!localStorage.getItem('yourInfo')) {
+    location.replace('/')
+  }
+  </script>
 
   <title><?php echo $title; ?> | <?php echo $author; ?></title>
   <meta name="author" content="<?php echo $author; ?>">
@@ -43,17 +49,11 @@ fclose($fp);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>card.png" />
 
-  <script type="text/javascript">
-  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
-  if(!localStorage.getItem('yourInfo')) {
-    location.replace('/')
-  }
-  </script>
-
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+  <?php require('icon.html');?>
+
   <style>
   @media print {
     #menu {
@@ -63,7 +63,6 @@ fclose($fp);
   </style>
 </head>
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -81,6 +80,7 @@ fclose($fp);
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <form id="now" method="GET" class="hidden">
     <input type="radio" name="index" id="new" value="new">

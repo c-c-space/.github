@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="../ver/log/style.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="../css/modal.css" />
   <link rel="stylesheet" href="../css/userMedia.css" />
   <link rel="stylesheet" href="style.css" />

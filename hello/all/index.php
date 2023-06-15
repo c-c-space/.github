@@ -28,6 +28,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
+  <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" href="../css/controls.css" />
@@ -98,12 +99,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 </head>
 
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
     <button type="button" id="js-button"><b></b></button>
     <?php require('../all/24sekki.php'); ?>
     <?php require('../all/menu.php'); ?>
   </header>
+  <script src="/js/menu.js"></script>
 
   <main id="hello" hidden>
     <input type="button" onclick="ChangeHidden()" value="二十四節気 24 Sekki">

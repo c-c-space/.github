@@ -1,12 +1,5 @@
 'use strict'
 
-const menuCSS = document.createElement("link");
-menuCSS.href = "/css/menu.css";
-menuCSS.type = "text/css";
-menuCSS.rel = "stylesheet";
-
-document.getElementsByTagName("head")[0].prepend(menuCSS);
-
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'loading') {
     // 文書の読み込み中に実行する

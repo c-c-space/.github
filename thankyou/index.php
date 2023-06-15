@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <script type="text/javascript">
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    location.replace('touch.html')
+  }
+  </script>
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="../hello/style.css" />
   <link rel="stylesheet" href="../hello/css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-
   <style>
   #js-button,
   #contents a {
@@ -70,15 +75,9 @@
   }
   </style>
   <link rel="stylesheet" href="print.css" media="print"/>
-  <script type="text/javascript">
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    location.replace('touch.html')
-  }
-  </script>
 </head>
 
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -88,6 +87,7 @@
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <p class="hue hsl">Hue <span id="huecount"></span></p>
   <p class="saturation hsl">Saturation <span id="saturationcount"></span></p>
@@ -119,7 +119,7 @@
     </div>
   </section>
 
-  <aside id="submit">
+  <aside id="www">
     <h2 class="cc">
       OMG!<br />
       Your Drawing is Seems So Beautiful<br />

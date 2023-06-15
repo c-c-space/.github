@@ -43,6 +43,7 @@ flock($fp, LOCK_SH);
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="selectmonth.css" />
+  <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
@@ -82,11 +83,6 @@ flock($fp, LOCK_SH);
   }
 
   @media print {
-    body {
-      height: 100vh;
-      max-height: -webkit-fill-available;
-    }
-
     #menu,
     #now,
     #now * {
@@ -100,7 +96,6 @@ flock($fp, LOCK_SH);
   </style>
 </head>
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -118,6 +113,7 @@ flock($fp, LOCK_SH);
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <ul id="log" class="hidden">
     <li hidden>

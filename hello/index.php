@@ -27,6 +27,7 @@ fclose($fp);
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
   <style media="screen">
   #hello #readme {
     margin: 0;
@@ -44,7 +45,6 @@ fclose($fp);
 </head>
 
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
     <button class="color bgcolor" id="js-button"><b></b></button>
     <nav id="contents">
@@ -62,6 +62,7 @@ fclose($fp);
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <main id="hello" hidden>
     <details>
