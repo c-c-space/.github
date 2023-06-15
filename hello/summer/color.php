@@ -2,7 +2,6 @@
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
-require('../all/24sekki.php');
 
 $this = "summer";
 $thisSeason = "夏 Summer";
