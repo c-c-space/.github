@@ -1,10 +1,11 @@
 # Index | creative-community.space
-How to Coding | creative-community.space
 
+## HEAD
 * [index.json を 読み込み、メタデータコンテンツ と アンカー要素を生成](js/index.js)
 * [Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行](js/hello.js)
 * [ローカルストレージに追加されている情報を取得し、ページ内容を生成](js/readyState.js)
 
+***
 
 ## BODY
 

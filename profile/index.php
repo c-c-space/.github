@@ -6,56 +6,13 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
   <link rel="stylesheet" href="../ver/log/style.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="../css/userMedia.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-  <style>
-  #js-button,
-  #contents a,
-  #log,
-  #modal {
-    filter: invert();
-  }
-
-  .color {
-    color: #000;
-  }
-
-  .bgcolor {
-    background: #fff;
-  }
-
-  #menu,
-  #log,
-  #modal {
-    mix-blend-mode: difference;
-  }
-
-  #log span {
-    word-break: break-all;
-  }
-
-  @media (orientation: portrait) {
-    #log {
-      margin-bottom: 0.5rem;
-    }
-
-    #now {
-      position: relative;
-    }
-  }
-
-  @media print{
-    #menu,
-    #now {
-      display: none;
-    }
-  }
-  </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button" class="color bgcolor"><b></b></button>
     <nav id="contents">
@@ -65,6 +22,7 @@
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <ul id="log" class="hidden">
     <li id="battery">
@@ -89,6 +47,7 @@
       <span>Height: <code id="outInnerHeight"></code> px</span>
       <span id="network"></span>
     </li>
+
     <li id="screen">
       <span>
         <u>Screen Size</u>
@@ -121,8 +80,8 @@
       echo "<span>USER AGENT <code id='os'>" . $os . "</code></span>";
       ?>
     </li>
+    <script src="../js/log.js"></script>
   </ul>
-  <script src="../js/log.js"></script>
 
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {

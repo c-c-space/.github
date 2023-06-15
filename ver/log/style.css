@@ -84,12 +84,6 @@
   filter: invert(1);
 }
 
-#log,
-#userMedia {
-  padding: 0;
-  margin: 0;
-}
-
 #log {
   font-size: 1rem;
   align-items: stretch;
@@ -98,7 +92,8 @@
   justify-content: flex-start;
   list-style: none;
   position: relative;
-  margin-bottom: 5rem;
+  padding: 0;
+  margin: 0 0 5rem;
   overflow: auto;
   width: 100%;
   z-index: 5;
@@ -145,23 +140,8 @@
   padding: 0.25rem;
 }
 
-#userMedia,
 #now {
   position: fixed;
-}
-
-#userMedia {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-#userMedia {
-  background-color: #000;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
 }
 
 #now {

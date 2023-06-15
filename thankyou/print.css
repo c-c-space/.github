@@ -7,7 +7,7 @@
 }
 
 #you,
-#submit {
+#www {
   color: #fff;
   box-sizing: border-box;
   display: block;
@@ -45,7 +45,7 @@
   width: 7.5rem;
 }
 
-#submit {
+#www {
   top: 100vh;
   color: #000;
   background: #fff;
@@ -53,34 +53,31 @@
   place-items: center;
 }
 
-#submit h2,
-#submit p,
-#submit small {
+#www h2,
+#www small {
   display: block;
   padding: 0;
   margin: 0;
 }
 
-#submit h2,
-#submit p {
+#www h2 {
   max-width: 75%;
   line-height: 150%;
 }
 
-#submit small {
+#www small {
   max-width: 90%;
 }
 
-#submit h2{
+#www h2 {
   font-size: 150%;
   font-weight: 500;
 }
 
-#submit h2 strong,
-#submit p {
+#www h2 strong {
   font-size: 125%;
 }
 
-#submit small {
+#www small {
   font-size: 75%;
 }

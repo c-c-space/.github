@@ -8,9 +8,34 @@ hr {
   margin: 1rem;
 }
 
+#log span {
+  word-break: break-all;
+}
+
 #log button,
 #log code {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+.color {
+  color: #000;
+}
+
+.bgcolor {
+  background: #fff;
+}
+
+#js-button,
+#contents a,
+#log,
+#modal {
+  filter: invert();
+}
+
+#menu,
+#log,
+#modal {
+  mix-blend-mode: difference;
 }
 
 #now {
@@ -84,4 +109,21 @@ meter::-webkit-meter-horizontal-suboptimal-value {
 
 meter::-webkit-meter-horizontal-even-less-good-value {
   background: red;
+}
+
+@media (orientation: portrait) {
+  #log {
+    margin-bottom: 0.5rem;
+  }
+
+  #now {
+    position: relative;
+  }
+}
+
+@media print{
+  #menu,
+  #now {
+    display: none;
+  }
 }

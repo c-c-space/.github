@@ -12,7 +12,9 @@
   <script src="js/readyState.js"></script>
   <link rel="stylesheet" href="hello/style.css" />
   <link rel="stylesheet" href="hello/css/controls.css" />
-  <link rel="stylesheet" href="profile/css/modal.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/userMedia.css" />
   <link rel="stylesheet" href="ver/log/style.css" />
   <link rel="stylesheet" href="thankyou/style.css" />
   <link rel="stylesheet" href="thankyou/print.css" media="print"/>
@@ -106,7 +108,7 @@
       <p class="cc">come on join us :)</p>
     </div>
   </section>
-  <aside id="submit">
+  <aside id="www">
     <h2 class="cc">
       <strong>
         This is The Website that<br />

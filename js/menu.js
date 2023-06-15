@@ -1,7 +1,7 @@
 'use strict'
 
 const menuCSS = document.createElement("link");
-menuCSS.href = "/menu.css";
+menuCSS.href = "/css/menu.css";
 menuCSS.type = "text/css";
 menuCSS.rel = "stylesheet";
 
