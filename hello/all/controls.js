@@ -9,14 +9,14 @@ async function colorJSON(requestURL) {
   colorIndex(colors);
 }
 
-function colorIndex(obj) {
+function colorIndex(i) {
   let namesForm = document.querySelectorAll('#bgcolor, #color');
   for (const names of namesForm) {
-    const allColors = obj.color;
-    for (const eachColor of allColors) {
+    const allColors = i.color;
+    for (const color of allColors) {
       let option = document.createElement('option')
-      option.textContent = eachColor.yomi
-      option.value = eachColor.hex
+      option.textContent = color.yomi
+      option.value = color.hex
       names.appendChild(option)
     }
   }
