@@ -10,6 +10,9 @@
 // <input type="text" id="textHere" value="Text Here">
 // <button onclick="drawingText()">drawingText()</button>
 
+
+'use strict'
+
 // 入力欄のテキストをすべてのキャンバス要素に描画
 function drawingText() {
   const text = document.querySelector('#textHere');
@@ -35,3 +38,5 @@ function drawingText() {
     }
   }
 }
+
+/* Copyright (C) 2021 creative-community.space */
