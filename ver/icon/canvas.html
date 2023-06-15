@@ -21,6 +21,12 @@
   #change {
     transform: scale(1, 1.25);
   }
+
+  @media print {
+    #menu {
+      display: none;
+    }
+  }
   </style>
 </head>
 
@@ -104,7 +110,7 @@ canvasIcons() ボタンを押す
     </section>
     <section>
       <p>
-        <small>YouTube用アイコン</small><br/>
+        <small>サマリーカード・YouTube用アイコン</small><br/>
         800 × 800 px
       </p>
       <canvas id="youtube" width="800" height="800"></canvas>
