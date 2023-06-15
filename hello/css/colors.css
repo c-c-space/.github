@@ -4,25 +4,27 @@ html {
 
 code,
 ul#color,
-main#about h1 {
+dialog#modal h1 {
   font-family: "ipag", "Arial Narrow", monospace;
 }
 
-main#about p {
+dialog#modal p {
   font-family: "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
 body,
 ul#color,
-main#about h1 {
+dialog#modal,
+dialog#modal h1 {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 ul#color p,
-main#about p,
-main#about code,
-main#about button {
+dialog#modal p,
+dialog#modal code,
+dialog#modal button {
   color: #fff;
   position: relative;
   mix-blend-mode: difference;
@@ -30,7 +32,7 @@ main#about button {
 }
 
 ul#color p button,
-main#about h1 {
+dialog#modal h1 {
   background: #fff;
   color: #000;
   padding: 0.25rem;
@@ -70,44 +72,45 @@ ul#color p button {
   margin: 0;
 }
 
-main#about {
+dialog#modal {
   background-size: cover;
+  border: none;
+  outline: none;
   font-size: 15px;
+  position: fixed;
   width: 100%;
   height: 100vh;
-  max-height: -webkit-fill-available;
 }
 
-main#about h1 {
+dialog#modal h1 {
   display: inline-block;
   font-size: 175%;
   mix-blend-mode: difference;
 }
 
-main#about rt {
+dialog#modal rt {
   text-transform: uppercase;
   text-align: left;
   padding: 0.125rem;
   font-size: 55%;
 }
 
-main#about b {
+dialog#modal b {
   text-align: left;
 }
 
-main#about p {
+dialog#modal p {
   clear: both;
   padding: 0.25rem;
-  word-break: break-all;
 }
 
-main#about code {
+dialog#modal code {
   float: right;
   margin: 0.25rem;
   vertical-align: top;
 }
 
-main#about button {
+dialog#modal button {
   background: transparent;
   font-size: 250%;
   padding: 0.5rem 0.25rem;

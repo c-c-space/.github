@@ -33,7 +33,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 </head>
 
 <body>
-  <main id="about">
+  <dialog id="modal">
     <h1>
       <ruby>
         <b id="name">日本の伝統的な<?php echo $thisSeason; ?>の色</b>
@@ -46,9 +46,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p id="note"></p>
     <p id="description"><?php echo $description; ?></p>
     <p id="hidden" hidden></p>
-    <button type="button" onclick="ChangeHidden()">↩︎</button>
-  </main>
-  <main hidden>
+    <button type="button">↩︎</button>
+  </dialog>
+  <main>
     <ul id="color"></ul>
   </main>
   <script src="../all/colors.js"></script>

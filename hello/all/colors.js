@@ -1,15 +1,20 @@
 'use strict'
 
-function ChangeHidden() {
-  const mainAll = document.querySelectorAll('main')
-  mainAll.forEach(main => {
-    if (main.hidden == false) {
-      main.hidden = true;
-    } else {
-      main.hidden = false;
-    }
-  })
-}
+
+let about = document.querySelector('dialog#modal'),
+name = document.querySelector('dialog#modal #name'),
+yomi = document.querySelector('dialog#modal #yomi'),
+hex = document.querySelector('dialog#modal #hex'),
+note = document.querySelector('dialog#modal #note'),
+description = document.querySelector('dialog#modal #description'),
+hidden = document.querySelector('dialog#modal #hidden');
+
+about.showModal();
+
+const closeButton = document.querySelector('#modal button');
+closeButton.addEventListener('click', () => {
+  about.close();
+});
 
 async function indexJSON(requestURL) {
   const request = new Request(requestURL);
@@ -38,19 +43,15 @@ function indexObject(obj) {
     li.style.background = color.hex
     ul.appendChild(li)
 
-    let about = document.querySelector('main#about'),
-    name = document.querySelector('main#about #name'),
-    yomi = document.querySelector('main#about #yomi'),
-    hex = document.querySelector('main#about #hex'),
-    note = document.querySelector('main#about #note'),
-    description = document.querySelector('main#about #description'),
-    hidden = document.querySelector('main#about #hidden');
-
     hidden.innerText += `${color.hex}, `
     about.style.backgroundImage = "conic-gradient(" + hidden.innerText + "#fff)"
 
     li.addEventListener('click', function () {
-      ChangeHidden()
+      if (typeof about.showModal === "function") {
+        about.showModal();
+      } else {
+        alert("The <dialog> API is not supported by this browser");
+      }
       about.style.background = this.style.background
       name.innerText = this.dataset.name
       yomi.innerText = this.dataset.yomi
