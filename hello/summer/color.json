@@ -5,7 +5,7 @@
       "yomi" : "Naeiro",
       "hex" : "#B0CA71",
       "note" : "稲の苗のような少し淡い黄緑色。 『淡萌黄』（薄萌木）の別名。",
-      "description" : "The Naeiro, pale green of feeling like seedlings of rice, it is a light-colored Moegiiro"
+      "description" : "The Naeiro, pale green of feeling like seedlings of rice, it is a light-colored Moegiiro."
     },
     {
       "name" : "若苗色（わかなえいろ）",
@@ -13,6 +13,13 @@
       "hex" : "#C7DC68",
       "note" : "田植えの時期の若い苗のような新鮮な黄緑色。 少し緑みを濃くした色は『苗色』。",
       "description" : "The Wakanae-iro, it is a fresh yellow-green, such as the young seedlings of the timing of rice planting."
+    },
+    {
+      "name" : "草色（くさいろ）",
+      "yomi" : "Kusa-iro",
+      "hex" : "#7B8D42",
+      "note" : "若草が色濃くなったようなくすみのある濃い黄緑色。 緑色を代表する色。",
+      "description" : "The Kusa-iro, it is a dark yellow-green with dull, such as Little Women became strongly. Fresh “wakakusa-iro” is now darker become and grass green. Is a color name in ancient, color representing the green."
     },
     {
       "name" : "勿忘草色（わすれなぐさいろ）",

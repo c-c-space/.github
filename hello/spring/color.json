@@ -1,0 +1,270 @@
+{
+  "color" : [
+    {
+      "name" : "紅梅色（こうばいいろ）",
+      "yomi" : "Kobai-iro",
+      "hex" : "#E86B79",
+      "note" : "早春に咲く紅梅の花の色のようなやや紫みのある淡い紅色。 色の濃さにより『濃紅梅こきこうばい』『中紅梅なかこうばい』『淡紅梅うすこうばい』などのバリエーションがある。",
+      "description" : "The Koubai-iro, it is the pale pink that is somewhat Mino purple, such as the color of plum blooming in early spring flowers."
+    },
+    {
+      "name" : "若草色（わかくさいろ）",
+      "yomi" : "Wakakusa-iro",
+      "hex" : "#ABC900",
+      "note" : "早春に芽吹いた若草のようなあざやかな黄緑。 若草から成長した野原は『草色』として、冬に枯れた野原は『枯野』としてそれぞれ色名となっている。",
+      "description" : "The Wakakusa-iro is a bright yellowish green, like young grasses sprouting in early spring."
+    },
+    {
+      "name" : "萌黄色（もえぎいろ）",
+      "yomi" : "Moegi-iro",
+      "hex" : "#86B81B",
+      "note" : "春先に萌え出る若葉のようなさえた黄緑色。 新緑の若木の色ということから若さを象徴する色。",
+      "description" : "It is Moegi-iro, it is a yellow-green to dull green like fresh green like sprout in early spring."
+    },
+    {
+      "name" : "浅緑（あさみどり）",
+      "yomi" : "Asamidori",
+      "hex" : "#9BCF97",
+      "note" : "春に芽吹いた若葉のような、うすい緑色。 または、黄みがかった明るい緑色。",
+      "description" : "The Asamidori, such as the young leaves that bud in the spring, thin green thing. Or, it is a bright green yellowish."
+    },
+    {
+      "name" : "若緑（わかみどり）",
+      "yomi" : "Wakamidori",
+      "hex" : "#A5CD89",
+      "note" : "みずみずしい松の若葉のような明るく浅い黄緑色。 年を経た老松の葉の色である『老緑』は対色。",
+      "description" : "The Wakamidori is a bright, shallow yellow-green color like the fresh young leaves of a pine tree."
+    },
+    {
+      "name" : "山葵色（わさびいろ）",
+      "yomi" : "Wasabi-iro",
+      "hex" : "#8EC298",
+      "note" : "すり下ろしたわさびのような薄い黄緑色。 山葵（わさび）はアブラナ科ワサビ属の多年草。日本原産で日本を代表する香辛料。。",
+      "description" : "Wasabi is a light yellowish green color like a fallow mountain violet wasabi."
+    },
+    {
+      "name" : "若芽色（わかめいろ）",
+      "yomi" : "Wakame-iro",
+      "hex" : "#E8EC98",
+      "note" : "植物の若い芽のような淡い黄緑色。 英色名では『Sproutスプロウト』、フランス名では『Bourgeonブールジョン』。",
+      "description" : "The Wakame-iro, it is a pale yellow-green, such as the young shoots of the plant."
+    },
+    {
+      "name" : "臙脂色（えんじいろ）",
+      "yomi" : "Enji-iro",
+      "hex" : "#9B003F",
+      "note" : "黒みをおびた深く艶やかな紅色。 最近では「早稲田大学」のスクールカラーとして認知度が高い伝統色名。",
+      "description" : "The Enji-iro is a deeply glossy red color that is blackened. The color of the pigment transmitted from China ancient times."
+    },
+    {
+      "name" : "樺色（かばいろ）",
+      "yomi" : "Kaba-iro",
+      "hex" : "#C5591A",
+      "note" : "赤みのある橙色で蒲色とも書く。 樺の樹皮または水草の蒲の穂の色を喚起させる色。",
+      "description" : "The Kaba-iro, I will write it as the Kaba in orange color with a reddish tinge."
+    },
+    {
+      "name" : "鶯色（うぐいすいろ）",
+      "yomi" : "Uguisu-iro",
+      "hex" : "#838B0D",
+      "note" : "鶯の羽のような暗くくすんだ黄緑色。 江戸時代は茶系が流行色であったため、鶯色を茶色がからせた『鶯茶』のほうが粋な色として人気があった。",
+      "description" : "It is Uguisu-iro, is a dark dull yellow-green, such as the wings of the nightingale."
+    },
+    {
+      "name" : "新橋色（しんばしいろ）",
+      "yomi" : "Shinbashi-iro",
+      "hex" : "#5AC2D9",
+      "note" : "明るい緑がかった浅鮮やかな青色。 ハイカラな色として大正時代にかけて大流行。洋色名はターコイズ・ブルー。",
+      "description" : "The Shinbashi-iro, it is a bright blue-green close to the Asagi color bright greenish."
+    },
+    {
+      "name" : "今様色（いまよういろ）",
+      "yomi" : "Imayou-iro",
+      "hex" : "#D0576B",
+      "note" : "「今流行の色」という意味の少し淡い紅色。 なお「今」とは平安時代のこと。",
+      "description" : "The Imayou-iro, is that of a little pale red in the sense that “now epidemic trendy color”. It should be noted that of the Heian period is the “now”."
+    },
+    {
+      "name" : "鬱金色（うこんいろ）",
+      "yomi" : "Ukon-iro",
+      "hex" : "#F7C229",
+      "note" : "鬱金草の根で染めた赤みの鮮やかな黄色。 英名では『ターメリック』。",
+      "description" : "The Ukon-iro, is the vivid yellow of redness that was dyed with turmeric grassroots. The English name “turmeric”."
+    },
+    {
+      "name" : "桑色（くわいろ）",
+      "yomi" : "Kuwairo",
+      "hex" : "#DABC91",
+      "note" : "桑の根皮や木皮の煎汁に灰を媒染にして染めた黄色がかった薄茶色。 ちなみに桑の実の色は全然違う黒紫色。",
+      "description" : "The Kuwa-iro, is light brown yellow dyed with mordant to the ash in decoction of bark and root bark of mulberry hue."
+    },
+    {
+      "name" : "鴇色（ときいろ）",
+      "yomi" : "Tokiiro",
+      "hex" : "#F3A696",
+      "note" : "ときの風切羽のような黄みがかった淡く優しい桃色。 『朱鷺色』とも記され、あるいは『鴇羽色』とも呼ばれる。別名「乙女色」。",
+      "description" : "The Tokiiro, is a pale gentle pink that such yellowish like the wind face when Toki. It was also referred to as also described as “Tokihaneshoku”."
+    },
+    {
+      "name" : "曙色（あけぼのいろ）",
+      "yomi" : "Akebono-iro",
+      "hex" : "#F9A383",
+      "note" : "曙の空を思わせる、朝焼けのような淡い黄赤色。 英語色名のオーロラ(英語: aurora/英語: auroral)と同一の色。",
+      "description" : "The Akebono-iro, reminiscent of the sky of dawn, is a pale yellow-red like the morning glow. I also called “Shinonome-iro”."
+    },
+    {
+      "name" : "猩々緋（しょうじょうひ）",
+      "yomi" : "Shojohi",
+      "hex" : "#E7001D",
+      "note" : "緋の中でも特に強い黄みがかった朱色。 猩々とは、龍や麒麟などと同じく中国の伝説上の生き物。",
+      "description" : "Shoujouhi, It is a deep red color tinged with yellow. It is said also of tabard made ​​of cloth of wool with a deep red color in turn."
+    },
+    {
+      "name" : "空色（そらいろ）",
+      "yomi" : "Sora-iro",
+      "hex" : "#73B8E2",
+      "note" : "昼間の晴れた空を思わせる紫みの薄い明るい青色。",
+      "description" : "Sora-iro is a pale purple light blue that looks like the sunny daytime sky. I read “Sora” as “天” and “Masora-iro”, “Tenkushoku” and “Hekiten” were also written."
+    },
+    {
+      "name" : "二藍（ふたあい）",
+      "yomi" : "Futaai",
+      "hex" : "#888ABC",
+      "note" : "藍の上に紅花を染め重ねた明るく渋い青紫色。 古くは紅のことを『紅藍』と表記し、色名はこの紅藍と藍の二色の藍で染めたという意味から。",
+      "description" : "The Futaai, it is a dull bluish purple of repeated dyed safflower on you under dyed in indigo."
+    },
+    {
+      "name" : "鳥の子色（とりのこいろ）",
+      "yomi" : "Torinoko-iro",
+      "hex" : "#F8EED1",
+      "note" : "赤みがかったごく淡い黄色。 「鳥の子」とはにわとりのひなではなく玉子を指し、その殻の色に由来する。",
+      "description" : "The Torinoko-iro of color name refers to the egg rather than a chick chicken, was derived from the color of the shell."
+    },
+    {
+      "name" : "花葉色（はなばいろ）",
+      "yomi" : "Hanaba-iro",
+      "hex" : "#FBD26B",
+      "note" : "襲の色名のひとつで、表地に香を裏地に青を配した色目のこと。",
+      "description" : "The Hanaba-iro, is one of the overlapping colors, it is a color which arranged the blue lining incense dress material."
+    },
+    {
+      "name" : "蒲公英色（たんぽぽいろ）",
+      "yomi" : "Tanpopo-iro",
+      "hex" : "#FFE200",
+      "note" : "たんぽぽの花に由来する鮮やかな黄色。 蒲公英は日本の春を代表する草花の一つ。",
+      "description" : "And Tanpopo-iro, it is a bright yellow derived from the dandelion flowers. Dandelion in the generic name of the Asteraceae dandelion genus, one of the flowers to represent Japan in the spring."
+    },
+    {
+      "name" : "芥子色（からしいろ）",
+      "yomi" : "Karashi-iro",
+      "hex" : "#D0AF4C",
+      "note" : "芥子菜の種子を粉にして練った香辛料「カラシ」のようなやや鈍い黄色。",
+      "description" : "The Karashi-iro, it is a somewhat dull yellow spice that is kneaded in the flour of mustard seed, such as “Karashi”."
+    },
+    {
+      "name" : "真紅（しんく）",
+      "yomi" : "Shinku",
+      "hex" : "#AD002D",
+      "note" : "深みのある真っ赤な紅色。 『韓紅』と同色で、別に『深紅しんく』とも表記する。",
+      "description" : "The Shinkuis is a bright red red with deep. It is also used in the same meaning as “red”, such as in the current “crimson petal”."
+    },
+    {
+      "name" : "真朱（しんしゅ）",
+      "yomi" : "Shinshu",
+      "hex" : "#D9341D",
+      "note" : "少し黒みのある鈍い赤色。 「混じりもののない自然のままの朱である」。",
+      "description" : "The Shinshu, it is a dull red with a black little taste. Character of the “真” Where is the color name is from meaning “is a Zhu pristine no Majirimono”."
+    },
+    {
+      "name" : "洗朱（あらいしゅ）",
+      "yomi" : "Araishu",
+      "hex" : "#D0826C",
+      "note" : "薄い朱色のことで黄色みを帯びた朱色、くすんだ黄赤に近い色。",
+      "description" : "The Araishu, It is a color close to yellow red vermilion, dull to yellowish by a thin vermilion."
+    },
+    {
+      "name" : "退紅（あらぞめ/たいこう）",
+      "yomi" : "Arazome",
+      "hex" : "#FFB3A7",
+      "note" : "桜色と一斤染の中間の赤みのごく薄い赤紫色で、色名は褪めた紅の意味。",
+      "description" : "The Arazome, in very thin red purple of redness in the middle of the loaf and Sakura-shoku dyeing, color name is the meaning of red that shark."
+    },
+    {
+      "name" : "生壁色（なまかべいろ）",
+      "yomi" : "Namakabe-iro",
+      "hex" : "#AA8C63",
+      "note" : "塗りたての乾いていない土壁のような灰色みの黄褐色。 江戸時代に愛好されるようになった鼠系統の色の一つ。",
+      "description" : "The Namakabe-iro,is that of gray Mino tan earthy wall that do not dry freshly painted."
+    },
+    {
+      "name" : "菜の花色（なのはないろ）",
+      "yomi" : "Nanohana-iro",
+      "hex" : "#FCD900",
+      "note" : "あぶらなの花色のような、明るく鮮やかな黄色。",
+      "description" : "The Nanohana-iro, such as flower color of rape rape, is a bright, bright yellow."
+    },
+    {
+      "name" : "菫色（すみれいろ）",
+      "yomi" : "Sumire-iro",
+      "hex" : "#7065A3",
+      "note" : "菫の花の色からきた色名でやや青みの濃い紫色。 欧文における菫色の訳語の「バイオレット」。",
+      "description" : "The Sumire-iro, the color name came from the color of the flower of violet, it is a dark purple blue taste somewhat."
+    },
+    {
+      "name" : "千草色（ちぐさいろ）",
+      "yomi" : "Chigusa-iro",
+      "hex" : "#3A8FB7",
+      "note" : "わずかに緑みを帯びた明るい青色。",
+      "description" : "The Chigusa-iro, it is a bright blue-tinged greenish slightly. The thing Tsuyukusa a name that was corruption from Tsukikusa and Chigusa of color name."
+    },
+    {
+      "name" : "柳色（やなぎいろ）",
+      "yomi" : "Yanagi-iro",
+      "hex" : "#ADB445",
+      "note" : "柳の葉色を思わせる明るい黄緑色。『桜色』とともに、日本の春の色の代名詞",
+      "description" : "The Yanagi-iro is a bright yellowish green reminiscent of the color of willow leaves."
+    },
+    {
+      "name" : "桜色（さくらいろ）",
+      "yomi" : "Sakura-iro",
+      "hex" : "#FEEEED",
+      "note" : "桜の花弁にイメージされる赤みを含んだ淡い紅色。 ほんのり酔った女性の顔や皮膚が赤みをおびた様子にも使われる。",
+      "description" : "The Sakura-iro, it is a pink that is image to cherry blossom petals."
+    },
+    {
+      "name" : "薄桜（うすざくら）",
+      "yomi" : "Usuzakura",
+      "hex" : "#FCF5F7",
+      "note" : "薄い桜の花の色のようなほんのり紅みを含んだ白。 最も薄い紅染の色とされる『桜色』の中でも、さらに薄い色。",
+      "description" : "The Usuzakura, is a white, including a slightly red Mi, such as a thin cherry blossom color. Also alias of “Usuhanazakura”."
+    },
+    {
+      "name" : "桃色（ももいろ）",
+      "yomi" : "Momo-iro",
+      "hex" : "#F58F98",
+      "note" : "桃の花のような、紅花で淡く染めた色。 英名ではピーチブロッサム（peach blossom）。",
+      "description" : "The Momo-iro, it is dyed colors like pale peach flower, in safflower."
+    },
+    {
+      "name" : "本紫（ほんむらさき）",
+      "yomi" : "Honmurasaki",
+      "hex" : "#6846A5",
+      "note" : "あざやかな紫色。 当時の市井の人々は身につけることができなかった。",
+      "description" : "The Hon-Murasaki is vivid purple dyed with purple root dyed. that Ichiii people could not wear at that time."
+    },
+    {
+      "name" : "御召茶（おめしちゃ）",
+      "yomi" : "Omeshicha",
+      "hex" : "#43676B",
+      "note" : "御召の着物のようなくすんだ緑みのある青色。 「御召」とは本来は「着る」という意味の尊敬語。「茶」は当時の流行色。",
+      "description" : "The Omeshi-cha is a dull greenish blue color. The origin of the color name is that the high quality crepe used by Ienari Tokugawa."
+    },
+    {
+      "name" : "蒼色（そうしょく）",
+      "yomi" : "Soushoku",
+      "hex" : "#007655",
+      "note" : "干した青草のような少し暗い青緑色。",
+      "description" : "The Soushoku, it is a little dark blue-green like the dried was green grass."
+    }
+  ]
+}

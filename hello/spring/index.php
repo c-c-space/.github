@@ -157,17 +157,17 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         </small>
       </p>
       <section>
-        <label for="color">Text Color</label>
+        <label for="color">文字の色</label>
         <select class="color bgcolor" id="bgcolor">
-          <option selected>文字の色</option>
+          <option selected>Text Color</option>
         </select>
         <br/>
-        <label for="bgcolor">Background Color</label>
+        <label for="bgcolor">背景の色</label>
         <select class="color bgcolor" id="color">
-          <option selected>背景の色</option>
+          <option selected>Background Color</option>
         </select>
         <hr/>
-        <label for="fontSize" hidden>Font Size</label>
+        <label for="fontSize" hidden>文字の大きさ</label>
         <select class="color bgcolor" id="fontSize" hidden>
           <option value="13px">Small</option>
           <option value="16px" selected>Medium</option>
@@ -179,7 +179,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </dialog>
   <?php require('../all/controls.html'); ?>
 
-  <script src="color.js"></script>
+  <script src="../all/controls.js"></script>
+  <script type="text/javascript">
+    colorJSON('color.json');
+  </script>
   <script src="../all/24sekki.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
 </body>

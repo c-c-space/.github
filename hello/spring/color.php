@@ -3,9 +3,9 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 
-$season = "summer";
-$thisSeason = "夏";
-$thisDate = "May 5 - August 7";
+$season = "spring";
+$thisSeason = "春";
+$thisDate = "February 4 - May 4";
 $description = "The Collection of Traditional Japanese Seasonal Color";
 $title = $season .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
