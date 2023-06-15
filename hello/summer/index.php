@@ -167,7 +167,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
           <option selected>Background Color</option>
         </select>
         <hr/>
-        <label for="fontSize" hidden>Font Size</label>
+        <label for="fontSize">文字の大きさ</label>
         <select class="color bgcolor" id="fontSize" hidden>
           <option value="13px">Small</option>
           <option value="16px" selected>Medium</option>
