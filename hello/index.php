@@ -149,17 +149,9 @@ fclose($fp);
     コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
   </dialog>
 
-  <script src="<?php echo $season;?>/color.js"></script>
+  <script src="all/controls.js"></script>
   <script type="text/javascript">
-  let namesForm = document.querySelectorAll('#bgcolor, #color')
-  for (const names of namesForm) {
-    Object.entries(colors).forEach(eachArr => {
-      let option = document.createElement('option')
-      option.textContent = Object.values(eachArr)[0]
-      option.value = Object.values(eachArr)[1]
-      names.appendChild(option)
-    })
-  }
+  indexJSON('<?php echo $season;?>/color.json');
   </script>
   <script src="../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>

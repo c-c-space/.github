@@ -1,0 +1,249 @@
+{
+  "color" : [
+    {
+      "name" : "苗色（なえいろ）",
+      "yomi" : "Naeiro",
+      "hex" : "#B0CA71",
+      "note" : "稲の苗のような少し淡い黄緑色。 『淡萌黄』（薄萌木）の別名。",
+      "description" : "The Naeiro, pale green of feeling like seedlings of rice, it is a light-colored Moegiiro"
+    },
+    {
+      "name" : "若苗色（わかなえいろ）",
+      "yomi" : "Wakanae-iro",
+      "hex" : "#C7DC68",
+      "note" : "田植えの時期の若い苗のような新鮮な黄緑色。 少し緑みを濃くした色は『苗色』。",
+      "description" : "The Wakanae-iro, it is a fresh yellow-green, such as the young seedlings of the timing of rice planting."
+    },
+    {
+      "name" : "勿忘草色（わすれなぐさいろ）",
+      "yomi" : "Wasurenagusa-iro",
+      "hex" : "#9CC5E6",
+      "note" : "勿忘草の花のような可憐な明るい青色。 ドイツの伝説に由来する「フォーゲット・ミー・ノット」の和訳。",
+      "description" : "The Wasurenagusa, is a lovely bright blue, such as forget-me-not flowers."
+    },
+    {
+      "name" : "藤色（ふじいろ）",
+      "yomi" : "Fuji-iro",
+      "hex" : "#BAA7CC",
+      "note" : "藤の花からきた色名で淡い青みのある紫色。 古くから馴染み深い色で、『若紫』とも呼ばれる。",
+      "description" : "The Fuji-iro, with color names came from wisteria, it is purple with a pale blue taste."
+    },
+    {
+      "name" : "山吹色（やまぶきいろ）",
+      "yomi" : "Yamabuki-iro",
+      "hex" : "#F8B400",
+      "note" : "山吹の花のような鮮やかな赤みを帯びた黄色。 黄色の花を咲かせる植物の山吹に由来する。",
+      "description" : "Bright yellow is that of yellow tinged with vivid redness, such as the bright yellow flowers."
+    },
+    {
+      "name" : "菖蒲色（あやめいろ）",
+      "yomi" : "Ayame-iro",
+      "hex" : "#B168A8",
+      "note" : "菖蒲あやめの紫の花の色に似た赤みがかった紫色。 「あやめ」は花の色も呼び名も美しいことから、古くから用いられた色名。",
+      "description" : "The Ayame-iro, is a purple red taste similar to the color of the flower of iris purple tinged."
+    },
+    {
+      "name" : "青竹色（あおたけいろ）",
+      "yomi" : "Aotake-iro",
+      "hex" : "#7EBEAB",
+      "note" : "成長した青竹の幹のような青みの冴えた明るく濃い緑。 青竹より薄めの色は「若竹」、鈍い調子の鼠がかった色は「老竹」。",
+      "description" : "The Aotake-iro is that of dark bright green dull bluish like the stem of bamboo grown."
+    },
+    {
+      "name" : "若竹色（わかたけいろ）",
+      "yomi" : "Wakatake-iro",
+      "hex" : "#7CC28E",
+      "note" : "若竹のように黄みの薄い爽やかな緑色。 青竹に比べてより若い青竹の色を表す。",
+      "description" : "The Wakatake-iro is that of a refreshing green thin creamy as young bamboo. It represents the color of green bamboo younger than that of the green bamboo."
+    },
+    {
+      "name" : "卯の花色（うのはないろ）",
+      "yomi" : "Unohana-iro",
+      "hex" : "#FBFBF6",
+      "note" : "卯の花のようなわずかに黄みがかった白色。 卯の花は空木の木に咲く初夏の花。",
+      "description" : "The Unohana-iro, is a white to off-slightly yellowish like UNOHANA."
+    },
+    {
+      "name" : "白練（しろねり）",
+      "yomi" : "Shironeri",
+      "hex" : "#FCFAF2",
+      "note" : "真っ白い練絹のような白色。 生絹きぎぬの黄みを消し去る技法を「白練」と呼び、その白練した光沢のある絹の純白を色名にしたもの。",
+      "description" : "The Shironeri, such as Neriginu pure white."
+    },
+    {
+      "name" : "紅色（べにいろ）",
+      "yomi" : "Beni-iro",
+      "hex" : "#E1344C",
+      "note" : "紅花の濃染による鮮やかな赤色。 または色料の三原色CMYのM100％『マゼンタ』を指す場合もある。",
+      "description" : "The Beni-iro, is a bright red by the stain of safflower. Or in some cases to refer to the red of Purplish, that this case is of the three primary colors CMY colorant M of “magenta”."
+    },
+    {
+      "name" : "薔薇色（ばらいろ）",
+      "yomi" : "Bara-iro",
+      "hex" : "#E73275",
+      "note" : "赤い薔薇ばらの花のような鮮あざやかな紅色。 『そうびいろ』『しょうびしょく』とも読まれる。",
+      "description" : "The Bara-iro, is a vivid bright red, such as red roses. It is also read as “Soubiiro” “Shoubishoku”."
+    },
+    {
+      "name" : "珊瑚色（さんごいろ）",
+      "yomi" : "Sango-iro",
+      "hex" : "#EF8468",
+      "note" : "黄みがかった明るい赤色。 英名では『コーラル』『コーラル・ピンク』と呼ばれる色。",
+      "description" : "The Sango-iro, by the color of the pigment in which the red coral in the powder, is a bright red yellowish."
+    },
+    {
+      "name" : "葵色（あおいいろ）",
+      "yomi" : "Aoi-iro",
+      "hex" : "#AA89BD",
+      "note" : "葵の花のような灰色がかった明るい紫色。 平安の頃からの古い伝統色。",
+      "description" : "The Aoi-iro, is a bright purple grayish like Aoi Hana. Old color name from the time of peace."
+    },
+    {
+      "name" : "群青色（ぐんじょういろ）",
+      "yomi" : "Gunjou-iro",
+      "hex" : "#005baa",
+      "note" : "紫みがかった深い青色。 日本画には欠かせない色。",
+      "description" : "The Gunjo-iro is a color name derived from rock paint “Gunjo” of Japanese painting materials, which is purplish deep blue color."
+    },
+    {
+      "name" : "藍色（あいいろ）",
+      "yomi" : "Ai-iro",
+      "hex" : "#004C71",
+      "note" : "藍色（あいいろ）とは、縹色（はなだいろ）ほど純粋な青ではない暗い青色。外国では「ジャパンブルー」とも呼ばれていた。",
+      "description" : "The Ai-iro, it is that it is of dark blue Hanadairo as not a pure blue."
+    },
+    {
+      "name" : "納戸色（なんどいろ）",
+      "yomi" : "Nando-iro",
+      "hex" : "#008899",
+      "note" : "藍染めの一つで、緑色を帯びた深い青色。 藍色の濃度により濃い順で、紺・縹・納戸・浅葱・甕覗となる。",
+      "description" : "The Nando-iro, is one of the indigo dyeing, it is a deep blue tinged with green."
+    },
+    {
+      "name" : "縹色（はなだいろ）",
+      "yomi" : "Hanada-iro",
+      "hex" : "#0086AD",
+      "note" : "古くから知られた藍染めの色名で、藍色よりも薄く浅葱色よりも濃い色。",
+      "description" : "The Hanada-iro, in the name of the color indigo dyeing was known for a long time, it is a dark color than Asagi thinner than indigo."
+    },
+    {
+      "name" : "水縹（みはなだ）",
+      "yomi" : "Mihanada",
+      "hex" : "#7EC7D8",
+      "note" : "藍染の薄い色で明るい青色。 別名『みずはなだ』。",
+      "description" : "The Mihanada, is a thin bright blue with a thin color of Aizome. Apart it is also read as “Mizuhanada”, also in “Manyoshu” is the name seen."
+    },
+    {
+      "name" : "瑠璃色（るりいろ）",
+      "yomi" : "Ruri-iro",
+      "hex" : "#004898",
+      "note" : "濃い紫みの鮮やかな青色。 瑠璃は仏教世界の中心「須弥山」にて産する宝玉で、仏教の七宝の一つ。",
+      "description" : "The lapis lazuli color, it is a vivid blue of the deep purple body."
+    },
+    {
+      "name" : "浪花鼠（なにわねず）",
+      "yomi" : "Naniwanezu",
+      "hex" : "#D8BEBD",
+      "note" : "淡く渋い紅赤色。 大阪市付近の古称で、地名にちなんだ色名。",
+      "description" : "Naniwa-nezu is a pale, astringent red color. “Naniwa” is an old name for the area around Osaka City, and the color is named after the place."
+    },
+    {
+      "name" : "藤黄（とうおう）",
+      "yomi" : "Tōō",
+      "hex" : "#F7C114",
+      "note" : "ほのかに冴えた黄色。 草雌黄(くさしおう)という植物から採取できる顔料「藤黄」の色。",
+      "description" : "The Tōō, it is a dull yellow faintly. I am named after the color pigments can be collected from a plant that female yellow grass of “Tōō”."
+    },
+    {
+      "name" : "小麦色（こむぎいろ）",
+      "yomi" : "Komugi-iro",
+      "hex" : "#E4A343",
+      "note" : "小麦の殻粒のようなやわらかい赤みのある黄色。 綺麗に日焼けした健康的な肌色を形容する場合に使われる。",
+      "description" : "The Komugi-iro, is yellow with a soft reddish such as shell grains of wheat. Such as “skin of Komugi-iro”, it will be used in the case of epithet a beautifully tanned healthy skin color."
+    },
+    {
+      "name" : "青緑（あおみどり）",
+      "yomi" : "Aomidori",
+      "hex" : "#00A497",
+      "note" : "青色とも緑色ともいえない青みがかった緑色。 信号機の『青』は厳密には青緑色。",
+      "description" : "It is a green tinged with blue taste not a The Aomidori, both blue and green."
+    },
+    {
+      "name" : "花緑青（はなろくしょう）",
+      "yomi" : "Hanarokusho",
+      "hex" : "#5AB5B2",
+      "note" : "明るく渋い青緑色。 その鮮やかな色合から『パリス・グリーン』『シュバインフルト・グリーン』『エメラルドグリーン』とも呼ばれる。",
+      "description" : "The Hanarokusho, is a bright, cool blue-green. the nickname of overseas Hanarokusho, in addition to the Paris Green, “emerald green” and “Schweinfurt Green”."
+    },
+    {
+      "name" : "苔色（こけいろ）",
+      "yomi" : "Koke-iro",
+      "hex" : "#78882d",
+      "note" : "深く渋い黄緑色。 現代では『モスグリーン』のほうが一般的。",
+      "description" : "The Koke-iro, it is a dark yellow-green as the color of the moss plant."
+    },
+    {
+      "name" : "白緑（びゃくろく）",
+      "yomi" : "Byakuroku",
+      "hex" : "#DAEAD0",
+      "note" : "鉱物の「孔雀石」から作られる岩絵具の色で淡い緑色。 色名の「白」とは「淡い」という意味。英名はオパールグリーン。",
+      "description" : "The Byakuroku is a pale green color of rock paint made from the mineral “peacock stone”. The color name “Byaku” means “pale”. The English name is “Opal Green”."
+    },
+    {
+      "name" : "琥珀色（こはくいろ）",
+      "yomi" : "Kohaku-iro",
+      "hex" : "#EA930A",
+      "note" : "琥珀の石のような色、すなわち透明感のある黄褐色。 または英語にならってアンバーとも呼ばれる。",
+      "description" : "The Kohaku-iro,color, ie is tan with a transparent feeling like a stone of amber."
+    },
+    {
+      "name" : "呉須色（ごすいろ）",
+      "yomi" : "Gosu-iro",
+      "hex" : "#00496D",
+      "note" : "深く渋い青色。 陶磁器の染付に使われる顔料の名前、または焼き物の「呉須焼き」に由来する。",
+      "description" : "The Gosu-iro is a deep, bitter blue thing. The color name is derived from “Gosu”, a pigment used for dyeing ceramic, or “Gosuyaki”, a ceramic dish."
+    },
+    {
+      "name" : "熨斗目色（のしめいろ）",
+      "yomi" : "Noshime-iro",
+      "hex" : "#175B66",
+      "note" : "織物の小袖のひとつである熨斗目に用いられたやや灰みの濃い鈍い青色。",
+      "description" : "The Noshime-iro, it is a dull dark blue Hai-mi somewhat used in the Indian meal, which is one of the short-sleeved kimono fabric."
+    },
+    {
+      "name" : "天色（あまいろ）",
+      "yomi" : "Ama-iro",
+      "hex" : "#0086CC",
+      "note" : "晴天の澄んだ空のような鮮やかな青色。 別名『真空色』。",
+      "description" : "The Ama-iro, it is a vivid blue, such as the clear sky of fine weather. Also alias of “vacuum color Masorairo”."
+    },
+    {
+      "name" : "茄子紺（なすこん）",
+      "yomi" : "Nasukon",
+      "hex" : "#824880",
+      "note" : "夏野菜として親しまれている茄子の実のような紫みの濃い紺色。",
+      "description" : "The Nasukon, it is a dark blue dark Purplish such as fruit of the eggplant, which is popular as a summer vegetable."
+    },
+    {
+      "name" : "裏柳（うらやなぎ）",
+      "yomi" : "Urayanagi",
+      "hex" : "#C1D8AC",
+      "note" : "柳の葉裏の色からきた色名で淡い黄緑色。 別名『裏葉柳』",
+      "description" : "The Urayanagi, it is a pale yellow-green in color name came from the color of Howrah of willow."
+    },
+    {
+      "name" : "青漆（せいしつ）",
+      "yomi" : "Seishitsu",
+      "hex" : "#184212",
+      "note" : "深く渋い緑色。 青が付きますが味わい深い、濃い緑色。",
+      "description" : "The Seishitsu, it is a deeply bitter green."
+    },
+    {
+      "name" : "松葉色（まつばいろ）",
+      "yomi" : "Matsuba-iro",
+      "hex" : "#3F7735",
+      "note" : "松の葉のような深みのある渋い青緑色。 「枕草子」にもその名が見られる古い色名。",
+      "description" : "The Matsuba-iro, is a dull blue-green with a deep, such as the leaves of the pine."
+    }
+  ]
+}
