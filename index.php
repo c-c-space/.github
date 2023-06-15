@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/userMedia.css" />
   <link rel="stylesheet" href="ver/log/style.css" />
   <link rel="stylesheet" href="thankyou/style.css" />
-  <link rel="stylesheet" href="thankyou/print.css" media="print"/>
+  <link rel="stylesheet" href="thankyou/www.css" media="print"/>
   <link rel="stylesheet" href="hello/css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="style.css" />
 </head>
