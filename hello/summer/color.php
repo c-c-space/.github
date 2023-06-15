@@ -33,21 +33,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 </head>
 
 <body>
-  <header id="menu" class="bgcolor" hidden>
-    <button class="color bgcolor" id="js-button"><b></b></button>
-    <nav id="contents">
-      <a href="/hello/">
-        <i>Speech to Text to Text to Speech</i>
-        <p><b><?php echo $greeting; ?></b></p>
-        <u>↩︎</u>
-      </a>
-      <a onclick="window.location.replace('/hello/<?php echo $this; ?>/');">
-        <i><?php echo $thisDate; ?></i>
-        <p><b><?php echo $thisSeason; ?></b></p>
-      </a>
-    </nav>
-  </header>
-  <script src="/js/menu.js"></script>
   <main id="about">
     <h1>
       <ruby>
