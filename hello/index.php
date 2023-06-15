@@ -153,7 +153,7 @@ fclose($fp);
 
   <script src="all/controls.js"></script>
   <script type="text/javascript">
-  indexJSON('<?php echo $seasonColor;?>');
+  indexJSON('<?php echo $season;?>/color.json');
   </script>
   <script src="../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>
