@@ -28,7 +28,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta property="og:image" content="<?php echo $url; ?>summary.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
-  <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../css/colors.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
@@ -55,6 +54,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </dialog>
   <main>
     <ul id="color"></ul>
+    <button id="backBtn" type="button" onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
+      <b>↩︎</b>
+    </button>
   </main>
   <script src="../all/colors.js"></script>
 </body>
