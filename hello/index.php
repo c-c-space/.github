@@ -8,6 +8,8 @@ $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
 $fp = fopen($source_file, 'a+b');
 $post = sizeof(file($source_file));
 
+$seasonColor = $season . "/color.json"
+
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
@@ -151,7 +153,7 @@ fclose($fp);
 
   <script src="all/controls.js"></script>
   <script type="text/javascript">
-  indexJSON('<?php echo $season;?>/color.json');
+  indexJSON('<?php echo $seasonColor;?>');
   </script>
   <script src="../profile/js/setStyles.js"></script>
   <script src="../js/log.js"></script>
