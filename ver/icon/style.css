@@ -55,8 +55,6 @@ section p,
 section p {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
   font-size: 90%;
   pointer-events: none;
   user-select: none;
@@ -80,11 +78,4 @@ pre {
 
 #howto {
   display: none;
-}
-
-#change {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
 }
