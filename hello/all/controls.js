@@ -1,22 +1,22 @@
 'use strict'
 
-async function indexJSON(requestURL) {
+async function colorJSON(requestURL) {
   const request = new Request(requestURL);
   const response = await fetch(request);
-  const jsonIndex = await response.text();
+  const colorAll = await response.text();
 
-  const index = JSON.parse(jsonIndex);
-  indexObject(index);
+  const colors = JSON.parse(colorAll);
+  colorIndex(colors);
 }
 
-function indexObject(obj) {
+function colorIndex(obj) {
   let namesForm = document.querySelectorAll('#bgcolor, #color');
   for (const names of namesForm) {
     const allColors = obj.color;
-    for (const color of allColors) {
+    for (const eachColor of allColors) {
       let option = document.createElement('option')
-      option.textContent = color.yomi
-      option.value = color.hex
+      option.textContent = eachColor.yomi
+      option.value = eachColor.hex
       names.appendChild(option)
     }
   }
