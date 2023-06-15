@@ -4,9 +4,10 @@ mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 require('../all/24sekki.php');
 
+$this = "summer";
 $thisSeason = "夏 Summer";
 $thisDate = "May 5 - August 7";
-$description = "「なつ」は熱（ねつ）の季節。";
+$description = "View The Collection of Traditional Japanese Seasonal Color";
 $title = $thisSeason .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
@@ -35,11 +36,37 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <body>
   <header id="menu" class="bgcolor" hidden>
     <button class="color bgcolor" id="js-button"><b></b></button>
-    <?php require('../all/menu.php'); ?>
+    <nav id="contents">
+      <a href="/hello/">
+        <i>Speech to Text to Text to Speech</i>
+        <p><b><?php echo $greeting; ?></b></p>
+        <u>↩︎</u>
+      </a>
+      <a onclick="window.location.replace('/hello/<?php echo $this; ?>/');">
+        <i><?php echo $thisDate; ?></i>
+        <p><b><?php echo $thisSeason; ?></b></p>
+      </a>
+    </nav>
   </header>
   <script src="/js/menu.js"></script>
-
-  <ul id="color"></ul>
+  <main id="about">
+    <h1>
+      <ruby>
+        <b id="name">日本の伝統的なの色</b>
+        <rp>(</rp>
+        <rt id="yomi"><?php echo $title; ?></rt>
+        <rp>)</rp>
+      </ruby>
+    </h1>
+    <code id="hex"></code>
+    <p id="note"></p>
+    <p id="description"><?php echo $description; ?></p>
+    <p id="hidden" hidden></p>
+    <button type="button" onclick="ChangeHidden()">↩︎</button>
+  </main>
+  <main hidden>
+    <ul id="color"></ul>
+  </main>
   <script src="../all/colors.js"></script>
 </body>
 </html>
