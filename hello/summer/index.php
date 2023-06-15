@@ -181,7 +181,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <script src="../all/controls.js"></script>
   <script type="text/javascript">
-    indexJSON('color.json');
+    colorJSON('color.json');
   </script>
   <script src="../all/24sekki.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
