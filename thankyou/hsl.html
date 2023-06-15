@@ -75,6 +75,10 @@
     user-select: text;
   }
 
+  #code {
+    display: none;
+  }
+
   @media screen and (max-width: 750px) {
     #hello {
       font-size: 3vw;
@@ -92,7 +96,11 @@
     #hello {
       display: none;
     }
-    
+
+    #code {
+      display: block;
+    }
+
     .hue,
     .saturation,
     .lightness {
@@ -151,6 +159,8 @@
       </p>
     </section>
   </main>
+
+  <code id="code">creative-community.space/thankyou/hsl.html</code>
 
   <script>
   async function hslJS() {
