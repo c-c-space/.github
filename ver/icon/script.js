@@ -1,20 +1,10 @@
-// キャンバス要素に幅・高さを設定
-// <canvas width="32" height="32"></canvas>
-// <canvas width="180" height="180"></canvas>
-// <canvas width="192" height="192"></canvas>
-// <canvas width="320" height="320"></canvas>
-// <canvas width="400" height="400"></canvas>
-// <canvas width="800" height="800"></canvas>
-
-// 入力欄と描画を実行するボタン要素
 // <input type="text" id="textHere" value="Text Here">
-// <button onclick="drawingText()">drawingText()</button>
+// <button onclick="canvasIcons()">canvasIcons()</button>
 
 
 'use strict'
 
-// 入力欄のテキストをすべてのキャンバス要素に描画
-function drawingText() {
+function canvasIcons() {
   const text = document.querySelector('#textHere');
 
   const canvasAll = document.querySelectorAll('canvas');

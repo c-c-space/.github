@@ -10,15 +10,15 @@
 
   "contents" : [
     {
-      "date" : "フォント",
-      "name" : "IPA Gothic(Ver.003.02)",
+      "date" : "icon()",
+      "name" : "save as a icon.png",
       "url" : "/ver/icon/",
       "type" : "news",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "drawingText()",
+      "date" : "canvasIcons()",
       "name" : "テキストの描画",
       "url" : "/ver/icon/canvas.html",
       "type" : "news",
