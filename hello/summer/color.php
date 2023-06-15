@@ -3,10 +3,11 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 
-$thisSeason = "夏 Summer";
+$season = "summer";
+$thisSeason = "夏";
 $thisDate = "May 5 - August 7";
-$description = "View The Collection of Traditional Japanese Seasonal Color";
-$title = $thisSeason .' | '. $thisDate;
+$description = "The Collection of Traditional Japanese Seasonal Color";
+$title = $season .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -35,7 +36,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="about">
     <h1>
       <ruby>
-        <b id="name">日本の伝統的な季節の色</b>
+        <b id="name">日本の伝統的な<?php echo $thisSeason; ?>の色</b>
         <rp>(</rp>
         <rt id="yomi"><?php echo $title; ?></rt>
         <rp>)</rp>
