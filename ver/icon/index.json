@@ -19,7 +19,7 @@
     },
     {
       "date" : "canvasIcons()",
-      "name" : "テキストの描画",
+      "name" : "テキストをキャンバス要素に描画",
       "url" : "/ver/icon/canvas.html",
       "type" : "news",
       "caption" : "none",
