@@ -49,6 +49,7 @@ function ChangeHidden() {
   })
 };
 </script>
+<script src="../../js/log.js"></script>
 <script src="../../js/setStyles.js"></script>
 </body>
 </html>

@@ -89,6 +89,4 @@ require_once('../../all/head.php');
 </main>
 
 <?php require('../../all/controls.html'); ?>
-<script src="../../js/log.js"></script>
-
 <?php require('../../all/sekki.php'); ?>
