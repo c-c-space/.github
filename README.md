@@ -1,16 +1,14 @@
 # Index | creative-community.space
 
-## HEAD
-* [index.json を 読み込み、メタデータコンテンツ と アンカー要素を生成](js/index.js)
-* [Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行](js/hello.js)
-* [ローカルストレージに追加されている情報を取得し、ページ内容を生成](js/readyState.js)
+* [index.js](js/index.js)
+index.json を 読み込み、メタデータコンテンツ と アンカー要素を生成
 
 ***
 
-## BODY
 
 メニューを生成
 ```
+
 <header id="menu" hidden>
   <button id="js-button"><b></b></button>
   <nav id="contents">
@@ -23,7 +21,10 @@
 <script src="/js/menu.js"></script>
 ```
 
-* [メニューの表示・非表示を切り替える](js/menu.js)
+* [menu.js](js/menu.js)
+メニューの表示・非表示を切り替えるJavaScript
+* [menu.css](css/menu.css)
+メニューをスタイリングするCSS
 
 ---
 
@@ -61,8 +62,21 @@
 </main>
 ```
 
-* [時間帯によって挨拶文を変更する](hello/all/greeting.php)
-* [ローカルストレージに通信情報／ブラウザ等情報が追加されている場合に、現在の二十四節気を表示](welcome.php)
+* [greeting.php](hello/all/greeting.php)
+時間帯によって挨拶文を変更する
+* [welcome.php](welcome.php)
+ローカルストレージに通信情報／ブラウザ等情報が追加されている場合に、現在の二十四節気を表示
+
+
+* [hello.js](js/hello.js)
+Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行
+* [readyState.js](js/readyState.js)
+ローカルストレージに追加されている情報を取得し、ページ内容を生成
+
+* [hello/style.css](hello/style.css)
+挨拶文をスタイリングするCSS
+* [hello/css/controls.css](hello/css/controls.css)
+フォームコントロールをスタイリングするCSS
 
 ---
 
@@ -86,9 +100,15 @@
 </dialog>
 ```
 
-* [通信情報／ブラウザ等情報を取得する](yourinfo.php)
-* [通信情報／ブラウザ等情報をローカルストレージに追加する](js/log.js)
-* [通信情報／ブラウザ等情報をアクセス履歴に記録する](log.php)
+* [yourinfo.php](yourinfo.php)
+通信情報／ブラウザ等情報を取得する
+* [js/log.js](js/log.js)
+通信情報／ブラウザ等情報をローカルストレージに追加する
+* [log.php](log.php)
+通信情報／ブラウザ等情報をアクセス履歴に記録する
+
+* [ver/log/style.css](ver/log/style.css)
+通信情報／ブラウザ等情報をスタイリングするCSS
 
 
 ***
@@ -115,3 +135,5 @@ closeButton.addEventListener('click', () => {
 fetchHTML('profile/yourinfo.html','#about')
 </script>
 ```
+* [modal.css](css/modal.css)
+ダイアログ要素をスタイリングするCSS

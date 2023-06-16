@@ -10,11 +10,11 @@
   <script src="js/index.js" async></script>
   <script src="js/hello.js"></script>
   <script src="js/readyState.js"></script>
-  <link rel="stylesheet" href="hello/style.css" />
-  <link rel="stylesheet" href="hello/css/controls.css" />
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/userMedia.css" />
+  <link rel="stylesheet" href="hello/style.css" />
+  <link rel="stylesheet" href="hello/css/controls.css" />
   <link rel="stylesheet" href="ver/log/style.css" />
   <link rel="stylesheet" href="thankyou/style.css" />
   <link rel="stylesheet" href="thankyou/www.css" media="print"/>
