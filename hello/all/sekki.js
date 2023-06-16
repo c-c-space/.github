@@ -65,6 +65,12 @@ function sekkiSekect(obj) {
     option.innerText = sekki.start + ' - ' + sekki.end
     select.appendChild(option)
   }
+
+  const optionAll = document.querySelectorAll("#sekki option");
+  select.addEventListener('change', function() {
+    const index =  this.selectedIndex;
+    window.location.assign(optionAll[index].value);
+  });
 }
 
 // 発話の停止・一時停止・再開
@@ -82,16 +88,4 @@ pauseBtn.addEventListener('click', function () {
 
 resumeBtn.addEventListener('click', function () {
   speechSynthesis.resume()
-})
-
-
-document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'complete') {
-    const selectModal = document.querySelector('#sekki');
-    const optionModal = document.querySelectorAll("#sekki option");
-    selectModal.addEventListener('change', function() {
-      const index =  this.selectedIndex;
-      window.location.assign(optionModal[index].value);
-    });
-  }
 })
