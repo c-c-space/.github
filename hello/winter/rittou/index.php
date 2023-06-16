@@ -165,6 +165,6 @@ require('../../all/greeting.php');
     })
   };
   </script>
-  <script src="../../../profile/js/setStyles.js"></script>
+  <script src="../../js/setStyles.js"></script>
 </body>
 </html>

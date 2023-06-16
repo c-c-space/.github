@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "雀始巣",
+      "yomi" : "(すずめはじめてすくう)",
+      "value" : "Suzume hajimete sukū",
+      "start" : "March 20",
+      "end" : "March 24",
+      "note" : "雀が巣を構え始める",
+      "description" : "Sparrows begin to set up their nests"
+    },
+    {
+      "name" : "櫻始開",
+      "yomi" : "(さくらはじめてひらく)",
+      "value" : "Sakura hajimete saku",
+      "start" : "March 25",
+      "end" : "March 29",
+      "note" : "桜の花が咲き始める",
+      "description" : "Cherry blossoms appear"
+    },
+    {
+      "name" : "雷乃発声",
+      "yomi" : "(かみなりすなわちこえをはっす)",
+      "value" : "Rainbows appear after rain",
+      "start" : "March 30",
+      "end" : "April 3",
+      "note" : "遠くで雷の音がし始める",
+      "description" : "Thunder can be heard in the distance"
+    }
+  ]
+}

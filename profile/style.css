@@ -23,20 +23,19 @@ hr {
   color: #000;
 }
 
+#modal,
 .bgcolor {
   background: #fff;
 }
 
 #js-button,
 #contents a,
-#log,
-#modal {
+#log {
   filter: invert();
 }
 
 #menu,
-#log,
-#modal {
+#log {
   mix-blend-mode: difference;
 }
 

@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "蚕起食桑",
+      "yomi" : "(かいこおきてくわをはむ)",
+      "value" : "Kaiko okite kuwa o hamu",
+      "start" : "May 20",
+      "end" : "May 25",
+      "note" : "蚕が桑を盛んに食べ始める",
+      "description" : "Silkworms start eating mulberry leaves"
+    },
+    {
+      "name" : "紅花栄",
+      "yomi" : "(べにばなさかう)",
+      "value" : "Benibana sakau",
+      "start" : "May 26",
+      "end" : "May 30",
+      "note" : "紅花が盛んに咲く",
+      "description" : "Safflowers in full bloom"
+    },
+    {
+      "name" : "麦秋至",
+      "yomi" : "(むぎのときいたる)",
+      "value" : "Mugi no toki itaru",
+      "start" : "May 31",
+      "end" : "Jun 4",
+      "note" : "麦が熟し麦秋となる",
+      "description" : "Wheat ripens for autumn harvest"
+    }
+  ]
+}

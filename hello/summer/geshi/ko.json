@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "乃東枯",
+      "yomi" : "(なつかれくさかるる)",
+      "value" : "Natsukarekusa karuru",
+      "start" : "Jun 21",
+      "end" : "Jun 25",
+      "note" : "夏枯草が枯れる",
+      "description" : "The summer herb withers"
+    },
+    {
+      "name" : "菖蒲華",
+      "yomi" : "(あやめはなさく)",
+      "value" : "Ayame hana saku",
+      "start" : "Jun 26",
+      "end" : "Jun 30",
+      "note" : "あやめの花が咲く",
+      "description" : "Irises bloom"
+    },
+    {
+      "name" : "半夏生",
+      "yomi" : "(はんげしょうず)",
+      "value" : "Hange shōzu",
+      "start" : "July 1",
+      "end" : "July 6",
+      "note" : "烏柄杓が生える",
+      "description" : "Cow-dipper plant sprouts"
+    }
+  ]
+}

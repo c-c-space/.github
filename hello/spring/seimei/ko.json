@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "玄鳥至",
+      "yomi" : "(つばめきたる)",
+      "value" : "Tsubame kitaru",
+      "start" : "April 4",
+      "end" : "April 8",
+      "note" : "燕が南からやって来る",
+      "description" : "Swallows arrive from the south"
+    },
+    {
+      "name" : "鴻雁北",
+      "yomi" : "(こうがんかえる)",
+      "value" : "Kōgan kaeru",
+      "start" : "April 9",
+      "end" : "April 13",
+      "note" : "雁が北へ渡って行く",
+      "description" : "Geese fly north"
+    },
+    {
+      "name" : "虹始見",
+      "yomi" : "(にじはじめてあらわる)",
+      "value" : "Niji hajimete arawaru",
+      "start" : "April 14",
+      "end" : "April 18",
+      "note" : "雨の後に虹が出始める",
+      "description" : "Rainbows appear after rain"
+    }
+  ]
+}

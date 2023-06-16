@@ -61,3 +61,20 @@ fclose($fp);
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
+
+<body>
+  <header id="menu" class="bgcolor" hidden>
+    <button class="color bgcolor" id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="/hello/">
+        <i>Speech to Text to Text to Speech</i>
+        <p><b><?php echo $greeting; ?></b></p>
+        <u>↩︎</u>
+      </a>
+      <a href="/hello/<?php echo $season; ?>/">
+        <i><?php echo $sekkiName; ?> is the season in</i>
+        <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
+      </a>
+    </nav>
+  </header>
+  <script src="/js/menu.js"></script>

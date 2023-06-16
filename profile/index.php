@@ -70,7 +70,9 @@
     </li>
 
     <li>
-      <span>通信情報／ブラウザ等情報</span>
+      <span>
+        <button class="color bgcolor openModal" type="button" onclick="fetchHTML('yourinfo.html','#about')">通信情報／ブラウザ等情報</button>
+      </span>
       <?php
       $ip = $_SERVER["REMOTE_ADDR"];
       $hqdn = $_SERVER["REMOTE_PORT"];
@@ -84,6 +86,11 @@
     <script src="../js/log.js"></script>
   </ul>
 
+  <dialog id="modal">
+    <button id="closeButton">Close 閉じる</button>
+    <section id="about"></section>
+  </dialog>
+
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
@@ -92,8 +99,33 @@
 
   function update(online) {
     document.querySelector('#status').textContent =
-    online ? 'You are: Online' : 'You are: Offline';
+    online ? 'Online' : 'Offline';
   }
+
+  async function fetchHTML(url = '', query = '') {
+    fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.querySelector(query).innerHTML = html
+    });
+  }
+
+  const dialogModal = document.querySelector('#modal');
+  const openModalAll = document.querySelectorAll('.openModal');
+  for (const openModal of openModalAll) {
+    openModal.addEventListener('click', function onModal() {
+      if (typeof dialogModal.showModal === "function") {
+        dialogModal.showModal();
+      } else {
+        alert("The <dialog> API is not supported by this browser");
+      }
+    }, false);
+  }
+
+  const closeButton = document.querySelector('#closeButton');
+  closeButton.addEventListener('click', () => {
+    dialogModal.close();
+  });
   </script>
 
   <video id="userMedia" autoplay playsinline></video>
