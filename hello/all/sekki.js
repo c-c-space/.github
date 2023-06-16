@@ -87,8 +87,8 @@ resumeBtn.addEventListener('click', function () {
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'complete') {
-    const selectModal = document.querySelector('#modal select');
-    const optionModal = document.querySelectorAll("#modal select option");
+    const selectModal = document.querySelector('#sekki');
+    const optionModal = document.querySelectorAll("#sekki option");
     selectModal.addEventListener('change', function() {
       const index =  this.selectedIndex;
       window.location.assign(optionModal[index].value);
