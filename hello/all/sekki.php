@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../css/index.css" />
-
 <dialog id="modal" class="color bgcolor">
   <h3>
     <small><?php echo $date;?></small><br/>
@@ -33,6 +31,7 @@
 </dialog>
 
 <script src="../../all/controls.js"></script>
+<script src="../../js/log.js"></script>
 <script src="../../all/72ko.js"></script>
 <script type="text/javascript">
 colorJSON('../color.json')
@@ -49,7 +48,6 @@ function ChangeHidden() {
   })
 };
 </script>
-<script src="../../js/log.js"></script>
 <script src="../../js/setStyles.js"></script>
 </body>
 </html>

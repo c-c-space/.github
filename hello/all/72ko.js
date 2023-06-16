@@ -21,10 +21,7 @@ function koIndex(obj) {
     let buttonP = document.createElement('p')
     let button = document.createElement('button')
     button.type = 'button'
-    button.lang = 'en-GB'
     button.setAttribute('data-name', 'Daniel')
-    button.setAttribute('data-pitch', '0.9')
-    button.setAttribute('data-rate', '0.9')
     button.setAttribute('data-hello', ko.description)
     button.innerHTML = `
     ${ko.name} <i>${ko.value}</i>
@@ -33,5 +30,24 @@ function koIndex(obj) {
     li.appendChild(date)
     li.appendChild(buttonP)
     buttonP.appendChild(button)
+
+    button.addEventListener('click', function () {
+      const uttr = new SpeechSynthesisUtterance()
+      uttr.text = this.dataset.hello
+      uttr.lang = "en-GB"
+      uttr.voice = speechSynthesis
+      .getVoices()
+      .filter(voice => voice.name === this.dataset.name)[0]
+
+      uttr.pitch = 0.9
+      uttr.rate = 0.9
+      speechSynthesis.speak(uttr)
+
+      const h1B = document.querySelector('#log h1 b')
+      h1B.innerText = this.dataset.name + this.innerText
+
+      const description = document.querySelector('#lastModified')
+      description.innerText = this.dataset.description
+    }, false)
   }
 }
