@@ -38,7 +38,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-  <style media="screen">
+  <style>
   #log h2 {
     width: calc(100% - 1rem);
     max-width: 550px;
@@ -116,14 +116,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       コントロールから日本の伝統的な季節の色を選択すると、文字・背景の色が変更されます。
     </form>
   </dialog>
-  <nav id="now" class="hidden">
-    <section class="controls">
-      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
-    </section>
-    <button id="openModal" class="color bgcolor" type="button">?</button>
-  </nav>
+  <?php require('../all/controls.html'); ?>
 
   <script src="../all/controls.js"></script>
   <script src="../all/sekki.js"></script>

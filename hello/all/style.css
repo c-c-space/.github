@@ -1,0 +1,59 @@
+body {
+  background: #000;
+}
+
+#hello,
+#log button,
+#log h1,
+#log h2,
+#log ul li button,
+#log .controls {
+  filter: invert();
+  mix-blend-mode: difference;
+}
+
+#log h2 {
+  width: 75%;
+  max-width: 550px;
+}
+
+#log h2 {
+  font-size: 100%;
+  line-height: 150%;
+}
+
+#log button::before {
+  content: attr(data-name);
+}
+
+#log section ul {
+  font-size: 90%;
+}
+
+#log section ul li {
+  flex: 15%;
+}
+
+@media screen and (max-width: 1025px) {
+  #log section ul {
+    font-size: 75%;
+  }
+
+  #log section ul li {
+    flex: 1 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 3vw;
+  }
+
+  #log ul li button {
+    border: 0.25vw solid;
+    border-radius: 4.5vw;
+    font-size: 3vw;
+    padding: 1.25vw 2vw;
+    margin: 0.5vw 1vw 0.5vw 0;
+  }
+}

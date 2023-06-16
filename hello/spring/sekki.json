@@ -7,7 +7,7 @@
       "start" : "February 4",
       "end" : "February 18",
       "note" : "旧暦では、一年のはじまりは立春から。まだ寒さの厳しい時期だが日脚は徐々に伸び、暖かい地方では梅が咲き始める。",
-      "description" : "The Beginning of Spring."
+      "description" : "The Beginning of Spring"
     },
     {
       "name" : "雨水",
@@ -16,7 +16,7 @@
       "start" : "February 19",
       "end" : "March 4",
       "note" : "空から降るものが雪から雨に替わる頃。深く積もった雪も融け始める。草木がほんのり色づく様子や、春霞を楽しめる季節。",
-      "description" : "Snow melts into water."
+      "description" : "Snow melts into water"
     },
     {
       "name" : "啓蟄",
@@ -25,7 +25,7 @@
       "start" : "March 5",
       "end" : "March 19",
       "note" : "冬眠をしていた虫が穴から出てくる頃。蝶々が飛びはじめ、柳の若芽が芽吹き、蕗のとうの花や桃の花が咲く頃。",
-      "description" : "Insects emerge from the ground."
+      "description" : "Insects emerge from the ground"
     },
     {
       "name" : "春分",
@@ -34,7 +34,7 @@
       "start" : "March 20",
       "end" : "April 3",
       "note" : "春分日をはさんで前後7日間が彼岸。雀が巣をつくり始め、桜が開花する頃。花冷えや寒の戻りがあるので暖かいと言っても油断は禁物。この後は昼の時間が長くなって行く。",
-      "description" : "The Spring Equinox."
+      "description" : "The Spring Equinox"
     },
     {
       "name" : "清明",
@@ -43,7 +43,7 @@
       "start" : "April 4",
       "end" : "April 18",
       "note" : "清浄明潔の略。晴れ渡った空には当に清浄明潔という語にふさわしい。つばめが飛来し、爽やかな風が吹く頃。地上に目を移せば、百花が咲き競う。",
-      "description" : "Clear and Bright, Plants flower."
+      "description" : "Clear and Bright, Plants flower"
     },
     {
       "name" : "穀雨",
@@ -52,7 +52,7 @@
       "start" : "April 19",
       "end" : "May 4",
       "note" : "田んぼや畑の準備が整い、それに合わせるように柔らかな春の雨が降る頃。この頃より変りやすい春の天気も安定し日差しも強まる。植物が緑一色に輝きはじめる。",
-      "description" : "Spring rains and seed sowing."
+      "description" : "Spring rains and seed sowing"
     }
   ]
 }

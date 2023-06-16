@@ -49,7 +49,7 @@ fclose($fp);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="../summary.png" />
 
-  <link rel="stylesheet" href="../../../css/menu.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../../css/index.css" />
   <link rel="stylesheet" href="../../css/controls.css" />

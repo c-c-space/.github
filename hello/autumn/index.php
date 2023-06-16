@@ -73,62 +73,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </h2>
     </div>
     <section>
-      <ul>
-        <li>
-          <p>
-            <date>August 8</date> -
-            <date>August 22</date>
-          </p>
-          <button type="button" data-name="立秋" data-date="The Beginning of Autumn" data-hello="一年で一番暑い頃。一番暑いと言うことはあとは涼しくなるばかり。季節の挨拶が「残暑見舞い」に替わる。">
-            (りっしゅう)
-          </button>
-        </li>
-        <li>
-          <p>
-            <date>August 23</date> -
-            <date>September 7</date>
-          </p>
-          <button type="button" data-name="処暑" data-date="Hot weather abates" data-hello="暑さが和らぐ頃。マツムシや鈴虫など心地よい虫の声が聞こえ、朝夕は心地よい涼風が吹く。同時に台風の季節も到来する。">
-            (しょしょ)
-          </button>
-        </li>
-        <li>
-          <p>
-            <date>September 8</date> -
-            <date>September 22</date>
-          </p>
-          <button type="button" data-name="白露" data-date="Dew forms on the leaves" data-hello="野に顔を出しはじめた薄の穂に朝露がつき、白い粒のように光って見える頃。涼風に幾分の肌寒さを感じさせる冷風が混じり始める。">
-            (はくろ)
-          </button>
-        </li>
-        <li>
-          <p>
-            <date>September 23</date> -
-            <date>October 7</date>
-          </p>
-          <button type="button" data-name="秋分" data-date="The Autumn Equinox" data-hello="「暑さ寒さも彼岸まで」の言葉通り、暑い日に代わり冷気を感ずる日が増えはじめ、秋が深まっていく。秋の七草が咲き揃う頃。">
-            (しゅうぶん)
-          </button>
-        </li>
-        <li>
-          <p>
-            <date>October 8</date> -
-            <date>October 23</date>
-          </p>
-          <button type="button" data-name="寒露" data-date="Weather becomes colder" data-hello="夜が長くなり露がつめたく感じられる頃。菊の花が咲き始め、山の木々の葉は紅葉の準備に入る。安定して秋晴れの日が多くなる。">
-            (かんろ)
-          </button>
-        </li>
-        <li>
-          <p>
-            <date>October 24</date> -
-            <date>November 7</date>
-          </p>
-          <button type="button" data-name="霜降" data-date="The Season of Frost" data-hello="北国や山間部では、朝霜が降りて草木が白く化粧をする頃。野の花の数は減り始め、代わって山を紅葉が飾る。人々や動物たちの冬仕度が始まる。">
-            (そうこう)
-          </button>
-        </li>
-      </ul>
+      <ul></ul>
     </section>
   </main>
 
@@ -140,12 +85,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <section id="collection">
       <select class="color bgcolor" id="sekki">
         <option selected disabled>View The Collection</option>
-        <option value="risshu">August 8 - August 22</option>
-        <option value="shosho">August 23 - September 7</option>
-        <option value="hakuro">September 8 - September 22</option>
-        <option value="shuubun">September 23 - October 7</option>
-        <option value="kanro">October 8 - October 23</option>
-        <option value="soukou">October 24 - November 7</option>
       </select>
       <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
       <hr>
@@ -180,10 +119,11 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <?php require('../all/controls.html'); ?>
 
   <script src="../all/controls.js"></script>
+  <script src="../all/sekki.js"></script>
   <script type="text/javascript">
-  colorJSON('color.json');
+    colorJSON('color.json')
+    sekkiJSON('sekki.json')
   </script>
-  <script src="../all/24sekki.js"></script>
   <script src="../../profile/js/setStyles.js"></script>
 </body>
 </html>
