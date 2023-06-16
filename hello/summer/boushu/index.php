@@ -16,7 +16,6 @@ require('../../all/greeting.php');
 ?>
 
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" class="bgcolor" hidden>
     <button class="color bgcolor" id="js-button"><b></b></button>
     <nav id="contents">
@@ -31,6 +30,7 @@ require('../../all/greeting.php');
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <main id="hello" hidden>
     <section id="readme">
@@ -159,17 +159,11 @@ require('../../all/greeting.php');
     <p><?php echo $hello;?></p>
     <?php require('../../all/timeframe.html'); ?>
   </dialog>
-  <script src="../color.js"></script>
+
+  <script src="../../all/controls.js"></script>
   <script type="text/javascript">
-  let namesForm = document.querySelectorAll('#bgcolor, #color')
-  for (const names of namesForm) {
-    Object.entries(colors).forEach(eachArr => {
-      let option = document.createElement('option')
-      option.textContent = Object.values(eachArr)[0]
-      option.value = Object.values(eachArr)[1]
-      names.appendChild(option)
-    })
-  }
+  colorJSON('../color.json')
+
   function ChangeHidden() {
     const mainAll = document.querySelectorAll('main');
     mainAll.forEach(main => {
