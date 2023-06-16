@@ -44,10 +44,10 @@ function koIndex(obj) {
       speechSynthesis.speak(uttr)
 
       const h1B = document.querySelector('#log h1 b')
-      h1B.innerText = this.dataset.name + this.innerText
+      h1B.innerText = this.dataset.hello
 
       const description = document.querySelector('#lastModified')
-      description.innerText = this.dataset.description
+      description.innerText = this.innerText
     }, false)
   }
 }
