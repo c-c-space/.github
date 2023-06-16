@@ -6,7 +6,7 @@ require('../all/greeting.php');
 $season = "spring";
 $thisSeason = "春";
 $thisDate = "February 4 - May 4";
-$description = "The Collection of Traditional Japanese Seasonal Color";
+$description = "The Collection of Traditional Seasonal Colors of Japan";
 $title = $season .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";

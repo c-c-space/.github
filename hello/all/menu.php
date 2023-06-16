@@ -4,8 +4,8 @@
     <p><b><?php echo $greeting; ?></b></p>
     <u>↩︎</u>
   </a>
-  <a onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
-    <i><?php echo $seasonDate; ?></i>
+  <a onclick="window.location.replace('/hello/<?php echo $season; ?>/color.php');">
+    <i>The Collection of Traditional Seasonal Colors of Japan</i>
     <p><b><?php echo $seasonName; ?></b> <?php echo $season; ?></p>
   </a>
   <a onclick="window.location.assign('/hello/<?php echo $season; ?>/<?php echo $sekki; ?>/');">
