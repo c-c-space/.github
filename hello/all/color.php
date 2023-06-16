@@ -3,10 +3,8 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 
-$thisSeason = "冬";
-$thisDate = "November 8 - February 3";
+$title =  '日本の伝統的な季節の色';
 $description = "The Collection of Traditional Seasonal Colors of Japan";
-$title = $thisSeason .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -37,9 +35,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <dialog id="modal">
     <h1>
       <ruby>
-        <b id="name">日本の伝統的な季節の色</b>
+        <b id="name"><?php echo $title; ?></b>
         <rp>(</rp>
-        <rt id="yomi"><?php echo $title; ?></rt>
+        <rt id="yomi"></rt>
         <rp>)</rp>
       </ruby>
     </h1>
