@@ -3,11 +3,10 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/greeting.php');
 
-$season = "summer";
-$thisSeason = "夏";
-$thisDate = "May 5 - August 7";
+$thisSeason = "冬";
+$thisDate = "November 8 - February 3";
 $description = "The Collection of Traditional Seasonal Colors of Japan";
-$title = $season .' | '. $thisDate;
+$title = $thisSeason .' | '. $thisDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
@@ -38,7 +37,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <dialog id="modal">
     <h1>
       <ruby>
-        <b id="name">日本の伝統的な<?php echo $thisSeason; ?>の色</b>
+        <b id="name">日本の伝統的な季節の色</b>
         <rp>(</rp>
         <rt id="yomi"><?php echo $title; ?></rt>
         <rp>)</rp>
@@ -56,13 +55,16 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </dialog>
   <main>
     <ul id="color"></ul>
-    <button id="backBtn" type="button" onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
+    <button id="backBtn" type="button" onclick="window.location.replace('/hello/all/');">
       <b>↩︎</b>
     </button>
   </main>
-  <script src="../all/colors.js"></script>
+  <script src="colors.js"></script>
   <script type="text/javascript">
-  indexJSON('color.json');
+  indexJSON('../spring/color.json');
+  indexJSON('../summer/color.json');
+  indexJSON('../autumn/color.json');
+  indexJSON('../winter/color.json');
   </script>
 </body>
 </html>

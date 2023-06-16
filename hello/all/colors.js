@@ -61,4 +61,3 @@ function indexObject(obj) {
     }, false)
   }
 }
-indexJSON('color.json');

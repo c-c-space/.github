@@ -61,5 +61,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </button>
   </main>
   <script src="../all/colors.js"></script>
+  <script type="text/javascript">
+  indexJSON('color.json');
+  </script>
 </body>
 </html>
