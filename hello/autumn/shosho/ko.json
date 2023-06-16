@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "綿柎開",
+      "yomi" : "(わたのはなしべひらく)",
+      "value" : "Wata no hana shibe hiraku",
+      "start" : "August 23",
+      "end" : "August 27",
+      "note" : "綿を包む萼が開く",
+      "description" : "Cotton flowers bloom"
+    },
+    {
+      "name" : "天地始粛",
+      "yomi" : "(てんちはじめてさむし)",
+      "value" : "Tenchi hajimete samushi",
+      "start" : "August 28",
+      "end" : "September 2",
+      "note" : "ようやく暑さが鎮まる",
+      "description" : "Heat finally subsides"
+    },
+    {
+      "name" : "禾乃登",
+      "yomi" : "(こくものすなわちみのる)",
+      "value" : "Kokumono sunawachi minoru",
+      "start" : "September 3",
+      "end" : "September 7",
+      "note" : "稲が実る",
+      "description" : "Rice grows"
+    }
+  ]
+}

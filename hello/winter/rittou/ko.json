@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "山茶始開",
+      "yomi" : "(つばきはじめてひらく)",
+      "value" : "Tsubaki hajimete hiraku",
+      "start" : "November 8",
+      "end" : "November 12",
+      "note" : "山茶花が咲き始める",
+      "description" : "Camellias bloom"
+    },
+    {
+      "name" : "地始凍",
+      "yomi" : "(ちはじめてこおる)",
+      "value" : "Chi hajimete kōru",
+      "start" : "November 13",
+      "end" : "November 17",
+      "note" : "大地が凍り始める",
+      "description" : "Earth begins to freeze"
+    },
+    {
+      "name" : "金盞香",
+      "yomi" : "(きんせんかさく)",
+      "value" : "Kinsenka saku",
+      "start" : "November 18",
+      "end" : "November 21",
+      "note" : "水仙の花が咲く",
+      "description" : "Daffodils bloom"
+    }
+  ]
+}

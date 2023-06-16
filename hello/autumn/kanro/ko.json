@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "鴻雁来",
+      "yomi" : "(こうがんきたる)",
+      "value" : "Kōgan kitaru",
+      "start" : "October 8",
+      "end" : "October 13",
+      "note" : "雁が飛来し始める",
+      "description" : "Geese fly south"
+    },
+    {
+      "name" : "菊花開",
+      "yomi" : "(きくのはなひらく)",
+      "value" : "Kiku no hana hiraku",
+      "start" : "October 14",
+      "end" : "October 18",
+      "note" : "菊の花が咲く",
+      "description" : "Chrysanthemum flowers bloom"
+    },
+    {
+      "name" : "蟋蟀在戸",
+      "yomi" : "(きりぎりすとにあり)",
+      "value" : "Kirigirisu to ni ari",
+      "start" : "October 19",
+      "end" : "October 23",
+      "note" : "蟋蟀が戸の辺りで鳴く",
+      "description" : "Crickets chirp near doors"
+    }
+  ]
+}

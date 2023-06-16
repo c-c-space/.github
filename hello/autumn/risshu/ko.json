@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "涼風至",
+      "yomi" : "(すずかぜいたる)",
+      "value" : "Suzukaze itaru",
+      "start" : "August 8",
+      "end" : "August 12",
+      "note" : "涼しい風が立ち始める",
+      "description" : "Cool breezes"
+    },
+    {
+      "name" : "寒蝉鳴",
+      "yomi" : "(ひぐらしなく)",
+      "value" : "Higurashi naku",
+      "start" : "August 13",
+      "end" : "August 17",
+      "note" : "蜩が鳴き始める",
+      "description" : "Evening cicadas sing"
+    },
+    {
+      "name" : "蒙霧升降",
+      "yomi" : "(ふかききりまとう)",
+      "value" : "Fukaki kiri matō",
+      "start" : "August 18",
+      "end" : "August 22",
+      "note" : "深い霧が立ち込める",
+      "description" : "Deep fog descends"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "ko" : [
+    {
+      "name" : "乃東生",
+      "yomi" : "(なつかれくさしょうず)",
+      "value" : "Natsukarekusa shōzu",
+      "start" : "December 22",
+      "end" : "December 26",
+      "note" : "夏枯草が芽を出す",
+      "description" : "The summer herb sprouts"
+    },
+    {
+      "name" : "麋角解",
+      "yomi" : "(さわしかつのおつる)",
+      "value" : "Sawashika no tsuno otsuru",
+      "start" : "December 27",
+      "end" : "December 31",
+      "note" : "大鹿が角を落とす",
+      "description" : "Big deer shed their antlers"
+    },
+    {
+      "name" : "雪下出麦",
+      "yomi" : "(ゆきくだりてむぎのびる)",
+      "value" : "Yuki watarite mugi nobiru",
+      "start" : "January 1",
+      "end" : "January 5",
+      "note" : "雪の下で麦が芽を出す",
+      "description" : "Wheat sprouts under snow"
+    }
+  ]
+}
