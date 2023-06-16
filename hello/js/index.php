@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
+  <link rel="stylesheet" href="/css/menu.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="../../ver/howto.css" />
@@ -12,7 +13,6 @@
 </head>
 
 <body>
-  <script src="/js/menu.js"></script>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -22,6 +22,7 @@
       </a>
     </nav>
   </header>
+  <script src="/js/menu.js"></script>
 
   <main id="hello">
     <?php require('form.html');?>
