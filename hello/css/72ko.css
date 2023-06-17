@@ -19,9 +19,8 @@ h2,
     display: none;
   }
 
-  main {
-    box-sizing: border-box;
-    break-after: page;
+  #ko {
+    break-before: page;
   }
 
   #hello #readme p,
