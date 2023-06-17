@@ -15,8 +15,7 @@ h2,
 
 @media print {
   #log div,
-  #log hr,
-  #log #ko {
+  #log hr {
     display: none;
   }
 
