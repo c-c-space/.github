@@ -56,7 +56,7 @@ h2,
   }
 
   #log .collection ul li {
-    margin: 1rem 0;
+    padding: 0.5rem 0;
   }
 
   #log ul li button {
