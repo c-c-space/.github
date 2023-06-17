@@ -22,6 +22,11 @@ body {
   line-height: 150%;
 }
 
+#log button {
+  content: attr(data-name);
+  font-family: "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
 #log button::before {
   content: attr(data-name);
 }
@@ -63,5 +68,11 @@ body {
     break-before: page;
     break-after: page;
     height: 200vh;
+  }
+
+  #hello #readme {
+    color: #fff;
+    font-size: 4vw;
+    padding: 0 2.25rem 0 0;
   }
 }
