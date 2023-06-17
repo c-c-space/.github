@@ -15,15 +15,14 @@ main {
   display: block;
 }
 
-main,
-#log ul li {
+main {
   break-before: page;
 }
 
+#log div,
 #log ul li {
   break-after: page;
 }
-
 
 #log section ul li {
   height: 100vh;
