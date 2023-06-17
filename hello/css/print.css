@@ -82,7 +82,6 @@ main,
   margin: 1rem 0;
   text-align: left;
   cursor: none;
-  pointer-events: none;
 }
 
 #log ul li p {
