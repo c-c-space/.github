@@ -39,6 +39,10 @@ fclose($fp);
     break-after: page;
   }
 
+  #log section ul {
+    break-after: page;
+  }
+
   #hello {
     display: none;
   }
