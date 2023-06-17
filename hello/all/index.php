@@ -75,8 +75,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <main id="hello" hidden>
     <section id="readme">
       <strong>
-        The Year is divided into <i>Four Seasons</i>, <wbr/>
-        but traditionally the year was also divided up into <i>24 Sekki</i>.<br/>
+        The Year is divided into Four Seasons, <wbr/>
+        but traditionally the year was also divided up into 24 Sekki.<br/>
       </strong>
       <strong>
         <?php echo $sekkiDate;?>

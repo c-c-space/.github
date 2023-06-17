@@ -82,6 +82,12 @@ body {
     padding: 0 4vw 0 0;
   }
 
+  #hello #readme::after {
+    content: "creative-community.space";
+    display: block;
+    margin: 2.5vw 0;
+  }
+
   #hello #readme,
   #hello #readme p {
     color: #fff;
