@@ -19,21 +19,32 @@ main {
   display: block;
 }
 
-main,
-#log section,
-#log ul,
-#log ul li {
-  break-before: page;
-}
-
-#log div,
-#log ul li {
-  break-after: page;
+#log section ul {
+  display: block;
+  padding: 0;
 }
 
 #log section ul li {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  width: 100%;
   height: 100vh;
   max-height: -webkit-fill-available;
+}
+
+main,
+#log section,
+#log section ul {
+  break-before: page;
+}
+
+#log section ul li {
+  break-before: left;
+}
+
+#log div,
+#log section ul li {
+  break-after: page;
 }
 
 #log button,
@@ -44,13 +55,6 @@ main,
   text-align: left;
   cursor: none;
   pointer-events: none;
-}
-
-#log section ul li {
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  flex: 100%;
-  width: 100%;
 }
 
 #log ul li p {
