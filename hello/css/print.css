@@ -80,6 +80,7 @@ main,
   border: none;
   padding: 0;
   margin: 1rem 0;
+  font-family: "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   text-align: left;
   cursor: none;
 }
@@ -92,7 +93,7 @@ main,
 #log ul li p::after {
   content: attr(data-description);
   display: block;
-  font-family: "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+  font-family: "Arial Narrow", sans-serif;
   font-size: 95%;
   margin: 1rem 0 0;
 }
@@ -100,7 +101,6 @@ main,
 #log ul li button::after {
   content: attr(data-note);
   display: block;
-  font-family: "Arial Narrow", sans-serif;
   font-size: 75%;
   margin: 1rem 0;
 }
