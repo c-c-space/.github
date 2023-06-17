@@ -15,7 +15,7 @@ h2,
 
 @media print {
   #hello #readme p,
-  #hello #readme button {
+  #hello #readme input[type="button"] {
     font-size: 75%;
   }
 
