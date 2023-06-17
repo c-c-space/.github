@@ -21,11 +21,6 @@
 }
 
 @media print {
-  #log div,
-  #log hr {
-    display: none;
-  }
-
   main,
   #log section {
     break-after: page;

@@ -37,9 +37,9 @@ fclose($fp);
     margin: 0;
   }
 
-  @media screen and (max-width: 750px) {
-    #hello #readme {
-      margin: 0;
+  @media print {
+    #hello {
+      display: none;
     }
   }
   </style>
