@@ -19,10 +19,6 @@ h2,
     display: none;
   }
 
-  #ko {
-    break-before: page;
-  }
-
   #hello #readme p,
   #hello input[type="button"] {
     font-size: 100%;
