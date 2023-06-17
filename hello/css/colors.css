@@ -225,21 +225,6 @@ dialog#modal button,
     mix-blend-mode: difference;
   }
 
-  #backBtn {
-    width: 100%;
-    height: 100vh;
-  }
-
-  #backBtn::before {
-    box-sizing: border-box;
-    content: "creative-community.space/hello/";
-    display: block;
-    font-size: 1rem;
-    text-align: left;
-    padding: 2rem;
-    width: 100%;
-  }
-
   dialog#modal h1 {
     margin: 2rem 1rem 1rem 2rem;
   }
@@ -268,5 +253,20 @@ dialog#modal button,
     font-size: 1rem;
     padding: 2rem 1rem 2rem 2rem;
     margin: 0;
+  }
+
+  #backBtn {
+    width: 100%;
+  }
+
+  #backBtn::before {
+    box-sizing: border-box;
+    content: "creative-community.space/hello/";
+    display: block;
+    font-family: "ipag", "Arial Narrow", monospace;
+    font-size: 1rem;
+    text-align: left;
+    padding: 2rem;
+    width: 100%;
   }
 }
