@@ -115,15 +115,11 @@ h2,
     break-before: page;
     break-after: page;
   }
-  
+
   #log section {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-
-  #log hr {
-    display: none;
   }
 
   #log div {
