@@ -68,10 +68,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       content: "https://creative-community.space/hello/winter/";
       display: block;
       font-family: "ipag", monospace;
-      font-size: 200%;
+      font-size: 5vw;
       transform: scale(1, 1.25);
       word-break: break-all;
-      margin: 1rem 0.5rem;
+      margin: 1vw;
     }
 
     #log section ul li {
