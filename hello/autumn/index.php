@@ -66,8 +66,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
     #log section::before {
       content: "https://creative-community.space/hello/autumn/";
+      display: block;
       font-family: "ipag", monospace;
-      font-size: 125%;
+      font-size: 200%;
       transform: scale(1, 1.25);
       word-break: break-all;
       margin: 1rem 0.5rem;
