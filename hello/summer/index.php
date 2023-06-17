@@ -68,7 +68,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       content: "https://creative-community.space/hello/summer/";
       display: block;
       font-family: "ipag", monospace;
-      font-size: 2.5rem;
+      font-size: 1.25rem;
       line-height: 150%;
       transform: scale(1, 1.25);
       word-break: break-all;
