@@ -202,13 +202,13 @@ dialog#modal button,
     display: none;
   }
 
-  ul#color li::before {
+  ul#color::before {
     content: "";
     break-before: page;
     break-after: page;
     display: block;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
   }
 
   ul#color li {
