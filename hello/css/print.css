@@ -11,6 +11,10 @@
   top: 0;
 }
 
+#hello #readme {
+  font-size: 4.5vw;
+}
+
 #log h2 {
   font-size: 125%;
 }
