@@ -57,44 +57,6 @@ fclose($fp);
   <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="../../css/72ko.css" />
   <link rel="stylesheet" href="../../css/print.css" media="print"/>
-  <style media="print">
-  #log div,
-  #log hr {
-    display: none;
-  }
-
-  main {
-    box-sizing: border-box;
-    break-after: page;
-  }
-
-  #hello #readme p,
-  #hello input[type="button"] {
-    font-size: 100%;
-  }
-
-  #hello #readme p,
-  #hello input[type="button"] {
-    padding: 0;
-    margin: 0;
-  }
-
-  #hello input[type="button"] {
-    border: none;
-    cursor: none;
-    text-decoration: underline;
-  }
-
-  #log ul li button {
-    font-size: 75%;
-  }
-
-  #log ul li button::after {
-    content: attr(data-hello);
-    font-size: 150%;
-    margin: 1rem 0;
-  }
-  </style>
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
