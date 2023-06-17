@@ -24,7 +24,13 @@ main {
   padding: 0;
 }
 
-#log section ul li {
+#log section ul li::after {
+  content: "";
+  display: block;
+}
+
+#log section ul li,
+#log section ul li::after {
   padding: 0.5rem;
   font-size: 1.25rem;
   width: 100%;
@@ -35,7 +41,8 @@ main {
 main,
 #log section,
 #log section ul,
-#log section ul li {
+#log section ul li,
+#log section ul li::after {
   break-before: page;
 }
 
