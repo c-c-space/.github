@@ -64,7 +64,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       width: 75%;
     }
 
-    #log div::before {
+    #log div::after {
       content: "text here";
       font-size: 75%;
       margin: 1rem;
