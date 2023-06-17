@@ -246,7 +246,7 @@ dialog#modal button,
     content: attr(data-note)'\A\A'attr(data-description);
     display: block;
     font-size: 90%;
-    padding: 0 1rem 0 2rem;
+    padding: 0 2rem;
   }
 
   ul#color p {
