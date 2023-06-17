@@ -48,8 +48,11 @@ h2,
     text-decoration: underline;
   }
 
-  #log .collection {
-    margin-top: 1rem 0;
+  #log .collection::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
   }
 
   #log ul li button {
