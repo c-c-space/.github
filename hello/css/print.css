@@ -48,6 +48,8 @@ main,
 }
 
 #log div,
+#log section,
+#log section ul,
 #log section ul li {
   break-after: page;
 }
