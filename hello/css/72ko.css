@@ -26,6 +26,7 @@ h2,
 
   #log section {
     box-sizing: border-box;
+    break-before: page;
     padding: 0;
     margin: 0;
   }
