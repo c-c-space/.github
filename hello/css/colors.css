@@ -218,6 +218,18 @@ dialog#modal button,
     height: 100vh;
   }
 
+  ul#color li::before {
+    content: attr(data-yomi);
+    display: block;
+    font-size: 90%;
+    top: 0;
+    right: 0;
+    padding: 0 2rem;
+    position: absolute;
+    filter: invert();
+    mix-blend-mode: difference;
+  }
+
   ul#color li::after {
     white-space: pre-wrap;
     content: attr(data-note)'\A\A'attr(data-description);
