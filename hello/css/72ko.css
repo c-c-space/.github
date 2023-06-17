@@ -13,18 +13,6 @@ h2,
   }
 }
 
-@page :first {
-  margin-left: 4cm;
-}
-
-@page :right {
-  margin-right: 4cm;
-}
-
-@page :left {
-  margin-left: 4cm;
-}
-
 @media print {
   #log div,
   #log hr {
