@@ -49,6 +49,23 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   </header>
   <script src="/js/menu.js"></script>
 
+  <main id="hello" hidden>
+    <section id="readme">
+      The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki.<br/>
+      <?php echo $sekkiDate;?> <?php echo $sekkiAbout;?><br/>
+      <br/>
+      二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。<br/>
+      中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
+    </section>
+    <br>
+    <p>
+      On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br/>
+      この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
+    </p>
+    <hr>
+    <input type="button" onclick="ChangeHidden()" value="閉じる Close">
+  </main>
+
   <main id="log">
     <button type="button" id="enter-btn" onClick="ChangeHidden()">二十四節気 24 Sekki</button>
     <div>
@@ -70,23 +87,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <option selected disabled>View The Collection</option>
       </select>
     </section>
-  </main>
-
-  <main id="hello" hidden>
-    <section id="readme">
-      The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki.<br/>
-      <?php echo $sekkiDate;?> <?php echo $sekkiAbout;?><br/>
-      <br/>
-      二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。<br/>
-      中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
-    </section>
-    <br>
-    <p>
-      On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br/>
-      この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
-    </p>
-    <hr>
-    <input type="button" onclick="ChangeHidden()" value="閉じる Close">
   </main>
 
   <script src="sekki.js"></script>
