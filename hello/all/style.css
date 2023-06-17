@@ -81,12 +81,12 @@ body {
     height: 200vh;
   }
 
-  #log div,
-  #hello #readme {
-    font-size: 3.33vw;
+  #log div {
+    font-size: 3vw;
   }
 
   #hello #readme {
+    font-size: 3.33vw;
     padding: 0 4vw 0 0;
   }
 
