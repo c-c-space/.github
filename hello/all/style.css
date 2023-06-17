@@ -69,6 +69,7 @@ body {
 }
 
 @media print {
+  main,
   #log section,
   #log section ul {
     break-before: page;
