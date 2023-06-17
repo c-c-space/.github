@@ -39,7 +39,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-  <style media="screen">
+  <style>
   #log h2 {
     width: calc(100% - 1rem);
     max-width: 550px;
