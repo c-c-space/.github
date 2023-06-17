@@ -72,7 +72,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       line-height: 150%;
       transform: scale(1, 1.25);
       word-break: break-all;
-      margin: 2.5vw 1vw;
+      margin: 5vw 2.5vw;
     }
 
     #log section ul li {
