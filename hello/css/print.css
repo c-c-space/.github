@@ -47,8 +47,7 @@ main,
 }
 
 #log div,
-#log section ul li,
-#log section ul li p {
+#log section ul li {
   break-after: page;
 }
 
