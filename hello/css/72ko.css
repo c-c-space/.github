@@ -3,6 +3,10 @@ h2,
   zoom: 0.75;
 }
 
+#hello #readme {
+  margin: 0;
+}
+
 @media screen and (max-width: 750px) {
   #hello #readme {
     margin: 0;
@@ -22,10 +26,6 @@ h2,
 
   @page :first {
     margin-left: 2cm;
-  }
-
-  #hello #readme {
-    margin: 0;
   }
 
   #log section {
