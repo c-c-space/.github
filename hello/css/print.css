@@ -15,7 +15,9 @@ main {
   display: block;
 }
 
-main {
+main,
+#log section,
+#log ul {
   break-before: page;
 }
 
