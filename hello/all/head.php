@@ -90,7 +90,7 @@ fclose($fp);
 
   #log ul li button::after {
     content: attr(data-hello);
-    font-size: 100%;
+    font-size: 150%;
     margin: 1rem 0;
   }
   </style>
