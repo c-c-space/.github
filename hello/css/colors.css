@@ -260,16 +260,25 @@ dialog#modal button,
     padding: 2rem;
   }
 
-  #backBtn::before {
+  #backBtn::before,
+  #backBtn::after {
     box-sizing: border-box;
-    content: "creative-community.space/hello/";
     display: block;
     font-family: "ipag", "Arial Narrow", monospace;
-    font-size: 2rem;
     text-align: left;
-    transform: scale(1, 1.25);
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+
+  #backBtn::before {
+    content: "creative-community.space/hello/";
+    font-size: 2rem;
+    transform: scale(1, 1.25);
+  }
+
+  #backBtn::after {
+    content: "text here";
+    font-size: 1rem;
   }
 }
