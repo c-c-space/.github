@@ -193,6 +193,14 @@ dialog#modal button,
     transform: translate(0, 0);
   }
 
+  ul#color::before {
+    content: "";
+    break-after: page;
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
   ul#color li {
     break-after: page;
     display: block;
