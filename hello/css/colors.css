@@ -211,7 +211,8 @@ dialog#modal button,
     height: 100vh;
   }
 
-  ul#color li {
+  ul#color li,
+  #backBtn::before {
     break-after: page;
     display: block;
     width: 100%;
