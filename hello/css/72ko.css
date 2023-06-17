@@ -46,6 +46,7 @@ h2,
   #hello #readme p {
     font-size: 90%;
   }
+  
   #hello input[type="button"],
   #log ul li button {
     font-size: 75%;
