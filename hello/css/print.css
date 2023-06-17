@@ -93,7 +93,7 @@ main,
   content: attr(data-description);
   display: block;
   font-style: italic;
-  font-family: "Arial Narrow", sans-serif;
+  font-family: serif;
   font-size: 95%;
   margin: 1rem 0 0;
 }
