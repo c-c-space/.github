@@ -22,6 +22,7 @@ function sekkiIndex(obj) {
   for (const sekki of allSekki) {
     let li = document.createElement('li')
     let date = document.createElement('p')
+    date.setAttribute('data-description', sekki.description)
     date.innerHTML = `
     <date>${sekki.start}</date> -
     <date>${sekki.end}</date>
@@ -31,7 +32,7 @@ function sekkiIndex(obj) {
     button.setAttribute('data-name', sekki.name)
     button.setAttribute('data-note', sekki.note)
     button.setAttribute('data-description', sekki.description)
-    button.innerText = sekki.yomi
+    button.innerText = ' ' + sekki.yomi
     ul.appendChild(li)
     li.appendChild(date)
     li.appendChild(button)

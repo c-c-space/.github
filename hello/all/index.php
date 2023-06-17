@@ -1,7 +1,6 @@
 <?php
 mb_language("ja");
 mb_internal_encoding("UTF-8");
-require('../all/greeting.php');
 require('../all/24sekki.php');
 
 $sekki24 = "二十四節気";
@@ -40,6 +39,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/print.css" media="print">
 </head>
 
 <body>
@@ -50,9 +50,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="/js/menu.js"></script>
 
   <main id="hello" hidden>
-    <input type="button" onclick="ChangeHidden()" value="二十四節気 24 Sekki">
-    <hr/>
-    <br>
     <section id="readme">
       <?php echo $sekkiAbout;?><br/>
       24 Sekki divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.<br/>
@@ -65,10 +62,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br/>
       この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
+    <hr>
+    <input type="button" onclick="ChangeHidden()" value="閉じる Close">
   </main>
 
   <main id="log">
-    <button type="button" id="enter-btn" onClick="ChangeHidden()"><?php echo $greeting; ?></button>
+    <button type="button" id="enter-btn" onClick="ChangeHidden()">二十四節気 24 Sekki</button>
     <div>
       <h1>
         <code id="lastModified"><?php echo $sekkiDate;?></code>

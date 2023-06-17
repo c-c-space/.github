@@ -1,0 +1,45 @@
+#menu,
+#hello p,
+#hello input,
+#enter-btn,
+#log div,
+.controls {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+main,
+#log ul li {
+  break-before: page;
+}
+
+#log button,
+#log ul li button {
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: none;
+  pointer-events: none;
+}
+
+#log section ul li {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#log ul li p::after {
+  content: attr(data-description);
+  display: block;
+  font-size: 90%;
+  margin: 1rem 0 0;
+}
+
+#log ul li button::after {
+  content: attr(data-note);
+  display: block;
+  font-size: 75%;
+  margin: 0.5rem 0;
+}
