@@ -82,7 +82,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
         <?php echo $sekkiDate;?>
         <?php echo $sekkiAbout;?>
       </strong>
-      <br/>
       <p>
         二十四節気は、四季「春」「夏」「秋」「冬」 <wbr/>
         それぞれを太陽の動きをもとに6つに分け、<wbr/>
