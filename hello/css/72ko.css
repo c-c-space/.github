@@ -48,13 +48,17 @@ h2,
     text-decoration: underline;
   }
 
+  #log .collection {
+    margin-top: 1rem 0;
+  }
+
   #log ul li button {
     font-size: 75%;
   }
 
   #log ul li button::after {
     content: attr(data-hello);
-    font-size: 150%;
+    font-size: 125%;
     margin: 1rem 0;
   }
 }
