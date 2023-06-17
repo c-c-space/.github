@@ -55,6 +55,10 @@ h2,
     height: 100vh;
   }
 
+  #log .collection ul li {
+    margin: 1rem 0;
+  }
+
   #log ul li button {
     font-size: 75%;
   }
