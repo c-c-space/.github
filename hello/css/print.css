@@ -20,9 +20,15 @@ main {
 }
 
 #log div,
-#log hr,
 #log ul li {
   break-after: page;
+}
+
+
+#log hr,
+#log section ul li {
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 #log button,
@@ -40,8 +46,6 @@ main {
   font-size: 1.25rem;
   flex: 100%;
   width: 100%;
-  height: 100vh;
-  max-height: -webkit-fill-available;
 }
 
 #log ul li p {
