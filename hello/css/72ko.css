@@ -31,9 +31,12 @@ h2,
     margin: 0;
   }
 
-  #hello #readme p,
-  #hello input[type="button"] {
+  #hello #readme p {
     font-size: 90%;
+  }
+  #hello input[type="button"],
+  #log ul li button {
+    font-size: 75%;
   }
 
   #hello #readme p,
@@ -57,10 +60,6 @@ h2,
 
   #log .collection ul li {
     padding: 0.5rem 0;
-  }
-
-  #log ul li button {
-    font-size: 75%;
   }
 
   #log ul li button::after {
