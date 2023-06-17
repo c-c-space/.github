@@ -126,16 +126,6 @@ h2,
     padding: 0 4vw 0 0;
   }
 
-  #hello #readme::after {
-    content: "creative-community.space/hello/";
-    display: block;
-    font-family: "ipag", monospace;
-    font-size: 75%;
-    font-weight: 500;
-    transform: scale(1, 1.25);
-    margin: 7.5vw 0 0;
-  }
-
   #hello #readme,
   #hello #readme p {
     color: #fff;

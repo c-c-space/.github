@@ -94,6 +94,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br/>
       この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
+    <p>
+      <u>参考資料</u><br/>
+      <a href="https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/" target="_blank" rel="nofollow noreferrer">暮らし歳時記</a>
+      <a href="http://koyomi8.com/24doc.html" target="_blank" rel="nofollow noreferrer">こよみのページ</a>
+      <a href="https://www.543life.com/about24seasons/" target="_blank" rel="nofollow noreferrer">暦生活</a>
+    </p>
     <hr>
     <input class="noprint" type="button" onclick="ChangeHidden()" value="閉じる Close">
   </main>
