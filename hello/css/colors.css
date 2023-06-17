@@ -198,7 +198,7 @@ dialog#modal button,
   }
 
   dialog#modal button,
-  #backBtn {
+  #backBtn b {
     display: none;
   }
 
@@ -223,6 +223,12 @@ dialog#modal button,
     position: relative;
     filter: invert();
     mix-blend-mode: difference;
+  }
+
+  #backBtn::before {
+    content: "creative-community.space/hello/";
+    font-size: 1rem;
+    padding: 2rem;
   }
 
   dialog#modal h1 {
