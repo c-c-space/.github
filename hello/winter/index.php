@@ -122,8 +122,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="../all/controls.js"></script>
   <script src="../all/sekki.js"></script>
   <script type="text/javascript">
-    colorJSON('color.json')
-    sekkiJSON('sekki.json')
+  colorJSON('color.json')
+  sekkiJSON('sekki.json')
   </script>
   <script src="../js/setStyles.js"></script>
 </body>
