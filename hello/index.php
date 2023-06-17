@@ -68,24 +68,6 @@ fclose($fp);
   </header>
   <script src="/js/menu.js"></script>
 
-  <main id="hello" hidden>
-    <details>
-      <summary>Speech to Text to Text to Speech</summary>
-      <section id="howto"></section>
-      <br>
-    </details>
-    <hr>
-    <form method="post">
-      <?php require('js/form.html');?>
-      <hr/>
-      <section id="next">
-        <button type="button" class="color bgcolor" id="submit-btn">Submit</button>
-        <button type="button" class="color bgcolor" id="back-btn" onclick="ChangeHidden()">Back</button>
-      </section>
-    </form>
-  </main>
-  <script src="js/recognition.js"></script>
-
   <main id="log">
     <button type="button" id="enter-btn" class="color bgcolor">Submit a Text of <?php echo $sekkiName;?> <?php echo $sekki;?></button>
     <div>
@@ -107,6 +89,24 @@ fclose($fp);
     require('all/log.php');
     ?>
   </main>
+
+  <main id="hello" hidden>
+    <details>
+      <summary>Speech to Text to Text to Speech</summary>
+      <section id="howto"></section>
+      <br>
+    </details>
+    <hr>
+    <form method="post">
+      <?php require('js/form.html');?>
+      <hr/>
+      <section id="next">
+        <button type="button" class="color bgcolor" id="submit-btn">Submit</button>
+        <button type="button" class="color bgcolor" id="back-btn" onclick="ChangeHidden()">Back</button>
+      </section>
+    </form>
+  </main>
+  <script src="js/recognition.js"></script>
 
   <nav id="now" class="hidden">
     <section class="controls">
