@@ -59,12 +59,6 @@ fclose($fp);
   <link rel="stylesheet" href="../../css/print.css" media="print"/>
   <style>
   @media print {
-    #log section ul li {
-      break-after: page;
-      font-size: 1rem;
-      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
-      height: 200vh;
-    }
   }
   </style>
   <link rel="icon" href="/ver/icon.png" type="image/png">
