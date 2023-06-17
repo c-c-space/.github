@@ -12,6 +12,11 @@ body {
   mix-blend-mode: difference;
 }
 
+#hello #readme strong {
+  font-size: 111%;
+  font-weight: 500;
+}
+
 #log h2 {
   width: 75%;
   max-width: 550px;
@@ -75,6 +80,6 @@ body {
   #hello #readme {
     color: #fff;
     font-size: 4vw;
-    padding: 0 2.25rem 0 0;
+    padding: 0 2rem 0 0;
   }
 }
