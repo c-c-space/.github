@@ -267,6 +267,7 @@ dialog#modal button,
     font-family: "ipag", "Arial Narrow", monospace;
     font-size: 2rem;
     text-align: left;
+    transform: scale(1, 1.25);
     padding: 0;
     margin: 0;
     width: 100%;
