@@ -64,6 +64,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       width: 75%;
     }
 
+    #log div::before {
+      content: "text here";
+      font-size: 75%;
+      margin: 1rem;
+    }
+
     #log section ul li {
       break-before: page;
       font-size: 1rem;
