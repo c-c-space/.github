@@ -78,13 +78,13 @@ body {
   }
 
   #hello #readme {
-    color: #fff;
     font-size: 4vw;
     padding: 0 2rem 0 0;
   }
 
   #hello #readme,
   #hello #readme p {
+    color: #fff;
     filter: invert(0);
     mix-blend-mode: difference;
   }
