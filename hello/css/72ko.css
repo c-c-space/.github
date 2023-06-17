@@ -24,6 +24,10 @@ h2,
     break-after: page;
   }
 
+  @page :first {
+    margin-left: 1rem;
+  }
+
   #log section {
     box-sizing: border-box;
     break-before: page;
