@@ -194,12 +194,13 @@ dialog#modal button,
   }
 
   dialog#modal button,
-  ul#color li:last-child {
+  #backBtn {
     display: none;
   }
 
-  main {
+  ul#color {
     content: "";
+    break-before: page;
     break-after: page;
     display: block;
     width: 100%;
