@@ -25,7 +25,9 @@ body {
 
 #hello #readme {
   color: #fff;
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   font-size: 4vw;
+  padding: 0 2rem 0 0;
 }
 
 #log h2 {
@@ -55,11 +57,7 @@ main {
 
 #log section ul li {
   box-sizing: border-box;
-  font-size: 1;
-}
-
-#hello #readme,
-#log section ul li {
+  font-size: 1.11rem;
   padding: 2rem 2rem 2rem 0.5rem;
 }
 
@@ -95,6 +93,7 @@ main,
 #log ul li p::after {
   content: attr(data-description);
   display: block;
+  font-family: "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   font-size: 95%;
   margin: 1rem 0 0;
 }
@@ -102,6 +101,7 @@ main,
 #log ul li button::after {
   content: attr(data-note);
   display: block;
+  font-family: "Arial Narrow", sans-serif;
   font-size: 75%;
   margin: 1rem 0;
 }
