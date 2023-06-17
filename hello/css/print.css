@@ -25,7 +25,6 @@ body {
 
 #hello #readme {
   color: #fff;
-  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   font-size: 4vw;
   padding: 0 2rem 0 0;
 }
@@ -93,6 +92,7 @@ main,
 #log ul li p::after {
   content: attr(data-description);
   display: block;
+  font-style: italic;
   font-family: "Arial Narrow", sans-serif;
   font-size: 95%;
   margin: 1rem 0 0;
