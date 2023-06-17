@@ -55,6 +55,17 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   }
 
   @media print {
+    #log section ul li {
+      break-before: page;
+      break-after: page;
+    }
+
+    #log section ul li {
+      font-size: 1rem;
+      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+      height: 200vh;
+    }
+    
     #log ul li p::after {
       content: attr(data-description);
       font-size: 90%;
