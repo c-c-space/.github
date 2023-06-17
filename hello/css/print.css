@@ -26,12 +26,7 @@ body {
 #hello #readme {
   color: #fff;
   font-size: 4vw;
-  padding: 0 2rem 0 0;
-  word-break: keep-all;
-}
-
-#hello #readme wbr {
-  word-break: keep-all;
+  padding: 0 2.25rem 0 0;
 }
 
 #log h2 {
