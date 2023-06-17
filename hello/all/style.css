@@ -82,4 +82,10 @@ body {
     font-size: 4vw;
     padding: 0 2rem 0 0;
   }
+
+  #hello #readme,
+  #hello #readme p {
+    filter: invert(0);
+    mix-blend-mode: difference;
+  }
 }
