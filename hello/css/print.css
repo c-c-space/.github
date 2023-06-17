@@ -22,24 +22,26 @@ body {
   top: 0;
 }
 
-main {
+main,
+#log section ul,
+#log section ul li,
+#log ul li p::after,
+#log ul li button::after,
+#hello::before {
   display: block;
 }
 
 #log section ul {
-  display: block;
   padding: 0;
 }
 
 #hello::before {
   content: "";
-  display: block;
   height: 100vh;
 }
 
 #log section ul li {
   box-sizing: border-box;
-  display: block;
   width: 100%;
 }
 
@@ -63,14 +65,12 @@ main {
 
 #log ul li p::after {
   content: attr(data-description);
-  display: block;
   font-size: 90%;
   margin: 1rem 0 0;
 }
 
 #log ul li button::after {
   content: attr(data-note);
-  display: block;
   font-size: 75%;
   margin: 1rem 0;
 }
