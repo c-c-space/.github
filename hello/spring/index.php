@@ -35,6 +35,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="../css/log.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="../css/print.css" media="print"/>
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -51,6 +52,16 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   #log button::before {
     content: attr(data-name);
+  }
+
+  @media print {
+    #log section ul li {
+      break-before: page;
+      break-after: page;
+      font-size: 1rem;
+      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+      height: 200vh;
+    }
   }
   </style>
 </head>
