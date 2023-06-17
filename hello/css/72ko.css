@@ -14,15 +14,15 @@ h2,
 }
 
 @page :first {
-  margin-left: 2cm;
+  margin-left: 1cm;
 }
 
 @page :right {
-  margin-right: 2cm;
+  margin-left: 1cm;
 }
 
 @page :left {
-  margin-left: 2cm;
+  margin-right: 1cm;
 }
 
 @media print {
