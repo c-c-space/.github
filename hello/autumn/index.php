@@ -64,10 +64,13 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       width: 75%;
     }
 
+    #log section {
+      break-after: page;
+    }
+
     #log section ul li {
       font-size: 1rem;
-      padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-      height: 100vh;
+      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
     }
 
     #log ul li p::after {
