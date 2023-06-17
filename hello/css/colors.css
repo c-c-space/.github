@@ -225,6 +225,10 @@ dialog#modal button,
     mix-blend-mode: difference;
   }
 
+  dialog#modal h1 {
+    margin: 2rem;
+  }
+
   ul#color li::before {
     content: attr(data-yomi);
     display: block;
