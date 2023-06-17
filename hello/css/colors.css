@@ -202,7 +202,7 @@ dialog#modal button,
     display: none;
   }
 
-  ul#color::before {
+  ul#color li::before {
     content: "";
     break-before: page;
     break-after: page;
