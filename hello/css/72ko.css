@@ -13,6 +13,11 @@ h2,
   }
 }
 
+
+@page :first {
+  margin-left: 4cm;
+}
+
 @media print {
   #log div,
   #log hr {
@@ -22,10 +27,6 @@ h2,
   main,
   #log section {
     break-after: page;
-  }
-
-  @page :first {
-    margin-left: 2cm;
   }
 
   #log section {
