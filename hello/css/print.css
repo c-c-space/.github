@@ -1,3 +1,15 @@
+body {
+  background: #fff;
+}
+
+#log button,
+#log h1,
+#log h2,
+#log ul li button {
+  filter: invert(0);
+  mix-blend-mode: difference;
+}
+
 #menu,
 #hello p,
 #hello input,
@@ -20,7 +32,6 @@ main,
   break-before: page;
 }
 
-#log div,
 #log ul li {
   break-after: page;
 }
@@ -29,21 +40,28 @@ main,
 #log ul li button {
   border: none;
   padding: 0;
+  margin: 1rem 0;
   text-align: left;
   cursor: none;
   pointer-events: none;
 }
 
 #log section ul li {
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.25rem;
   flex: 100%;
   width: 100%;
+}
+
+#log ul li p {
+  padding: 0;
+  margin: 0;
 }
 
 #log ul li p::after {
   content: attr(data-description);
   display: block;
-  font-size: 90%;
+  font-size: 95%;
   margin: 1rem 0 0;
 }
 
@@ -51,5 +69,5 @@ main,
   content: attr(data-note);
   display: block;
   font-size: 75%;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }

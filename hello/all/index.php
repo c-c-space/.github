@@ -5,7 +5,7 @@ require('../all/24sekki.php');
 
 $sekki24 = "二十四節気";
 $sekkiDate = "24 Sekki";
-$sekkiAbout = "The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki";
+$sekkiAbout = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
 $title = $sekki24 .' | '. $sekkiDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
@@ -39,7 +39,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../css/print.css" media="print">
+  <link rel="stylesheet" href="../css/print.css" media="">
 </head>
 
 <body>
@@ -74,8 +74,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <main id="hello" hidden>
     <section id="readme">
-      <?php echo $sekkiAbout;?><br/>
-      24 Sekki divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.<br/>
+      The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki.<br/>
+      <?php echo $sekkiDate;?> <?php echo $sekkiAbout;?><br/>
       <br/>
       二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。<br/>
       中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
