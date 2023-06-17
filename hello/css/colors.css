@@ -193,6 +193,10 @@ dialog#modal button,
     transform: translate(0, 0);
   }
 
+  dialog#modal button {
+    display: none;
+  }
+
   ul#color::before {
     content: "";
     break-after: page;
