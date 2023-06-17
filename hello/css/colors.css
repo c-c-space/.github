@@ -257,6 +257,7 @@ dialog#modal button,
 
   #backBtn {
     width: 100%;
+    padding: 2rem;
   }
 
   #backBtn::before {
@@ -266,7 +267,6 @@ dialog#modal button,
     font-family: "ipag", "Arial Narrow", monospace;
     font-size: 2rem;
     text-align: left;
-    padding: 0 2rem;
     width: 100%;
   }
 }
