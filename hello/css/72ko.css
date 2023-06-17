@@ -20,7 +20,7 @@ h2,
   }
 
   main,
-  #log #ko {
+  #log section {
     break-after: page;
   }
 
