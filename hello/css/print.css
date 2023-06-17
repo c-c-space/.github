@@ -15,13 +15,11 @@ main {
   display: block;
 }
 
-main,
-#log hr {
+main {
   break-before: page;
 }
 
 #log div,
-#log hr,
 #log ul li {
   break-after: page;
 }
