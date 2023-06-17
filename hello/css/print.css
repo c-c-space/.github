@@ -12,6 +12,8 @@
 }
 
 #log h2 {
+  font-size: 150%;
+  text-align: center;
   width: 95%;
   max-width: 95%;
 }
@@ -25,12 +27,7 @@ main {
   padding: 0;
 }
 
-#log section ul li::after {
-  content: "";
-}
-
-#log section ul li,
-#log section ul li::after {
+#log section ul li {
   display: block;
   width: 100%;
   height: 100vh;
@@ -45,14 +42,13 @@ font-size: 1.25rem;
 main,
 #log section,
 #log section ul,
-#log section ul li,
-#log section ul li::after {
+#log section ul li {
   break-before: page;
 }
 
 #log div,
 #log section ul li,
-#log section ul li::after {
+#log section ul li p {
   break-after: page;
 }
 
