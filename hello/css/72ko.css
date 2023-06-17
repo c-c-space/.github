@@ -57,11 +57,13 @@ h2,
 
   #log ul li button {
     font-size: 75%;
+    text-decoration: underline;
   }
 
   #log ul li button::after {
     content: attr(data-hello);
     font-size: 125%;
+    text-decoration: none;
     margin: 1rem 0;
   }
 }
