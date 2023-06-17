@@ -18,9 +18,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <title><?php echo $title; ?></title>
+  <title>日本の伝統的な<?php echo $thisSeason; ?>の色</title>
   <meta name="description" content="<?php echo $description; ?>">
-  <meta property="og:title" content="<?php echo $title; ?>" />
+  <meta property="og:title" content="日本の伝統的な<?php echo $thisSeason; ?>の色" />
   <meta property="og:site_name" content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
   <meta property="og:url" content="<?php echo $url; ?>" />
   <meta property="og:type" content="website" />
