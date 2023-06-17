@@ -33,6 +33,12 @@ fclose($fp);
   <link rel="stylesheet" href="css/72ko.css" />
   <link rel="stylesheet" href="css/print.css" media="print" />
   <style media="print">
+  main,
+  #log section {
+    break-before: page;
+    break-after: page;
+  }
+
   #hello {
     display: none;
   }
