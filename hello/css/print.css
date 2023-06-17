@@ -55,8 +55,12 @@ main {
 
 #log section ul li {
   box-sizing: border-box;
-  padding: 2rem 0.5rem;
-  font-size: 1.11rem;
+  font-size: 1;
+}
+
+#hello #readme,
+#log section ul li {
+  padding: 2rem 2rem 2rem 0.5rem;
 }
 
 main,
