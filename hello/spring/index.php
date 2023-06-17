@@ -53,6 +53,20 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   #log button::before {
     content: attr(data-name);
   }
+
+  @media print {
+    #log ul li p::after {
+      content: attr(data-description);
+      font-size: 90%;
+      margin: 1rem 0 0;
+    }
+
+    #log ul li button::after {
+      content: attr(data-note);
+      font-size: 75%;
+      margin: 1rem 0;
+    }
+  }
   </style>
 </head>
 
