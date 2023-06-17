@@ -228,6 +228,10 @@ dialog#modal button,
   dialog#modal h1 {
     margin: 2rem;
   }
+  
+  dialog#modal p {
+    margin: 0 2rem;
+  }
 
   ul#color li::before {
     content: attr(data-yomi);
@@ -245,7 +249,6 @@ dialog#modal button,
     padding: 0 2rem;
   }
 
-  dialog#modal p,
   ul#color p {
     font-size: 1rem;
     padding: 2rem;
