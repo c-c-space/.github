@@ -19,6 +19,8 @@ main {
   break-before: page;
 }
 
+#log div,
+#log hr,
 #log ul li {
   break-after: page;
 }
