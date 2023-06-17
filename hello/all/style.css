@@ -56,7 +56,7 @@ body {
 
 @media screen and (max-width: 750px) {
   body {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   #log ul li button {
