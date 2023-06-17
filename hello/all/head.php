@@ -56,7 +56,7 @@ fclose($fp);
   <link rel="stylesheet" href="../../css/log.css" />
   <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="../../css/72ko.css" />
-  <link rel="stylesheet" href="../css/print.css" media="print"/>
+  <link rel="stylesheet" href="../../css/print.css" media="print"/>
   <style>
   @media print {
     #log section ul li {
