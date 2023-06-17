@@ -64,6 +64,7 @@ fclose($fp);
   }
 
   main {
+    box-sizing: border-box;
     break-after: page;
   }
 
