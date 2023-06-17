@@ -12,37 +12,3 @@ h2,
     margin: 0;
   }
 }
-
-@media print {
-  #log div,
-  #log hr {
-    display: none;
-  }
-
-  main {
-    break-after: page;
-  }
-
-  #hello #readme p,
-  #hello input[type="button"] {
-    font-size: 75%;
-  }
-
-  #hello #readme p,
-  #hello input[type="button"] {
-    padding: 0;
-    margin: 0;
-  }
-
-  #hello input[type="button"] {
-    border: none;
-    cursor: none;
-    text-decoration: underline;
-  }
-
-  #log ul li button::after {
-    content: attr(data-hello);
-    font-size: 75%;
-    margin: 1rem 0;
-  }
-}
