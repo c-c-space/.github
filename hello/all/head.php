@@ -56,6 +56,12 @@ fclose($fp);
   <link rel="stylesheet" href="../../css/log.css" />
   <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="../../css/72ko.css" />
+  <style media="print">
+  #log div,
+  #log hr {
+    display: none;
+  }
+  </style>
   <link rel="stylesheet" href="../../css/print.css" media="print"/>
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
