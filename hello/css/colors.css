@@ -226,11 +226,11 @@ dialog#modal button,
   }
 
   dialog#modal h1 {
-    margin: 2rem 2rem 1rem 4rem;
+    margin: 2rem 1rem 1rem 2rem;
   }
 
   dialog#modal p {
-    margin: 0 2rem 0 4rem;
+    margin: 0 1rem 0 2rem;
   }
 
   ul#color li::before {
@@ -238,7 +238,7 @@ dialog#modal button,
     display: block;
     font-size: 100%;
     float: right;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 1rem 2rem 2rem;
   }
 
   ul#color li::after {
@@ -246,12 +246,12 @@ dialog#modal button,
     content: attr(data-note)'\A\A'attr(data-description);
     display: block;
     font-size: 90%;
-    padding: 0 2rem 0 4rem;
+    padding: 0 1rem 0 2rem;
   }
 
   ul#color p {
     font-size: 1rem;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 1rem 2rem 2rem;
     margin: 0;
   }
 }
