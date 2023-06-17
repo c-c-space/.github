@@ -17,6 +17,11 @@ h2,
   zoom: 0.75;
 }
 
+#hello::before {
+  content: "";
+  height: 100vh;
+}
+
 #hello #readme {
   margin: 0;
 }
@@ -67,7 +72,7 @@ h2,
   body {
     font-size: 2.5vw;
   }
-  
+
   #hello #readme {
     margin: 0;
   }

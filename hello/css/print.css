@@ -35,11 +35,6 @@ main,
   padding: 0;
 }
 
-#hello::before {
-  content: "";
-  height: 100vh;
-}
-
 #log section ul li {
   box-sizing: border-box;
   width: 100%;
