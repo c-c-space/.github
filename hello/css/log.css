@@ -177,7 +177,7 @@ h3 {
   }
 }
 
-@@media print {
+@media print {
   #log ul li p::after {
     content: attr(data-description);
     font-size: 90%;
