@@ -57,6 +57,11 @@ fclose($fp);
   <link rel="stylesheet" href="../../css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="../../css/72ko.css" />
   <style media="print">
+  main,
+  #log section {
+    break-after: page;
+  }
+
   #log div,
   #log hr {
     display: none;
