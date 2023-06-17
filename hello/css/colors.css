@@ -198,7 +198,7 @@ dialog#modal button,
     display: none;
   }
 
-  ul#color {
+  ul#color::before {
     content: "";
     break-before: page;
     break-after: page;
