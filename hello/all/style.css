@@ -74,6 +74,12 @@ body {
     break-before: page;
   }
 
+  #log div,
+  #log section,
+  #log section ul {
+    break-after: page;
+  }
+
   #log h2 {
     font-size: 125%;
   }

@@ -47,12 +47,6 @@ main {
   break-before: page;
 }
 
-#log div,
-#log section,
-#log section ul {
-  break-after: page;
-}
-
 #log button,
 #log ul li button {
   border: none;
