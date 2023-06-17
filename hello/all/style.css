@@ -91,6 +91,22 @@ h2,
   }
 }
 
+@page {
+  size: A5;
+}
+
+@page :first {
+  margin-left: 1cm;
+}
+
+@page :right {
+  margin-left: 2cm;
+}
+
+@page :left {
+  margin-right: 2cm;
+}
+
 @media print {
   main,
   #log section,
@@ -98,6 +114,12 @@ h2,
   #log section ul li {
     break-before: page;
     break-after: page;
+  }
+  
+  #log section {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   #log hr {
