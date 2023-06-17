@@ -15,18 +15,15 @@ main {
   display: block;
 }
 
-main,
-#log hr {
+main {
   break-before: page;
 }
 
-#log hr,
 #log ul li {
   break-after: page;
 }
 
 
-#log hr,
 #log section ul li {
   height: 100vh;
   max-height: -webkit-fill-available;
