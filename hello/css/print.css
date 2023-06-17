@@ -2,9 +2,13 @@
 #hello p,
 #hello input,
 #enter-btn,
-#log div,
 .controls {
   display: none;
+}
+
+#log div {
+  position: relative;
+  top: 0;
 }
 
 main {
@@ -14,6 +18,11 @@ main {
 main,
 #log ul li {
   break-before: page;
+}
+
+#log div,
+#log ul li {
+  break-after: page;
 }
 
 #log button,
@@ -27,6 +36,7 @@ main,
 
 #log section ul li {
   padding: 0.5rem;
+  flex: 100%;
   width: 100%;
 }
 
