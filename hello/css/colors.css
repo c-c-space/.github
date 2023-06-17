@@ -214,20 +214,23 @@ dialog#modal button,
   ul#color li {
     break-after: page;
     display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  ul#color li::before,
+  ul#color li::after {
     position: relative;
     filter: invert();
     mix-blend-mode: difference;
-    width: 100%;
-    height: 100vh;
   }
 
   ul#color li::before {
     content: attr(data-yomi);
     display: block;
     font-size: 90%;
-    top: 0;
-    right: 0;
-    padding: 0 2rem;
+    float: right;
+    padding: 2rem;
   }
 
   ul#color li::after {
