@@ -62,7 +62,7 @@ function sekkiSekect(obj) {
   for (const sekki of allSekki) {
     let option = document.createElement('option')
     option.value = sekki.value
-    option.innerText = `${sekki.name} （${sekki.start} - ${sekki.end}）`
+    option.innerText = `${sekki.name}（${sekki.start} - ${sekki.end}）`
     select.appendChild(option)
   }
 
