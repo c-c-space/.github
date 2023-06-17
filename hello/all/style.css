@@ -85,7 +85,10 @@ body {
   #hello #readme::after {
     content: "creative-community.space";
     display: block;
-    margin: 2.5vw 0;
+    font-family: "ipag", monospace;
+    font-weight: 500;
+    transform: scale(1, 1.25);
+    margin: 4vw 0 0;
   }
 
   #hello #readme,
