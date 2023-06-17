@@ -223,7 +223,7 @@ dialog#modal button,
     content: attr(data-note)'\A\A'attr(data-description);
     display: block;
     font-size: 90%;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     position: relative;
     filter: invert();
     mix-blend-mode: difference;
