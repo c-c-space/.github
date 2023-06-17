@@ -278,7 +278,8 @@ dialog#modal button,
   }
 
   #backBtn::after {
-    content: "text here";
+    white-space: pre-wrap;
+    content: "text\Ahere";
     font-size: 1rem;
   }
 }
