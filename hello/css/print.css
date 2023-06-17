@@ -15,8 +15,7 @@ main {
   display: block;
 }
 
-main,
-#log ul li {
+main {
   break-before: page;
 }
 
@@ -35,7 +34,7 @@ main,
 }
 
 #log section ul li {
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   font-size: 1.25rem;
   flex: 100%;
   width: 100%;
