@@ -15,8 +15,13 @@ h2,
 
 @media print {
   #log div,
-  #log hr {
+  #log hr,
+  #log #ko {
     display: none;
+  }
+
+  main {
+    break-after: page;
   }
 
   #hello #readme p,
