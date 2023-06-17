@@ -74,11 +74,11 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   <main id="hello" hidden>
     <section id="readme">
-      The Year is divided into Four Seasons, but traditionally the year was also divided up into 24 Sekki.<br/>
+      The Year is divided into Four Seasons, <wbr>but traditionally the year was also divided up into 24 Sekki.<br/>
       <?php echo $sekkiDate;?> <?php echo $sekkiAbout;?><br/>
       <br/>
-      二十四節気は、四季「春」「夏」「秋」「冬」<wbr>それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。<br/>
-      中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
+      二十四節気は、四季「春」「夏」「秋」「冬」<wbr>それぞれを太陽の動きをもとに6つに分け、<wbr>季節をあらわす名前をつけたもの。<br/>
+      中国の中原の気候をもとに作られたため、日本で体感する気候とは季節感が合わない名称や時期があります。<wbr>また、その年によって節の始まりの日が1日程度前後することがあります。<br/>
     </section>
     <br>
     <p>
