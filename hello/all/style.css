@@ -2,6 +2,11 @@ body {
   background: #000;
 }
 
+h2,
+#ko li button {
+  zoom: 0.75;
+}
+
 #hello,
 #log button,
 #log h1,

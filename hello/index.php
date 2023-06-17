@@ -25,11 +25,13 @@ fclose($fp);
   <meta name="format-detection" content="telephone=no" />
   <script src="/js/index.js" async></script>
   <script src="js/readyState.js" async></script>
+  <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
-  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="css/72ko.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
   <style media="screen">
   #hello #readme {
     margin: 0;
