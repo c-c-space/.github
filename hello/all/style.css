@@ -13,7 +13,7 @@ body {
 }
 
 #hello #readme strong {
-  font-size: 111%;
+  font-size: 125%;
   font-weight: 500;
 }
 
@@ -78,7 +78,7 @@ body {
   }
 
   #hello #readme {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 0 2rem 0 0;
   }
 
