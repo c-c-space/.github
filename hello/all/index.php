@@ -91,12 +91,12 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </p>
     </section>
     <br>
-    <p>
+    <p class="noprint">
       On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br/>
       この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
     <hr>
-    <input type="button" onclick="ChangeHidden()" value="閉じる Close">
+    <input class="noprint" type="button" onclick="ChangeHidden()" value="閉じる Close">
   </main>
 
   <script src="sekki.js"></script>

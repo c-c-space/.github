@@ -10,10 +10,9 @@ body {
 }
 
 #menu,
-#hello p,
-#hello input,
 #enter-btn,
-.controls {
+.controls,
+.noprint {
   display: none;
 }
 
