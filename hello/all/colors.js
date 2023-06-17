@@ -44,7 +44,7 @@ function indexObject(obj) {
     ul.appendChild(li)
 
     hidden.innerText += `${color.hex}, `
-    about.style.backgroundImage = "conic-gradient(from 0deg at 0% 100%, " + hidden.innerText + "#fff)"
+    about.style.backgroundImage = "conic-gradient(from 90deg at 0% 100%, " + hidden.innerText + "#fff)"
 
     li.addEventListener('click', function () {
       if (typeof about.showModal === "function") {
