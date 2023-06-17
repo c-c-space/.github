@@ -228,7 +228,7 @@ dialog#modal button,
   ul#color li::before {
     content: attr(data-yomi);
     display: block;
-    font-size: 90%;
+    font-size: 100%;
     float: right;
     padding: 2rem;
   }
