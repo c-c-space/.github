@@ -92,7 +92,7 @@ main,
 #log ul li p::after {
   content: attr(data-description);
   display: block;
-  font-size: 95%;
+  font-size: 90%;
   margin: 1rem 0 0;
 }
 
