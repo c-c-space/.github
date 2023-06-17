@@ -71,13 +71,13 @@ body {
 @media print {
   main,
   #log section,
-  #log section ul {
+  #log section ul,
+  #log section ul li {
     break-before: page;
+    break-after: page;
   }
 
-  #log div,
-  #log section,
-  #log section ul {
+  #log div {
     break-after: page;
   }
 
@@ -86,11 +86,21 @@ body {
   }
 
   #log section ul li {
-    break-before: page;
-    break-after: page;
     font-size: 1rem;
     padding: 1.5rem 1.5rem 1.5rem 0.5rem;
     height: 200vh;
+  }
+
+  #log ul li p::after {
+    content: attr(data-description);
+    font-size: 90%;
+    margin: 1rem 0 0;
+  }
+
+  #log ul li button::after {
+    content: attr(data-note);
+    font-size: 75%;
+    margin: 1rem 0;
   }
 
   #hello #readme {
