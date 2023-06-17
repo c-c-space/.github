@@ -245,6 +245,7 @@ dialog#modal button,
     padding: 0 2rem;
   }
 
+  dialog#modal p,
   ul#color p {
     font-size: 1rem;
     padding: 2rem;
