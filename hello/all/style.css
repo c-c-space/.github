@@ -69,10 +69,11 @@ body {
 }
 
 @media print {
-  #log section {
+  #log section,
+  #log section ul {
     break-before: page;
   }
-  
+
   #log h2 {
     font-size: 125%;
   }
