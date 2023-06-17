@@ -24,8 +24,8 @@ h2,
     break-after: page;
   }
 
-  #log #ko {
-    height: 100vh;
+  #log section {
+    min-height: 100vh;
   }
 
   #hello #readme p,
