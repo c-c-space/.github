@@ -41,6 +41,12 @@ main {
   padding: 0;
 }
 
+#hello::before {
+  content: "";
+  display: block;
+  height: 100vh;
+}
+
 #log section ul li {
   display: block;
   width: 100%;
