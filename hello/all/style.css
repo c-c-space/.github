@@ -100,7 +100,6 @@ h2,
     break-after: page;
   }
 
-  #log div,
   #log hr {
     display: none;
   }
