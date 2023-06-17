@@ -43,14 +43,9 @@ main {
 }
 
 #log section ul li {
+  box-sizing: border-box;
   display: block;
   width: 100%;
-}
-
-#log section ul li {
-  box-sizing: border-box;
-  font-size: 1.11rem;
-  padding: 2rem 2rem 2rem 0.5rem;
 }
 
 main,

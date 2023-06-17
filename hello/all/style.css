@@ -67,6 +67,8 @@ body {
   #log section ul li {
     break-before: page;
     break-after: page;
+    font-size: 1.11rem;
+    padding: 2rem 2rem 2rem 0.5rem;
     height: 200vh;
   }
 
