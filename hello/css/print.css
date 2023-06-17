@@ -17,7 +17,8 @@ main {
 
 main,
 #log section,
-#log ul {
+#log ul,
+#log ul li {
   break-before: page;
 }
 
