@@ -1,15 +1,3 @@
-body {
-  background: #fff;
-}
-
-#log button,
-#log h1,
-#log h2,
-#log ul li button {
-  filter: invert(0);
-  mix-blend-mode: difference;
-}
-
 #menu,
 #hello p,
 #hello input,
