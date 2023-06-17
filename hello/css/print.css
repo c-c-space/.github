@@ -92,8 +92,6 @@ main,
 #log ul li p::after {
   content: attr(data-description);
   display: block;
-  font-style: italic;
-  font-family: serif;
   font-size: 95%;
   margin: 1rem 0 0;
 }
