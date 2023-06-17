@@ -24,6 +24,10 @@ h2,
     break-after: page;
   }
 
+  #log #ko {
+    height: 100vh;
+  }
+
   #hello #readme p,
   #hello input[type="button"] {
     font-size: 90%;
