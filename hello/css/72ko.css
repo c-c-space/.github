@@ -8,6 +8,10 @@
   }
 }
 
+@page {
+  size: A5;
+}
+
 @page :first {
   margin-left: 2cm;
 }
