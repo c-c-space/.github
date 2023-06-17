@@ -32,15 +32,9 @@ fclose($fp);
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/72ko.css" />
   <link rel="stylesheet" href="css/print.css" media="print" />
-  <style media="screen">
-  #hello #readme {
-    margin: 0;
-  }
-
-  @media print {
-    #hello {
-      display: none;
-    }
+  <style media="print">
+  #hello {
+    display: none;
   }
   </style>
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
