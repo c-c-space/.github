@@ -69,7 +69,7 @@ fclose($fp);
 
   #hello #readme p,
   #hello input[type="button"] {
-    font-size: 75%;
+    font-size: 100%;
   }
 
   #hello #readme p,
@@ -84,9 +84,13 @@ fclose($fp);
     text-decoration: underline;
   }
 
+  #log ul li button {
+    font-size: 75%;
+  }
+
   #log ul li button::after {
     content: attr(data-hello);
-    font-size: 75%;
+    font-size: 100%;
     margin: 1rem 0;
   }
   </style>
