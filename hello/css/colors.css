@@ -193,11 +193,12 @@ dialog#modal button,
     transform: translate(0, 0);
   }
 
-  dialog#modal button {
+  dialog#modal button,
+  ul#color li:last-child {
     display: none;
   }
 
-  ul#color::before {
+  main {
     content: "";
     break-after: page;
     display: block;
