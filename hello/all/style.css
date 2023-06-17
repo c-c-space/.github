@@ -69,10 +69,6 @@ body {
 }
 
 @media print {
-  #log div {
-    place-items: stretch;
-  }
-
   #log section ul li {
     break-before: page;
     break-after: page;
