@@ -87,7 +87,7 @@ body {
   }
 
   #hello #readme::after {
-    content: "https://creative-community.space/hello/all/";
+    content: "creative-community.space/hello/";
     display: block;
     font-family: "ipag", monospace;
     font-size: 75%;
