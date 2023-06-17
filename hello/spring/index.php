@@ -65,6 +65,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     }
 
     #log section ul li {
+      break-before: page;
       font-size: 1rem;
       padding: 1.5rem 1.5rem 1.5rem 0.5rem;
     }
