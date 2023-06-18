@@ -22,11 +22,6 @@ h2,
   zoom: 0.75;
 }
 
-#hello::before {
-  content: "";
-  height: 100vh;
-}
-
 #hello #readme {
   margin: 0;
 }
@@ -95,6 +90,10 @@ h2,
   size: A5;
 }
 
+@page :first {
+  margin-left: 0.5rem;
+}
+
 @media print {
   main,
   #log section,
@@ -134,6 +133,11 @@ h2,
     content: attr(data-note);
     font-size: 75%;
     margin: 1rem 0;
+  }
+
+  #hello::before {
+    content: "AAA";
+    height: 100vh;
   }
 
   #hello #readme {
