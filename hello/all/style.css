@@ -137,7 +137,7 @@ h2,
 
   #hello::before {
     content: "AAA";
-    color: #fff;
+    color: red;
     height: 100vh;
   }
 
