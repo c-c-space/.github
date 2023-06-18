@@ -29,12 +29,6 @@ fclose($fp);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script type="text/javascript">
-  const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
-  if(!localStorage.getItem('yourInfo')) {
-    location.replace('/')
-  }
-  </script>
   <title><?php echo $title; ?> | <?php echo $author; ?></title>
   <meta name="author" content="<?php echo $author; ?>">
   <meta name="description" content="<?php echo $description; ?>">
@@ -110,7 +104,7 @@ fclose($fp);
       <span>creative-community.space</span>
     </li>
   </ul>
-  
+
   <script type="text/javascript">
   let targets = document.querySelectorAll("#log li")
   let filter = document.querySelectorAll('input[name="index"]')
@@ -134,6 +128,28 @@ fclose($fp);
       })
     }
   }
+
+  const random = [
+    "https://d2w9rnfcy7mm78.cloudfront.net/22286191/original_827daa1110f14650c7a90ddf0d3ac608.png?1686935278?bc=0",
+    "https://d2w9rnfcy7mm78.cloudfront.net/22286182/original_422e62f8ba01b4995ce1b799a27454d8.png?1686935240?bc=0",
+    "https://d2w9rnfcy7mm78.cloudfront.net/22292609/original_ef0189bbe5065ca0506fe3108d8c6237.png?1686977136?bc=0",
+    "https://d2w9rnfcy7mm78.cloudfront.net/22292612/original_912ec2667a0da5d9a04bd4ab9c2c4de8.png?1686977183?bc=0",
+    "https://d2w9rnfcy7mm78.cloudfront.net/22292617/original_1605904e6e819ec742aafc94eb4b84a1.png?1686977429?bc=0"
+  ];
+
+  function randomImg(randomArray) {
+    var random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
+  function sentenceGenerator() {
+    document.querySelector("#now").style.backgroundImage = `url(${randomImg(random)})`;
+  }
+  window.setInterval(function() {
+    sentenceGenerator();
+  }, 2000);
+  sentenceGenerator();
   </script>
 </body>
 </html>
