@@ -51,10 +51,6 @@ input[type="radio"]:checked+label {
 #now,
 #log {
   font-size: 1rem;
-}
-
-#now,
-#log {
   display: flex;
   flex-flow: wrap row;
 }
@@ -72,6 +68,8 @@ input[type="radio"]:checked+label {
 }
 
 #now h1 {
+  box-sizing: border-box;
+  font-size: 321%;
   text-align: center;
   padding: 0.5rem;
   width: 100%;
@@ -125,10 +123,6 @@ input[type="radio"]:checked+label {
 }
 
 @media (max-width: 900px) {
-  #now h1 {
-    font-size: 4.5vw
-  }
-
   #log li {
     width: calc(100% / 2);
   }
@@ -136,7 +130,7 @@ input[type="radio"]:checked+label {
 
 @media (max-width: 500px) {
   #now h1 {
-    font-size: 6.5vw
+    font-size: 275%;
   }
 
   #now,

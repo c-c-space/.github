@@ -87,14 +87,6 @@ fclose($fp);
         </li>
       <?php endforeach; ?>
     <?php else : ?>
-      <li data-index="new">
-        <span>
-          <a href="#">creative-community.space</a>
-        </span>
-        <span>2021</span>
-        <span>SEP 16</span>
-        <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
-      </li>
     <?php endif; ?>
     <li data-index="new">
       <span>
@@ -104,9 +96,34 @@ fclose($fp);
       <span>SEP 27</span>
       <span>creative-community.space</span>
     </li>
+    <li data-index="new">
+      <span>
+        <a href="#">creative-community.space</a>
+      </span>
+      <span>2021</span>
+      <span>SEP 16</span>
+      <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
+    </li>
   </ul>
 
   <script type="text/javascript">
+  const birthday = "2021-09-16T10:02:02Z";
+  let now = new Date();
+  let today = now.getFullYear();
+  const age = document.querySelector("#now h1");
+
+  function counter() {
+    age.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(9)}`;
+  }
+
+  function start() {
+    setTimeout(() => {
+      counter(); requestAnimationFrame(start);
+    }, 1000 / 30);
+  }
+
+  start();
+
   let targets = document.querySelectorAll("#log li")
   let filter = document.querySelectorAll('input[name="index"]')
   if (filter) {
@@ -129,6 +146,6 @@ fclose($fp);
       })
     }
   }
-  </script>
+</script>
 </body>
 </html>
