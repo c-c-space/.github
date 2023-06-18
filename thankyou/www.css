@@ -70,13 +70,9 @@
   max-width: 90%;
 }
 
-#www h2 {
-  font-size: 150%;
-  font-weight: 500;
-}
-
+#www h2,
 #www h2 strong {
-  font-size: 125%;
+  font-size: 150%;
   font-weight: 500;
 }
 
