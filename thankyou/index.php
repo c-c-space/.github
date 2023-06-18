@@ -121,8 +121,8 @@
 
   <aside id="www">
     <h2>
-      <i>OMG!</i><br />
-      Your Drawing is Seems So Beautiful<br />
+      <strong>OMG!</strong><br />
+      <i>Your Drawing is Seems So Beautiful</i><br />
       Let's <i>Print to PDF</i> and <i>Send it</i> to us !!<br />
       <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
     </h2>
