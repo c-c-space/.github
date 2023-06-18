@@ -47,8 +47,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <code id="hex"></code>
     <p id="note"><?php echo $description; ?></p>
     <p id="description" class="noprint">
-      WWW to
-      <a href="#" onclick="window.print();">Print</a>
+      <a href="#" onclick="window.print();">WWW to Print</a>
       (Recommended to borderless printing.)
     </p>
     <p id="hidden" hidden></p>
