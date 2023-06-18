@@ -91,7 +91,7 @@ h2,
 }
 
 @page :first {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 @media print {
@@ -136,8 +136,9 @@ h2,
   }
 
   #hello::before {
-    content: "AAA";
-    color: red;
+    white-space: pre-wrap;
+    content: "cite from \A https://irocore.com/ \A https://www.543life.com/tag/traditional-color/";
+    color: #fff;
     height: 100vh;
   }
 
