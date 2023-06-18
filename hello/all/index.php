@@ -2,6 +2,7 @@
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 require('../all/24sekki.php');
+require('../all/greeting.php');
 
 $sekki24 = "二十四節気";
 $sekkiDate = "24 Sekki";
