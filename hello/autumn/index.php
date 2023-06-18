@@ -69,7 +69,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       display: block;
       font-family: "ipag", monospace;
       font-size: 1rem;
-      transform: scale(1, 1.25);
+      transform: scale(1.25, 1);
       word-break: break-all;
       padding: 1rem;
       writing-mode: vertical-rl;
