@@ -95,10 +95,6 @@ h2,
   size: A5;
 }
 
-@page :first {
-  background: #000;
-}
-
 @media print {
   main,
   #log section,
@@ -115,6 +111,7 @@ h2,
   }
 
   #log div {
+    background: #000;
     break-after: page;
   }
 
