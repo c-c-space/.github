@@ -53,8 +53,13 @@
   }
 
   #log .collection::before {
-    content: "";
+    content: "https://creative-community.space/hello/";
     display: block;
+    font-size: 0.75rem;
+    transform: scale(1.25, 1);
+    word-break: break-all;
+    padding: 0.25rem;
+    writing-mode: vertical-rl;
     width: 100%;
     height: 100vh;
   }
