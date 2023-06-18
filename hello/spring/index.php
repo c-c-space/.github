@@ -68,16 +68,17 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       content: "https://creative-community.space/hello/spring/";
       display: block;
       font-family: "ipag", monospace;
-      font-size: 1.25rem;
-      transform: scale(1, 1.25);
+      font-size: 0.75rem;
+      transform: scale(1.25, 1);
       word-break: break-all;
-      padding: 1rem 0.5rem;
+      padding: 0.25rem;
+      writing-mode: vertical-rl;
     }
 
     #log section ul li {
       break-before: page;
-      font-size: 1rem;
-      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+      font-size: 0.95rem;
+      padding: 1rem 1rem 1rem 0.25rem;
     }
 
     #log ul li p::after {
