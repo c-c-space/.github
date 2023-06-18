@@ -142,6 +142,7 @@ h2,
     font-size: 75%;
     font-family: "ipag", monospace;
     transform: scale(1, 1.25);
+    margin-left: 1.25rem;
     height: 100vh;
   }
 
