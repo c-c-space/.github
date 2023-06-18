@@ -44,7 +44,7 @@ fclose($fp);
     display: none;
   }
 
-  #log section::before {
+  #log div::after {
     content: "https://creative-community.space/hello/";
     display: block;
     font-family: "ipag", monospace;
