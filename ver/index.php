@@ -67,6 +67,7 @@ fclose($fp);
   <script src="/js/menu.js"></script>
 
   <form id="now" method="GET" class="hidden">
+    <h1>creative-community.space</h1>
     <input type="radio" name="index" id="new" value="new">
     <label class="cc" for="new">New Contents</label>
     <input type="radio" name="index" id="update" value="update">
@@ -128,28 +129,6 @@ fclose($fp);
       })
     }
   }
-
-  const random = [
-    "https://d2w9rnfcy7mm78.cloudfront.net/22286191/original_827daa1110f14650c7a90ddf0d3ac608.png?1686935278?bc=0",
-    "https://d2w9rnfcy7mm78.cloudfront.net/22286182/original_422e62f8ba01b4995ce1b799a27454d8.png?1686935240?bc=0",
-    "https://d2w9rnfcy7mm78.cloudfront.net/22292609/original_ef0189bbe5065ca0506fe3108d8c6237.png?1686977136?bc=0",
-    "https://d2w9rnfcy7mm78.cloudfront.net/22292612/original_912ec2667a0da5d9a04bd4ab9c2c4de8.png?1686977183?bc=0",
-    "https://d2w9rnfcy7mm78.cloudfront.net/22292617/original_1605904e6e819ec742aafc94eb4b84a1.png?1686977429?bc=0"
-  ];
-
-  function randomImg(randomArray) {
-    var random =
-    randomArray[Math.floor(Math.random() * randomArray.length)];
-    console.log(random);
-    return random;
-  }
-  function sentenceGenerator() {
-    document.querySelector("#now").style.backgroundImage = `url(${randomImg(random)})`;
-  }
-  window.setInterval(function() {
-    sentenceGenerator();
-  }, 2000);
-  sentenceGenerator();
   </script>
 </body>
 </html>
