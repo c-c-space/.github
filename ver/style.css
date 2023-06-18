@@ -66,7 +66,7 @@ input[type="radio"]:checked+label {
 
 #log li {
   padding: 1rem;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   word-wrap: break-word;
 }
 
@@ -96,10 +96,15 @@ input[type="radio"]:checked+label {
   max-width: 100%;
 }
 
+@media (max-width: 1250px) {
+  #log li {
+    width: calc(100% / 3);
+  }
+}
+
 @media (max-width: 1000px) {
   #log li {
     width: calc(100% / 2);
-    word-wrap: break-word;
   }
 }
 
@@ -125,6 +130,10 @@ input[type="radio"]:checked+label {
 }
 
 @media print {
+  #menu {
+    display: none;
+  }
+
   #log li {
     page-break-inside: avoid;
   }

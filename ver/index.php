@@ -35,7 +35,6 @@ fclose($fp);
     location.replace('/')
   }
   </script>
-
   <title><?php echo $title; ?> | <?php echo $author; ?></title>
   <meta name="author" content="<?php echo $author; ?>">
   <meta name="description" content="<?php echo $description; ?>">
@@ -48,19 +47,10 @@ fclose($fp);
   <meta property="og:image" content="<?php echo $url; ?>card.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>card.png" />
-
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <?php require('icon.html');?>
-
-  <style>
-  @media print {
-    #menu {
-      display: none;
-    }
-  }
-  </style>
 </head>
 <body>
   <header id="menu" hidden>
@@ -120,11 +110,10 @@ fclose($fp);
       <span>creative-community.space</span>
     </li>
   </ul>
-
+  
   <script type="text/javascript">
   let targets = document.querySelectorAll("#log li")
   let filter = document.querySelectorAll('input[name="index"]')
-
   if (filter) {
     //****** for all select ******
     for (let i of filter) {
