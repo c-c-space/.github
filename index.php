@@ -109,7 +109,7 @@
     </div>
   </section>
   <aside id="www">
-    <h2 class="cc">
+    <h2>
       <strong>
         This is <i>The Website</i> that<br />
         <i>Creates</i> beautiful things through<br />
