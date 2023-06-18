@@ -44,6 +44,10 @@ section p,
   margin: 1rem;
 }
 
+@page {
+  size: A5;
+}
+
 @media print {
   #logo {
     display: block;
