@@ -44,10 +44,6 @@ section p,
   margin: 1rem;
 }
 
-@page {
-  size: A5;
-}
-
 @media screen and (max-width: 750px) {
   section,
   section p,
