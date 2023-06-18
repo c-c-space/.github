@@ -261,7 +261,7 @@ dialog#modal button,
     padding: 2rem;
   }
 
-  #backBtn::before,
+  #note::after,
   #backBtn::after {
     box-sizing: border-box;
     display: block;
@@ -272,9 +272,8 @@ dialog#modal button,
     width: 100%;
   }
 
-  #backBtn::before {
+  #note::after {
     content: "creative-community.space/hello/";
-    font-size: 1.5rem;
     transform: scale(1, 1.25);
   }
 
