@@ -227,7 +227,7 @@ dialog#modal button,
   }
 
   dialog#modal h1 {
-    margin: 2rem 1rem 1rem 2rem;
+    margin: 2rem;
   }
 
   dialog#modal p {
@@ -247,12 +247,12 @@ dialog#modal button,
     content: attr(data-note)'\A\A'attr(data-description);
     display: block;
     font-size: 90%;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 
   ul#color p {
     font-size: 1rem;
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 2rem 2.5rem;
     margin: 0;
   }
 
