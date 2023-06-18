@@ -168,6 +168,10 @@ input[type="radio"]:checked+label {
   }
 }
 
+@page {
+  size: landscape;
+}
+
 @media print {
   #menu {
     display: none;
