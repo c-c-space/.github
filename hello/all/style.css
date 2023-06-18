@@ -141,7 +141,7 @@ h2,
     color: #fff;
     font-size: 95%;
     font-family: "ipag", monospace;
-    padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+    transform: scale(1, 1.25);
     height: 100vh;
   }
 
