@@ -137,9 +137,9 @@ h2,
 
   #hello::before {
     white-space: pre-wrap;
-    content: "cite from \A https://irocore.com/ \A https://www.543life.com/tag/traditional-color/";
+    content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
     color: #fff;
-    font-size: 95%;
+    font-size: 75%;
     font-family: "ipag", monospace;
     transform: scale(1, 1.25);
     height: 100vh;
