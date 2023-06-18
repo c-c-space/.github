@@ -279,7 +279,7 @@ dialog#modal button,
 
   #backBtn::after {
     white-space: pre-wrap;
-    content: "text\Ahere";
+    content: "cite from \A https://irocore.com/ \A https://www.543life.com/tag/traditional-color/";
     font-size: 1rem;
   }
 }
