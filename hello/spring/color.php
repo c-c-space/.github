@@ -49,6 +49,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p id="description" class="noprint">
       WWW to
       <a href="#" onclick="window.print();">Print</a>
+      (Recommended to borderless printing.)
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>
