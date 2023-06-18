@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       font-size: 1rem;
       transform: scale(1.25, 1);
       word-break: break-all;
-      padding: 1rem;
+      padding: 0.25rem;
       writing-mode: vertical-rl;
     }
 
