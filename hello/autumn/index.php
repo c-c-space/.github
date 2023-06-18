@@ -58,18 +58,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     size: A5;
   }
 
-  @page :first {
-    margin-left: 1cm;
-  }
-
-  @page :right {
-    margin-left: 2cm;
-  }
-
-  @page :left {
-    margin-right: 2cm;
-  }
-
   @media print {
     #log h2 {
       font-size: 75%;
