@@ -95,6 +95,10 @@ h2,
   size: A5;
 }
 
+@page :first {
+  background: #000;
+}
+
 @media print {
   main,
   #log section,
