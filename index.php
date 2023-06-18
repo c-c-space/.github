@@ -111,9 +111,9 @@
   <aside id="www">
     <h2 class="cc">
       <strong>
-        This is The Website that<br />
-        Creates beautiful things through<br />
-        Communication that everyone can do<br />
+        This is <i>The Website</i> that<br />
+        <i>Creates</i> beautiful things through<br />
+        <i>Communication</i> that everyone can do<br />
       </strong>
     </h2>
     <small class="cc">このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
