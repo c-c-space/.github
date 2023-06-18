@@ -121,10 +121,10 @@
 
   <aside id="www">
     <h2>
-      <strong>OMG!</strong><br />
+      <small>OMG!</small><br />
       <i>Your Drawing is Seems So Beautiful</i><br />
       Let's <i>Print to PDF</i> and <i>Send it</i> to us !!<br />
-      <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
+      <a class="cc" href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
     </h2>
     <p class="cc">creative-community.space</p>
   </aside>
