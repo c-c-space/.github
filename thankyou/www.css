@@ -74,6 +74,12 @@
   font-weight: 500;
 }
 
+#www h2 i {
+  font-family: "Times New Roman", serif;
+  font-size: 110%;
+  font-weight: 500;
+}
+
 #www h2 strong {
   font-size: 125%;
 }
