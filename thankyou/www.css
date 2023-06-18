@@ -89,3 +89,7 @@
 #www small {
   font-size: 75%;
 }
+
+@page {
+  size: landscape;
+}
