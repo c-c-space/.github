@@ -267,13 +267,13 @@ dialog#modal button,
     font-family: "ipag", monospace;
     text-align: left;
     padding: 0;
-    margin: 0;
     width: 100%;
   }
 
   #backBtn::after {
     white-space: pre-wrap;
     content: "cite from \A https://irocore.com/ \A https://www.543life.com/tag/traditional-color/";
+    display: block;
     font-size: 1rem;
     margin-left: 1rem;
   }
