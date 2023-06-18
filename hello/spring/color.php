@@ -46,10 +46,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </h1>
     <code id="hex"></code>
     <p id="note"><?php echo $description; ?></p>
-    <p id="description">cite from
-      <a href="https://irocore.com/" target="_blank" rel="nofollow noreferrer">伝統色のいろは</a>
-      and
-      <a href="https://www.543life.com/tag/traditional-color/" target="_blank" rel="nofollow noreferrer">暦生活</a>
+    <p id="description" class="noprint">
+      WWW to
+      <a href="#" onclick="window.print();">Print</a>
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>

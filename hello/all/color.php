@@ -26,7 +26,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
   <link rel="stylesheet" href="../css/colors.css" />
-  <link rel="stylesheet" href="../css/print.css" / media="print">
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -44,7 +43,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </h1>
     <code id="hex"></code>
     <p id="note"><?php echo $description; ?></p>
-    <p id="description" class="noprint">WWW to
+    <p id="description" class="noprint">
+      WWW to
       <a href="#" onclick="window.print();">Print</a>
     </p>
     <p id="hidden" hidden></p>

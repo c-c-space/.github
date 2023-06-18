@@ -198,7 +198,8 @@ dialog#modal button,
   }
 
   dialog#modal button,
-  #backBtn b {
+  #backBtn b,
+  .noprint {
     display: none;
   }
 
