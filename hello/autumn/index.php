@@ -68,7 +68,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       content: "https://creative-community.space/hello/autumn/";
       display: block;
       font-family: "ipag", monospace;
-      font-size: 1.25rem;
+      font-size: 1rem;
       transform: scale(1, 1.25);
       word-break: break-all;
       padding: 1rem 0.5rem;
@@ -77,7 +77,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     #log section ul li {
       break-before: page;
       font-size: 1rem;
-      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+      padding: 1rem 1rem 1rem 0.25rem;
     }
 
     #log ul li p::after {
