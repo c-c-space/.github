@@ -71,7 +71,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       font-size: 1rem;
       transform: scale(1, 1.25);
       word-break: break-all;
-      padding: 1rem 0.5rem;
+      padding: 1rem;
     }
 
     #log section ul li {
