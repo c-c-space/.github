@@ -120,10 +120,10 @@
   </section>
 
   <aside id="www">
-    <h2 class="cc">
-      OMG!<br />
+    <h2>
+      <i>OMG!</i><br />
       Your Drawing is Seems So Beautiful<br />
-      Let's Print to PDF and Send it to us !!<br />
+      Let's <i>Print to PDF</i> and <i>Send it</i> to us !!<br />
       <a href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
     </h2>
     <p class="cc">creative-community.space</p>
