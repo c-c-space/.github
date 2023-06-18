@@ -31,6 +31,7 @@ fclose($fp);
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/log.css" />
   <link rel="stylesheet" href="css/72ko.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="stylesheet" href="css/print.css" media="print" />
   <style media="print">
   main,
@@ -42,8 +43,18 @@ fclose($fp);
   #hello {
     display: none;
   }
+
+  #log section::before {
+    content: "https://creative-community.space/hello/";
+    display: block;
+    font-family: "ipag", monospace;
+    font-size: 0.75rem;
+    transform: scale(1.25, 1);
+    word-break: break-all;
+    padding: 0.25rem;
+    writing-mode: vertical-rl;
+  }
   </style>
-  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
