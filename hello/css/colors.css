@@ -275,5 +275,6 @@ dialog#modal button,
     white-space: pre-wrap;
     content: "cite from \A https://irocore.com/ \A https://www.543life.com/tag/traditional-color/";
     font-size: 1rem;
+    margin-left: 1rem;
   }
 }
