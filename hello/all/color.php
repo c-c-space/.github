@@ -44,9 +44,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <code id="hex"></code>
     <p id="note"><?php echo $description; ?></p>
     <p id="description" class="noprint">
+      <small>ウェブサイトを出力する（A5横サイズ・余白なし推奨）</small><br/>
       <a href="#" onclick="window.print();">WWW to Print</a>
-      (Recommended to borderless printing)<br/>
-      <small>ウェブサイトを出力する（A5横サイズ・余白なし推奨）</small>
+      (Recommended to borderless printing)
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>
