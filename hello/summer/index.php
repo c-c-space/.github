@@ -104,6 +104,13 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="/js/menu.js"></script>
 
   <main id="log">
+    <section id="collection">
+      <select class="color bgcolor" id="sekki">
+        <option selected disabled>View The Collection</option>
+      </select>
+      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
+      <hr>
+    </section>
     <div>
       <h1>
         <code id="lastModified"><?php echo $thisDate;?></code>
@@ -123,13 +130,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     <p><?php echo $description;?></p>
     <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
-    <section id="collection">
-      <select class="color bgcolor" id="sekki">
-        <option selected disabled>View The Collection</option>
-      </select>
-      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
-      <hr>
-    </section>
     <form method="GET">
       <p>
         <smal>
@@ -162,8 +162,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <script src="../all/controls.js"></script>
   <script src="../all/sekki.js"></script>
   <script type="text/javascript">
-    colorJSON('color.json')
-    sekkiJSON('sekki.json')
+  colorJSON('color.json')
+  sekkiJSON('sekki.json')
   </script>
   <script src="../js/setStyles.js"></script>
 </body>
