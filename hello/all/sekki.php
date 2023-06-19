@@ -7,14 +7,6 @@
   <p><?php echo $description;?></p>
   <p><?php echo $hello;?></p>
   <form method="GET" class="collection">
-    <br>
-    <select class="color bgcolor" name="timeframe">
-      <option selected disabled>時間帯 Time Frame</option>
-      <option value="night">00:00:00 - 05:59:59</option>
-      <option value="morning">06:00:00 - 11:59:59</option>
-      <option value="afternoon">12:00:00 - 17:59:59</option>
-      <option value="evening">18:00:00 - 23:59:59</option>
-    </select>
     <section hidden>
       <select class="color bgcolor" id="bgcolor"></select>
       <br/>
@@ -26,7 +18,6 @@
         <option value="20px">Large</option>
       </select>
     </section>
-    <button class="color bgcolor" type="submit">GET</button>
   </form>
 </dialog>
 
