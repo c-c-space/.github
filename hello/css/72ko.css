@@ -17,7 +17,7 @@
 }
 
 @page :right {
-  margin-right: -2cm;
+  margin-left: 2cm;
 }
 
 @page :left {
