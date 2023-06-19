@@ -17,11 +17,11 @@
 }
 
 @page :right {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 @page :left {
-  margin-left: 0cm;
+  margin-right: 0cm;
 }
 
 @media print {
