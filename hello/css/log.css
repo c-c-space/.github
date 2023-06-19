@@ -122,7 +122,6 @@ h3 {
 }
 
 #log section ul li {
-  break-inside: avoid;
   text-shadow:
   0.01rem 0.01rem 0 #fff,
   0.02rem 0.02rem 0 #fff,

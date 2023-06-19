@@ -31,6 +31,10 @@
     margin: 0;
   }
 
+  #log section ul li {
+    break-inside: avoid;
+  }
+
   #hello #readme p {
     font-size: 90%;
   }
