@@ -20,10 +20,6 @@
   margin-left: 2cm;
 }
 
-@page :left {
-  margin-right: 2cm;
-}
-
 @media print {
   #log section {
     box-sizing: border-box;
