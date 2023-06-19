@@ -95,6 +95,10 @@ h2,
 }
 
 @media print {
+  body {
+    background: #fff;
+  }
+
   main,
   #log section,
   #log section ul,
