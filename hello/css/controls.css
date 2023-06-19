@@ -26,7 +26,7 @@ button {
   word-break: break-all;
 }
 
-#modal select,
+#collection select,
 #modal button[type="submit"],
 #closeButton {
   border: 0.1rem solid;
