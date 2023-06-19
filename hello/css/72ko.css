@@ -51,6 +51,7 @@
   }
 
   #hello input[type="button"] {
+    border-radius: 0;
     border: none;
     cursor: none;
     text-decoration: underline;
