@@ -6,7 +6,7 @@
   <button class="color bgcolor" id="closeButton">×</button>
   <p><?php echo $description;?></p>
   <p><?php echo $hello;?></p>
-  <form method="GET" class="collection">
+  <form method="GET" class="collection" hidden>
     <section hidden>
       <select class="color bgcolor" id="bgcolor"></select>
       <br/>
