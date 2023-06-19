@@ -13,15 +13,15 @@
 }
 
 @page :first {
-  padding-left: 1cm;
+  margin-left: 1cm;
 }
 
 @page :right {
-  padding-left: 2cm;
+  margin-left: 2cm;
 }
 
 @page :left {
-  padding-right: 2cm;
+  margin-right: 2cm;
 }
 
 @media print {
