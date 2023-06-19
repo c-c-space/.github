@@ -33,6 +33,7 @@
 
   #log section ul li {
     break-inside: avoid;
+    padding: 0.5rem 0;
   }
 
   #hello #readme p {
@@ -61,10 +62,6 @@
     display: block;
     width: 100%;
     height: 100vh;
-  }
-
-  #log .collection ul li {
-    padding: 0.5rem 0;
   }
 
   #log ul li button::after {
