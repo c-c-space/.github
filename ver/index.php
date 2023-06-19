@@ -7,7 +7,6 @@ $title = '更新履歴';
 $author = 'creative-community.space';
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
 $description = 'New Contents & Version Up';
 $source_file = 'index.csv';
 $fp = fopen($source_file, 'r');
@@ -113,7 +112,7 @@ fclose($fp);
   const age = document.querySelector("#now h1");
 
   function counter() {
-    age.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(9)}`;
+    age.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(10)}`;
   }
 
   function start() {
