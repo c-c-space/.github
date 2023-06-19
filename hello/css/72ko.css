@@ -33,7 +33,7 @@
 
   #log section ul li {
     break-inside: avoid;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
   }
 
   #hello #readme p {
