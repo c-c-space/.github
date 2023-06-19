@@ -96,9 +96,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
     <hr>
-    <p class="noprint">
-      <a href="#" onclick="window.print();">WWW to Print</a>
-    </p>
+    <input class="noprint" type="button" onclick="window.print()" value="WWW to Print">
     <input class="noprint" type="button" onclick="ChangeHidden()" value="閉じる Close">
   </main>
 
