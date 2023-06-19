@@ -17,7 +17,11 @@
 }
 
 @page :right {
-  margin-left: 2cm;
+  margin-left: 1cm;
+}
+
+@page :left {
+  margin-right: 1cm;
 }
 
 @media print {
@@ -62,7 +66,7 @@
 
   #log .collection ul li {
     font-size: 90%;
-    padding: 1rem 1.25rem 1rem 0;
+    padding: 1rem;
   }
 
   #log ul li button::after {
