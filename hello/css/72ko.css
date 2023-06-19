@@ -25,6 +25,17 @@
 }
 
 @media print {
+  html,
+  body,
+  .bgcolor {
+    background: #fff;
+  }
+
+  .color {
+    color: #000;
+  }
+
+
   #log section {
     box-sizing: border-box;
     padding: 0;
