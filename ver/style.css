@@ -147,14 +147,14 @@ input[type="radio"]:checked+label {
   }
 
   #now {
-    padding: 1.25vw;
+    padding: 2vw;
   }
 
   input[type="radio"]+label {
     border-radius: 1vw;
     font-size: 125%;
     padding: 1.25vw;
-    margin: 1.25vw;
+    margin: 0.5vw;
   }
 
   #log li {
