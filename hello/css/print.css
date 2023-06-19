@@ -30,7 +30,9 @@ main,
 
 #log section ul,
 #log ul li p {
+  gap: 0;
   padding: 0;
+  margin: 0;
 }
 
 #log section ul li {
