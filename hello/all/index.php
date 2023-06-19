@@ -7,7 +7,7 @@ require('../all/greeting.php');
 $sekki24 = "二十四節気";
 $sekkiDate = "24 Sekki";
 $sekkiAbout = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
-$title = $sekki24.' '.$sekkiDate.' | WWW to Print';
+$title = $sekki24.'のすべて | All About '.$sekkiDate;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
