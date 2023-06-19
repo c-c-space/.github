@@ -28,7 +28,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   <meta property="og:image" content="<?php echo $url; ?>summary.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
-
   <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css/index.css" />

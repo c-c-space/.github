@@ -66,7 +66,7 @@
 
   #log .collection ul li {
     font-size: 90%;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.25rem 1rem 0;
   }
 
   #log ul li button::after {
