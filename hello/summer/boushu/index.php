@@ -10,7 +10,6 @@ $hello = "稲の穂先のように芒(とげのようなもの)のある穀物�
 $title = $sekkiName .' | '. $date;
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
 require_once('../../all/head.php');
 ?>
 
