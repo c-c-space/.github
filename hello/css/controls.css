@@ -27,6 +27,7 @@ button {
 }
 
 #collection select,
+#modal select,
 #modal button[type="submit"],
 #closeButton {
   border: 0.1rem solid;
