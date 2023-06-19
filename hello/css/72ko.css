@@ -66,8 +66,8 @@
 
   #log .collection ul li {
     font-size: 90%;
-    padding: 0;
-    margin: 1rem 1.5rem;
+    padding: 1rem 1.5rem;
+    margin: 0;
   }
 
   #log ul li button::after {
