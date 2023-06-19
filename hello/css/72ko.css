@@ -21,7 +21,7 @@
 }
 
 @page :left {
-  margin-right: 0cm;
+  margin-right: 0;
 }
 
 @media print {
