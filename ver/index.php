@@ -72,7 +72,7 @@ fclose($fp);
     <input type="radio" name="index" id="update" value="update">
     <label class="cc" for="update">Version Up</label>
     <input type="radio" name="index" id="all" value="all">
-    <label class="cc" for="all" style="float:right;">View All</label>
+    <label class="cc" for="all" style="display:block; float:right;">View All</label>
   </form>
 
   <ul id="log" class="hidden">
