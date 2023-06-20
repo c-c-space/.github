@@ -173,6 +173,10 @@ input[type="radio"]:checked+label {
     display: none;
   }
 
+  #now {
+    max-height: 100vh;
+  }
+
   #log li {
     page-break-inside: avoid;
   }
