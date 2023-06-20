@@ -64,7 +64,7 @@ index.json を 読み込み、メタデータコンテンツ と アンカー要
 
 * [greeting.php](hello/all/greeting.php)
 時間帯によって挨拶文を変更する
-* [welcome.php](welcome.php)
+* [welcome.php](hello/welcome.php)
 ローカルストレージに通信情報／ブラウザ等情報が追加されている場合に、現在の二十四節気を表示
 
 
@@ -100,7 +100,7 @@ Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) 
 </dialog>
 ```
 
-* [yourinfo.php](yourinfo.php)
+* [yourinfo.php](profile/yourinfo.php)
 通信情報／ブラウザ等情報を取得する
 * [js/log.js](js/log.js)
 通信情報／ブラウザ等情報をローカルストレージに追加する
