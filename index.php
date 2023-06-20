@@ -25,7 +25,7 @@
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="/" target="_parent">
+      <a href="/ver/" target="_parent">
         <p><b>Index | creative-community.space</b></p>
         <u>ver.2.0</u>
       </a>
