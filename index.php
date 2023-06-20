@@ -67,7 +67,7 @@
   <main id="yourinfo" hidden>
     <form method="post">
       <button id="openModal" type="button">あなたの通信情報／ブラウザ等情報</button>
-      <p><?php require('yourinfo.php'); ?></p>
+      <p><?php require('profile/yourinfo.php'); ?></p>
       <section>
         <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
         <button type="button" id="back-btn">Back</button>

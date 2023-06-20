@@ -37,7 +37,7 @@ document.addEventListener('readystatechange', event => {
 
       document.querySelector('#log h2 a').removeAttribute('href')
 
-      fetch('../yourinfo.php')
+      fetch('../profile/yourinfo.php')
       .then(response => response.text())
       .then(text => {
         document.querySelector('#log section').innerHTML = text;

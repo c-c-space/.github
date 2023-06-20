@@ -72,7 +72,7 @@ document.addEventListener('readystatechange', event => {
         deleteVideo()
       })
     } else {
-      fetchHTML('welcome.php','#readme h1')
+      fetchHTML('hello/welcome.php','#readme h1')
 
       const yourStrage = document.querySelector('#readme p')
       yourStrage.style.pointerEvents = 'auto'
