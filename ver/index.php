@@ -71,6 +71,8 @@ fclose($fp);
     <label class="cc" for="new">New Contents</label>
     <input type="radio" name="index" id="update" value="update">
     <label class="cc" for="update">Version Up</label>
+    <input type="radio" name="index" id="all" value="all">
+    <label class="cc" for="all">View All</label>
   </form>
 
   <ul id="log" class="hidden">
