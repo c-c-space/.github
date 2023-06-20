@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/index.js" async></script>
   <script src="js/hello.js"></script>
-  <script src="js/readyState.js"></script>
+  <script src="readyState.js"></script>
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/userMedia.css" />
