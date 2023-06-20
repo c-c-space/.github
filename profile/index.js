@@ -1,6 +1,6 @@
 const info = document.querySelector('#info');
 
-if(localStorage.getItem('geolocation')) {
+if(localStorage.getItem('map')) {
   const geolocation = JSON.parse(localStorage.getItem('geolocation'));
   const yourLocation = JSON.parse(localStorage.getItem('map'))
   const yourMap = document.createElement("li");
