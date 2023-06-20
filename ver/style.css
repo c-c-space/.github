@@ -76,7 +76,7 @@ input[type="radio"]:checked+label {
 }
 
 #now h1::before {
-  content: "Date of birth | 16 SEP 2021";
+  content: "This Website created on 16 SEP 2021";
   display: block;
   font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 25%;
