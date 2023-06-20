@@ -1,5 +1,5 @@
 <?php
-require('hello/all/24sekki.php');
+require('all/24sekki.php');
 ?>
 
 <b>Welcome ようこそ</b><br>
