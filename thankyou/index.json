@@ -16,6 +16,30 @@
       "type" : "news",
       "caption" : "none",
       "note" : ""
+    },
+    {
+      "date" : "HSL.js",
+      "name" : "Hue Saturation Lightness",
+      "url" : "/thankyou/hsl.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "sketch.js",
+      "name" : "(C) 2013 Justin Windle",
+      "url" : "/thankyou/sketch.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "touch.js",
+      "name" : "Mobile Only",
+      "url" : "/thankyou/touch.html",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
     }
   ]
 }
