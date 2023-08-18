@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../../ver/howto.css" />
   <style>
   #howto details {
@@ -28,6 +29,16 @@
   </style>
 </head>
 <body id="howto">
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
+      <a href="#" onclick="window.history.back(); return false;">
+        <p><b>The Information About Network & Browser</b></p>
+        <u>通信情報／ブラウザ等情報</u>
+      </a>
+    </nav>
+  </header>
+  <script src="/js/menu.js"></script>
   <details>
     <summary>
       <font>Battery Status API</font><br/>

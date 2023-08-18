@@ -1,0 +1,37 @@
+{
+  "title" : "通信情報／ブラウザ等情報",
+  "description" : "The Information About Network & Browser for connection to The Internet",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "",
+
+  "contents" : [
+    {
+      "date" : "Battery Status API",
+      "name" : "バッテリー状態 API",
+      "url" : "/ver/battery.html",
+      "type" : "update",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "navigator.connection",
+      "name" : "ネットワーク接続情報",
+      "url" : "/ver/navigator.html",
+      "type" : "update",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
+      "date" : "windowScreen()",
+      "name" : "ウインドウ・スクリーンサイズ",
+      "url" : "/ver/window.html",
+      "type" : "update",
+      "caption" : "none",
+      "note" : ""
+    }
+  ]
+}
