@@ -1,3 +1,5 @@
+'use strict'
+
 navigator.getBattery().then((battery) => {
   function updateAllBatteryInfo() {
     updateChargeInfo();

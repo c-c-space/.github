@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="../css/modal.css" />
   <link rel="stylesheet" href="../css/userMedia.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+  <?php require('/ver/icon.html');?>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <header id="menu" hidden>
@@ -27,7 +26,9 @@
 
   <ul id="log" class="hidden">
     <li id="battery">
-      <span>Battery Status</span>
+      <span>
+        <button class="color bgcolor" onclick="location.assign('js/battery.html')">Battery Status</button>
+      </span>
       <span id="level"></span>
       <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
       <span>
@@ -68,6 +69,7 @@
       echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
       ?>
     </li>
+    <script src="js/navigator.js"></script>
 
     <li>
       <span>
@@ -95,11 +97,6 @@
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
     battery.style.display = "none"
-  }
-
-  function update(online) {
-    document.querySelector('#status').textContent =
-    online ? 'Online' : 'Offline';
   }
 
   async function fetchHTML(url = '', query = '') {
@@ -145,7 +142,6 @@
     userMedia.srcObject = stream;
   });
   </script>
-
   <script src="index.js"></script>
 </body>
 </html>

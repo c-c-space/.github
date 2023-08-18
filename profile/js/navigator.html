@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../../ver/howto.css" />
+  <style>
+  #howto details {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  #howto meter {
+    width: 100%;
+    height: 350px;
+  }
+
+  #howto meter::-webkit-meter-horizontal-bar {
+    border: double 5px #000;
+  }
+
+  @media screen and (max-width: 750px) {
+    #howto meter {
+      height: 45vw;
+    }
+  }
+  </style>
+</head>
+<body id="howto">
+  <details>
+    <summary>
+      <font>(Online or Offline?)</font><br/>
+      <code></code>
+      <button id="status" type="button">(Online or Offline?)</button>
+    </summary>
+    <aside id="links">
+    </aside>
+    <p></p>
+    <br/>
+    <pre>
+function update(online) {
+    document.querySelector('#status').textContent =
+    online ? 'Online' : 'Offline';
+}
+    </pre>
+  </details>
+  <hr/>
+  <details>
+    <summary>
+      <font>navigator.connection</font><br/>
+      <code></code>
+    </summary>
+    <aside id="links">
+    </aside>
+    <p></p>
+    <br/>
+    <pre>
+const connectionInfo = navigator.connection;
+if (connectionInfo !== undefined) {
+    const init = function() {
+    document.getElementById('network').innerHTML =
+    'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
+    + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
+    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
+    };
+    init();
+
+    if ('onchange' in connectionInfo) {
+    connectionInfo.addEventListener('change', init);
+    } else if ('ontypechange' in connectionInfo) {
+    connectionInfo.addEventListener('typechange', init);
+    }
+}
+    </pre>
+  </details>
+  <p id="network"></p>
+  <hr/>
+  <details>
+    <summary>
+      <font>navigator.deviceMemory</font><br/>
+      <font>navigator.hardwareConcurrency</font><br/>
+    </summary>
+    <aside id="links">
+    </aside>
+    <p></p>
+    <br/>
+    <pre>
+const memory = navigator.deviceMemory;
+const hardware = navigator.hardwareConcurrency;
+document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
+    </pre>
+  </details>
+  <p id="navigator"></p>
+  <script src="navigator.js" defer></script>
+</body>
+</html>
