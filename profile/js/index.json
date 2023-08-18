@@ -24,14 +24,6 @@
       "type" : "news",
       "caption" : "none",
       "note" : ""
-    },
-    {
-      "date" : "windowScreen()",
-      "name" : "ウインドウ・スクリーンサイズ",
-      "url" : "/profile/js/window.html",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
     }
   ]
 }
