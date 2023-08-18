@@ -1,4 +1,4 @@
-"use strict"
+'use strict'
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'loading') {
