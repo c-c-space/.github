@@ -40,16 +40,17 @@
     </nav>
   </header>
   <script src="/js/menu.js"></script>
-  <details>
-    <summary>
-      <font>windowScreen()</font><br/>
-      <code>ウインドウ・スクリーンサイズを取得する</code>
-    </summary>
-    <aside id="links">
-    </aside>
-    <p></p>
-    <br/>
-    <pre>
+  <article id="howto">
+    <details>
+      <summary>
+        <font>windowScreen()</font><br/>
+        <code>ウインドウ・スクリーンサイズを取得する</code>
+      </summary>
+      <aside id="links">
+      </aside>
+      <p></p>
+      <br/>
+      <pre>
 window.addEventListener("DOMContentLoaded", function () {
   windowScreen();
 }, false);
@@ -81,33 +82,34 @@ function windowScreen() {
   const outInnerHeight = document.getElementById("outInnerHeight");
   outInnerHeight.innerText = window.innerHeight;
 }
-    </pre>
-  </details>
-  <br/>
-  <table class="size">
-    <tbody>
-      <tr>
-        <td>screen.availWidth</td>
-        <td>画面のウェブコンテンツに利用することができる範囲の幅 (px)</td>
-        <td id="outScreenWidth" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>screen.availHeight</td>
-        <td>画面のウェブコンテンツに利用することができる範囲の高さ (px)</td>
-        <td id="outScreenheight" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>window.innerWidth</td>
-        <td>ウィンドウの内部の幅 (px)</td>
-        <td id="outInnerWidth" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>window.innerHeight</td>
-        <td>ウィンドウの内部の高さ (px)</td>
-        <td id="outInnerHeight" class="nowValue"></td>
-      </tr>
-    </tbody>
-  </table>
+      </pre>
+    </details>
+    <br/>
+    <table class="size">
+      <tbody>
+        <tr>
+          <td>screen.availWidth</td>
+          <td>画面のウェブコンテンツに利用することができる範囲の幅 (px)</td>
+          <td id="outScreenWidth" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>screen.availHeight</td>
+          <td>画面のウェブコンテンツに利用することができる範囲の高さ (px)</td>
+          <td id="outScreenheight" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>window.innerWidth</td>
+          <td>ウィンドウの内部の幅 (px)</td>
+          <td id="outInnerWidth" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>window.innerHeight</td>
+          <td>ウィンドウの内部の高さ (px)</td>
+          <td id="outInnerHeight" class="nowValue"></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
   <script src="window.js" defer></script>
 </body>
 </html>

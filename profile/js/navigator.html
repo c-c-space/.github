@@ -29,7 +29,7 @@
   }
   </style>
 </head>
-<body id="howto" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
+<body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -40,33 +40,34 @@
     </nav>
   </header>
   <script src="/js/menu.js"></script>
-  <details>
-    <summary>
-      <font>function update(online)</font><br/>
-      <p id="status">(Online or Offline?)</p>
-    </summary>
-    <aside id="links">
-    </aside>
-    <p></p>
-    <br/>
-    <pre>
+  <article id="howto">
+    <details>
+      <summary>
+        <font>function update(online)</font><br/>
+        <p id="status">(Online or Offline?)</p>
+      </summary>
+      <aside id="links">
+      </aside>
+      <p></p>
+      <br/>
+      <pre>
 function update(online) {
   document.querySelector('#status').textContent =
   online ? 'Online' : 'Offline';
 }
-    </pre>
-  </details>
-  <hr/>
-  <details>
-    <summary>
-      <font>navigator.connection</font><br/>
-      <p id="network"></p>
-    </summary>
-    <aside id="links">
-    </aside>
-    <p></p>
-    <br/>
-    <pre>
+      </pre>
+    </details>
+    <hr/>
+    <details>
+      <summary>
+        <font>navigator.connection</font><br/>
+        <p id="network"></p>
+      </summary>
+      <aside id="links">
+      </aside>
+      <p></p>
+      <br/>
+      <pre>
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
   const init = function() {
@@ -83,25 +84,26 @@ if (connectionInfo !== undefined) {
     connectionInfo.addEventListener('typechange', init)
   }
 }
-    </pre>
-  </details>
-  <hr/>
-  <details>
-    <summary>
-      <font>navigator.deviceMemory</font><br/>
-      <font>navigator.hardwareConcurrency</font><br/>
-      <p id="navigator"></p>
-    </summary>
-    <aside id="links">
-    </aside>
-    <p></p>
-    <br/>
-    <pre>
+      </pre>
+    </details>
+    <hr/>
+    <details>
+      <summary>
+        <font>navigator.deviceMemory</font><br/>
+        <font>navigator.hardwareConcurrency</font><br/>
+        <p id="navigator"></p>
+      </summary>
+      <aside id="links">
+      </aside>
+      <p></p>
+      <br/>
+      <pre>
 const memory = navigator.deviceMemory;
 const hardware = navigator.hardwareConcurrency;
 document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
-    </pre>
-  </details>
+      </pre>
+    </details>
+  </article>
   <script src="navigator.js" defer></script>
 </body>
 </html>

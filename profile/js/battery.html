@@ -29,7 +29,7 @@
   }
   </style>
 </head>
-<body id="howto">
+<body>
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
@@ -40,26 +40,27 @@
     </nav>
   </header>
   <script src="/js/menu.js"></script>
-  <details>
-    <summary>
-      <font>Battery Status API</font><br/>
-      <code>システムのバッテリーに関する情報を提供する バッテリー状態 API</code>
-      <meter id="progress" min="0" low="10" high="20" max="100"></meter>
-    </summary>
-    <aside id="links">
-      <a href="https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API">
-        <i>Battery Status API</i>
-        <p>バッテリー状態 API</p>
-      </a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery">
-        <i>Navigator</i>
-        <p>.getBattery()</p>
-      </a>
-    </aside>
-    <p>バッテリー状態 API は、システムのバッテリー充電レベルに関する情報の提供、およびバッテリーレベルや充電状態が変化したときに発生するイベントによる通知を可能にします。</p>
-    <p>これは、バッテリーが消耗したときにバッテリー消費を減らすためアプリのリソース使用状況を調整したり、データを失わないためにバッテリーが切れる前に変更点を保存したりするために使用できます。</p>
-    <br/>
-    <pre>
+  <article id="howto">
+    <details>
+      <summary>
+        <font>Battery Status API</font><br/>
+        <code>システムのバッテリーに関する情報を提供する バッテリー状態 API</code>
+        <meter id="progress" min="0" low="10" high="20" max="100"></meter>
+      </summary>
+      <aside id="links">
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API">
+          <i>Battery Status API</i>
+          <p>バッテリー状態 API</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery">
+          <i>Navigator</i>
+          <p>.getBattery()</p>
+        </a>
+      </aside>
+      <p>バッテリー状態 API は、システムのバッテリー充電レベルに関する情報の提供、およびバッテリーレベルや充電状態が変化したときに発生するイベントによる通知を可能にします。</p>
+      <p>これは、バッテリーが消耗したときにバッテリー消費を減らすためアプリのリソース使用状況を調整したり、データを失わないためにバッテリーが切れる前に変更点を保存したりするために使用できます。</p>
+      <br/>
+      <pre>
 navigator<code class="red">.getBattery</code>().then((battery) => {
   function updateAllBatteryInfo() {
     updateChargeInfo();
@@ -105,33 +106,34 @@ navigator<code class="red">.getBattery</code>().then((battery) => {
     }
   }
 });
-    </pre>
-  </details>
-  <br/>
-  <table class="size">
-    <tbody>
-      <tr>
-        <td>battery.charging</td>
-        <td>現在充電されているかどうか</td>
-        <td id="charging" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>battery.level</td>
-        <td>現在の充電レベル</td>
-        <td id="level" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>battery.chargingTime </td>
-        <td>完全に充電されるまでの残り時間</td>
-        <td id="chargingTime" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>battery.dischargingTime</td>
-        <td>完全に放電されるまでの残り時間</td>
-        <td id="dischargingTime" class="nowValue"></td>
-      </tr>
-    </tbody>
-  </table>
+      </pre>
+    </details>
+    <br/>
+    <table class="size">
+      <tbody>
+        <tr>
+          <td>battery.charging</td>
+          <td>現在充電されているかどうか</td>
+          <td id="charging" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.level</td>
+          <td>現在の充電レベル</td>
+          <td id="level" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.chargingTime </td>
+          <td>完全に充電されるまでの残り時間</td>
+          <td id="chargingTime" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.dischargingTime</td>
+          <td>完全に放電されるまでの残り時間</td>
+          <td id="dischargingTime" class="nowValue"></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
   <script src="battery.js" defer></script>
 </body>
 </html>
