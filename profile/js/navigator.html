@@ -27,6 +27,12 @@
       height: 45vw;
     }
   }
+
+  hr {
+    border: none;
+    padding: 1rem;
+    margin: 0;
+  }
   </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
@@ -70,11 +76,10 @@ function update(online) {
         </a>
       </aside>
     </details>
-    <br/>
+    <hr/>
     <details>
       <summary id="network">navigator.connection</summary>
       <p>ネットワーク接続情報を #network に表示する</p>
-      <br/>
       <pre>
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
@@ -93,7 +98,6 @@ if (connectionInfo !== undefined) {
   }
 }
       </pre>
-      <br/>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API">
           <i>Network Information API</i>
@@ -121,17 +125,15 @@ if (connectionInfo !== undefined) {
         </a>
       </aside>
     </details>
-    <br/>
+    <hr/>
     <details>
       <summary id="navigator"></summary>
       <p>端末のおよそのメモリ量／論理プロセッサーのコア数を #navigator に表示する</p>
-      <br/>
       <pre>
 const memory = navigator.deviceMemory;
 const hardware = navigator.hardwareConcurrency;
 document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
       </pre>
-      <br/>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/deviceMemory">
           <i>navigator.deviceMemory</i>
