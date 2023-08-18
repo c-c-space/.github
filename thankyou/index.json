@@ -26,16 +26,8 @@
       "note" : ""
     },
     {
-      "date" : "Sketch.js",
-      "name" : "Can Browse Only PC",
-      "url" : "/thankyou/sketch.html",
-      "type" : "update",
-      "caption" : "none",
-      "note" : ""
-    },
-    {
-      "date" : "Touch.js",
-      "name" : "Can Browse Only Mobile Devise",
+      "date" : "Sketch.js / Touch.js",
+      "name" : "Drawing by Mouse Move or Screen Touch",
       "url" : "/thankyou/touch.html",
       "type" : "update",
       "caption" : "none",

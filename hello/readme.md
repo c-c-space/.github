@@ -33,3 +33,8 @@ Add Posts to a CSV files for each *Timeframe* in the directories of **24 Sekki**
 [24 Sekki](all/index.php) divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.
 
 [^1]:二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
+
+---
+
+### 参考資料
+[are.na channel](https://www.are.na/cc-group/hello-24-sekki-72-ko)
