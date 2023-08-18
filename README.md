@@ -14,7 +14,7 @@ index.json を 読み込み、メタデータコンテンツ と アンカー要
   <nav id="contents">
     <a href="/" target="_parent">
       <p><b>Index | creative-community.space</b></p>
-      <u>ver.2.0</u>
+      <u>ver.0.0</u>
     </a>
   </nav>
 </header>

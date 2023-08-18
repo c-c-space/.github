@@ -21,23 +21,23 @@
       "date" : "HSL.js",
       "name" : "Hue Saturation Lightness",
       "url" : "/thankyou/hsl.html",
-      "type" : "news",
+      "type" : "update",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "sketch.js",
-      "name" : "(C) 2013 Justin Windle",
+      "date" : "Sketch.js",
+      "name" : "Can Browse Only PC",
       "url" : "/thankyou/sketch.html",
-      "type" : "news",
+      "type" : "update",
       "caption" : "none",
       "note" : ""
     },
     {
-      "date" : "touch.js",
-      "name" : "Mobile Only",
+      "date" : "Touch.js",
+      "name" : "Can Browse Only Mobile Devise",
       "url" : "/thankyou/touch.html",
-      "type" : "news",
+      "type" : "update",
       "caption" : "none",
       "note" : ""
     }
