@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/modal.css" />
   <link rel="stylesheet" href="../css/userMedia.css" />
   <link rel="stylesheet" href="style.css" />
-  <?php require('/ver/icon.html');?>
+  <?php require('../ver/icon.html');?>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <header id="menu" hidden>
