@@ -45,6 +45,7 @@ function deleteVideo() {
     track.stop();
   });
 
+  const userMedia = document.querySelector('#userMedia')
   userMedia.remove()
 }
 
