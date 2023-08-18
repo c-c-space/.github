@@ -46,10 +46,7 @@ fclose($fp);
   <?php require('icon.html');?>
   <script type="text/javascript">
     if(!localStorage.getItem('yourInfo')) {
-      const hiddenAll = document.querySelectorAll('.hidden');
-      for (const hiddenEach of hiddenAll) {
-        hiddenEach.style.display = "none"
-      }
+      location.replace('/')
     }
   </script>
 </head>
@@ -73,15 +70,15 @@ fclose($fp);
   </header>
   <script src="/js/menu.js"></script>
 
-  <form id="now" method="GET">
+  <form id="now" method="GET" class="hidden">
     <h1>creative-community.space</h1>
-    <p class="hidden">
+    <p>
       <input type="radio" name="index" id="new" value="new">
       <label class="cc" for="new">New Contents</label>
       <input type="radio" name="index" id="update" value="update">
       <label class="cc" for="update">Version Up</label>
     </p>
-    <p class="hidden">  
+    <p>  
       <input type="radio" name="index" id="all" value="all">
       <label class="cc" for="all">View All</label>
     </p>
