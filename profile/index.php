@@ -93,6 +93,8 @@
     <button id="closeButton">Close 閉じる</button>
     <section id="about"></section>
   </dialog>
+  
+  <video id="userMedia" autoplay playsinline></video>
 
   <script type="text/javascript">
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -123,12 +125,9 @@
   const closeButton = document.querySelector('#closeButton');
   closeButton.addEventListener('click', () => {
     dialogModal.close();
-  });
-  </script>
+  })
 
-  <video id="userMedia" autoplay playsinline></video>
-  <script type="text/javascript">
-  const userMedia = document.querySelector("#userMedia")
+  const userMedia = document.querySelector("#userMedia");
   userMedia.style.width = window.innerWidth
   userMedia.style.height = window.innerHeight
 
@@ -143,6 +142,7 @@
     userMedia.srcObject = stream;
   });
   </script>
+
   <script src="index.js"></script>
 </body>
 </html>
