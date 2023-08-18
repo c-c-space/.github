@@ -70,6 +70,7 @@
       ?>
     </li>
     <script src="js/navigator.js"></script>
+    <script src="js/window.js"></script>
 
     <li>
       <span>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../../ver/howto.css" />
+  <style>
+  #howto details {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  #howto meter {
+    width: 100%;
+    height: 350px;
+  }
+
+  #howto meter::-webkit-meter-horizontal-bar {
+    border: double 5px #000;
+  }
+
+  @media screen and (max-width: 750px) {
+    #howto meter {
+      height: 45vw;
+    }
+  }
+  </style>
+</head>
+<body id="howto">
+  <details>
+    <summary>
+      <font>windowScreen()</font><br/>
+      <code>ウインドウ・スクリーンサイズを取得する</code>
+    </summary>
+    <aside id="links">
+    </aside>
+    <p></p>
+    <br/>
+    <pre>
+window.addEventListener("DOMContentLoaded", function () {
+  windowScreen();
+}, false);
+
+window.onresize = tmResize;
+function tmResize() {
+  if (typeof pageResize == "function") {
+    pageResize();
+  }
+}
+
+function pageOnload() {
+  windowScreen();
+}
+function pageResize() {
+  windowScreen();
+}
+
+function windowScreen() {
+  const outScreenWidth = document.getElementById("outScreenWidth");
+  outScreenWidth.innerText = screen.availWidth;
+
+  const outScreenheight = document.getElementById("outScreenheight");
+  outScreenheight.innerText = screen.availHeight;
+
+  const outInnerWidth = document.getElementById("outInnerWidth");
+  outInnerWidth.innerText = window.innerWidth;
+
+  const outInnerHeight = document.getElementById("outInnerHeight");
+  outInnerHeight.innerText = window.innerHeight;
+}
+    </pre>
+  </details>
+  <br/>
+  <table class="size">
+    <tbody>
+      <tr>
+        <td>screen.availWidth</td>
+        <td>画面のウェブコンテンツに利用することができる範囲の幅 (px)</td>
+        <td id="outScreenWidth" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>screen.availHeight</td>
+        <td>画面のウェブコンテンツに利用することができる範囲の高さ (px)</td>
+        <td id="outScreenheight" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>window.innerWidth</td>
+        <td>ウィンドウの内部の幅 (px)</td>
+        <td id="outInnerWidth" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>window.innerHeight</td>
+        <td>ウィンドウの内部の高さ (px)</td>
+        <td id="outInnerHeight" class="nowValue"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="window.js" defer></script>
+</body>
+</html>

@@ -27,12 +27,11 @@
   }
   </style>
 </head>
-<body id="howto">
+<body id="howto" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <details>
     <summary>
-      <font>(Online or Offline?)</font><br/>
-      <code></code>
-      <button id="status" type="button">(Online or Offline?)</button>
+      <font>function update(online)</font><br/>
+      <p id="status">(Online or Offline?)</p>
     </summary>
     <aside id="links">
     </aside>
@@ -40,8 +39,8 @@
     <br/>
     <pre>
 function update(online) {
-    document.querySelector('#status').textContent =
-    online ? 'Online' : 'Offline';
+  document.querySelector('#status').textContent =
+  online ? 'Online' : 'Offline';
 }
     </pre>
   </details>
@@ -49,7 +48,7 @@ function update(online) {
   <details>
     <summary>
       <font>navigator.connection</font><br/>
-      <code></code>
+      <p id="network"></p>
     </summary>
     <aside id="links">
     </aside>
@@ -58,28 +57,28 @@ function update(online) {
     <pre>
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
-    const init = function() {
+  const init = function() {
     document.getElementById('network').innerHTML =
     'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
     + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
     + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
-    };
-    init();
+  }
+  init()
 
-    if ('onchange' in connectionInfo) {
-    connectionInfo.addEventListener('change', init);
-    } else if ('ontypechange' in connectionInfo) {
-    connectionInfo.addEventListener('typechange', init);
-    }
+  if ('onchange' in connectionInfo) {
+    connectionInfo.addEventListener('change', init)
+  } else if ('ontypechange' in connectionInfo) {
+    connectionInfo.addEventListener('typechange', init)
+  }
 }
     </pre>
   </details>
-  <p id="network"></p>
   <hr/>
   <details>
     <summary>
       <font>navigator.deviceMemory</font><br/>
       <font>navigator.hardwareConcurrency</font><br/>
+      <p id="navigator"></p>
     </summary>
     <aside id="links">
     </aside>
@@ -91,7 +90,6 @@ const hardware = navigator.hardwareConcurrency;
 document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
     </pre>
   </details>
-  <p id="navigator"></p>
   <script src="navigator.js" defer></script>
 </body>
 </html>

@@ -12,13 +12,13 @@ if (connectionInfo !== undefined) {
     'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
     + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
     + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
-  };
-  init();
+  }
+  init()
 
   if ('onchange' in connectionInfo) {
-    connectionInfo.addEventListener('change', init);
+    connectionInfo.addEventListener('change', init)
   } else if ('ontypechange' in connectionInfo) {
-    connectionInfo.addEventListener('typechange', init);
+    connectionInfo.addEventListener('typechange', init)
   }
 }
 
