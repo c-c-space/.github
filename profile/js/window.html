@@ -47,6 +47,39 @@
         <font>windowScreen()</font>
         <p>利用可能な画面のサイズと内部のウインドウのサイズを取得する</p>
       </summary>
+      <pre>
+window.addEventListener("DOMContentLoaded", function () {
+  windowScreen();
+}, false);
+
+window.onresize = tmResize;
+function tmResize() {
+  if (typeof pageResize == "function") {
+    pageResize();
+  }
+}
+
+function pageOnload() {
+  windowScreen();
+}
+function pageResize() {
+  windowScreen();
+}
+
+function windowScreen() {
+  const outScreenWidth = document.getElementById("outScreenWidth");
+  outScreenWidth.innerText = screen.availWidth;
+
+  const outScreenheight = document.getElementById("outScreenheight");
+  outScreenheight.innerText = screen.availHeight;
+
+  const outInnerWidth = document.getElementById("outInnerWidth");
+  outInnerWidth.innerText = window.innerWidth;
+
+  const outInnerHeight = document.getElementById("outInnerHeight");
+  outInnerHeight.innerText = window.innerHeight;
+}
+      </pre>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/width">
           <i>Screen.width</i>
@@ -85,39 +118,6 @@
           <p>Window: resize イベント</p>
         </a>
       </aside>
-      <pre>
-window.addEventListener("DOMContentLoaded", function () {
-  windowScreen();
-}, false);
-
-window.onresize = tmResize;
-function tmResize() {
-  if (typeof pageResize == "function") {
-    pageResize();
-  }
-}
-
-function pageOnload() {
-  windowScreen();
-}
-function pageResize() {
-  windowScreen();
-}
-
-function windowScreen() {
-  const outScreenWidth = document.getElementById("outScreenWidth");
-  outScreenWidth.innerText = screen.availWidth;
-
-  const outScreenheight = document.getElementById("outScreenheight");
-  outScreenheight.innerText = screen.availHeight;
-
-  const outInnerWidth = document.getElementById("outInnerWidth");
-  outInnerWidth.innerText = window.innerWidth;
-
-  const outInnerHeight = document.getElementById("outInnerHeight");
-  outInnerHeight.innerText = window.innerHeight;
-}
-      </pre>
     </details>
     <br/>
     <table class="size">
