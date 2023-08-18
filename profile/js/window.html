@@ -33,7 +33,7 @@
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
+      <a href="/profile/" target="_parent">
         <p><b>The Information About Network & Browser</b></p>
         <u>通信情報／ブラウザ等情報</u>
       </a>
@@ -44,12 +44,47 @@
   <article id="howto">
     <details>
       <summary>
-        <font>windowScreen()</font><br/>
-        <code>ウインドウ・スクリーンサイズを取得する</code>
+        <font>windowScreen()</font>
       </summary>
       <aside id="links">
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/width">
+          <i>Screen.width</i>
+          <p>画面の幅</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/height">
+          <i>Screen.height</i>
+          <p>画面の高さ</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/availWidth">
+          <i>Screen.availWidth</i>
+          <p>ウィンドウで利用可能な画面の幅</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/availHeight">
+          <i>Screen.availHeight</i>
+          <p>ウィンドウで利用可能な画面の高さ</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth">
+          <i>Window.innerWidth</i>
+          <p>ウィンドウの内部の幅</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight">
+          <i>>Window.innerHeight</i>
+          <p>ウィンドウの内部の高さ</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/outerWidth">
+          <i>Window.outerWidth</i>
+          <p>ブラウザーウィンドウ全体の幅</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/outerHeight">
+          <i>>Window.outerHeight</i>
+          <p>ブラウザーウィンドウ全体の高さ</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/resize_event">
+          <i>>window.onresize</i>
+          <p>Window: resize イベント</p>
+        </a>
       </aside>
-      <p></p>
+      <p>利用可能な画面のサイズと内部のウインドウのサイズを取得する</p>
       <br/>
       <pre>
 window.addEventListener("DOMContentLoaded", function () {
@@ -90,12 +125,12 @@ function windowScreen() {
       <tbody>
         <tr>
           <td>screen.availWidth</td>
-          <td>画面のウェブコンテンツに利用することができる範囲の幅 (px)</td>
+          <td>ウィンドウで利用可能な画面の幅 (px)</td>
           <td id="outScreenWidth" class="nowValue"></td>
         </tr>
         <tr>
           <td>screen.availHeight</td>
-          <td>画面のウェブコンテンツに利用することができる範囲の高さ (px)</td>
+          <td>ウィンドウで利用可能な画面の高さ (px)</td>
           <td id="outScreenheight" class="nowValue"></td>
         </tr>
         <tr>

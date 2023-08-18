@@ -18,8 +18,8 @@
       "note" : ""
     },
     {
-      "date" : "navigator.connection",
-      "name" : "ネットワーク接続情報",
+      "date" : "Network Information API",
+      "name" : "ネットワーク情報 API",
       "url" : "/profile/js/navigator.html",
       "type" : "news",
       "caption" : "none",

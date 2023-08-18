@@ -33,7 +33,7 @@
   <header id="menu" hidden>
     <button id="js-button"><b></b></button>
     <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
+      <a href="/profile/" target="_parent">
         <p><b>The Information About Network & Browser</b></p>
         <u>通信情報／ブラウザ等情報</u>
       </a>
@@ -46,9 +46,23 @@
         <font id="status">(Online or Offline?)</font>
       </summary>
       <aside id="links">
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine">
+          <i>Navigator.onLine</i>
+          <p>ブラウザーのオンライン状態を返すプロパティ</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/online_event">
+          <i>ononline</i>
+          <p>addEventListener('online', (event) => { });</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/offline_event">
+          <i>onoffline</i>
+          <p>addEventListener('offline', (event) => { });</p>
+        </a>
       </aside>
-      <p></p>
-      <br/>
+      <p>オンライン状態によって、#status のテキストを変更する</p>
+      <pre>
+body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"
+      </pre>
       <pre>
 function update(online) {
   document.querySelector('#status').textContent =
@@ -60,8 +74,32 @@ function update(online) {
     <details>
       <summary id="network">navigator.connection</summary>
       <aside id="links">
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API">
+          <i>Network Information API</i>
+          <p>ネットワーク情報 API</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/effectiveType">
+          <i>NetworkInformation.effectiveType</i>
+          <p>'slow-2g', '2g', '3g', '4g' のいずれかを意味する接続の有効な種類</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/type">
+          <i>NetworkInformation.type</i>
+          <p>端末がネットワーク通信に使用している接続の種類</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/downlink">
+          <i>NetworkInformation.downlink</i>
+          <p>実効帯域幅の推定値 (メガビット毎秒)</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/rtt">
+          <i>NetworkInformation.rtt</i>
+          <p>推定有効ラウンドトリップ時間を、25 ミリ秒の倍数に丸めた値</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/change_event">
+          <i>change イベント</i>
+          <p>接続情報が変更されたときに発行されるイベント</p>
+        </a>
       </aside>
-      <p></p>
+      <p>ネットワーク接続情報を #network に表示する</p>
       <br/>
       <pre>
 const connectionInfo = navigator.connection;
@@ -84,13 +122,18 @@ if (connectionInfo !== undefined) {
     </details>
     <hr/>
     <details>
-      <summary id="navigator">
-        <font>navigator.deviceMemory</font><br/>
-        <font>navigator.hardwareConcurrency</font>
-      </summary>
+      <summary id="navigator"></summary>
       <aside id="links">
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/deviceMemory">
+          <i>navigator.deviceMemory</i>
+          <p>端末のおよそのメモリ量 (ギガバイト単位)</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/hardwareConcurrency">
+          <i>navigator.hardwareConcurrency</i>
+          <p>論理プロセッサーのコア数を示す数値</p>
+        </a>
       </aside>
-      <p></p>
+      <p>端末のおよそのメモリ量／論理プロセッサーのコア数を #navigator に表示する</p>
       <br/>
       <pre>
 const memory = navigator.deviceMemory;
