@@ -10,10 +10,18 @@
 
   "contents" : [
     {
+      "date" : "Hello",
+      "name" : "二十四節気 掲示板",
+      "url" : "/hello/",
+      "type" : "news",
+      "caption" : "none",
+      "note" : ""
+    },
+    {
       "date" : "Web Speech API",
       "name" : "SpeechRecognition.js",
       "url" : "/hello/js/recognition.html",
-      "type" : "news",
+      "type" : "update",
       "caption" : "none",
       "note" : ""
     },
@@ -21,7 +29,7 @@
       "date" : "Web Speech API",
       "name" : "SpeechSynthesis.js",
       "url" : "/hello/js/synthesis.html",
-      "type" : "news",
+      "type" : "update",
       "caption" : "none",
       "note" : ""
     }
