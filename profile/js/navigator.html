@@ -57,10 +57,10 @@
       </summary>
       <p>オンライン状態によって、#status のテキストを変更する</p>
       <pre>
-body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"
+body <b>ononline</b>="update(true)" <b>onoffline</b>="update(false)" <b>onload</b>="update(<b>navigator.onLine</b>)"
       </pre>
       <pre>
-function update(online) {
+function <b>update</b>(online) {
   document.querySelector('#status').textContent =
   online ? 'Online' : 'Offline';
 }
@@ -85,7 +85,7 @@ function update(online) {
       <summary id="network">navigator.connection</summary>
       <p>ネットワーク接続情報を #network に表示する</p>
       <pre>
-const connectionInfo = navigator.connection;
+const <b>connectionInfo</b> = <b>navigator.connection</b>;
 if (connectionInfo !== undefined) {
   const init = function() {
     document.getElementById('network').innerHTML =
@@ -95,9 +95,9 @@ if (connectionInfo !== undefined) {
   }
   init()
 
-  if ('onchange' in connectionInfo) {
+  if (<b>'onchange'</b> in connectionInfo) {
     connectionInfo.addEventListener('change', init)
-  } else if ('ontypechange' in connectionInfo) {
+  } else if (<b>'ontypechange'</b> in connectionInfo) {
     connectionInfo.addEventListener('typechange', init)
   }
 }
@@ -134,8 +134,8 @@ if (connectionInfo !== undefined) {
       <summary id="navigator"></summary>
       <p>端末のおよそのメモリ量／論理プロセッサーのコア数を #navigator に表示する</p>
       <pre>
-const memory = navigator.deviceMemory;
-const hardware = navigator.hardwareConcurrency;
+const <b>memory</b> = <b>navigator.deviceMemory</b>;
+const <b>hardware</b> = <b>navigator.hardwareConcurrency</b>;
 document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
       </pre>
       <aside id="links">
