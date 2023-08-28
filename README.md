@@ -68,10 +68,10 @@ index.json を 読み込み、メタデータコンテンツ と アンカー要
 ローカルストレージに通信情報／ブラウザ等情報が追加されている場合に、現在の二十四節気を表示
 
 
-* [hello.js](js/hello.js)
-Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行
 * [readyState.js](readyState.js)
 ローカルストレージに追加されている情報を取得し、ページ内容を生成
+* [hello.js](js/hello.js)
+Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行
 
 * [hello/style.css](hello/style.css)
 挨拶文をスタイリングするCSS
@@ -102,7 +102,8 @@ Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) 
 
 * [yourinfo.php](profile/yourinfo.php)
 通信情報／ブラウザ等情報を取得する
-* [js/log.js](js/log.js)
+
+* [log.js](js/log.js)
 通信情報／ブラウザ等情報をローカルストレージに追加する
 * [log.php](log.php)
 通信情報／ブラウザ等情報をアクセス履歴に記録する
