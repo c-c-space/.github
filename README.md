@@ -70,7 +70,7 @@ index.json を 読み込み、メタデータコンテンツ と アンカー要
 
 * [hello.js](js/hello.js)
 Web Speech API を 使用して、#readme 要素の音声合成(Text to Speech) を実行
-* [readyState.js](js/readyState.js)
+* [readyState.js](readyState.js)
 ローカルストレージに追加されている情報を取得し、ページ内容を生成
 
 * [hello/style.css](hello/style.css)
