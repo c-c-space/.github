@@ -1,57 +1,21 @@
-#yourinfo strong,
-#log li:nth-last-child(1) span:first-of-type,
-#now time {
+#log li:nth-last-child(1) span:first-of-type {
   font-family: "ipag", "Arial Narrow", monospace;
   font-weight: 500;
   transform: scale(1, 1.25);
 }
 
-#yourinfo p,
 #log,
-#update,
 #now select,
 #now button {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#yourinfo code {
-  font-family: inherit;
-}
-
-#yourinfo,
 #log li span {
   color: #000;
 }
 
-#yourinfo strong,
-#yourinfo p {
-  display: block;
-}
-
-#yourinfo strong,
-#yourinfo p,
-#log li b,
-#now time {
+#log li b {
   font-size: 150%;
-}
-
-#yourinfo form {
-  padding: 1.25rem 1rem;
-}
-
-#now time {
-  padding: 1rem;
-  margin: 0;
-}
-
-#yourinfo span {
-  display: block;
-}
-
-#yourinfo form section {
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: space-between;
 }
 
 #log {
@@ -61,18 +25,15 @@
   flex-flow: row-reverse wrap-reverse;
   justify-content: flex-start;
   list-style: none;
-  position: relative;
-  padding: 0;
+  padding: 0.5rem;
   margin: 0 0 5rem;
-  overflow: auto;
   width: 100%;
-  z-index: 5;
 }
 
 #log li {
   font-size: 75%;
   flex: 1 250px;
-  box-sizing: border-box;
+  gap: 0.25rem;
   padding: 0.25rem;
   word-wrap: break-word;
   transition: all 1000ms ease;
@@ -108,9 +69,6 @@
 
 #now {
   position: fixed;
-}
-
-#now {
   bottom: 0;
   left: 0;
   right: 0;

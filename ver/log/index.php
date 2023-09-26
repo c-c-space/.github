@@ -28,7 +28,11 @@ flock($fp, LOCK_SH);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="readyState.js"></script>
+  <script type="text/javascript">
+    if (!localStorage.getItem('yourInfo')) {
+      location.replace('/')
+    }
+  </script>
 
   <!--og:meta-->
   <meta content="website" property="og:type">
@@ -53,19 +57,6 @@ flock($fp, LOCK_SH);
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    header,
-    #log,
-    #now {
-      mix-blend-mode: difference;
-    }
-
-    #js-button,
-    #contents a,
-    #log,
-    #now {
-      filter: invert();
-    }
-
     #log li {
       filter: blur(0.25rem);
     }
@@ -81,13 +72,7 @@ flock($fp, LOCK_SH);
       transition: all 500ms ease;
     }
 
-    body {
-      padding: 0.5rem;
-      margin: 0;
-    }
-
     @media print {
-
       #menu,
       #now,
       #now * {
@@ -121,15 +106,7 @@ flock($fp, LOCK_SH);
     <script src="/js/menu.js"></script>
   </header>
 
-  <ul id="log" class="hidden">
-    <li hidden>
-      <span>Your Info</span>
-      <?php
-      echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
-      echo "<span id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</span>";
-      echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
-      ?>
-    </li>
+  <ul id="log">
     <?php
     while ($line = fgetcsv($fp)) {
       echo "<li class='log'>";
@@ -146,7 +123,6 @@ flock($fp, LOCK_SH);
         echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
         ?>
       </span>
-      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
       <span>アクセス履歴</span>
       <span>
         <b><?php echo sizeof(file($source_file)); ?></b>
@@ -166,7 +142,6 @@ flock($fp, LOCK_SH);
       </span>
     </li>
   </ul>
-  <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
     <select id="month" name="month"></select>
