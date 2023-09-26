@@ -52,7 +52,7 @@ flock($fp, LOCK_SH);
   <link rel="stylesheet" href="../../css/selectmonth.css" />
   <link rel="stylesheet" href="style.css" />
 
-<style>
+  <style>
     header,
     #log,
     #now {
@@ -118,8 +118,8 @@ flock($fp, LOCK_SH);
         <b>通信情報／ブラウザ等情報</b>
       </a>
     </menu>
+    <script src="/js/menu.js"></script>
   </header>
-  <script src="/js/menu.js"></script>
 
   <ul id="log" class="hidden">
     <li hidden>

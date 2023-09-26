@@ -71,6 +71,7 @@ fclose($fp);
         <b>アクセス履歴 | Access Log</b>
       </a>
     </menu>
+    <script src="/js/menu.js"></script>
   </header>
 
   <main>
