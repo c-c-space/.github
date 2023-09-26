@@ -76,7 +76,7 @@
   <main id="yourinfo" class="hsl" hidden>
     <form method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
-      <p>
+      <p class="cc">
         <?php require('profile/yourinfo.php'); ?>
       </p>
       <section>
