@@ -31,20 +31,20 @@ body {
 
 .cc,
 #menu button b::before,
-#contents a p,
-#contents a b {
+#contents p,
+#contents b {
   display: inline-block;
   font-family: "ipag", monospace;
   font-weight: 500;
   transform: scale(1, 1.25);
 }
 
-#contents a i {
+#contents i {
   font-family: "Times New Roman", serif;
   font-size: 90%;
 }
 
-#contents a u {
+#contents u {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   font-size: 75%;
 }
@@ -160,6 +160,7 @@ main {
 
 
 #contents a,
+#contents i,
 #contents p {
   width: 100%;
 }
@@ -175,13 +176,12 @@ main {
   margin: 0.5rem 1rem 1rem;
 }
 
-#contents a u {
+#contents u {
   border: 1px solid;
   border-radius: 2rem;
   box-shadow: 0.2rem 0.25rem 0;
   padding: 0.25rem 0.5rem;
   margin: 0.5rem 1rem 0.75rem;
-  font-size: 75%;
   text-decoration: none;
 }
 
