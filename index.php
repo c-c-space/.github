@@ -8,7 +8,7 @@
   <script src="js/menu.js"></script>
   <script src="js/index.js"></script>
   <script>
-    // menuJSON('index.json')
+    menuJSON('index.json')
   </script>
 
   <!--og:meta-->
@@ -77,7 +77,7 @@
   <main id="yourinfo" class="hsl" hidden>
     <form method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
-      <p class="cc">
+      <p>
         <?php require('profile/yourinfo.php'); ?>
       </p>
       <section>
@@ -185,7 +185,6 @@
             this.lineJoin = 'round';
             this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
             this.lineWidth = radius;
-
             this.beginPath();
             this.moveTo(touch.ox, touch.oy);
             this.lineTo(touch.x, touch.y);

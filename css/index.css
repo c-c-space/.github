@@ -85,8 +85,7 @@ main {
     text-decoration: none;
 }
 
-#hello,
-#yourinfo p {
+#hello {
     font-family: Arial, Helvetica, sans-serif;
 }
 
