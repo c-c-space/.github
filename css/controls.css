@@ -1,0 +1,151 @@
+input,
+select,
+button,
+textarea {
+  color: inherit;
+  background: transparent;
+  pointer-events: auto;
+  user-select: auto;
+}
+
+input[type="button"],
+input[type="submit"],
+select,
+button {
+  appearance : none;
+  cursor: pointer;
+  outline: none;
+  word-break: break-all;
+}
+
+.range label,
+.range code,
+#hello code,
+#modal code {
+  font-family: "ipag", "Arial Narrow", monospace;
+  word-break: break-all;
+}
+
+select,
+#hello input[type="button"],
+#modal button[type="submit"],
+#closeButton {
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  font-size: 100%;
+  padding: 0.4rem 0.55rem;
+  margin: 0.125rem;
+}
+
+#hello a,
+form button,
+.controls input[type="button"] {
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  font-size: 125%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+.controls input[type="button"] {
+  width: 4.5rem;
+  height: 3rem;
+  vertical-align: middle;
+}
+
+#hello input[type="submit"],
+#hello button,
+#enter-btn,
+#back-btn {
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  font-size: 150%;
+  padding: 0.75rem 1rem;
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+select:focus,
+button:focus {
+  filter: drop-shadow(0 0 0.1rem);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+  filter: invert(1);
+}
+
+.controls,
+#now,
+#next,
+.range {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.controls {
+  justify-content: flex-start;
+}
+
+.range,
+#now,
+#next {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hello .submit,
+.range {
+  padding: 0 1rem;
+}
+
+.range,
+#next {
+  margin: 1rem 0;
+}
+
+.range input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: solid 0.1rem;
+  border-radius: 2rem;
+  outline: none;
+  padding: 0 0.25rem;
+  width: 75%;
+  max-width: 500px;
+  height: 2rem;
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: transparent;
+  border: solid 0.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range label,
+.range code {
+  vertical-align: text-bottom;
+  width: 10%;
+}
+
+.range label {
+  font-size: 125%;
+}
+
+.range code {
+  font-size: 150%;
+  font-weight: 900;
+  text-align: right;
+}
+
+@media (orientation: portrait) {
+    #hello input[type="submit"],
+    #hello button {
+        font-size: 125%;
+    }
+}

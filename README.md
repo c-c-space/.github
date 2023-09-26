@@ -1,6 +1,6 @@
 # Index | creative-community.space
 
-* [index.js](js/index.js)
+* [index.html](index.html)
 index.json を 読み込み、メタデータコンテンツ と アンカー要素を生成
 
 ***

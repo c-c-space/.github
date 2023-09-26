@@ -1,115 +1,109 @@
 'use strict'
 
-async function indexJSON() {
-  const requestURL = 'index.json';
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const jsonIndex = await response.text();
-
-  const index = JSON.parse(jsonIndex);
-  indexHead(index);
-  indexObject(index);
+async function fetchHTML(url = '', query = '') {
+  fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.querySelector(query).innerHTML = html
+    })
 }
 
-function indexHead(obj) {
-  const head = document.querySelector('head');
-  const indexTitle = document.createElement('title');
-  const ogTitle = document.createElement('meta');
-  const twittetTitle = document.createElement('meta');
-  indexTitle.textContent = obj['title'] + ' | ' + obj['author'];
-  ogTitle.setAttribute("property", "og:title");
-  ogTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
-  twittetTitle.setAttribute("name", "twitter:title");
-  twittetTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
-  head.appendChild(indexTitle);
-  head.appendChild(ogTitle);
-  head.appendChild(twittetTitle);
-
-  const indexDescription = document.createElement('meta');
-  const ogDescription = document.createElement('meta');
-  const twitterDescription = document.createElement('meta');
-  indexDescription.setAttribute("name", "description");
-  indexDescription.setAttribute("content", obj['description']);
-  ogDescription.setAttribute("property", "og:description");
-  ogDescription.setAttribute("content", obj['description']);
-  twitterDescription.setAttribute("name", "twitter:description");
-  twitterDescription.setAttribute("content", obj['description']);
-  head.appendChild(indexDescription);
-  head.appendChild(ogDescription);
-  head.appendChild(twitterDescription);
-
-  const indexAuthor = document.createElement( "meta" );
-  indexAuthor.setAttribute("name", "author");
-  indexAuthor.setAttribute("content", obj['author']);
-  head.appendChild(indexAuthor);
-
-  const indexEmail = document.createElement( "meta" );
-  indexEmail.setAttribute("name", "reply-to");
-  indexEmail.setAttribute("content", obj['email']);
-  head.appendChild(indexEmail);
-
-  const ogType = document.createElement( "meta" );
-  ogType.setAttribute("property", "og:type");
-  ogType.setAttribute("content", obj['type']);
-  head.appendChild(ogType);
-
-  const twitter = document.createElement( "meta" );
-  const twitterCard = document.createElement( "meta" );
-  twitter.setAttribute("name", "twitter:site");
-  twitter.setAttribute("content", obj['twitter']);
-  twitterCard.setAttribute("name", "twitter:card");
-  twitterCard.setAttribute("content", obj['card']);
-  head.appendChild(twitter);
-  head.appendChild(twitterCard);
-
-  const ogIMG = document.createElement( "meta" );
-  const twitterIMG = document.createElement( "meta" );
-  ogIMG.setAttribute("property", "og:image");
-  twitterIMG.setAttribute("name", "twitter:image");
-  ogIMG.setAttribute("content", obj['src']);
-  twitterIMG.setAttribute("content", obj['src']);
-  head.appendChild(ogIMG);
-  head.appendChild(twitterIMG);
-
-  const ogSite = document.createElement( "meta" );
-  ogSite.setAttribute("property", "og:site_name");
-  ogSite.setAttribute("content", location.hostname);
-  head.appendChild(ogSite);
-
-  const ogURL = document.createElement( "meta" );
-  ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", location.href);
-  head.appendChild(ogURL);
-
-  const iconCC = document.createElement( "link" );
-  iconCC.rel = "icon";
-  iconCC.href = "/ver/icon.png";
-  head.appendChild(iconCC);
+function changeHidden() {
+  const mainAll = document.querySelectorAll('main')
+  mainAll.forEach(main => {
+    if (main.hidden == false) {
+      main.hidden = true;
+    } else {
+      main.hidden = false;
+    }
+  })
 }
 
-function indexObject(obj) {
-  const contents = document.querySelector('#contents');
-  const contentsORG = obj.contents;
+function userStream() {
+  const userMedia = document.createElement('video')
+  userMedia.id = "userMedia"
+  userMedia.setAttribute('autoplay', 'true')
+  userMedia.setAttribute('playsinline', 'true')
+  userMedia.style.width = window.innerWidth
+  userMedia.style.height = window.innerHeight
+  document.body.appendChild(userMedia)
 
-  for (const content of contentsORG) {
-    const contentA = document.createElement('a');
-    const contentP = document.createElement('p');
-    const contentI = document.createElement('i');
-    const contentU = document.createElement('u');
+  let media = navigator.mediaDevices.getUserMedia({
+    video: true,
+    video: { facingMode: 'environment' }, //背面カメラ
+    //video: { facingMode: 'user' }, //インカメラ
+    audio: false,
+  });
 
-    contentA.href = content.url;
-    contentA.classList.add(content.type);
-    contentA.setAttribute("data-type", content.type);
-    contentI.innerHTML = content.date;
-    contentP.innerHTML = content.name;
-    contentU.setAttribute("style", 'display:' + content.caption + ';');
-    contentU.innerHTML = content.note;
+  media.then((stream) => {
+    userMedia.srcObject = stream
+  });
+}
 
-    contents.appendChild(contentA);
-    contentA.appendChild(contentI);
-    contentA.appendChild(contentP);
-    contentA.appendChild(contentU);
+function stopStream() {
+  const userMedia = document.querySelector('#userMedia')
+  const stream = userMedia.srcObject
+  const tracks = stream.getTracks()
+
+  tracks.forEach(function (track) {
+    track.stop()
+  })
+  userMedia.remove()
+}
+
+function openModal() {
+  const dialogModal = document.querySelector('#modal')
+  if (typeof dialogModal.showModal === "function") {
+    dialogModal.showModal()
+  } else {
+    alert("The <dialog> API is not supported by this browser")
   }
 }
 
-indexJSON();
+document.addEventListener('readystatechange', event => {
+  if (event.target.readyState === 'interactive') {
+    fetchHTML('profile/yourinfo.html', '#modal section')
+
+    const dialogModal = document.querySelector('#modal')
+    const closeModal = document.querySelector('#closeModal')
+    closeModal.addEventListener('click', () => {
+      dialogModal.close()
+    })
+  } else if (event.target.readyState === 'complete') {
+    const nextBtn = document.querySelector('#submit-btn')
+
+    if (localStorage.getItem('yourInfo')) {
+      // localStorage
+      fetchHTML('hello/welcome.php', '#hello h1')
+      const yourStrage = document.querySelector('#hello h2')
+      yourStrage.innerHTML = '<u>You Posted</u><br/>'
+      if(!localStorage.getItem('sign')) {
+        yourStrage.innerHTML += '<a href="/sign/">0</a>'
+      } else {
+        const yourSign = JSON.parse(localStorage.getItem('sign'))
+        yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
+      }
+      yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
+
+      nextBtn.textContent = "すべて削除 Delete All"
+      nextBtn.addEventListener('click', function () {
+        localStorage.clear()
+        setTimeout(() => {
+          location.reload()
+        }, 1000)
+      })
+    } else {
+      nextBtn.textContent = "Your Info";
+      nextBtn.addEventListener('click', function () {
+        changeHidden()
+        userStream()
+      }, false)
+
+      const backBtn = document.querySelector('#back-btn')
+      backBtn.addEventListener('click', function () {
+        changeHidden()
+        stopStream()
+      }, false)
+    }
+  }
+});

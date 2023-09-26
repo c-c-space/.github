@@ -1,0 +1,128 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+#menu {
+    filter: invert();
+}
+
+#menu,
+canvas,
+#userMedia {
+    mix-blend-mode: difference;
+}
+
+main,
+canvas,
+#now {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+canvas,
+main {
+    top: 0;
+    height: 100%;
+}
+
+main,
+#now {
+    z-index: 10;
+}
+
+#now {
+    margin: 0;
+    bottom: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+#yourinfo p,
+#now {
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+    margin: 0;
+    overflow: auto;
+}
+
+#hello section {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+#hello nav,
+#hello u,
+#hello a {
+    pointer-events: auto;
+    user-select: auto;
+}
+
+#hello .hide {
+    display: none;
+}
+
+#hello u {
+    cursor: help;
+}
+
+#hello a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#hello,
+#yourinfo p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hello u,
+#hello i {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+}
+
+#hello h1,
+#hello h2 {
+    font-size: 250%;
+    line-height: 150%;
+}
+
+#hello u,
+#hello i,
+#yourinfo p,
+#yourinfo p code {
+    font-size: 111%;
+}
+
+#hello small {
+    font-size: 55%;
+}
+
+#hello h1,
+#hello h2,
+#hello b {
+    font-weight: 400;
+}
+
+#hello small,
+#yourinfo p span {
+    display: block;
+    margin: 1rem 0;
+    line-height: 150%;
+}
+
+@media (orientation: portrait) {
+
+    #hello h1,
+    #hello h2 {
+        font-size: 150%;
+    }
+}
