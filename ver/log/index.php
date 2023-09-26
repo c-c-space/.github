@@ -41,7 +41,6 @@ flock($fp, LOCK_SH);
   <meta content="<?php echo $title; ?>" property="og:title">
   <meta content="<?php echo $description; ?>" name="description">
   <meta content="<?php echo $description; ?>" name="og:description">
-  <meta content="<?php echo $description; ?>" name="og:description">
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
