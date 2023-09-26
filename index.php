@@ -53,7 +53,8 @@
         <?php require('hello/all/greeting.php'); ?>
         <b>
           <?php echo $greeting; ?>
-        </b><br>
+        </b>
+        <br>
         IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
       </h1>
       <h2>
