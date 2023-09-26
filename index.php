@@ -112,12 +112,12 @@
   <script src="thankyou/sketch.js"></script>
   <script type="text/javascript">
     function forMobile() {
-      ///
+      document.querySelector('canvas').remove()
     }
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       forMobile()
-      alert("Mobile Detected");
+      console.log("Mobile Detected");
 
     }
 
