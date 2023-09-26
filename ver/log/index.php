@@ -54,7 +54,7 @@ flock($fp, LOCK_SH);
 
   <link rel="stylesheet" href="../../css/menu.css" />
   <link rel="stylesheet" href="../../css/selectmonth.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../css/log.css" />
 
   <style>
     #log li {

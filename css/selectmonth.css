@@ -5,24 +5,14 @@
 }
 
 #now select,
-#now button,
-#update {
+#now button {
   appearance : none;
   background: transparent;
   border: 0.1rem solid;
+  border-radius: 3rem;
   color: #000;
   font-size: 125%;
   outline: none;
-}
-
-#update {
-  border-radius: 2.5rem;
-  padding: 0.321rem 0.75rem;
-}
-
-#now select,
-#now button {
-  border-radius: 3rem;
   padding: 0.5rem 0.75rem;
   margin: 1rem;
 }
