@@ -4,6 +4,7 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 $title = 'Access Log | creative-community.space';
+$description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
@@ -15,103 +16,108 @@ if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$description = $year .' 年 '. $month .' 月 の アクセス履歴';
-$source_file = $year.'/'.$month . '.csv';
+$source_file = $year . '/' . $month . '.csv';
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <script src="readyState.js"></script>
 
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <meta content="ja_JP" property="og:locale" />
   <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
-  <meta property="og:title" content="<?php echo $title; ?>" />
-  <meta property="og:description" content="<?php echo $description; ?>" />
-  <meta property="og:site_name" content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
-  <meta property="og:url" content="<?php echo $url; ?>" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta property="og:image" content="<?php echo $url; ?>summary.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
+  <meta content="<?php echo $title; ?>" property="og:title">
+  <meta content="<?php echo $description; ?>" name="description">
+  <meta content="<?php echo $description; ?>" name="og:description">
+  <meta content="<?php echo $description; ?>" name="og:description">
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="selectmonth.css" />
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="<?php echo $_SERVER['HTTP_HOST']; ?>" property="og:site_name" />
+  <meta content="<?php echo $url; ?>" property="og:url" />
+  <meta content="<?php echo $url; ?>summary.png" property="og:image">
+  <meta content="<?php echo $url; ?>summary.png" name="twitter:image:src">
+
+  <link rel="icon" href="../icon/favicon.png" type="image/png">
+
   <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="icon" href="/ver/icon.png" type="image/png">
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-  <style>
-  header,
-  #log,
-  #now {
-    mix-blend-mode: difference;
-  }
+  <link rel="stylesheet" href="../../css/selectmonth.css" />
+  <link rel="stylesheet" href="style.css" />
 
-  #js-button,
-  #contents a,
-  #log,
-  #now {
-    filter: invert();
-  }
+<style>
+    header,
+    #log,
+    #now {
+      mix-blend-mode: difference;
+    }
 
-  #log li {
-    filter: blur(0.25rem);
-  }
-
-  #log li:nth-last-child(1) {
-    filter: blur(0);
-  }
-
-  #log li:hover,
-  #log li:focus,
-  #log li:active {
-    filter: blur(0);
-    transition: all 500ms ease;
-  }
-
-  body {
-    padding: 0.5rem;
-    margin: 0;
-  }
-
-  @media print {
-    #menu,
-    #now,
-    #now * {
-      display: none;
+    #js-button,
+    #contents a,
+    #log,
+    #now {
+      filter: invert();
     }
 
     #log li {
+      filter: blur(0.25rem);
+    }
+
+    #log li:nth-last-child(1) {
       filter: blur(0);
     }
-  }
+
+    #log li:hover,
+    #log li:focus,
+    #log li:active {
+      filter: blur(0);
+      transition: all 500ms ease;
+    }
+
+    body {
+      padding: 0.5rem;
+      margin: 0;
+    }
+
+    @media print {
+
+      #menu,
+      #now,
+      #now * {
+        display: none;
+      }
+
+      #log li {
+        filter: blur(0);
+      }
+    }
   </style>
 </head>
+
 <body>
-  <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+  <header id="menu">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
       <a href="/ver/" target="_parent">
         <i>更新履歴</i>
-        <p><b>New Contents & Version Up</b></p>
+        <b>New Contents & Version Up</b>
       </a>
       <a href="/profile/" target="_parent">
         <i>The Information About Network & Browser</i>
-        <p><b>通信情報／ブラウザ等情報</b></p>
+        <b>通信情報／ブラウザ等情報</b>
       </a>
-    </nav>
+    </menu>
   </header>
   <script src="/js/menu.js"></script>
 
@@ -166,7 +172,7 @@ flock($fp, LOCK_SH);
     <select id="month" name="month"></select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="selectmonth.js"></script>
-  <script src="../../thankyou/hsl.js"></script>
+  <script src="../../js/selectmonth.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,3 @@
-#log {
-  font-size: 3vw;
-}
-
 #log li,
 #log li:nth-last-child(1) {
   flex: 1 100%;

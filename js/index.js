@@ -34,7 +34,6 @@ function userStream() {
     //video: { facingMode: 'user' }, //インカメラ
     audio: false,
   });
-
   media.then((stream) => {
     userMedia.srcObject = stream
   });
@@ -44,7 +43,6 @@ function stopStream() {
   const userMedia = document.querySelector('#userMedia')
   const stream = userMedia.srcObject
   const tracks = stream.getTracks()
-
   tracks.forEach(function (track) {
     track.stop()
   })
@@ -75,6 +73,7 @@ document.addEventListener('readystatechange', event => {
     if (localStorage.getItem('yourInfo')) {
       // localStorage
       fetchHTML('hello/welcome.php', '#hello h1')
+
       const yourStrage = document.querySelector('#hello h2')
       yourStrage.innerHTML = '<u>You Posted</u><br/>'
       if(!localStorage.getItem('sign')) {
@@ -98,7 +97,6 @@ document.addEventListener('readystatechange', event => {
         changeHidden()
         userStream()
       }, false)
-
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
         changeHidden()

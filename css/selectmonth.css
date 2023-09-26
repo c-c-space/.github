@@ -1,42 +1,47 @@
 #now {
-  box-sizing: border-box;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
 }
 
 #now select,
-#now button {
-  pointer-events: auto;
-  user-select: text;
+#now button,
+#update {
+  appearance : none;
+  background: transparent;
+  border: 0.1rem solid;
+  color: #000;
+  font-size: 125%;
+  outline: none;
+}
+
+#update {
+  border-radius: 2.5rem;
+  padding: 0.321rem 0.75rem;
 }
 
 #now select,
 #now button {
-  appearance : none;
-  background: transparent;
-  border: 0.1rem solid;
   border-radius: 3rem;
-  color: #000;
-  font-size: 125%;
   padding: 0.5rem 0.75rem;
   margin: 1rem;
-  outline: none;
-  transition: 1s;
 }
 
 #now select:hover,
-#now button:hover {
+#now button:hover,
+#update:hover {
   cursor: pointer;
 }
 
 #now select:focus,
-#now select:focus {
+#now select:focus,
+#update:focus {
   filter: drop-shadow(0 0 0.1rem);
 }
 
 #now select:active,
-#now select:active {
+#now select:active,
+#update:active {
   filter: invert(1);
 }
 

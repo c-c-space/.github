@@ -27,8 +27,8 @@
   <meta content="https://creative-community.space/ver/card.png" property="og:image">
   <meta content="https://creative-community.space/ver/card.png" name="twitter:image:src">
 
-  <!-- <?php require('ver/icon.html'); ?> -->
-
+  <?php require('ver/icon/all.html'); ?>
+  
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
@@ -71,7 +71,7 @@
       </h2>
       <button type="button" id="submit-btn"></button>
     </section>
-    <script src="api/speech.js"></script>
+    <script src="js/hello.js"></script>
   </main>
 
   <main id="yourinfo" class="hsl" hidden>
@@ -119,7 +119,6 @@
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       forMobile()
       console.log("Mobile Detected");
-
     }
 
     var isMobile = {
@@ -148,14 +147,12 @@
       console.log("This is a Mobile Device");
     }
 
-    // If is ipad, iphone
     var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
     if (iOS) {
       forMobile()
       console.log('This is a iPad|iPhone|iPod');
     }
 
-    //if is not mobile
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       console.log("This is a not Mobile Device");
 

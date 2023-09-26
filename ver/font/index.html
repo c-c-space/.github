@@ -12,31 +12,27 @@
 
   <!--og:meta-->
   <meta content="website" property="og:type">
-  <title>Logo | creative-community.space</title>
-  <meta content="Logo | creative-community.space" property="og:title">
-  <meta content="アイコンを右クリック 名前をつけて画像を保存" name="description">
-  <meta content="アイコンを右クリック 名前をつけて画像を保存" name="og:description">
+  <title>IPA Font (IPAGothic/IPAPGothic) | 文字情報技術促進協議会</title>
+  <meta content="IPAGothic | creative-community.space" property="og:title">
+  <meta content="入力欄のテキストをすべてのキャンバス要素に描画" name="description">
+  <meta content="入力欄のテキストをすべてのキャンバス要素に描画" name="og:description">
 
   <!--for Twitter-->
   <meta content="summary" name="twitter:card">
-  <meta content="https://creative-community.space/ver/icon/" property="og:url">
+  <meta content="https://creative-community.space/ver/font/" property="og:url">
   <meta content="https://creative-community.space/ver/icon/summary.png" property="og:image">
   <meta content="https://creative-community.space/ver/icon/summary.png" name="twitter:image:src">
 
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="../icon/favicon.png">
 
-  <link rel="stylesheet" href="../font/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../../css/menu.css" />
   <style type="text/css">
     p,
     pre,
-    #change {
+    #change,
+    #create {
       font-family: "ipag", monospace;
-    }
-
-    #change {
-      filter: invert();
-      mix-blend-mode: difference;
     }
 
     p,
@@ -45,41 +41,48 @@
     }
 
     section p {
-      bottom: 0;
+      top: 0;
       left: 0;
     }
 
     @media print {
-      #howto a {
-        display: none;
-      }
-
+      #create,
       #howto {
-        display: block;
-      }
-
-      #howto pre {
-        break-before: page;
+        display: none;
       }
     }
   </style>
 </head>
 
-<body onload="icon();">
-  <header id="menu">
-    <button><b></b></button>
-    <menu id="contents">
+<body>
+  <header id="menu" hidden>
+    <button id="js-button"><b></b></button>
+    <nav id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p>creative-community.space</p>
+        <p><b>creative-community.space</b></p>
         <u>↩︎</u>
       </a>
-    </menu>
+    </nav>
   </header>
-  <script src="../../js/menu.js"></script>
+  <script src="/js/menu.js"></script>
 
-  <button id="change" class="hidden" type="button" onclick="changeHidden()">How to Coding</button>
+  <section id="create" class="hidden">
+    <div>
+      <input type="text" id="textHere" placeholder="Text Here">
+      <button onclick="canvasIcons()">canvasIcons()</button>
+    </div>
+    <button type="button" onclick="changeHidden()">How to Coding</button>
+  </section>
 
   <main id="logo">
+    <pre>
+<u>canvasIcons()</u>
+
+入力欄のテキストをすべてのキャンバス要素に描画
+
+入力欄にテキストを入力 →
+canvasIcons() ボタンを押す
+    </pre>
     <section>
       <p>
         <small>ファビコン</small><br />
@@ -92,14 +95,14 @@
         <small>Windows用アイコン(小)</small><br />
         70 × 70 px
       </p>
-      <canvas id="tile-small" width="70" height="70"></canvas>
+      <canvas id="icon" width="70" height="70"></canvas>
     </section>
     <section>
       <p>
         <small>Windows用アイコン(中)</small><br />
         150 × 150 px
       </p>
-      <canvas id="tile-medium" width="150" height="150"></canvas>
+      <canvas id="icon" width="150" height="150"></canvas>
     </section>
     <section>
       <p>
@@ -137,54 +140,42 @@
       <canvas id="youtube" width="800" height="800"></canvas>
     </section>
     <pre>
-<u>save as a .png</u>
+<u>Font Face</u>
 
-アイコンを右クリック
-名前をつけて画像を保存
-    </pre>
-    <pre>
-// フォントの指定 と 変形
+IPA Font (IPAGothic/IPAPGothic)
+IPAゴシック/IPA Pゴシック (Ver.003.03)
 
-@font-face {
-  font-family: "ipag";
-  src: url("ipag.ttc");
-}
+by <a href="https://moji.or.jp/ipafont/ipa00303/" target="_blank" rel="nofollow noreferrer">文字情報技術促進協議会</a>
 
-.cc {
-  display: inline-block;
-  font-family: "ipag", monospace;
-  font-weight: 500;
-  transform: scale(1, 1.25);
-}
     </pre>
   </main>
+
+  <main id="howto" hidden>
+    <pre id="js"></pre>
+  </main>
+
+  <script src="script.js"></script>
   <script type="text/javascript">
-    // canvas要素に円と文字を描画
-    function icon() {
-      const canvasAll = document.querySelectorAll('canvas');
-      for (let canvas of canvasAll) {
-        if (canvas.getContext) {
-          const ctx = canvas.getContext('2d');
+    async function script() {
+      fetch('script.js')
+        .then(response => response.text())
+        .then(script => {
+          document.querySelector('#js').innerText = script;
+        });
+    }
+    script();
 
-          const circle = new Path2D();
-          const x = (canvas.width / 2);
-          const y = (canvas.height / 2);
-
-          circle.arc(x, y, canvas.width / 2.5, 0, Math.PI * 2, true);
-          ctx.lineWidth = canvas.width / 10;
-          ctx.strokeStyle = '#000';
-          ctx.fillStyle = '#fff';
-          ctx.stroke(circle);
-          ctx.fill(circle);
-
-          ctx.font = `${x * 1.23}px 'ipag', monospace`;
-          ctx.textAlign = "center";
-          ctx.textBaseline = "middle";
-          ctx.fillStyle = '#000';
-          ctx.fillText('CC', x, y, x);
-          ctx.scale(1, 1.25);
+    function changeHidden() {
+      const mainAll = document.querySelectorAll('main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          main.hidden = true;
+          main.style.display = 'none';
+        } else {
+          main.hidden = false;
+          main.style.display = 'flex';
         }
-      }
+      })
     }
   </script>
 </body>

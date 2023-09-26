@@ -1,0 +1,18 @@
+{
+  "contents" : [
+    {
+      "date" : "icon()",
+      "name" : "save as a .png",
+      "url" : "/ver/icon/",
+      "ver": "ver.1.0",
+      "hidden": true
+    },
+    {
+      "date" : "canvasIcons()",
+      "name" : "テキストをキャンバス要素に描画",
+      "url" : "/ver/font/",
+      "ver": "ver.1.0",
+      "hidden": true
+    }
+  ]
+}

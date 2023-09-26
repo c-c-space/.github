@@ -1,11 +1,6 @@
-body,
 #now p {
   padding: 0;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 input[type="radio"],
@@ -16,7 +11,7 @@ input[type="radio"],
 #now h1,
 #log li a,
 #log li span:first-of-type {
-  font-family: "ipag", "Yu Gothic", "游ゴシック体", monospace;
+  font-family: "ipag", "Yu Gothic", monospace;
   font-weight: 500;
   transform: scale(1, 1.25);
 }
@@ -51,7 +46,7 @@ input[type="radio"]:checked+label {
 
 #now,
 #log {
-  font-size: 1rem;
+  font-size: 100%;
   display: flex;
   flex-flow: wrap row;
 }

@@ -1,10 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 #yourinfo strong,
-#log li:nth-last-child(1) span:first-of-type {
-  font-family: "ipag", "Yu Gothic", "游ゴシック体", monospace;
+#log li:nth-last-child(1) span:first-of-type,
+#now time {
+  font-family: "ipag", "Arial Narrow", monospace;
+  font-weight: 500;
   transform: scale(1, 1.25);
 }
 
@@ -16,12 +14,6 @@
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
-#yourinfo strong,
-#yourinfo p {
-  display: block;
-  font-size: 150%;
-}
-
 #yourinfo code {
   font-family: inherit;
 }
@@ -31,61 +23,39 @@
   color: #000;
 }
 
-#yourinfo,
-#log li span,
-#now {
-  pointer-events: none;
-  user-select: none;
+#yourinfo strong,
+#yourinfo p {
+  display: block;
 }
 
-#log li:nth-last-child(1) span,
-#log li:nth-last-child(2) span {
-  pointer-events: auto;
-  user-select: text;
+#yourinfo strong,
+#yourinfo p,
+#log li b,
+#now time {
+  font-size: 150%;
 }
 
 #yourinfo form {
   padding: 1.25rem 1rem;
 }
 
+#now time {
+  padding: 1rem;
+  margin: 0;
+}
+
 #yourinfo span {
   display: block;
 }
 
-#yourinfo form section,
-#now {
-  box-sizing: border-box;
+#yourinfo form section {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
 }
 
-#update {
-  appearance : none;
-  background: transparent;
-  border: 0.1rem solid;
-  border-radius: 2.5rem;
-  color: #000;
-  font-size: 125%;
-  padding: 0.321rem 0.75rem;
-  outline: none;
-  transition: 1s;
-}
-
-#update:hover {
-  cursor: pointer;
-}
-
-#update:focus {
-  filter: drop-shadow(0 0 0.1rem);
-}
-
-#update:active {
-  filter: invert(1);
-}
-
 #log {
-  font-size: 1rem;
+  font-size: 100%;
   align-items: stretch;
   display: flex;
   flex-flow: row-reverse wrap-reverse;
@@ -106,10 +76,6 @@
   padding: 0.25rem;
   word-wrap: break-word;
   transition: all 1000ms ease;
-}
-
-#log li b {
-  font-size: 150%;
 }
 
 #log li span {
@@ -150,29 +116,4 @@
   right: 0;
   width: 100%;
   z-index: 99;
-}
-
-#now time {
-  font-family: "ipag", "Arial Narrow", monospace;
-  font-size: 150%;
-  font-weight: 500;
-  transform: scale(1, 1.25);
-  padding: 1rem;
-  margin: 0;
-}
-
-@media screen and (max-width: 750px) {
-  #yourinfo form {
-    padding: 3.33% 2.5%;
-  }
-
-  #yourinfo strong,
-  #yourinfo p {
-    font-size: 4vw;
-  }
-
-  #now time {
-    font-size: 4.5vw;
-    padding: 2.5%;
-  }
 }
