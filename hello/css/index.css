@@ -22,7 +22,8 @@ h2,
 
 h1,
 h1 b,
-h2 {
+h2,
+#readme {
   font-size: 150%;
   font-weight: 500;
 }
