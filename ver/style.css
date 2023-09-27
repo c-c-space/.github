@@ -119,7 +119,7 @@ input[type="radio"]:checked+label {
   }
 
   #log li {
-    flex: 1 auto;
+    flex: 1 100%;
     gap: 0;
     padding: 0.25rem;
   }
