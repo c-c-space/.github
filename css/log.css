@@ -14,10 +14,12 @@
 button,
 select,
 code {
+  appearance: none;
   color: inherit;
   background: transparent;
   font-family: inherit;
   font-size: 100%;
+  outline: none;
 }
 
 #log li a {
