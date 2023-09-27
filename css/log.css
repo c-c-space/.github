@@ -84,6 +84,7 @@ hr {
 #log li span:last-of-type {
   clear: both;
   width: 100%;
+  word-break: break-all;
 }
 
 #log li:nth-last-child(1) {

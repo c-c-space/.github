@@ -1,7 +1,3 @@
-html {
-  font-size: 16px;
-}
-
 hr {
   border: none;
 }
@@ -23,11 +19,6 @@ hr {
 #hello #readme b {
   font-style: normal;
   font-weight: 400;
-}
-
-main,
-main * {
-  box-sizing: border-box;
 }
 
 main {

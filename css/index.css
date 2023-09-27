@@ -36,7 +36,12 @@ main,
     user-select: none;
 }
 
-#yourinfo p,
+#hello small,
+#yourinfo p span {
+    display: block;
+}
+
+#yourinfo p span,
 #now {
     padding: 0.5rem;
 }
@@ -46,11 +51,6 @@ main {
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-#hello small,
-#yourinfo p span {
-    display: block;
 }
 
 #hello small {
@@ -117,7 +117,7 @@ main {
 #hello h1,
 #hello h2,
 #hello small,
-#yourinfo p span {
+#yourinfo p {
     line-height: 150%;
 }
 

@@ -76,9 +76,8 @@ button:active {
   filter: invert(1);
 }
 
-.controls,
-#now,
 #next,
+.controls,
 .range {
   display: flex;
   flex-flow: wrap;
@@ -89,7 +88,6 @@ button:active {
 }
 
 .range,
-#now,
 #next {
   align-items: center;
   justify-content: space-between;
