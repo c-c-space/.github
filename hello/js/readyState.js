@@ -1,6 +1,6 @@
 'use strict'
 
-function ChangeHidden() {
+function changeHidden() {
   const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
     if (main.hidden == false) {
@@ -12,44 +12,18 @@ function ChangeHidden() {
 }
 
 document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'complete') {
-    const mainLog = document.querySelector('#log');
+  if (event.target.readyState === 'interactive') {
     const enterBtn = document.querySelector('#enter-btn');
-    const logAll = document.querySelector('#log section');
-    const modalH3 = document.querySelector('#modal h3');
-    const lastModified = document.querySelector('#lastModified');
+    const helloForm = document.querySelector("#form");
 
-    lastModified.innerHTML =
-    'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
-
-    if(!localStorage.getItem('yourInfo')) {
-      logAll.style.padding = "1rem 0.5rem"
-      enterBtn.setAttribute('onclick','setLOG()')
-      enterBtn.innerText = 'Submit Your Info to Enter This Site'
-
-      document.querySelector('#log h2 a').removeAttribute('href')
-
-      fetch('../profile/yourinfo.php')
-      .then(response => response.text())
-      .then(text => {
-        document.querySelector('#log section').innerHTML = text;
-      });
-
+    if (!localStorage.getItem('yourInfo')) {
+      enterBtn.setAttribute('onclick', 'setLOG()');
+      enterBtn.textContent = 'Submit Your Info to Enter This Site';
+      fetchHTML('../profile/yourinfo.php', '#log h2')
       document.querySelector('#now .controls').remove()
-      const backBtn = document.createElement('button')
-      backBtn.setAttribute('type','button')
-      backBtn.setAttribute('id','backBtn')
-      backBtn.setAttribute('class','color bgcolor')
-      backBtn.setAttribute('onclick','location.replace("/")')
-      backBtn.innerText = 'creative-community.space'
-      document.querySelector('#now').prepend(backBtn)
-      fetchText('readme.md','#about')
+      fetchText('readme.md', '#about')
     } else {
-      enterBtn.setAttribute('onclick','ChangeHidden()')
-      fetchText('readme.md','#howto')
-
-      const submitBtn = document.querySelector("#submit-btn")
-      submitBtn.addEventListener('click', function () {
+      helloForm.addEventListener('submit', function () {
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
         const selectVoice = voiceIndex.selectedIndex
@@ -57,12 +31,12 @@ document.addEventListener('readystatechange', event => {
         const thisRate = document.querySelector("#rate").value
 
         let thisHello = {
-          timestamp : new Date().toLocaleString(),
-          hello : thisText.innerText,
-          voice : voiceIndex.options[selectVoice].value,
-          lang : voiceIndex.options[selectVoice].lang,
-          pitch : thisPitch,
-          rate : thisRate
+          timestamp: new Date().toLocaleString(),
+          hello: thisText.innerText,
+          voice: voiceIndex.options[selectVoice].value,
+          lang: voiceIndex.options[selectVoice].lang,
+          pitch: thisPitch,
+          rate: thisRate
         };
 
         const helloJSON = JSON.stringify(thisHello)
@@ -75,13 +49,13 @@ document.addEventListener('readystatechange', event => {
             },
             body: helloJSON
           })
-          .then(response => response.json())
-          .then(data => {
-            console.log(data)
-          })
-          .catch(error => {
-            console.log(error)
-          });
+            .then(response => response.json())
+            .then(data => {
+              console.log(data)
+            })
+            .catch(error => {
+              console.log(error)
+            });
         }
 
         submitThis()
@@ -91,7 +65,18 @@ document.addEventListener('readystatechange', event => {
           location.reload()
         }, 1500)
       })
+
+      fetchText('readme.md', '#howto')
     }
+  } else if (event.target.readyState === 'complete') {
+    const mainLog = document.querySelector('#log');
+    const logAll = document.querySelector('#log section');
+    const modalH3 = document.querySelector('#modal h3');
+
+    const lastModified = document.querySelector('#lastModified');
+    lastModified.innerHTML = 'Last Modified <time datetime="'
+      + document.lastModified + '">'
+      + document.lastModified + '</time>'
 
     const helloLiAll = document.querySelectorAll('#log ul li button')
     for (const helloLi of helloLiAll) {
@@ -100,8 +85,8 @@ document.addEventListener('readystatechange', event => {
         uttr.text = this.dataset.hello
         uttr.lang = this.lang
         uttr.voice = speechSynthesis
-        .getVoices()
-        .filter(voice => voice.name === this.dataset.name)[0]
+          .getVoices()
+          .filter(voice => voice.name === this.dataset.name)[0]
 
         uttr.pitch = this.dataset.pitch
         uttr.rate = this.dataset.rate
@@ -110,7 +95,6 @@ document.addEventListener('readystatechange', event => {
         const output = document.querySelector('#log h1 b')
         output.innerText = this.dataset.hello
 
-        const lastModified = document.querySelector('#lastModified')
         lastModified.innerText = this.innerText
       }, false)
     }

@@ -24,14 +24,11 @@
 
 #modal button,
 #modal select {
-  appearance : none;
-  outline: none;
   border: solid 2px;
   border-radius: 1rem;
   padding: 0.25rem 0.5rem;
   pointer-events: auto;
   user-select: auto;
-  cursor: pointer;
 }
 
 #openModal {

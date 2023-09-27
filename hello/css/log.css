@@ -1,13 +1,4 @@
-body,
-h2,
-h3 {
-  padding: 0;
-  margin: 0;
-}
 
-#modal {
-  box-sizing: border-box;
-}
 
 h2 a,
 #readme {
@@ -15,47 +6,9 @@ h2 a,
   user-select: auto;
 }
 
-h1,
-#log,
-#log div {
-  padding: 1rem;
-}
-
-h1,
-#modal {
-  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
-}
-
-h2,
-#log section,
-#log code {
-  font-family: "ipag", "Arial Narrow", monospace;
-}
-
 #about {
   font-size: 75%;
   padding: 1rem 0;
-}
-
-h1,
-h1 b,
-h2 {
-  font-size: 150%;
-  font-weight: 500;
-}
-
-h2 a {
-  color: inherit;
-}
-
-h2 b,
-#log button b {
-  text-transform: capitalize;
-}
-
-h3 {
-  font-size: 125%;
-  font-weight: 500;
 }
 
 #log ul li button {
@@ -66,36 +19,12 @@ h3 {
   margin: 0.25rem;
 }
 
-#log h1 code {
-  display: block;
-  line-height: 125%;
-}
-
-#log code {
-  font-size: 55%;
-  word-break: break-all;
-}
-
 #log p {
   margin: 0.5rem;
 }
 
-#log div,
 #log section ul {
   width: 100%;
-}
-
-#log div {
-  display: grid;
-  place-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  max-height: -webkit-fill-available;
-  mix-blend-mode: difference;
-  z-index: 0;
 }
 
 #log div h1 {
@@ -134,16 +63,6 @@ h3 {
   0.09rem 0.09rem 0 #fff;
 }
 
-#modal {
-  border: solid 0.1rem;
-  filter: invert();
-  transform: scale(0.95);
-  width: 95%;
-  max-width: 550px;
-  max-height: 100%;
-  overflow: auto;
-}
-
 #modal span {
   display: block;
   font-size: 111%;
@@ -152,12 +71,6 @@ h3 {
 
 #modal::backdrop {
   backdrop-filter: blur(0.25rem);
-}
-
-#modal #closeButton {
-  position: fixed;
-  top: 0.5rem;
-  right: 0.5rem;
 }
 
 @media screen and (max-width: 750px) {

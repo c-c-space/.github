@@ -24,6 +24,7 @@ fclose($fp);
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <script src="../js/menu.js"></script>
+  <script src="js/readyState.js" async></script>
 
   <!--og:meta-->
   <meta content="website" property="og:type">
@@ -40,14 +41,9 @@ fclose($fp);
 
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="../css/modal.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../css/controls.css" />
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/log.css" />
-  <link rel="stylesheet" href="css/72ko.css" />
-  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="stylesheet" href="css/print.css" media="print" />
   <style media="print">
     main,
     #log section {
@@ -59,12 +55,11 @@ fclose($fp);
       display: none;
     }
   </style>
-  <script src="js/readyState.js" async></script>
 </head>
 
 <body>
-  <header id="menu" class="bgcolor" hidden>
-    <button class="color bgcolor"><b></b></button>
+  <header id="menu" hidden>
+    <button><b></b></button>
     <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
         <p>creative-community.space</p>
@@ -72,17 +67,19 @@ fclose($fp);
       </a>
       <a href="<?php echo $season; ?>/">
         <i><?php echo $seasonDate; ?></i>
-        <b><?php echo $seasonName; ?></b> <?php echo $season; ?>
+        <b><?php echo $seasonName; ?></b>
+        <u><?php echo $season; ?></u>
       </a>
       <a href="<?php echo $season; ?>/<?php echo $sekki; ?>/">
         <i>Now is the season named</i>
-        <b><?php echo $sekkiName; ?></b> <?php echo $sekki; ?>
+        <b><?php echo $sekkiName; ?></b>
+        <u><?php echo $sekki; ?></u>
       </a>
     </menu>
   </header>
 
   <main id="log">
-    <button type="button" id="enter-btn" class="color bgcolor">
+    <button type="button" onclick="changeHidden()" id="enter-btn">
       Submit a Text of <?php echo $sekkiName; ?> <?php echo $sekki; ?>
     </button>
     <div>
@@ -110,19 +107,20 @@ fclose($fp);
     <details>
       <summary>Speech to Text to Text to Speech</summary>
       <section id="howto"></section>
-      <br>
     </details>
-    <hr>
-    <form method="post">
-      <?php require('js/form.html'); ?>
-      <hr />
-      <section id="next">
-        <button type="button" class="color bgcolor" id="submit-btn">Submit</button>
-        <button type="button" class="color bgcolor" id="back-btn" onclick="ChangeHidden()">Back</button>
+
+    <form id="form" method="post">
+      <section>
+        <?php require('js/form.html'); ?>
       </section>
+      <hr />
+      <nav id="next">
+        <button type="submit" id="submit-btn">Submit</button>
+        <button type="button" id="back-btn" onclick="changeHidden()">Back</button>
+      </nav>
     </form>
+    <script src="js/recognition.js"></script>
   </main>
-  <script src="js/recognition.js"></script>
 
   <nav id="now" class="hidden">
     <section class="controls">
@@ -130,16 +128,16 @@ fclose($fp);
       <input id="pause-btn" value="⏸" class="color bgcolor" type="button" />
       <input id="resume-btn" value="⏯" class="color bgcolor" type="button" />
     </section>
-    <button onclick="openModal()" class="color bgcolor" type="button">?</button>
+    <button onclick="openModal()" type="button">?</button>
   </nav>
   <script src="js/controls.js"></script>
 
-  <dialog id="modal" class="color bgcolor">
+  <dialog id="modal">
+    <button type="button" id="closeModal">×</button>
     <h3>
       <u><small>Speech to Text to Text to Speech</small></u><br />
       <?php echo $greeting; ?>
     </h3>
-    <button type="button" class="color bgcolor" id="closeModal">×</button>
     <section id="about">
       <p><i><?php echo $date; ?></i></p>
       <h2>
@@ -148,12 +146,12 @@ fclose($fp);
       </h2>
       <p><?php echo $hello; ?></p>
     </section>
+    <hr>
     <p>
       <smal>
         <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
       </small>
     </p>
-
     <label for="color">文字の色</label>
     <select class="color bgcolor" id="color">
       <option selected>Text Color</option>

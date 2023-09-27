@@ -1,33 +1,132 @@
 #menu {
   background: #000;
+  color: #fff;
 }
 
 #contents {
   mix-blend-mode: difference;
 }
 
-#contents a {
-  filter: invert();
+h1,
+#modal {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+h2,
+#log section,
+#log code,
+#hello,
+#modal {
+  font-family: "ipag", "Arial Narrow", monospace;
+}
+
+h1,
+h1 b,
+h2 {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+h3,
+summary {
+  font-size: 125%;
+  font-weight: 500;
+}
+
+#log h1 code,
+#log h2 span {
+  display: block;
+  line-height: 125%;
+}
+
+#hello #howto,
+#modal #about {
+  font-size: 90%;
+}
+
+#log code,
+#log h2 span {
+  font-size: 55%;
+  word-break: break-all;
+}
+
+h2 a {
+  color: inherit;
+}
+
+h2 b,
+#log button b {
+  text-transform: capitalize;
+}
+
+hr {
+  border: none;
+}
+
+#log,
+h2 {
+  padding: 1rem;
+  margin: 0;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#hello details {
+  margin-bottom: 2.5rem;
+}
+
+#hello #howto,
+#modal #about {
+  margin: 1rem 0;
 }
 
 #log section span {
   margin-right: 1rem;
 }
 
-#log button {
-  color: inherit;
+#hello {
+  padding: 0.75rem 1rem 5rem;
 }
 
-summary {
-  font-size: 200%;
-  pointer-events: auto;
-  user-select: auto;
+#enter-btn {
+  position: relative;
+  z-index: 10;
+}
+
+#log div,
+#now {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#log div {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  mix-blend-mode: difference;
+  z-index: 0;
 }
 
 #now {
-  position: fixed;
   z-index: 100;
-  width: 100%;
-  bottom: 0;
-  padding: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: end;
+  justify-content: space-between;
+}
+
+#now button {
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  font-size: 125%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
 }

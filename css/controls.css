@@ -2,19 +2,19 @@ input,
 select,
 button,
 textarea {
+  appearance : none;
   color: inherit;
   background: transparent;
   pointer-events: auto;
   user-select: auto;
+  outline: none;
 }
 
 input[type="button"],
 input[type="submit"],
 select,
 button {
-  appearance : none;
   cursor: pointer;
-  outline: none;
   word-break: break-all;
 }
 
@@ -38,7 +38,6 @@ select,
 }
 
 #hello a,
-form button,
 .controls input[type="button"] {
   border: 0.1rem solid;
   border-radius: 3rem;
