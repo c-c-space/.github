@@ -29,8 +29,3 @@ if(localStorage.getItem('sign')) {
   `
   info.before(sign);
 }
-
-const newColorAll = document.querySelectorAll('#log li span');
-for (const newColor of newColorAll) {
-  newColor.classList.add("color");
-}

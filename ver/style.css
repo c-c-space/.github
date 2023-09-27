@@ -16,14 +16,6 @@ input[type="radio"],
   transform: scale(1, 1.25);
 }
 
-#log {
-  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
-}
-
-#log li a {
-  color: #000;
-}
-
 input[type="radio"]+label {
   border-radius: 0.25rem;
   cursor: pointer;
@@ -33,7 +25,6 @@ input[type="radio"]+label {
   transition: all 1s;
 }
 
-#js-button,
 input[type="radio"]+label {
   background-color: #fff;
   color: #000;

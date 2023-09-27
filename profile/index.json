@@ -1,29 +1,18 @@
 {
-  "title" : "通信情報／ブラウザ等情報",
-  "description" : "The Information About Network & Browser for connection to The Internet",
-  "author" : "creative-community.space",
-  "email" : "pehu@creative-community.space",
-  "type" : "website",
-  "twitter" : "@pe_hu_",
-  "card" : "summary_large_image",
-  "src" : "",
-
-  "contents" : [
+  "contents": [
     {
       "date" : "更新履歴",
       "name" : "New Contents & Version Up",
       "url" : "/ver/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.2.0",
+      "hidden": true
     },
     {
       "date" : "HTTP/1.1 on 195.179.236.11",
       "name" : "アクセス履歴 | Access Log",
       "url" : "/ver/log/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.2.0",
+      "hidden": true
     }
   ]
 }

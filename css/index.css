@@ -121,10 +121,6 @@ main {
     line-height: 150%;
 }
 
-code {
-    word-break: break-all;
-}
-
 @media (orientation: portrait) {
 
     #hello h1,

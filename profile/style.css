@@ -1,50 +1,37 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
-hr {
-  border: none;
-  margin: 1rem;
-}
-
-#ip,
-#os,
-#info span {
-  word-break: break-all;
-}
-
-#log button,
-#log code {
-  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
-}
-
-.color {
-  color: #000;
-}
-
-#modal,
-.bgcolor {
-  background: #fff;
-}
-
-#js-button,
-#contents a,
-#log {
-  filter: invert();
-}
-
 #menu,
 #log {
+  filter: invert();
   mix-blend-mode: difference;
 }
 
-#now {
-  padding: 0.25rem;
+h2,
+#level {
+  font-size: 125%;
 }
 
-#now select {
-  margin: 0.25rem;
+#log li:last-of-type {
+  font-size: 100%;
+}
+
+#log li b,
+#log li code {
+  font-family: "ipag", "Arial Narrow", monospace;
+}
+
+#log li:last-of-type,
+#log #info {
+  flex: 2 500px;
+}
+
+#log button {
+  appearance : none;
+  outline: none;
+  border: solid 2px;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  pointer-events: auto;
+  user-select: auto;
+  cursor: pointer;
 }
 
 #battery span:last-of-type {
@@ -56,39 +43,6 @@ hr {
   justify-content: space-between;
   padding: 0 0.5rem;
   margin: 0;
-}
-
-#log {
-  padding: 0.25rem;
-}
-
-#log li:last-of-type,
-#log button,
-#now select {
-  font-size: 100%;
-}
-
-h2,
-#level {
-  font-size: 125%;
-}
-
-#log li:last-of-type,
-#log #info {
-  flex: 2 500px;
-}
-
-form select,
-#log button,
-#now select {
-  appearance : none;
-  outline: none;
-  border: solid 2px;
-  border-radius: 1rem;
-  padding: 0.25rem 0.5rem;
-  pointer-events: auto;
-  user-select: auto;
-  cursor: pointer;
 }
 
 meter {
@@ -112,19 +66,8 @@ meter::-webkit-meter-horizontal-even-less-good-value {
   background: red;
 }
 
-@media (orientation: portrait) {
-  #log {
-    margin-bottom: 0.5rem;
-  }
-
-  #now {
-    position: relative;
-  }
-}
-
 @media print{
-  #menu,
-  #now {
+  #menu {
     display: none;
   }
 }

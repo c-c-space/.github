@@ -1,5 +1,13 @@
 'use strict'
 
+async function fetchHTML(url = '', query = '') {
+  fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.querySelector(query).innerHTML = html
+    })
+}
+
 async function menuJSON(requestURL) {
   const request = new Request(requestURL);
   const response = await fetch(request);
