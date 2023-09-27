@@ -58,7 +58,7 @@ fclose($fp);
 </head>
 
 <body>
-  <header id="menu" hidden>
+  <header id="menu" class="bgcolor color" hidden>
     <button><b></b></button>
     <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
