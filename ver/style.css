@@ -85,7 +85,7 @@ input[type="radio"]:checked+label {
 
 #log li {
   padding: 0.25rem;
-  width: calc(100% / 4 - 1rem);
+  width: calc(100% / 4 - 0.25rem);
   word-wrap: break-word;
 }
 
@@ -117,13 +117,13 @@ input[type="radio"]:checked+label {
 
 @media (max-width: 1250px) {
   #log li {
-    width: calc(100% / 3 - 1rem);
+    width: calc(100% / 3 - 0.25rem);
   }
 }
 
 @media (max-width: 900px) {
   #log li {
-    width: calc(100% / 2 - 1rem);
+    width: calc(100% / 2 - 0.25rem);
   }
 }
 
