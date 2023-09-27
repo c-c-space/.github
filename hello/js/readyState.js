@@ -13,12 +13,12 @@ function changeHidden() {
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
-    const enterBtn = document.querySelector('#enter-btn');
+    const loginBtn = document.querySelector('#login-btn');
     const helloForm = document.querySelector("#form");
 
     if (!localStorage.getItem('yourInfo')) {
-      enterBtn.setAttribute('onclick', 'setLOG()');
-      enterBtn.textContent = 'Submit Your Info to Enter This Site';
+      loginBtn.setAttribute('onclick', 'setLOG()');
+      loginBtn.textContent = 'Submit Your Info to Enter This Site';
       fetchHTML('../profile/yourinfo.php', '#log h2')
       document.querySelector('#now .controls').remove()
       fetchText('readme.md', '#about')

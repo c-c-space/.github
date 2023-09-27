@@ -38,18 +38,14 @@ select,
 }
 
 #hello a,
+#login-btn,
+form button,
 .controls input[type="button"] {
   border: 0.1rem solid;
   border-radius: 3rem;
   font-size: 125%;
   padding: 0.5rem 0.75rem;
   margin: 0.25rem 0.5rem 0.25rem 0;
-}
-
-.controls input[type="button"] {
-  width: 4.5rem;
-  height: 3rem;
-  vertical-align: middle;
 }
 
 #hello input[type="submit"],
@@ -60,6 +56,12 @@ select,
   border-radius: 3rem;
   font-size: 150%;
   padding: 0.75rem 1rem;
+}
+
+.controls input[type="button"] {
+  width: 4.5rem;
+  height: 3rem;
+  vertical-align: middle;
 }
 
 input[type="button"]:focus,

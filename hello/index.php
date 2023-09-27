@@ -79,10 +79,10 @@ fclose($fp);
   </header>
 
   <main id="log">
-    <button type="button" onclick="changeHidden()" id="enter-btn">
+    <button type="button" onclick="changeHidden()" id="login-btn">
       Submit a Text of <?php echo $sekkiName; ?> <?php echo $sekki; ?>
     </button>
-    <div>
+    <form>
       <h1>
         <b><?php echo $greeting; ?></b><br />
         <code id="lastModified"></code>
@@ -93,7 +93,7 @@ fclose($fp);
         (<b><?php echo $sekki; ?></b>) in
         <b><?php echo $season; ?></b>
       </h2>
-    </div>
+    </form>
     <?php
     function h($str)
     {
@@ -101,6 +101,7 @@ fclose($fp);
     }
     require('all/log.php');
     ?>
+    <script src="../js/log.js"></script>
   </main>
 
   <main id="hello" hidden>
@@ -178,7 +179,6 @@ fclose($fp);
   </script>
   <script src="js/setStyles.js"></script>
   <script src="../js/modal.js"></script>
-  <script src="../js/log.js"></script>
 </body>
 
 </html>
