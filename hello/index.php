@@ -82,7 +82,7 @@ fclose($fp);
     <button type="button" onclick="changeHidden()" id="login-btn">
       Submit a Text of <?php echo $sekkiName; ?> <?php echo $sekki; ?>
     </button>
-    <form>
+    <div>
       <h1>
         <b><?php echo $greeting; ?></b><br />
         <code id="lastModified"></code>
@@ -93,7 +93,7 @@ fclose($fp);
         (<b><?php echo $sekki; ?></b>) in
         <b><?php echo $season; ?></b>
       </h2>
-    </form>
+    </div>
     <?php
     function h($str)
     {
