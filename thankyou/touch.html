@@ -8,10 +8,8 @@
   <script src="../js/menu.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
-
     let touch_event = window.ontouchstart,
       touch_points = navigator.maxTouchPoints;
-
     if (touch_event !== undefined && 0 < touch_points) {
       alert("Let's Touch Your Screen");
     } else {
