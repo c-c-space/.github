@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js" async></script>
+  <script src="../../js/menu.js"></script>
+  <script src="battery.js"></script>
+  <script type="text/javascript">
+    menuJSON('index.json')
+  </script>
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>バッテリー状態 API | Battery Status API</title>
+  <meta content="バッテリー状態 API | Battery Status API" property="og:title">
+  <meta content="システムのバッテリーに関する情報を提供する API" name="description">
+  <meta content="システムのバッテリーに関する情報を提供する API" name="og:description">
+
   <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="../../ver/howto.css" />
+  <link rel="stylesheet" href="../../css/howto.css" />
   <style>
-  #howto details {
-    max-width: 750px;
-    margin: auto;
-  }
-
-  #howto meter {
-    width: 100%;
-    height: 350px;
-  }
-
-  #howto meter::-webkit-meter-horizontal-bar {
-    border: double 5px #000;
-  }
-
-  @media screen and (max-width: 750px) {
-    #howto meter {
-      height: 45vw;
+    #howto details {
+      max-width: 750px;
+      margin: auto;
     }
-  }
+
+    #howto meter {
+      width: 100%;
+      height: 350px;
+    }
+
+    #howto meter::-webkit-meter-horizontal-bar {
+      border: double 5px #000;
+    }
+
+    @media screen and (max-width: 750px) {
+      #howto meter {
+        height: 45vw;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="/profile/" target="_parent">
-        <p><b>The Information About Network & Browser</b></p>
+        <p>The Information About Network & Browser</p>
         <u>通信情報／ブラウザ等情報</u>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
+
   <article id="howto">
     <details>
       <summary>
-        <font>Battery Status API</font><br/>
+        <strong>Battery Status API</strong><br />
         <code>システムのバッテリーに関する情報を提供する バッテリー状態 API</code>
         <meter id="progress" min="0" low="10" high="20" max="100"></meter>
       </summary>
@@ -59,8 +73,8 @@
       </aside>
       <p>バッテリー状態 API は、システムのバッテリー充電レベルに関する情報の提供、およびバッテリーレベルや充電状態が変化したときに発生するイベントによる通知を可能にします。</p>
       <p>これは、バッテリーが消耗したときにバッテリー消費を減らすためアプリのリソース使用状況を調整したり、データを失わないためにバッテリーが切れる前に変更点を保存したりするために使用できます。</p>
-      <br/>
-      <pre>        
+      <br />
+      <pre>
 navigator<code class="red">.getBattery</code>().then((battery) => {
   function updateAllBatteryInfo() {
     updateChargeInfo();
@@ -108,7 +122,7 @@ navigator<code class="red">.getBattery</code>().then((battery) => {
 });
       </pre>
     </details>
-    <br/>
+    
     <table class="size">
       <tbody>
         <tr>
@@ -134,6 +148,6 @@ navigator<code class="red">.getBattery</code>().then((battery) => {
       </tbody>
     </table>
   </article>
-  <script src="battery.js" defer></script>
 </body>
+
 </html>

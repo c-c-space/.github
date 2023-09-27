@@ -1,6 +1,11 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', function () {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const battery = document.querySelector('#battery')
+    battery.style.display = "none"
+  }
+  
   navigator.getBattery().then((battery) => {
     function updateAllBatteryInfo() {
       updateChargeInfo();

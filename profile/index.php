@@ -6,17 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <script src="../js/menu.js"></script>
-
   <script type="text/javascript">
     menuJSON('index.json')
 
     document.addEventListener('DOMContentLoaded', function () {
       fetchHTML('yourinfo.html', '#about')
-
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        const battery = document.querySelector('#battery')
-        battery.style.display = "none"
-      }
     });
   </script>
 
@@ -74,9 +68,7 @@
     <script src="js/battery.js"></script>
 
     <li id="window">
-      <span>
-        <u>Window Size</u>
-      </span>
+      <span><u>Window Size</u></span>
       <span>Width: <code id="outInnerWidth"></code> px</span>
       <span>Height: <code id="outInnerHeight"></code> px</span>
       <span id="network"></span>

@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js" async></script>
+  <script src="../../js/menu.js"></script>
+  <script src="navigator.js"></script>
+  <script type="text/javascript">
+    menuJSON('index.json')
+  </script>
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>ネットワーク情報 API | Network Information API</title>
+  <meta content="ネットワーク情報 API | Network Information API" property="og:title">
+  <meta content="ブラウザーのオンライン状態・ネットワーク接続情報などを提供する API" name="description">
+  <meta content="ブラウザーのオンライン状態・ネットワーク接続情報などを提供する API" name="og:description">
+
   <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="../../ver/howto.css" />
+  <link rel="stylesheet" href="../../css/howto.css" />
   <style>
   #howto details {
     max-width: 750px;
@@ -41,34 +54,25 @@
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="/profile/" target="_parent">
-        <p><b>The Information About Network & Browser</b></p>
+        <p>The Information About Network & Browser</p>
         <u>通信情報／ブラウザ等情報</u>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
+
   <article id="howto">
     <details>
       <summary>
-        <font><b id="status">(Online or Offline?)</b></font>
+        <strong id="status">(Online or Offline?)</strong><br />
+        <code>ブラウザのオンライン状態</code>
       </summary>
-      <p>オンライン状態によって、#status のテキストを変更する</p>
-      <pre>
-body <b>ononline</b>="update(true)" <b>onoffline</b>="update(false)" <b>onload</b>="update(<b>navigator.onLine</b>)"
-      </pre>
-      <pre>
-function <b>update</b>(online) {
-  document.querySelector('#status').textContent =
-  online ? 'Online' : 'Offline';
-}
-      </pre>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine">
           <i>Navigator.onLine</i>
-          <p>ブラウザーのオンライン状態を返すプロパティ</p>
+          <p>ブラウザのオンライン状態を返すプロパティ</p>
         </a>
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/online_event">
           <i>ononline</i>
@@ -79,29 +83,22 @@ function <b>update</b>(online) {
           <p>addEventListener('offline', (event) => { });</p>
         </a>
       </aside>
+      <pre>
+body <b>ononline</b>="update(true)" <b>onoffline</b>="update(false)" <b>onload</b>="update(<b>navigator.onLine</b>)"
+      </pre>
+      <pre>
+function <b>update</b>(online) {
+  document.querySelector('#status').textContent =
+  online ? 'Online' : 'Offline';
+}
+      </pre>
     </details>
     <hr/>
     <details>
-      <summary id="network">navigator.connection</summary>
-      <p>ネットワーク接続情報を #network に表示する</p>
-      <pre>
-const <b>connectionInfo</b> = <b>navigator.connection</b>;
-if (connectionInfo !== undefined) {
-  const init = function() {
-    document.getElementById('network').innerHTML =
-    'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
-    + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
-    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
-  }
-  init()
-
-  if (<b>'onchange'</b> in connectionInfo) {
-    connectionInfo.addEventListener('change', init)
-  } else if (<b>'ontypechange'</b> in connectionInfo) {
-    connectionInfo.addEventListener('typechange', init)
-  }
-}
-      </pre>
+      <summary>
+        <strong id="network">navigator.connection</strong><br />
+        <code>ネットワーク接続情報</code>
+      </summary>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API">
           <i>Network Information API</i>
@@ -128,16 +125,31 @@ if (connectionInfo !== undefined) {
           <p>接続情報が変更されたときに発行されるイベント</p>
         </a>
       </aside>
+      <pre>
+const <b>connectionInfo</b> = <b>navigator.connection</b>;
+if (connectionInfo !== undefined) {
+  const init = function() {
+    document.getElementById('network').innerHTML =
+    'Network Type <b>' + connectionInfo.effectiveType + '</b> <b>' + connectionInfo.type + '</b> | '
+    + 'Downlink <b>' + connectionInfo.downlink + '</b> Mb/s | '
+    + 'RTT <b>'+ connectionInfo.rtt + '</b> ms'
+  }
+  init()
+
+  if (<b>'onchange'</b> in connectionInfo) {
+    connectionInfo.addEventListener('change', init)
+  } else if (<b>'ontypechange'</b> in connectionInfo) {
+    connectionInfo.addEventListener('typechange', init)
+  }
+}
+      </pre>
     </details>
     <hr/>
     <details>
-      <summary id="navigator"></summary>
-      <p>端末のおよそのメモリ量／論理プロセッサーのコア数を #navigator に表示する</p>
-      <pre>
-const <b>memory</b> = <b>navigator.deviceMemory</b>;
-const <b>hardware</b> = <b>navigator.hardwareConcurrency</b>;
-document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
-      </pre>
+      <summary>
+        <strong id="navigator">navigator.deviceMemory</strong><br />
+        <code>端末のおよそのメモリ量／論理プロセッサーのコア数</code>
+      </summary>
       <aside id="links">
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/deviceMemory">
           <i>navigator.deviceMemory</i>
@@ -148,8 +160,12 @@ document.querySelector('#navigator').innerHTML = `This Device has at least <b>${
           <p>論理プロセッサーのコア数を示す数値</p>
         </a>
       </aside>
+      <pre>
+const <b>memory</b> = <b>navigator.deviceMemory</b>;
+const <b>hardware</b> = <b>navigator.hardwareConcurrency</b>;
+document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
+      </pre>
     </details>
   </article>
-  <script src="navigator.js" defer></script>
 </body>
 </html>

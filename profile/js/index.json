@@ -1,29 +1,18 @@
 {
-  "title" : "通信情報／ブラウザ等情報",
-  "description" : "The Information About Network & Browser for connection to The Internet",
-  "author" : "creative-community.space",
-  "email" : "pehu@creative-community.space",
-  "type" : "website",
-  "twitter" : "@pe_hu_",
-  "card" : "summary_large_image",
-  "src" : "",
-
-  "contents" : [
+  "contents": [
     {
       "date" : "Battery Status API",
       "name" : "バッテリー状態 API",
       "url" : "/profile/js/battery.html",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.1.0",
+      "hidden": true
     },
     {
       "date" : "Network Information API",
       "name" : "ネットワーク情報 API",
       "url" : "/profile/js/navigator.html",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.1.0",
+      "hidden": true
     }
   ]
 }

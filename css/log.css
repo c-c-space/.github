@@ -4,7 +4,8 @@
   transform: scale(1, 1.25);
 }
 
-#log {
+#log,
+#now {
   color: #000;
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
   font-size: 100%;
@@ -62,7 +63,8 @@ hr {
 
 #log li span {
   display: block;
-  margin: 0.25rem;
+  padding: 0.25rem;
+  margin: 0;
   word-wrap: break-word;
 }
 
