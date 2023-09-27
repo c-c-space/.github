@@ -78,15 +78,14 @@ input[type="radio"]:checked+label {
   justify-content: flex-start;
   list-style: none;
   overflow: auto;
-  gap: 0.5rem;
   padding: 0.5rem;
   margin: 0;
 }
 
 #log li {
+  flex: 1 250px;
+  gap: 0.25rem;
   padding: 0.25rem;
-  width: calc(100% / 4 - 0.25rem);
-  word-wrap: break-word;
 }
 
 #log li span {
@@ -98,7 +97,6 @@ input[type="radio"]:checked+label {
 #log li span:first-of-type {
   float: left;
   font-size: 111%;
-  text-decoration: underline;
 }
 
 #log li span:nth-of-type(2),
@@ -115,25 +113,15 @@ input[type="radio"]:checked+label {
   max-width: 100%;
 }
 
-@media (max-width: 1250px) {
-  #log li {
-    width: calc(100% / 3 - 0.25rem);
-  }
-}
-
-@media (max-width: 900px) {
-  #log li {
-    width: calc(100% / 2 - 0.25rem);
-  }
-}
-
 @media (orientation: portrait) {
   #now h1 {
     font-size: 275%;
   }
 
   #log li {
-    width: 100%;
+    flex: 1 auto;
+    gap: 0;
+    padding: 0.25rem;
   }
 
   #log li span:first-of-type {
