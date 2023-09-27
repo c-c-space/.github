@@ -1,37 +1,25 @@
 {
-  "title" : "Thank You",
-  "description" : "OMG! Your Drawing is Seems So Beautiful",
-  "author" : "creative-community.space",
-  "email" : "pehu@creative-community.space",
-  "type" : "website",
-  "twitter" : "@pe_hu_",
-  "card" : "summary_large_image",
-  "src" : "card.png",
-
   "contents" : [
     {
       "date" : "Your Drawing is Seems So Beautiful",
       "name" : "Thank You for Visiting",
       "url" : "/thankyou/",
-      "type" : "news",
-      "caption" : "none",
-      "note" : ""
+      "ver": "for PC",
+      "hidden": false
     },
     {
       "date" : "HSL.js",
       "name" : "Hue Saturation Lightness",
       "url" : "/thankyou/hsl.html",
-      "type" : "update",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.1.0",
+      "hidden": true
     },
     {
       "date" : "Sketch.js / Touch.js",
       "name" : "Drawing by Mouse Move or Screen Touch",
       "url" : "/thankyou/touch.html",
-      "type" : "update",
-      "caption" : "none",
-      "note" : ""
+      "ver": "ver.1.0",
+      "hidden": true
     }
   ]
 }

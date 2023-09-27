@@ -10,8 +10,6 @@
   }
 }(typeof window !== "undefined" ? window : this, function (window, document) {
 
-  "use strict";
-
   /*
   ----------------------------------------------------------------------
 

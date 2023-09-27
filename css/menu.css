@@ -94,6 +94,10 @@ main {
   place-items: center;
 }
 
+#menu[hidden] {
+  display: none;
+}
+
 #menu.active {
   height: 100%;
 }

@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../js/menu.js"></script>
   <script type="text/javascript">
-  let touch_event = window.ontouchstart,
-  touch_points = navigator.maxTouchPoints;
+    menuJSON('index.json')
 
-  if( touch_event !== undefined && 0 < touch_points ) {
-    location.replace('/thankyou/touch.html')
-  }
+    let touch_event = window.ontouchstart,
+      touch_points = navigator.maxTouchPoints;
+
+    if (touch_event !== undefined && 0 < touch_points) {
+      location.replace('touch.html')
+    }
   </script>
-  <script src="/js/index.js"></script>
-  <link rel="stylesheet" href="style.css" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>sketch.js | creative-community.space</title>
+  <meta content="sketch.js | creative-community.space" property="og:title">
+  <meta content="Copyright (C) 2013 Justin Windle" name="description">
+  <meta content="Copyright (C) 2013 Justin Windle" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://creative-community.space/thankyou/sketch.html" property="og:url">
+  <meta content="https://creative-community.space/thankyou/card.png" property="og:image">
+  <meta content="https://creative-community.space/thankyou/card.png" name="twitter:image:src">
+
+  <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
+
   <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../hello/style.css" />
-  <link rel="stylesheet" href="../hello/css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+  <link rel="stylesheet" href="style.css" />
   <style>
-  #hello {
-    padding: 0.5rem 1rem;
-  }
-
-  #hello h1,
-  #hello section {
-    margin: 0;
-  }
-
-  #hello h1 {
-    font-family: "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 200%;
-  }
-
-  pre {
-    font-family: "ipag", "Arial Narrow", Arial, monospace;
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    font-size: 75%;
-  }
-
-  @page {
-    size: landscape;
-  }
-
-  @media screen and (max-width: 750px) {
     #hello {
-      font-size: 3vw;
+      position: relative;
+      pointer-events: none;
+      user-select: none;
+      padding: 1rem;
+      z-index: 10;
     }
-  }
 
-  @media print {
-    #menu,
-    #hello pre {
-      display: none;
+    #hello h1,
+    #hello section {
+      margin: 1rem;
     }
-  }
+
+    #hello h1,
+    a {
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+    }
+
+    #hello h1 {
+      font-weight: 500;
+      font-size: 200%;
+    }
+
+    a {
+      border: 0.1rem solid;
+      border-radius: 3rem;
+      color: #000;
+      font-size: 125%;
+      pointer-events: auto;
+      user-select: auto;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0.5rem 0.25rem 0;
+    }
+
+    pre {
+      font-family: "ipag", "Arial Narrow", monospace;
+      display: block;
+      margin: 2rem 0 1rem;
+      width: 100%;
+      overflow-x: auto;
+      font-size: 75%;
+    }
+
+    @page {
+      size: landscape;
+    }
+
+    @media print {
+
+      #menu,
+      #hello pre {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+  <header id="menu" class="hsl" hidden>
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
 
   <main id="hello">
     <h1>sketch.js</h1>
@@ -82,6 +112,13 @@
       <p>
         <a href="http://soulwire.co.uk">soulwire.co.uk</a>
       </p>
+    </section>
+
+    <section>
+      <pre id="javascript"></pre>
+    </section>
+
+    <section>
       <pre><code><math>
         <![CDATA[
 <div id="sketch"></div>
@@ -89,58 +126,6 @@
 <script src="sketch.js"></script>
 <script>
   const COLOURS = ['#EEE'];
-  let radius = 0;
-
-  Sketch.create({
-    container: document.getElementById('sketch'),
-    autoclear: false,
-    retina: 'auto',
-
-    setup: function() {
-      console.log('setup');
-    },
-    update: function() {
-      radius = 2 + abs(sin(this.millis * 0.002) * 25);
-    },
-
-    touchmove: function() {
-
-      for (let i = this.touches.length - 1, touch; i >= 0; i--) {
-        touch = this.touches[i];
-        this.lineCap = 'round';
-        this.lineJoin = 'round';
-        this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
-        this.lineWidth = radius;
-
-        this.beginPath();
-        this.moveTo(touch.ox, touch.oy);
-        this.lineTo(touch.x, touch.y);
-        this.stroke();
-      }
-    }
-  });
-</script>
-        ]]>
-      </math></code></pre>
-      <pre id="javascript"></pre>
-    </section>
-  </main>
-
-  <div id="sketch"></div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="sketch.js"></script>
-  <script>
-  async function sketchJS() {
-    fetch('sketch.js')
-    .then(response => response.text())
-    .then(sketchJS => {
-      document.querySelector("#javascript").innerHTML = sketchJS
-    });
-  }
-  sketchJS();
-
-  const COLOURS = ['#aaa'];
   let radius = 0;
 
   Sketch.create({
@@ -171,6 +156,58 @@
       }
     }
   });
+</script>
+        ]]>
+      </math></code></pre>
+    </section>
+  </main>
+
+  <div id="sketch"></div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="sketch.js"></script>
+  <script>
+    async function sketchJS() {
+      fetch('sketch.js')
+        .then(response => response.text())
+        .then(sketchJS => {
+          document.querySelector("#javascript").innerHTML = sketchJS
+        });
+    }
+    sketchJS();
+
+    const COLOURS = ['#aaa'];
+    let radius = 0;
+
+    Sketch.create({
+      container: document.getElementById('sketch'),
+      autoclear: false,
+      retina: 'auto',
+
+      setup: function () {
+        console.log('setup');
+      },
+      update: function () {
+        radius = 2 + abs(sin(this.millis * 0.002) * 25);
+      },
+
+      touchmove: function () {
+
+        for (let i = this.touches.length - 1, touch; i >= 0; i--) {
+          touch = this.touches[i];
+          this.lineCap = 'round';
+          this.lineJoin = 'round';
+          this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
+          this.lineWidth = radius;
+
+          this.beginPath();
+          this.moveTo(touch.ox, touch.oy);
+          this.lineTo(touch.x, touch.y);
+          this.stroke();
+        }
+      }
+    });
   </script>
 </body>
+
 </html>

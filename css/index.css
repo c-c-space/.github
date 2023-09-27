@@ -6,18 +6,12 @@ body {
     max-height: -webkit-fill-available;
 }
 
-#menu {
-    filter: invert();
-}
-
-#menu,
-canvas,
+#sketch,
 #userMedia {
     mix-blend-mode: difference;
 }
 
 main,
-canvas,
 #now {
     position: fixed;
     left: 0;
@@ -25,7 +19,6 @@ canvas,
     width: 100%;
 }
 
-canvas,
 main {
     top: 0;
     height: 100%;

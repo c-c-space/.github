@@ -1,159 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js"></script>
+  <script src="../js/menu.js"></script>
   <script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', event => {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      let preAll = document.querySelectorAll('pre');
-      for (const preEach of preAll) {
-        preEach.style.display = "none";
+    menuJSON('index.json')
+
+    window.addEventListener('DOMContentLoaded', event => {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        let preAll = document.querySelectorAll('pre');
+        for (const preEach of preAll) {
+          preEach.style.display = "none";
+        }
       }
-    }
-  })
+    })
   </script>
-  <link rel="stylesheet" href="style.css" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>HSL.js | Hue Saturation Lightness</title>
+  <meta content="HSL.js | Hue Saturation Lightness" property="og:title">
+  <meta content="Inspired by Times New Arial" name="description">
+  <meta content="Inspired by Times New Arial" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://creative-community.space/thankyou/hsl.html" property="og:url">
+  <meta content="https://creative-community.space/thankyou/card.png" property="og:image">
+  <meta content="https://creative-community.space/thankyou/card.png" name="twitter:image:src">
+
+  <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
+
   <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../hello/style.css" />
-  <link rel="stylesheet" href="../hello/css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+  <link rel="stylesheet" href="style.css" />
   <style>
-  body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-  #js-button {
-    filter: invert();
-  }
-
-  #hello h1,
-  #hello section {
-    color: #fff;
-    margin: 1rem;
-  }
-
-  #hello {
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-  }
-
-  #hello h1 {
-    font-family: "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 200%;
-  }
-
-  #hello h2 {
-    font-size: 125%;
-    text-shadow:
-    0.1vw 0.1vw 0.1vw #000,
-    0.2vw 0.2vw 0.1vw #000,
-    0.3vw 0.3vw 0.1vw #000,
-    0.4vw 0.4vw 0.1vw #000,
-    0.5vw 0.5vw 0.1vw #000,
-    0.6vw 0.6vw 0.1vw #000,
-    0.7vw 0.7vw 0.1vw #000,
-    0.8vw 0.8vw 0.1vw #000,
-    0.9vw 0.9vw 0.1vw #000;
-  }
-
-  pre {
-    font-family: "ipag", "Arial Narrow", Arial, monospace;
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    font-size: 75%;
-    pointer-events: auto;
-    user-select: text;
-  }
-
-  #code {
-    display: none;
-  }
-
-  @media screen and (max-width: 750px) {
     #hello {
-      font-size: 3vw;
-      padding: 4vw;
+      padding: 2rem;
     }
-  }
-
-  @page {
-    size: landscape;
-  }
-
-  @media print {
-    body {
-      height: 100vh;
-      max-height: -webkit-fill-available;
+    
+    #hello h1,
+    #hello section {
+      color: #fff;
+      margin: 1rem;
     }
 
-    #menu,
-    #hello {
-      display: none;
-    }
-
-    .hue,
-    .saturation,
-    .lightness {
-      font-family: Arial, sans-serif;
-      font-size: 7.5vw;
-      position: static;
-      text-align: left;
-      transform: rotate(0);
-      transform-origin: left top;
-      width: auto;
-      height: auto;
-    }
-
-    .hue span,
-    .saturation span,
-    .lightness span {
+    #hello h1,
+    a {
       font-family: "Times New Roman", serif;
-      font-size: 111%;
       font-style: italic;
     }
 
-    #code {
-      color: #fff;
-      display: block;
-      font-size: 2vw;
-      text-shadow:
-      0.1vw 0.1vw 0.1vw #000,
-      0.2vw 0.2vw 0.1vw #000,
-      0.3vw 0.3vw 0.1vw #000,
-      0.4vw 0.4vw 0.1vw #000,
-      0.5vw 0.5vw 0.1vw #000;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      padding: 1rem 0.5rem;
+    #hello h1 {
+      font-weight: 500;
+      font-size: 200%;
     }
-  }
 
+    #hello h2 {
+      font-family: Arial, sans-serif;
+      font-size: 125%;
+      text-shadow:
+        0.1vw 0.1vw 0.1vw #000,
+        0.2vw 0.2vw 0.1vw #000,
+        0.3vw 0.3vw 0.1vw #000,
+        0.4vw 0.4vw 0.1vw #000,
+        0.5vw 0.5vw 0.1vw #000,
+        0.6vw 0.6vw 0.1vw #000,
+        0.7vw 0.7vw 0.1vw #000,
+        0.8vw 0.8vw 0.1vw #000,
+        0.9vw 0.9vw 0.1vw #000;
+    }
+
+    a {
+      border: 0.1rem solid;
+      border-radius: 3rem;
+      font-size: 125%;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0.5rem 0.25rem 0;
+    }
+
+    pre {
+      font-family: "ipag", "Arial Narrow", monospace;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      font-size: 75%;
+    }
+
+    @page {
+      size: landscape;
+    }
+
+    @media print {
+      body {
+        height: 100vh;
+        max-height: -webkit-fill-available;
+      }
+
+      #menu,
+      #hello {
+        display: none;
+      }
+
+      .hue,
+      .saturation,
+      .lightness {
+        font-family: Arial, sans-serif;
+        font-size: 7.5vw;
+        position: static;
+        text-align: left;
+        transform: rotate(0);
+        transform-origin: left top;
+        width: auto;
+        height: auto;
+      }
+
+      .hue span,
+      .saturation span,
+      .lightness span {
+        font-family: "Times New Roman", serif;
+        font-size: 111%;
+        font-style: italic;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+  <header id="menu" class="hsl" hidden>
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
 
   <p class="hue hsl">Hue <span id="huecount"></span></p>
   <p class="saturation hsl">Saturation <span id="saturationcount"></span></p>
@@ -167,6 +152,8 @@
         <a class="hsl" href="https://timesnewarial.liebermannkiepereddemann.de/">Times New Arial</a>
       </p>
       <pre id="javascript"></pre>
+    </section>
+    <section>
       <h2>
         Times New Arial is a variable font concept form Liebermann Kiepe Reddemann produced by Elias Hanzer.
       </h2>
@@ -177,55 +164,17 @@
     </section>
   </main>
 
-  <code id="code" class="cc">creative-community.space/thankyou/hsl.html</code>
-
+  <script src="hsl.js"></script>
   <script>
-  async function hslJS() {
-    fetch('hsl.js')
-    .then(response => response.text())
-    .then(hslJS => {
-      document.querySelector("#javascript").innerText = hslJS
-    });
-  }
-  hslJS();
-
-  document.body.style.background = '#000';
-  document.body.style.padding = "0";
-  document.body.style.margin = "0";
-
-  document.addEventListener('mousemove', touchHSL);
-  document.addEventListener('touchstart', touchHSL);
-  document.addEventListener('touchend', touchHSL);
-  document.addEventListener('touchcancel', touchHSL);
-  document.addEventListener('touchmove', touchHSL);
-
-  let allHSL = document.querySelectorAll('.hsl');
-  for (const colorHSL of allHSL) {
-    colorHSL.style.color = '#000';
-    colorHSL.style.filter = 'invert()';
-  }
-
-  function touchHSL(xy) {
-    let hueraw = parseInt(360 - Math.round((xy.pageY + 0.1) / (window.innerHeight) * 360));
-    document.querySelector('#huecount').innerText = hueraw;
-
-    if ((xy.pageX <= window.innerWidth / 1)) {
-      let sraw = parseInt(100 - Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
-      let lraw = parseInt(Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
-
-      document.querySelector('#saturationcount').innerText = sraw + '%';
-      document.querySelector('#lightnesscount').innerText = lraw + '%';
-
-      document.body.style.background = 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)';
-
-      let allHSL = document.querySelectorAll('.hsl');
-      for (const colorHSL of allHSL) {
-        colorHSL.style.color = 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)';
-      }
+    async function hslJS() {
+      fetch('hsl.js')
+        .then(response => response.text())
+        .then(hslJS => {
+          document.querySelector("#javascript").innerText = hslJS
+        });
     }
-  };
+    hslJS();
   </script>
-
 </body>
 
 </html>

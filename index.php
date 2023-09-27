@@ -34,10 +34,11 @@
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/userMedia.css">
+  <link rel="stylesheet" href="thankyou/style.css">
 </head>
 
 <body>
-  <header id="menu" class="hsl">
+  <header id="menu" class="hsl" hidden>
     <button><b></b></button>
     <menu id="contents">
       <a href="/" target="_parent">
@@ -46,6 +47,10 @@
       </a>
     </menu>
   </header>
+
+  <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
+  <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
+  <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
 
   <main id="hello" class="hsl">
     <section>
@@ -108,6 +113,8 @@
       })
     });
   </script>
+  
+  <div id="sketch"></div>
 
   <script src="thankyou/hsl.js"></script>
   <script src="thankyou/sketch.js"></script>

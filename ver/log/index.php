@@ -86,7 +86,7 @@ flock($fp, LOCK_SH);
 </head>
 
 <body>
-  <header id="menu">
+  <header id="menu" hidden>
     <button><b></b></button>
     <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">

@@ -1,121 +1,122 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../js/menu.js"></script>
   <script type="text/javascript">
-  let touch_event = window.ontouchstart,
-  touch_points = navigator.maxTouchPoints;
+    menuJSON('index.json')
 
-  if( touch_event !== undefined && 0 < touch_points ) {
-    alert("Let's Touch Your Screen");
-  } else {
-    location.replace('/thankyou/sketch.html')
-  }
-  </script>
-  <script src="/js/index.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../hello/style.css" />
-  <link rel="stylesheet" href="../hello/css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="print.css" media="print"/>
-  <style>
-  #hello {
-    display: grid;
-    place-items: center;
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
-  }
+    let touch_event = window.ontouchstart,
+      touch_points = navigator.maxTouchPoints;
 
-  #hello h1 {
-    box-sizing: border-box;
-    color: #fff;
-  }
-
-  #hello h1 {
-    font-family: "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 200%;
-  }
-
-  #hello h1 sup {
-    font-size: 55%;
-    font-family: "ipag", "Arial Narrow", monospace;
-  }
-
-  pre {
-    font-family: "ipag", "Arial Narrow", Arial, monospace;
-    box-sizing: border-box;
-    display: block;
-    overflow-x: auto;
-    font-size: 125%;
-  }
-
-  #eventLog {
-    height: 75%;
-    word-break: break-all;
-    user-select: none;
-    pointer-events: none;
-  }
-
-  #canvas {
-    filter: invert(1);
-    mix-blend-mode: difference;
-  }
-
-  @media screen and (max-width: 750px) {
-    #hello {
-      font-size: 3vw;
+    if (touch_event !== undefined && 0 < touch_points) {
+      alert("Let's Touch Your Screen");
+    } else {
+      //location.replace('sketch.html')
     }
-  }
+  </script>
 
-  @media print {
-    #menu,
-    #saveImg,
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>Touch.js | creative-community.space</title>
+  <meta content="Touch.js | creative-community.space" property="og:title">
+  <meta content="Drawing by Mouse Move or Screen Touch" name="description">
+  <meta content="Drawing by Mouse Move or Screen Touch" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://creative-community.space/thankyou/touch.html" property="og:url">
+  <meta content="https://creative-community.space/thankyou/card.png" property="og:image">
+  <meta content="https://creative-community.space/thankyou/card.png" name="twitter:image:src">
+
+  <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #hello {
+      display: grid;
+      place-items: center;
+      position: fixed;
+      padding: 1rem;
+      margin: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      max-height: -webkit-fill-available;
+    }
+
     #hello h1 {
-      display: none;
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 200%;
+    }
+
+    #hello h1 sup {
+      font-size: 55%;
+      font-family: "ipag", "Arial Narrow", monospace;
+    }
+
+    pre {
+      font-family: "ipag", "Arial Narrow", Arial, monospace;
+      box-sizing: border-box;
+      display: block;
+      overflow-x: auto;
+      font-size: 125%;
     }
 
     #eventLog {
-      height: 100%;
-      width: 100%;
+      height: 75%;
+      word-break: break-all;
+      user-select: none;
+      pointer-events: none;
     }
-  }
+
+    #canvas {
+      filter: invert(1);
+      mix-blend-mode: difference;
+    }
+
+    @media print {
+
+      #menu,
+      #saveImg,
+      #hello h1 {
+        display: none;
+      }
+
+      #eventLog {
+        height: 100%;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
 
   <main id="hello">
     <h1>
-      <sup>touch.js</sup><br/>
+      <sup>touch.js</sup><br />
       <i>Your Drawing is Seems So Beautiful</i>
     </h1>
-    <pre id="eventLog" class="hsl"></pre>
+    <pre id="eventLog"></pre>
   </main>
-
-  <script src="hsl.js"></script>
 
   <canvas id="canvas">
     Your browser does not support canvas element.
@@ -125,9 +126,10 @@
     <img id="createImg">
   </section>
 
-  <input id="saveImg" class="hsl" type="button" value="Create IMG">
+  <input id="saveImg" type="button" value="Create IMG">
 
   <script src="touch.js"></script>
   <script src="createIMG.js"></script>
 </body>
+
 </html>
