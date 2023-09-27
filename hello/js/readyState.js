@@ -11,21 +11,13 @@ function ChangeHidden() {
   })
 }
 
-async function fetchText(url = '', query = '') {
-  fetch(url)
-  .then(response => response.text())
-  .then(text => {
-    document.querySelector(query).innerText = text
-  })
-}
-
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'complete') {
-    const mainLog = document.querySelector('#log'),
-    enterBtn = document.querySelector('#enter-btn'),
-    logAll = document.querySelector('#log section'),
-    modalH3 = document.querySelector('#modal h3'),
-    lastModified = document.querySelector('#lastModified')
+    const mainLog = document.querySelector('#log');
+    const enterBtn = document.querySelector('#enter-btn');
+    const logAll = document.querySelector('#log section');
+    const modalH3 = document.querySelector('#modal h3');
+    const lastModified = document.querySelector('#lastModified');
 
     lastModified.innerHTML =
     'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';

@@ -41,6 +41,7 @@ fclose($fp);
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="../css/controls.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/log.css" />
@@ -81,7 +82,9 @@ fclose($fp);
   </header>
 
   <main id="log">
-    <button type="button" id="enter-btn" class="color bgcolor">Submit a Text of <?php echo $sekkiName; ?> <?php echo $sekki; ?></button>
+    <button type="button" id="enter-btn" class="color bgcolor">
+      Submit a Text of <?php echo $sekkiName; ?> <?php echo $sekki; ?>
+    </button>
     <div>
       <h1>
         <b><?php echo $greeting; ?></b><br />
@@ -123,11 +126,11 @@ fclose($fp);
 
   <nav id="now" class="hidden">
     <section class="controls">
-      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
+      <input id="cancel-btn" value="⏹" class="color bgcolor" type="button" />
+      <input id="pause-btn" value="⏸" class="color bgcolor" type="button" />
+      <input id="resume-btn" value="⏯" class="color bgcolor" type="button" />
     </section>
-    <button id="openModal" class="color bgcolor" type="button">?</button>
+    <button onclick="openModal()" class="color bgcolor" type="button">?</button>
   </nav>
   <script src="js/controls.js"></script>
 
@@ -148,7 +151,7 @@ fclose($fp);
     <p>
       <smal>
         <u>Choose A Traditional Japanese Seasonal Color to Change Text & Background Colors</u>
-        </small>
+      </small>
     </p>
 
     <label for="color">文字の色</label>
