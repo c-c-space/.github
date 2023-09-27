@@ -8,6 +8,14 @@ async function fetchHTML(url = '', query = '') {
     })
 }
 
+async function fetchText(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector(query).innerText = text
+  })
+}
+
 async function menuJSON(requestURL) {
   const request = new Request(requestURL);
   const response = await fetch(request);
