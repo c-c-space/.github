@@ -78,13 +78,14 @@ input[type="radio"]:checked+label {
   justify-content: flex-start;
   list-style: none;
   overflow: auto;
+  gap: 0.5rem;
   padding: 0.5rem;
   margin: 0;
 }
 
 #log li {
-  padding: 0.5rem;
-  width: calc(100% / 4);
+  padding: 0.25rem;
+  width: calc(100% / 4 - 1rem);
   word-wrap: break-word;
 }
 
@@ -116,13 +117,13 @@ input[type="radio"]:checked+label {
 
 @media (max-width: 1250px) {
   #log li {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 1rem);
   }
 }
 
 @media (max-width: 900px) {
   #log li {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 1rem);
   }
 }
 
