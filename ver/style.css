@@ -122,7 +122,7 @@ input[type="radio"]:checked+label {
     flex: 1 100%;
     gap: 0;
     padding: 0.25rem;
-    margin: 0.25rem;
+    margin: 0.25rem 0;
   }
 
   #log li span:first-of-type {
