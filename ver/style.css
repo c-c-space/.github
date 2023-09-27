@@ -25,6 +25,14 @@ input[type="radio"]+label {
   transition: all 1s;
 }
 
+#log li a {
+  background-color: #000;
+  color: #fff;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+
+#log li a:hover,
 input[type="radio"]+label {
   background-color: #fff;
   color: #000;
@@ -76,12 +84,12 @@ input[type="radio"]:checked+label {
   justify-content: flex-start;
   list-style: none;
   overflow: auto;
-  padding: 0;
+  gap: 0.5rem;
+  padding: 0.5rem;
   margin: 0;
 }
 
 #log li {
-  padding: 1rem;
   width: calc(100% / 4);
   word-wrap: break-word;
 }
@@ -129,15 +137,6 @@ input[type="radio"]:checked+label {
     font-size: 275%;
   }
 
-  #now,
-  #log {
-    font-size: 3.21vw;
-  }
-
-  #now {
-    padding: 2vw;
-  }
-
   input[type="radio"]+label {
     border-radius: 1vw;
     font-size: 125%;
@@ -146,7 +145,6 @@ input[type="radio"]:checked+label {
   }
 
   #log li {
-    padding: 1.25vw 2.5vw;
     width: 100%;
   }
 

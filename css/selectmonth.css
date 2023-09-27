@@ -31,14 +31,3 @@
 #update:active {
   filter: invert(1);
 }
-
-@media screen and (max-width: 750px) {
-  #now select,
-  #now button {
-    border: 0.2vw solid;
-    border-radius: 4.5vw;
-    font-size: 3vw;
-    padding: 1.25vw 2vw;
-    margin: 2.5%;
-  }
-}
