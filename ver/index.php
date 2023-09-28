@@ -31,7 +31,7 @@ fclose($fp);
   <script src="../js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      location.assign('/')
+      location.replace('/')
     }
   </script>
 

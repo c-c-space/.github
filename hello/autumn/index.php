@@ -126,10 +126,10 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </section>
   </main>
 
-  <dialog id="modal" class="color bgcolor">
+  <dialog id="modal">
+    <button type="button" id="closeModal">×</button>
     <h3><?php echo $thisSeason;?></h3>
     <p><?php echo $description;?></p>
-    <button class="color bgcolor" id="closeButton">×</button>
     <hr/>
     <form method="GET">
       <p>
@@ -159,8 +159,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
     </form>
   </dialog>
   <?php require('../all/controls.html'); ?>
-
-  <script src="../all/controls.js"></script>
   <script src="../all/sekki.js"></script>
   <script type="text/javascript">
   colorJSON('color.json')

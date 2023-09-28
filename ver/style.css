@@ -9,10 +9,13 @@ input[type="radio"],
 }
 
 #now h1,
-#log li a,
-#log li span:first-of-type {
+#log li span {
   font-family: "ipag", "Yu Gothic", monospace;
   font-weight: 500;
+}
+
+#now h1,
+#log li span:nth-child(2) {
   transform: scale(1, 1.25);
 }
 
