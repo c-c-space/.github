@@ -7,7 +7,7 @@
   $thisDate = "August 8 - November 7";
   $title = $thisSeason . ' | ' . $thisDate;
   $description = "「あき」は草木が紅（あか）く染まる季節。";
-  require('head.php');
+  require('../head.php');
   ?>
 
   <!--for Twitter-->
