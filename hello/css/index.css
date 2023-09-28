@@ -61,7 +61,8 @@ h2 {
   margin: 0;
 }
 
-h3 {
+h3,
+#log ul li p {
   padding: 0;
   margin: 0;
 }
@@ -139,17 +140,12 @@ h3 {
   list-style-position: inside;
 }
 
-#log ul li p {
-  padding: 0;
-  margin: 0.5rem 0;
-}
-
 #log ul li button {
   border: 0.1rem solid;
   border-radius: 3rem;
   font-size: 111%;
   padding: 0.5rem 0.75rem;
-  margin: 0;
+  margin: 0.5rem 0 0;
 }
 
 #now {
