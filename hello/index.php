@@ -107,7 +107,7 @@
   <dialog id="modal">
     <button type="button" id="closeModal">×</button>
     <section id="about">
-      <p><i><?php echo $date; ?></i></p>
+      <i><?php echo $date; ?></i>
       <h3>
         <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)
         is <?php echo $description; ?>
@@ -116,7 +116,7 @@
     </section>
     <section id="color-size"></section>
   </dialog>
-  
+
   <?php require('controls.html'); ?>
   <script type="text/javascript">
     colorSize()
