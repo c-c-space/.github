@@ -13,6 +13,8 @@ function userStream() {
     userMedia.style.transform = "translate(-50%, -50%)"
     userMedia.style.width = window.innerWidth
     userMedia.style.height = window.innerHeight
+    userMedia.style.minWidth = "100%"
+    userMedia.style.minHeighteight = "100%"
     document.body.appendChild(userMedia)
   
     let media = navigator.mediaDevices.getUserMedia({
