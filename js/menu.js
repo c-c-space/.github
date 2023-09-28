@@ -1,5 +1,7 @@
 'use strict'
 
+// #menuの生成(/css/menu.css を併用) と フェッチ操作
+
 async function fetchHTML(url = '', query = '') {
   fetch(url)
     .then(response => response.text())

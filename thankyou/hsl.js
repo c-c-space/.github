@@ -1,8 +1,10 @@
 'use strict'
 
-document.body.style.background = "#000"
-document.body.style.padding = "0";
-document.body.style.margin = "0";
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.style.background = "#000"
+  document.body.style.padding = "0";
+  document.body.style.margin = "0";
+}, false);
 
 window.addEventListener('load', () => {
   document.addEventListener('mousemove', touchHSL);
@@ -35,7 +37,7 @@ window.addEventListener('load', () => {
         colorHSL.style.color = 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)';
       }
     }
-  };
-});
+  }
+}, false);
 
 /* Copyright (C) 2021 creative-community.space */

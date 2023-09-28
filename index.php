@@ -7,6 +7,8 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="js/menu.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/userMedia.js"></script>
   <script>
     menuJSON('index.json')
   </script>
@@ -33,24 +35,20 @@
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
   <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/userMedia.css">
   <link rel="stylesheet" href="thankyou/style.css">
+  <link rel="stylesheet" href="thankyou/www.css" media="print" />
 </head>
 
 <body>
   <header id="menu" class="hsl" hidden>
     <button><b></b></button>
     <menu id="contents">
-      <a href="/" target="_parent">
+      <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.0</u>
+        <u>ver.2.1</u>
       </a>
     </menu>
   </header>
-
-  <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
-  <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
-  <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
 
   <main id="hello" class="hsl">
     <article>
@@ -81,18 +79,28 @@
     <script src="js/hello.js"></script>
   </main>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(function() {
+      $("#hello u").on("click", function() {
+        let show = $(this).data("id");
+        $("#" + show).show(1000);
+      })
+    });
+  </script>
+
   <main id="yourinfo" class="hsl" hidden>
-    <form method="post">
+    <form id="login" method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
       <p>
         <?php require('profile/yourinfo.php'); ?>
       </p>
       <section>
-        <button type="button" id="enter-btn" onclick="setLOG()">Enter</button>
+        <button type="submit" id="enter-btn">Enter</button>
         <button type="button" id="back-btn">Back</button>
       </section>
     </form>
-    <script src="js/log.js"></script>
+    <script src="js/login.js"></script>
   </main>
 
   <dialog id="modal">
@@ -105,24 +113,19 @@
     <time id="showTime" class="cc"></time>
     <script src="js/now.js"></script>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(function() {
-      $("#hello u").on("click", function() {
-        let show = $(this).data("id");
-        $("#" + show).show(1000);
-      })
-    });
-  </script>
-
-  <div id="sketch"></div>
-
+  
   <script src="thankyou/hsl.js"></script>
+  <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
+  <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
+  <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
+  <div id="sketch"></div>
   <script src="thankyou/sketch.js"></script>
+
+  <article id="www" hidden></article>
+
   <script type="text/javascript">
     function forMobile() {
-      document.querySelector('canvas').remove()
+      document.querySelector('#sketch').remove()
     }
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -164,6 +167,8 @@
 
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       console.log("This is a not Mobile Device");
+
+      fetchHTML('thankyou/www.html', '#www')
 
       const main = document.querySelector('main');
       main.style.pointerEvents = "none";

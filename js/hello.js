@@ -1,10 +1,14 @@
 'use strict'
 
-window.addEventListener('load', event => {
+/*
+#hello の子要素に、 Web Speech API に使用する セレクターとボタンを生成
+#hello #speech 内のテキストを 音声に変換する
+*/
+
+window.addEventListener('load', function() {
   const hello = document.querySelector('#hello'),
   speechAPI = document.createElement('nav'),
   voiceSelect = document.createElement('select');
-
   voiceSelect.setAttribute('id','voice-select')
 
   function appendVoices() {
@@ -29,12 +33,12 @@ window.addEventListener('load', event => {
   stopBtn = document.createElement('input');
 
   playBtn.setAttribute('type','button')
-  playBtn.setAttribute('id','speak-btn')
-  playBtn.setAttribute('value','Play')
+  playBtn.id = 'speak-btn'
+  playBtn.value = 'Play'
 
   stopBtn.setAttribute('type','button')
-  stopBtn.setAttribute('id','cancel-btn')
-  stopBtn.setAttribute('value','Stop')
+  stopBtn.id = 'cancel-btn'
+  stopBtn.value = 'Stop'
 
   hello.prepend(speechAPI)
   speechAPI.appendChild(voiceSelect)

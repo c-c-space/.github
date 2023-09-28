@@ -1,3 +1,5 @@
+'use strict'
+
 const canvas = document.querySelector("#canvas");
 canvas.style.boxSizing = "border-box";
 canvas.style.padding = "0";
@@ -5,16 +7,21 @@ canvas.style.margin = "0";
 canvas.style.position = "fixed";
 canvas.style.zIndex = "1";
 
-function windowScreen() {
-  canvas.width  = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
+window.addEventListener("DOMContentLoaded", function () {
+  windowScreen();
+  startup();
+}, false);
 
 window.onresize = tmResize;
 function tmResize() {
   if (typeof pageResize == "function") {
     pageResize();
   }
+}
+
+function windowScreen() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 
 function pageResize() {
@@ -28,12 +35,6 @@ function startup() {
   canvas.addEventListener('touchmove', handleMove);
   log('Touch The Screen to Drawing');
 }
-
-window.addEventListener("DOMContentLoaded", function () {
-  windowScreen();
-  startup();
-}, false);
-
 
 const ongoingTouches = [];
 

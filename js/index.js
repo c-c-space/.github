@@ -1,5 +1,7 @@
 'use strict'
 
+// トップページ (/index.php) の内容を動的に生成する
+
 function changeHidden() {
   const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
@@ -11,63 +13,21 @@ function changeHidden() {
   })
 }
 
-function userStream() {
-  const userMedia = document.createElement('video')
-  userMedia.id = "userMedia"
-  userMedia.setAttribute('autoplay', 'true')
-  userMedia.setAttribute('playsinline', 'true')
-  userMedia.style.width = window.innerWidth
-  userMedia.style.height = window.innerHeight
-  document.body.appendChild(userMedia)
-
-  let media = navigator.mediaDevices.getUserMedia({
-    video: true,
-    video: { facingMode: 'environment' }, //背面カメラ
-    //video: { facingMode: 'user' }, //インカメラ
-    audio: false,
-  });
-  media.then((stream) => {
-    userMedia.srcObject = stream
-  });
-}
-
-function stopStream() {
-  const userMedia = document.querySelector('#userMedia')
-  const stream = userMedia.srcObject
-  const tracks = stream.getTracks()
-  tracks.forEach(function (track) {
-    track.stop()
-  })
-  userMedia.remove()
-}
-
-function openModal() {
-  const dialogModal = document.querySelector('#modal')
-  if (typeof dialogModal.showModal === "function") {
-    dialogModal.showModal()
-  } else {
-    alert("The <dialog> API is not supported by this browser")
-  }
-}
-
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
     fetchHTML('profile/yourinfo.html', '#modal section')
-
-    const dialogModal = document.querySelector('#modal')
-    const closeModal = document.querySelector('#closeModal')
-    closeModal.addEventListener('click', () => {
-      dialogModal.close()
-    })
   } else if (event.target.readyState === 'complete') {
     const nextBtn = document.querySelector('#submit-btn')
 
     if (localStorage.getItem('yourInfo')) {
-      // localStorage
+      // ローカルストレージに yourInfo 情報がある場合
       fetchHTML('hello/welcome.php', '#hello h1')
-
       const yourStrage = document.querySelector('#hello h2')
-      yourStrage.innerHTML = '<u>You Posted</u><br/>'
+      yourStrage.innerHTML = ""
+      // yourStrage.innerHTML = '<u>You Posted</u><br/>'
+
+      // sign 情報を表示
+      /*
       if(!localStorage.getItem('sign')) {
         yourStrage.innerHTML += '<a href="/sign/">0</a>'
       } else {
@@ -75,7 +35,9 @@ document.addEventListener('readystatechange', event => {
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
       yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
+      */
 
+      // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All"
       nextBtn.addEventListener('click', function () {
         localStorage.clear()

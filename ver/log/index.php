@@ -28,9 +28,10 @@ flock($fp, LOCK_SH);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="../js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      location.replace('/')
+      location.assign('/')
     }
   </script>
 
@@ -50,10 +51,9 @@ flock($fp, LOCK_SH);
   <meta content="<?php echo $url; ?>summary.png" name="twitter:image:src">
 
   <link rel="icon" href="../icon/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="../../css/selectmonth.css" />
   <link rel="stylesheet" href="../../css/log.css" />
+  <link rel="stylesheet" href="../../css/selectmonth.css" />
 
   <style>
     #log li {
@@ -102,7 +102,6 @@ flock($fp, LOCK_SH);
         <b>通信情報／ブラウザ等情報</b>
       </a>
     </menu>
-    <script src="/js/menu.js"></script>
   </header>
 
   <ul id="log">

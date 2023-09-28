@@ -9,13 +9,14 @@
   <script type="text/javascript">
     menuJSON('index.json')
 
-    window.addEventListener('DOMContentLoaded', event => {
+    window.addEventListener('DOMContentLoaded', () => {
       if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         let preAll = document.querySelectorAll('pre');
         for (const preEach of preAll) {
           preEach.style.display = "none";
         }
       }
+      fetchHTML('hsl.js', query = '#javascript')
     })
   </script>
 
@@ -40,7 +41,7 @@
     #hello {
       padding: 2rem;
     }
-    
+
     #hello h1,
     #hello section {
       color: #fff;
@@ -166,16 +167,6 @@
   </main>
 
   <script src="hsl.js"></script>
-  <script>
-    async function hslJS() {
-      fetch('hsl.js')
-        .then(response => response.text())
-        .then(hslJS => {
-          document.querySelector("#javascript").innerText = hslJS
-        });
-    }
-    hslJS();
-  </script>
 </body>
 
 </html>

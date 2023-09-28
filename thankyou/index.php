@@ -8,7 +8,7 @@
   <script src="../js/menu.js"></script>
   <script type="text/javascript">
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      location.replace('touch.html')
+      location.assign('touch.html')
     }
     menuJSON('index.json')
   </script>
@@ -98,10 +98,6 @@
     </menu>
   </header>
 
-  <p class="hue hsl">Hue <span id="huecount"></span></p>
-  <p class="saturation hsl">Saturation <span id="saturationcount"></span></p>
-  <p class="lightness hsl">Lightness <span id="lightnesscount"></span></p>
-
   <main id="hello">
     <h1>
       <sup>Thank You for Visiting</sup><br />
@@ -113,36 +109,36 @@
         <a class="hsl" href="#" onclick="window.print();">📄</a>
         をクリック or ⌘ + P → 出力先 「PDFに保存」
       </p>
-      <sup>* A4 サイズ / 横 レイアウト / 余白なし 推奨</sup>
       <p>あなたが描いた落書きを右クリックし「名前をつけて画像を保存…」？！</p>
     </section>
   </main>
 
-  <section id="you">
-    <div>
+  <main id="www" hidden>
+    <section class="hsl">
       <p class="cc">Drawing by</p>
       <p class="cc">
-        IP
-        <?php echo $_SERVER['REMOTE_ADDR']; ?>
+        IP <?php echo $_SERVER['REMOTE_ADDR']; ?>
       </p>
-    </div>
-  </section>
-
-  <aside id="www">
-    <h2>
-      OMG!<br />
-      <i>Your Drawing is Seems So Beautiful</i><br />
-      Let's <i>Print to PDF</i> and <i>Send it</i> to us !!<br />
-      <a class="cc" href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
-    </h2>
-    <p class="cc">creative-community.space</p>
-  </aside>
-
-  <div id="sketch"></div>
+    </section>
+    <aside>
+      <h2>
+        OMG!<br />
+        <i>Your Drawing is Seems So Beautiful</i><br />
+        Let's <i>Print to PDF</i> and <i>Send it</i> to us !!<br />
+        <a class="cc" href="mailto:pehu@creative-community.space">pehu@creative-community.space</a> *
+      </h2>
+      <p class="cc">creative-community.space</p>
+    </aside>
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="sketch.js"></script>
+  <div id="sketch"></div>
+  <p class="hue hsl">Hue <span id="huecount"></span></p>
+  <p class="saturation hsl">Saturation <span id="saturationcount"></span></p>
+  <p class="lightness hsl">Lightness <span id="lightnesscount"></span></p>
   <script src="hsl.js"></script>
+
   <script type="text/javascript">
     const COLOURS = ['#111'];
     let radius = 0;

@@ -31,7 +31,7 @@ fclose($fp);
   <script src="../js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      location.replace('/')
+      location.assign('/')
     }
   </script>
 
@@ -141,14 +141,14 @@ fclose($fp);
 
     start();
 
-    let targets = document.querySelectorAll("#log li")
-    let filter = document.querySelectorAll('input[name="index"]')
     //****** for all select ******
+    let filter = document.querySelectorAll('input[name="index"]')
     for (let i of filter) {
       i.addEventListener('change', () => {
         let value = i.value
         let name = i.getAttribute('name')
         //*** for each target ***
+        let targets = document.querySelectorAll("#log li")
         for (let ii of targets) {
           //*** delete hidden class ***
           ii.classList.remove('hidden')

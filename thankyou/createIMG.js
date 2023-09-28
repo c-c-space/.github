@@ -1,3 +1,5 @@
+'use strict'
+
 const canvasArea = document.querySelector("#canvas")
 const createBtn = document.querySelector("#saveImg")
 

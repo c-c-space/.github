@@ -1,5 +1,12 @@
 'use strict'
 
+// form#login から投稿された ポート番号・IPアドレス・OS等情報を ローカルストレージと月毎のCSVに追加
+
+window.addEventListener('load', function() {
+  const form = document.querySelector('form#login')
+  form.addEventListener('submit', setLOG(), false);
+}, false);
+
 function setLOG() {
   const hqdn = document.querySelector('#hqdn').textContent,
   ip = document.querySelector('#ip').textContent,
@@ -15,7 +22,7 @@ function setLOG() {
   localStorage.setItem('yourInfo', yourJSON)
 
   async function submitLOG() {
-    let url = '/log.php'
+    let url = '/login.php'
     let response = await fetch(url, {
       method: 'POST',
       headers: {

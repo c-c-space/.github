@@ -1,3 +1,9 @@
+// #showDate に 現在の日付・#showTime に 現在の時刻を表示
+
+document.addEventListener('DOMContentLoaded', function () {
+  setInterval('nowOn()', 1000);
+}, false);
+
 function set10(num) {
   let ret;
   if (num < 10) { ret = "0" + num; }
@@ -27,5 +33,3 @@ function nowOn() {
   const showTime = nowHour + ":" + nowMin + ":" + nowSec;
   document.querySelector("#showTime").textContent = showTime;
 }
-
-setInterval('nowOn()', 1000);

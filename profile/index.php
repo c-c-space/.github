@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <script src="../js/menu.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/userMedia.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       fetchHTML('yourinfo.html', '#about')
     });
+
+    window.addEventListener('load', function() {
+      userStream()
+    }, false);
   </script>
 
   <!--og:meta-->
@@ -24,19 +30,15 @@
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://creative-community.space/profile/" property="og:url">
-  <meta content="https://creative-community.space/profile/card.png" property="og:image">
-  <meta content="https://creative-community.space/profile/card.png" name="twitter:image:src">
+  <meta content="https://creative-community.space/ver/card.png" property="og:image">
+  <meta content="https://creative-community.space/ver/card.png" name="twitter:image:src">
 
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
 
   <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="../css/log.css" />
   <link rel="stylesheet" href="../css/modal.css" />
-  <link rel="stylesheet" href="../css/userMedia.css" />
   <link rel="stylesheet" href="style.css" />
-
-  <script src="../js/modal.js"></script>
-  <script src="../js/userMedia.js"></script>
 </head>
 
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
@@ -102,7 +104,7 @@
       </span>
       <?php require('yourinfo.php'); ?>
     </li>
-    <script src="/js/log.js"></script>
+    <script src="../js/login.js"></script>
   </ul>
 
   <dialog id="modal">

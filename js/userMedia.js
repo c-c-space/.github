@@ -1,14 +1,16 @@
 'use strict'
 
-window.addEventListener('load', function(){
-    userStream()
-}, false);
-
 function userStream() {
     const userMedia = document.createElement('video')
     userMedia.id = "userMedia"
     userMedia.setAttribute('autoplay', 'true')
     userMedia.setAttribute('playsinline', 'true')
+    userMedia.style.position = "fixed"
+    userMedia.style.padding = "0"
+    userMedia.style.margin = "0"
+    userMedia.style.top = "50%"
+    userMedia.style.left = "50%"
+    userMedia.style.transform = "translate(-50%, -50%)"
     userMedia.style.width = window.innerWidth
     userMedia.style.height = window.innerHeight
     document.body.appendChild(userMedia)
