@@ -31,8 +31,7 @@ summary {
   line-height: 125%;
 }
 
-#hello #howto,
-#modal #about {
+#hello #howto {
   font-size: 90%;
 }
 
@@ -70,9 +69,12 @@ h3 {
   margin-bottom: 2.5rem;
 }
 
-#hello #howto,
-#modal #about {
+#hello #howto {
   margin: 1rem 0;
+}
+
+#modal #about {
+  margin: 0 0 2.5rem;
 }
 
 #log section span {
