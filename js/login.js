@@ -1,6 +1,6 @@
 'use strict'
 
-// form#login から投稿された ポート番号・IPアドレス・OS等情報を ローカルストレージと月毎のCSVに追加
+// ポート番号・IPアドレス・OS等情報を ローカルストレージと月毎のCSVに追加
 
 function setLOG() {
   const hqdn = document.querySelector('#hqdn').textContent,
