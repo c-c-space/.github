@@ -120,7 +120,7 @@ h3,
 
 #log ul {
   gap: 0.5rem;
-  padding: 0.5rem 0.5rem 4.5rem;
+  padding: 0.5rem 0 4.5rem;
   margin: 0;
   width: 100%;
 }
