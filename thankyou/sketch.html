@@ -8,10 +8,8 @@
   <script src="../js/menu.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
-
     let touch_event = window.ontouchstart,
       touch_points = navigator.maxTouchPoints;
-
     if (touch_event !== undefined && 0 < touch_points) {
       location.replace('touch.html')
     }
@@ -49,7 +47,7 @@
     }
 
     #hello h1,
-    a {
+    #hello a {
       font-family: "Times New Roman", serif;
       font-style: italic;
     }
@@ -59,7 +57,7 @@
       font-size: 200%;
     }
 
-    a {
+    #hello a {
       border: 0.1rem solid;
       border-radius: 3rem;
       color: #000;
