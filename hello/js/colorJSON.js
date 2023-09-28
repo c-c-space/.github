@@ -11,8 +11,7 @@ function colorSize() {
     <select class="color bgcolor" id="color">
       <option selected>Text Color</option>
     </select>
-  </p>
-  <p>
+    <br/>
     <label for="bgcolor">背景の色</label>
     <select class="color bgcolor" id="bgcolor">
       <option selected>Background Color</option>
