@@ -25,12 +25,6 @@ summary {
   font-weight: 500;
 }
 
-#log h1 code,
-#log h2 span {
-  display: block;
-  line-height: 125%;
-}
-
 #hello #howto {
   font-size: 90%;
 }
@@ -39,6 +33,12 @@ summary {
 #log h2 span {
   font-size: 55%;
   word-break: break-all;
+}
+
+#log h1 code,
+#log h2 span {
+  display: block;
+  line-height: 125%;
 }
 
 h2 a {
@@ -67,7 +67,8 @@ h3,
   margin: 0;
 }
 
-#hello details {
+#hello details,
+#modal #about {
   margin-bottom: 2.5rem;
 }
 
@@ -75,16 +76,8 @@ h3,
   margin: 1rem 0;
 }
 
-#modal #about {
-  margin: 0 0 2.5rem;
-}
-
-#log section span {
-  margin-right: 1rem;
-}
-
 #hello {
-  padding: 0.75rem 1rem 5rem;
+  padding: 1rem 1rem 5rem;
 }
 
 #login-btn,
