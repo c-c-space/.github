@@ -4,27 +4,30 @@ function changeHidden() {
   const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
     if (main.hidden == false) {
-      main.hidden = true;
+      main.hidden = true
     } else {
-      main.hidden = false;
+      main.hidden = false
     }
   })
 }
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
-    const loginBtn = document.querySelector('#login-btn');
-
     if (!localStorage.getItem('yourInfo')) {
-      loginBtn.setAttribute('onclick', 'setLOG()');
-      loginBtn.textContent = 'Submit Your Info to Enter This Site';
-      fetchHTML('../profile/yourinfo.php', '#log h2')
-      document.querySelector('#now .controls').remove()
+      const loginBtn = document.querySelector('#login-btn')
+      loginBtn.setAttribute('onclick', 'setLOG()')
+      loginBtn.textContent = 'Submit Your Info to Enter This Site'
+
+      const removeAll = document.querySelectorAll('#log article, #now .controls')
+      for (const i of removeAll) {
+        i.remove()
+      }
       fetchText('readme.md', '#about')
+      fetchHTML('../profile/yourinfo.php', '#log h2')
     } else {
-      const form = document.querySelector("#hello form");
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
+      const form = document.querySelector("#hello form")
+      form.addEventListener('submit', function (event) {
+        event.preventDefault()
         
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
@@ -39,7 +42,7 @@ document.addEventListener('readystatechange', event => {
           lang: voiceIndex.options[selectVoice].lang,
           pitch: thisPitch,
           rate: thisRate
-        };
+        }
 
         const helloJSON = JSON.stringify(thisHello)
         async function submitThis() {
@@ -69,7 +72,7 @@ document.addEventListener('readystatechange', event => {
     }
   } else if (event.target.readyState === 'complete') {
     const mainLog = document.querySelector('#log');
-    const logAll = document.querySelector('#log section');
+    const logAll = document.querySelector('#log article');
     const modalH3 = document.querySelector('#modal h3');
 
     const lastModified = document.querySelector('#lastModified');
