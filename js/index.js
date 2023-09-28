@@ -49,7 +49,7 @@ document.addEventListener('readystatechange', event => {
       nextBtn.textContent = "Your Info";
       nextBtn.addEventListener('click', function () {
         changeHidden()
-        userStream()
+        environmentStream()
       }, false)
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
