@@ -61,6 +61,7 @@
     sekkiJSON('sekki.json')
   </script>
   <script src="../all/sekki.js"></script>
+  <script src="/hello/js/setStyles.js"></script>
 </body>
 
 </html>

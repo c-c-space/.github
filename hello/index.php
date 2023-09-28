@@ -128,6 +128,7 @@
     colorSize()
     colorJSON('<?php echo $season . "/color.json"; ?>');
   </script>
+  <script src="/hello/js/setStyles.js"></script>
 </body>
 
 </html>
