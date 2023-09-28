@@ -108,7 +108,7 @@
     <button type="button" id="closeModal">×</button>
     <section id="about">
       <i><?php echo $date; ?></i>
-      <br>
+      <hr>
       <h3>
         <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)
         is <?php echo $description; ?>
