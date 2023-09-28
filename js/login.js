@@ -2,11 +2,6 @@
 
 // form#login から投稿された ポート番号・IPアドレス・OS等情報を ローカルストレージと月毎のCSVに追加
 
-const form = document.querySelector('form#login')
-form.addEventListener('submit', function() {
-  setLOG()
-}, false);
-
 function setLOG() {
   const hqdn = document.querySelector('#hqdn').textContent,
     ip = document.querySelector('#ip').textContent,

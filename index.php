@@ -11,6 +11,11 @@
   <script src="js/userMedia.js"></script>
   <script>
     menuJSON('index.json')
+
+    const form = document.querySelector('form#login')
+    form.addEventListener('submit', function() {
+      setLOG()
+    }, false);
   </script>
 
   <!--og:meta-->
@@ -113,7 +118,7 @@
     <time id="showTime" class="cc"></time>
     <script src="js/now.js"></script>
   </footer>
-  
+
   <script src="thankyou/hsl.js"></script>
   <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
   <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
