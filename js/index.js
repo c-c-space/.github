@@ -54,6 +54,7 @@ document.addEventListener('readystatechange', event => {
 
       const login = document.querySelector('#login')
       login.addEventListener('submit', function () {
+        preventDefault()
         setLOG()
       }, false)
 
