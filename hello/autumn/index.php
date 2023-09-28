@@ -7,6 +7,12 @@
   $thisDate = "August 8 - November 7";
   $title = $thisSeason . ' | ' . $thisDate;
   $description = "「あき」は草木が紅（あか）く染まる季節。";
+
+  mb_language("ja");
+  mb_internal_encoding("UTF-8");
+  
+  require('../all/greeting.php');
+  require('../all/24sekki.php');
   require('../head.php');
   ?>
 
