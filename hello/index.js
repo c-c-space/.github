@@ -23,7 +23,9 @@ document.addEventListener('readystatechange', event => {
       fetchText('readme.md', '#about')
     } else {
       const form = document.querySelector("#hello form");
-      form.addEventListener('submit', function() {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
         const selectVoice = voiceIndex.selectedIndex
