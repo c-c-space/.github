@@ -74,8 +74,8 @@
           <small>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
         </b>
       </h2>
-      <button type="button" id="submit-btn"></button>
     </section>
+    <button type="button" id="submit-btn"></button>
     <script src="js/hello.js"></script>
   </main>
 
