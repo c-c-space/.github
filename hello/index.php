@@ -6,7 +6,15 @@
   $title = 'Hello | creative-community.space';
   $description = "This is a Online Textboard that works with Web Speech API";
 
-  require('head.php');
+  mb_language("ja");
+  mb_internal_encoding("UTF-8");
+
+  require('all/greeting.php');
+  require('all/24sekki.php');
+
+  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
+  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
+
   $source_file = $season . "/" . $sekki . "/" . $timeframe . ".csv";
   $fp = fopen($source_file, 'a+b');
   $post = sizeof(file($source_file));
@@ -17,14 +25,33 @@
 
   fclose($fp);
   ?>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../js/menu.js"></script>
+  <script src="../js/modal.js"></script>
   <script src="index.js"></script>
   <script src="../js/login.js"></script>
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="<?php echo $url; ?>" property="og:url">
-  <meta content="<?php echo $url . $season ."/summary.png"; ?>" property="og:image">
-  <meta content="<?php echo $url . $season ."/summary.png"; ?>" name="twitter:image:src">
+  <meta content="<?php echo $url . $season . "/summary.png"; ?>" property="og:image">
+  <meta content="<?php echo $url . $season . "/summary.png"; ?>" name="twitter:image:src">
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title><?php echo $title; ?></title>
+  <meta content="<?php echo $title; ?>" property="og:title">
+  <meta content="<?php echo $description; ?>" name="description">
+  <meta content="<?php echo $description; ?>" name="og:description">
+  <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="../css/controls.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
   <style media="print">
     main,
