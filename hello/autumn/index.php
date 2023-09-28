@@ -56,6 +56,7 @@
   </dialog>
 
   <?php require('../controls.html'); ?>
+  <script src="/hello/js/controls.js"></script>
   <script type="text/javascript">
     colorSize()
     colorJSON('color.json')
