@@ -91,7 +91,7 @@
       <section id="howto"></section>
     </details>
 
-    <form method="post">
+    <form>
       <section>
         <?php require('js/form.html'); ?>
       </section>
