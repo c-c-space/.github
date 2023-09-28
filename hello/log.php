@@ -8,11 +8,9 @@
           <code>Pitch <?= h($row[3]) ?></code>
           <code>Rate <?= h($row[4]) ?></code>
         </p>
-        <p>
-          <button type="button" data-name="<?= h($row[1]) ?>" lang="<?= h($row[2]) ?>" data-pitch="<?= h($row[3]) ?>" data-rate="<?= h($row[4]) ?>" data-hello="<?= h($row[5]) ?>">
-            <?= h($row[0]) ?>
-          </button>
-        </p>
+        <button type="button" data-name="<?= h($row[1]) ?>" lang="<?= h($row[2]) ?>" data-pitch="<?= h($row[3]) ?>" data-rate="<?= h($row[4]) ?>" data-hello="<?= h($row[5]) ?>">
+          <?= h($row[0]) ?>
+        </button>
       </li>
     <?php endforeach; ?>
   <?php else : ?>
