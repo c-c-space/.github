@@ -14,7 +14,6 @@ function changeHidden() {
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
     const loginBtn = document.querySelector('#login-btn');
-    const helloForm = document.querySelector("#form");
 
     if (!localStorage.getItem('yourInfo')) {
       loginBtn.setAttribute('onclick', 'setLOG()');
@@ -23,7 +22,8 @@ document.addEventListener('readystatechange', event => {
       document.querySelector('#now .controls').remove()
       fetchText('readme.md', '#about')
     } else {
-      helloForm.addEventListener('submit', function () {
+      const form = document.querySelector("#hello form");
+      form.addEventListener('submit', function() {
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
         const selectVoice = voiceIndex.selectedIndex
@@ -59,13 +59,10 @@ document.addEventListener('readystatechange', event => {
         }
 
         submitThis()
-        thisText.innerText = ""
-
         setTimeout(() => {
           location.reload()
         }, 1500)
       })
-
       fetchText('readme.md', '#howto')
     }
   } else if (event.target.readyState === 'complete') {
