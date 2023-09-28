@@ -51,6 +51,12 @@ document.addEventListener('readystatechange', event => {
         changeHidden()
         environmentStream()
       }, false)
+
+      const login = document.querySelector('#login')
+      login.addEventListener('submit', function () {
+        setLOG()
+      }, false)
+
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
         changeHidden()
