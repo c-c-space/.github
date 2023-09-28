@@ -41,7 +41,7 @@ window.addEventListener('load', event => {
   speechAPI.appendChild(playBtn)
   speechAPI.appendChild(stopBtn)
 
-  const textToSpeech = document.querySelector('#hello section')
+  const textToSpeech = document.querySelector('#hello #speech')
   playBtn.addEventListener('click', function () {
     const uttr = new SpeechSynthesisUtterance(textToSpeech.innerText)
     uttr.voice = speechSynthesis

@@ -28,7 +28,7 @@
   <meta content="https://creative-community.space/ver/card.png" name="twitter:image:src">
 
   <?php require('ver/icon/all.html'); ?>
-  
+
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/controls.css" />
@@ -53,29 +53,31 @@
   <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
 
   <main id="hello" class="hsl">
-    <section>
-      <h1>
-        <?php require('hello/all/greeting.php'); ?>
-        <b>
-          <?php echo $greeting; ?>
-        </b>
-        <br>
-        IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
-      </h1>
-      <h2>
-        Thank you for visiting
-        <u data-id="website">The Website</u>
-        <b id="website" class="hide">
-          that
-          <u data-id="create">Creates</u>
-          <b id="create" class="hide">beautiful things through</b>
-          <u data-id="communicate">Communication</u>
-          <b id="communicate" class="hide">that everyone can do</b>
-          <small>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
-        </b>
-      </h2>
-    </section>
-    <button type="button" id="submit-btn"></button>
+    <article>
+      <section id="speech">
+        <h1>
+          <?php require('hello/all/greeting.php'); ?>
+          <b>
+            <?php echo $greeting; ?>
+          </b>
+          <br>
+          IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
+        </h1>
+        <h2>
+          Thank you for visiting
+          <u data-id="website">The Website</u>
+          <b id="website" class="hide">
+            that
+            <u data-id="create">Creates</u>
+            <b id="create" class="hide">beautiful things through</b>
+            <u data-id="communicate">Communication</u>
+            <b id="communicate" class="hide">that everyone can do</b>
+            <small>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
+          </b>
+        </h2>
+      </section>
+      <button type="button" id="submit-btn"></button>
+    </article>
     <script src="js/hello.js"></script>
   </main>
 
@@ -106,14 +108,14 @@
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script>
-    $(function () {
-      $("#hello u").on("click", function () {
+    $(function() {
+      $("#hello u").on("click", function() {
         let show = $(this).data("id");
         $("#" + show).show(1000);
       })
     });
   </script>
-  
+
   <div id="sketch"></div>
 
   <script src="thankyou/hsl.js"></script>
@@ -129,22 +131,22 @@
     }
 
     var isMobile = {
-      Android: function () {
+      Android: function() {
         return navigator.userAgent.match(/Android/i);
       },
-      BlackBerry: function () {
+      BlackBerry: function() {
         return navigator.userAgent.match(/BlackBerry/i);
       },
-      iOS: function () {
+      iOS: function() {
         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
       },
-      Opera: function () {
+      Opera: function() {
         return navigator.userAgent.match(/Opera Mini/i);
       },
-      Windows: function () {
+      Windows: function() {
         return navigator.userAgent.match(/IEMobile/i);
       },
-      any: function () {
+      any: function() {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
       }
     };
@@ -175,14 +177,14 @@
         autoclear: false,
         retina: 'auto',
 
-        setup: function () {
+        setup: function() {
           console.log('setup');
         },
-        update: function () {
+        update: function() {
           radius = 2 + abs(sin(this.millis * 0.002) * 25);
         },
 
-        touchmove: function () {
+        touchmove: function() {
           for (let i = this.touches.length - 1, touch; i >= 0; i--) {
             touch = this.touches[i];
             this.lineCap = 'round';
