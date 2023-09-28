@@ -116,11 +116,13 @@
     </section>
     <section id="color-size"></section>
   </dialog>
+  
   <?php require('controls.html'); ?>
   <script type="text/javascript">
     colorSize()
     colorJSON('<?php echo $season . "/color.json"; ?>');
   </script>
+  <script src="js/setStyles.js"></script>
 </body>
 
 </html>
