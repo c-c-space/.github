@@ -2,22 +2,20 @@
 
 // form#login から投稿された ポート番号・IPアドレス・OS等情報を ローカルストレージと月毎のCSVに追加
 
-window.addEventListener('load', function() {
-  const form = document.querySelector('form#login')
-  form.addEventListener('submit', setLOG(), false);
-}, false);
+const form = document.querySelector('form#login')
+form.addEventListener('submit', setLOG(), false);
 
 function setLOG() {
   const hqdn = document.querySelector('#hqdn').textContent,
-  ip = document.querySelector('#ip').textContent,
-  os = document.querySelector('#os').textContent;
+    ip = document.querySelector('#ip').textContent,
+    os = document.querySelector('#os').textContent;
 
   const yourInfo = {
-    port : hqdn,
-    ip : ip,
-    os : os
+    port: hqdn,
+    ip: ip,
+    os: os
   }
-  
+
   const yourJSON = JSON.stringify(yourInfo)
   localStorage.setItem('yourInfo', yourJSON)
 
@@ -31,13 +29,13 @@ function setLOG() {
       body: yourJSON
     })
 
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-    })
-    .catch(error => {
-      console.log(error)
-    });
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+      })
+      .catch(error => {
+        console.log(error)
+      });
   }
 
   submitLOG();
