@@ -189,6 +189,7 @@ h2 {
   #menu button,
   #collection,
   #login-btn,
+  #logAll,
   #now,
   #modal,
   .noprint {
@@ -218,15 +219,15 @@ h2 {
     padding: 1.5rem 1.5rem 1.5rem 0.5rem;
   }
 
+  #log #ko li {
+    break-before: page;
+    width: 100%;
+  }
+
   #log ul li p::after,
   #log ul li button::after {
     width: 100%;
     margin: 1rem 0;
-  }
-
-  #log ul li p::after {
-    content: attr(data-description);
-    font-size: 111%;
   }
 
   #log ul li button {
@@ -235,11 +236,5 @@ h2 {
     font-size: 125%;
     padding: 0;
     text-align: left;
-  }
-
-  #log ul li button::after {
-    content: attr(data-note);
-    font-size: 75%;
-    margin: 1rem 0;
   }
 }

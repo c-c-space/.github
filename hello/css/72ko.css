@@ -15,15 +15,6 @@
 }
 
 @media print {
-  #log section {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-  #log ul li {
-    break-inside: avoid;
-  }
 
   #hello #readme p {
     font-size: 90%;
