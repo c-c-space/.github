@@ -32,7 +32,7 @@ function sekkiIndex(obj) {
     button.setAttribute('data-name', sekki.name)
     button.setAttribute('data-note', sekki.note)
     button.setAttribute('data-description', sekki.description)
-    button.innerText = ' ' + sekki.yomi
+    button.innerText = sekki.name + ' ' + sekki.yomi
     ul.appendChild(li)
     li.appendChild(date)
     li.appendChild(button)
