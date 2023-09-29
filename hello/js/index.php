@@ -36,6 +36,7 @@
   <main id="hello">
     <form action="">
       <?php require('form.html'); ?>
+      <hr>
       <details id="recognition"></details>
       <details id="synthesis"></details>
     </form>
