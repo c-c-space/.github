@@ -1,6 +1,5 @@
-<details id="howto" class="folder hidden">
-  <summary><b>SpeechRecognition.js</b></summary>
-  <pre>
+<summary><b>SpeechRecognition.js</b></summary>
+<pre>
 <font color="red">// Web Speech API の 音声認識を設定</font>
 SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 let recognition = new SpeechRecognition();
@@ -81,5 +80,4 @@ voiceSelect.addEventListener('change', (event) => {
   const selectLang = voiceSelect.selectedIndex;
   recognition.lang = voiceSelect.options[selectLang].lang;
 });
-    </pre>
-</details>
+</pre>
