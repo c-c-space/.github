@@ -66,8 +66,10 @@
       On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.<br />
       この掲示板では、季節の移り変わりを表すため、投稿を二十四節気ごとに記録・表示しています。
     </p>
-    <input class="noprint" type="button" onclick="window.print()" value="WWW to Print">
-    <input class="noprint" type="button" onclick="changeHidden()" value="閉じる Close">
+    <p class="noprint">
+      <input style="display: block; float: left;" type="button" onclick="changeHidden()" value="閉じる Close">
+      <input style="display: block; float: right;" type="button" onclick="window.print()" value="WWW to Print">
+    </p>
   </main>
 
   <nav id="now">
@@ -77,7 +79,7 @@
       <input id="resume-btn" value="⏯" type="button" />
     </section>
     <button onclick="openModal()" type="button" hidden>?</button>
-    <select id="sekki">
+    <select id="sekki" hidden>
       <option selected disabled>View The Collection</option>
     </select>
   </nav>

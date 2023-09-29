@@ -133,11 +133,11 @@
   <dialog id="modal">
     <button type="button" id="closeModal">×</button>
     <section id="about">
+      <small><?php echo $date; ?></small>
       <h3>
         <?php echo $sekkiName; ?>
         <?php echo $sekki; ?>
       </h3>
-      <p><?php echo $description; ?></p>
       <p><?php echo $hello; ?></p>
     </section>
     <section id="color-size"></section>
