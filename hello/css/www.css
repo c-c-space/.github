@@ -1,82 +1,11 @@
-@page {
-  size: A5 portrait;
-}
-
 @media print {
-  html {
-    color: #000;
-    background: #fff;
-  }
-
-  body {
-    font-size: 3vw;
-  }
-
-  #menu,
-  #menu button,
-  #collection,
-  #login-btn,
-  #now,
-  #modal,
-  .noprint {
-    display: none;
-  }
-
-  #hello,
-  #log ul li p::after,
-  #log ul li button::after {
-    display: block;
-  }
-
   #log ul li,
   #hello {
     break-before: page;
   }
 
-  #log div {
-    position: relative;
-    mix-blend-mode: normal;
-    max-height: 95vh;
-  }
-
   #readme strong {
     font-size: 175%;
-  }
-
-  #log h2,
-  #readme {
-    font-size: 100%;
-  }
-
-  #log ul li {
-    break-inside: avoid;
-    font-size: 90%;
-    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
-  }
-
-  #log ul li p::after,
-  #log ul li button::after {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  #log ul li p::after {
-    content: attr(data-description);
-    font-size: 111%;
-  }
-
-  #log ul li button {
-    border: none;
-    border-radius: 0;
-    font-size: 125%;
-    padding: 0;
-    text-align: left;
-  }
-
-  #log ul li button::after {
-    content: attr(data-note);
-    font-size: 75%;
-    margin: 1rem 0;
   }
 
   #readme::after {
