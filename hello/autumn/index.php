@@ -56,9 +56,11 @@
   </dialog>
 
   <?php require('../controls.html'); ?>
+  <script src="../all/sekki.js"></script>
   <script type="text/javascript">
     colorSize()
     colorJSON('color.json')
+    colorJSON('sekki.json')
   </script>
   <script src="/hello/js/setStyles.js"></script>
 </body>
