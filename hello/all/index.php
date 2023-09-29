@@ -35,14 +35,6 @@
       <h2><?php echo $thisDescription; ?></h2>
     </div>
     <ul></ul>
-    <section class="controls">
-      <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
-      <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
-      <input type="button" class="color bgcolor" id="resume-btn" value="⏯">
-      <select hidden id="sekki">
-        <option selected disabled>View The Collection</option>
-      </select>
-    </section>
   </main>
 
   <main id="hello" hidden>
@@ -72,6 +64,17 @@
     <a style="display: block; float: right;" class="noprint" href="#" onclick="window.print();">WWW to Print</a>
     <input class="noprint" type="button" onclick="changeHidden()" value="閉じる Close">
   </main>
+
+  <nav id="now">
+    <section class="controls">
+      <input id="cancel-btn" value="⏹" type="button" />
+      <input id="pause-btn" value="⏸" type="button" />
+      <input id="resume-btn" value="⏯" type="button" />
+    </section>
+    <select id="sekki">
+      <option selected disabled>View The Collection</option>
+    </select>
+  </nav>
 
   <script src="sekki.js"></script>
   <script type="text/javascript">
