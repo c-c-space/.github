@@ -5,10 +5,10 @@
   <?php
   $title = 'Hello | creative-community.space';
   $thisDescription = "This is a Online Textboard that works with Web Speech API";
-  
+
   mb_language("ja");
   mb_internal_encoding("UTF-8");
-  
+
   require('all/greeting.php');
   require('all/24sekki.php');
   require('head.php');
@@ -28,8 +28,11 @@
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="<?php echo $url; ?>" property="og:url">
-  <meta content="<?php echo $url . $season ."/summary.png"; ?>" property="og:image">
-  <meta content="<?php echo $url . $season ."/summary.png"; ?>" name="twitter:image:src">
+  <meta content="<?php echo $url . $season . "/summary.png"; ?>" property="og:image">
+  <meta content="<?php echo $url . $season . "/summary.png"; ?>" name="twitter:image:src">
+
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/hello/css/index.css" />
 
   <style media="print">
     main,

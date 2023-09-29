@@ -18,6 +18,9 @@
   <meta content="<?php echo $url; ?>" property="og:url">
   <meta content="<?php echo $url; ?>summary.png" property="og:image">
   <meta content="<?php echo $url; ?>summary.png" name="twitter:image:src">
+
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/hello/css/index.css" />
 </head>
 
 <body>

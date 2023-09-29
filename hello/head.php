@@ -21,6 +21,4 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
 
 <link rel="stylesheet" href="/css/menu.css" />
-<link rel="stylesheet" href="/css/modal.css" />
 <link rel="stylesheet" href="/css/controls.css" />
-<link rel="stylesheet" href="/hello/css/index.css" />
