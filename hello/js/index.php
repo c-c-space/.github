@@ -5,8 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../js/menu.js"></script>
   <script type="text/javascript">
+    async function fetchHTML(url = '', query = '') {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          document.querySelector(query).innerHTML = html
+        })
+    }
+    
     fetchHTML('recognition.html', query = '#recognition')
     fetchHTML('synthesis.html', query = '#synthesis')
   </script>
