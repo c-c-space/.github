@@ -40,7 +40,7 @@
         <b><?php echo $thisSeason; ?></b>
       </h1>
       <h2>
-        <?php echo $description; ?><br />
+        <?php echo $thisDescription; ?><br />
         夏の真ん中、北半球では1年のうちで最も昼（日の出から日没まで）の時間が長い夏至は、日本の大部分で梅雨の最中で、あまり実感されない。
       </h2>
     </div>

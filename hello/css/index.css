@@ -13,12 +13,12 @@ h2,
 
 h1,
 h1 b,
-h2,
 #readme {
   font-size: 150%;
   font-weight: 500;
 }
 
+h2,
 h3,
 summary {
   font-size: 125%;
@@ -90,7 +90,6 @@ h3,
 #log div,
 #now {
   position: fixed;
-  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -102,6 +101,7 @@ h3,
   height: 100vh;
   max-height: -webkit-fill-available;
   mix-blend-mode: difference;
+  top: 0;
   z-index: 0;
 }
 
@@ -144,6 +144,7 @@ h3,
 
 #now {
   align-items: end;
+  bottom: 0;
   padding: 0.5rem;
   z-index: 100;
 }
