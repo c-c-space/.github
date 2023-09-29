@@ -46,7 +46,7 @@ function sekkiIndex(obj) {
       speechSynthesis.speak(uttr)
 
       const sekkiName = document.querySelector('#log h1 b')
-      sekkiName.innerText = this.dataset.name + this.innerText
+      sekkiName.innerText = this.innerText
 
       const sekkiDates = document.querySelector('#lastModified')
       sekkiDates.innerText = this.dataset.description
