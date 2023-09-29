@@ -31,7 +31,7 @@
       <select id="sekki">
         <option selected disabled>View The Collection</option>
       </select>
-      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
+      <label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label>
     </section>
     <div>
       <h1>
@@ -62,7 +62,7 @@
     colorJSON('color.json')
     sekkiJSON('sekki.json')
   </script>
-  <script src="/hello/js/setStyles.js"></script>
+  <script src="../js/setStyles.js"></script>
 </body>
 
 </html>
