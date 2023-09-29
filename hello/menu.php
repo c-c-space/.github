@@ -5,7 +5,7 @@
       <i>Speech to Text to Text to Speech</i>
       <b><?php echo $greeting; ?></b>
     </a>
-    <a href="/hello/<?php echo $season; ?>/color.php'">
+    <a href="/hello/<?php echo $season; ?>/color.php">
       <i>The Collection of Traditional Seasonal Colors of Japan</i>
       <b><?php echo $seasonName; ?> <?php echo $season; ?></b>
     </a>
