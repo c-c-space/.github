@@ -70,7 +70,9 @@
   #log ul li button {
     border: none;
     border-radius: 0;
+    font-size: 125%;
     padding: 0;
+    text-align: left;
   }
 
   #log ul li button::after {
