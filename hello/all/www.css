@@ -24,6 +24,7 @@
   }
 
   #log div,
+  #log div h2,
   #log ul,
   #log ul li {
     break-after: page;
