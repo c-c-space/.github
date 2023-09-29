@@ -8,6 +8,7 @@
 
 @media print {
   #menu,
+  #menu button,
   #login-btn,
   #now,
   #modal {
@@ -21,6 +22,10 @@
   html {
     color: #000;
     background: #fff;
+  }
+
+  #log div {
+    mix-blend-mode: normal;
   }
 
   body {
