@@ -37,7 +37,12 @@
     font-size: 3vw;
   }
 
-  #log h2 {
+  #readme strong {
+    font-size: 175%;
+  }
+
+  #log h2,
+  #readme {
     font-size: 111%;
   }
 
@@ -70,14 +75,6 @@
     content: attr(data-note);
     font-size: 75%;
     margin: 1rem 0;
-  }
-
-  #readme strong {
-    font-size: 170%;
-  }
-
-  #readme {
-    font-size: 125%;
   }
 
   #readme::after {
