@@ -34,9 +34,11 @@
 
 <body>
   <main id="hello">
-    <?php require('form.html'); ?>
-    <details id="recognition"></details>
-    <details id="synthesis"></details>
+    <form action="">
+      <?php require('form.html'); ?>
+      <details id="recognition"></details>
+      <details id="synthesis"></details>
+    </form>
   </main>
 
   <nav id="now" class="hidden">
