@@ -23,6 +23,7 @@
 
   <link rel="stylesheet" href="/css/modal.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
+  <link rel="stylesheet" href="/hello/all/www.css" media="print" />
 </head>
 
 <body>

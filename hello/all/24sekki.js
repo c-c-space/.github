@@ -71,7 +71,7 @@ function sekkiSekect(obj) {
   const optionAll = document.querySelectorAll("#sekki option");
   select.addEventListener('change', function() {
     const index = this.selectedIndex;
-    location.replace(optionAll[index].value);
+    location.assign(optionAll[index].value);
   });
 }
 
