@@ -126,7 +126,8 @@
     <button type="button" id="closeModal">×</button>
     <section id="about">
       <h3>
-        <?php echo $sekkiName; + ' ' + $sekki; ?>
+        <?php echo $sekkiName; ?>
+        <?php echo $sekki; ?>
       </h3>
       <p><?php echo $description; ?></p>
       <p><?php echo $hello; ?></p>
