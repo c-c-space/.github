@@ -72,11 +72,6 @@
     margin: 1rem 0;
   }
 
-  #hello #readme {
-    font-size: 3.33vw;
-    padding: 0 3.33vw 0 0;
-  }
-
   #readme::after {
     display: block;
     content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";

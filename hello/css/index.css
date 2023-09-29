@@ -10,10 +10,14 @@ h2,
   font-family: "ipag", "Arial Narrow", monospace;
 }
 
+#readme strong {
+  font-size: 200%;
+  font-weight: 500;
+}
+
 h1,
 h1 b,
-#readme,
-#readme strong {
+#readme {
   font-size: 150%;
   font-weight: 500;
 }
