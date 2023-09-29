@@ -33,14 +33,7 @@
       <h2><?php echo $description; ?></h2>
     </div>
     <ul id="ko"></ul>
-    <?php
-    require_once('../../all/alllog.php');
-    function h($str)
-    {
-      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-    }
-    require_once('../../log.php');
-    ?>
+    <?php require_once('../../all/alllog.php');?>
   </main>
 
   <main id="hello" hidden>
