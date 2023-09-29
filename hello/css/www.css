@@ -1,6 +1,5 @@
 @media print {
-  #log ul li,
-  #hello {
+  #log ul li {
     break-before: page;
   }
 

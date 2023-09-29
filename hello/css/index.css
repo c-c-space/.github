@@ -192,6 +192,8 @@ h2 {
   #logAll,
   #now,
   #modal,
+  #readme input,
+  #readme small,
   .noprint {
     display: none;
   }
@@ -219,8 +221,7 @@ h2 {
     padding: 1.5rem 1.5rem 1.5rem 0.5rem;
   }
 
-  #log #ko li {
-    break-before: page;
+  #log ul li {
     width: 100%;
   }
 
@@ -236,5 +237,9 @@ h2 {
     font-size: 125%;
     padding: 0;
     text-align: left;
+  }
+
+  #hello {
+    break-before: page;
   }
 }
