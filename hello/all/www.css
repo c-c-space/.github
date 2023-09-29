@@ -72,8 +72,12 @@
     margin: 1rem 0;
   }
 
+  #readme strong {
+    font-size: 175%;
+  }
+
   #readme {
-    font-size: 111%;
+    font-size: 125%;
   }
 
   #readme::after {
