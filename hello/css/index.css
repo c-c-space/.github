@@ -40,7 +40,8 @@ summary {
 }
 
 #log h1 code,
-#log h2 span {
+#log h2 span,
+#readme strong {
   display: block;
   line-height: 125%;
 }
