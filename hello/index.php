@@ -117,11 +117,10 @@
   <dialog id="modal">
     <button type="button" id="closeModal">×</button>
     <section id="about">
-      <i><?php echo $date; ?></i>
-      <hr>
+      <small><?php echo $date; ?></small>
       <h3>
         <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)
-        is <?php echo $thisDescription; ?>
+        <?php echo description; ?>
       </h3>
       <p><?php echo $hello; ?></p>
     </section>
