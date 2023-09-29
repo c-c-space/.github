@@ -88,12 +88,13 @@
   }
 
   #readme::after {
-    white-space: pre-wrap;
+    display: block;
     content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
     font-size: 75%;
     font-family: "ipag", monospace;
     transform: scale(1, 1.25);
-    margin-left: 75%;
-    height: 100vh;
+    margin-top: 2ewm;
+    width: 100%;
+    white-space: pre-wrap;
   }
 }
