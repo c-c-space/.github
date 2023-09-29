@@ -35,11 +35,6 @@
     <ul id="ko"></ul>
     <?php
     require_once('../../all/alllog.php');
-    function h($str)
-    {
-      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-    }
-    require_once('../../log.php');
     ?>
   </main>
 
