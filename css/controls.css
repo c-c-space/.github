@@ -100,6 +100,7 @@ button:active {
 
 #hello form label,
 .range {
+  display: block;
   margin: 0.5rem 0;
 }
 
@@ -136,7 +137,6 @@ button:active {
 }
 
 .range label {
-  display: inline-block;
   font-size: 111%;
 }
 
