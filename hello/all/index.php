@@ -70,7 +70,7 @@
     </p>
     <hr>
     <a style="display: block; float: right;" class="noprint" href="#" onclick="window.print();">WWW to Print</a>
-    <input class="noprint" type="button" onclick="ChangeHidden()" value="閉じる Close">
+    <input class="noprint" type="button" onclick="changeHidden()" value="閉じる Close">
   </main>
 
   <script src="sekki.js"></script>
@@ -80,7 +80,7 @@
     sekkiJSON('../autumn/sekki.json');
     sekkiJSON('../winter/sekki.json');
 
-    function ChangeHidden() {
+    function changeHidden() {
       const mainAll = document.querySelectorAll('main');
       mainAll.forEach(main => {
         if (main.hidden == false) {
