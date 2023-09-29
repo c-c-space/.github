@@ -98,8 +98,11 @@ button:active {
   padding: 0 1rem;
 }
 
-#next,
 .range {
+  margin: 0.5rem 0;
+}
+
+#next {
   margin: 1rem 0;
 }
 
