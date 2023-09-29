@@ -72,6 +72,10 @@
     margin: 1rem 0;
   }
 
+  #readme {
+    font-size: 111%;
+  }
+
   #readme::after {
     display: block;
     content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
