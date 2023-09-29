@@ -239,7 +239,8 @@ h2 {
     text-align: left;
   }
 
-  #hello {
+  #hello,
+  #logAll {
     break-before: page;
   }
 }
