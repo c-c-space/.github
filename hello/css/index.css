@@ -95,6 +95,10 @@ h3,
   width: 100%;
 }
 
+h2 {
+  max-width: 750px;
+}
+
 #log div {
   display: grid;
   place-items: center;
