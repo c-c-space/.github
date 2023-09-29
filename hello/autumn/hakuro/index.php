@@ -35,6 +35,7 @@
     <ul id="ko"></ul>
     <?php
     require_once('../../all/alllog.php');
+    require_once('../../log.php');
     ?>
   </main>
 
@@ -130,7 +131,8 @@
     <button type="button" id="closeModal">×</button>
     <section id="about">
       <h3>
-        <?php echo $sekkiName + ' ' + $sekki; ?>
+        <?php echo $sekkiName; ?>
+        <?php echo $sekki; ?>
       </h3>
       <p><?php echo $description; ?></p>
       <p><?php echo $hello; ?></p>
@@ -142,7 +144,7 @@
   <script src="../../all/72ko.js"></script>
   <script type="text/javascript">
     colorSize()
-    colorJSON('color.json')
+    colorJSON('../color.json')
     koJSON('ko.json')
 
     function changeHidden() {
@@ -156,6 +158,7 @@
       })
     };
   </script>
+  <script src="../../js/log.js"></script>
   <script src="../../js/setStyles.js"></script>
 </body>
 

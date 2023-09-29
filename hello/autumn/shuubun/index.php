@@ -118,7 +118,6 @@
         める
       </p>
     </section>
-    <hr>
     <?php require('../../all/72ko.html'); ?>
   </main>
 
