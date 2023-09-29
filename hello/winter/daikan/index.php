@@ -1,104 +1,168 @@
-<?php
-$season = "winter";
-$sekki = "daikan";
-$seasonName = "冬";
-$sekkiName = "大寒";
-$date = "January 20 - February 3";
-$description = "Coldest time of the year";
-$hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
+<!DOCTYPE html>
+<html lang="ja">
 
-$title = $sekkiName .' | '. $date;
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
-require_once('../../all/head.php');
-?>
-
-<main id="hello" hidden>
-  <section id="readme">
-    <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
-    <p>
-      <small>1月20日 ~ 1月24日頃</small><br/>
-      <ruby>
-        蕗 <rp>(</rp><rt>ふき</rt><rp>)</rp>
-      </ruby>
-      の
-      <ruby>
-        薹 <rp>(</rp><rt>とう</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        蕾 <rp>(</rp><rt>つぼみ</rt><rp>)</rp>
-      </ruby>
-      を
-      <ruby>
-        出 <rp>(</rp><rt>だ</rt><rp>)</rp>
-      </ruby>
-      す
-    </p>
-    <p>
-      <small>1月25日 ~ 1月29日頃</small><br/>
-      <ruby>
-        沢 <rp>(</rp><rt>さわ</rt><rp>)</rp>
-      </ruby>
-      に
-      <ruby>
-        氷 <rp>(</rp><rt>こおり</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        厚 <rp>(</rp><rt>あつ</rt><rp>)</rp>
-      </ruby>
-      く
-      <ruby>
-        張 <rp>(</rp><rt>は</rt><rp>)</rp>
-      </ruby>
-      りつめる
-    </p>
-    <p>
-      <small>1月30日 ~ 2月3日頃</small><br/>
-      <ruby>
-        鶏 <rp>(</rp><rt>にわとり</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        卵 <rp>(</rp><rt>たまご</rt><rp>)</rp>
-      </ruby>
-      を
-      <ruby>
-        産 <rp>(</rp><rt>う</rt><rp>)</rp>
-      </ruby>
-      み
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
-  </section>
-  <hr>
-  <?php require('../../all/72ko.html');?>
-</main>
-
-<main id="log">
-  <button type="button" id="enter-btn" onClick="ChangeHidden()">七十二候 72 kō</button>
-  <hr>
-  <div>
-    <h1>
-      <b><?php echo $sekkiName;?> <?php echo $sekki;?></b><br/>
-      <code id="lastModified"><?php echo $date;?></code>
-    </h1>
-    <h2><?php echo $description;?></h2>
-  </div>
-  <section>
-    <ul id="ko"></ul>
-  </section>
+<head>
   <?php
-  function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-  }
-  require('../../all/log.php');
-  ?>
-</main>
+  $datetime = date('01-20');
+  require_once('../../all/24sekki.php');
+  require_once('../../all/greeting.php');
 
-<?php require('../../all/controls.html'); ?>
-<?php require('../../all/sekki.php'); ?>
+  $title = $sekkiName . ' | ' . $date;
+  $thisDescription = $description . ' | ' . $hello;
+
+  require_once('../../head.php');
+  ?>
+  <meta content="<?php echo $url; ?>" property="og:url">
+
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/hello/css/index.css" />
+</head>
+
+<body>
+  <?php require('../../menu.php'); ?>
+
+  <main id="log">
+    <button type="button" onclick="changeHidden()" id="login-btn">
+      七十二候 72 kō
+    </button>
+    <div>
+      <h1>
+        <b><?php echo $sekkiName; ?> <?php echo $sekki; ?></b><br />
+        <code id="lastModified"><?php echo $date; ?></code>
+      </h1>
+      <h2><?php echo $description; ?></h2>
+    </div>
+    <ul id="ko"></ul>
+    <?php
+    require_once('../../all/alllog.php');
+    require_once('../../log.php');
+    ?>
+  </main>
+
+  <main id="hello" hidden>
+    <section id="readme">
+      <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
+      <p>
+        <small>1月20日 ~ 1月24日頃</small>
+        <br />
+        <ruby>
+          蕗 <rp>(</rp>
+          <rt>ふき</rt>
+          <rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          薹 <rp>(</rp>
+          <rt>とう</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          蕾 <rp>(</rp>
+          <rt>つぼみ</rt>
+          <rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          出 <rp>(</rp>
+          <rt>だ</rt>
+          <rp>)</rp>
+        </ruby>
+        す
+      </p>
+      <p>
+        <small>1月25日 ~ 1月29日頃</small>
+        <br />
+        <ruby>
+          沢 <rp>(</rp>
+          <rt>さわ</rt>
+          <rp>)</rp>
+        </ruby>
+        に
+        <ruby>
+          氷 <rp>(</rp>
+          <rt>こおり</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          厚 <rp>(</rp>
+          <rt>あつ</rt>
+          <rp>)</rp>
+        </ruby>
+        く
+        <ruby>
+          張 <rp>(</rp>
+          <rt>は</rt>
+          <rp>)</rp>
+        </ruby>
+        りつめる
+      </p>
+      <p>
+        <small>1月30日 ~ 2月3日頃</small>
+        <br />
+        <ruby>
+          鶏 <rp>(</rp>
+          <rt>にわとり</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          卵 <rp>(</rp>
+          <rt>たまご</rt>
+          <rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          産 <rp>(</rp>
+          <rt>う</rt>
+          <rp>)</rp>
+        </ruby>
+        み
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
+    </section>
+    <?php require('../../all/72ko.html'); ?>
+  </main>
+
+  <dialog id="modal">
+    <button type="button" id="closeModal">×</button>
+    <section id="about">
+      <h3>
+        <?php echo $sekkiName; ?>
+        <?php echo $sekki; ?>
+      </h3>
+      <p><?php echo $description; ?></p>
+      <p><?php echo $hello; ?></p>
+    </section>
+    <section id="color-size"></section>
+  </dialog>
+
+  <?php require('../../controls.html'); ?>
+  <script src="../../all/72ko.js"></script>
+  <script type="text/javascript">
+    colorSize()
+    colorJSON('../color.json')
+    koJSON('ko.json')
+
+    function changeHidden() {
+      const mainAll = document.querySelectorAll('main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          main.hidden = true;
+        } else {
+          main.hidden = false;
+        }
+      })
+    };
+  </script>
+  <script src="../../js/log.js"></script>
+  <script src="../../js/setStyles.js"></script>
+</body>
+
+</html>

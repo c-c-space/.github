@@ -25,6 +25,7 @@
   require('head.php');
   ?>
   <script src="index.js"></script>
+  <script src="js/log.js"></script>
   <script src="../js/login.js"></script>
 
   <!--for Twitter-->
@@ -129,12 +130,12 @@
   </dialog>
 
   <?php require('controls.html'); ?>
-  <script src="/hello/js/controls.js"></script>
+  <script src="js/controls.js"></script>
   <script type="text/javascript">
     colorSize()
     colorJSON('<?php echo $season . "/color.json"; ?>');
   </script>
-  <script src="/hello/js/setStyles.js"></script>
+  <script src="js/setStyles.js"></script>
 </body>
 
 </html>

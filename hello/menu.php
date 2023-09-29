@@ -5,14 +5,13 @@
       <i>Speech to Text to Text to Speech</i>
       <b><?php echo $greeting; ?></b>
     </a>
+    <a href="/hello/<?php echo $season; ?>/">
+      <i><?php echo $seasonDate; ?></i>
+      <b><?php echo $seasonName; ?> <?php echo $season; ?></b>
+    </a>
     <a href="/hello/<?php echo $season; ?>/color.php">
       <i>The Collection of Traditional Seasonal Colors of Japan</i>
       <b><?php echo $seasonName; ?> <?php echo $season; ?></b>
-    </a>
-    <a href="/hello/<?php echo $season; ?>/<?php echo $sekki; ?>/">
-      <i>Now is the season named</i>
-      <b><?php echo $sekkiName; ?></b>
-      <u><?php echo $sekki; ?></u>
     </a>
   </menu>
 </header>

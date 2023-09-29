@@ -1,8 +1,8 @@
 'use strict'
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
   if(!localStorage.getItem('yourInfo')) {
-    const removeAll = document.querySelectorAll('#log section')
+    const removeAll = document.querySelectorAll('#log ul')
     for (const i of removeAll) {
       i.remove()
     }
@@ -34,20 +34,3 @@ window.addEventListener('load', (event) => {
   lastModified.innerHTML =
   'Last Modified <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>'
 });
-
-// 発話の停止・一時停止・再開
-const cancelBtn = document.querySelector('#cancel-btn')
-const pauseBtn = document.querySelector('#pause-btn')
-const resumeBtn = document.querySelector('#resume-btn')
-
-cancelBtn.addEventListener('click', function () {
-  speechSynthesis.cancel()
-})
-
-pauseBtn.addEventListener('click', function () {
-  speechSynthesis.pause()
-})
-
-resumeBtn.addEventListener('click', function () {
-  speechSynthesis.resume()
-})

@@ -1,24 +1,50 @@
-<?php
-$season = "summer";
-$sekki = "taisho";
-$seasonName = "夏";
-$sekkiName = "大暑";
-$date = "July 23 - August 7";
-$description = "Hottest time of the year";
-$hello = "最も暑い節という意味だが実際は次の節の方が暑い。学校は夏休みに入り、空には雲の峰が高々とそびえるようになる。夏の土用の時期。";
+<!DOCTYPE html>
+<html lang="ja">
 
-$title = $sekkiName .' | '. $date;
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
+<head>
+  <?php
+  $datetime = date('07-23');
+  require_once('../../all/24sekki.php');
+  require_once('../../all/greeting.php');
 
-require_once('../../all/head.php');
-?>
+  $title = $sekkiName . ' | ' . $date;
+  $thisDescription = $description . ' | ' . $hello;
 
-<main id="hello" hidden>
-  <section id="readme">
-    <input type="button" class="color bgcolor" onclick="ChangeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
-    <p>
-      <small>7月23日 ~ 7月27日頃</small><br/>
+  require_once('../../head.php');
+  ?>
+  <meta content="<?php echo $url; ?>" property="og:url">
+
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/hello/css/index.css" />
+</head>
+
+<body>
+  <?php require('../../menu.php'); ?>
+
+  <main id="log">
+    <button type="button" onclick="changeHidden()" id="login-btn">
+      七十二候 72 kō
+    </button>
+    <div>
+      <h1>
+        <b><?php echo $sekkiName; ?> <?php echo $sekki; ?></b><br />
+        <code id="lastModified"><?php echo $date; ?></code>
+      </h1>
+      <h2><?php echo $description; ?></h2>
+    </div>
+    <ul id="ko"></ul>
+    <?php
+    require_once('../../all/alllog.php');
+    require_once('../../log.php');
+    ?>
+  </main>
+
+  <main id="hello" hidden>
+    <section id="readme">
+      <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
+      <p>
+      <small>7月23日 ~ 7月27日頃</small>
+      <br/>
       <ruby>
         桐 <rp>(</rp><rt>きり</rt><rp>)</rp>
       </ruby>
@@ -37,7 +63,8 @@ require_once('../../all/head.php');
       をつける
     </p>
     <p>
-      <small>7月28日 ~ 8月1日頃</small><br/>
+      <small>7月28日 ~ 8月1日頃</small>
+      <br/>
       <ruby>
         土 <rp>(</rp><rt>つち</rt><rp>)</rp>
       </ruby>
@@ -52,7 +79,8 @@ require_once('../../all/head.php');
       くなる
     </p>
     <p>
-      <small>8月2日 ~ 8月7日頃</small><br/>
+      <small>8月2日 ~ 8月7日頃</small>
+      <br/>
       <ruby>
         時 <rp>(</rp><rt>とき</rt><rp>)</rp>
       </ruby>
@@ -66,33 +94,43 @@ require_once('../../all/head.php');
       </ruby>
       る
     </p>
-  </section>
-  <hr>
-  <?php require('../../all/72ko.html');?>
-</main>
+    </section>
+    <?php require('../../all/72ko.html'); ?>
+  </main>
 
-<main id="log">
-  <button type="button" id="enter-btn" onClick="ChangeHidden()">七十二候 72 kō</button>
-  <hr>
-  <div>
-    <h1>
-      <b>
-        <?php echo $sekkiName;?> <?php echo $sekki;?>
-      </b><br/>
-      <code id="lastModified"><?php echo $date;?></code>
-    </h1>
-    <h2><?php echo $description;?></h2>
-  </div>
-  <section>
-    <ul id="ko"></ul>
-  </section>
-  <?php
-  function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-  }
-  require('../../all/log.php');
-  ?>
-</main>
+  <dialog id="modal">
+    <button type="button" id="closeModal">×</button>
+    <section id="about">
+      <h3>
+        <?php echo $sekkiName; ?>
+        <?php echo $sekki; ?>
+      </h3>
+      <p><?php echo $description; ?></p>
+      <p><?php echo $hello; ?></p>
+    </section>
+    <section id="color-size"></section>
+  </dialog>
 
-<?php require('../../all/controls.html'); ?>
-<?php require('../../all/sekki.php'); ?>
+  <?php require('../../controls.html'); ?>
+  <script src="../../all/72ko.js"></script>
+  <script type="text/javascript">
+    colorSize()
+    colorJSON('../color.json')
+    koJSON('ko.json')
+
+    function changeHidden() {
+      const mainAll = document.querySelectorAll('main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          main.hidden = true;
+        } else {
+          main.hidden = false;
+        }
+      })
+    };
+  </script>
+  <script src="../../js/log.js"></script>
+  <script src="../../js/setStyles.js"></script>
+</body>
+
+</html>
