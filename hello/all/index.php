@@ -79,7 +79,7 @@
     </select>
   </nav>
 
-  <script src="sekki.js"></script>
+  <script src="24sekki.js"></script>
   <script type="text/javascript">
     sekkiJSON('../spring/sekki.json');
     sekkiJSON('../summer/sekki.json');
