@@ -23,9 +23,9 @@
     display: block;
   }
 
-  #log div,
-  #log ul li {
-    break-after: page;
+  #log ul li,
+  #hello {
+    break-before: page;
   }
 
   #log div {
@@ -73,7 +73,7 @@
   }
 
   #readme strong {
-    font-size: 155%;
+    font-size: 170%;
   }
 
   #readme {
