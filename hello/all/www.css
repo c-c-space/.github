@@ -12,7 +12,8 @@
   #menu button,
   #login-btn,
   #now,
-  #modal {
+  #modal,
+  .noprint {
     display: none;
   }
 
@@ -81,28 +82,18 @@
     margin: 1rem 0;
   }
 
-  #hello::before {
-    white-space: pre-wrap;
-    content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
-    font-size: 75%;
-    font-family: "ipag", monospace;
-    transform: scale(1, 1.25);
-    margin-left: 1.25rem;
-    height: 100vh;
-  }
-
   #hello #readme {
     font-size: 3.33vw;
     padding: 0 3.33vw 0 0;
   }
 
-  #hello #readme::after {
-    content: "creative-community.space/hello/";
-    display: block;
-    font-family: "ipag", monospace;
+  #readme::after {
+    white-space: pre-wrap;
+    content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
     font-size: 75%;
-    font-weight: 500;
+    font-family: "ipag", monospace;
     transform: scale(1, 1.25);
-    margin: 7.5vw 0 0;
+    margin-left: 75%;
+    height: 100vh;
   }
 }

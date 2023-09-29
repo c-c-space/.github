@@ -19,7 +19,8 @@ h1 b,
 
 h2,
 h3,
-summary {
+summary,
+#readme strong {
   font-size: 125%;
   font-weight: 500;
 }
@@ -32,6 +33,11 @@ summary {
 #log h2 span {
   font-size: 55%;
   word-break: break-all;
+}
+
+#readme strong,
+#readme p {
+  line-height: 150%;
 }
 
 #log h1 code,
