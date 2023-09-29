@@ -8,8 +8,13 @@
     background: #fff;
   }
 
+  body {
+    font-size: 3vw;
+  }
+
   #menu,
   #menu button,
+  #collection,
   #login-btn,
   #now,
   #modal,
@@ -31,10 +36,7 @@
   #log div {
     position: relative;
     mix-blend-mode: normal;
-  }
-
-  body {
-    font-size: 3vw;
+    max-height: 95vh;
   }
 
   #readme strong {
