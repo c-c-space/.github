@@ -2,11 +2,12 @@
   size: A5 portrait;
 }
 
-@page :first {
-  margin-left: 1rem;
-}
-
 @media print {
+  html {
+    color: #000;
+    background: #fff;
+  }
+
   #menu,
   #menu button,
   #login-btn,
@@ -36,11 +37,6 @@
     position: relative;
   }
 
-  html {
-    color: #000;
-    background: #fff;
-  }
-
   #log div {
     mix-blend-mode: normal;
   }
@@ -54,6 +50,7 @@
   }
 
   #log ul li {
+    break-inside: avoid;
     font-size: 90%;
     padding: 1.5rem 1.5rem 1.5rem 0.5rem;
     height: 100vh;

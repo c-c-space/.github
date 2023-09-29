@@ -1,15 +1,5 @@
-#hello #readme {
-  margin: 0;
-}
-
-@media screen and (max-width: 750px) {
-  #hello #readme {
-    margin: 0;
-  }
-}
-
 @page {
-  size: A5;
+  size: A5 portrait;
 }
 
 @page :right {
@@ -31,7 +21,7 @@
     margin: 0;
   }
 
-  #log section ul li {
+  #log ul li {
     break-inside: avoid;
   }
 
@@ -57,14 +47,14 @@
     text-decoration: underline;
   }
 
-  #log .collection::before {
+  #log #collection::before {
     content: "";
     display: block;
     width: 100%;
     height: 100vh;
   }
 
-  #log .collection ul li {
+  #log #collection li {
     font-size: 90%;
     padding: 1rem 1.5rem;
     margin: 0;
