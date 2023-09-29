@@ -98,10 +98,13 @@ button:active {
   padding: 0 1rem;
 }
 
-#hello form label,
 .range {
-  display: block;
   margin: 0.5rem 0;
+}
+
+#hello form label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
 }
 
 #next {
