@@ -60,7 +60,7 @@
   <script type="text/javascript">
     colorSize()
     colorJSON('color.json')
-    colorJSON('sekki.json')
+    sekkiJSON('sekki.json')
   </script>
   <script src="/hello/js/setStyles.js"></script>
 </body>

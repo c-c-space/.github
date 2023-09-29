@@ -81,7 +81,8 @@ h3,
 }
 
 #login-btn,
-#log ul {
+#log ul,
+#collection {
   position: relative;
   z-index: 10;
 }
