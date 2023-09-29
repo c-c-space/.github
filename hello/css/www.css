@@ -4,7 +4,7 @@
   }
 
   #readme strong {
-    font-size: 175%;
+    font-size: 170%;
   }
 
   #log ul li p::after {
@@ -29,7 +29,7 @@
     font-size: 75%;
     font-family: "ipag", monospace;
     transform: scale(1, 1.25);
-    margin-top: 2ewm;
+    margin-top: 2rem;
     width: 100%;
     white-space: pre-wrap;
   }
