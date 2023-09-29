@@ -31,8 +31,7 @@
       <select id="sekki">
         <option selected disabled>View The Collection</option>
       </select>
-      <br>
-      <label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label>
+      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
     </section>
     <div>
       <h1>
