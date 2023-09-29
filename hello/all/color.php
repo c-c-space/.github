@@ -1,34 +1,22 @@
-<?php
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-require('../all/greeting.php');
-
-$title =  '日本の伝統的な季節の色';
-$description = "The Collection of Traditional Seasonal Colors of Japan";
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no" />
-  <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
-  <meta property="og:title" content="<?php echo $title; ?>" />
-  <meta property="og:site_name" content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
-  <meta property="og:url" content="<?php echo $url; ?>" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta property="og:image" content="<?php echo $url; ?>summary.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
+  <?php
+  $title = '日本の伝統的な季節の色';
+  $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
+
+  require('../head.php');
+  require('../all/greeting.php');
+  ?>
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="<?php echo $url; ?>" property="og:url">
+  <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
+  <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
+
   <link rel="stylesheet" href="../css/colors.css" />
-  <link rel="icon" href="/ver/icon.png" type="image/png">
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
 
 <body>
@@ -42,9 +30,9 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
       </ruby>
     </h1>
     <code id="hex"></code>
-    <p id="note"><?php echo $description; ?></p>
+    <p id="note"><?php echo $thisDescription; ?></p>
     <p id="description" class="noprint">
-      <small>ウェブサイトを出力する（A5横サイズ・余白なし推奨）</small><br/>
+      <small>ウェブサイトを出力する</small>
       <a href="#" onclick="window.print();">WWW to Print</a>
       (Recommended to borderless printing)
     </p>

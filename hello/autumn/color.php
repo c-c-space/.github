@@ -3,23 +3,23 @@
 
 <head>
   <?php
-$season = "autumn";
-$thisSeason = "秋";
-$thisDate = "August 8 - November 7";
-$title = '日本の伝統的な'. $thisSeason . 'の色';
-$thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
+  $season = "autumn";
+  $thisSeason = "秋";
+  $thisDate = "August 8 - November 7";
+  $title = '日本の伝統的な' . $thisSeason . 'の色';
+  $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
 
-require('../head.php');
-require('../all/greeting.php');
-?>
+  require('../head.php');
+  require('../all/greeting.php');
+  ?>
 
-<!--for Twitter-->
-<meta content="summary_large_image" name="twitter:card">
-<meta content="<?php echo $url; ?>" property="og:url">
-<meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
-<meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="<?php echo $url; ?>" property="og:url">
+  <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
+  <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
 
-<link rel="stylesheet" href="../css/colors.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
 </head>
 
 <body>
@@ -28,7 +28,7 @@ require('../all/greeting.php');
       <ruby>
         <b id="name"><?php echo $title; ?></b>
         <rp>(</rp>
-        <rt id="yomi"><?php echo $season .' | '. $thisDate; ?></rt>
+        <rt id="yomi"><?php echo $season . ' | ' . $thisDate; ?></rt>
         <rp>)</rp>
       </ruby>
     </h1>
@@ -50,7 +50,8 @@ require('../all/greeting.php');
   </main>
   <script src="../all/colors.js"></script>
   <script type="text/javascript">
-  indexJSON('color.json');
+    indexJSON('color.json');
   </script>
 </body>
+
 </html>
