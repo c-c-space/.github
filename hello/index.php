@@ -119,7 +119,7 @@
     <section id="about">
       <small><?php echo $date; ?></small>
       <h3>
-        <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)
+        <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)<br/>
         <?php echo description; ?>
       </h3>
       <p><?php echo $hello; ?></p>
