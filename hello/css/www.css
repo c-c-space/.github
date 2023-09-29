@@ -12,6 +12,11 @@
     font-size: 111%;
   }
 
+  #log h2,
+  #readme {
+    font-size: 100%;
+  }
+
   #log ul li button::after {
     content: attr(data-note);
     font-size: 75%;

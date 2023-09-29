@@ -209,11 +209,6 @@ h2 {
     max-height: 95vh;
   }
 
-  #log h2,
-  #readme {
-    font-size: 100%;
-  }
-
   #log ul li {
     break-inside: avoid;
     font-size: 90%;
