@@ -9,18 +9,20 @@
   mb_language("ja");
   mb_internal_encoding("UTF-8");
 
-  require('all/greeting.php');
+  //現在の日時を取得
+  $datetime = date('m-d');
   require('all/24sekki.php');
-  require('head.php');
+  require('all/greeting.php');
+
   $source_file = $season . "/" . $sekki . "/" . $timeframe . ".csv";
   $fp = fopen($source_file, 'a+b');
   $post = sizeof(file($source_file));
-
   while ($row = fgetcsv($fp)) {
     $rows[] = $row;
   }
-
   fclose($fp);
+
+  require('head.php');
   ?>
   <script src="index.js"></script>
   <script src="../js/login.js"></script>

@@ -8,6 +8,8 @@
   $title = $thisSeason . ' | ' . $thisDate;
   $thisDescription = "「ふゆ」は万物が冷ゆ（ひゆ）る季節。";
 
+  //現在の日時を取得
+  $datetime = date('m-d');
   require('../all/greeting.php');
   require('../all/24sekki.php');
   require('../head.php');

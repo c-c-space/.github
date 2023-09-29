@@ -3,23 +3,22 @@
 
 <head>
   <?php
-$season = "summer";
-$thisSeason = "夏";
-$thisDate = "May 5 - August 7";
-$title = '日本の伝統的な' . $thisSeason . 'の色';
-$thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
+  $season = "summer";
+  $thisSeason = "夏";
+  $thisDate = "May 5 - August 7";
+  $title = '日本の伝統的な' . $thisSeason . 'の色';
+  $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
 
-require('../head.php');
-require('../all/greeting.php');
-?>
+  require('../head.php');
+  ?>
 
-<!--for Twitter-->
-<meta content="summary_large_image" name="twitter:card">
-<meta content="<?php echo $url; ?>" property="og:url">
-<meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
-<meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="<?php echo $url; ?>" property="og:url">
+  <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
+  <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
 
-<link rel="stylesheet" href="../css/colors.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
 </head>
 
 <body>
@@ -37,7 +36,6 @@ require('../all/greeting.php');
     <p id="description" class="noprint">
       <small>ウェブサイトを出力する</small>
       <a href="#" onclick="window.print();">WWW to Print</a>
-      (Recommended to borderless printing)
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>

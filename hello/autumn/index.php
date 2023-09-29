@@ -8,8 +8,10 @@
   $title = $thisSeason . ' | ' . $thisDate;
   $thisDescription = "「あき」は草木が紅（あか）く染まる季節。";
 
-  require('../all/greeting.php');
+  //現在の日時を取得
+  $datetime = date('m-d');
   require('../all/24sekki.php');
+  require('../all/greeting.php');
   require('../head.php');
   ?>
 

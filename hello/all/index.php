@@ -3,13 +3,16 @@
 
 <head>
   <?php
+  //現在の日時を取得
+  $datetime = date('m-d');
+  require('24sekki.php');
+  require('greeting.php');
+
   $sekki24 = "二十四節気";
   $sekkiDate = "24 Sekki";
   $title = $sekki24 . ' | ' . $sekkiDate;
   $thisDescription = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
 
-  require('greeting.php');
-  require('24sekki.php');
   require('../head.php');
   ?>
 
@@ -28,7 +31,7 @@
 
   <main id="log">
     <button type="button" onclick="changeHidden()" id="login-btn">
-      二十四節気 24 Sekki
+      <?php echo $title; ?>
     </button>
     <div>
       <h1>

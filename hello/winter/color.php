@@ -10,7 +10,6 @@
   $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
 
   require('../head.php');
-  require('../all/greeting.php');
   ?>
 
   <!--for Twitter-->

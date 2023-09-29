@@ -32,6 +32,7 @@ function sekkiIndex(obj) {
     button.setAttribute('data-name', sekki.name)
     button.setAttribute('data-note', sekki.note)
     button.setAttribute('data-description', sekki.description)
+    button.setAttribute('data-yomi', sekki.yomi)
     button.innerText = sekki.name + ' ' + sekki.yomi
     ul.appendChild(li)
     li.appendChild(date)
@@ -39,7 +40,7 @@ function sekkiIndex(obj) {
 
     button.addEventListener('click', function () {
       const uttr = new SpeechSynthesisUtterance()
-      uttr.text = this.innerText + this.dataset.description
+      uttr.text = this.dataset.yomi + ' ' + this.dataset.description
       uttr.lang = "ja-JP"
       uttr.pitch = 0.9
       uttr.rate = 0.9
@@ -69,7 +70,7 @@ function sekkiSekect(obj) {
 
   const optionAll = document.querySelectorAll("#sekki option");
   select.addEventListener('change', function() {
-    const index =  this.selectedIndex;
+    const index = this.selectedIndex;
     location.replace(optionAll[index].value);
   });
 }

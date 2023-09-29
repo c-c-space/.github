@@ -10,7 +10,6 @@
   $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
 
   require('../head.php');
-  require('../all/greeting.php');
   ?>
 
   <!--for Twitter-->
@@ -37,7 +36,6 @@
     <p id="description" class="noprint">
       <small>ウェブサイトを出力する</small>
       <a href="#" onclick="window.print();">WWW to Print</a>
-      (Recommended to borderless printing)
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>

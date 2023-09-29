@@ -6,7 +6,7 @@ $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTT
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>
 
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
 <script src="/js/menu.js"></script>

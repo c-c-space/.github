@@ -1,6 +1,4 @@
 <?php
-//現在の日時を取得
-$datetime = date('m-d');
 
 //四季を表示
 if ($datetime >= '02-04' and $datetime <= '05-04') {
