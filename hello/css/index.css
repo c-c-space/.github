@@ -12,15 +12,15 @@ h2,
 
 h1,
 h1 b,
-#readme {
+#readme,
+#readme strong {
   font-size: 150%;
   font-weight: 500;
 }
 
 h2,
 h3,
-summary,
-#readme strong {
+summary {
   font-size: 125%;
   font-weight: 500;
 }
@@ -35,7 +35,6 @@ summary,
   word-break: break-all;
 }
 
-#readme strong,
 #readme p {
   line-height: 150%;
 }
