@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js" async></script>
-  <link rel="stylesheet" href="/css/menu.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../css/controls.css" />
-  <link rel="stylesheet" href="../../ver/howto.css" />
-  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
+  <script src="../../js/menu.js"></script>
+  <script type="text/javascript">
+    fetchHTML('recognition.html', query = '#recognition')
+    fetchHTML('synthesis.html', query = '#synthesis')
+  </script>
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>音声認識・音声合成 | Web Speech API</title>
+  <meta content="音声認識・音声合成 | Web Speech API" property="og:title">
+  <meta content="Speech Recognition & Text to Speech" name="description">
+  <meta content="Speech Recognition & Text to Speech" name="og:description">
+
+  <link rel="icon" href="../../ver/icon/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="../../css/menu.css" />
+  <link rel="stylesheet" href="../../css/controls.css" />
+  <link rel="stylesheet" href="../css/index.css" />
 </head>
 
 <body>
-  <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
-        <u>↩︎</u>
-      </a>
-    </nav>
-  </header>
-  <script src="/js/menu.js"></script>
-
   <main id="hello">
-    <?php require('form.html');?>
+    <details id="recognition"></details>
+    <details id="synthesis"></details>
+    <?php require('form.html'); ?>
   </main>
+
   <nav id="now" class="hidden">
     <section class="controls">
       <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
@@ -38,4 +43,5 @@
   <script src="controls.js"></script>
   <script src="recognition.js"></script>
 </body>
+
 </html>

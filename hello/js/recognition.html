@@ -1,40 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no" />
-  <script src="/js/index.js" async></script>
-  <script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', event => {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      let howto = document.querySelector('#howto');
-      howto.style.display = "none";
-    }
-  })
-  </script>
-  <link rel="stylesheet" href="/css/menu.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../css/controls.css" />
-  <link rel="stylesheet" href="../../ver/howto.css" />
-  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 750px)" />
-</head>
-
-<body>
-  <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
-        <u>↩︎</u>
-      </a>
-    </nav>
-  </header>
-  <script src="/js/menu.js"></script>
-
-  <details id="howto" class="folder hidden">
-    <summary><b>SpeechRecognition.js</b></summary>
-    <pre>
+<details id="howto" class="folder hidden">
+  <summary><b>SpeechRecognition.js</b></summary>
+  <pre>
 <font color="red">// Web Speech API の 音声認識を設定</font>
 SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
 let recognition = new SpeechRecognition();
@@ -116,21 +82,4 @@ voiceSelect.addEventListener('change', (event) => {
   recognition.lang = voiceSelect.options[selectLang].lang;
 });
     </pre>
-  </details>
-
-  <main id="hello">
-    <section>
-      <label for="voice-select">言語・声の種類を選択</label><br/>
-      <select id="voice-select" name="voice" required></select>
-      <p>
-        <label for="speech-btn">音声認識（音声をテキストに変換）</label><br/>
-        <button type="button" id="speech-btn">Speech to Text</button>
-      </p>
-    </section>
-    <hr/>
-    <section id="readme" contenteditable="true"></section>
-  </main>
-
-  <script src="recognition.js"></script>
-</body>
-</html>
+</details>
