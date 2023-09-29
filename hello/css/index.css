@@ -81,6 +81,11 @@ h3,
   margin: 1rem 0;
 }
 
+#modal #about small {
+  display: inline-block;
+  margin-bottom: 0.25erm;
+}
+
 #hello details,
 #modal #about {
   margin-bottom: 2.5rem;
