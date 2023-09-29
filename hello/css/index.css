@@ -205,7 +205,7 @@ h2 {
   #log div {
     position: relative;
     mix-blend-mode: normal;
-    max-height: 95vh;
+    max-height: 99vh;
   }
 
   #log ul li {

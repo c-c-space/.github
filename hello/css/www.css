@@ -12,9 +12,13 @@
     font-size: 111%;
   }
 
+  #log h2 {
+    width: 75%;
+  }
+
   #log h2,
   #readme {
-    font-size: 100%;
+    font-size: 95%;
   }
 
   #log ul li button::after {
