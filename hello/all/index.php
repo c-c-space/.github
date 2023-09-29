@@ -79,6 +79,17 @@
     sekkiJSON('../summer/sekki.json');
     sekkiJSON('../autumn/sekki.json');
     sekkiJSON('../winter/sekki.json');
+
+    function ChangeHidden() {
+      const mainAll = document.querySelectorAll('main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          main.hidden = true;
+        } else {
+          main.hidden = false;
+        }
+      })
+    };
   </script>
 </body>
 
