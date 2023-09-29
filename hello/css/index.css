@@ -231,7 +231,7 @@ h2 {
   }
 
   #log ul li button,
-  #readme input {
+  #hello input[type="button"] {
     border: none;
     border-radius: 0;
     font-size: 125%;
