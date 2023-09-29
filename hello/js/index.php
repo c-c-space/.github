@@ -13,7 +13,7 @@
           document.querySelector(query).innerHTML = html
         })
     }
-    
+
     fetchHTML('recognition.html', query = '#recognition')
     fetchHTML('synthesis.html', query = '#synthesis')
   </script>
@@ -34,9 +34,9 @@
 
 <body>
   <main id="hello">
+    <?php require('form.html'); ?>
     <details id="recognition"></details>
     <details id="synthesis"></details>
-    <?php require('form.html'); ?>
   </main>
 
   <nav id="now" class="hidden">
