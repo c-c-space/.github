@@ -1,0 +1,76 @@
+@page {
+  size: A5 portrait;
+}
+
+@page :first {
+  margin-left: 1rem;
+}
+
+@media print {
+  html {
+    color: #000;
+    background: #fff;
+  }
+  body {
+    font-size: 2.5vw;
+  }
+
+  main,
+  #log div,
+  #log ul,
+  #log ul li {
+    break-before: page;
+    break-after: page;
+  }
+
+  #log div {
+    break-after: page;
+  }
+
+  #log h2 {
+    font-size: 111%;
+  }
+
+  #log ul li {
+    font-size: 90%;
+    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    height: 200vh;
+  }
+
+  #log ul li p::after {
+    content: attr(data-description);
+    font-size: 90%;
+    margin: 1rem 0 0;
+  }
+
+  #log ul li button::after {
+    content: attr(data-note);
+    font-size: 75%;
+    margin: 1rem 0;
+  }
+
+  #hello::before {
+    white-space: pre-wrap;
+    content: "cite from \A http://koyomi8.com/24doc.html \A https://www.i-nekko.jp/meguritokoyomi/nijyushisekki/";
+    font-size: 75%;
+    font-family: "ipag", monospace;
+    transform: scale(1, 1.25);
+    margin-left: 1.25rem;
+    height: 100vh;
+  }
+
+  #hello #readme {
+    font-size: 3.33vw;
+    padding: 0 3.33vw 0 0;
+  }
+
+  #hello #readme::after {
+    content: "creative-community.space/hello/";
+    display: block;
+    font-family: "ipag", monospace;
+    font-size: 75%;
+    font-weight: 500;
+    transform: scale(1, 1.25);
+    margin: 7.5vw 0 0;
+  }
+}

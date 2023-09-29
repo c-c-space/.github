@@ -99,7 +99,6 @@ button:active {
   padding: 0 1rem;
 }
 
-.range,
 #next {
   margin: 1rem 0;
 }
@@ -133,11 +132,11 @@ button:active {
 }
 
 .range label {
-  font-size: 125%;
+  font-size: 111%;
 }
 
 .range code {
-  font-size: 150%;
+  font-size: 125%;
   font-weight: 900;
   text-align: right;
 }
