@@ -21,6 +21,28 @@
 <body>
   <?php require('../../menu.php'); ?>
 
+  <main id="log">
+    <button type="button" onclick="changeHidden()" id="login-btn">
+      七十二候 72 kō
+    </button>
+    <div>
+      <h1>
+        <b><?php echo $sekkiName; ?> <?php echo $sekki; ?></b><br />
+        <code id="lastModified"><?php echo $date; ?></code>
+      </h1>
+      <h2><?php echo $description; ?></h2>
+    </div>
+    <ul id="ko"></ul>
+    <?php
+    require_once('../../all/alllog.php');
+    function h($str)
+    {
+      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+    }
+    require_once('../../log.php');
+    ?>
+  </main>
+
   <main id="hello" hidden>
     <section id="readme">
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
@@ -96,27 +118,6 @@
     </section>
     <hr>
     <?php require('../../all/72ko.html'); ?>
-  </main>
-  <main id="log">
-    <button type="button" onclick="changeHidden()" id="login-btn">
-      七十二候 72 kō
-    </button>
-    <div>
-      <h1>
-        <b><?php echo $sekkiName; ?> <?php echo $sekki; ?></b><br />
-        <code id="lastModified"><?php echo $date; ?></code>
-      </h1>
-      <h2><?php echo $description; ?></h2>
-    </div>
-    <ul id="ko"></ul>
-    <?php
-    require_once('../../all/alllog.php');
-    function h($str)
-    {
-      return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-    }
-    require_once('../../log.php');
-    ?>
   </main>
 
   <dialog id="modal">
