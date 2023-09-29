@@ -192,7 +192,6 @@ h2 {
   #logAll,
   #now,
   #modal,
-  #readme input,
   #readme small,
   .noprint {
     display: none;
@@ -231,11 +230,13 @@ h2 {
     margin: 1rem 0;
   }
 
-  #log ul li button {
+  #log ul li button,
+  #readme input {
     border: none;
     border-radius: 0;
     font-size: 125%;
     padding: 0;
+    margin: 0;
     text-align: left;
   }
 
