@@ -34,11 +34,10 @@
 
 <body>
   <main id="hello">
+    <details id="recognition"></details>
+    <details id="synthesis"></details>
     <form action="">
       <?php require('form.html'); ?>
-      <hr>
-      <details id="recognition"></details>
-      <details id="synthesis"></details>
     </form>
   </main>
 
