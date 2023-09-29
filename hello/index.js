@@ -71,33 +71,29 @@ document.addEventListener('readystatechange', event => {
       fetchText('readme.md', '#howto')
     }
   } else if (event.target.readyState === 'complete') {
-    const mainLog = document.querySelector('#log');
-    const logAll = document.querySelector('#log article');
-    const modalH3 = document.querySelector('#modal h3');
-
     const lastModified = document.querySelector('#lastModified');
     lastModified.innerHTML = 'Last Modified <time datetime="'
       + document.lastModified + '">'
       + document.lastModified + '</time>'
 
-    const helloLiAll = document.querySelectorAll('#log ul li button')
-    for (const helloLi of helloLiAll) {
-      helloLi.addEventListener('click', function () {
+    const logAll = document.querySelectorAll('#logAll li button')
+    for (const i of logAll) {
+      i.addEventListener('click', function () {
         const uttr = new SpeechSynthesisUtterance()
-        uttr.text = this.dataset.hello
-        uttr.lang = this.lang
+        uttr.text = i.dataset.hello
+        uttr.lang = i.lang
         uttr.voice = speechSynthesis
           .getVoices()
-          .filter(voice => voice.name === this.dataset.name)[0]
+          .filter(voice => voice.name === i.dataset.name)[0]
 
-        uttr.pitch = this.dataset.pitch
-        uttr.rate = this.dataset.rate
+        uttr.pitch = i.dataset.pitch
+        uttr.rate = i.dataset.rate
         speechSynthesis.speak(uttr)
 
         const output = document.querySelector('#log h1 b')
-        output.innerText = this.dataset.hello
+        output.innerText = i.dataset.hello
 
-        lastModified.innerText = this.innerText
+        lastModified.innerText = i.innerText
       }, false)
     }
   }

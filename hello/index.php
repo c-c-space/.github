@@ -25,7 +25,6 @@
   require('head.php');
   ?>
   <script src="index.js"></script>
-  <script src="js/log.js"></script>
   <script src="../js/login.js"></script>
 
   <!--for Twitter-->
