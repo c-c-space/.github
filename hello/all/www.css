@@ -15,6 +15,23 @@
     display: none;
   }
 
+  #hello,
+  #log ul li p::after,
+  #log ul li button::after {
+    display: block;
+  }
+
+  #log div,
+  #log ul,
+  #log ul li {
+    break-after: page;
+  }
+
+  #log ul,
+  #log ul li {
+    break-before: page;
+  }
+
   #log div {
     position: relative;
   }
@@ -32,17 +49,6 @@
     font-size: 3vw;
   }
 
-  #log div,
-  #log ul,
-  #log ul li {
-    break-after: page;
-  }
-
-  #log ul,
-  #log ul li {
-    break-before: page;
-  }
-
   #log h2 {
     font-size: 111%;
   }
@@ -53,10 +59,21 @@
     height: 100vh;
   }
 
+  #log ul li p::after,
+  #log ul li button::after {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
   #log ul li p::after {
     content: attr(data-description);
-    font-size: 90%;
-    margin: 1rem 0 0;
+    font-size: 111%;
+  }
+
+  #log ul li button {
+    border: none;
+    border-radius: 0;
+    padding: 0;
   }
 
   #log ul li button::after {
