@@ -149,6 +149,17 @@
     colorSize()
     colorJSON('color.json')
     koJSON('ko.json')
+
+    function changeHidden() {
+      const mainAll = document.querySelectorAll('main');
+      mainAll.forEach(main => {
+        if (main.hidden == false) {
+          main.hidden = true;
+        } else {
+          main.hidden = false;
+        }
+      })
+    };
   </script>
   <script src="../../js/setStyles.js"></script>
 </body>
