@@ -13,8 +13,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <meta content="website" property="og:type">
 <title><?php echo $title; ?></title>
 <meta content="<?php echo $title; ?>" property="og:title">
-<meta content="<?php echo $description; ?>" name="description">
-<meta content="<?php echo $description; ?>" name="og:description">
+<meta content="<?php echo $thisDescription; ?>" name="description">
+<meta content="<?php echo $thisDescription; ?>" name="og:description">
 <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
 
 <link rel="stylesheet" href="/css/menu.css" />

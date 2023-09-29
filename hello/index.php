@@ -4,7 +4,7 @@
 <head>
   <?php
   $title = 'Hello | creative-community.space';
-  $description = "This is a Online Textboard that works with Web Speech API";
+  $thisDescription = "This is a Online Textboard that works with Web Speech API";
   
   mb_language("ja");
   mb_internal_encoding("UTF-8");
@@ -116,7 +116,7 @@
       <hr>
       <h3>
         <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)
-        is <?php echo $description; ?>
+        is <?php echo $thisDescription; ?>
       </h3>
       <p><?php echo $hello; ?></p>
     </section>

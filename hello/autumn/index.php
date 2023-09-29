@@ -6,7 +6,7 @@
   $thisSeason = "秋 Autumn";
   $thisDate = "August 8 - November 7";
   $title = $thisSeason . ' | ' . $thisDate;
-  $aboutThisSeason = "「あき」は草木が紅（あか）く染まる季節。";
+  $thisDescription = "「あき」は草木が紅（あか）く染まる季節。";
 
   mb_language("ja");
   mb_internal_encoding("UTF-8");
@@ -39,7 +39,7 @@
         <b><?php echo $thisSeason; ?></b>
       </h1>
       <h2>
-        <?php echo $aboutThisSeason; ?><br />
+        <?php echo $thisDescription; ?><br />
         秋の真ん中、昼夜の長さがほぼ当分に二分される(日本の場合、実際には昼の方が14分ほど長い)秋分の日は国民の祝日。「祖先をうやまい、なくなつた人々をしのぶ」日。
       </h2>
     </div>
@@ -50,7 +50,7 @@
     <button type="button" id="closeModal">×</button>
     <section id="about">
       <h3><?php echo $thisSeason; ?></h3>
-      <p><?php echo $aboutThisSeason; ?></p>
+      <p><?php echo $thisDescription; ?></p>
     </section>
     <section id="color-size"></section>
   </dialog>
