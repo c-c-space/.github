@@ -78,13 +78,21 @@
       <input id="pause-btn" value="⏸" type="button" />
       <input id="resume-btn" value="⏯" type="button" />
     </section>
+    <button onclick="openModal()" type="button" hidden>?</button>
     <select id="sekki">
       <option selected disabled>View The Collection</option>
     </select>
   </nav>
 
+  <dialog id="modal">
+    <button type="button" id="closeModal">×</button>
+    <section id="color-size"></section>
+  </dialog>
+
   <script src="24sekki.js"></script>
   <script type="text/javascript">
+    colorSize()
+    
     sekkiJSON('../spring/sekki.json');
     sekkiJSON('../summer/sekki.json');
     sekkiJSON('../autumn/sekki.json');

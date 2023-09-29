@@ -7,24 +7,35 @@
 }
 
 @media print {
+  #menu,
+  #login-btn,
+  #now,
+  #modal {
+    display: none;
+  }
+
+  #log div {
+    position: relative;
+  }
+
   html {
     color: #000;
     background: #fff;
   }
+
   body {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
-  main,
   #log div,
   #log ul,
   #log ul li {
-    break-before: page;
     break-after: page;
   }
 
-  #log div {
-    break-after: page;
+  #log ul,
+  #log ul li {
+    break-before: page;
   }
 
   #log h2 {
