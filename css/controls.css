@@ -136,6 +136,7 @@ button:active {
 }
 
 .range label {
+  display: inline-block;
   font-size: 111%;
 }
 
