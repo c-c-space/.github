@@ -130,7 +130,7 @@
   <script src="../../all/72ko.js"></script>
   <script type="text/javascript">
     colorSize()
-    colorJSON('color.json')
+    colorJSON('../color.json')
     koJSON('ko.json')
 
     function changeHidden() {
