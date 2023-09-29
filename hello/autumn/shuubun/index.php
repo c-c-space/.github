@@ -37,7 +37,6 @@
     require_once('../../all/alllog.php');
     require_once('../../log.php');
     ?>
-    <script src="../../js/log.js"></script>
   </main>
 
   <main id="hello" hidden>
@@ -148,6 +147,7 @@
       })
     };
   </script>
+  <script src="../../js/log.js"></script>
   <script src="../../js/setStyles.js"></script>
 </body>
 
