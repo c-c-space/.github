@@ -4,7 +4,6 @@
     <a href="/hello/">
       <i>Speech to Text to Text to Speech</i>
       <p><?php echo $greeting; ?></p>
-      <u>↩︎</u>
     </a>
     <a href="/hello/<?php echo $season; ?>/color.php'">
       <i>The Collection of Traditional Seasonal Colors of Japan</i>
