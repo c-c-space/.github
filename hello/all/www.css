@@ -23,13 +23,9 @@
     display: block;
   }
 
-  #log div,
-  #log ul li {
-    break-after: page;
-  }
-
   #log div {
     position: relative;
+    height: 100vh;
   }
 
   #log div {
@@ -48,6 +44,7 @@
     break-inside: avoid;
     font-size: 90%;
     padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    height: 100vh;
   }
 
   #log ul li p::after,
