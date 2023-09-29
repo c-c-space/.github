@@ -224,6 +224,13 @@ h2 {
     margin: 1rem 0;
   }
 
+  #logAll li button::after {
+    content: attr(data-hello);
+    display: block;
+    font-size: 111%;
+    width: 100%;
+  }
+
   #log ul li button,
   #hello input[type="button"] {
     border: none;
