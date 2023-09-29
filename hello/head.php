@@ -1,4 +1,7 @@
 <?php
+mb_language("ja");
+mb_internal_encoding("UTF-8");
+
 $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 ?>

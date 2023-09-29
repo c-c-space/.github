@@ -6,8 +6,10 @@
   $sekki24 = "二十四節気";
   $sekkiDate = "24 Sekki";
   $title = $sekki24 . ' | ' . $sekkiDate;
-  $description = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
+  $thisDescription = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
 
+  require('greeting.php');
+  require('24sekki.php');
   require('../head.php');
   ?>
 
@@ -30,11 +32,9 @@
         <code id="lastModified"><?php echo $sekkiDate; ?></code>
         <b><?php echo $sekki24; ?></b>
       </h1>
-      <h2><?php echo $description; ?></h2>
+      <h2><?php echo $thisDescription; ?></h2>
     </div>
-    <section>
-      <ul></ul>
-    </section>
+    <ul></ul>
     <section class="controls">
       <input type="button" class="color bgcolor" id="cancel-btn" value="⏹">
       <input type="button" class="color bgcolor" id="pause-btn" value="⏸">
@@ -53,7 +53,7 @@
       </strong>
       <strong>
         <?php echo $sekkiDate; ?>
-        <?php echo $description; ?>
+        <?php echo $thisDescription; ?>
       </strong>
       <p>
         二十四節気は、四季「春」「夏」「秋」「冬」 <wbr />
@@ -79,17 +79,6 @@
     sekkiJSON('../summer/sekki.json');
     sekkiJSON('../autumn/sekki.json');
     sekkiJSON('../winter/sekki.json');
-
-    function ChangeHidden() {
-      const mainAll = document.querySelectorAll('main');
-      mainAll.forEach(main => {
-        if (main.hidden == false) {
-          main.hidden = true;
-        } else {
-          main.hidden = false;
-        }
-      })
-    };
   </script>
 </body>
 

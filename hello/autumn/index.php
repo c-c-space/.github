@@ -7,9 +7,6 @@
   $thisDate = "August 8 - November 7";
   $title = $thisSeason . ' | ' . $thisDate;
   $thisDescription = "「あき」は草木が紅（あか）く染まる季節。";
-
-  mb_language("ja");
-  mb_internal_encoding("UTF-8");
   
   require('../all/greeting.php');
   require('../all/24sekki.php');
@@ -27,7 +24,7 @@
   <?php require('../menu.php'); ?>
 
   <main id="log">
-    <section id="collection" class="color bgcolor">
+    <section id="collection">
       <select id="sekki">
         <option selected disabled>View The Collection</option>
       </select>

@@ -34,14 +34,14 @@ function setStyles() {
   const currentColor = storage.getItem('color')
 
   fontSize.value = currentSize;
-  const mainAll = document.querySelectorAll('html, #log, #modal')
+  const mainAll = document.querySelectorAll('html')
 
   for (const main of mainAll) {
     main.style.fontSize = currentSize
   }
 
-  const bgcolorAll = document.querySelectorAll('html, .bgcolor')
-  const colorAll = document.querySelectorAll('html, .color')
+  const bgcolorAll = document.querySelectorAll('html, .bgcolor, #modal')
+  const colorAll = document.querySelectorAll('html, .color, #modal')
 
   bgcolorForm.value = currentBG
   colorForm.value = currentColor
