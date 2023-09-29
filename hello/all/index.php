@@ -89,10 +89,11 @@
     <section id="color-size"></section>
   </dialog>
 
+  <script src="../js/colorJSON.js"></script>
   <script src="24sekki.js"></script>
   <script type="text/javascript">
     colorSize()
-    
+
     sekkiJSON('../spring/sekki.json');
     sekkiJSON('../summer/sekki.json');
     sekkiJSON('../autumn/sekki.json');
