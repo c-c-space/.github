@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
     }
   }
 
-  const helloLiAll = document.querySelectorAll('.collection ul li button')
+  const helloLiAll = document.querySelectorAll('#logAll li button')
   for (const helloLi of helloLiAll) {
     helloLi.addEventListener('click', function () {
       const uttr = new SpeechSynthesisUtterance()

@@ -33,7 +33,11 @@
       <h2><?php echo $description; ?></h2>
     </div>
     <ul id="ko"></ul>
-    <?php require_once('../../all/alllog.php');?>
+    <?php
+    require_once('../../all/alllog.php');
+    require_once('../../log.php');
+    ?>
+    <script src="../../js/log.js"></script>
   </main>
 
   <main id="hello" hidden>

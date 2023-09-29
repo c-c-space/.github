@@ -1,4 +1,4 @@
-<ul>
+<ul id="logAll">
   <?php if (!empty($rows)) : ?>
     <?php shuffle($rows); foreach ($rows as $row):?>
       <li>
