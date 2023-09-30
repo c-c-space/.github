@@ -24,10 +24,9 @@ document.addEventListener('readystatechange', event => {
       fetchHTML('hello/welcome.php', '#hello h1')
       const yourStrage = document.querySelector('#hello h2')
       yourStrage.innerHTML = ""
-      // yourStrage.innerHTML = '<u>You Posted</u><br/>'
+      yourStrage.innerHTML = '<u>You Posted</u><br/>'
 
-      // sign 情報を表示
-      /*
+      sign 情報を表示
       if(!localStorage.getItem('sign')) {
         yourStrage.innerHTML += '<a href="/sign/">0</a>'
       } else {
@@ -35,7 +34,6 @@ document.addEventListener('readystatechange', event => {
         yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
       }
       yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
-      */
 
       // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All"
