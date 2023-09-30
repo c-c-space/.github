@@ -140,11 +140,11 @@ button:active {
 }
 
 .range label {
-  font-size: 95%;
+  font-size: 100%;
 }
 
 .range code {
-  font-size: 125%;
+  font-size: 111%;
   font-weight: 900;
   text-align: right;
 }
