@@ -6,8 +6,7 @@
   $title = 'Hello | creative-community.space';
   $thisDescription = "This is a Online Textboard that works with Web Speech API";
 
-  mb_language("ja");
-  mb_internal_encoding("UTF-8");
+  require('head.php');
 
   //現在の日時を取得
   $datetime = date('m-d');
@@ -21,9 +20,8 @@
     $rows[] = $row;
   }
   fclose($fp);
-
-  require('head.php');
   ?>
+  
   <script src="index.js"></script>
   <script src="../js/login.js"></script>
 
@@ -119,7 +117,7 @@
     <section id="about">
       <small><?php echo $date; ?></small>
       <h3>
-        <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)<br/>
+        <strong><?php echo $sekkiName; ?></strong> (<?php echo $sekki; ?>)<br />
         <?php echo $description; ?>
       </h3>
       <p><?php echo $hello; ?></p>
