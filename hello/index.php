@@ -18,7 +18,7 @@
   }
   fclose($fp);
   ?>
-
+  
   <script src="index.js"></script>
   <script src="../js/login.js"></script>
 

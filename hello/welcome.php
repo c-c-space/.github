@@ -1,6 +1,4 @@
 <?php
-//現在の日時を取得
-$datetime = date('m-d');
 require('all/24sekki.php');
 ?>
 

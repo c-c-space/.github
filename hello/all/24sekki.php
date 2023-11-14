@@ -1,4 +1,5 @@
 <?php
+
 //現在の日時を取得
 $datetime = date('m-d');
 
@@ -15,7 +16,7 @@ if ($datetime >= '02-04' and $datetime <= '05-04') {
   $season = "autumn";
   $seasonName = "秋";
   $seasonDate = "August 8 - November 7";
-} elseif ($datetime >= '11-08' and $datetime <= '02-03') {
+} else {
   $season = "winter";
   $seasonName = "冬";
   $seasonDate = "November 8 - February 3";
