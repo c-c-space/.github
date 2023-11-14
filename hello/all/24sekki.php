@@ -4,11 +4,7 @@
 $datetime = date('m-d');
 
 //四季を表示
-if ($datetime <= '02-03') {
-  $season = "winter";
-  $seasonName = "冬";
-  $seasonDate = "November 8 - February 3";
-} elseif ($datetime >= '02-04' and $datetime <= '05-04') {
+if ($datetime >= '02-04' and $datetime <= '05-04') {
   $season = "spring";
   $seasonName = "春";
   $seasonDate = "February 4 - May 4";
