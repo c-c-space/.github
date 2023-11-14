@@ -13,6 +13,7 @@ if (date("H") >= 6 and date("H") <= 11) {
   $timeframe = "night";
 }
 
+//現在の日時を取得
 $datetime = date('m-d');
 if ($datetime >= '01-06' and $datetime <= '01-19') {
   $season = "winter";
@@ -88,21 +89,20 @@ if ($datetime >= '01-06' and $datetime <= '01-19') {
   $sekki = "touji";
 }
 
-$source_file = $season . "/". $sekki . "/". $timeframe . ".csv";
+$source_file = $season . "/" . $sekki . "/" . $timeframe . ".csv";
 
 define("LOGFILE", $source_file);
 $data = json_decode(file_get_contents("php://input"), true);
 
 $output = array(
-  '"'. $data["timestamp"] .'"',
-  '"'. $data["voice"] .'"',
-  '"'. $data["lang"] .'"',
-  '"'. $data["pitch"] .'"',
-  '"'. $data["rate"] .'"',
-  '"'. $data["hello"] .'"'
+  '"' . $data["timestamp"] . '"',
+  '"' . $data["voice"] . '"',
+  '"' . $data["lang"] . '"',
+  '"' . $data["pitch"] . '"',
+  '"' . $data["rate"] . '"',
+  '"' . $data["hello"] . '"'
 );
 
 $result = implode(', ', $output);
-file_put_contents(LOGFILE, $result."\n", FILE_APPEND | LOCK_EX);
+file_put_contents(LOGFILE, $result . "\n", FILE_APPEND | LOCK_EX);
 echo json_encode($data);
-?>
