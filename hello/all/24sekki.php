@@ -4,7 +4,11 @@
 $datetime = date('m-d');
 
 //四季を表示
-if ($datetime >= '02-04' and $datetime <= '05-04') {
+if ($datetime <= '02-03') {
+  $season = "winter";
+  $seasonName = "冬";
+  $seasonDate = "November 8 - February 3";
+} elseif ($datetime >= '02-04' and $datetime <= '05-04') {
   $season = "spring";
   $seasonName = "春";
   $seasonDate = "February 4 - May 4";
@@ -23,7 +27,25 @@ if ($datetime >= '02-04' and $datetime <= '05-04') {
 }
 
 //二十四節気を表示
-if ($datetime >= '02-04' and $datetime < '02-18') {
+if ($datetime <= '01-05') {
+  $sekki = "touji";
+  $sekkiName = "冬至";
+  $date = "December 22 - January 5";
+  $description = "The Winter Solstice";
+  $hello = "冬至日より日が伸び始めることから、古くには年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。";
+} elseif ($datetime >= '01-06' and $datetime <= '01-19') {
+  $sekki = "shoukan";
+  $sekkiName = "小寒";
+  $date = "January 6 - January 19";
+  $description = "Cold weather nears its peak";
+  $hello = "「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」。「寒中見舞い」を出しはじめる時期。";
+} elseif ($datetime >= '01-20' and $datetime <= '02-03') {
+  $sekki = "daikan";
+  $sekkiName = "大寒";
+  $date = "January 20 - February 3";
+  $description = "Coldest time of the year";
+  $hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
+}  ($datetime >= '02-04' and $datetime < '02-18') {
   $sekki = "risshun";
   $sekkiName = "立春";
   $date = "February 4 - February 18";
@@ -149,22 +171,10 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $date = "December 7 - December 21";
   $description = "Cold winds blow from Siberia";
   $hello = "山々は雪の衣を纏って冬の姿となり、動物たちが冬ごもりに入る時期。鮭が川を遡上し、鱈など冬の魚の漁が盛んになる。";
-} elseif ($datetime >= '12-22' and $datetime <= '01-05') {
+} elseif ($datetime >= '12-22') {
   $sekki = "touji";
   $sekkiName = "冬至";
   $date = "December 22 - January 5";
   $description = "The Winter Solstice";
   $hello = "冬至日より日が伸び始めることから、古くには年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。";
-} elseif ($datetime >= '01-06' and $datetime <= '01-19') {
-  $sekki = "shoukan";
-  $sekkiName = "小寒";
-  $date = "January 6 - January 19";
-  $description = "Cold weather nears its peak";
-  $hello = "「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」。「寒中見舞い」を出しはじめる時期。";
-} elseif ($datetime >= '01-20' and $datetime <= '02-03') {
-  $sekki = "daikan";
-  $sekkiName = "大寒";
-  $date = "January 20 - February 3";
-  $description = "Coldest time of the year";
-  $hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
 }
