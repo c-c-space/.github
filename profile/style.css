@@ -1,3 +1,7 @@
+body {
+  background: #000;
+}
+
 #menu,
 #log {
   filter: invert();
