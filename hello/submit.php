@@ -14,7 +14,13 @@ if (date("H") >= 6 and date("H") <= 11) {
 }
 
 $datetime = date('m-d');
-if ($datetime >= '02-04' and $datetime < '02-18') {
+if ($datetime >= '01-06' and $datetime <= '01-19') {
+  $season = "winter";
+  $sekki = "shoukan";
+} elseif ($datetime >= '01-20' and $datetime <= '02-03') {
+  $season = "winter";
+  $sekki = "daikan";
+} elseif ($datetime >= '02-04' and $datetime < '02-18') {
   $season = "spring";
   $sekki = "risshun";
 } elseif ($datetime >= '02-19' and $datetime <= '03-04') {
@@ -22,6 +28,7 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $sekki = "usui";
 } elseif ($datetime >= '03-05' and $datetime <= '03-19') {
   $season = "spring";
+  $sekki = "keichitsu";
 } elseif ($datetime >= '03-20' and $datetime <= '04-03') {
   $season = "spring";
   $sekki = "shunbun";
@@ -76,15 +83,9 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
 } elseif ($datetime >= '12-07' and $datetime <= '12-21') {
   $season = "winter";
   $sekki = "taisetsu";
-} elseif ($datetime >= '12-22' and $datetime <= '01-05') {
+} else {
   $season = "winter";
   $sekki = "touji";
-} elseif ($datetime >= '01-06' and $datetime <= '01-19') {
-  $season = "winter";
-  $sekki = "shoukan";
-} elseif ($datetime >= '01-20' and $datetime <= '02-03') {
-  $season = "winter";
-  $sekki = "daikan";
 }
 
 $source_file = $season . "/". $sekki . "/". $timeframe . ".csv";

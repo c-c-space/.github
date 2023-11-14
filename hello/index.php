@@ -6,7 +6,8 @@
   $title = 'Hello | creative-community.space';
   $thisDescription = "This is a Online Textboard that works with Web Speech API";
 
-  require('head.php');
+  //現在の日時を取得
+  $datetime = date('m-d');
   require('all/24sekki.php');
   require('all/greeting.php');
 
@@ -17,6 +18,8 @@
     $rows[] = $row;
   }
   fclose($fp);
+  
+  require('head.php');
   ?>
   
   <script src="index.js"></script>
