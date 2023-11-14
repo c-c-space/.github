@@ -7,9 +7,6 @@
   $thisDescription = "This is a Online Textboard that works with Web Speech API";
 
   require('head.php');
-
-  //現在の日時を取得
-  $datetime = date('m-d');
   require('all/24sekki.php');
   require('all/greeting.php');
 
@@ -21,7 +18,7 @@
   }
   fclose($fp);
   ?>
-  
+
   <script src="index.js"></script>
   <script src="../js/login.js"></script>
 

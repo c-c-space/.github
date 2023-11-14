@@ -1,4 +1,6 @@
 <?php
+//現在の日時を取得
+$datetime = date('m-d');
 
 //四季を表示
 if ($datetime >= '02-04' and $datetime <= '05-04') {
@@ -165,4 +167,3 @@ if ($datetime >= '02-04' and $datetime < '02-18') {
   $description = "Coldest time of the year";
   $hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
 }
-?>
