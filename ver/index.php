@@ -28,7 +28,7 @@ fclose($fp);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../js/menu.js"></script>
+  <script src="js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
       location.replace('/')
@@ -51,7 +51,7 @@ fclose($fp);
   <meta content="<?php echo $url; ?>card.png" name="twitter:image:src">
 
   <link rel="icon" href="icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 

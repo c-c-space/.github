@@ -51,9 +51,9 @@ flock($fp, LOCK_SH);
   <meta content="<?php echo $url; ?>summary.png" name="twitter:image:src">
 
   <link rel="icon" href="../icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="../../css/log.css" />
-  <link rel="stylesheet" href="../../css/selectmonth.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="../css/log.css" />
+  <link rel="stylesheet" href="../css/selectmonth.css" />
 
   <style>
     #log li {
@@ -145,7 +145,7 @@ flock($fp, LOCK_SH);
     <select id="month" name="month"></select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="../../js/selectmonth.js"></script>
+  <script src="../js/selectmonth.js"></script>
 </body>
 
 </html>

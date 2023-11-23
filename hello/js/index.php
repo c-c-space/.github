@@ -25,10 +25,10 @@
   <meta content="Speech Recognition & Text to Speech" name="description">
   <meta content="Speech Recognition & Text to Speech" name="og:description">
 
-  <link rel="icon" href="../../ver/icon/favicon.png" type="image/png">
+  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
 
-  <link rel="stylesheet" href="../../css/menu.css" />
-  <link rel="stylesheet" href="../../css/controls.css" />
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/controls.css" />
   <link rel="stylesheet" href="../css/index.css" />
 </head>
 

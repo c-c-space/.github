@@ -5,9 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../js/menu.js"></script>
-  <script src="../js/modal.js"></script>
-  <script src="../js/userMedia.js"></script>
+  <script src="/ver/js/menu.js"></script>
+  <script src="/ver/js/modal.js"></script>
+  <script src="/ver/js/userMedia.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
 
@@ -35,9 +35,9 @@
 
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
 
-  <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../css/log.css" />
-  <link rel="stylesheet" href="../css/modal.css" />
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/log.css" />
+  <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -104,7 +104,7 @@
       </span>
       <?php require('yourinfo.php'); ?>
     </li>
-    <script src="../js/login.js"></script>
+    <script src="/ver/js/login.js"></script>
   </ul>
 
   <dialog id="modal">

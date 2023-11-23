@@ -23,7 +23,7 @@
   ?>
   
   <script src="index.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="/ver/js/login.js"></script>
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
@@ -31,8 +31,8 @@
   <meta content="<?php echo $url . $season . "/summary.png"; ?>" property="og:image">
   <meta content="<?php echo $url . $season . "/summary.png"; ?>" name="twitter:image:src">
 
-  <link rel="stylesheet" href="/css/modal.css" />
-  <link rel="stylesheet" href="/hello/css/index.css" />
+  <link rel="stylesheet" href="/ver/css/modal.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
   <style media="print">
     main,

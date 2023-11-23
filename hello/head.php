@@ -9,8 +9,8 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
-<script src="/js/menu.js"></script>
-<script src="/js/modal.js"></script>
+<script src="/ver/js/menu.js"></script>
+<script src="/ver/js/modal.js"></script>
 
 <!--og:meta-->
 <meta content="website" property="og:type">
@@ -20,5 +20,5 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <meta content="<?php echo $thisDescription; ?>" name="og:description">
 <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
 
-<link rel="stylesheet" href="/css/menu.css" />
-<link rel="stylesheet" href="/css/controls.css" />
+<link rel="stylesheet" href="/ver/css/menu.css" />
+<link rel="stylesheet" href="/ver/css/controls.css" />

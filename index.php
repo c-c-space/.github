@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/userMedia.js"></script>
+  <script src="ver/js/menu.js"></script>
+  <script src="ver/js/index.js"></script>
+  <script src="ver/js/modal.js"></script>
+  <script src="ver/js/userMedia.js"></script>
   <script>
     menuJSON('index.json')
   </script>
@@ -31,12 +31,12 @@
 
   <?php require('ver/icon/all.html'); ?>
 
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/controls.css" />
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="thankyou/style.css">
-  <link rel="stylesheet" href="thankyou/www.css" media="print" />
+  <link rel="stylesheet" href="ver/css/menu.css" />
+  <link rel="stylesheet" href="ver/css/index.css" />
+  <link rel="stylesheet" href="ver/css/controls.css" />
+  <link rel="stylesheet" href="ver/css/modal.css">
+  <link rel="stylesheet" href="profile/thankyou/style.css">
+  <link rel="stylesheet" href="profile/thankyou/www.css" media="print" />
 </head>
 
 <body>
@@ -76,7 +76,7 @@
       </section>
       <button type="button" id="submit-btn"></button>
     </article>
-    <script src="js/hello.js"></script>
+    <script src="ver/js/hello.js"></script>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -100,7 +100,7 @@
         <button type="button" id="back-btn">Back</button>
       </section>
     </form>
-    <script src="js/login.js"></script>
+    <script src="ver/js/login.js"></script>
   </main>
 
   <dialog id="modal">
@@ -111,15 +111,15 @@
   <footer id="now" class="hsl">
     <time id="showDate" class="cc"></time>
     <time id="showTime" class="cc"></time>
-    <script src="js/now.js"></script>
+    <script src="ver/js/now.js"></script>
   </footer>
 
-  <script src="thankyou/hsl.js"></script>
+  <script src="profile/thankyou/hsl.js"></script>
   <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
   <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
   <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
   <div id="sketch"></div>
-  <script src="thankyou/sketch.js"></script>
+  <script src="profile/thankyou/sketch.js"></script>
 
   <article id="www" hidden></article>
 
@@ -168,7 +168,7 @@
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       console.log("This is a not Mobile Device");
 
-      fetchHTML('thankyou/www.html', '#www')
+      fetchHTML('profile/thankyou/www.html', '#www')
 
       const main = document.querySelector('main');
       main.style.pointerEvents = "none";

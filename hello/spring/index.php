@@ -21,8 +21,8 @@
   <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
   <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
 
-  <link rel="stylesheet" href="/css/modal.css" />
-  <link rel="stylesheet" href="/hello/css/index.css" />
+  <link rel="stylesheet" href="/ver/css/modal.css" />
+  <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" href="../css/www.css" media="print" />
 </head>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../js/menu.js"></script>
+  <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       location.assign('touch.html')
@@ -22,13 +22,13 @@
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://creative-community.space/thankyou/" property="og:url">
-  <meta content="https://creative-community.space/thankyou/card.png" property="og:image">
-  <meta content="https://creative-community.space/thankyou/card.png" name="twitter:image:src">
+  <meta content="https://creative-community.space/profile/thankyou/" property="og:url">
+  <meta content="https://creative-community.space/profile/thankyou/card.png" property="og:image">
+  <meta content="https://creative-community.space/profile/thankyou/card.png" name="twitter:image:src">
 
-  <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
+  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
 
-  <link rel="stylesheet" href="../css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="style.css" />
   <style>
     #sketch {

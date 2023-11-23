@@ -14,7 +14,7 @@
   ?>
   <meta content="<?php echo $url; ?>" property="og:url">
 
-  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
 </head>
 
