@@ -21,12 +21,12 @@ body {
 
 @font-face {
   font-family: "ipag";
-  src: url("../ver/font/ipag.ttc");
+  src: url("../font/ipag.ttc");
 }
 
 @font-face {
   font-family: "Times New Roman";
-  src: url("../ver/font/times.ttf");
+  src: url("../font/times.ttf");
 }
 
 .cc,
