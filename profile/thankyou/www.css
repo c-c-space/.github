@@ -59,7 +59,7 @@ body,
 }
 
 #www section p {
-  font-size: 100%;
+  font-size: 75%;
   padding: 1rem;
   margin: 0;
 }
@@ -73,7 +73,7 @@ body,
 
 #www h2 {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
-  font-size: 150%;
+  font-size: 125%;
   font-weight: 500;
   max-width: 75%;
   line-height: 150%;
