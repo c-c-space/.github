@@ -54,7 +54,7 @@ flock($fp, LOCK_SH);
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   body {
-    padding: 0.5rem;
+    padding: 0;
     margin: 0;
   }
   </style>
