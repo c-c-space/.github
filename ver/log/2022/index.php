@@ -85,7 +85,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
-        <p><b>アクセス履歴 | Access Log</b></p>
+        <b>アクセス履歴 | Access Log</b>
       </a>
     </menu>
   </header>
