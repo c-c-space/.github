@@ -27,7 +27,12 @@ flock($fp, LOCK_SH);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../readyState.js"></script>
+  <script src="/ver/js/menu.js"></script>
+  <script type="text/javascript">
+    if (!localStorage.getItem('yourInfo')) {
+      location.replace('/')
+    }
+  </script>
 
   <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
@@ -55,43 +60,15 @@ flock($fp, LOCK_SH);
     mix-blend-mode: difference;
   }
 
-  #js-button,
   #contents a,
   #log,
   #now {
     filter: invert();
   }
 
-  #log li {
-    filter: blur(0.25rem);
-  }
-
-  #log li:nth-last-child(1) {
-    filter: blur(0);
-  }
-
-  #log li:hover,
-  #log li:focus,
-  #log li:active {
-    filter: blur(0);
-    transition: all 500ms ease;
-  }
-
   body {
     padding: 0.5rem;
     margin: 0;
-  }
-
-  @media print {
-    #menu,
-    #now,
-    #now * {
-      display: none;
-    }
-
-    #log li {
-      filter: blur(0);
-    }
   }
   </style>
 </head>
@@ -109,7 +86,7 @@ flock($fp, LOCK_SH);
       </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
-        <p><b>アクセス履歴 | Access Log</b></p>
+        <b>アクセス履歴 | Access Log</b>
       </a>
     </menu>
   </header>
