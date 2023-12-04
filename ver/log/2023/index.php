@@ -60,6 +60,7 @@ flock($fp, LOCK_SH);
     mix-blend-mode: difference;
   }
 
+  #menu button,
   #contents a,
   #log,
   #now {
