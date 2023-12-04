@@ -1,9 +1,6 @@
 
 new,2023,MAY 22,"/map/search/","Add Your Location to Collection"
 new,2023,MAY 22,"/map/profile/","The Collection of Your Location"
-new,2022,AUG 17,"/map/heard/bnaaltermuseum/","things that i (we) heard around BnA Alter Museum"
-new,2022,JUN 6,"/map/heard/otobuilding/","things that i (we) heard around OTO building"
-new,2022,MAY 22,"/map/heard/","私（わたしたち）が聞いた言葉"
 
 update,2022,OCT 10,"/profile/js/navigator.html","Network Information API | ネットワーク情報 API"
 update,2022,OCT 10,"/profile/js/battery.html","Battery Status API | バッテリー状態 API"
@@ -14,7 +11,6 @@ new,2021,NOV 23,"/value/","大切にすることを大切にするための場�
 update,2022,AUG 1,"/org/","これまでに作成したものごとを整理して記録するウェブページ・影響を受けたウェブサイトなど"
 new,2021,NOV 1,"/org/","ものごと を カテゴリー・タイプ などで 整理整頓する"
 
-new,2021,NOV 1,"/map/","Go Out ← goout.pe.hu"
 
 new,2021,OCT 10,"/members/","Members Only ← newlifecollection.pe.hu"
 new,2021,OCT 1,"/coding/","How to Coding | このウェブサイトの作り方"
