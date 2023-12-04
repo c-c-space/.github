@@ -59,43 +59,15 @@ flock($fp, LOCK_SH);
     mix-blend-mode: difference;
   }
 
-  #js-button,
   #contents a,
   #log,
   #now {
     filter: invert();
   }
 
-  #log li {
-    filter: blur(0.25rem);
-  }
-
-  #log li:nth-last-child(1) {
-    filter: blur(0);
-  }
-
-  #log li:hover,
-  #log li:focus,
-  #log li:active {
-    filter: blur(0);
-    transition: all 500ms ease;
-  }
-
   body {
     padding: 0.5rem;
     margin: 0;
-  }
-
-  @media print {
-    #menu,
-    #now,
-    #now * {
-      display: none;
-    }
-
-    #log li {
-      filter: blur(0);
-    }
   }
   </style>
 </head>
