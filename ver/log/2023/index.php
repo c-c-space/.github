@@ -52,21 +52,7 @@ flock($fp, LOCK_SH);
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
-
   <style>
-  header,
-  #log,
-  #now {
-    mix-blend-mode: difference;
-  }
-
-  #menu button,
-  #contents a,
-  #log,
-  #now {
-    filter: invert();
-  }
-
   body {
     padding: 0.5rem;
     margin: 0;
