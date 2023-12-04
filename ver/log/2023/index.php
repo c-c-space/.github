@@ -139,7 +139,7 @@ flock($fp, LOCK_SH);
         echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
         ?>
       </span>
-      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
+      <span></span>
       <span>アクセス履歴</span>
       <span>
         <b><?php echo sizeof(file($source_file)); ?></b>
