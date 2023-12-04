@@ -28,7 +28,7 @@ flock($fp, LOCK_SH);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="../js/menu.js"></script>
+  <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
       location.replace('/')
