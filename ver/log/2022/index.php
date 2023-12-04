@@ -138,6 +138,5 @@ flock($fp, LOCK_SH);
     </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="/profile/thankyou/hsl.js"></script>
 </body>
 </html>
