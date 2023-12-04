@@ -94,11 +94,11 @@ fclose($fp);
         <?php foreach ($rows as $row) : ?>
           <li data-index="<?= h($row[0]) ?>">
             <span>
-              <a href="<?= h($row[3]) ?>"><?= h($row[3]) ?></a>
+              <a href="<?= h($row[3]) ?>"><?= h($row[4]) ?></a>
             </span>
             <span><?= h($row[1]) ?></span>
             <span><?= h($row[2]) ?></span>
-            <span><?= h($row[4]) ?></span>
+            <span><?= h($row[5]) ?></span>
           </li>
         <?php endforeach; ?>
       <?php else : ?>
