@@ -41,10 +41,9 @@ flock($fp, LOCK_SH);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../selectmonth.css" />
   <link rel="stylesheet" href="../../../css/menu.css" />
-  <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="../../../css/log.css" />
+  <link rel="stylesheet" href="../../../css/selectmonth.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
@@ -171,5 +170,5 @@ flock($fp, LOCK_SH);
     </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="../../../thankyou/hsl.js"></script></body>
+  <script src="/profile/thankyou/hsl.js"></script></body>
 </html>
