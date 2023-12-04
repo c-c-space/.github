@@ -41,13 +41,13 @@ flock($fp, LOCK_SH);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../selectmonth.css" />
-  <link rel="stylesheet" href="../../../css/menu.css" />
-  <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/log.css" />
+  <link rel="stylesheet" href="/ver/css/selectmonth.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
+
   <style>
   header,
   #log,
@@ -97,23 +97,22 @@ flock($fp, LOCK_SH);
 </head>
 <body>
   <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
       <a href="/ver/" target="_parent">
         <i>更新履歴</i>
-        <p><b>New Contents & Version Up</b></p>
+        <b>New Contents & Version Up</b>
       </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
         <p><b>アクセス履歴 | Access Log</b></p>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
 
   <ul id="log" class="hidden">
     <li hidden>
@@ -180,6 +179,6 @@ flock($fp, LOCK_SH);
     </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="../../../thankyou/hsl.js"></script></body>
+  <script src="/profile/thankyou/hsl.js"></script>
 </body>
 </html>
