@@ -123,7 +123,6 @@ flock($fp, LOCK_SH);
       </span>
     </li>
   </ul>
-  <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
     <select id="month" name="month">
