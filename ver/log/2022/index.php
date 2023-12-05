@@ -27,7 +27,12 @@ flock($fp, LOCK_SH);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../readyState.js"></script>
+  <script src="/ver/js/menu.js"></script>
+  <script type="text/javascript">
+    if (!localStorage.getItem('yourInfo')) {
+      location.replace('/')
+    }
+  </script>
 
   <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
@@ -41,89 +46,39 @@ flock($fp, LOCK_SH);
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../selectmonth.css" />
-  <link rel="stylesheet" href="../../../css/menu.css" />
-  <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/log.css" />
+  <link rel="stylesheet" href="/ver/css/selectmonth.css" />
   <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
-  header,
-  #log,
-  #now {
-    mix-blend-mode: difference;
-  }
-
-  #js-button,
-  #contents a,
-  #log,
-  #now {
-    filter: invert();
-  }
-
-  #log li {
-    filter: blur(0.25rem);
-  }
-
-  #log li:nth-last-child(1) {
-    filter: blur(0);
-  }
-
-  #log li:hover,
-  #log li:focus,
-  #log li:active {
-    filter: blur(0);
-    transition: all 500ms ease;
-  }
-
   body {
-    padding: 0.5rem;
+    padding: 0;
     margin: 0;
-  }
-
-  @media print {
-    #menu,
-    #now,
-    #now * {
-      display: none;
-    }
-
-    #log li {
-      filter: blur(0);
-    }
   }
   </style>
 </head>
 <body>
   <header id="menu" hidden>
-    <button id="js-button"><b></b></button>
-    <nav id="contents">
+    <button><b></b></button>
+    <menu id="contents">
       <a href="#" onclick="window.history.back(); return false;">
-        <p><b>creative-community.space</b></p>
+        <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
       <a href="/ver/" target="_parent">
         <i>更新履歴</i>
-        <p><b>New Contents & Version Up</b></p>
+        <b>New Contents & Version Up</b>
       </a>
       <a href="/ver/log/" target="_parent">
         <i>creative-community.space</i>
-        <p><b>アクセス履歴 | Access Log</b></p>
+        <b>アクセス履歴 | Access Log</b>
       </a>
-    </nav>
+    </menu>
   </header>
-  <script src="/js/menu.js"></script>
 
   <ul id="log" class="hidden">
-    <li hidden>
-      <span>Your Info</span>
-      <?php
-      echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
-      echo "<span id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</span>";
-      echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
-      ?>
-    </li>
     <?php
     while ($line = fgetcsv($fp)) {
       echo "<li class='log'>";
@@ -140,7 +95,7 @@ flock($fp, LOCK_SH);
         echo "<b>" . $year . "</b> 年 <b>" . $month . "</b> 月";
         ?>
       </span>
-      <span><button id="update" type="button" onclick="setLOG()">Enter</button></span>
+      <span></span>
       <span>アクセス履歴</span>
       <span>
         <b><?php echo sizeof(file($source_file)); ?></b>
@@ -160,7 +115,6 @@ flock($fp, LOCK_SH);
       </span>
     </li>
   </ul>
-  <script src="/js/log.js"></script>
 
   <form id="now" method="GET" class="hidden">
     <select id="month" name="month">
@@ -171,5 +125,5 @@ flock($fp, LOCK_SH);
     </select>
     <button type="submit">Access Log</button>
   </form>
-  <script src="../../../thankyou/hsl.js"></script></body>
+</body>
 </html>

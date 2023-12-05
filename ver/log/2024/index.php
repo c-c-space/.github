@@ -9,7 +9,7 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
 $timestamp = date("j.M.y.D g:i:s A T");
 
-$year = "2023";
+$year = "2024";
 $month = "01";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
@@ -54,7 +54,7 @@ flock($fp, LOCK_SH);
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
   body {
-    padding: 0;
+    padding: 0.5rem;
     margin: 0;
   }
   </style>

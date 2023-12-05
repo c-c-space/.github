@@ -57,7 +57,7 @@ input[type="radio"]:checked+label {
 }
 
 #now {
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 #now h1 {
@@ -94,6 +94,7 @@ input[type="radio"]:checked+label {
 #log li span {
   display: block;
   margin: 0.25rem;
+  line-height: 125%;
   word-wrap: break-word;
 }
 
