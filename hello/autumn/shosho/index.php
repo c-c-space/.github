@@ -43,49 +43,48 @@
     <section id="readme">
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
-      <small>8月23日 ~ 8月27日頃</small><br/>
-      <ruby>
-        綿 <rp>(</rp><rt>わた</rt><rp>)</rp>
-      </ruby>
-      を
-      <ruby>
-        包 <rp>(</rp><rt>つつ</rt><rp>)</rp>
-      </ruby>
-      む
-      <ruby>
-        萼 <rp>(</rp><rt>がく</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        開 <rp>(</rp><rt>ひら</rt><rp>)</rp>
-      </ruby>
-      く
-    </p>
-    <p>
-      <small>8月28日 ~ 9月2日頃</small><br/>
-      ようやく
-      <ruby>
-        暑 <rp>(</rp><rt>あつ</rt><rp>)</rp>
-      </ruby>
-      さが
-      <ruby>
-        暑 <rp>(</rp><rt>しずま</rt><rp>)</rp>
-      </ruby>
-      まる
-    </p>
-    <p>
-      <small>9月3日 ~ 9月7日頃</small><br/>
-      <ruby>
-        稲 <rp>(</rp><rt>いね</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        実 <rp>(</rp><rt>みの</rt><rp>)</rp>
-      </ruby>
-      る
-    </p>
-  </section>
-    <?php require('../../all/72ko.html'); ?>
+        <small>8月23日 ~ 8月27日頃</small><br/>
+        <ruby>
+          綿 <rp>(</rp><rt>わた</rt><rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          包 <rp>(</rp><rt>つつ</rt><rp>)</rp>
+        </ruby>
+        む
+        <ruby>
+          萼 <rp>(</rp><rt>がく</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          開 <rp>(</rp><rt>ひら</rt><rp>)</rp>
+        </ruby>
+        く
+      </p>
+      <p>
+        <small>8月28日 ~ 9月2日頃</small><br/>
+        ようやく
+        <ruby>
+          暑 <rp>(</rp><rt>あつ</rt><rp>)</rp>
+        </ruby>
+        さが
+        <ruby>
+          暑 <rp>(</rp><rt>しずま</rt><rp>)</rp>
+        </ruby>
+        まる
+      </p>
+      <p>
+        <small>9月3日 ~ 9月7日頃</small><br/>
+        <ruby>
+          稲 <rp>(</rp><rt>いね</rt><rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          実 <rp>(</rp><rt>みの</rt><rp>)</rp>
+        </ruby>
+        る
+      </p>
+    </section>
   </main>
 
   <dialog id="modal">
