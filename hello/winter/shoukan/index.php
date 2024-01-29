@@ -99,7 +99,6 @@
       める
     </p>
     </section>
-    <?php require('../../all/72ko.html'); ?>
   </main>
 
   <dialog id="modal">
