@@ -5,14 +5,13 @@
   <?php
   $datetime = date('03-05');
   require_once('../../all/24sekki.php');
-  require_once('../../all/greeting.php');
+  require_once('../../greeting.php');
 
   $title = $sekkiName . ' | ' . $date;
   $thisDescription = $description . ' | ' . $hello;
 
   require_once('../../head.php');
   ?>
-  <meta content="<?php echo $url; ?>" property="og:url">
 
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
