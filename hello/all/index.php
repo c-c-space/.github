@@ -6,7 +6,7 @@
   //現在の日時を取得
   $datetime = date('m-d');
   require('24sekki.php');
-  require('greeting.php');
+  require('../greeting.php');
 
   $sekki24 = "二十四節気";
   $sekkiDate = "24 Sekki";
