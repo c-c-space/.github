@@ -9,7 +9,7 @@
   //現在の日時を取得
   $datetime = date('m-d');
   require('all/24sekki.php');
-  require('all/greeting.php');
+  require('greeting.php');
 
   $source_file = $season . "/" . $sekki . "/" . $timeframe . ".csv";
   $fp = fopen($source_file, 'a+b');
