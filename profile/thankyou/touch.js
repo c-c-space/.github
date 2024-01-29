@@ -20,7 +20,7 @@ function tmResize() {
 }
 
 function windowScreen() {
-  canvas.width  = window.innerWidth;
+  canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
 

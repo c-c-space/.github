@@ -59,7 +59,7 @@
 }
 
 #saveImg {
-  appearance : none;
+  appearance: none;
   background: transparent;
   border: 0.1rem solid;
   border-radius: 3rem;
@@ -91,6 +91,7 @@
 }
 
 @media screen and (max-width: 750px) {
+
   .hue,
   .saturation,
   .lightness {

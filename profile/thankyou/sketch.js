@@ -95,9 +95,9 @@
 
     for (var key in source)
 
-    if (overwrite || !(key in target))
+      if (overwrite || !(key in target))
 
-    target[key] = source[key];
+        target[key] = source[key];
 
     return target;
   }
@@ -117,15 +117,15 @@
     for (var key in target) {
 
       if (key === 'webkitMovementX' || key === 'webkitMovementY')
-      continue;
+        continue;
 
       if (isFunction(target[key]))
 
-      object[key] = proxy(target[key], target);
+        object[key] = proxy(target[key], target);
 
       else
 
-      object[key] = target[key];
+        object[key] = target[key];
     }
 
     return object;
@@ -184,7 +184,7 @@
 
       if (isFunction(method))
 
-      method.apply(context, [].splice.call(arguments, 1));
+        method.apply(context, [].splice.call(arguments, 1));
     }
 
     function bind(on) {
@@ -195,11 +195,11 @@
 
         if (isString(node))
 
-        target[(on ? 'add' : 'remove') + 'EventListener'].call(target, node, handler, false);
+          target[(on ? 'add' : 'remove') + 'EventListener'].call(target, node, handler, false);
 
         else if (isFunction(node))
 
-        handler = node;
+          handler = node;
 
         else target = node;
       }
@@ -244,7 +244,7 @@
 
           if (context.autoclear)
 
-          context.clear();
+            context.clear();
         }
 
         // Draw
@@ -255,7 +255,7 @@
 
         if (is2D && context.retina)
 
-        context.restore();
+          context.restore();
       }
 
       counter = ++counter % context.interval;
@@ -286,15 +286,15 @@
 
       if (target.height !== h)
 
-      target.height = h + suffix;
+        target.height = h + suffix;
 
       if (target.width !== w)
 
-      target.width = w + suffix;
+        target.width = w + suffix;
 
       if (is2D && !context.autoclear && context.retina)
 
-      context.scale(ratio, ratio);
+        context.scale(ratio, ratio);
 
       if (setup) trigger(context.resize);
     }
@@ -340,7 +340,7 @@
 
         for (index = 0; index < copy.touches.length; index++)
 
-        touches[index] = augment(copy.touches[index], touches[index]);
+          touches[index] = augment(copy.touches[index], touches[index]);
 
       } else {
 
@@ -361,23 +361,23 @@
 
       context.dragging =
 
-      /down|start/.test(type) ? true :
+        /down|start/.test(type) ? true :
 
-      /up|end/.test(type) ? false :
+          /up|end/.test(type) ? false :
 
-      context.dragging;
+            context.dragging;
 
       while (min)
 
-      isString(eventMap[min]) ?
+        isString(eventMap[min]) ?
 
-      trigger(context[eventMap[min--]], event) :
+          trigger(context[eventMap[min--]], event) :
 
-      isString(eventMap[max]) ?
+          isString(eventMap[max]) ?
 
-      trigger(context[eventMap[max++]], event) :
+            trigger(context[eventMap[max++]], event) :
 
-      min = 0;
+            min = 0;
     }
 
     function keypress(event) {
@@ -393,7 +393,7 @@
 
       if (context.autopause)
 
-      (event.type == 'blur' ? stop : start)();
+        (event.type == 'blur' ? stop : start)();
 
       trigger(context[event.type], event);
     }
@@ -420,7 +420,7 @@
 
       if (is2D)
 
-      context.clearRect(0, 0, context.width * ratio, context.height * ratio);
+        context.clearRect(0, 0, context.width * ratio, context.height * ratio);
     }
 
     function destroy() {
@@ -482,7 +482,7 @@
 
         for (var i = 0; i < MATH_PROPS.length; i++)
 
-        context[MATH_PROPS[i]] = M[MATH_PROPS[i]];
+          context[MATH_PROPS[i]] = M[MATH_PROPS[i]];
 
         extend(context, {
 
@@ -494,11 +494,11 @@
 
             if (isArray(min))
 
-            return min[~~(M.random() * min.length)];
+              return min[~~(M.random() * min.length)];
 
             if (!isNumber(max))
 
-            max = min || 1, min = 0;
+              max = min || 1, min = 0;
 
             return min + M.random() * (max - min);
           },
@@ -532,15 +532,15 @@
 
           case CANVAS:
 
-          return element.getContext('2d', options);
+            return element.getContext('2d', options);
 
           case WEBGL:
 
-          return element.getContext('webgl', options) || element.getContext('experimental-webgl', options);
+            return element.getContext('webgl', options) || element.getContext('experimental-webgl', options);
 
           case DOM:
 
-          return element.canvas = element;
+            return element.canvas = element;
         }
 
       })();

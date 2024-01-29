@@ -5,6 +5,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <meta name="author" content="creative-community.space">
+  <meta name="reply-to" content="pehu@creative-community.space">
+
+  <!-- HTML Meta Tags -->
+  <?php require('ver/icon/all.html'); ?>
+  <title>Index | creative-community.space</title>
+  <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://creative-community.space/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Index | creative-community.space">
+  <meta property="og:description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。">
+  <meta property="og:image" content="https://creative-community.space/ver/card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="https://creative-community.space/">
+  <meta name="twitter:title" content="Index | creative-community.space">
+  <meta name="twitter:description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。">
+  <meta name="twitter:image" content="https://creative-community.space/ver/card.png">
+
   <script src="ver/js/menu.js"></script>
   <script src="ver/js/index.js"></script>
   <script src="ver/js/modal.js"></script>
@@ -13,28 +36,10 @@
     menuJSON('index.json')
   </script>
 
-  <!--og:meta-->
-  <meta content="website" property="og:type">
-  <title>Index | creative-community.space</title>
-  <meta content="Index | creative-community.space" property="og:title">
-  <meta content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。" name="description">
-  <meta content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。" name="og:description">
-
-  <meta name="author" content="creative-community.space">
-  <meta name="reply-to" content="pehu@creative-community.space">
-
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://creative-community.space/" property="og:url">
-  <meta content="https://creative-community.space/ver/card.png" property="og:image">
-  <meta content="https://creative-community.space/ver/card.png" name="twitter:image:src">
-
-  <?php require('ver/icon/all.html'); ?>
-
   <link rel="stylesheet" href="ver/css/menu.css" />
   <link rel="stylesheet" href="ver/css/index.css" />
-  <link rel="stylesheet" href="ver/css/controls.css" />
   <link rel="stylesheet" href="ver/css/modal.css">
+  <link rel="stylesheet" href="ver/css/controls.css" />
   <link rel="stylesheet" href="profile/thankyou/style.css">
   <link rel="stylesheet" href="profile/thankyou/www.css" media="print" />
 </head>

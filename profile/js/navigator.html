@@ -23,37 +23,38 @@
   <link rel="stylesheet" href="../../ver/css/menu.css" />
   <link rel="stylesheet" href="../../ver/css/howto.css" />
   <style>
-  #howto details {
-    max-width: 750px;
-    margin: auto;
-  }
-
-  #howto meter {
-    width: 100%;
-    height: 350px;
-  }
-
-  #howto meter::-webkit-meter-horizontal-bar {
-    border: double 5px #000;
-  }
-
-  @media screen and (max-width: 750px) {
-    #howto meter {
-      height: 45vw;
+    #howto details {
+      max-width: 750px;
+      margin: auto;
     }
-  }
 
-  #howto b {
-    color: red;
-  }
+    #howto meter {
+      width: 100%;
+      height: 350px;
+    }
 
-  hr {
-    border: none;
-    padding: 1rem;
-    margin: 0;
-  }
+    #howto meter::-webkit-meter-horizontal-bar {
+      border: double 5px #000;
+    }
+
+    @media screen and (max-width: 750px) {
+      #howto meter {
+        height: 45vw;
+      }
+    }
+
+    #howto b {
+      color: red;
+    }
+
+    hr {
+      border: none;
+      padding: 1rem;
+      margin: 0;
+    }
   </style>
 </head>
+
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <header id="menu" hidden>
     <button><b></b></button>
@@ -95,7 +96,7 @@ function <b>update</b>(online) {
 }
       </pre>
     </details>
-    <hr/>
+    <hr />
     <details>
       <summary>
         <strong id="network">navigator.connection</strong><br />
@@ -146,7 +147,7 @@ if (connectionInfo !== undefined) {
 }
       </pre>
     </details>
-    <hr/>
+    <hr />
     <details>
       <summary>
         <strong id="navigator">navigator.deviceMemory</strong><br />
@@ -170,4 +171,5 @@ document.querySelector('#navigator').innerHTML = `This Device has at least <b>${
     </details>
   </article>
 </body>
+
 </html>

@@ -1,14 +1,13 @@
 // <input type="text" id="textHere" value="Text Here">
 // <button onclick="canvasIcons()">canvasIcons()</button>
 
-
 'use strict'
 
 function canvasIcons() {
   const text = document.querySelector('#textHere');
 
   const canvasAll = document.querySelectorAll('canvas');
-  for  (let canvas of canvasAll) {
+  for (let canvas of canvasAll) {
     if (canvas.getContext) {
       const ctx = canvas.getContext('2d');
       const x = (canvas.width / 2);

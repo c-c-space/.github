@@ -28,7 +28,7 @@ h2,
 }
 
 #log button {
-  appearance : none;
+  appearance: none;
   outline: none;
   border: solid 2px;
   border-radius: 1rem;
@@ -70,7 +70,7 @@ meter::-webkit-meter-horizontal-even-less-good-value {
   background: red;
 }
 
-@media print{
+@media print {
   #menu {
     display: none;
   }

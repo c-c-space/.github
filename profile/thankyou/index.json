@@ -1,23 +1,23 @@
 {
-  "contents" : [
+  "contents": [
     {
-      "date" : "Your Drawing is Seems So Beautiful",
-      "name" : "Thank You for Visiting",
-      "url" : "/profile/thankyou/",
+      "date": "Your Drawing is Seems So Beautiful",
+      "name": "Thank You for Visiting",
+      "url": "/profile/thankyou/",
       "ver": "for PC",
       "hidden": false
     },
     {
-      "date" : "HSL.js",
-      "name" : "Hue Saturation Lightness",
-      "url" : "/profile/thankyou/hsl.html",
+      "date": "HSL.js",
+      "name": "Hue Saturation Lightness",
+      "url": "/profile/thankyou/hsl.html",
       "ver": "ver.1.0",
       "hidden": true
     },
     {
-      "date" : "Sketch.js / Touch.js",
-      "name" : "Drawing by Mouse Move or Screen Touch",
-      "url" : "/profile/thankyou/touch.html",
+      "date": "Sketch.js / Touch.js",
+      "name": "Drawing by Mouse Move or Screen Touch",
+      "url": "/profile/thankyou/touch.html",
       "ver": "ver.1.0",
       "hidden": true
     }

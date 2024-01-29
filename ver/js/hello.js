@@ -5,11 +5,11 @@
 #hello #speech 内のテキストを 音声に変換する
 */
 
-window.addEventListener('load', function() {
-  const hello = document.querySelector('#hello'),
-  speechAPI = document.createElement('nav'),
-  voiceSelect = document.createElement('select');
-  voiceSelect.setAttribute('id','voice-select')
+window.addEventListener('load', function () {
+  const hello = document.querySelector('#hello')
+  const speechAPI = document.createElement('nav')
+  const voiceSelect = document.createElement('select')
+  voiceSelect.setAttribute('id', 'voice-select')
 
   function appendVoices() {
     const voices = speechSynthesis.getVoices()
@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
       option.text = `${voice.name} (${voice.lang})`
       option.setAttribute('selected', voice.default)
       voiceSelect.appendChild(option)
-    });
+    })
   }
 
   appendVoices()
@@ -29,16 +29,16 @@ window.addEventListener('load', function() {
     appendVoices()
   }
 
-  const playBtn = document.createElement('input'),
-  stopBtn = document.createElement('input');
+  const playBtn = document.createElement('input')
+  const stopBtn = document.createElement('input')
 
-  playBtn.setAttribute('type','button')
-  playBtn.id = 'speak-btn'
-  playBtn.value = 'Play'
+  playBtn.setAttribute('type', 'button')
+  playBtn.id = 'speak-btn';
+  playBtn.value = 'Play';
 
-  stopBtn.setAttribute('type','button')
-  stopBtn.id = 'cancel-btn'
-  stopBtn.value = 'Stop'
+  stopBtn.setAttribute('type', 'button')
+  stopBtn.id = 'cancel-btn';
+  stopBtn.value = 'Stop';
 
   hello.prepend(speechAPI)
   speechAPI.appendChild(voiceSelect)
@@ -49,12 +49,12 @@ window.addEventListener('load', function() {
   playBtn.addEventListener('click', function () {
     const uttr = new SpeechSynthesisUtterance(textToSpeech.innerText)
     uttr.voice = speechSynthesis
-    .getVoices()
-    .filter(voice => voice.name === voiceSelect.value)[0]
+      .getVoices()
+      .filter(voice => voice.name === voiceSelect.value)[0]
     speechSynthesis.speak(uttr)
   })
 
   stopBtn.addEventListener('click', function () {
     speechSynthesis.cancel()
   })
-});
+})

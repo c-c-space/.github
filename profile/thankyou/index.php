@@ -148,14 +148,14 @@
       autoclear: false,
       retina: 'auto',
 
-      setup: function () {
+      setup: function() {
         console.log('setup');
       },
-      update: function () {
+      update: function() {
         radius = 2 + abs(sin(this.millis * 0.002) * 25);
       },
 
-      touchmove: function () {
+      touchmove: function() {
 
         for (let i = this.touches.length - 1, touch; i >= 0; i--) {
           touch = this.touches[i];

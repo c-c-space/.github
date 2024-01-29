@@ -72,6 +72,7 @@ flock($fp, LOCK_SH);
     }
 
     @media print {
+
       #menu,
       #now,
       #now * {

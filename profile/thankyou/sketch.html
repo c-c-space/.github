@@ -116,49 +116,6 @@
     <section>
       <pre id="javascript"></pre>
     </section>
-
-    <section>
-      <pre><code><math>
-        <![CDATA[
-<div id="sketch"></div>
-<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="sketch.js"></script>
-<script>
-  const COLOURS = ['#EEE'];
-  let radius = 0;
-
-  Sketch.create({
-    container: document.getElementById('sketch'),
-    autoclear: false,
-    retina: 'auto',
-
-    setup: function () {
-      console.log('setup');
-    },
-    update: function () {
-      radius = 2 + abs(sin(this.millis * 0.002) * 25);
-    },
-
-    touchmove: function () {
-
-      for (let i = this.touches.length - 1, touch; i >= 0; i--) {
-        touch = this.touches[i];
-        this.lineCap = 'round';
-        this.lineJoin = 'round';
-        this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
-        this.lineWidth = radius;
-
-        this.beginPath();
-        this.moveTo(touch.ox, touch.oy);
-        this.lineTo(touch.x, touch.y);
-        this.stroke();
-      }
-    }
-  });
-</script>
-        ]]>
-      </math></code></pre>
-    </section>
   </main>
 
   <div id="sketch"></div>

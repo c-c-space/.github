@@ -1,10 +1,10 @@
 'use strict'
 
-const info = document.querySelector('#info');
+const info = document.querySelector('#info')
 
-if(localStorage.getItem('map')) {
-  const yourLocation = JSON.parse(localStorage.getItem('map'))
-  const yourMap = document.createElement("li");
+if (localStorage.getItem('goout')) {
+  const yourLocation = JSON.parse(localStorage.getItem('goout'))
+  const yourMap = document.createElement("li")
   yourMap.innerHTML += `
   <span>行ったことのない場所へ行く</span>
   <span>
@@ -16,9 +16,9 @@ if(localStorage.getItem('map')) {
   info.before(yourMap);
 }
 
-if(localStorage.getItem('sign')) {
-  const yourSign = JSON.parse(localStorage.getItem('sign'));
-  const sign = document.createElement("li");
+if (localStorage.getItem('sign')) {
+  const yourSign = JSON.parse(localStorage.getItem('sign'))
+  const sign = document.createElement("li")
   sign.innerHTML += `
   <span>自分の気持ちを知る・表す</span>
   <span>
@@ -27,5 +27,5 @@ if(localStorage.getItem('sign')) {
   <span></span>
   <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suit You</span>
   `
-  info.before(sign);
+  info.before(sign)
 }

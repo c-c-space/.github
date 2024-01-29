@@ -1,16 +1,16 @@
 {
   "contents": [
     {
-      "date" : "更新履歴",
-      "name" : "New Contents & Version Up",
-      "url" : "/ver/",
+      "date": "更新履歴",
+      "name": "New Contents & Version Up",
+      "url": "/ver/",
       "ver": "ver.2.0",
       "hidden": true
     },
     {
-      "date" : "HTTP/1.1 on 195.179.236.11",
-      "name" : "アクセス履歴 | Access Log",
-      "url" : "/ver/log/",
+      "date": "HTTP/1.1 on 195.179.236.11",
+      "name": "アクセス履歴 | Access Log",
+      "url": "/ver/log/",
       "ver": "ver.2.0",
       "hidden": true
     }

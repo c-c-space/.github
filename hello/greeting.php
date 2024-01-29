@@ -14,4 +14,3 @@ if (date("H") >= 6 and date("H") <= 11) {
   $greeting = "Good Night おやすみ";
   $timeframe = "night";
 }
-?>

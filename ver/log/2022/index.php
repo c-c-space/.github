@@ -15,7 +15,7 @@ if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$description = $year .' 年 '. $month .' 月 の アクセス履歴';
+$description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
 $source_file = $month . ".csv";
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
@@ -23,6 +23,7 @@ flock($fp, LOCK_SH);
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +54,13 @@ flock($fp, LOCK_SH);
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
-  body {
-    padding: 0;
-    margin: 0;
-  }
+    body {
+      padding: 0;
+      margin: 0;
+    }
   </style>
 </head>
+
 <body>
   <header id="menu" hidden>
     <button><b></b></button>
@@ -126,4 +128,5 @@ flock($fp, LOCK_SH);
     <button type="submit">Access Log</button>
   </form>
 </body>
+
 </html>

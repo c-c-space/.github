@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const battery = document.querySelector('#battery')
     battery.style.display = "none"
   }
-  
+
   navigator.getBattery().then((battery) => {
     function updateAllBatteryInfo() {
       updateChargeInfo();

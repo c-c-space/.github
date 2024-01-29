@@ -27,7 +27,7 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML = '<u>You Posted</u><br/>'
 
       // sign 情報を表示
-      if(!localStorage.getItem('sign')) {
+      if (!localStorage.getItem('sign')) {
         yourStrage.innerHTML += '<a href="/sign/">0</a>'
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))

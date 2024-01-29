@@ -2,7 +2,7 @@ input,
 select,
 button,
 textarea {
-  appearance : none;
+  appearance: none;
   color: inherit;
   background: transparent;
   pointer-events: auto;
@@ -150,8 +150,9 @@ button:active {
 }
 
 @media (orientation: portrait) {
-    #hello input[type="submit"],
-    #hello button {
-        font-size: 125%;
-    }
+
+  #hello input[type="submit"],
+  #hello button {
+    font-size: 125%;
+  }
 }

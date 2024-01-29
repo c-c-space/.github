@@ -1,6 +1,6 @@
 'use strict'
 
-// #menuの生成(/css/menu.css を併用) と フェッチ操作
+// #menuの生成(/ver/css/menu.css を併用) と フェッチ操作
 
 async function fetchHTML(url = '', query = '') {
   fetch(url)
@@ -12,10 +12,10 @@ async function fetchHTML(url = '', query = '') {
 
 async function fetchText(url = '', query = '') {
   fetch(url)
-  .then(response => response.text())
-  .then(text => {
-    document.querySelector(query).innerText = text
-  })
+    .then(response => response.text())
+    .then(text => {
+      document.querySelector(query).innerText = text
+    })
 }
 
 async function menuJSON(requestURL) {
@@ -56,7 +56,7 @@ document.addEventListener('readystatechange', event => {
     const button = document.querySelector('#menu button');
     const box = document.body;
 
-    if(localStorage.getItem('yourInfo')) {
+    if (localStorage.getItem('yourInfo')) {
       menu.hidden = false;
       menu.style.display = "grid";
     } else {
@@ -82,11 +82,11 @@ document.addEventListener('readystatechange', event => {
 
     const randomRGBbg = document.querySelectorAll('#contents a');
     for (const ii of randomRGBbg) {
-      ii.addEventListener('mouseenter', function(event) {
+      ii.addEventListener('mouseenter', function (event) {
         event.target.style.background = randomRGB();
       });
 
-      ii.addEventListener('mouseleave', function(event) {
+      ii.addEventListener('mouseleave', function (event) {
         event.target.style.background = "";
       });
     }

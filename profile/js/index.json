@@ -1,16 +1,16 @@
 {
   "contents": [
     {
-      "date" : "Battery Status API",
-      "name" : "バッテリー状態 API",
-      "url" : "/profile/js/battery.html",
+      "date": "Battery Status API",
+      "name": "バッテリー状態 API",
+      "url": "/profile/js/battery.html",
       "ver": "ver.1.0",
       "hidden": true
     },
     {
-      "date" : "Network Information API",
-      "name" : "ネットワーク情報 API",
-      "url" : "/profile/js/navigator.html",
+      "date": "Network Information API",
+      "name": "ネットワーク情報 API",
+      "url": "/profile/js/navigator.html",
       "ver": "ver.1.0",
       "hidden": true
     }
