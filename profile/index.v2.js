@@ -8,7 +8,7 @@ if (localStorage.getItem('goout')) {
   yourMap.innerHTML += `
   <span>行ったことのない場所へ行く</span>
   <span>
-  <button class="color bgcolor" onclick="location.assign('/map/')">Go Out</button>
+  <button class="color bgcolor" onclick="location.assign('/map/profile/')">Go Out</button>
   </span>
   <span></span>
   <span>You Posted <b>${yourLocation.length}</b> Location</span>

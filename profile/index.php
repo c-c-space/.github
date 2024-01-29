@@ -112,7 +112,7 @@
     <section id="about"></section>
   </dialog>
 
-  <script src="index.js"></script>
+  <script src="index.v2.js"></script>
 </body>
 
 </html>
