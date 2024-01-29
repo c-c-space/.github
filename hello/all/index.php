@@ -16,11 +16,8 @@
   require('../head.php');
   ?>
 
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="<?php echo $url; ?>" property="og:url">
-  <meta content="<?php echo $url; ?>summary.png" property="og:image">
-  <meta content="<?php echo $url; ?>summary.png" name="twitter:image:src">
+  <meta property="og:image" content="<?php echo $url; ?>summary.png"; ?>">
+  <meta name="twitter:image" content="<?php echo $url; ?>summary.png"; ?>">
 
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="../css/index.css" />
