@@ -54,7 +54,7 @@
     <article>
       <section id="speech">
         <h1>
-          <?php require('hello/all/greeting.php'); ?>
+          <?php require('hello/greeting.php'); ?>
           <b>
             <?php echo $greeting; ?>
           </b>
