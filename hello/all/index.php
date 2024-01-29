@@ -16,8 +16,8 @@
   require('../head.php');
   ?>
 
-  <meta property="og:image" content="<?php echo $url; ?>summary.png"; ?>">
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png"; ?>">
+  <meta property="og:image" content="<?php echo $url . "summary.png"; ?>">
+  <meta name="twitter:image" content="<?php echo $url . "summary.png"; ?>">
 
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="../css/index.css" />
