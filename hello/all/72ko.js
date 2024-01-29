@@ -10,6 +10,16 @@ async function koJSON(requestURL) {
 }
 
 function koIndex(obj) {
+  let hello = document.querySelector('#hello')
+  let ko = document.createElement('p')
+  ko.innerHTML `
+  <small>
+    七十二候（しちじゅうにこう）は、二十四節気をさらに約5日ずつの3つの季節に分けたもの<br/>
+    繊細な季節のうつろい、気象の動きや動植物の変化を短い文で表します。
+  </small>
+  `
+  hello.appendChild(ko)
+  
   let ul = document.querySelector('#ko')
   const allKo = obj.ko;
   for (const ko of allKo) {
