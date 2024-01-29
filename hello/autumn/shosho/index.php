@@ -12,7 +12,8 @@
 
   require_once('../../head.php');
   ?>
-  <meta content="<?php echo $url; ?>" property="og:url">
+  <meta property="og:image" content="<?php echo $url . "card.png"; ?>">
+  <meta name="twitter:image" content="<?php echo $url . "card.png"; ?>">
 
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
