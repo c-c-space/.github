@@ -5,6 +5,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  
+  <!-- HTML Meta Tags -->
+  <title>通信情報／ブラウザ等情報 | creative-community.space</title>
+  <meta name="description" content="The Information About Network & Browser for connection to The Internet">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://creative-community.space/profile/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="通信情報／ブラウザ等情報 | creative-community.space">
+  <meta property="og:description" content="The Information About Network & Browser for connection to The Internet">
+  <meta property="og:image" content="https://creative-community.space/ver/card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="https://creative-community.space/profile/">
+  <meta name="twitter:title" content="通信情報／ブラウザ等情報 | creative-community.space">
+  <meta name="twitter:description" content="The Information About Network & Browser for connection to The Internet">
+  <meta name="twitter:image" content="https://creative-community.space/ver/card.png">
+
   <script src="/ver/js/menu.js"></script>
   <script src="/ver/js/modal.js"></script>
   <script src="/ver/js/userMedia.js"></script>
@@ -20,21 +40,7 @@
     }, false);
   </script>
 
-  <!--og:meta-->
-  <meta content="website" property="og:type">
-  <title>通信情報／ブラウザ等情報 | creative-community.space</title>
-  <meta content="通信情報／ブラウザ等情報 | creative-community.space" property="og:title">
-  <meta content="The Information About Network & Browser for connection to The Internet" name="description">
-  <meta content="The Information About Network & Browser for connection to The Internet" name="og:description">
-
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://creative-community.space/profile/" property="og:url">
-  <meta content="https://creative-community.space/ver/card.png" property="og:image">
-  <meta content="https://creative-community.space/ver/card.png" name="twitter:image:src">
-
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/log.css" />
   <link rel="stylesheet" href="/ver/css/modal.css" />

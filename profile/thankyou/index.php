@@ -5,6 +5,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+
+  <!-- HTML Meta Tags -->
+  <title>Thank You | creative-community.space</title>
+  <meta name="description" content="OMG! Your Drawing is Seems So Beautiful">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://creative-community.space/profile/thankyou/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thank You | creative-community.space">
+  <meta property="og:description" content="OMG! Your Drawing is Seems So Beautiful">
+  <meta property="og:image" content="https://creative-community.space/profile/thankyou/card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="https://creative-community.space/profile/thankyou/">
+  <meta name="twitter:title" content="Thank You | creative-community.space">
+  <meta name="twitter:description" content="OMG! Your Drawing is Seems So Beautiful">
+  <meta name="twitter:image" content="https://creative-community.space/profile/thankyou/card.png">
+
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -13,21 +33,7 @@
     menuJSON('index.json')
   </script>
 
-  <!--og:meta-->
-  <meta content="website" property="og:type">
-  <title>Thank You | creative-community.space</title>
-  <meta content="Thank You | creative-community.space" property="og:title">
-  <meta content="OMG! Your Drawing is Seems So Beautiful" name="description">
-  <meta content="OMG! Your Drawing is Seems So Beautiful" name="og:description">
-
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://creative-community.space/profile/thankyou/" property="og:url">
-  <meta content="https://creative-community.space/profile/thankyou/card.png" property="og:image">
-  <meta content="https://creative-community.space/profile/thankyou/card.png" name="twitter:image:src">
-
   <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="style.css" />
   <style>

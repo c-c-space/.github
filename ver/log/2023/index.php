@@ -28,6 +28,26 @@ flock($fp, LOCK_SH);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!-- HTML Meta Tags -->
+  <title><?php echo $title; ?></title>
+  <meta name="description" content="<?php echo $description; ?>">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="<?php echo $url; ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?php echo $title; ?>">
+  <meta property="og:description" content="<?php echo $description; ?>">
+  <meta property="og:image" content="<?php echo $site; ?>ver/log/summary.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="<?php echo $url; ?>">
+  <meta name="twitter:title" content="<?php echo $title; ?>">
+  <meta name="twitter:description" content="<?php echo $description; ?>">
+  <meta name="twitter:image" content="<?php echo $site; ?>ver/log/summary.png">
+
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
@@ -35,24 +55,10 @@ flock($fp, LOCK_SH);
     }
   </script>
 
-  <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
-  <meta property="og:title" content="<?php echo $title; ?>" />
-  <meta property="og:description" content="<?php echo $description; ?>" />
-  <meta property="og:site_name" content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
-  <meta property="og:url" content="<?php echo $url; ?>" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta property="og:image" content="<?php echo $url; ?>summary.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png" />
-
+  <link rel="icon" href="/ver/icon.png" type="image/png">
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/log.css" />
   <link rel="stylesheet" href="/ver/css/selectmonth.css" />
-  <link rel="icon" href="/ver/icon.png" type="image/png">
-  <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
   <style>
     body {
       padding: 0;
