@@ -34,30 +34,30 @@ function indexObject(obj) {
     li.setAttribute("data-yomi", color.yomi)
     li.setAttribute("data-note", color.note)
     li.setAttribute("data-description", color.description)
+    li.style.background = color.hex;
     li.innerHTML = `
     <p>
     <code>${color.hex}</code><br/>
     <button type="button">${color.name}</button>
     </p>
-    `
-    li.style.background = color.hex
+    `;
     ul.appendChild(li)
 
-    hidden.innerText += `${color.hex}, `
-    about.style.backgroundImage = "conic-gradient(from 90deg at 0% 100%, " + hidden.innerText + "#fff)"
+    hidden.innerText += `${color.hex}, `;
+    about.style.backgroundImage = "conic-gradient(from 90deg at 0% 100%, " + hidden.innerText + "#fff)";
 
     li.addEventListener('click', function () {
       if (typeof about.showModal === "function") {
-        about.showModal();
+        about.showModal()
       } else {
         alert("The <dialog> API is not supported by this browser");
       }
-      about.style.background = this.style.background
-      name.innerText = this.dataset.name
-      yomi.innerText = this.dataset.yomi
-      hex.innerText = this.style.background
-      note.innerText = this.dataset.note
-      description.innerText = this.dataset.description
+      about.style.background = this.style.background;
+      name.innerText = this.dataset.name;
+      yomi.innerText = this.dataset.yomi;
+      hex.innerText = this.style.background;
+      note.innerText = this.dataset.note;
+      description.innerText = this.dataset.description;
     }, false)
   }
 }

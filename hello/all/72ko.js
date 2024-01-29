@@ -14,12 +14,12 @@ function koIndex(obj) {
   let ko = document.createElement('p')
   ko.innerHTML = `
   <small>
-    七十二候（しちじゅうにこう）は、二十四節気をさらに約5日ずつの3つの季節に分けたもの<br/>
-    繊細な季節のうつろい、気象の動きや動植物の変化を短い文で表します。
+  七十二候（しちじゅうにこう）は、二十四節気をさらに約5日ずつの3つの季節に分けたもの<br>
+  繊細な季節のうつろい、気象の動きや動植物の変化を短い文で表します。
   </small>
-  `
+  `;
   hello.appendChild(ko)
-  
+
   let ul = document.querySelector('#ko')
   const allKo = obj.ko;
   for (const ko of allKo) {
@@ -27,15 +27,17 @@ function koIndex(obj) {
     let date = document.createElement('p')
     date.innerHTML = `
     <code>${ko.start} - ${ko.end}</code>
-    `
+    `;
+
     let buttonP = document.createElement('p')
     let button = document.createElement('button')
-    button.type = 'button'
+    button.type = 'button';
     button.setAttribute('data-name', 'Daniel')
     button.setAttribute('data-hello', ko.description)
     button.innerHTML = `
     ${ko.name} <i>${ko.value}</i>
-    `
+    `;
+
     ul.appendChild(li)
     li.appendChild(date)
     li.appendChild(buttonP)
@@ -43,21 +45,21 @@ function koIndex(obj) {
 
     button.addEventListener('click', function () {
       const uttr = new SpeechSynthesisUtterance()
-      uttr.text = this.dataset.hello
-      uttr.lang = "en-GB"
+      uttr.text = this.dataset.hello;
+      uttr.lang = "en-GB";
       uttr.voice = speechSynthesis
-      .getVoices()
-      .filter(voice => voice.name === this.dataset.name)[0]
+        .getVoices()
+        .filter(voice => voice.name === this.dataset.name)[0]
 
-      uttr.pitch = 0.9
-      uttr.rate = 0.9
+      uttr.pitch = 0.9;
+      uttr.rate = 0.9;
       speechSynthesis.speak(uttr)
 
       const h1B = document.querySelector('#log h1 b')
-      h1B.innerText = this.dataset.hello
+      h1B.innerText = this.dataset.hello;
 
       const description = document.querySelector('#lastModified')
-      description.innerText = this.innerText
+      description.innerText = this.innerText;
     }, false)
   }
 }
