@@ -5,7 +5,7 @@
   <?php
   $datetime = date('10-08');
   require_once('../../all/24sekki.php');
-  require_once('../../all/greeting.php');
+  require_once('../../greeting.php');
 
   $title = $sekkiName . ' | ' . $date;
   $thisDescription = $description . ' | ' . $hello;
