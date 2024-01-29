@@ -21,15 +21,12 @@
   
   require('head.php');
   ?>
+
+  <meta property="og:image" content="<?php echo $url . $season . "/summary.png"; ?>">
+  <meta name="twitter:image" content="<?php echo $url . $season . "/summary.png"; ?>">
   
   <script src="index.js"></script>
   <script src="/ver/js/login.js"></script>
-
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="<?php echo $url; ?>" property="og:url">
-  <meta content="<?php echo $url . $season . "/summary.png"; ?>" property="og:image">
-  <meta content="<?php echo $url . $season . "/summary.png"; ?>" name="twitter:image:src">
 
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="css/index.css" />
