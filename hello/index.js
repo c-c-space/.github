@@ -16,7 +16,7 @@ document.addEventListener('readystatechange', event => {
     if (!localStorage.getItem('yourInfo')) {
       const loginBtn = document.querySelector('#login-btn')
       loginBtn.setAttribute('onclick', 'setLOG()')
-      loginBtn.textContent = 'Submit Your Info to Enter This Site'
+      loginBtn.textContent = 'Submit Your Info to Enter'
 
       const removeAll = document.querySelectorAll('#log article, #now .controls')
       for (const i of removeAll) {
