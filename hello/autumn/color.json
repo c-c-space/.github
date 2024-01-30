@@ -1,249 +1,249 @@
 {
-  "color" : [
+  "color": [
     {
-      "name" : "千歳緑（ちとせみどり）",
-      "yomi" : "Chitosemidori",
-      "hex" : "#335719",
-      "note" : "松の葉の緑のような濃く暗い緑色。 松は、長寿と不変の象徴で、それにあやかり千年の後も変わらない緑の意を示す縁起の良い色名。",
-      "description" : "The Chitosemidori, is a dark dark green like the green leaf pine.It is also read as “chitose green” and “senzairyoku”."
+      "name": "千歳緑（ちとせみどり）",
+      "yomi": "Chitosemidori",
+      "hex": "#335719",
+      "note": "松の葉の緑のような濃く暗い緑色。 松は、長寿と不変の象徴で、それにあやかり千年の後も変わらない緑の意を示す縁起の良い色名。",
+      "description": "The Chitosemidori, is a dark dark green like the green leaf pine.It is also read as “chitose green” and “senzairyoku”."
     },
     {
-      "name" : "紺碧（こんぺき）",
-      "yomi" : "Konpeki",
-      "hex" : "#005B98",
-      "note" : "日差しの強い青空の色のような深く濃い青色。 「紺碧の空」「紺碧の海」のように濃く美しい青の表現によく使われる。",
-      "description" : "The Konpeki, it is the deep dark blue, such as the color of strong blue sky."
+      "name": "紺碧（こんぺき）",
+      "yomi": "Konpeki",
+      "hex": "#005B98",
+      "note": "日差しの強い青空の色のような深く濃い青色。 「紺碧の空」「紺碧の海」のように濃く美しい青の表現によく使われる。",
+      "description": "The Konpeki, it is the deep dark blue, such as the color of strong blue sky."
     },
     {
-      "name" : "銀鼠（ぎんねずみ）",
-      "yomi" : "Ginnezumi",
-      "hex" : "#BBBCBF",
-      "note" : "銀色のようなほんのり青みを含んだ明るい灰色。 墨の濃淡により無限の色を表現できるという意味の「墨の五彩」の「淡」。",
-      "description" : "The Ginnezumi, in the meaning of gray-tinged green willow, it is a gray to pale greenish."
+      "name": "銀鼠（ぎんねずみ）",
+      "yomi": "Ginnezumi",
+      "hex": "#BBBCBF",
+      "note": "銀色のようなほんのり青みを含んだ明るい灰色。 墨の濃淡により無限の色を表現できるという意味の「墨の五彩」の「淡」。",
+      "description": "The Ginnezumi, in the meaning of gray-tinged green willow, it is a gray to pale greenish."
     },
     {
-      "name" : "深緋（こきあけ）",
-      "yomi" : "Kokiake",
-      "hex" : "#C20024",
-      "note" : "紫みの暗い赤色で、茜と紫とで染めたもので、名称にある緋の色感はなく黒みの強い色。",
-      "description" : "The Kokiake, dark red purple Mino, as it was dyed with the purple and madder, is a strong color slug rather than a sense of scarlet color in the name."
+      "name": "深緋（こきあけ）",
+      "yomi": "Kokiake",
+      "hex": "#C20024",
+      "note": "紫みの暗い赤色で、茜と紫とで染めたもので、名称にある緋の色感はなく黒みの強い色。",
+      "description": "The Kokiake, dark red purple Mino, as it was dyed with the purple and madder, is a strong color slug rather than a sense of scarlet color in the name."
     },
     {
-      "name" : "麦藁色（むぎわらいろ）",
-      "yomi" : "Mugiwara-iro",
-      "hex" : "#E3C576",
-      "note" : "麦藁の色のような赤みを帯びたくすんだ黄色。 麦藁帽子の色。英名では『ストロー』。",
-      "description" : "The mugiwara-iro, such as the color of straw, is a living I want yellow reddish. Straw hat of color. “Straw” in the English name."
+      "name": "麦藁色（むぎわらいろ）",
+      "yomi": "Mugiwara-iro",
+      "hex": "#E3C576",
+      "note": "麦藁の色のような赤みを帯びたくすんだ黄色。 麦藁帽子の色。英名では『ストロー』。",
+      "description": "The mugiwara-iro, such as the color of straw, is a living I want yellow reddish. Straw hat of color. “Straw” in the English name."
     },
     {
-      "name" : "白茶（しらちゃ）",
-      "yomi" : "Shiracha",
-      "hex" : "#DAC4A5",
-      "note" : "薄くて明るい感じの茶色。 色あせて白っぽくなることを白茶けるという。",
-      "description" : "The Shiracha, it is a feeling of light brown and thin. This is referred to as fade to become washed out and faded."
+      "name": "白茶（しらちゃ）",
+      "yomi": "Shiracha",
+      "hex": "#DAC4A5",
+      "note": "薄くて明るい感じの茶色。 色あせて白っぽくなることを白茶けるという。",
+      "description": "The Shiracha, it is a feeling of light brown and thin. This is referred to as fade to become washed out and faded."
     },
     {
-      "name" : "鈍色（にびいろ）",
-      "yomi" : "Nibi-iro",
-      "hex" : "#727171",
-      "note" : "無彩色系の鈍い鼠色。 昔は近しい人に不幸があったときに着用する喪服の色だった。",
-      "description" : "The Nibi-iro,The dull color, as well as such Tsurubami-iro, it is grizzle dull achromatic system."
+      "name": "鈍色（にびいろ）",
+      "yomi": "Nibi-iro",
+      "hex": "#727171",
+      "note": "無彩色系の鈍い鼠色。 昔は近しい人に不幸があったときに着用する喪服の色だった。",
+      "description": "The Nibi-iro,The dull color, as well as such Tsurubami-iro, it is grizzle dull achromatic system."
     },
     {
-      "name" : "赤銅色（しゃくどういろ）",
-      "yomi" : "Shakudo-iro",
-      "hex" : "#7E0F09",
-      "note" : "金属の赤銅のような艶のある暗い赤色。 『赤胴』は銅に少量の金を加えた合金で、奈良の大仏鋳造に赤銅が使われた。",
-      "description" : "The Shakudo-iro, it is a dark red shiny like coppery metal."
+      "name": "赤銅色（しゃくどういろ）",
+      "yomi": "Shakudo-iro",
+      "hex": "#7E0F09",
+      "note": "金属の赤銅のような艶のある暗い赤色。 『赤胴』は銅に少量の金を加えた合金で、奈良の大仏鋳造に赤銅が使われた。",
+      "description": "The Shakudo-iro, it is a dark red shiny like coppery metal."
     },
     {
-      "name" : "藍鉄色（あいてついろ）",
-      "yomi" : "Aitetsu-iro",
-      "hex" : "#003A47",
-      "note" : "緑みを含んだ濃い青色。 江戸時代らしい渋好みの色。",
-      "description" : "The Aitetsu-iro, is the dark blue that contains the green body."
+      "name": "藍鉄色（あいてついろ）",
+      "yomi": "Aitetsu-iro",
+      "hex": "#003A47",
+      "note": "緑みを含んだ濃い青色。 江戸時代らしい渋好みの色。",
+      "description": "The Aitetsu-iro, is the dark blue that contains the green body."
     },
     {
-      "name" : "露草色（つゆくさいろ）",
-      "yomi" : "Tsuyukusa-iro",
-      "hex" : "#71A4D9",
-      "note" : "早朝に咲くつゆくさの花にちなんだ明るい薄青色。 日本各地の路傍や小川のほとりに群生している。",
-      "description" : "The Tsuyukusa-iro, it is a bright light blue named after the flower of spiderwort blooming in the early morning."
+      "name": "露草色（つゆくさいろ）",
+      "yomi": "Tsuyukusa-iro",
+      "hex": "#71A4D9",
+      "note": "早朝に咲くつゆくさの花にちなんだ明るい薄青色。 日本各地の路傍や小川のほとりに群生している。",
+      "description": "The Tsuyukusa-iro, it is a bright light blue named after the flower of spiderwort blooming in the early morning."
     },
     {
-      "name" : "葡萄色（えびいろ）",
-      "yomi" : "Ebi-iro",
-      "hex" : "#6E1E51",
-      "note" : "やまぶどうの熟した実のような暗い赤紫色。 または、薄く渋い紅色。",
-      "description" : "The Ebi-iro and can be found in dark red purple like the ripe fruits of Vitis coignetiae Vitis coignetiae. Or, it is a thinly astringent red."
+      "name": "葡萄色（えびいろ）",
+      "yomi": "Ebi-iro",
+      "hex": "#6E1E51",
+      "note": "やまぶどうの熟した実のような暗い赤紫色。 または、薄く渋い紅色。",
+      "description": "The Ebi-iro and can be found in dark red purple like the ripe fruits of Vitis coignetiae Vitis coignetiae. Or, it is a thinly astringent red."
     },
     {
-      "name" : "茜色（あかねいろ）",
-      "yomi" : "Akane-iro",
-      "hex" : "#B7282E",
-      "note" : "茜草の根で染めた暗い赤色。 夕暮れ時の空の形容などに良く用いられる。",
-      "description" : "The Akane-iro it is a dark red dyed with madder grassroots. It is known to be frequently used, such as adjective empty at dusk."
+      "name": "茜色（あかねいろ）",
+      "yomi": "Akane-iro",
+      "hex": "#B7282E",
+      "note": "茜草の根で染めた暗い赤色。 夕暮れ時の空の形容などに良く用いられる。",
+      "description": "The Akane-iro it is a dark red dyed with madder grassroots. It is known to be frequently used, such as adjective empty at dusk."
     },
     {
-      "name" : "撫子色（なでしこいろ）",
-      "yomi" : "Nadeshiko-iro",
-      "hex" : "#EEBBCB",
-      "note" : "撫子の花のような少し紫みのあるピンク系統の薄い赤色。 秋の七草の一つ。",
-      "description" : "The Nadeshiko-iro, it is a red thin pink line that Purplish a little like a flower of pink."
+      "name": "撫子色（なでしこいろ）",
+      "yomi": "Nadeshiko-iro",
+      "hex": "#EEBBCB",
+      "note": "撫子の花のような少し紫みのあるピンク系統の薄い赤色。 秋の七草の一つ。",
+      "description": "The Nadeshiko-iro, it is a red thin pink line that Purplish a little like a flower of pink."
     },
     {
-      "name" : "桔梗色（ききょういろ）",
-      "yomi" : "Kikyō-iro",
-      "hex" : "#624498",
-      "note" : "桔梗の花のような青みを帯びた紫色。 ききょうは秋の七草の一つ。青紫の代表的な伝統色。",
-      "description" : "The Kikyou-iro, is a purple bluish, such as the bellflower of flowers. In color name that has been loved by the Heian period, the blue-violet typical traditional color."
+      "name": "桔梗色（ききょういろ）",
+      "yomi": "Kikyō-iro",
+      "hex": "#624498",
+      "note": "桔梗の花のような青みを帯びた紫色。 ききょうは秋の七草の一つ。青紫の代表的な伝統色。",
+      "description": "The Kikyou-iro, is a purple bluish, such as the bellflower of flowers. In color name that has been loved by the Heian period, the blue-violet typical traditional color."
     },
     {
-      "name" : "竜胆色（りんどういろ）",
-      "yomi" : "Rindou-iro",
-      "hex" : "#6967AB",
-      "note" : "竜胆の花のような薄い青紫色。 りんどうは、桔梗と共に日本の秋を代表する花",
-      "description" : "The Rindou-iro, it is a thin blue purple, such as gentian flowers. Gentian is a perennial plant of the gentian family native to Japan Yamano."
+      "name": "竜胆色（りんどういろ）",
+      "yomi": "Rindou-iro",
+      "hex": "#6967AB",
+      "note": "竜胆の花のような薄い青紫色。 りんどうは、桔梗と共に日本の秋を代表する花",
+      "description": "The Rindou-iro, it is a thin blue purple, such as gentian flowers. Gentian is a perennial plant of the gentian family native to Japan Yamano."
     },
     {
-      "name" : "萩色（はぎいろ）",
-      "yomi" : "Hagi-iro",
-      "hex" : "#E24F93",
-      "note" : "紫みの明るい紅色。 萩は「秋の七草」に選ばれているように秋を代表する花。",
-      "description" : "Thr Hagiiro is a bright purple color like purple flowers blooming in the autumn mountains. It is an old color name, originally the name of the attack color and weave color."
+      "name": "萩色（はぎいろ）",
+      "yomi": "Hagi-iro",
+      "hex": "#E24F93",
+      "note": "紫みの明るい紅色。 萩は「秋の七草」に選ばれているように秋を代表する花。",
+      "description": "Thr Hagiiro is a bright purple color like purple flowers blooming in the autumn mountains. It is an old color name, originally the name of the attack color and weave color."
     },
     {
-      "name" : "女郎花（おみなえし）",
-      "yomi" : "Ominaeshi",
-      "hex" : "#F2F2B0",
-      "note" : "秋に咲く女郎花の花のような明るい緑みのある黄色。 秋の七草の一つ。｢思い草」ともいわれる。",
-      "description" : "The Ominaeshi, It is a yellow with a bright green taste like a flower of Ominaeshi blooming in autumn."
+      "name": "女郎花（おみなえし）",
+      "yomi": "Ominaeshi",
+      "hex": "#F2F2B0",
+      "note": "秋に咲く女郎花の花のような明るい緑みのある黄色。 秋の七草の一つ。｢思い草」ともいわれる。",
+      "description": "The Ominaeshi, It is a yellow with a bright green taste like a flower of Ominaeshi blooming in autumn."
     },
     {
-      "name" : "承和色（そがいろ）",
-      "yomi" : "Soga-iro",
-      "hex" : "#F3F47F",
-      "note" : "菊の花の色のような少しくすんだ黄色。 「そが」は「じょうわ」から転じた読み方であり、そのまま「じょうわいろ」と読むこともある。",
-      "description" : "The Soga-iro, is that yellow little dull, such as the color of the flower of chrysanthemum."
+      "name": "承和色（そがいろ）",
+      "yomi": "Soga-iro",
+      "hex": "#F3F47F",
+      "note": "菊の花の色のような少しくすんだ黄色。 「そが」は「じょうわ」から転じた読み方であり、そのまま「じょうわいろ」と読むこともある。",
+      "description": "The Soga-iro, is that yellow little dull, such as the color of the flower of chrysanthemum."
     },
     {
-      "name" : "紫苑色（しおんいろ）",
-      "yomi" : "Shion-iro",
-      "hex" : "#968ABD",
-      "note" : "紫苑の花の色のような少し青みのある薄い紫色。 『源氏物語』などの王朝文学にもたびたび登場する伝統色名。",
-      "description" : "The Shion-iro, it is a thin purple bluish little like the color of the flower of Zion."
+      "name": "紫苑色（しおんいろ）",
+      "yomi": "Shion-iro",
+      "hex": "#968ABD",
+      "note": "紫苑の花の色のような少し青みのある薄い紫色。 『源氏物語』などの王朝文学にもたびたび登場する伝統色名。",
+      "description": "The Shion-iro, it is a thin purple bluish little like the color of the flower of Zion."
     },
     {
-      "name" : "木賊色（とくさいろ）",
-      "yomi" : "Tokusa-iro",
-      "hex" : "#22825D",
-      "note" : "青みがかった濃い緑色。 秋に刈り取って使ったことから『木賊刈る』は秋の季語。",
-      "description" : "The Tokusa-iro, it is a deep green with a bluish stalky Equisetum."
+      "name": "木賊色（とくさいろ）",
+      "yomi": "Tokusa-iro",
+      "hex": "#22825D",
+      "note": "青みがかった濃い緑色。 秋に刈り取って使ったことから『木賊刈る』は秋の季語。",
+      "description": "The Tokusa-iro, it is a deep green with a bluish stalky Equisetum."
     },
     {
-      "name" : "月白（げっぱく）",
-      "yomi" : "Geppaku",
-      "hex" : "#F6F7F8",
-      "note" : "月の光を思わせる薄い青みを含んだ白色。 また「月代」とも書かれ「三秋」の季語にもなっている。",
-      "description" : "The Geppaku, it is a white that includes a thin bluish reminiscent the light of the moon."
+      "name": "月白（げっぱく）",
+      "yomi": "Geppaku",
+      "hex": "#F6F7F8",
+      "note": "月の光を思わせる薄い青みを含んだ白色。 また「月代」とも書かれ「三秋」の季語にもなっている。",
+      "description": "The Geppaku, it is a white that includes a thin bluish reminiscent the light of the moon."
     },
     {
-      "name" : "紫式部（むらさきしきぶ）",
-      "yomi" : "Murasakishikibu",
-      "hex" : "#90326D",
-      "note" : "紫式部の実のような赤みのある渋い紫色。",
-      "description" : "The Murasakishikibu, it is a bitter purple with reddish, such as the fruit of Murasaki Shikibu."
+      "name": "紫式部（むらさきしきぶ）",
+      "yomi": "Murasakishikibu",
+      "hex": "#90326D",
+      "note": "紫式部の実のような赤みのある渋い紫色。",
+      "description": "The Murasakishikibu, it is a bitter purple with reddish, such as the fruit of Murasaki Shikibu."
     },
     {
-      "name" : "栗梅（くりうめ）",
-      "yomi" : "Kiriume",
-      "hex" : "#6C1912",
-      "note" : "栗色を帯びた濃い赤茶色です。色名は｢栗色の梅染｣が略されたもの。",
-      "description" : "The Kuriume, is a dark red-brown tinged with maroon. Color name is a result of “Kuri-iro no umesome” is abbreviated, I was used since the Edo period the previous year."
+      "name": "栗梅（くりうめ）",
+      "yomi": "Kiriume",
+      "hex": "#6C1912",
+      "note": "栗色を帯びた濃い赤茶色です。色名は｢栗色の梅染｣が略されたもの。",
+      "description": "The Kuriume, is a dark red-brown tinged with maroon. Color name is a result of “Kuri-iro no umesome” is abbreviated, I was used since the Edo period the previous year."
     },
     {
-      "name" : "み空色（みそらいろ）",
-      "yomi" : "Misora-iro",
-      "hex" : "#6C9BD2",
-      "note" : "明るく澄んだ秋の空のような薄い青色。 色名の「み空」は「空」を上品に呼んだ美称。",
-      "description" : "Misora-iro is a light blue color like a clear autumn sky. “Misora” of the color name is a beauty called elegantly “sky”, and in kanji it is written as “御空”."
+      "name": "み空色（みそらいろ）",
+      "yomi": "Misora-iro",
+      "hex": "#6C9BD2",
+      "note": "明るく澄んだ秋の空のような薄い青色。 色名の「み空」は「空」を上品に呼んだ美称。",
+      "description": "Misora-iro is a light blue color like a clear autumn sky. “Misora” of the color name is a beauty called elegantly “sky”, and in kanji it is written as “御空”."
     },
     {
-      "name" : "胡桃色（くるみいろ）",
-      "yomi" : "Kurumi-iro",
-      "hex" : "#A86F4C",
-      "note" : "胡桃の木の皮や実の外皮、あるいは根の皮などを使って染めた黄褐色。",
-      "description" : "The Kurumi-iro, it is a yellow-brown dyed using the skin, such as root or skin, of the real and bark of walnut."
+      "name": "胡桃色（くるみいろ）",
+      "yomi": "Kurumi-iro",
+      "hex": "#A86F4C",
+      "note": "胡桃の木の皮や実の外皮、あるいは根の皮などを使って染めた黄褐色。",
+      "description": "The Kurumi-iro, it is a yellow-brown dyed using the skin, such as root or skin, of the real and bark of walnut."
     },
     {
-      "name" : "淡黄蘗（うすきはだ）",
-      "yomi" : "Usukihada",
-      "hex" : "#F9F1C0",
-      "note" : "黄蘗染の薄い色で明るく淡い黄色。 薄い黄色を表す『淡黄』よりも更に薄い色。",
-      "description" : "The Usukihada, is a bright pale yellow with a thin color of Kihadazome. Than “Tankou” representing a thin yellow will be even thinner color."
+      "name": "淡黄蘗（うすきはだ）",
+      "yomi": "Usukihada",
+      "hex": "#F9F1C0",
+      "note": "黄蘗染の薄い色で明るく淡い黄色。 薄い黄色を表す『淡黄』よりも更に薄い色。",
+      "description": "The Usukihada, is a bright pale yellow with a thin color of Kihadazome. Than “Tankou” representing a thin yellow will be even thinner color."
     },
     {
-      "name" : "柿色（かきいろ）",
-      "yomi" : "Kaki-iro",
-      "hex" : "#DE6A1C",
-      "note" : "柿の果実のような鮮やかで濃い橙色。",
-      "description" : "The Kaki-iro, is a vivid dark orange color, such as the persimmon fruit."
+      "name": "柿色（かきいろ）",
+      "yomi": "Kaki-iro",
+      "hex": "#DE6A1C",
+      "note": "柿の果実のような鮮やかで濃い橙色。",
+      "description": "The Kaki-iro, is a vivid dark orange color, such as the persimmon fruit."
     },
     {
-      "name" : "柿渋色（かきしぶいろ）",
-      "yomi" : "Kakishibu-iro",
-      "hex" : "#BD7862",
-      "note" : "灰がかった黄赤色で、色づく前のカキの実をしぼって作る。 歌舞伎役者の一門、市川家がよく用いていた色であるところから、俗に｢団十郎茶｣とも呼ばれる。",
-      "description" : "The Kakisibu-iro, yellow-red slightly gray, it is made ​​by squeezing the fruit of oysters before turns red and yellow."
+      "name": "柿渋色（かきしぶいろ）",
+      "yomi": "Kakishibu-iro",
+      "hex": "#BD7862",
+      "note": "灰がかった黄赤色で、色づく前のカキの実をしぼって作る。 歌舞伎役者の一門、市川家がよく用いていた色であるところから、俗に｢団十郎茶｣とも呼ばれる。",
+      "description": "The Kakisibu-iro, yellow-red slightly gray, it is made ​​by squeezing the fruit of oysters before turns red and yellow."
     },
     {
-      "name" : "大和柿（やまとがき）",
-      "yomi" : "Yamatogaki",
-      "hex" : "#EFAE7C",
-      "note" : "ややくすんだ明るい橙色。 江戸後期の歌舞伎役者・三代目“坂東三津五郎”が好んだ色。三津五郎の屋号が「大和屋」。",
-      "description" : "The Yamatogaki, derived from the popular actor of the Edo era, is a somewhat dull bright orange."
+      "name": "大和柿（やまとがき）",
+      "yomi": "Yamatogaki",
+      "hex": "#EFAE7C",
+      "note": "ややくすんだ明るい橙色。 江戸後期の歌舞伎役者・三代目“坂東三津五郎”が好んだ色。三津五郎の屋号が「大和屋」。",
+      "description": "The Yamatogaki, derived from the popular actor of the Edo era, is a somewhat dull bright orange."
     },
     {
-      "name" : "青朽葉（あおくちば）",
-      "yomi" : "Aokuchiba",
-      "hex" : "#ADA250",
-      "note" : "緑みのにぶい朽葉色で渋みがかった黄緑色。 秋に樹々が紅葉し朽ちていくさまを表した色名。",
-      "description" : "The Aokuchiba, It is a yellow-green tinged with bitterness in russet brown slow of greenish."
+      "name": "青朽葉（あおくちば）",
+      "yomi": "Aokuchiba",
+      "hex": "#ADA250",
+      "note": "緑みのにぶい朽葉色で渋みがかった黄緑色。 秋に樹々が紅葉し朽ちていくさまを表した色名。",
+      "description": "The Aokuchiba, It is a yellow-green tinged with bitterness in russet brown slow of greenish."
     },
     {
-      "name" : "黄朽葉（きくちば）",
-      "yomi" : "Kikuchiba",
-      "hex" : "#d3a243",
-      "note" : "晩秋の黄ばんだ枯れ葉の色を表したような黄褐色。",
-      "description" : "The Kikuchiba is yellowish brown like the color of a dead leaf of yellowish late autumn."
+      "name": "黄朽葉（きくちば）",
+      "yomi": "Kikuchiba",
+      "hex": "#d3a243",
+      "note": "晩秋の黄ばんだ枯れ葉の色を表したような黄褐色。",
+      "description": "The Kikuchiba is yellowish brown like the color of a dead leaf of yellowish late autumn."
     },
     {
-      "name" : "赤朽葉（あかくちば）",
-      "yomi" : "Akakuchiba",
-      "hex" : "#db8449",
-      "note" : "赤みがかった朽葉色で赤茶色。 晩秋の頃の赤く色づいた朽葉の色を表した色目。",
-      "description" : "The Akakuchiba, it is a red brown russet brown reddish."
+      "name": "赤朽葉（あかくちば）",
+      "yomi": "Akakuchiba",
+      "hex": "#db8449",
+      "note": "赤みがかった朽葉色で赤茶色。 晩秋の頃の赤く色づいた朽葉の色を表した色目。",
+      "description": "The Akakuchiba, it is a red brown russet brown reddish."
     },
     {
-      "name" : "柑子色（こうじいろ）",
-      "yomi" : "Kouji-iro",
-      "hex" : "#EAA938",
-      "note" : "蜜柑色をやや薄くしたような明るい黄赤色。 柑子は古くから日本で栽培されたミカンの一種でコウジミカンの略。",
-      "description" : "The Koji-iro, it is a bright yellow-red, such as thinly slightly Mikan-iro."
+      "name": "柑子色（こうじいろ）",
+      "yomi": "Kouji-iro",
+      "hex": "#EAA938",
+      "note": "蜜柑色をやや薄くしたような明るい黄赤色。 柑子は古くから日本で栽培されたミカンの一種でコウジミカンの略。",
+      "description": "The Koji-iro, it is a bright yellow-red, such as thinly slightly Mikan-iro."
     },
     {
-      "name" : "紅掛空色（べにかけそらいろ）",
-      "yomi" : "Benikakesorairo",
-      "hex" : "#8491C3",
-      "note" : "かすかに紅がかった淡い空色。 色名は、藍で空色に下染した上に紅花で染め重ねる染色法から生まれた。",
-      "description" : "The Benikakesorairo,it is a pale sky blue to red tinged faintly."
+      "name": "紅掛空色（べにかけそらいろ）",
+      "yomi": "Benikakesorairo",
+      "hex": "#8491C3",
+      "note": "かすかに紅がかった淡い空色。 色名は、藍で空色に下染した上に紅花で染め重ねる染色法から生まれた。",
+      "description": "The Benikakesorairo,it is a pale sky blue to red tinged faintly."
     },
     {
-      "name" : "左伊多津万色（さいたづまいろ）",
-      "yomi" : "Saitaduma-iro",
-      "hex" : "#328131",
-      "note" : "よく育った虎杖の葉のような黄みを含んだ濃い緑色のことです。左伊多津万とは「虎杖」の古名。",
-      "description" : "The Saitaduma-iro, it is a little dark green like the leaves of well-grown Japanese knotweed Japanese knotweed."
+      "name": "左伊多津万色（さいたづまいろ）",
+      "yomi": "Saitaduma-iro",
+      "hex": "#328131",
+      "note": "よく育った虎杖の葉のような黄みを含んだ濃い緑色のことです。左伊多津万とは「虎杖」の古名。",
+      "description": "The Saitaduma-iro, it is a little dark green like the leaves of well-grown Japanese knotweed Japanese knotweed."
     }
   ]
 }

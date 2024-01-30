@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "霜始降",
-      "yomi" : "(しもはじめてふる)",
-      "value" : "Shimo hajimete furu",
-      "start" : "October 24",
-      "end" : "October 28",
-      "note" : "霜が降り始める",
-      "description" : "Frost begins"
+      "name": "霜始降",
+      "yomi": "(しもはじめてふる)",
+      "value": "Shimo hajimete furu",
+      "start": "October 24",
+      "end": "October 28",
+      "note": "霜が降り始める",
+      "description": "Frost begins"
     },
     {
-      "name" : "霎時施",
-      "yomi" : "(こさめときどきふる)",
-      "value" : "Kosame tokidoki furu",
-      "start" : "October 29",
-      "end" : "November 2",
-      "note" : "小雨がしとしと降る",
-      "description" : "Gentle and sporadic light rain"
+      "name": "霎時施",
+      "yomi": "(こさめときどきふる)",
+      "value": "Kosame tokidoki furu",
+      "start": "October 29",
+      "end": "November 2",
+      "note": "小雨がしとしと降る",
+      "description": "Gentle and sporadic light rain"
     },
     {
-      "name" : "楓蔦黄",
-      "yomi" : "(もみじつたきばむ)",
-      "value" : "Momiji tsuta kibamu",
-      "start" : "November 3",
-      "end" : "November 7",
-      "note" : "もみじや蔦が黄葉する",
-      "description" : "Maple and ivy turn yellow"
+      "name": "楓蔦黄",
+      "yomi": "(もみじつたきばむ)",
+      "value": "Momiji tsuta kibamu",
+      "start": "November 3",
+      "end": "November 7",
+      "note": "もみじや蔦が黄葉する",
+      "description": "Maple and ivy turn yellow"
     }
   ]
 }

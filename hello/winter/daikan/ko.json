@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "款冬華",
-      "yomi" : "(ふきのはなさく)",
-      "value" : "Fuki no hana saku",
-      "start" : "January 20",
-      "end" : "January 24",
-      "note" : "蕗の薹が蕾を出す",
-      "description" : "Butterbur sprouts bud"
+      "name": "款冬華",
+      "yomi": "(ふきのはなさく)",
+      "value": "Fuki no hana saku",
+      "start": "January 20",
+      "end": "January 24",
+      "note": "蕗の薹が蕾を出す",
+      "description": "Butterbur sprouts bud"
     },
     {
-      "name" : "水沢腹堅",
-      "yomi" : "(さわみずこおりつめる)",
-      "value" : "Sawamizu kōri tsumeru",
-      "start" : "January 25",
-      "end" : "January 29",
-      "note" : "沢に氷が厚く張りつめる",
-      "description" : "Ice thickens on the streams"
+      "name": "水沢腹堅",
+      "yomi": "(さわみずこおりつめる)",
+      "value": "Sawamizu kōri tsumeru",
+      "start": "January 25",
+      "end": "January 29",
+      "note": "沢に氷が厚く張りつめる",
+      "description": "Ice thickens on the streams"
     },
     {
-      "name" : "鶏始乳",
-      "yomi" : "(にわとりはじめてとやにつく)",
-      "value" : "Niwatori hajimete toya ni tsuku",
-      "start" : "January 30",
-      "end" : "February 3",
-      "note" : "鶏が卵を産み始める",
-      "description" : "Chickens start laying eggs"
+      "name": "鶏始乳",
+      "yomi": "(にわとりはじめてとやにつく)",
+      "value": "Niwatori hajimete toya ni tsuku",
+      "start": "January 30",
+      "end": "February 3",
+      "note": "鶏が卵を産み始める",
+      "description": "Chickens start laying eggs"
     }
   ]
 }

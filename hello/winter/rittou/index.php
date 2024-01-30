@@ -44,53 +44,71 @@
     <section id="readme">
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
-      <small>11月8日 ~ 11月12日頃</small>
-      <br/>
-      <ruby>
-        山茶花 <rp>(</rp><rt>さざんか</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
-      </ruby>
-      き
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
-    <p>
-      <small>11月13日 ~ 11月17日頃</small>
-      <br/>
-      <ruby>
-        大地 <rp>(</rp><rt>だいち</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        凍 <rp>(</rp><rt>こお</rt><rp>)</rp>
-      </ruby>
-      り
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
-    <p>
-      <small>11月18日 ~ 11月21日頃</small>
-      <br/>
-      <ruby>
-        水仙 <rp>(</rp><rt>すいせん</rt><rp>)</rp>
-      </ruby>
-      の
-      <ruby>
-        花 <rp>(</rp><rt>はな</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
-      </ruby>
-      く
-    </p>
+        <small>11月8日 ~ 11月12日頃</small>
+        <br />
+        <ruby>
+          山茶花 <rp>(</rp>
+          <rt>さざんか</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp>
+          <rt>さ</rt>
+          <rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
+      <p>
+        <small>11月13日 ~ 11月17日頃</small>
+        <br />
+        <ruby>
+          大地 <rp>(</rp>
+          <rt>だいち</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          凍 <rp>(</rp>
+          <rt>こお</rt>
+          <rp>)</rp>
+        </ruby>
+        り
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
+      <p>
+        <small>11月18日 ~ 11月21日頃</small>
+        <br />
+        <ruby>
+          水仙 <rp>(</rp>
+          <rt>すいせん</rt>
+          <rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          花 <rp>(</rp>
+          <rt>はな</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          咲 <rp>(</rp>
+          <rt>さ</rt>
+          <rp>)</rp>
+        </ruby>
+        く
+      </p>
     </section>
   </main>
 

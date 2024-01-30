@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "葭始生",
-      "yomi" : "(あしはじめてしょうず)",
-      "value" : "Ashi hajimete shōzu",
-      "start" : "April 19",
-      "end" : "April 24",
-      "note" : "葦が芽を吹き始める",
-      "description" : "Reeds begin to sprout"
+      "name": "葭始生",
+      "yomi": "(あしはじめてしょうず)",
+      "value": "Ashi hajimete shōzu",
+      "start": "April 19",
+      "end": "April 24",
+      "note": "葦が芽を吹き始める",
+      "description": "Reeds begin to sprout"
     },
     {
-      "name" : "霜止出苗",
-      "yomi" : "(しもやみてなえいずる)",
-      "value" : "Shimo yamite nae izuru",
-      "start" : "April 25",
-      "end" : "April 29",
-      "note" : "霜が終り稲の苗が生長する",
-      "description" : "Frost is over and rice seedlings grow"
+      "name": "霜止出苗",
+      "yomi": "(しもやみてなえいずる)",
+      "value": "Shimo yamite nae izuru",
+      "start": "April 25",
+      "end": "April 29",
+      "note": "霜が終り稲の苗が生長する",
+      "description": "Frost is over and rice seedlings grow"
     },
     {
-      "name" : "牡丹華",
-      "yomi" : "(ぼたんはなさく)",
-      "value" : "Botan hana saku",
-      "start" : "April 30",
-      "end" : "May 4",
-      "note" : "牡丹の花が咲く",
-      "description" : "Peonies bloom"
+      "name": "牡丹華",
+      "yomi": "(ぼたんはなさく)",
+      "value": "Botan hana saku",
+      "start": "April 30",
+      "end": "May 4",
+      "note": "牡丹の花が咲く",
+      "description": "Peonies bloom"
     }
   ]
 }

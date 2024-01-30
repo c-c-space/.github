@@ -45,56 +45,78 @@
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
         <small>5月20日 ~ 5月25日頃</small>
-        <br/>
+        <br />
         <ruby>
-          蚕 <rp>(</rp><rt>かいこ</rt><rp>)</rp>
+          蚕 <rp>(</rp>
+          <rt>かいこ</rt>
+          <rp>)</rp>
         </ruby>
         が
         <ruby>
-          桑 <rp>(</rp><rt>くわ</rt><rp>)</rp>
+          桑 <rp>(</rp>
+          <rt>くわ</rt>
+          <rp>)</rp>
         </ruby>
         を
         <ruby>
-          盛 <rp>(</rp><rt>さか</rt><rp>)</rp>
+          盛 <rp>(</rp>
+          <rt>さか</rt>
+          <rp>)</rp>
         </ruby>
         んに
         <ruby>
-          食 <rp>(</rp><rt>た</rt><rp>)</rp>
+          食 <rp>(</rp>
+          <rt>た</rt>
+          <rp>)</rp>
         </ruby>
         べ
         <ruby>
-          始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
         </ruby>
         める
       </p>
       <p>
         <small>5月26日 ~ 5月30日頃</small>
-        <br/>
+        <br />
         <ruby>
-          紅花 <rp>(</rp><rt>べにばな</rt><rp>)</rp>
+          紅花 <rp>(</rp>
+          <rt>べにばな</rt>
+          <rp>)</rp>
         </ruby>
         が
         <ruby>
-          盛 <rp>(</rp><rt>さか</rt><rp>)</rp>
+          盛 <rp>(</rp>
+          <rt>さか</rt>
+          <rp>)</rp>
         </ruby>
         んに
         <ruby>
-          咲 <rp>(</rp><rt>さ</rt><rp>)</rp>
+          咲 <rp>(</rp>
+          <rt>さ</rt>
+          <rp>)</rp>
         </ruby>
       </p>
       <p>
         <small>5月31日 ~ 6月4日頃</small>
-        <br/>
+        <br />
         <ruby>
-          麦 <rp>(</rp><rt>むぎ</rt><rp>)</rp>
+          麦 <rp>(</rp>
+          <rt>むぎ</rt>
+          <rp>)</rp>
         </ruby>
         が
         <ruby>
-          熟 <rp>(</rp><rt>じゅく</rt><rp>)</rp>
+          熟 <rp>(</rp>
+          <rt>じゅく</rt>
+          <rp>)</rp>
         </ruby>
         し
         <ruby>
-          麦秋 <rp>(</rp><rt>ばくしゅう</rt><rp>)</rp>
+          麦秋 <rp>(</rp>
+          <rt>ばくしゅう</rt>
+          <rp>)</rp>
         </ruby>
         となる
       </p>

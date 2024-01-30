@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "桐始結花",
-      "yomi" : "(きりはじめてはなをむすぶ)",
-      "value" : "Kiri hajimete hana o musubu",
-      "start" : "July 23",
-      "end" : "July 27",
-      "note" : "桐の花が(来年の)蕾をつける",
-      "description" : "Paulownia flowers bud for the next year"
+      "name": "桐始結花",
+      "yomi": "(きりはじめてはなをむすぶ)",
+      "value": "Kiri hajimete hana o musubu",
+      "start": "July 23",
+      "end": "July 27",
+      "note": "桐の花が(来年の)蕾をつける",
+      "description": "Paulownia flowers bud for the next year"
     },
     {
-      "name" : "土潤溽暑",
-      "yomi" : "(つちうるおうてむしあつし)",
-      "value" : "Tsuchi uruōte mushi atsushi",
-      "start" : "July 28",
-      "end" : "August 1",
-      "note" : "土が湿って蒸暑くなる",
-      "description" : "Damp soil, humid air"
+      "name": "土潤溽暑",
+      "yomi": "(つちうるおうてむしあつし)",
+      "value": "Tsuchi uruōte mushi atsushi",
+      "start": "July 28",
+      "end": "August 1",
+      "note": "土が湿って蒸暑くなる",
+      "description": "Damp soil, humid air"
     },
     {
-      "name" : "大雨時行",
-      "yomi" : "(たいうときどきふる)",
-      "value" : "Taiu tokidoki furu",
-      "start" : "August 2",
-      "end" : "August 7",
-      "note" : "時として大雨が降る",
-      "description" : "Heavy rains sometimes fall"
+      "name": "大雨時行",
+      "yomi": "(たいうときどきふる)",
+      "value": "Taiu tokidoki furu",
+      "start": "August 2",
+      "end": "August 7",
+      "note": "時として大雨が降る",
+      "description": "Heavy rains sometimes fall"
     }
   ]
 }

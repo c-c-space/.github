@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "螳螂生",
-      "yomi" : "(かまきりしょうず)",
-      "value" : "Kamakiri shōzu",
-      "start" : "Jun 5",
-      "end" : "Jun 9",
-      "note" : "螳螂が生まれ出る",
-      "description" : "Praying mantises are born"
+      "name": "螳螂生",
+      "yomi": "(かまきりしょうず)",
+      "value": "Kamakiri shōzu",
+      "start": "Jun 5",
+      "end": "Jun 9",
+      "note": "螳螂が生まれ出る",
+      "description": "Praying mantises are born"
     },
     {
-      "name" : "腐草為螢",
-      "yomi" : "(くされたるくさほたるとなる)",
-      "value" : "Kusaretaru kusa hotaru to naru",
-      "start" : "Jun 10",
-      "end" : "Jun 15",
-      "note" : "腐った草が蒸れ蛍になる",
-      "description" : "Rotten grass becomes fireflies"
+      "name": "腐草為螢",
+      "yomi": "(くされたるくさほたるとなる)",
+      "value": "Kusaretaru kusa hotaru to naru",
+      "start": "Jun 10",
+      "end": "Jun 15",
+      "note": "腐った草が蒸れ蛍になる",
+      "description": "Rotten grass becomes fireflies"
     },
     {
-      "name" : "梅子黄",
-      "yomi" : "(うめのみきばむ)",
-      "value" : "Ume no mi kibamu",
-      "start" : "Jun 16",
-      "end" : "Jun 20",
-      "note" : "梅の実が黄ばんで熟す",
-      "description" : "Plums turn yellow and ripen"
+      "name": "梅子黄",
+      "yomi": "(うめのみきばむ)",
+      "value": "Ume no mi kibamu",
+      "start": "Jun 16",
+      "end": "Jun 20",
+      "note": "梅の実が黄ばんで熟す",
+      "description": "Plums turn yellow and ripen"
     }
   ]
 }

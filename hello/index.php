@@ -18,13 +18,13 @@
     $rows[] = $row;
   }
   fclose($fp);
-  
+
   require('head.php');
   ?>
 
   <meta property="og:image" content="<?php echo $url . $season . "/summary.png"; ?>">
   <meta name="twitter:image" content="<?php echo $url . $season . "/summary.png"; ?>">
-  
+
   <script src="index.js"></script>
   <script src="/ver/js/login.js"></script>
 

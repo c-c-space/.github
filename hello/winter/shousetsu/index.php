@@ -44,61 +44,83 @@
     <section id="readme">
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
-      <small>11月22日 ~ 11月26日頃</small>
-      <br/>
-      <ruby>
-        虹 <rp>(</rp><rt>にじ</rt><rp>)</rp>
-      </ruby>
-      を
-      <ruby>
-        見 <rp>(</rp><rt>み</rt><rp>)</rp>
-      </ruby>
-      かけなくなる
-    </p>
-    <p>
-      <small>11月27日 ~ 12月1日頃</small>
-      <br/>
-      <ruby>
-        北風 <rp>(</rp><rt>きたかぜ</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        木 <rp>(</rp><rt>こ</rt><rp>)</rp>
-      </ruby>
-      の
-      <ruby>
-        葉 <rp>(</rp><rt>は</rt><rp>)</rp>
-      </ruby>
-      を
-      <ruby>
-        払 <rp>(</rp><rt>はら</rt><rp>)</rp>
-      </ruby>
-      い
-      <ruby>
-        除 <rp>(</rp><rt>の</rt><rp>)</rp>
-      </ruby>
-      ける
-    </p>
-    <p>
-      <small>12月2日 ~ 12月6日頃</small>
-      <br/>
-      <ruby>
-        橘 <rp>(</rp><rt>たちばな</rt><rp>)</rp>
-      </ruby>
-      の
-      <ruby>
-        実 <rp>(</rp><rt>み</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        黄色 <rp>(</rp><rt>きいろ</rt><rp>)</rp>
-      </ruby>
-      くなり
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
+        <small>11月22日 ~ 11月26日頃</small>
+        <br />
+        <ruby>
+          虹 <rp>(</rp>
+          <rt>にじ</rt>
+          <rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          見 <rp>(</rp>
+          <rt>み</rt>
+          <rp>)</rp>
+        </ruby>
+        かけなくなる
+      </p>
+      <p>
+        <small>11月27日 ~ 12月1日頃</small>
+        <br />
+        <ruby>
+          北風 <rp>(</rp>
+          <rt>きたかぜ</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          木 <rp>(</rp>
+          <rt>こ</rt>
+          <rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          葉 <rp>(</rp>
+          <rt>は</rt>
+          <rp>)</rp>
+        </ruby>
+        を
+        <ruby>
+          払 <rp>(</rp>
+          <rt>はら</rt>
+          <rp>)</rp>
+        </ruby>
+        い
+        <ruby>
+          除 <rp>(</rp>
+          <rt>の</rt>
+          <rp>)</rp>
+        </ruby>
+        ける
+      </p>
+      <p>
+        <small>12月2日 ~ 12月6日頃</small>
+        <br />
+        <ruby>
+          橘 <rp>(</rp>
+          <rt>たちばな</rt>
+          <rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          実 <rp>(</rp>
+          <rt>み</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          黄色 <rp>(</rp>
+          <rt>きいろ</rt>
+          <rp>)</rp>
+        </ruby>
+        くなり
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
     </section>
   </main>
 

@@ -14,8 +14,9 @@
         })
     }
 
-    fetchHTML('recognition.html', query = '#recognition')
-    fetchHTML('synthesis.html', query = '#synthesis')
+    fetchHTML('recognition.html', '#recognition')
+    fetchHTML('synthesis.html', '#synthesis')
+    fetchHTML('form.html', '#recognition')
   </script>
 
   <!--og:meta-->

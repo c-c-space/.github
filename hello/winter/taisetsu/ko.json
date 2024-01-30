@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "閉塞成冬",
-      "yomi" : "(そらさむくふゆとなる)",
-      "value" : "Sora samuku fuyu to naru",
-      "start" : "December 7",
-      "end" : "December 11",
-      "note" : "天地の気が塞がって冬となる",
-      "description" : "The skies close for winter"
+      "name": "閉塞成冬",
+      "yomi": "(そらさむくふゆとなる)",
+      "value": "Sora samuku fuyu to naru",
+      "start": "December 7",
+      "end": "December 11",
+      "note": "天地の気が塞がって冬となる",
+      "description": "The skies close for winter"
     },
     {
-      "name" : "熊蟄穴",
-      "yomi" : "(くまあなにこもる)",
-      "value" : "Kuma ana ni komoru",
-      "start" : "December 12",
-      "end" : "December 16",
-      "note" : "熊が冬眠のために穴に隠れる",
-      "description" : "Bears hibernate in their dens"
+      "name": "熊蟄穴",
+      "yomi": "(くまあなにこもる)",
+      "value": "Kuma ana ni komoru",
+      "start": "December 12",
+      "end": "December 16",
+      "note": "熊が冬眠のために穴に隠れる",
+      "description": "Bears hibernate in their dens"
     },
     {
-      "name" : "鱖魚群",
-      "yomi" : "(さけのうおむらがる)",
-      "value" : "Sake no uo muragaru",
-      "start" : "December 17",
-      "end" : "December 21",
-      "note" : "鮭が群がり川を上る",
-      "description" : "Salmon swim upstream together"
+      "name": "鱖魚群",
+      "yomi": "(さけのうおむらがる)",
+      "value": "Sake no uo muragaru",
+      "start": "December 17",
+      "end": "December 21",
+      "note": "鮭が群がり川を上る",
+      "description": "Salmon swim upstream together"
     }
   ]
 }

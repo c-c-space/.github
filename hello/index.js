@@ -28,7 +28,7 @@ document.addEventListener('readystatechange', event => {
       const form = document.querySelector("#hello form")
       form.addEventListener('submit', function (event) {
         event.preventDefault()
-        
+
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
         const selectVoice = voiceIndex.selectedIndex

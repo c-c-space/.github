@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "温風至",
-      "yomi" : "(あつかぜいたる)",
-      "value" : "Atsukaze itaru",
-      "start" : "July 7",
-      "end" : "July 12",
-      "note" : "暖い風が吹いて来る",
-      "description" : "Warm breezes"
+      "name": "温風至",
+      "yomi": "(あつかぜいたる)",
+      "value": "Atsukaze itaru",
+      "start": "July 7",
+      "end": "July 12",
+      "note": "暖い風が吹いて来る",
+      "description": "Warm breezes"
     },
     {
-      "name" : "蓮始開",
-      "yomi" : "(はすはじめてひらく)",
-      "value" : "Hasu hajimete hiraku",
-      "start" : "July 13",
-      "end" : "July 17",
-      "note" : "蓮の花が開き始める",
-      "description" : "Lotus flowers begin to open"
+      "name": "蓮始開",
+      "yomi": "(はすはじめてひらく)",
+      "value": "Hasu hajimete hiraku",
+      "start": "July 13",
+      "end": "July 17",
+      "note": "蓮の花が開き始める",
+      "description": "Lotus flowers begin to open"
     },
     {
-      "name" : "鷹乃学習",
-      "yomi" : "(たかすなわちわざをならう)",
-      "value" : "Taka sunawachi waza o narau",
-      "start" : "July 18",
-      "end" : "July 22",
-      "note" : "鷹の幼鳥が飛ぶことを覚える",
-      "description" : "Young hawks learn to fly"
+      "name": "鷹乃学習",
+      "yomi": "(たかすなわちわざをならう)",
+      "value": "Taka sunawachi waza o narau",
+      "start": "July 18",
+      "end": "July 22",
+      "note": "鷹の幼鳥が飛ぶことを覚える",
+      "description": "Young hawks learn to fly"
     }
   ]
 }

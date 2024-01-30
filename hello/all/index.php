@@ -92,7 +92,7 @@
     sekkiJSON('../winter/sekki.json');
 
     function changeHidden() {
-      const mainAll = document.querySelectorAll('main');
+      const mainAll = document.querySelectorAll('main')
       mainAll.forEach(main => {
         if (main.hidden == false) {
           main.hidden = true;

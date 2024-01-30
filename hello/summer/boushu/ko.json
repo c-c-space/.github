@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "土脉潤起",
-      "yomi" : "(つちのしょううるおいおこる)",
-      "value" : "Tsuchi no shō uruoi okoru",
-      "start" : "February 19",
-      "end" : "February 23",
-      "note" : "雨が降って土が湿り気を含む",
-      "description" : "Rain and moist soil"
+      "name": "土脉潤起",
+      "yomi": "(つちのしょううるおいおこる)",
+      "value": "Tsuchi no shō uruoi okoru",
+      "start": "February 19",
+      "end": "February 23",
+      "note": "雨が降って土が湿り気を含む",
+      "description": "Rain and moist soil"
     },
     {
-      "name" : "霞始靆",
-      "yomi" : "(かすみはじめてたなびく)",
-      "value" : "Kasumi hajimete tanabiku",
-      "start" : "February 24",
-      "end" : "February 28",
-      "note" : "霞がたなびき始める",
-      "description" : "Mist starts to linger"
+      "name": "霞始靆",
+      "yomi": "(かすみはじめてたなびく)",
+      "value": "Kasumi hajimete tanabiku",
+      "start": "February 24",
+      "end": "February 28",
+      "note": "霞がたなびき始める",
+      "description": "Mist starts to linger"
     },
     {
-      "name" : "草木萌動",
-      "yomi" : "(そうもくめばえいずる)",
-      "value" : "Sōmoku mebae izuru",
-      "start" : "February 29",
-      "end" : "March 4",
-      "note" : "草木が芽吹き始める",
-      "description" : "Plants begin to sprout"
+      "name": "草木萌動",
+      "yomi": "(そうもくめばえいずる)",
+      "value": "Sōmoku mebae izuru",
+      "start": "February 29",
+      "end": "March 4",
+      "note": "草木が芽吹き始める",
+      "description": "Plants begin to sprout"
     }
   ]
 }

@@ -1,32 +1,31 @@
 'use strict'
 
-
 let about = document.querySelector('dialog#modal'),
-name = document.querySelector('dialog#modal #name'),
-yomi = document.querySelector('dialog#modal #yomi'),
-hex = document.querySelector('dialog#modal #hex'),
-note = document.querySelector('dialog#modal #note'),
-description = document.querySelector('dialog#modal #description'),
-hidden = document.querySelector('dialog#modal #hidden');
+  name = document.querySelector('dialog#modal #name'),
+  yomi = document.querySelector('dialog#modal #yomi'),
+  hex = document.querySelector('dialog#modal #hex'),
+  note = document.querySelector('dialog#modal #note'),
+  description = document.querySelector('dialog#modal #description'),
+  hidden = document.querySelector('dialog#modal #hidden');
 
-about.showModal();
+about.showModal()
 
-const closeButton = document.querySelector('#modal button');
+const closeButton = document.querySelector('#modal button')
 closeButton.addEventListener('click', () => {
-  about.close();
+  about.close()
 });
 
 async function indexJSON(requestURL) {
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const jsonIndex = await response.text();
+  const request = new Request(requestURL)
+  const response = await fetch(request)
+  const jsonIndex = await response.text()
 
-  const index = JSON.parse(jsonIndex);
-  indexObject(index);
+  const index = JSON.parse(jsonIndex)
+  indexObject(index)
 }
 
 function indexObject(obj) {
-  let ul = document.querySelector('ul#color');
+  let ul = document.querySelector('ul#color')
   const allColors = obj.color;
   for (const color of allColors) {
     let li = document.createElement('li')
@@ -50,7 +49,7 @@ function indexObject(obj) {
       if (typeof about.showModal === "function") {
         about.showModal()
       } else {
-        alert("The <dialog> API is not supported by this browser");
+        alert("The <dialog> API is not supported by this browser")
       }
       about.style.background = this.style.background;
       name.innerText = this.dataset.name;

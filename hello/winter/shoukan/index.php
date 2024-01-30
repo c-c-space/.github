@@ -44,61 +44,83 @@
     <section id="readme">
       <input type="button" onclick="changeHidden()" value="<?php echo $sekkiName; ?> <?php echo $sekki; ?>">
       <p>
-      <small>1月6日 ~ 1月10日頃</small>
-      <br/>
-      <ruby>
-        芹 <rp>(</rp><rt>せり</rt><rp>)</rp>
-      </ruby>
-      がよく
-      <ruby>
-        生育 <rp>(</rp><rt>せいいく</rt><rp>)</rp>
-      </ruby>
-      する
-    </p>
-    <p>
-      <small>1月11日 ~ 1月15日頃</small>
-      <br/>
-      <ruby>
-        地中 <rp>(</rp><rt>ちちゅう</rt><rp>)</rp>
-      </ruby>
-      で
-      <ruby>
-        凍 <rp>(</rp><rt>こお</rt><rp>)</rp>
-      </ruby>
-      った
-      <ruby>
-        泉 <rp>(</rp><rt>いずみ</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        動 <rp>(</rp><rt>うご</rt><rp>)</rp>
-      </ruby>
-      き
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
-    <p>
-      <small>1月16日 ~ 1月19日頃</small>
-      <br/>
-      <ruby>
-        雄 <rp>(</rp><rt>おす</rt><rp>)</rp>
-      </ruby>
-      の
-      <ruby>
-        雉 <rp>(</rp><rt>きじ</rt><rp>)</rp>
-      </ruby>
-      が
-      <ruby>
-        鳴 <rp>(</rp><rt>な</rt><rp>)</rp>
-      </ruby>
-      き
-      <ruby>
-        始 <rp>(</rp><rt>はじ</rt><rp>)</rp>
-      </ruby>
-      める
-    </p>
+        <small>1月6日 ~ 1月10日頃</small>
+        <br />
+        <ruby>
+          芹 <rp>(</rp>
+          <rt>せり</rt>
+          <rp>)</rp>
+        </ruby>
+        がよく
+        <ruby>
+          生育 <rp>(</rp>
+          <rt>せいいく</rt>
+          <rp>)</rp>
+        </ruby>
+        する
+      </p>
+      <p>
+        <small>1月11日 ~ 1月15日頃</small>
+        <br />
+        <ruby>
+          地中 <rp>(</rp>
+          <rt>ちちゅう</rt>
+          <rp>)</rp>
+        </ruby>
+        で
+        <ruby>
+          凍 <rp>(</rp>
+          <rt>こお</rt>
+          <rp>)</rp>
+        </ruby>
+        った
+        <ruby>
+          泉 <rp>(</rp>
+          <rt>いずみ</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          動 <rp>(</rp>
+          <rt>うご</rt>
+          <rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
+      <p>
+        <small>1月16日 ~ 1月19日頃</small>
+        <br />
+        <ruby>
+          雄 <rp>(</rp>
+          <rt>おす</rt>
+          <rp>)</rp>
+        </ruby>
+        の
+        <ruby>
+          雉 <rp>(</rp>
+          <rt>きじ</rt>
+          <rp>)</rp>
+        </ruby>
+        が
+        <ruby>
+          鳴 <rp>(</rp>
+          <rt>な</rt>
+          <rp>)</rp>
+        </ruby>
+        き
+        <ruby>
+          始 <rp>(</rp>
+          <rt>はじ</rt>
+          <rp>)</rp>
+        </ruby>
+        める
+      </p>
     </section>
   </main>
 

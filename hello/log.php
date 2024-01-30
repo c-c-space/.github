@@ -1,6 +1,7 @@
 <ul id="logAll">
   <?php if (!empty($rows)) : ?>
-    <?php shuffle($rows); foreach ($rows as $row):?>
+    <?php shuffle($rows);
+    foreach ($rows as $row) : ?>
       <li>
         <p>
           <code><?= h($row[1]) ?> (<?= h($row[2]) ?>)</code>

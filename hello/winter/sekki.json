@@ -1,58 +1,58 @@
 {
-  "sekki" : [
+  "sekki": [
     {
-      "name" : "立冬",
-      "yomi" : "(りっとう)",
-      "value" : "rittou",
-      "start" : "November 8",
-      "end" : "November 21",
-      "note" : "木枯らしが吹き、北国や高山からは初雪の知らせも届く頃。冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。",
-      "description" : "The Beginning of Winter"
+      "name": "立冬",
+      "yomi": "(りっとう)",
+      "value": "rittou",
+      "start": "November 8",
+      "end": "November 21",
+      "note": "木枯らしが吹き、北国や高山からは初雪の知らせも届く頃。冬枯れの景色の中で山茶花や水仙の花が咲きはじめる。",
+      "description": "The Beginning of Winter"
     },
     {
-      "name" : "小雪",
-      "yomi" : "(しょうせつ)",
-      "value" : "shousetsu",
-      "start" : "November 22",
-      "end" : "December 6",
-      "note" : "陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める。「お歳暮」の準備をする期間。",
-      "description" : "Snow appears on distant mountains"
+      "name": "小雪",
+      "yomi": "(しょうせつ)",
+      "value": "shousetsu",
+      "start": "November 22",
+      "end": "December 6",
+      "note": "陽射しは弱まり、冷え込みが厳しくなる。木々の葉は落ち、平地にも初雪が舞い始める。「お歳暮」の準備をする期間。",
+      "description": "Snow appears on distant mountains"
     },
     {
-      "name" : "大雪",
-      "yomi" : "(たいせつ)",
-      "value" : "taisetsu",
-      "start" : "December 7",
-      "end" : "December 21",
-      "note" : "山々は雪の衣を纏って冬の姿となり、動物たちが冬ごもりに入る時期。鮭が川を遡上し、鱈など冬の魚の漁が盛んになる。",
-      "description" : "Cold winds blow from Siberia"
+      "name": "大雪",
+      "yomi": "(たいせつ)",
+      "value": "taisetsu",
+      "start": "December 7",
+      "end": "December 21",
+      "note": "山々は雪の衣を纏って冬の姿となり、動物たちが冬ごもりに入る時期。鮭が川を遡上し、鱈など冬の魚の漁が盛んになる。",
+      "description": "Cold winds blow from Siberia"
     },
     {
-      "name" : "冬至",
-      "yomi" : "(とうじ)",
-      "value" : "touji",
-      "start" : "December 22",
-      "end" : "January 5",
-      "note" : "冬至日より日が伸び始めることから、古くには年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。",
-      "description" : "The Winter Solstice"
+      "name": "冬至",
+      "yomi": "(とうじ)",
+      "value": "touji",
+      "start": "December 22",
+      "end": "January 5",
+      "note": "冬至日より日が伸び始めることから、古くには年の始点と考えられた。栄養価の高いかぼちゃを食べ、柚子湯に浸かり無病息災を願う。",
+      "description": "The Winter Solstice"
     },
     {
-      "name" : "小寒",
-      "yomi" : "(しょうかん)",
-      "value" : "shoukan",
-      "start" : "January 6",
-      "end" : "January 19",
-      "note" : "「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」。「寒中見舞い」を出しはじめる時期。",
-      "description" : "Cold weather nears its peak"
+      "name": "小寒",
+      "yomi": "(しょうかん)",
+      "value": "shoukan",
+      "start": "January 6",
+      "end": "January 19",
+      "note": "「寒の入り」といい、寒さが厳しくなる頃。これから節分までの期間が「寒」。「寒中見舞い」を出しはじめる時期。",
+      "description": "Cold weather nears its peak"
     },
     {
-      "name" : "大寒",
-      "yomi" : "(だいかん)",
-      "value" : "daikan",
-      "start" : "January 20",
-      "end" : "February 3",
-      "note" : "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。",
-      "description" : "Coldest time of the year"
+      "name": "大寒",
+      "yomi": "(だいかん)",
+      "value": "daikan",
+      "start": "January 20",
+      "end": "February 3",
+      "note": "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。",
+      "description": "Coldest time of the year"
     }
   ]
 }

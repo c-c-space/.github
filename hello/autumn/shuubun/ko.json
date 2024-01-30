@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "雷乃収声",
-      "yomi" : "(かみなりすなわちこえをおさむ)",
-      "value" : "Kaminari sunawachi koe o osamu",
-      "start" : "September 23",
-      "end" : "September 27",
-      "note" : "雷が鳴り響かなくなる",
-      "description" : "Thunder stops ringing"
+      "name": "雷乃収声",
+      "yomi": "(かみなりすなわちこえをおさむ)",
+      "value": "Kaminari sunawachi koe o osamu",
+      "start": "September 23",
+      "end": "September 27",
+      "note": "雷が鳴り響かなくなる",
+      "description": "Thunder stops ringing"
     },
     {
-      "name" : "蟄虫坏戸",
-      "yomi" : "(むしかくれてとをふさぐ)",
-      "value" : "Mushi kakurete to o fusagu",
-      "start" : "September 28",
-      "end" : "October 2",
-      "note" : "虫が土中に掘った穴をふさぐ",
-      "description" : "Insects go underground and fill holes"
+      "name": "蟄虫坏戸",
+      "yomi": "(むしかくれてとをふさぐ)",
+      "value": "Mushi kakurete to o fusagu",
+      "start": "September 28",
+      "end": "October 2",
+      "note": "虫が土中に掘った穴をふさぐ",
+      "description": "Insects go underground and fill holes"
     },
     {
-      "name" : "水始涸",
-      "yomi" : "(みずはじめてかるる)",
-      "value" : "Mizu hajimete karuru",
-      "start" : "October 3",
-      "end" : "October 7",
-      "note" : "田畑の水を干し始める",
-      "description" : "Farmers drain water from the fields"
+      "name": "水始涸",
+      "yomi": "(みずはじめてかるる)",
+      "value": "Mizu hajimete karuru",
+      "start": "October 3",
+      "end": "October 7",
+      "note": "田畑の水を干し始める",
+      "description": "Farmers drain water from the fields"
     }
   ]
 }

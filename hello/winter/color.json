@@ -1,249 +1,249 @@
 {
-  "color" : [
+  "color": [
     {
-      "name" : "榛摺（はりずり）",
-      "yomi" : "Harizuri",
-      "hex" : "#79520B",
-      "note" : "榛の木の実や樹皮で染めた深く渋い橙色。 万葉集にもその名が詠まれている。",
-      "description" : "The harizuri, it is a deeply bitter orange dyed with hazel solder of nuts and bark."
+      "name": "榛摺（はりずり）",
+      "yomi": "Harizuri",
+      "hex": "#79520B",
+      "note": "榛の木の実や樹皮で染めた深く渋い橙色。 万葉集にもその名が詠まれている。",
+      "description": "The harizuri, it is a deeply bitter orange dyed with hazel solder of nuts and bark."
     },
     {
-      "name" : "鶸色（ひわいろ）",
-      "yomi" : "Hiwa-iro",
-      "hex" : "#D6D000",
-      "note" : "小鳥の鶸の羽の色にちなんだ色名で、黄みの強い明るい萌黄色。",
-      "description" : "The Hiwa-iro, with color name named after the color of the feathers finches, it is a bright strong yellowish light green."
+      "name": "鶸色（ひわいろ）",
+      "yomi": "Hiwa-iro",
+      "hex": "#D6D000",
+      "note": "小鳥の鶸の羽の色にちなんだ色名で、黄みの強い明るい萌黄色。",
+      "description": "The Hiwa-iro, with color name named after the color of the feathers finches, it is a bright strong yellowish light green."
     },
     {
-      "name" : "滅紫（めっし）",
-      "yomi" : "Messhi",
-      "hex" : "#594255",
-      "note" : "灰みのある暗い紫色。",
-      "description" : "The Messhi, it is a dark purple with a Hai-mi."
+      "name": "滅紫（めっし）",
+      "yomi": "Messhi",
+      "hex": "#594255",
+      "note": "灰みのある暗い紫色。",
+      "description": "The Messhi, it is a dark purple with a Hai-mi."
     },
     {
-      "name" : "薄墨色（うすずみいろ）",
-      "yomi" : "Usuzumi-iro",
-      "hex" : "#A3A3A2",
-      "note" : "墨を薄めたようなやや薄い灰色。 喪服の染色や訃報を知らせる手紙の墨に用いられる、あまりよい色ではない。",
-      "description" : "The Usuzumi-iro, it is a little thin gray as the diluted ink. Heian period, used in the corner of the letter informing the obituary or staining of mourning, Usuzumi color was not a very good color."
+      "name": "薄墨色（うすずみいろ）",
+      "yomi": "Usuzumi-iro",
+      "hex": "#A3A3A2",
+      "note": "墨を薄めたようなやや薄い灰色。 喪服の染色や訃報を知らせる手紙の墨に用いられる、あまりよい色ではない。",
+      "description": "The Usuzumi-iro, it is a little thin gray as the diluted ink. Heian period, used in the corner of the letter informing the obituary or staining of mourning, Usuzumi color was not a very good color."
     },
     {
-      "name" : "韓紅（からくれない）",
-      "yomi" : "Karakurenai",
-      "hex" : "#EA0032",
-      "note" : "紅花で染めた濃い紅赤色。 別名「紅の八塩（くれないのやしお）」。",
-      "description" : "Karakurenai is dark reddish dyed with safflower. In the Nara era, it was the color called “Kurenai no Yashio”, and it was also written as “唐紅” separately."
+      "name": "韓紅（からくれない）",
+      "yomi": "Karakurenai",
+      "hex": "#EA0032",
+      "note": "紅花で染めた濃い紅赤色。 別名「紅の八塩（くれないのやしお）」。",
+      "description": "Karakurenai is dark reddish dyed with safflower. In the Nara era, it was the color called “Kurenai no Yashio”, and it was also written as “唐紅” separately."
     },
     {
-      "name" : "黄櫨染（こうろぜん）",
-      "yomi" : "Korozen",
-      "hex" : "#AD4D00",
-      "note" : "赤みの暗い黄褐色。 天皇陛下が儀式に着る袍ほうの色で『絶対禁色』。",
-      "description" : "The Korozen, It is a tan dark reddish. it has been an absolute Kinjiki it can not be used other than the emperor."
+      "name": "黄櫨染（こうろぜん）",
+      "yomi": "Korozen",
+      "hex": "#AD4D00",
+      "note": "赤みの暗い黄褐色。 天皇陛下が儀式に着る袍ほうの色で『絶対禁色』。",
+      "description": "The Korozen, It is a tan dark reddish. it has been an absolute Kinjiki it can not be used other than the emperor."
     },
     {
-      "name" : "至極色（しごくいろ）",
-      "yomi" : "Shigoku-iro",
-      "hex" : "#2D0425",
-      "note" : "極めて黒に近い深い赤紫色。 臣下の最も官位を極めた「極官」のみが着用を許された色。",
-      "description" : "The Shigouiro, is a deep red-purple color very close to the black. Alias of “Kokimurasaki”."
+      "name": "至極色（しごくいろ）",
+      "yomi": "Shigoku-iro",
+      "hex": "#2D0425",
+      "note": "極めて黒に近い深い赤紫色。 臣下の最も官位を極めた「極官」のみが着用を許された色。",
+      "description": "The Shigouiro, is a deep red-purple color very close to the black. Alias of “Kokimurasaki”."
     },
     {
-      "name" : "涅色（くりいろ）",
-      "yomi" : "Kuri-iro",
-      "hex" : "#433634",
-      "note" : "川底の泥のような茶みがかった黒色。 古代には、服色としては最下級の色だった。",
-      "description" : "The Kuri-iro, it is a black Chami, such as the mud of the riverbed was bought. it was the color of the top junior as clothes color."
+      "name": "涅色（くりいろ）",
+      "yomi": "Kuri-iro",
+      "hex": "#433634",
+      "note": "川底の泥のような茶みがかった黒色。 古代には、服色としては最下級の色だった。",
+      "description": "The Kuri-iro, it is a black Chami, such as the mud of the riverbed was bought. it was the color of the top junior as clothes color."
     },
     {
-      "name" : "紅碧（べにみどり）",
-      "yomi" : "Benimidori",
-      "hex" : "#8491C3",
-      "note" : "かすかに紅がかった淡い空色。 空色の上に紅色を薄く重ねた色合いを現した色名。",
-      "description" : "The Benimidori, it is a pale azure red-tinged faintly."
+      "name": "紅碧（べにみどり）",
+      "yomi": "Benimidori",
+      "hex": "#8491C3",
+      "note": "かすかに紅がかった淡い空色。 空色の上に紅色を薄く重ねた色合いを現した色名。",
+      "description": "The Benimidori, it is a pale azure red-tinged faintly."
     },
     {
-      "name" : "支子色（くちなしいろ）",
-      "yomi" : "Kuchinashi-iro",
-      "hex" : "#FDD876",
-      "note" : "クチナシの実で染めた、少し赤みのある黄色。",
-      "description" : "The Kuchinashi-iro, dyed in the fruit of the gardenia, is yellow with a little redness."
+      "name": "支子色（くちなしいろ）",
+      "yomi": "Kuchinashi-iro",
+      "hex": "#FDD876",
+      "note": "クチナシの実で染めた、少し赤みのある黄色。",
+      "description": "The Kuchinashi-iro, dyed in the fruit of the gardenia, is yellow with a little redness."
     },
     {
-      "name" : "狐色（きつねいろ）",
-      "yomi" : "Kitsune-iro",
-      "hex" : "#D9972F",
-      "note" : "キツネの背の毛色に似た色合いのやや赤みを帯びた黄褐色。",
-      "description" : "The Kitsune-iro, it is a yellow-brown slightly reddish tint similar to the coat color of fox."
+      "name": "狐色（きつねいろ）",
+      "yomi": "Kitsune-iro",
+      "hex": "#D9972F",
+      "note": "キツネの背の毛色に似た色合いのやや赤みを帯びた黄褐色。",
+      "description": "The Kitsune-iro, it is a yellow-brown slightly reddish tint similar to the coat color of fox."
     },
     {
-      "name" : "赤白橡（あかしろつるばみ）",
-      "yomi" : "Akashirotsurubami",
-      "hex" : "#FED2AE",
-      "note" : "櫨で黄色く下染めし、うすく茜の赤を重ねた赤みがかった白茶色。",
-      "description" : "The Akashirotsurubami, it is white brown reddish which repeated red madder thin and bottoming in yellow goby."
+      "name": "赤白橡（あかしろつるばみ）",
+      "yomi": "Akashirotsurubami",
+      "hex": "#FED2AE",
+      "note": "櫨で黄色く下染めし、うすく茜の赤を重ねた赤みがかった白茶色。",
+      "description": "The Akashirotsurubami, it is white brown reddish which repeated red madder thin and bottoming in yellow goby."
     },
     {
-      "name" : "雀茶（すずめちゃ）",
-      "yomi" : "Suzumecha",
-      "hex" : "#954039",
-      "note" : "雀の頭の色のような赤黒い茶色。 雀の羽の色に由来する『雀色』と同色。",
-      "description" : "The Suzumecha is reddish brown like sparrow’s head color."
+      "name": "雀茶（すずめちゃ）",
+      "yomi": "Suzumecha",
+      "hex": "#954039",
+      "note": "雀の頭の色のような赤黒い茶色。 雀の羽の色に由来する『雀色』と同色。",
+      "description": "The Suzumecha is reddish brown like sparrow’s head color."
     },
     {
-      "name" : "白群（びゃくぐん）",
-      "yomi" : "Byakugun",
-      "hex" : "#83CCD2",
-      "note" : "柔らかい白みを帯びた青色。",
-      "description" : "The Byakugun, it is a blue-tinged white soft taste."
+      "name": "白群（びゃくぐん）",
+      "yomi": "Byakugun",
+      "hex": "#83CCD2",
+      "note": "柔らかい白みを帯びた青色。",
+      "description": "The Byakugun, it is a blue-tinged white soft taste."
     },
     {
-      "name" : "枯野（かれの）",
-      "yomi" : "Kare-iro",
-      "hex" : "#DAC290",
-      "note" : "冬枯れしたすすきの原のような薄い黄褐色。 日本人の心の中にある寂寥感せきりょうかんが漂う心象風景の一つを表現した色。",
-      "description" : "The Kareno is a pale yellowish brown like a dead winter moss."
+      "name": "枯野（かれの）",
+      "yomi": "Kare-iro",
+      "hex": "#DAC290",
+      "note": "冬枯れしたすすきの原のような薄い黄褐色。 日本人の心の中にある寂寥感せきりょうかんが漂う心象風景の一つを表現した色。",
+      "description": "The Kareno is a pale yellowish brown like a dead winter moss."
     },
     {
-      "name" : "香色（こういろ）",
-      "yomi" : "Kou-iro",
-      "hex" : "#EFCD9A",
-      "note" : "灰みの明るい黄赤色。 色名は貴族趣味的な呼び名。",
-      "description" : "The Kou-iro, that of bright yellow ash red yellowish, it is a nickname noble hobby."
+      "name": "香色（こういろ）",
+      "yomi": "Kou-iro",
+      "hex": "#EFCD9A",
+      "note": "灰みの明るい黄赤色。 色名は貴族趣味的な呼び名。",
+      "description": "The Kou-iro, that of bright yellow ash red yellowish, it is a nickname noble hobby."
     },
     {
-      "name" : "深緑（ふかみどり）",
-      "yomi" : "Fukamidori",
-      "hex" : "#004025",
-      "note" : "青みと黒みの強い濃い緑色。 春の伝統色『浅緑』の対色。",
-      "description" : "The Fukamidori, by the deep, dark black strong taste and bluish green and is often used in the adjective of green leaf evergreen."
+      "name": "深緑（ふかみどり）",
+      "yomi": "Fukamidori",
+      "hex": "#004025",
+      "note": "青みと黒みの強い濃い緑色。 春の伝統色『浅緑』の対色。",
+      "description": "The Fukamidori, by the deep, dark black strong taste and bluish green and is often used in the adjective of green leaf evergreen."
     },
     {
-      "name" : "胡粉色（ごふんいろ）",
-      "yomi" : "Gofun-iro",
-      "hex" : "#FFFFFC",
-      "note" : "ごくわずかに黄みがかった白色。 日本画にも使われる白色顔料の「胡粉」の色。",
-      "description" : "The Gofun-iro, refers to the color of the white pigment which is used in Japanese painting of “chalk” is the white yellowish very slightly."
+      "name": "胡粉色（ごふんいろ）",
+      "yomi": "Gofun-iro",
+      "hex": "#FFFFFC",
+      "note": "ごくわずかに黄みがかった白色。 日本画にも使われる白色顔料の「胡粉」の色。",
+      "description": "The Gofun-iro, refers to the color of the white pigment which is used in Japanese painting of “chalk” is the white yellowish very slightly."
     },
     {
-      "name" : "海松色（みるいろ）",
-      "yomi" : "Miru-iro",
-      "hex" : "#596327",
-      "note" : "海藻のみるの色を表した茶みを帯びた深い黄緑色。",
-      "description" : "The Miru-iro, is a deep yellow-green tinged tea body that represents the color of the view mill of seaweed."
+      "name": "海松色（みるいろ）",
+      "yomi": "Miru-iro",
+      "hex": "#596327",
+      "note": "海藻のみるの色を表した茶みを帯びた深い黄緑色。",
+      "description": "The Miru-iro, is a deep yellow-green tinged tea body that represents the color of the view mill of seaweed."
     },
     {
-      "name" : "秘色（ひそく）",
-      "yomi" : "Hisoku",
-      "hex" : "#abced8",
-      "note" : "青磁の肌の色のような浅い緑色。 焼き物の青磁の美しい肌色を模した色名。",
-      "description" : "The Seiji-iro, means a shallow green, such as the color of the skin of celadon, is the color name that imitates a beautiful skin color of celadon pottery."
+      "name": "秘色（ひそく）",
+      "yomi": "Hisoku",
+      "hex": "#abced8",
+      "note": "青磁の肌の色のような浅い緑色。 焼き物の青磁の美しい肌色を模した色名。",
+      "description": "The Seiji-iro, means a shallow green, such as the color of the skin of celadon, is the color name that imitates a beautiful skin color of celadon pottery."
     },
     {
-      "name" : "漆黒（しっこく）",
-      "yomi" : "Sikkoku",
-      "hex" : "#080000",
-      "note" : "黒漆を塗った漆器のような深く艶のある黒色。 純粋な黒。『純白』の対義語。",
-      "description" : "The Sikkoku, it is a black with a deep gloss such as lacquerware that was painted black lacquer. Pure black. Antonym of “pure white”."
+      "name": "漆黒（しっこく）",
+      "yomi": "Sikkoku",
+      "hex": "#080000",
+      "note": "黒漆を塗った漆器のような深く艶のある黒色。 純粋な黒。『純白』の対義語。",
+      "description": "The Sikkoku, it is a black with a deep gloss such as lacquerware that was painted black lacquer. Pure black. Antonym of “pure white”."
     },
     {
-      "name" : "銀朱（ぎんしゅ）",
-      "yomi" : "Ginshu",
-      "hex" : "#E24215",
-      "note" : "黄みの強い赤色。 朱肉の色の多くはこの色。",
-      "description" : "The Ginshu, it is the strong red of you. The color of the ink pad many is the color of this Ginsh."
+      "name": "銀朱（ぎんしゅ）",
+      "yomi": "Ginshu",
+      "hex": "#E24215",
+      "note": "黄みの強い赤色。 朱肉の色の多くはこの色。",
+      "description": "The Ginshu, it is the strong red of you. The color of the ink pad many is the color of this Ginsh."
     },
     {
-      "name" : "朱色（しゅいろ）",
-      "yomi" : "Shu-iro",
-      "hex" : "#EF454A",
-      "note" : "黄を帯びた鮮やか赤色。 縄文時代からあったもっとも古い色のひとつ。",
-      "description" : "The Shu-iro, is a bright red tinged with yellow. The Shu-iro, is one of the oldest color that was from the Jomon period."
+      "name": "朱色（しゅいろ）",
+      "yomi": "Shu-iro",
+      "hex": "#EF454A",
+      "note": "黄を帯びた鮮やか赤色。 縄文時代からあったもっとも古い色のひとつ。",
+      "description": "The Shu-iro, is a bright red tinged with yellow. The Shu-iro, is one of the oldest color that was from the Jomon period."
     },
     {
-      "name" : "浅縹（あさはなだ）",
-      "yomi" : "Asahanada",
-      "hex" : "#84B9CB",
-      "note" : "やわらかい青色のことで藍染により浅く染めた縹色に用いられる。 朝廷への出仕に着用する朝服の初位の色。",
-      "description" : "The Asahanada, and is used to Hanadairo dyed indigo shallower by a soft blue."
+      "name": "浅縹（あさはなだ）",
+      "yomi": "Asahanada",
+      "hex": "#84B9CB",
+      "note": "やわらかい青色のことで藍染により浅く染めた縹色に用いられる。 朝廷への出仕に着用する朝服の初位の色。",
+      "description": "The Asahanada, and is used to Hanadairo dyed indigo shallower by a soft blue."
     },
     {
-      "name" : "濡羽色（ぬればいろ）",
-      "yomi" : "Nureba-iro",
-      "hex" : "#000B00",
-      "note" : "からすの羽のような艶のある黒色。 別名「濡烏」「烏羽色」。",
-      "description" : "The Nureba-iro, it is a black shiny, such as a feather of crow. Also known as “Nuregarasu”, as “Karasuba-iro”."
+      "name": "濡羽色（ぬればいろ）",
+      "yomi": "Nureba-iro",
+      "hex": "#000B00",
+      "note": "からすの羽のような艶のある黒色。 別名「濡烏」「烏羽色」。",
+      "description": "The Nureba-iro, it is a black shiny, such as a feather of crow. Also known as “Nuregarasu”, as “Karasuba-iro”."
     },
     {
-      "name" : "宍色（ししいろ）",
-      "yomi" : "Shishi-iro",
-      "hex" : "#EFAB93",
-      "note" : "人間の肌色のような浅い黄みがかった赤色。 色名の宍は肉の古語。",
-      "description" : "The Shishi-iro, refers to the red shallow yellowish like human skin color hue."
+      "name": "宍色（ししいろ）",
+      "yomi": "Shishi-iro",
+      "hex": "#EFAB93",
+      "note": "人間の肌色のような浅い黄みがかった赤色。 色名の宍は肉の古語。",
+      "description": "The Shishi-iro, refers to the red shallow yellowish like human skin color hue."
     },
     {
-      "name" : "小豆色（あずきいろ）",
-      "yomi" : "Azuki-iro",
-      "hex" : "#A04940",
-      "note" : "赤小豆の実の色のような茶色がかった赤紫。",
-      "description" : "The Azuki-iro, it is a red purple tinged with night vision, such as color of the actual red azuki bean."
+      "name": "小豆色（あずきいろ）",
+      "yomi": "Azuki-iro",
+      "hex": "#A04940",
+      "note": "赤小豆の実の色のような茶色がかった赤紫。",
+      "description": "The Azuki-iro, it is a red purple tinged with night vision, such as color of the actual red azuki bean."
     },
     {
-      "name" : "鳶色（とびいろ）",
-      "yomi" : "Tobi-iro",
-      "hex" : "#7A380F",
-      "note" : "猛禽・トビの羽毛の色のような赤暗い茶褐色。",
-      "description" : "The Tobi-iro, it is a dark brown red like the color of the feathers of the bird of prey, black kite."
+      "name": "鳶色（とびいろ）",
+      "yomi": "Tobi-iro",
+      "hex": "#7A380F",
+      "note": "猛禽・トビの羽毛の色のような赤暗い茶褐色。",
+      "description": "The Tobi-iro, it is a dark brown red like the color of the feathers of the bird of prey, black kite."
     },
     {
-      "name" : "鉛色（なまりいろ）",
-      "yomi" : "Namari-iro",
-      "hex" : "#7B7C7D",
-      "note" : "鉛のような少し青みを帯びた灰色。",
-      "description" : "The Namari-iro, it is a gray blue tinged taste a little like lead. Leaden skies and sea of lead color, from dark and heavy impression of lead and is often used expressions."
+      "name": "鉛色（なまりいろ）",
+      "yomi": "Namari-iro",
+      "hex": "#7B7C7D",
+      "note": "鉛のような少し青みを帯びた灰色。",
+      "description": "The Namari-iro, it is a gray blue tinged taste a little like lead. Leaden skies and sea of lead color, from dark and heavy impression of lead and is often used expressions."
     },
     {
-      "name" : "檳榔子黒（びんろうじぐろ）",
-      "yomi" : "Binroujikuro",
-      "hex" : "#00081A",
-      "note" : "青みを含んだ気品のある黒色。 別名『檳榔子染』。紋付きの最高級の色。",
-      "description" : "The Binroujiguro, it is the black with a grace that contains bluish. The finest color of Crested."
+      "name": "檳榔子黒（びんろうじぐろ）",
+      "yomi": "Binroujikuro",
+      "hex": "#00081A",
+      "note": "青みを含んだ気品のある黒色。 別名『檳榔子染』。紋付きの最高級の色。",
+      "description": "The Binroujiguro, it is the black with a grace that contains bluish. The finest color of Crested."
     },
     {
-      "name" : "鳩羽鼠（はとばねずみ）",
-      "yomi" : "Hatobanezumi",
-      "hex" : "#9E8B8E",
-      "note" : "薄い紫色である藤色に鼠色をかけた赤みがかった灰紫色。",
-      "description" : "The Hatobanezumi refers to the ash purple red taste multiplied by gray to mauve is a thin purplish."
+      "name": "鳩羽鼠（はとばねずみ）",
+      "yomi": "Hatobanezumi",
+      "hex": "#9E8B8E",
+      "note": "薄い紫色である藤色に鼠色をかけた赤みがかった灰紫色。",
+      "description": "The Hatobanezumi refers to the ash purple red taste multiplied by gray to mauve is a thin purplish."
     },
     {
-      "name" : "東雲色（しののめいろ）",
-      "yomi" : "Shinonome-iro",
-      "hex" : "#F19072",
-      "note" : "夜が明け始めるころ太陽で白み始める東の空を思わせる明るい黄赤色。",
-      "description" : "The Shinonome-iro, by the eastern sky starting to whitish in the sun time the night begins to dawn, it is a color close to pink Yellowish somewhat."
+      "name": "東雲色（しののめいろ）",
+      "yomi": "Shinonome-iro",
+      "hex": "#F19072",
+      "note": "夜が明け始めるころ太陽で白み始める東の空を思わせる明るい黄赤色。",
+      "description": "The Shinonome-iro, by the eastern sky starting to whitish in the sun time the night begins to dawn, it is a color close to pink Yellowish somewhat."
     },
     {
-      "name" : "飴色（あめいろ）",
-      "yomi" : "Ame-iro",
-      "hex" : "#CD6118",
-      "note" : "水飴に由来する、深みのある強い橙色。",
-      "description" : "The Ame-iro, derived from the Mizuame, is a strong orange color is a deep."
+      "name": "飴色（あめいろ）",
+      "yomi": "Ame-iro",
+      "hex": "#CD6118",
+      "note": "水飴に由来する、深みのある強い橙色。",
+      "description": "The Ame-iro, derived from the Mizuame, is a strong orange color is a deep."
     },
     {
-      "name" : "丹色（にいろ）",
-      "yomi" : "Ni-iro",
-      "hex" : "#E45E32",
-      "note" : "赤みがかった灰黄色から赤褐色。赤土の色。",
-      "description" : "The color, and is used to reddish brown ash from a reddish yellow, it is the color of the so-called red clay."
+      "name": "丹色（にいろ）",
+      "yomi": "Ni-iro",
+      "hex": "#E45E32",
+      "note": "赤みがかった灰黄色から赤褐色。赤土の色。",
+      "description": "The color, and is used to reddish brown ash from a reddish yellow, it is the color of the so-called red clay."
     },
     {
-      "name" : "紫紺（しこん）",
-      "yomi" : "Shikon",
-      "hex" : "#400B36",
-      "note" : "紺色がかった暗めの紫色。 天皇即位の礼の幡で用いられた色。",
-      "description" : "The Shikon, it is a dark purple dark blue tinged. It was used in the grouper of Rei coronation of the Emperor."
+      "name": "紫紺（しこん）",
+      "yomi": "Shikon",
+      "hex": "#400B36",
+      "note": "紺色がかった暗めの紫色。 天皇即位の礼の幡で用いられた色。",
+      "description": "The Shikon, it is a dark purple dark blue tinged. It was used in the grouper of Rei coronation of the Emperor."
     }
   ]
 }

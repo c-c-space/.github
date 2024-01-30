@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "草露白",
-      "yomi" : "(くさのつゆしろし)",
-      "value" : "Kusa no tsuyu shiroshi",
-      "start" : "September 8",
-      "end" : "September 12",
-      "note" : "草に降りた露が白く光る",
-      "description" : "Fallen dew on grass glows white"
+      "name": "草露白",
+      "yomi": "(くさのつゆしろし)",
+      "value": "Kusa no tsuyu shiroshi",
+      "start": "September 8",
+      "end": "September 12",
+      "note": "草に降りた露が白く光る",
+      "description": "Fallen dew on grass glows white"
     },
     {
-      "name" : "鶺鴒鳴",
-      "yomi" : "(せきれいなく)",
-      "value" : "Sekirei naku",
-      "start" : "September 13",
-      "end" : "September 17",
-      "note" : "鶺鴒が鳴き始める",
-      "description" : "Wagtails sing"
+      "name": "鶺鴒鳴",
+      "yomi": "(せきれいなく)",
+      "value": "Sekirei naku",
+      "start": "September 13",
+      "end": "September 17",
+      "note": "鶺鴒が鳴き始める",
+      "description": "Wagtails sing"
     },
     {
-      "name" : "玄鳥去",
-      "yomi" : "(つばめさる)",
-      "value" : "Tsubame saru",
-      "start" : "September 18",
-      "end" : "September 22",
-      "note" : "燕が南へ帰って行く",
-      "description" : "Swallows return to the south"
+      "name": "玄鳥去",
+      "yomi": "(つばめさる)",
+      "value": "Tsubame saru",
+      "start": "September 18",
+      "end": "September 22",
+      "note": "燕が南へ帰って行く",
+      "description": "Swallows return to the south"
     }
   ]
 }

@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "虹蔵不見",
-      "yomi" : "(にじかくれてみえず)",
-      "value" : "Niji kakurete miezu",
-      "start" : "November 22",
-      "end" : "November 26",
-      "note" : "虹を見かけなくなる",
-      "description" : "Rainbows disappear"
+      "name": "虹蔵不見",
+      "yomi": "(にじかくれてみえず)",
+      "value": "Niji kakurete miezu",
+      "start": "November 22",
+      "end": "November 26",
+      "note": "虹を見かけなくなる",
+      "description": "Rainbows disappear"
     },
     {
-      "name" : "朔風払葉",
-      "yomi" : "(きたかぜこのはをはらう)",
-      "value" : "Kitakaze konoha o harau",
-      "start" : "November 27",
-      "end" : "December 1",
-      "note" : "北風が木の葉を払い除ける",
-      "description" : "The north wind blows leaves off trees"
+      "name": "朔風払葉",
+      "yomi": "(きたかぜこのはをはらう)",
+      "value": "Kitakaze konoha o harau",
+      "start": "November 27",
+      "end": "December 1",
+      "note": "北風が木の葉を払い除ける",
+      "description": "The north wind blows leaves off trees"
     },
     {
-      "name" : "橘始黄",
-      "yomi" : "(たちばなはじめてきばむ)",
-      "value" : "Tachibana hajimete kibamu",
-      "start" : "December 2",
-      "end" : "December 6",
-      "note" : "橘の実が黄色くなり始める",
-      "description" : "Mandarins begin to yellow"
+      "name": "橘始黄",
+      "yomi": "(たちばなはじめてきばむ)",
+      "value": "Tachibana hajimete kibamu",
+      "start": "December 2",
+      "end": "December 6",
+      "note": "橘の実が黄色くなり始める",
+      "description": "Mandarins begin to yellow"
     }
   ]
 }

@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "東風解凍",
-      "yomi" : "(はるかぜこおりをとく)",
-      "value" : "Harukaze kōri o toku",
-      "start" : "February 4",
-      "end" : "February 8",
-      "note" : "東風が厚い氷を解かし始める",
-      "description" : "The east wind begins to melt the ice"
+      "name": "東風解凍",
+      "yomi": "(はるかぜこおりをとく)",
+      "value": "Harukaze kōri o toku",
+      "start": "February 4",
+      "end": "February 8",
+      "note": "東風が厚い氷を解かし始める",
+      "description": "The east wind begins to melt the ice"
     },
     {
-      "name" : "黄鶯睍睆",
-      "yomi" : "(うぐいすなく)",
-      "value" : "Kōō kenkan su",
-      "start" : "February 9",
-      "end" : "February 13",
-      "note" : "鶯が山里で鳴き始める",
-      "description" : "Songbirds in mountain villages"
+      "name": "黄鶯睍睆",
+      "yomi": "(うぐいすなく)",
+      "value": "Kōō kenkan su",
+      "start": "February 9",
+      "end": "February 13",
+      "note": "鶯が山里で鳴き始める",
+      "description": "Songbirds in mountain villages"
     },
     {
-      "name" : "魚上氷",
-      "yomi" : "(うおこおりをいずる)",
-      "value" : "Uo kōri o izuru",
-      "start" : "February 14",
-      "end" : "February 18",
-      "note" : "割れた氷の間から魚が飛び出る",
-      "description" : "Fish emerge from the broken ice"
+      "name": "魚上氷",
+      "yomi": "(うおこおりをいずる)",
+      "value": "Uo kōri o izuru",
+      "start": "February 14",
+      "end": "February 18",
+      "note": "割れた氷の間から魚が飛び出る",
+      "description": "Fish emerge from the broken ice"
     }
   ]
 }

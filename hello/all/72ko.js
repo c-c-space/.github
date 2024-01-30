@@ -31,9 +31,9 @@ function koIndex(obj) {
 
     let buttonP = document.createElement('p')
     let button = document.createElement('button')
-    button.type = 'button';
     button.setAttribute('data-name', 'Daniel')
     button.setAttribute('data-hello', ko.description)
+    button.type = 'button';
     button.innerHTML = `
     ${ko.name} <i>${ko.value}</i>
     `;

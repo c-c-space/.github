@@ -1,31 +1,31 @@
 {
-  "ko" : [
+  "ko": [
     {
-      "name" : "蛙始鳴",
-      "yomi" : "(かわずはじめてなく)",
-      "value" : "Kawazu hajimete naku",
-      "start" : "May 5",
-      "end" : "May 9",
-      "note" : "蛙が鳴き始める",
-      "description" : "Frogs begin singing"
+      "name": "蛙始鳴",
+      "yomi": "(かわずはじめてなく)",
+      "value": "Kawazu hajimete naku",
+      "start": "May 5",
+      "end": "May 9",
+      "note": "蛙が鳴き始める",
+      "description": "Frogs begin singing"
     },
     {
-      "name" : "蚯蚓出",
-      "yomi" : "(みみずいずる)",
-      "value" : "Mimizu izuru",
-      "start" : "May 10",
-      "end" : "May 14",
-      "note" : "蚯蚓が地上に這出る",
-      "description" : "Earthworms surface from the earth"
+      "name": "蚯蚓出",
+      "yomi": "(みみずいずる)",
+      "value": "Mimizu izuru",
+      "start": "May 10",
+      "end": "May 14",
+      "note": "蚯蚓が地上に這出る",
+      "description": "Earthworms surface from the earth"
     },
     {
-      "name" : "竹笋生",
-      "yomi" : "(たけのこしょうず)",
-      "value" : "Takenoko shōzu",
-      "start" : "May 15",
-      "end" : "May 19",
-      "note" : "筍が生えて来る",
-      "description" : "Bamboo shoots grow"
+      "name": "竹笋生",
+      "yomi": "(たけのこしょうず)",
+      "value": "Takenoko shōzu",
+      "start": "May 15",
+      "end": "May 19",
+      "note": "筍が生えて来る",
+      "description": "Bamboo shoots grow"
     }
   ]
 }
