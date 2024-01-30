@@ -95,6 +95,10 @@ main {
     font-style: italic;
 }
 
+#hello small {
+    font-family: "ipag", "Arial Narrow", monospace;
+}
+
 code {
     font-family: inherit;
 }
