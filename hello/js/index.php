@@ -16,7 +16,6 @@
 
     fetchHTML('recognition.html', '#recognition')
     fetchHTML('synthesis.html', '#synthesis')
-    fetchHTML('form.html', '#recognition')
   </script>
 
   <!--og:meta-->
