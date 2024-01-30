@@ -1,16 +1,16 @@
 {
   "contents": [
     {
-      "date": "Battery Status API",
-      "name": "バッテリー状態 API",
-      "url": "/profile/js/battery.html",
+      "date": "Media Capture and Streams",
+      "name": "メディアキャプチャとストリーム API (メディアストリーム)",
+      "url": "/profile/js/",
       "ver": "ver.1.0",
       "hidden": true
     },
     {
-      "date": "Network Information API",
-      "name": "ネットワーク情報 API",
-      "url": "/profile/js/navigator.html",
+      "date": "Network Information | Battery Status",
+      "name": "ブラウザのオンライン状態・ネットワーク接続情報などを提供する、システムのバッテリーに関する情報 API",
+      "url": "/profile/js/",
       "ver": "ver.1.0",
       "hidden": true
     }

@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  
+
   <!-- HTML Meta Tags -->
   <title>通信情報／ブラウザ等情報 | creative-community.space</title>
   <meta name="description" content="The Information About Network & Browser for connection to The Internet">
@@ -28,6 +28,7 @@
   <script src="/ver/js/menu.js"></script>
   <script src="/ver/js/modal.js"></script>
   <script src="/profile/userMedia/script.js"></script>
+  <script src="/profile/userMedia/window.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
 
@@ -81,8 +82,6 @@
       <span>Height: <code id="outInnerHeight"></code> px</span>
       <span id="network"></span>
     </li>
-    <script src="js/window.js"></script>
-
     <li id="screen">
       <span>
         <u>Screen Size</u>

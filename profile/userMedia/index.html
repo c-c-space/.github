@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>Media Capture and Streams API</title>
+    <title>Media Capture and Streams</title>
     <meta content="メディアキャプチャとストリーム API (メディアストリーム)" name="description">
 
     <script src="../../ver/js/menu.js"></script>
     <script src="script.js"></script>
+    <script src="window.js"></script>
     <script type="text/javascript">
         menuJSON('../js/index.json')
 
         window.addEventListener('load', function () {
-            userStream()
+            environmentStream()
         }, false);
     </script>
 
@@ -33,7 +34,6 @@
 
         #howto details {
             max-width: 750px;
-            margin: auto;
         }
     </style>
 </head>
@@ -52,20 +52,122 @@
     <article id="howto">
         <details>
             <summary>
-                <strong>Media Capture and Streams API</strong><br />
+                <strong>Media Capture and Streams</strong><br />
                 <code>メディアキャプチャとストリーム API (メディアストリーム)</code>
             </summary>
+            <pre>
+function environmentStream() {
+    const userMedia = document.querySelector('#userMedia')
+    let media = navigator.mediaDevices.getUserMedia({
+        video: true,
+        video: {
+        facingMode: "environment"
+        }, // 背面カメラ
+        audio: false,
+    });
+    media.then((stream) => {
+        userMedia.srcObject = stream;
+    });
+}
+            </pre>
             <aside id="links">
                 <a href="https://developer.mozilla.org/ja/docs/Web/API/MediaDevices/getUserMedia">
                     <i>MediaDevices</i>
                     <p>MediaDevices: getUserMedia() メソッド </p>
                 </a>
             </aside>
-            <p></p>
-            <br />
-            <pre>
-      </pre>
         </details>
+        <hr>
+        <details>
+            <summary>
+                <strong>Window and Screen</strong><br />
+                <code>現在のウィンドウ・画面の幅・高さを取得</code>
+            </summary>
+            <pre>
+window.addEventListener("DOMContentLoaded", function () {
+    windowScreen();
+}, false);
+
+window.onresize = tmResize;
+    function tmResize() {
+    if (typeof pageResize == "function") {
+        pageResize();
+    }
+}
+
+function pageOnload() {
+    windowScreen();
+}
+function pageResize() {
+    windowScreen();
+}
+
+function windowScreen() {
+    const outScreenWidth = document.getElementById("outScreenWidth");
+    outScreenWidth.innerText = screen.availWidth;
+
+    const outScreenheight = document.getElementById("outScreenheight");
+    outScreenheight.innerText = screen.availHeight;
+
+    const outInnerWidth = document.getElementById("outInnerWidth");
+    outInnerWidth.innerText = window.innerWidth;
+
+    const outInnerHeight = document.getElementById("outInnerHeight");
+    outInnerHeight.innerText = window.innerHeight;
+}
+            </pre>
+            <aside id="links">
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Window">
+                    <i>Document Object Model</i>
+                    <p>Window</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth">
+                    <i>Window</i>
+                    <p>innerWidth プロパティ</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight">
+                    <i>Window</i>
+                    <p>innerHeight プロパティ</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen">
+                    <i>CSS Object Model</i>
+                    <p>Screen</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/availWidth">
+                    <i>Screen</i>
+                    <p>availWidth プロパティ</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen/availHeight">
+                    <i>Screen</i>
+                    <p>availHeight プロパティ</p>
+                </a>
+            </aside>
+        </details>
+        <hr>
+        <table class="size">
+            <tbody>
+                <tr>
+                    <td>window.innerWidth</td>
+                    <td>ウィンドウの内部の幅 (px)</td>
+                    <td id="outInnerWidth" class="nowValue"></td>
+                </tr>
+                <tr>
+                    <td>window.innerHeight</td>
+                    <td>ウィンドウの内部の高さ (px)</td>
+                    <td id="outInnerHeight" class="nowValue"></td>
+                </tr>
+                <tr>
+                    <td>Screen.availWidth</td>
+                    <td>利用可能なウインドウの幅 (px)</td>
+                    <td id="outScreenWidth" class="nowValue"></td>
+                </tr>
+                <tr>
+                    <td>Screen.availHeight</td>
+                    <td>利用可能なウインドウの高さ (px)</td>
+                    <td id="outScreenheight" class="nowValue"></td>
+                </tr>
+            </tbody>
+        </table>
     </article>
 </body>
 

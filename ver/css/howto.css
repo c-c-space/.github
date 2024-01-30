@@ -12,16 +12,30 @@ table.size td:first-child {
 #howto code,
 #howto font,
 table.size td:nth-child(2) {
-  font-family: "Yu Gothic", "游ゴシック体", sans-serif;
+  font-family: "ipag", "Arial Narrow", monospace;
 }
 
 table.size .nowValue {
-  font-family: "Arial Narrow", Arial, "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Arial Narrow", Arial, "ipag", monospace;
+}
+
+hr {
+  border: none;
+  padding: 1rem;
+  margin: 0;
 }
 
 #howto {
   font-size: 1rem;
   padding: 1rem;
+  position: relative;
+  overflow: auto;
+  max-height: 100%;
+  z-index: 10;
+}
+
+#howto details {
+  margin: 1rem auto;
 }
 
 #howto summary,

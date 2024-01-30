@@ -5,32 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+
+  <title>Network Information | Battery Status</title>
+  <meta content="ブラウザのオンライン状態・ネットワーク接続情報などを提供する、システムのバッテリーに関する情報 API" name="description">
+
   <script src="../../ver/js/menu.js"></script>
+  <script src="battery.js"></script>
   <script src="navigator.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
   </script>
 
-  <!--og:meta-->
-  <meta content="website" property="og:type">
-  <title>ネットワーク情報 API | Network Information API</title>
-  <meta content="ネットワーク情報 API | Network Information API" property="og:title">
-  <meta content="ブラウザーのオンライン状態・ネットワーク接続情報などを提供する API" name="description">
-  <meta content="ブラウザーのオンライン状態・ネットワーク接続情報などを提供する API" name="og:description">
-
   <link rel="icon" href="../../ver/icon/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="../../ver/css/menu.css" />
   <link rel="stylesheet" href="../../ver/css/howto.css" />
   <style>
     #howto details {
       max-width: 750px;
-      margin: auto;
     }
 
     #howto meter {
       width: 100%;
       height: 350px;
+    }
+
+    #howto b {
+      color: red;
     }
 
     #howto meter::-webkit-meter-horizontal-bar {
@@ -41,16 +41,6 @@
       #howto meter {
         height: 45vw;
       }
-    }
-
-    #howto b {
-      color: red;
-    }
-
-    hr {
-      border: none;
-      padding: 1rem;
-      margin: 0;
     }
   </style>
 </head>
@@ -72,7 +62,7 @@
         <strong id="status">(Online or Offline?)</strong><br />
         <code>ブラウザのオンライン状態</code>
       </summary>
-      <aside id="links">
+      <aside>
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine">
           <i>Navigator.onLine</i>
           <p>ブラウザのオンライン状態を返すプロパティ</p>
@@ -96,13 +86,12 @@ function <b>update</b>(online) {
 }
       </pre>
     </details>
-    <hr />
     <details>
       <summary>
         <strong id="network">navigator.connection</strong><br />
         <code>ネットワーク接続情報</code>
       </summary>
-      <aside id="links">
+      <aside>
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API">
           <i>Network Information API</i>
           <p>ネットワーク情報 API</p>
@@ -147,13 +136,12 @@ if (connectionInfo !== undefined) {
 }
       </pre>
     </details>
-    <hr />
     <details>
       <summary>
         <strong id="navigator">navigator.deviceMemory</strong><br />
         <code>端末のおよそのメモリ量／論理プロセッサーのコア数</code>
       </summary>
-      <aside id="links">
+      <aside>
         <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/deviceMemory">
           <i>navigator.deviceMemory</i>
           <p>端末のおよそのメモリ量 (ギガバイト単位)</p>
@@ -169,6 +157,99 @@ const <b>hardware</b> = <b>navigator.hardwareConcurrency</b>;
 document.querySelector('#navigator').innerHTML = `This Device has at least <b>${memory}</b> GiB of RAM | <b>${hardware}</b> CPU available.`;
       </pre>
     </details>
+    <hr>
+    <details>
+      <summary>
+        <strong>Battery Status API</strong><br />
+        <code>システムのバッテリーに関する情報を提供する API</code>
+        <meter id="progress" min="0" low="10" high="20" max="100"></meter>
+      </summary>
+      <aside>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API">
+          <i>Battery Status API</i>
+          <p>バッテリー状態 API</p>
+        </a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery">
+          <i>Navigator</i>
+          <p>.getBattery()</p>
+        </a>
+      </aside>
+      <p>バッテリー状態 API は、システムのバッテリー充電レベルに関する情報の提供、およびバッテリーレベルや充電状態が変化したときに発生するイベントによる通知を可能にします。</p>
+      <p>これは、バッテリーが消耗したときにバッテリー消費を減らすためアプリのリソース使用状況を調整したり、データを失わないためにバッテリーが切れる前に変更点を保存したりするために使用できます。</p>
+      <br />
+      <pre>
+navigator<code class="red">.getBattery</code>().then((battery) => {
+  function updateAllBatteryInfo() {
+    updateChargeInfo();
+    updateLevelInfo();
+    updateChargingInfo();
+    updateDischargingInfo();
+  }
+  updateAllBatteryInfo();
+
+  battery.addEventListener("chargingchange", () => {
+    updateChargeInfo();
+  });
+  function updateChargeInfo() {
+    document.querySelector('#charging').innerText = `${<code class="red">battery.charging</code> ? "充電中" : "放電中"}`;
+  }
+
+  battery.addEventListener("levelchange", () => {
+    updateLevelInfo();
+  });
+  function updateLevelInfo() {
+    document.querySelector('#level').innerText = `${<code class="red">battery.level</code> * 100} %`;
+  }
+
+  battery.addEventListener("chargingtimechange", () => {
+    updateChargingInfo();
+  });
+  function updateChargingInfo() {
+    if (<code class="red">battery.chargingTime</code> === Infinity) {
+      document.querySelector('#chargingTime').innerText = '-';
+    } else {
+      document.querySelector('#chargingTime').innerText = `${<code class="red">battery.chargingTime</code>} 秒`;
+    }
+  }
+
+  battery.addEventListener("dischargingtimechange", () => {
+    updateDischargingInfo();
+  });
+  function updateDischargingInfo() {
+    if (<code class="red">battery.dischargingTime</code> === Infinity) {
+      document.querySelector('#dischargingTime').innerText = '-';
+    } else {
+      document.querySelector('#dischargingTime').innerText = `${<code class="red">battery.dischargingTime</code>} 秒`;
+    }
+  }
+});
+      </pre>
+    </details>
+
+    <table class="size">
+      <tbody>
+        <tr>
+          <td>battery.charging</td>
+          <td>現在充電されているかどうか</td>
+          <td id="charging" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.level</td>
+          <td>現在の充電レベル</td>
+          <td id="level" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.chargingTime </td>
+          <td>完全に充電されるまでの残り時間</td>
+          <td id="chargingTime" class="nowValue"></td>
+        </tr>
+        <tr>
+          <td>battery.dischargingTime</td>
+          <td>完全に放電されるまでの残り時間</td>
+          <td id="dischargingTime" class="nowValue"></td>
+        </tr>
+      </tbody>
+    </table>
   </article>
 </body>
 
