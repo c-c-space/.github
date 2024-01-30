@@ -64,7 +64,6 @@
     </p>
     <p class="noprint">
       <input style="display: block; float: left;" type="button" onclick="changeHidden()" value="閉じる Close">
-      <input style="display: block; float: right;" type="button" onclick="window.print()" value="WWW to Print">
     </p>
   </main>
 
