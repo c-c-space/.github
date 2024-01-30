@@ -7,12 +7,9 @@
   $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
 
   require('../head.php');
-  require('../all/greeting.php');
+  require('../greeting.php');
   ?>
 
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="<?php echo $url; ?>" property="og:url">
   <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
   <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
 
@@ -47,10 +44,11 @@
   </main>
   <script src="colors.js"></script>
   <script type="text/javascript">
-  indexJSON('../spring/color.json');
-  indexJSON('../summer/color.json');
-  indexJSON('../autumn/color.json');
-  indexJSON('../winter/color.json');
+    indexJSON('../spring/color.json');
+    indexJSON('../summer/color.json');
+    indexJSON('../autumn/color.json');
+    indexJSON('../winter/color.json');
   </script>
 </body>
+
 </html>

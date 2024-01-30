@@ -12,9 +12,6 @@
   require('../head.php');
   ?>
 
-  <!--for Twitter-->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="<?php echo $url; ?>" property="og:url">
   <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
   <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
 
