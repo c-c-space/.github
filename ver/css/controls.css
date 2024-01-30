@@ -15,7 +15,7 @@ input[type="submit"],
 select,
 button {
   cursor: pointer;
-  font-family: inherit;
+  font-family: "Arial Narrow", monospace;
   word-break: break-all;
 }
 
