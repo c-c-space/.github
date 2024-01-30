@@ -8,7 +8,7 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
-  <script src="ver/index.2.2.js"></script>
+  <script src="index.2.2.js"></script>
 
   <!-- HTML Meta Tags -->
   <?php require('ver/icon/all.html'); ?>
