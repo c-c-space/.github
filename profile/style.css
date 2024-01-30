@@ -2,6 +2,10 @@ body {
   background: #000;
 }
 
+dialog section {
+  line-height: 175%;
+}
+
 #menu,
 #log {
   filter: invert();
