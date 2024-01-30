@@ -61,9 +61,7 @@
 
   <ul id="log">
     <li id="battery">
-      <span>
-        <button onclick="location.assign('js/battery.html')">Battery Status</button>
-      </span>
+      <span><u>Battery Status</u></span>
       <span id="level"></span>
       <span><meter id="progress" min="0" low="10" high="20" max="100"></meter></span>
       <span>
