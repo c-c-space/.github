@@ -33,7 +33,7 @@
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
       window.onload = (event) => {
-        const logAll = document.querySelectorAll('li.log')
+        const logAll = document.querySelectorAll('li.log, #now')
         logAll.forEach((logEach) => {
           logEach.remove()
         })
