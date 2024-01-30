@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <button class="color bgcolor" onclick="location.assign('/map/heard/')">things that i (we) heard</button>
     </span>
     <span></span>
-    <span>You Posted <b>${yourLocation.length}</b> things you heard</span>
+    <span>You Posted <b>${youHeard.length}</b> things you heard</span>
     `
     info.before(mapHeard);
   }
