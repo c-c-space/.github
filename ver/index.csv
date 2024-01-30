@@ -9,7 +9,7 @@ update,2023,APR 15,"/profile/","通信情報／ブラウザ等情報","ローカ
 update,2023,APR 1,"/hello/js/","音声認識・音声合成","ウェブ音声 API (Web Speech API)"
 new,2023,APR 1,"/hello/","Hello","Speech to Text to Text to Speech"
 update,2022,OCT 10,"/profile/thankyou/touch.html","Touch.js","Drawing by Screen Touch"
-update,2022,OCT 10,"/profile/js/","Network Information | Battery Status","ブラウザのオンライン状態・ネットワーク接続情報などを提供する、システムのバッテリーに関する情報 API"
+update,2022,OCT 10,"/profile/js/","Network Information | Battery Status","ブラウザのオンライン状態・ネットワーク接続情報、システムのバッテリーに関する情報など"
 update,2022,OCT 10,"/profile/userMedia/","Media Capture and Streams","メディアキャプチャとストリーム API (メディアストリーム)"
 new,2022,OCT 10,"/profile/","通信情報／ブラウザ等情報","The Information About Network & Browser"
 update,2022,OCT 1,"/sign/collection/","毎日の色と記号","色と記号を日毎のCSVに記録してページを生成"
