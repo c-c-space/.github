@@ -136,47 +136,46 @@
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       forMobile()
-      console.log("Mobile Detected");
+      console.log("Mobile Detected")
     }
 
     var isMobile = {
       Android: function() {
-        return navigator.userAgent.match(/Android/i);
+        return navigator.userAgent.match(/Android/i)
       },
       BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
+        return navigator.userAgent.match(/BlackBerry/i)
       },
       iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i)
       },
       Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
+        return navigator.userAgent.match(/Opera Mini/i)
       },
       Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
+        return navigator.userAgent.match(/IEMobile/i)
       },
       any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows())
       }
     };
 
     if (isMobile.any()) {
       forMobile()
-      console.log("This is a Mobile Device");
+      console.log("This is a Mobile Device")
     }
 
-    var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
+    var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false)
     if (iOS) {
       forMobile()
-      console.log('This is a iPad|iPhone|iPod');
+      console.log('This is a iPad|iPhone|iPod')
     }
 
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-      console.log("This is a not Mobile Device");
-
+      console.log("This is a not Mobile Device")
       fetchHTML('profile/thankyou/www.html', '#www')
 
-      const main = document.querySelector('main');
+      const main = document.querySelector('main')
       main.style.pointerEvents = "none";
       main.style.userSelect = "none";
 
@@ -189,10 +188,10 @@
         retina: 'auto',
 
         setup: function() {
-          console.log('setup');
+          console.log('setup')
         },
         update: function() {
-          radius = 2 + abs(sin(this.millis * 0.002) * 25);
+          radius = 2 + abs(sin(this.millis * 0.002) * 25)
         },
 
         touchmove: function() {
@@ -202,10 +201,10 @@
             this.lineJoin = 'round';
             this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
             this.lineWidth = radius;
-            this.beginPath();
-            this.moveTo(touch.ox, touch.oy);
-            this.lineTo(touch.x, touch.y);
-            this.stroke();
+            this.beginPath()
+            this.moveTo(touch.ox, touch.oy)
+            this.lineTo(touch.x, touch.y)
+            this.stroke()
           }
         }
       })

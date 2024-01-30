@@ -34,12 +34,15 @@ document.addEventListener('readystatechange', event => {
         yourStrage.innerHTML +=
           `<a href="/sign/">${yourSign.length}</a>`;
       }
+
       yourStrage.innerHTML +=
         ' Colors & Symbols that Suit You<br/>';
 
+      // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
-        `<br/><small>by ${yourInfo.os}</small>`;
+        `<small id="ip" class="hide"><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
+
       // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All";
       nextBtn.addEventListener('click', function () {
@@ -55,16 +58,16 @@ document.addEventListener('readystatechange', event => {
         environmentStream()
       }, false)
 
-      const login = document.querySelector('#login')
-      login.addEventListener('submit', function (e) {
-        e.preventDefault()
-        setLOG()
-      }, false)
-
       const backBtn = document.querySelector('#back-btn')
       backBtn.addEventListener('click', function () {
         changeHidden()
         stopStream()
+      }, false)
+
+      const login = document.querySelector('#login')
+      login.addEventListener('submit', function (e) {
+        e.preventDefault()
+        setLOG()
       }, false)
     }
   }
