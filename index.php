@@ -8,6 +8,8 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
+  <script src="ver/index.2.2.js"></script>
+
   <!-- HTML Meta Tags -->
   <?php require('ver/icon/all.html'); ?>
   <title>Index | creative-community.space</title>
@@ -29,7 +31,6 @@
   <meta name="twitter:image" content="https://creative-community.space/ver/card.png">
 
   <script src="ver/js/menu.js"></script>
-  <script src="ver/js/index.js"></script>
   <script src="ver/js/modal.js"></script>
   <script src="ver/js/userMedia.js"></script>
   <script>
@@ -50,7 +51,7 @@
     <menu id="contents">
       <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.1</u>
+        <u>ver.2.2</u>
       </a>
     </menu>
   </header>

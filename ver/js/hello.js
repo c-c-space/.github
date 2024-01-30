@@ -18,7 +18,8 @@ window.addEventListener('load', function () {
       if (!voice.lang.match('ja|en')) return
       const option = document.createElement('option')
       option.value = voice.name
-      option.text = `${voice.name} (${voice.lang})`
+      option.text = `${voice.name} (${voice.lang})`;
+      option.setAttribute('lang', voice.lang)
       option.setAttribute('selected', voice.default)
       voiceSelect.appendChild(option)
     })

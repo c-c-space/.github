@@ -18,25 +18,30 @@ document.addEventListener('readystatechange', event => {
     fetchHTML('profile/yourinfo.html', '#modal section')
   } else if (event.target.readyState === 'complete') {
     const nextBtn = document.querySelector('#submit-btn')
+    const yourStrage = document.querySelector('#hello h2')
 
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
       fetchHTML('hello/welcome.php', '#hello h1')
-      const yourStrage = document.querySelector('#hello h2')
-      yourStrage.innerHTML = ""
-      yourStrage.innerHTML = '<u>You Posted</u><br/>'
+      yourStrage.innerHTML = '<u data-id="ip">You Posted</u><br/>';
 
       // sign 情報を表示
       if (!localStorage.getItem('sign')) {
-        yourStrage.innerHTML += '<a href="/sign/">0</a>'
+        yourStrage.innerHTML +=
+          '<a href="/sign/">0</a>';
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
-        yourStrage.innerHTML += `<a href="/sign/">${yourSign.length}</a>`
+        yourStrage.innerHTML +=
+          `<a href="/sign/">${yourSign.length}</a>`;
       }
-      yourStrage.innerHTML += ' Colors & Symbols that Suit You<br/>'
+      yourStrage.innerHTML +=
+        ' Colors & Symbols that Suit You<br/>';
 
+      const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
+      yourStrage.innerHTML +=
+        `<br/><small>by ${yourInfo.os}</small>`;
       // ローカルストレージの情報をすべて削除
-      nextBtn.textContent = "すべて削除 Delete All"
+      nextBtn.textContent = "すべて削除 Delete All";
       nextBtn.addEventListener('click', function () {
         localStorage.clear()
         setTimeout(() => {
@@ -52,7 +57,7 @@ document.addEventListener('readystatechange', event => {
 
       const login = document.querySelector('#login')
       login.addEventListener('submit', function (e) {
-        e.preventDefault();
+        e.preventDefault()
         setLOG()
       }, false)
 
@@ -63,4 +68,4 @@ document.addEventListener('readystatechange', event => {
       }, false)
     }
   }
-});
+})
