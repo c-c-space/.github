@@ -30,22 +30,22 @@ function colorSize() {
 }
 
 async function colorJSON(requestURL) {
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const colorAll = await response.text();
+  const request = new Request(requestURL)
+  const response = await fetch(request)
+  const colorAll = await response.text()
 
-  const colors = JSON.parse(colorAll);
-  colorIndex(colors);
+  const colors = JSON.parse(colorAll)
+  colorIndex(colors)
 }
 
 function colorIndex(i) {
-  const namesForm = document.querySelectorAll('#bgcolor, #color');
+  const namesForm = document.querySelectorAll('#bgcolor, #color')
   for (const names of namesForm) {
     const colors = i.color;
     for (const color of colors) {
       let option = document.createElement('option')
-      option.textContent = color.yomi
-      option.value = color.hex
+      option.textContent = color.yomi;
+      option.value = color.hex;
       names.appendChild(option)
     }
   }
