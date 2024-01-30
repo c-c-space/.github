@@ -3,7 +3,7 @@
     {
       "date": "Media Capture and Streams",
       "name": "メディアキャプチャとストリーム API (メディアストリーム)",
-      "url": "/profile/js/",
+      "url": "/profile/userMedia/",
       "ver": "ver.1.0",
       "hidden": true
     },
