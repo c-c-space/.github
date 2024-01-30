@@ -1,7 +1,7 @@
 'use strict'
 
 let about = document.querySelector('dialog#modal'),
-  name = document.querySelector('dialog#modal #name'),
+  namae = document.querySelector('dialog#modal #name'),
   yomi = document.querySelector('dialog#modal #yomi'),
   hex = document.querySelector('dialog#modal #hex'),
   note = document.querySelector('dialog#modal #note'),
@@ -52,7 +52,7 @@ function indexObject(obj) {
         alert("The <dialog> API is not supported by this browser")
       }
       about.style.background = this.style.background;
-      name.innerText = this.dataset.name;
+      namae.innerText = this.dataset.name;
       yomi.innerText = this.dataset.yomi;
       hex.innerText = this.style.background;
       note.innerText = this.dataset.note;
