@@ -14,13 +14,14 @@
   }
 
   $title = 'Access Log | creative-community.space';
+  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+
   $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
   $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
   $source_file = $month . ".csv";
   $fp = fopen($source_file, 'r');
   flock($fp, LOCK_SH);
-  require('head.php');
+  require('../head.php');
   ?>
 
   <meta property="og:image" content="https://creative-community.space/ver/log/summary.png">
@@ -69,15 +70,6 @@
   </header>
 
   <ul id="log" class="hidden">
-    <li hidden>
-      <span>Your Info</span>
-      <?php
-      echo "<span id='hqdn'>" . $_SERVER["REMOTE_PORT"] . "</span>";
-      echo "<span id='ip'>" . $_SERVER["REMOTE_ADDR"] . "</span>";
-      echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
-      ?>
-    </li>
-
     <?php
     while ($line = fgetcsv($fp)) {
       echo "<li class='log'>";
