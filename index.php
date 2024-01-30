@@ -61,9 +61,7 @@
       <section id="speech">
         <h1>
           <?php require('hello/greeting.php'); ?>
-          <b>
-            <?php echo $greeting; ?>
-          </b>
+          <b><?php echo $greeting; ?></b>
           <br>
           IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
         </h1>
