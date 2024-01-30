@@ -15,6 +15,7 @@ input[type="submit"],
 select,
 button {
   cursor: pointer;
+  font-family: inherit;
   word-break: break-all;
 }
 

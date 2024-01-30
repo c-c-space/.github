@@ -19,17 +19,19 @@
   </script>
 
   <!--og:meta-->
-  <meta content="website" property="og:type">
   <title>音声認識・音声合成 | Web Speech API</title>
-  <meta content="音声認識・音声合成 | Web Speech API" property="og:title">
   <meta content="Speech Recognition & Text to Speech" name="description">
-  <meta content="Speech Recognition & Text to Speech" name="og:description">
 
   <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/controls.css" />
   <link rel="stylesheet" href="../css/index.css" />
+
+  <style>
+    pre {
+      font-family: inherit;
+    }
+  </style>
 </head>
 
 <body>
