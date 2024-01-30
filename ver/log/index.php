@@ -7,11 +7,6 @@
   mb_internal_encoding("UTF-8");
   date_default_timezone_set('Asia/Tokyo');
 
-  $title = 'Access Log | creative-community.space';
-  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
-  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
   $timestamp = date("j.M.y.D g:i:s A T");
 
   $year = date("Y");
@@ -19,6 +14,11 @@
   if (isset($_GET["month"])) {
     $month = $_GET["month"];
   }
+
+  $title = 'Access Log | creative-community.space';
+  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
+  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
   $source_file = $year . '/' . $month . '.csv';
   $fp = fopen($source_file, 'r');
