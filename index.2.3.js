@@ -41,7 +41,7 @@ document.addEventListener('readystatechange', event => {
       // goout 情報を表示
       if (!localStorage.getItem('goout')) {
         yourStrage.innerHTML +=
-          '<a href="/map/profile/">0</a>';
+          '<a href="/map/">0</a>';
       } else {
         const goout = JSON.parse(localStorage.getItem('goout'))
         yourStrage.innerHTML +=
