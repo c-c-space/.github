@@ -32,7 +32,7 @@
 
   <script src="ver/js/menu.js"></script>
   <script src="ver/js/modal.js"></script>
-  <script src="ver/js/userMedia.js"></script>
+  <script src="profile/userMedia/script.js"></script>
   <script>
     menuJSON('index.json')
   </script>
