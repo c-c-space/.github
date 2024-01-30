@@ -25,11 +25,17 @@
     <link rel="stylesheet" href="../../ver/css/howto.css" />
     <style>
         body {
+            background: #000;
             position: relative;
             overflow: hidden;
             width: 100%;
             height: 100vh;
             max-height: -webkit-fill-available;
+        }
+
+        #howto {
+            filter: invert(1);
+            mix-blend-mode: exclusion;
         }
 
         #howto details {
@@ -56,13 +62,13 @@
                 <code>メディアキャプチャとストリーム API (メディアストリーム)</code>
             </summary>
             <pre>
-function environmentStream() {
+function userStream() {
     const userMedia = document.querySelector('#userMedia')
     let media = navigator.mediaDevices.getUserMedia({
         video: true,
         video: {
-        facingMode: "environment"
-        }, // 背面カメラ
+            facingMode: "user"
+        }, // インカメラ
         audio: false,
     });
     media.then((stream) => {
@@ -71,9 +77,21 @@ function environmentStream() {
 }
             </pre>
             <aside id="links">
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/Media_Capture_and_Streams_API">
+                    <i>Media Capture and Streams API</i>
+                    <p>メディアキャプチャとストリーム API (メディアストリーム)</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/MediaDevices">
+                    <i>Media Capture and Streams API</i>
+                    <p>MediaDevices</p>
+                </a>
                 <a href="https://developer.mozilla.org/ja/docs/Web/API/MediaDevices/getUserMedia">
                     <i>MediaDevices</i>
-                    <p>MediaDevices: getUserMedia() メソッド </p>
+                    <p>MediaDevices: getUserMedia() メソッド</p>
+                </a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/API/MediaStream">
+                    <i>Media Capture and Streams API</i>
+                    <p>MediaStream</p>
                 </a>
             </aside>
         </details>
