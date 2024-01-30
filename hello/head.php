@@ -27,11 +27,3 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <meta property="twitter:url" content=<?php echo $url; ?>">
 <meta name="twitter:title" content="<?php echo $title; ?>">
 <meta name="twitter:description" content="<?php echo $thisDescription; ?>">
-
-<script src="/ver/js/menu.js"></script>
-<script src="/ver/js/modal.js"></script>
-
-<!--og:meta-->
-
-<link rel="stylesheet" href="/ver/css/menu.css" />
-<link rel="stylesheet" href="/ver/css/controls.css" />

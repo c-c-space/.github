@@ -16,6 +16,11 @@
   <meta property="og:image" content="<?php echo $url . "card.png"; ?>">
   <meta name="twitter:image" content="<?php echo $url . "card.png"; ?>">
 
+  <script src="/ver/js/menu.js"></script>
+  <script src="/ver/js/modal.js"></script>
+
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/controls.css" />
   <link rel="stylesheet" href="/ver/css/modal.css" />
   <link rel="stylesheet" href="/hello/css/index.css" />
 </head>
