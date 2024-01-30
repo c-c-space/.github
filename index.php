@@ -83,16 +83,6 @@
     <script src="ver/js/hello.js"></script>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(function() {
-      $("#hello u").on("click", function() {
-        let show = $(this).data("id");
-        $("#" + show).show(1000);
-      })
-    });
-  </script>
-
   <main id="yourinfo" class="hsl" hidden>
     <form id="login" method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
@@ -126,6 +116,17 @@
   <script src="profile/thankyou/sketch.js"></script>
 
   <article id="www" hidden></article>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(function() {
+      $("#hello u").on("click", function() {
+        let show = $(this).data("id");
+        $("#" + show).show(1000);
+      })
+    });
+  </script>
 
   <script type="text/javascript">
     function forMobile() {
