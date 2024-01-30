@@ -38,6 +38,19 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML +=
         ' Colors & Symbols that Suit You<br/>';
 
+      // goout 情報を表示
+      if (!localStorage.getItem('goout')) {
+        yourStrage.innerHTML +=
+          '<a href="/map/profile/">0</a>';
+      } else {
+        const goout = JSON.parse(localStorage.getItem('goout'))
+        yourStrage.innerHTML +=
+          `<a href="/map/profile/">${goout.length}</a>`;
+      }
+
+      yourStrage.innerHTML +=
+        ' Locations where you were<br/>';
+
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
