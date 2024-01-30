@@ -1,57 +1,38 @@
-<?php
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-date_default_timezone_set('Asia/Tokyo');
-
-$title = 'Access Log | creative-community.space';
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
-$timestamp = date("j.M.y.D g:i:s A T");
-
-$year = "2024";
-$month = "01";
-if (isset($_GET["month"])) {
-  $month = $_GET["month"];
-}
-
-$description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
-$source_file = $month . ".csv";
-$fp = fopen($source_file, 'r');
-flock($fp, LOCK_SH);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no" />
+  <?php
+  mb_language("ja");
+  mb_internal_encoding("UTF-8");
+  date_default_timezone_set('Asia/Tokyo');
 
-  <!-- HTML Meta Tags -->
-  <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
+  $year = "2024";
+  $month = "01";
+  if (isset($_GET["month"])) {
+    $month = $_GET["month"];
+  }
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="<?php echo $url; ?>">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php echo $title; ?>">
-  <meta property="og:description" content="<?php echo $description; ?>">
-  <meta property="og:image" content="<?php echo $site; ?>ver/log/summary.png">
+  $title = 'Access Log | creative-community.space';
+  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
+  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
+  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+  $source_file = $month . ".csv";
+  $fp = fopen($source_file, 'r');
+  flock($fp, LOCK_SH);
+  require('head.php');
+  ?>
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="creative-community.space">
-  <meta property="twitter:url" content="<?php echo $url; ?>">
-  <meta name="twitter:title" content="<?php echo $title; ?>">
-  <meta name="twitter:description" content="<?php echo $description; ?>">
-  <meta name="twitter:image" content="<?php echo $site; ?>ver/log/summary.png">
+  <meta property="og:image" content="https://creative-community.space/ver/log/summary.png">
+  <meta name="twitter:image" content="https://creative-community.space/ver/log/summary.png">
 
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      location.replace('/')
+      const logAll = document.querySelectorAll('.log')
+      for (let logEach of logAll) {
+        logEach.remove()
+      }
     }
   </script>
 
@@ -59,6 +40,7 @@ flock($fp, LOCK_SH);
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/log.css" />
   <link rel="stylesheet" href="/ver/css/selectmonth.css" />
+
   <style>
     body {
       padding: 0;
@@ -95,6 +77,7 @@ flock($fp, LOCK_SH);
       echo "<span id='os'>" . $_SERVER["HTTP_USER_AGENT"] . "</span>";
       ?>
     </li>
+
     <?php
     while ($line = fgetcsv($fp)) {
       echo "<li class='log'>";
@@ -105,6 +88,7 @@ flock($fp, LOCK_SH);
     }
     fclose($fp);
     ?>
+
     <li>
       <span>
         <?php

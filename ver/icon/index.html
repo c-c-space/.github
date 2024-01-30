@@ -5,28 +5,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+
+  <!-- HTML Meta Tags -->
+  <title>Logo | creative-community.space</title>
+  <meta name="description" content="アイコンを右クリック 名前をつけて画像を保存">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://creative-community.space/ver/icon/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Logo | creative-community.space">
+  <meta property="og:description" content="アイコンを右クリック 名前をつけて画像を保存">
+  <meta property="og:image" content="https://creative-community.space/ver/icon/summary.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="https://creative-community.space/ver/icon/">
+  <meta name="twitter:title" content="Logo | creative-community.space">
+  <meta name="twitter:description" content="アイコンを右クリック 名前をつけて画像を保存">
+  <meta name="twitter:image" content="https://creative-community.space/ver/icon/summary.png">
+
   <script src="/ver/js/menu.js"></script>
   <script>
     menuJSON('../font/index.json')
   </script>
 
-  <!--og:meta-->
-  <meta content="website" property="og:type">
-  <title>Logo | creative-community.space</title>
-  <meta content="Logo | creative-community.space" property="og:title">
-  <meta content="アイコンを右クリック 名前をつけて画像を保存" name="description">
-  <meta content="アイコンを右クリック 名前をつけて画像を保存" name="og:description">
-
-  <!--for Twitter-->
-  <meta content="summary" name="twitter:card">
-  <meta content="https://creative-community.space/ver/icon/" property="og:url">
-  <meta content="https://creative-community.space/ver/icon/summary.png" property="og:image">
-  <meta content="https://creative-community.space/ver/icon/summary.png" name="twitter:image:src">
-
   <link rel="icon" href="favicon.png">
-
   <link rel="stylesheet" href="../font/style.css" />
   <link rel="stylesheet" href="/ver/css/menu.css" />
+
   <style type="text/css">
     p,
     pre {
@@ -123,7 +130,7 @@
 
 @font-face {
   font-family: "ipag";
-  src: url("ipag.ttc");
+  src: url("IPAゴシック（ipag.ttf）");
 }
 
 .cc {
@@ -137,28 +144,28 @@
   <script type="text/javascript">
     // canvas要素に円と文字を描画
     function icon() {
-      const canvasAll = document.querySelectorAll('canvas');
+      const canvasAll = document.querySelectorAll('canvas')
       for (let canvas of canvasAll) {
         if (canvas.getContext) {
-          const ctx = canvas.getContext('2d');
+          const ctx = canvas.getContext('2d')
 
-          const circle = new Path2D();
-          const x = (canvas.width / 2);
-          const y = (canvas.height / 2);
+          const circle = new Path2D()
+          const x = (canvas.width / 2)
+          const y = (canvas.height / 2)
 
-          circle.arc(x, y, canvas.width / 2.5, 0, Math.PI * 2, true);
+          circle.arc(x, y, canvas.width / 2.5, 0, Math.PI * 2, true)
           ctx.lineWidth = canvas.width / 10;
           ctx.strokeStyle = '#000';
           ctx.fillStyle = '#fff';
-          ctx.stroke(circle);
-          ctx.fill(circle);
+          ctx.stroke(circle)
+          ctx.fill(circle)
 
           ctx.font = `${x * 1.23}px 'ipag', monospace`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
           ctx.fillStyle = '#000';
-          ctx.fillText('CC', x, y, x);
-          ctx.scale(1, 1.25);
+          ctx.fillText('CC', x, y, x)
+          ctx.scale(1, 1.25)
         }
       }
     }

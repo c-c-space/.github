@@ -1,51 +1,32 @@
-<?php
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-date_default_timezone_set('Asia/Tokyo');
-
-$title = 'Access Log | creative-community.space';
-$description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
-$timestamp = date("j.M.y.D g:i:s A T");
-
-$year = date("Y");
-$month = date("m");
-if (isset($_GET["month"])) {
-  $month = $_GET["month"];
-}
-
-$source_file = $year . '/' . $month . '.csv';
-$fp = fopen($source_file, 'r');
-flock($fp, LOCK_SH);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
+  <?php
+  mb_language("ja");
+  mb_internal_encoding("UTF-8");
+  date_default_timezone_set('Asia/Tokyo');
 
-  <!-- HTML Meta Tags -->
-  <title><?php echo $title; ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
+  $title = 'Access Log | creative-community.space';
+  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
+  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="<?php echo $url; ?>">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php echo $title; ?>">
-  <meta property="og:description" content="<?php echo $description; ?>">
+  $timestamp = date("j.M.y.D g:i:s A T");
+
+  $year = date("Y");
+  $month = date("m");
+  if (isset($_GET["month"])) {
+    $month = $_GET["month"];
+  }
+
+  $source_file = $year . '/' . $month . '.csv';
+  $fp = fopen($source_file, 'r');
+  flock($fp, LOCK_SH);
+  require('head.php');
+  ?>
+
   <meta property="og:image" content="<?php echo $url; ?>summary.png">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="creative-community.space">
-  <meta property="twitter:url" content="<?php echo $url; ?>">
-  <meta name="twitter:title" content="<?php echo $title; ?>">
-  <meta name="twitter:description" content="<?php echo $description; ?>">
   <meta name="twitter:image" content="<?php echo $url; ?>summary.png">
 
   <script src="/ver/js/menu.js"></script>
