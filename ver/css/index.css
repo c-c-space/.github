@@ -6,6 +6,15 @@ body {
     max-height: -webkit-fill-available;
 }
 
+hr {
+    border: none;
+    margin: 1rem;
+}
+
+dialog section {
+    line-height: 175%;
+}
+
 #sketch,
 #userMedia {
     mix-blend-mode: difference;
