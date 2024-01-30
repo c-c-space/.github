@@ -31,7 +31,7 @@
     <code id="hex"></code>
     <p id="note"><?php echo $thisDescription; ?></p>
     <p id="description" class="noprint">
-      <small>ウェブサイトを出力する</small>
+      <small>ウェブサイトを出力する</small><br>
       <a href="#" onclick="window.print();">WWW to Print</a>
     </p>
     <p id="hidden" hidden></p>
