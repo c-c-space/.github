@@ -3,21 +3,21 @@
 document.addEventListener('DOMContentLoaded', function () {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery')
-    battery.style.display = "none"
+    battery.style.display = "none";
   }
 
   navigator.getBattery().then((battery) => {
     function updateAllBatteryInfo() {
-      updateChargeInfo();
-      updateLevelInfo();
-      updateChargingInfo();
-      updateDischargingInfo();
+      updateChargeInfo()
+      updateLevelInfo()
+      updateChargingInfo()
+      updateDischargingInfo()
     }
 
-    updateAllBatteryInfo();
+    updateAllBatteryInfo()
 
     battery.addEventListener("chargingchange", () => {
-      updateChargeInfo();
+      updateChargeInfo()
     });
 
     function updateChargeInfo() {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     battery.addEventListener("levelchange", () => {
-      updateLevelInfo();
+      updateLevelInfo()
     });
 
     function updateLevelInfo() {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     battery.addEventListener("chargingtimechange", () => {
-      updateChargingInfo();
+      updateChargingInfo()
     });
 
     function updateChargingInfo() {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     battery.addEventListener("dischargingtimechange", () => {
-      updateDischargingInfo();
+      updateDischargingInfo()
     });
 
     function updateDischargingInfo() {

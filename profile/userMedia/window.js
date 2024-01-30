@@ -1,33 +1,33 @@
 'use strict'
 
 window.addEventListener("DOMContentLoaded", function () {
-  windowScreen();
-}, false);
+  windowScreen()
+}, false)
 
 window.onresize = tmResize;
 function tmResize() {
   if (typeof pageResize == "function") {
-    pageResize();
+    pageResize()
   }
 }
 
 function pageOnload() {
-  windowScreen();
+  windowScreen()
 }
 function pageResize() {
-  windowScreen();
+  windowScreen()
 }
 
 function windowScreen() {
-  const outScreenWidth = document.getElementById("outScreenWidth");
+  const outScreenWidth = document.getElementById("outScreenWidth")
   outScreenWidth.innerText = screen.availWidth;
 
-  const outScreenheight = document.getElementById("outScreenheight");
+  const outScreenheight = document.getElementById("outScreenheight")
   outScreenheight.innerText = screen.availHeight;
 
-  const outInnerWidth = document.getElementById("outInnerWidth");
+  const outInnerWidth = document.getElementById("outInnerWidth")
   outInnerWidth.innerText = window.innerWidth;
 
-  const outInnerHeight = document.getElementById("outInnerHeight");
+  const outInnerHeight = document.getElementById("outInnerHeight")
   outInnerHeight.innerText = window.innerHeight;
 }

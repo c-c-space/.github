@@ -28,7 +28,7 @@ fclose($fp);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  
+
   <!-- HTML Meta Tags -->
   <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
@@ -95,26 +95,26 @@ fclose($fp);
     </form>
 
     <ul id="log">
-      <?php if (!empty($rows)): ?>
-                  <?php foreach ($rows as $row): ?>
-                              <li data-index="<?= h($row[0]) ?>">
-                                <span>
-                                  <a href="<?= h($row[3]) ?>"><?= h($row[4]) ?></a>
-                                </span>
-                                <span><?= h($row[1]) ?></span>
-                                <span><?= h($row[2]) ?></span>
-                                <span><?= h($row[5]) ?></span>
-                              </li>
-                  <?php endforeach; ?>
-      <?php else: ?>
-                  <li data-index="new">
-                    <span>
-                      <a href="#">creative-community.space</a>
-                    </span>
-                    <span>2021</span>
-                    <span>SEP 16</span>
-                    <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
-                  </li>
+      <?php if (!empty($rows)) : ?>
+        <?php foreach ($rows as $row) : ?>
+          <li data-index="<?= h($row[0]) ?>">
+            <span>
+              <a href="<?= h($row[3]) ?>"><?= h($row[4]) ?></a>
+            </span>
+            <span><?= h($row[1]) ?></span>
+            <span><?= h($row[2]) ?></span>
+            <span><?= h($row[5]) ?></span>
+          </li>
+        <?php endforeach; ?>
+      <?php else : ?>
+        <li data-index="new">
+          <span>
+            <a href="#">creative-community.space</a>
+          </span>
+          <span>2021</span>
+          <span>SEP 16</span>
+          <span>Domain Registration 169 円 + 739 円 | Cloudflare 1,475 円</span>
+        </li>
       <?php endif; ?>
       <li data-index="new">
         <span>

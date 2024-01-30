@@ -172,7 +172,7 @@
 
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       console.log("This is a not Mobile Device")
-      fetchHTML('profile/thankyou/www.html', '#www')
+      fetchHTML('www.html', '#www')
 
       const main = document.querySelector('main')
       main.style.pointerEvents = "none";

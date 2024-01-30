@@ -2,11 +2,11 @@
 
 (function (root, factory) {
   if (typeof exports === 'object') {
-    module.exports = factory(root, root.document);
+    module.exports = factory(root, root.document)
   } else if (typeof define === 'function' && define.amd) {
-    define(function () { return factory(root, root.document); });
+    define(function () { return factory(root, root.document); })
   } else {
-    root.Sketch = factory(root, root.document);
+    root.Sketch = factory(root, root.document)
   }
 }(typeof window !== "undefined" ? window : this, function (window, document) {
 

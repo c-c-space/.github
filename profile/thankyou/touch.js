@@ -1,6 +1,6 @@
 'use strict'
 
-const canvas = document.querySelector("#canvas");
+const canvas = document.querySelector("#canvas")
 canvas.style.boxSizing = "border-box";
 canvas.style.padding = "0";
 canvas.style.margin = "0";
@@ -8,14 +8,14 @@ canvas.style.position = "fixed";
 canvas.style.zIndex = "1";
 
 window.addEventListener("DOMContentLoaded", function () {
-  windowScreen();
-  startup();
-}, false);
+  windowScreen()
+  startup()
+}, false)
 
 window.onresize = tmResize;
 function tmResize() {
   if (typeof pageResize == "function") {
-    pageResize();
+    pageResize()
   }
 }
 
@@ -25,97 +25,97 @@ function windowScreen() {
 }
 
 function pageResize() {
-  windowScreen();
+  windowScreen()
 }
 
 function startup() {
-  canvas.addEventListener('touchstart', handleStart);
-  canvas.addEventListener('touchend', handleEnd);
-  canvas.addEventListener('touchcancel', handleCancel);
-  canvas.addEventListener('touchmove', handleMove);
-  log('Touch The Screen to Drawing');
+  canvas.addEventListener('touchstart', handleStart)
+  canvas.addEventListener('touchend', handleEnd)
+  canvas.addEventListener('touchcancel', handleCancel)
+  canvas.addEventListener('touchmove', handleMove)
+  log('Touch The Screen to Drawing')
 }
 
 const ongoingTouches = [];
 
 function handleStart(evt) {
-  evt.preventDefault();
-  const time = new Date();
-  const timeStr = time.toLocaleTimeString();
-  log(`touchstart at ${timeStr}`);
-  const el = document.querySelector("#canvas");
-  const ctx = el.getContext('2d');
+  evt.preventDefault()
+  const time = new Date()
+  const timeStr = time.toLocaleTimeString()
+  log(`touchstart at ${timeStr}`)
+  const el = document.querySelector("#canvas")
+  const ctx = el.getContext('2d')
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
-    ongoingTouches.push(copyTouch(touches[i]));
-    ctx.beginPath();
-    ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);
+    ongoingTouches.push(copyTouch(touches[i]))
+    ctx.beginPath()
+    ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false)
   }
 }
 
 function handleMove(evt) {
-  evt.preventDefault();
-  const el = document.querySelector("#canvas");
-  const ctx = el.getContext('2d');
+  evt.preventDefault()
+  const el = document.querySelector("#canvas")
+  const ctx = el.getContext('2d')
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
-    const idx = ongoingTouchIndexById(touches[i].identifier);
+    const idx = ongoingTouchIndexById(touches[i].identifier)
 
     if (idx >= 0) {
-      ctx.beginPath();
-      ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
-      ctx.lineTo(touches[i].pageX, touches[i].pageY);
+      ctx.beginPath()
+      ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY)
+      ctx.lineTo(touches[i].pageX, touches[i].pageY)
       ctx.lineWidth = 15;
       ctx.strokeStyle = '#111';
-      ctx.stroke();
+      ctx.stroke()
 
-      ongoingTouches.splice(idx, 1, copyTouch(touches[i]));
+      ongoingTouches.splice(idx, 1, copyTouch(touches[i]))
     } else {
-      log('can\'t figure out which touch to continue');
+      log('can\'t figure out which touch to continue')
     }
   }
 }
 
 function handleEnd(evt) {
-  evt.preventDefault();
-  const time = new Date();
-  const timeStr = time.toLocaleTimeString();
-  log(`touchend at ${timeStr}`);
-  const el = document.querySelector("#canvas");
-  const ctx = el.getContext('2d');
+  evt.preventDefault()
+  const time = new Date()
+  const timeStr = time.toLocaleTimeString()
+  log(`touchend at ${timeStr}`)
+  const el = document.querySelector("#canvas")
+  const ctx = el.getContext('2d')
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
-    let idx = ongoingTouchIndexById(touches[i].identifier);
+    let idx = ongoingTouchIndexById(touches[i].identifier)
 
     if (idx >= 0) {
-      ctx.beginPath();
-      ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
-      ctx.lineTo(touches[i].pageX, touches[i].pageY);
-      ongoingTouches.splice(idx, 1);  // remove it; we're done
+      ctx.beginPath()
+      ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY)
+      ctx.lineTo(touches[i].pageX, touches[i].pageY)
+      ongoingTouches.splice(idx, 1) // remove it; we're done
     } else {
-      log('can\'t figure out which touch to end');
+      log('can\'t figure out which touch to end')
     }
   }
 }
 
 function handleCancel(evt) {
-  evt.preventDefault();
-  const time = new Date();
-  const timeStr = time.toLocaleTimeString();
-  log(`touchcancel at ${timeStr}`);
+  evt.preventDefault()
+  const time = new Date()
+  const timeStr = time.toLocaleTimeString()
+  log(`touchcancel at ${timeStr}`)
   const touches = evt.changedTouches;
 
   for (let i = 0; i < touches.length; i++) {
-    let idx = ongoingTouchIndexById(touches[i].identifier);
-    ongoingTouches.splice(idx, 1);
+    let idx = ongoingTouchIndexById(touches[i].identifier)
+    ongoingTouches.splice(idx, 1)
   }
 }
 
 function copyTouch({ identifier, pageX, pageY }) {
-  return { identifier, pageX, pageY };
+  return { identifier, pageX, pageY }
 }
 
 function ongoingTouchIndexById(idToFind) {
@@ -130,6 +130,6 @@ function ongoingTouchIndexById(idToFind) {
 }
 
 function log(msg) {
-  const container = document.querySelector("#eventLog");
+  const container = document.querySelector("#eventLog")
   container.textContent = `${msg} \n${container.textContent}`;
 }

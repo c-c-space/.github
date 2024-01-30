@@ -13,11 +13,11 @@ window.addEventListener('load', function () {
 
   function appendVoices() {
     const voices = speechSynthesis.getVoices()
-    voiceSelect.innerHTML = ''
+    voiceSelect.innerHTML = '';
     voices.forEach(voice => {
       if (!voice.lang.match('ja|en')) return
       const option = document.createElement('option')
-      option.value = voice.name
+      option.value = voice.name;
       option.text = `${voice.name} (${voice.lang})`;
       option.setAttribute('lang', voice.lang)
       option.setAttribute('selected', voice.default)

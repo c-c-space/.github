@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="index.v2.1.js"></script>
 
   <!-- HTML Meta Tags -->
   <title>通信情報／ブラウザ等情報 | creative-community.space</title>
@@ -114,8 +115,6 @@
     <button id="closeModal">Close 閉じる</button>
     <section id="about"></section>
   </dialog>
-
-  <script src="index.v2.js"></script>
 </body>
 
 </html>

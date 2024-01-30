@@ -130,7 +130,7 @@
   <script src="js/controls.js"></script>
   <script type="text/javascript">
     colorSize()
-    colorJSON('<?php echo $season . "/color.json"; ?>');
+    colorJSON('<?php echo $season . "/color.json"; ?>')
   </script>
   <script src="js/setStyles.js"></script>
 </body>

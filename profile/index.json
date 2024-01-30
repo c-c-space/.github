@@ -1,17 +1,17 @@
 {
   "contents": [
     {
-      "date": "更新履歴",
-      "name": "New Contents & Version Up",
-      "url": "/ver/",
-      "ver": "ver.2.0",
+      "date": "Colors and Symbols that Suit You",
+      "name": "自分の気持ちを知る・表す",
+      "url": "/sign/",
+      "ver": "",
       "hidden": true
     },
     {
-      "date": "HTTP/1.1 on 195.179.236.11",
-      "name": "アクセス履歴 | Access Log",
-      "url": "/ver/log/",
-      "ver": "ver.2.0",
+      "date": "The Collection of Your Location",
+      "name": "あなたがいた場所のコレクション",
+      "url": "/map/profile/",
+      "ver": "",
       "hidden": true
     }
   ]

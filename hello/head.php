@@ -24,6 +24,6 @@ $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="creative-community.space">
-<meta property="twitter:url" content=<?php echo $url; ?>">
+<meta property="twitter:url" content="<?php echo $url; ?>">
 <meta name="twitter:title" content="<?php echo $title; ?>">
 <meta name="twitter:description" content="<?php echo $thisDescription; ?>">

@@ -155,10 +155,10 @@
       retina: 'auto',
 
       setup: function() {
-        console.log('setup');
+        console.log('setup')
       },
       update: function() {
-        radius = 2 + abs(sin(this.millis * 0.002) * 25);
+        radius = 2 + abs(sin(this.millis * 0.002) * 25)
       },
 
       touchmove: function() {
@@ -170,10 +170,10 @@
           this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
           this.lineWidth = radius;
 
-          this.beginPath();
-          this.moveTo(touch.ox, touch.oy);
-          this.lineTo(touch.x, touch.y);
-          this.stroke();
+          this.beginPath()
+          this.moveTo(touch.ox, touch.oy)
+          this.lineTo(touch.x, touch.y)
+          this.stroke()
         }
       }
     });

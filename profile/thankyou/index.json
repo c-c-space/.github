@@ -11,14 +11,14 @@
       "date": "HSL.js",
       "name": "Hue Saturation Lightness",
       "url": "/profile/thankyou/hsl.html",
-      "ver": "ver.1.0",
+      "ver": "ver.2.0",
       "hidden": true
     },
     {
       "date": "Sketch.js / Touch.js",
       "name": "Drawing by Mouse Move or Screen Touch",
       "url": "/profile/thankyou/touch.html",
-      "ver": "ver.1.0",
+      "ver": "ver.2.0",
       "hidden": true
     }
   ]

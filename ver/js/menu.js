@@ -6,7 +6,7 @@ async function fetchHTML(url = '', query = '') {
   fetch(url)
     .then(response => response.text())
     .then(html => {
-      document.querySelector(query).innerHTML = html
+      document.querySelector(query).innerHTML = html;
     })
 }
 
@@ -14,28 +14,28 @@ async function fetchText(url = '', query = '') {
   fetch(url)
     .then(response => response.text())
     .then(text => {
-      document.querySelector(query).innerText = text
+      document.querySelector(query).innerText = text;
     })
 }
 
 async function menuJSON(requestURL) {
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const jsonIndex = await response.text();
+  const request = new Request(requestURL)
+  const response = await fetch(request)
+  const jsonIndex = await response.text()
 
-  const index = JSON.parse(jsonIndex);
-  menuContents(index);
+  const index = JSON.parse(jsonIndex)
+  menuContents(index)
 }
 
 function menuContents(obj) {
-  const contents = document.querySelector('#contents');
+  const contents = document.querySelector('#contents')
   const contentsORG = obj.contents;
 
   for (const content of contentsORG) {
-    const contentA = document.createElement('a');
-    const contentB = document.createElement('b');
-    const contentI = document.createElement('i');
-    const contentU = document.createElement('u');
+    const contentA = document.createElement('a')
+    const contentB = document.createElement('b')
+    const contentI = document.createElement('i')
+    const contentU = document.createElement('u')
 
     contentA.href = content.url;
     contentI.textContent = content.date;
@@ -43,17 +43,17 @@ function menuContents(obj) {
     contentU.textContent = content.ver;
     contentU.hidden = content.hidden;
 
-    contents.appendChild(contentA);
-    contentA.appendChild(contentI);
-    contentA.appendChild(contentB);
-    contentA.appendChild(contentU);
+    contents.appendChild(contentA)
+    contentA.appendChild(contentI)
+    contentA.appendChild(contentB)
+    contentA.appendChild(contentU)
   }
 }
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
-    const menu = document.querySelector('#menu');
-    const button = document.querySelector('#menu button');
+    const menu = document.querySelector('#menu')
+    const button = document.querySelector('#menu button')
     const box = document.body;
 
     if (localStorage.getItem('yourInfo')) {
@@ -65,14 +65,14 @@ document.addEventListener('readystatechange', event => {
     }
 
     button.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      box.classList.toggle('open');
+      menu.classList.toggle('active')
+      box.classList.toggle('open')
     });
   } else if (event.target.readyState === 'complete') {
     // Add .randomRGBbg
 
     function random(number) {
-      return Math.floor(Math.random() * (number + 1));
+      return Math.floor(Math.random() * (number + 1))
     }
 
     function randomRGB() {
@@ -80,10 +80,10 @@ document.addEventListener('readystatechange', event => {
       return random255;
     }
 
-    const randomRGBbg = document.querySelectorAll('#contents a');
+    const randomRGBbg = document.querySelectorAll('#contents a')
     for (const ii of randomRGBbg) {
       ii.addEventListener('mouseenter', function (event) {
-        event.target.style.background = randomRGB();
+        event.target.style.background = randomRGB()
       });
 
       ii.addEventListener('mouseleave', function (event) {

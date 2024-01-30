@@ -4,9 +4,9 @@ function changeHidden() {
   const mainAll = document.querySelectorAll('main')
   mainAll.forEach(main => {
     if (main.hidden == false) {
-      main.hidden = true
+      main.hidden = true;
     } else {
-      main.hidden = false
+      main.hidden = false;
     }
   })
 }
@@ -16,7 +16,7 @@ document.addEventListener('readystatechange', event => {
     if (!localStorage.getItem('yourInfo')) {
       const loginBtn = document.querySelector('#login-btn')
       loginBtn.setAttribute('onclick', 'setLOG()')
-      loginBtn.textContent = 'Submit Your Info to Enter'
+      loginBtn.textContent = 'Submit Your Info to Enter';
 
       const removeAll = document.querySelectorAll('#log article, #now .controls')
       for (const i of removeAll) {
@@ -31,9 +31,9 @@ document.addEventListener('readystatechange', event => {
 
         const thisText = document.querySelector('#readme')
         const voiceIndex = document.querySelector('#voice-select')
-        const selectVoice = voiceIndex.selectedIndex
-        const thisPitch = document.querySelector("#pitch").value
-        const thisRate = document.querySelector("#rate").value
+        const selectVoice = voiceIndex.selectedIndex;
+        const thisPitch = document.querySelector("#pitch").value;
+        const thisRate = document.querySelector("#rate").value;
 
         let thisHello = {
           timestamp: new Date().toLocaleString(),
@@ -72,29 +72,30 @@ document.addEventListener('readystatechange', event => {
     }
   } else if (event.target.readyState === 'complete') {
     const lastModified = document.querySelector('#lastModified');
-    lastModified.innerHTML = 'Last Modified <time datetime="'
+    lastModified.innerHTML =
+      'Last Modified <time datetime="'
       + document.lastModified + '">'
-      + document.lastModified + '</time>'
+      + document.lastModified + '</time>';
 
     const logAll = document.querySelectorAll('#logAll li button')
     for (const i of logAll) {
       i.addEventListener('click', function () {
         const uttr = new SpeechSynthesisUtterance()
-        uttr.text = i.dataset.hello
-        uttr.lang = i.lang
+        uttr.text = i.dataset.hello;
+        uttr.lang = i.lang;
         uttr.voice = speechSynthesis
           .getVoices()
           .filter(voice => voice.name === i.dataset.name)[0]
 
-        uttr.pitch = i.dataset.pitch
-        uttr.rate = i.dataset.rate
+        uttr.pitch = i.dataset.pitch;
+        uttr.rate = i.dataset.rate;
         speechSynthesis.speak(uttr)
 
         const output = document.querySelector('#log h1 b')
-        output.innerText = i.dataset.hello
+        output.innerText = i.dataset.hello;
 
-        lastModified.innerText = i.innerText
+        lastModified.innerText = i.innerText;
       }, false)
     }
   }
-})
+});
