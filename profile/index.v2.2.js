@@ -4,6 +4,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const info = document.querySelector('#info')
 
+  if (localStorage.getItem('heard')) {
+    const youHeard = JSON.parse(localStorage.getItem('heard'))
+    const mapHeard = document.createElement("li")
+    mapHeard.innerHTML += `
+    <span>あなたが聞いた言葉</span>
+    <span>
+    <button class="color bgcolor" onclick="location.assign('/map/heard/')">things that i (we) heard</button>
+    </span>
+    <span></span>
+    <span>You Posted <b>${yourLocation.length}</b> things you heard</span>
+    `
+    info.before(mapHeard);
+  }
+
   if (localStorage.getItem('goout')) {
     const yourLocation = JSON.parse(localStorage.getItem('goout'))
     const yourMap = document.createElement("li")

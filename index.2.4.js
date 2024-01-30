@@ -51,6 +51,19 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML +=
         ' Locations where you were<br/>';
 
+      // heard 情報を表示
+      if (!localStorage.getItem('heard')) {
+        yourStrage.innerHTML +=
+          '<a href="/map/heard/">0</a>';
+      } else {
+        const heard = JSON.parse(localStorage.getItem('heard'))
+        yourStrage.innerHTML +=
+          `<a href="/map/heard/www/">${heard.length}</a>`;
+      }
+
+      yourStrage.innerHTML +=
+        ' things you heard<br/>';
+
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
