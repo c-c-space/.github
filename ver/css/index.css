@@ -95,6 +95,10 @@ main {
     font-style: italic;
 }
 
+code {
+    font-family: inherit;
+}
+
 #hello h1,
 #hello h2 {
     font-size: 250%;

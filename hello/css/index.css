@@ -1,12 +1,10 @@
-h1,
-#modal {
+h1 {
   font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
 }
 
 h2,
 #log,
-#hello,
-#modal {
+#hello {
   font-family: "ipag", "Arial Narrow", monospace;
 }
 
