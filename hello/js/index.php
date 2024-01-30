@@ -38,7 +38,8 @@
   <main id="hello">
     <details id="recognition"></details>
     <details id="synthesis"></details>
-    <form action="">
+    <hr>
+    <form>
       <?php require('form.html'); ?>
     </form>
   </main>
