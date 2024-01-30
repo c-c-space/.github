@@ -33,6 +33,7 @@
     <p id="description" class="noprint">
       <small>ウェブサイトを出力する</small><br>
       <a href="#" onclick="window.print();">WWW to Print</a>
+      (Recommended to borderless printing)
     </p>
     <p id="hidden" hidden></p>
     <button type="button">×</button>
