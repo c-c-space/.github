@@ -30,9 +30,11 @@
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      const logAll = document.querySelectorAll('.log')
-      for (let logEach of logAll) {
-        logEach.remove()
+      window.onload = (event) => {
+        const logAll = document.querySelectorAll('li.log')
+        logAll.forEach((logEach) => {
+          logEach.remove()
+        })
       }
     }
   </script>

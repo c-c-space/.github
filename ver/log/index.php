@@ -32,7 +32,12 @@
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
-      location.replace('/')
+      window.onload = (event) => {
+        const logAll = document.querySelectorAll('li.log')
+        logAll.forEach((logEach) => {
+          logEach.remove()
+        })
+      }
     }
   </script>
 
