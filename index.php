@@ -135,10 +135,21 @@
       pc.style.pointerEvents = "none";
       pc.style.userSelect = "none";
 
-      if (!localStorage.getItem('yourInfo')) {
+      if (localStorage.getItem('yourInfo')) {
+        function zoom(event) {
+          event.preventDefault();
 
-      } else {
+          scale += event.deltaY * -0.01;
 
+          // Restrict scale
+          scale = Math.min(Math.max(0.125, scale), 4);
+
+          // Apply scale transform
+          pc.style.transform = `scale(${scale})`;
+        }
+
+        let scale = 1;
+        pc.onwheel = zoom;
       }
 
       const COLOURS = ['#EEE'];

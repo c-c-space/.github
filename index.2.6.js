@@ -71,10 +71,7 @@ document.addEventListener('readystatechange', event => {
 
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
-      yourStrage.innerHTML +=
-        `<small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
-
-      nextBtn.textContent = "About This Site このサイトについて";
+      nextBtn.textContent = `<small>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
       nextBtn.addEventListener('click', function () {
         openModal()
       })
