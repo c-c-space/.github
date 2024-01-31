@@ -36,6 +36,12 @@
     <button type="button" onclick="changeHidden()" id="login-btn">
       <?php echo $title; ?>
     </button>
+    <section id="collection" hidden>
+      <select id="sekki">
+        <option selected disabled>View The Collection</option>
+      </select>
+      <p><label for="sekki">コントロールを選択すると、二十四節気ごとの投稿一覧ページに移動します。</label></p>
+    </section>
     <div>
       <h1>
         <code id="lastModified"><?php echo $sekkiDate; ?></code>

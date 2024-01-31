@@ -12,7 +12,7 @@ async function sekkiJSON(requestURL) {
   if (!localStorage.getItem('yourInfo')) {
     collection.remove()
   } else {
-    sekkiSekect(sekkiAll)
+    sekkiSelect(sekkiAll)
   }
 }
 
@@ -59,7 +59,7 @@ function sekkiIndex(obj) {
   }
 }
 
-function sekkiSekect(obj) {
+function sekkiSelect(obj) {
   let select = document.querySelector('#sekki')
   const allSekki = obj.sekki;
   for (const sekki of allSekki) {
@@ -73,7 +73,7 @@ function sekkiSekect(obj) {
   select.addEventListener('change', function () {
     const index = this.selectedIndex;
     location.assign(optionAll[index].value)
-  });
+  })
 }
 
 // 発話の停止・一時停止・再開
