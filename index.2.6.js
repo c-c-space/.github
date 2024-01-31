@@ -25,6 +25,8 @@ document.addEventListener('readystatechange', event => {
     const nextBtn = document.querySelector('#submit-btn')
     const yourStrage = document.querySelector('#hello h2')
 
+    fetchHTML('profile/yourinfo.html', '#modal section')
+
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
       yourStrage.innerHTML =
@@ -77,7 +79,6 @@ document.addEventListener('readystatechange', event => {
       })
 
       fetchHTML('hello/welcome.php', '#hello h1')
-      fetchText('README.md', '#modal section')
     } else {
       nextBtn.textContent = "Your Info";
       nextBtn.addEventListener('click', function () {
@@ -96,8 +97,6 @@ document.addEventListener('readystatechange', event => {
         e.preventDefault()
         setLOG()
       }, false)
-
-      fetchHTML('profile/yourinfo.html', '#modal section')
     }
   }
 })

@@ -149,7 +149,7 @@
         }
 
         let scale = 1;
-        pc.onwheel = zoom;
+        document.body.onwheel = zoom;
       }
 
       const COLOURS = ['#EEE'];
