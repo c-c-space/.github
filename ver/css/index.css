@@ -142,6 +142,10 @@ code,
     line-height: 150%;
 }
 
+#hello button {
+    text-align: left;
+}
+
 @media (orientation: portrait) {
 
     #hello h1,

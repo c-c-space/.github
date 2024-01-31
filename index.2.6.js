@@ -73,7 +73,8 @@ document.addEventListener('readystatechange', event => {
 
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
-      nextBtn.innerHTML = `<small>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
+      nextBtn.innerHTML = `by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}`;
+      nextBtn.style.fontSize = '75%'
       nextBtn.addEventListener('click', function () {
         openModal()
       })
