@@ -7,13 +7,7 @@ async function sekkiJSON(requestURL) {
 
   const sekkiAll = JSON.parse(jsonSekki)
   sekkiIndex(sekkiAll)
-
-  const collection = document.querySelector('#collection')
-  if (!localStorage.getItem('yourInfo')) {
-    collection.remove()
-  } else {
-    sekkiSelect(sekkiAll)
-  }
+  sekkiSelect(sekkiAll)
 }
 
 function sekkiIndex(obj) {
@@ -61,19 +55,24 @@ function sekkiIndex(obj) {
 
 function sekkiSelect(obj) {
   let select = document.querySelector('#sekki')
-  const allSekki = obj.sekki;
-  for (const sekki of allSekki) {
-    let option = document.createElement('option')
-    option.value = sekki.value;
-    option.innerText = `${sekki.name}（${sekki.start} - ${sekki.end}）`;
-    select.appendChild(option)
-  }
+  if (localStorage.getItem('yourInfo')) {
+    const allSekki = obj.sekki;
 
-  const optionAll = document.querySelectorAll("#sekki option")
-  select.addEventListener('change', function () {
-    const index = this.selectedIndex;
-    location.assign(optionAll[index].value)
-  })
+    for (const sekki of allSekki) {
+      let option = document.createElement('option')
+      option.value = sekki.value;
+      option.innerText = `${sekki.name}（${sekki.start} - ${sekki.end}）`;
+      select.appendChild(option)
+    }
+    
+    const optionAll = document.querySelectorAll("#sekki option")
+    select.addEventListener('change', function () {
+      const index = this.selectedIndex;
+      location.assign(optionAll[index].value)
+    })
+  } else {
+    document.querySelector('#collection').remove()
+  }
 }
 
 // 発話の停止・一時停止・再開
