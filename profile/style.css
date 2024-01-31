@@ -85,7 +85,7 @@ footer {
   right: 0;
   bottom: 0;
   padding: 0.75rem;
-  z-index: 5;
+  z-index: 10;
 }
 
 footer button {
