@@ -21,7 +21,7 @@
   $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
   $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
   $source_file = $year . '/' . $month . '.csv';
-  $fp = fopen($source_file, 'r');
+  $fp = fopen($source_file, 'r+');
   flock($fp, LOCK_SH);
   require('head.php');
   ?>
