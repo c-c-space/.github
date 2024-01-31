@@ -8,7 +8,7 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
-  <script src="index.2.6.js"></script>
+  <script src="index.2.7.js"></script>
   <?php require('ver/icon/all.html'); ?>
 
   <title>Index | creative-community.space</title>
@@ -51,7 +51,7 @@
     <menu id="contents">
       <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.6</u>
+        <u>ver.2.7</u>
       </a>
     </menu>
   </header>
@@ -132,14 +132,8 @@
 
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       const pc = document.querySelector('#hello')
-
-      if (localStorage.getItem('yourInfo')) {
-        pc.style.pointerEvents = "auto";
-        pc.style.userSelect = "auto";
-      } else {
-        pc.style.pointerEvents = "none";
-        pc.style.userSelect = "none";
-      }
+      pc.style.pointerEvents = "none";
+      pc.style.userSelect = "none";
 
       const COLOURS = ['#EEE'];
       let radius = 0;

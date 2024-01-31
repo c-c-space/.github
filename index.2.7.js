@@ -71,10 +71,14 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML +=
         ' things you heard<br/>';
 
+      yourStrage.style.pointerEvents = "auto";
+      yourStrage.style.userSelect = "auto";
+
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       nextBtn.innerHTML = `by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}`;
-      nextBtn.style.fontSize = '75%'
+      nextBtn.style.fontSize = '100%';
+      nextBtn.style.lineHeight = '150%';
       nextBtn.addEventListener('click', function () {
         openModal()
       })
