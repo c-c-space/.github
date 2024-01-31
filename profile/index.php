@@ -60,6 +60,18 @@
     </menu>
   </header>
 
+  <footer>
+    <button type="button" onclick="clearAll()">すべて削除 Delete All</button>
+    <script>
+      function clearAll() {
+        localStorage.clear()
+        setTimeout(() => {
+          location.reload()
+        }, 1000)
+      }
+    </script>
+  </footer>
+
   <ul id="log">
     <li id="battery">
       <span><u>Battery Status</u></span>

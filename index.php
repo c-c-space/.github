@@ -8,7 +8,7 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
-  <script src="index.2.5.js"></script>
+  <script src="index.2.6.js"></script>
 
   <!-- HTML Meta Tags -->
   <?php require('ver/icon/all.html'); ?>
@@ -33,6 +33,7 @@
   <script src="ver/js/menu.js"></script>
   <script src="ver/js/modal.js"></script>
   <script src="profile/userMedia/script.js"></script>
+
   <script>
     menuJSON('index.json')
   </script>
@@ -51,7 +52,7 @@
     <menu id="contents">
       <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.5</u>
+        <u>ver.2.6</u>
       </a>
     </menu>
   </header>
@@ -80,15 +81,23 @@
       </section>
       <button type="button" id="submit-btn"></button>
     </article>
-    <script src="ver/js/hello.js"></script>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="ver/js/hello.js"></script>
+  <script>
+    $(function() {
+      $("#hello u").on("click", function() {
+        let show = $(this).data("id");
+        $("#" + show).show(1000);
+      })
+    });
+  </script>
 
   <main id="yourinfo" class="hsl" hidden>
     <form id="login" method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
-      <p>
-        <?php require('profile/yourinfo.php'); ?>
-      </p>
+      <p><?php require('profile/yourinfo.php'); ?></p>
       <section>
         <button type="submit" id="enter-btn">Enter</button>
         <button type="button" id="back-btn">Back</button>
@@ -117,23 +126,49 @@
 
   <article id="www" hidden></article>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    $(function() {
-      $("#hello u").on("click", function() {
-        let show = $(this).data("id");
-        $("#" + show).show(1000);
-      })
-    });
-  </script>
-
   <script type="text/javascript">
     function forMobile() {
       document.querySelector('#sketch').remove()
     }
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      const main = document.querySelector('main')
+      main.style.pointerEvents = "none";
+      main.style.userSelect = "none";
+
+      const COLOURS = ['#EEE'];
+      let radius = 0;
+
+      Sketch.create({
+        container: document.getElementById('sketch'),
+        autoclear: false,
+        retina: 'auto',
+
+        setup: function() {
+          console.log('setup')
+        },
+        update: function() {
+          radius = 2 + abs(sin(this.millis * 0.002) * 25)
+        },
+
+        touchmove: function() {
+          for (let i = this.touches.length - 1, touch; i >= 0; i--) {
+            touch = this.touches[i];
+            this.lineCap = 'round';
+            this.lineJoin = 'round';
+            this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
+            this.lineWidth = radius;
+            this.beginPath()
+            this.moveTo(touch.ox, touch.oy)
+            this.lineTo(touch.x, touch.y)
+            this.stroke()
+          }
+        }
+      })
+
+      fetchHTML('www.html', '#www')
+      console.log("This is a not Mobile Device")
+    } else {
       forMobile()
       console.log("Mobile Detected")
     }
@@ -168,45 +203,6 @@
     if (iOS) {
       forMobile()
       console.log('This is a iPad|iPhone|iPod')
-    }
-
-    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-      console.log("This is a not Mobile Device")
-      fetchHTML('www.html', '#www')
-
-      const main = document.querySelector('main')
-      main.style.pointerEvents = "none";
-      main.style.userSelect = "none";
-
-      const COLOURS = ['#EEE'];
-      let radius = 0;
-
-      Sketch.create({
-        container: document.getElementById('sketch'),
-        autoclear: false,
-        retina: 'auto',
-
-        setup: function() {
-          console.log('setup')
-        },
-        update: function() {
-          radius = 2 + abs(sin(this.millis * 0.002) * 25)
-        },
-
-        touchmove: function() {
-          for (let i = this.touches.length - 1, touch; i >= 0; i--) {
-            touch = this.touches[i];
-            this.lineCap = 'round';
-            this.lineJoin = 'round';
-            this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
-            this.lineWidth = radius;
-            this.beginPath()
-            this.moveTo(touch.ox, touch.oy)
-            this.lineTo(touch.x, touch.y)
-            this.stroke()
-          }
-        }
-      })
     }
   </script>
 </body>

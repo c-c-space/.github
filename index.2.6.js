@@ -15,14 +15,18 @@ function changeHidden() {
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
-    fetchHTML('profile/yourinfo.html', '#modal section')
+    if (localStorage.getItem('yourInfo')) {
+      const removetAll = document.querySelectorAll('#yourinfo');
+      removetAll.forEach((removeEach) => {
+        removeEach.remove()
+      });
+    }
   } else if (event.target.readyState === 'complete') {
     const nextBtn = document.querySelector('#submit-btn')
     const yourStrage = document.querySelector('#hello h2')
 
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
-      fetchHTML('hello/welcome.php', '#hello h1')
       yourStrage.innerHTML =
         '<u>You Posted</u><br/>';
 
@@ -72,15 +76,14 @@ document.addEventListener('readystatechange', event => {
 
       yourStrage.style.pointerEvents = 'auto';
       yourStrage.style.userSelect = 'auto';
-      
-      // ローカルストレージの情報をすべて削除
-      nextBtn.textContent = "すべて削除 Delete All";
+
+      nextBtn.textContent = "?";
       nextBtn.addEventListener('click', function () {
-        localStorage.clear()
-        setTimeout(() => {
-          location.reload()
-        }, 1000)
+        openModal()
       })
+
+      fetchHTML('hello/welcome.php', '#hello h1')
+      fetchText('README.md', '#modal section')
     } else {
       nextBtn.textContent = "Your Info";
       nextBtn.addEventListener('click', function () {
@@ -99,6 +102,8 @@ document.addEventListener('readystatechange', event => {
         e.preventDefault()
         setLOG()
       }, false)
+
+      fetchHTML('profile/yourinfo.html', '#modal section')
     }
   }
 })
