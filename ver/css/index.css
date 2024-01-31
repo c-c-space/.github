@@ -74,9 +74,8 @@ main {
 }
 
 #hello nav,
-#hello u,
-#hello i,
-#hello a {
+#hello a,
+#hello u {
     pointer-events: auto;
     user-select: auto;
 }
