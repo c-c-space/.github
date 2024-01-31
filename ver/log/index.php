@@ -26,8 +26,6 @@ flock($fp, LOCK_SH);
 <html lang="ja">
 
 <head>
-  <?php require('head.php');?>
-
   <meta property="og:image" content="https://creative-community.space/ver/log/summary.png">
   <meta name="twitter:image" content="https://creative-community.space/ver/log/summary.png">
 
