@@ -37,6 +37,7 @@ select,
   text-align: start;
   padding: 0.4rem 0.55rem;
   margin: 0.125rem;
+  max-width: 100%;
   word-break: break-all;
 }
 
