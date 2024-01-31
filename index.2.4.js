@@ -23,7 +23,9 @@ document.addEventListener('readystatechange', event => {
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
       fetchHTML('hello/welcome.php', '#hello h1')
-      yourStrage.innerHTML = '<u>You Posted</u><br/>';
+      yourStrage.innerHTML =
+        '<u>You Posted</u><br/>' +
+        '<nav>';
 
       // sign 情報を表示
       if (!localStorage.getItem('sign')) {
@@ -67,7 +69,7 @@ document.addEventListener('readystatechange', event => {
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
-        `<small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
+        `</nav><small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
 
       // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All";
