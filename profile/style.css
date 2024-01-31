@@ -22,7 +22,8 @@ h2,
 }
 
 #log li b,
-#log li code {
+#log li code,
+footer button {
   font-family: "ipag", "Arial Narrow", monospace;
 }
 
@@ -80,9 +81,13 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.5rem;
-  width: 100%;
+  padding: 0.75rem;
   z-index: 5;
+}
+
+footer button {
+  color: #fff;
+  font-size: 75%;
 }
 
 @media print {
