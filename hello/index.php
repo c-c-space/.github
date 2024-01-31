@@ -132,9 +132,9 @@
   <script type="text/javascript">
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'interactive') {
-        colorSize()
-      } else if (event.target.readyState === 'complete') {
         colorJSON('<?php echo $season . "/color.json"; ?>')
+      } else if (event.target.readyState === 'complete') {
+        colorSize()
       }
     })
   </script>
