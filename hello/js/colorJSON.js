@@ -9,7 +9,7 @@ function colorSize() {
   <p>
     <label for="color">文字の色</label>
     <select class="color bgcolor" id="color">
-      <option value="#000" selected>Text Color</option>
+      <option value="#111" selected>Text Color</option>
     </select>
     <br/>
     <label for="bgcolor">背景の色</label>
