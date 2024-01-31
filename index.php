@@ -9,9 +9,8 @@
   <meta name="reply-to" content="pehu@creative-community.space">
 
   <script src="index.2.6.js"></script>
-
-  <!-- HTML Meta Tags -->
   <?php require('ver/icon/all.html'); ?>
+
   <title>Index | creative-community.space</title>
   <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。">
 
@@ -62,37 +61,37 @@
       <section id="speech">
         <h1>
           <?php require('hello/greeting.php'); ?>
-          <b><?php echo $greeting; ?></b>
+          <strong><?php echo $greeting; ?></strong>
           <br>
           IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
         </h1>
         <h2>
           Thank you for visiting
           <u data-id="website">The Website</u>
-          <b id="website" class="hide">
+          <strong id="website" class="hide">
             that
             <u data-id="create">Creates</u>
             <b id="create" class="hide">beautiful things through</b>
             <u data-id="communicate">Communication</u>
             <b id="communicate" class="hide">that everyone can do</b>
             <small>このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。</small>
-          </b>
+          </strong>
         </h2>
       </section>
       <button type="button" id="submit-btn"></button>
     </article>
-  </main>
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="ver/js/hello.js"></script>
-  <script>
-    $(function() {
-      $("#hello u").on("click", function() {
-        let show = $(this).data("id");
-        $("#" + show).show(1000);
-      })
-    });
-  </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="ver/js/hello.js"></script>
+    <script>
+      $(function() {
+        $("#hello u").on("click", function() {
+          let show = $(this).data("id");
+          $("#" + show).show(1000);
+        })
+      });
+    </script>
+  </main>
 
   <main id="yourinfo" class="hsl" hidden>
     <form id="login" method="post">
@@ -132,9 +131,15 @@
     }
 
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      const main = document.querySelector('main')
-      main.style.pointerEvents = "none";
-      main.style.userSelect = "none";
+      const pc = document.querySelector('#hello')
+      pc.style.pointerEvents = "none";
+      pc.style.userSelect = "none";
+
+      if (!localStorage.getItem('yourInfo')) {
+
+      } else {
+
+      }
 
       const COLOURS = ['#EEE'];
       let radius = 0;

@@ -22,9 +22,12 @@ h2,
 }
 
 #log li b,
-#log li code,
-footer button {
+#log li code {
   font-family: "ipag", "Arial Narrow", monospace;
+}
+
+footer button {
+  font-family: "Arial Narrow", "ipag", Arial, sans-serif;
 }
 
 #log li:last-of-type,

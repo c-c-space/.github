@@ -41,7 +41,7 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        '<i> Colors & Symbols that Suit You</i><br/>';
+        ' Colors & Symbols that Suit You<br/>';
 
       // goout 情報を表示
       if (!localStorage.getItem('goout')) {
@@ -54,7 +54,7 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        '<i> Locations where you were</i><br/>';
+        ' Locations where you were<br/>';
 
       // heard 情報を表示
       if (!localStorage.getItem('heard')) {
@@ -67,17 +67,14 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        '<i> things you heard</i><br/>';
+        ' things you heard<br/>';
 
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
         `<small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
 
-      yourStrage.style.pointerEvents = 'auto';
-      yourStrage.style.userSelect = 'auto';
-
-      nextBtn.textContent = "?";
+      nextBtn.textContent = "About This Site このサイトについて";
       nextBtn.addEventListener('click', function () {
         openModal()
       })
