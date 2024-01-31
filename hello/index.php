@@ -128,11 +128,16 @@
 
   <?php require('controls.html'); ?>
   <script src="js/controls.js"></script>
-  <script type="text/javascript">
-    colorSize()
-    colorJSON('<?php echo $season . "/color.json"; ?>')
-  </script>
   <script src="js/setStyles.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'interactive') {
+        colorSize()
+      } else if (event.target.readyState === 'complete') {
+        colorJSON('<?php echo $season . "/color.json"; ?>')
+      }
+    })
+  </script>
 </body>
 
 </html>
