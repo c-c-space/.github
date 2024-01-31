@@ -11,7 +11,7 @@ if (!storage.getItem('fontSize')) {
 }
 
 document.addEventListener('readystatechange', event => {
-  if (event.target.readyState === 'interactive') {
+  if (event.target.readyState === 'complete') {
     const fontSize = document.querySelector('#fontSize')
     const bgcolorForm = document.querySelector('#bgcolor')
     const colorForm = document.querySelector('#color')
