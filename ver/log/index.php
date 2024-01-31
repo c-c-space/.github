@@ -17,17 +17,17 @@
 
   $title = 'Access Log | creative-community.space';
   $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+
   $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
   $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-
   $source_file = $year . '/' . $month . '.csv';
   $fp = fopen($source_file, 'r');
   flock($fp, LOCK_SH);
   require('head.php');
   ?>
 
-  <meta property="og:image" content="<?php echo $url; ?>summary.png">
-  <meta name="twitter:image" content="<?php echo $url; ?>summary.png">
+  <meta property="og:image" content="https://creative-community.space/ver/log/summary.png">
+  <meta name="twitter:image" content="https://creative-community.space/ver/log/summary.png">
 
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
@@ -41,10 +41,10 @@
     }
   </script>
 
-  <link rel="icon" href="../icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="stylesheet" href="../css/log.css" />
-  <link rel="stylesheet" href="../css/selectmonth.css" />
+<link rel="icon" href="/ver/icon.png" type="image/png">
+  <link rel="stylesheet" href="/ver/css/menu.css" />
+  <link rel="stylesheet" href="/ver/css/log.css" />
+  <link rel="stylesheet" href="/ver/css/selectmonth.css" />
 
   <style>
     #log li {

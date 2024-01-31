@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
 
-<!-- HTML Meta Tags -->
 <title><?php echo $title; ?></title>
 <meta name="description" content="<?php echo $description; ?>">
 
