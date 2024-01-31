@@ -31,7 +31,8 @@ h2,
   flex: 2 500px;
 }
 
-#log button {
+#log button,
+footer button {
   appearance: none;
   outline: none;
   border: solid 2px;
@@ -72,6 +73,16 @@ meter::-webkit-meter-horizontal-suboptimal-value {
 
 meter::-webkit-meter-horizontal-even-less-good-value {
   background: red;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 5;
 }
 
 @media print {
