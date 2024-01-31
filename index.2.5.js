@@ -70,6 +70,9 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML +=
         `<small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
 
+      yourStrage.style.pointerEvent = 'auto';
+      yourStrage.style.userSelect = 'auto';
+      
       // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All";
       nextBtn.addEventListener('click', function () {
