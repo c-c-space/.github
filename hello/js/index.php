@@ -18,9 +18,40 @@
     fetchHTML('synthesis.html', '#synthesis')
   </script>
 
-  <!--og:meta-->
   <title>音声認識・音声合成 | Web Speech API</title>
   <meta content="Speech Recognition & Text to Speech" name="description">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://creative-community.space/hello/js/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="音声認識・音声合成 | Web Speech API">
+  <meta property="og:description" content="Speech Recognition & Text to Speech">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="twitter:url" content="https://creative-community.space/hello/js/">
+  <meta name="twitter:title" content="音声認識・音声合成 | Web Speech API">
+  <meta name="twitter:description" content="Speech Recognition & Text to Speech">
+  
+  <?php
+  //現在の日時を取得
+  $datetime = date('m-d');
+
+  //四季を表示
+  if ($datetime >= '02-04' and $datetime <= '05-04') {
+    $season = "spring";
+  } elseif ($datetime >= '05-05' and $datetime <= '08-07') {
+    $season = "summer";
+  } elseif ($datetime >= '08-08' and $datetime <= '11-07') {
+    $season = "autumn";
+  } else {
+    $season = "winter";
+  }
+  ?>
+  
+  <meta property="og:image" content="<?php echo "https://creative-community.space/hello/" . $season . "/summary.png"; ?>">
+  <meta name="twitter:image" content="<?php echo "https://creative-community.space/hello/" . $season . "/summary.png"; ?>">
 
   <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="/ver/css/menu.css" />
