@@ -8,7 +8,7 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
-  <script src="index.2.4.js"></script>
+  <script src="index.2.5.js"></script>
 
   <!-- HTML Meta Tags -->
   <?php require('ver/icon/all.html'); ?>
@@ -51,7 +51,7 @@
     <menu id="contents">
       <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.4</u>
+        <u>ver.2.5</u>
       </a>
     </menu>
   </header>
