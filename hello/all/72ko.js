@@ -63,3 +63,20 @@ function koIndex(obj) {
     }, false)
   }
 }
+
+// 発話の停止・一時停止・再開
+const cancelBtn = document.querySelector('#cancel-btn')
+const pauseBtn = document.querySelector('#pause-btn')
+const resumeBtn = document.querySelector('#resume-btn')
+
+cancelBtn.addEventListener('click', function () {
+  speechSynthesis.cancel()
+})
+
+pauseBtn.addEventListener('click', function () {
+  speechSynthesis.pause()
+})
+
+resumeBtn.addEventListener('click', function () {
+  speechSynthesis.resume()
+})
