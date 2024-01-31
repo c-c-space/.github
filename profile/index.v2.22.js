@@ -1,5 +1,15 @@
 'use strict'
 
+if (!localStorage.getItem('yourInfo')) {
+  location.replace('/')
+}
+
+function clearAll() {
+  localStorage.clear()
+  setTimeout(() => {
+    location.reload()
+  }, 1000)
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const info = document.querySelector('#info')
@@ -14,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </span>
     <span></span>
     <span>You Posted <b>${youHeard.length}</b> things you heard</span>
-    `
-    info.before(mapHeard);
+    `;
+    info.before(mapHeard)
   }
 
   if (localStorage.getItem('goout')) {
@@ -28,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </span>
     <span></span>
     <span>You Posted <b>${yourLocation.length}</b> Locations</span>
-    `
-    info.before(yourMap);
+    `;
+    info.before(yourMap)
   }
 
   if (localStorage.getItem('sign')) {
@@ -42,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </span>
     <span></span>
     <span>You Posted <b>${yourSign.length}</b> Colors & Symbols That Suit You</span>
-    `
+    `;
     info.before(sign)
   }
 })

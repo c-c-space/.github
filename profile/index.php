@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="index.v2.2.js"></script>
+  <script src="index.v2.22.js"></script>
 
   <!-- HTML Meta Tags -->
   <title>通信情報／ブラウザ等情報 | creative-community.space</title>
@@ -33,12 +33,9 @@
   <script type="text/javascript">
     menuJSON('index.json')
 
-    document.addEventListener('DOMContentLoaded', function() {
-      fetchHTML('yourinfo.html', '#about')
-    });
-
     window.addEventListener('load', function() {
       userStream()
+      fetchHTML('yourinfo.html', '#about')
     }, false);
   </script>
 
@@ -62,14 +59,6 @@
 
   <footer>
     <button type="button" onclick="clearAll()">すべて削除 Delete All</button>
-    <script>
-      function clearAll() {
-        localStorage.clear()
-        setTimeout(() => {
-          location.reload()
-        }, 1000)
-      }
-    </script>
   </footer>
 
   <ul id="log">
