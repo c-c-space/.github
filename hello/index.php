@@ -128,7 +128,6 @@
 
   <?php require('controls.html'); ?>
   <script src="js/controls.js"></script>
-  <script src="js/setStyles.js"></script>
   <script type="text/javascript">
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'interactive') {
@@ -138,6 +137,7 @@
       }
     })
   </script>
+  <script src="js/setStyles.js"></script>
 </body>
 
 </html>
