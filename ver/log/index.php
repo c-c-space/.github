@@ -1,31 +1,31 @@
-
-<?php
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-date_default_timezone_set('Asia/Tokyo');
-
-$year = date("Y");
-$month = date("m");
-if (isset($_GET["month"])) {
-  $month = $_GET["month"];
-}
-
-$title = 'Access Log | creative-community.space';
-$description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
-
-$timestamp = date("j.M.y.D g:i:s A T");
-
-$site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
-$url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
-$source_file = $year . '/' . $month . '.csv';
-$fp = fopen($source_file, 'r');
-flock($fp, LOCK_SH);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
+  <?php
+  mb_language("ja");
+  mb_internal_encoding("UTF-8");
+  date_default_timezone_set('Asia/Tokyo');
+
+  $year = date("Y");
+  $month = date("m");
+  if (isset($_GET["month"])) {
+    $month = $_GET["month"];
+  }
+
+  $title = 'Access Log | creative-community.space';
+  $description = $year . ' 年 ' . $month . ' 月 の アクセス履歴';
+
+  $timestamp = date("j.M.y.D g:i:s A T");
+
+  $site = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
+  $url = "{$site}" . "{$_SERVER['REQUEST_URI']}";
+  $source_file = $year . '/' . $month . '.csv';
+  $fp = fopen($source_file, 'a');
+  flock($fp, LOCK_SH);
+  require('head.php');
+  ?>
+
   <meta property="og:image" content="https://creative-community.space/ver/log/summary.png">
   <meta name="twitter:image" content="https://creative-community.space/ver/log/summary.png">
 
