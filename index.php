@@ -138,11 +138,10 @@
       if (localStorage.getItem('yourInfo')) {
         function zoom(event) {
           event.preventDefault();
-
-          scale += event.deltaY * -0.01;
+          scale += event.deltaY * -0.005;
 
           // Restrict scale
-          scale = Math.min(Math.max(0.125, scale), 4);
+          scale = Math.min(Math.max(0.5, scale), 2);
 
           // Apply scale transform
           pc.style.transform = `scale(${scale})`;
