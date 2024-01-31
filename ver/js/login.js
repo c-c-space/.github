@@ -10,7 +10,8 @@ function setLOG() {
   const yourInfo = {
     port: hqdn,
     ip: ip,
-    os: os
+    os: os,
+    timestamp: new Date().toLocaleString()
   }
 
   const yourJSON = JSON.stringify(yourInfo)

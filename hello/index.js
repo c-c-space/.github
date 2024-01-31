@@ -22,6 +22,7 @@ document.addEventListener('readystatechange', event => {
       for (const i of removeAll) {
         i.remove()
       }
+
       fetchText('readme.md', '#about')
       fetchHTML('../profile/yourinfo.php', '#log h2')
     } else {

@@ -26,10 +26,10 @@
   <meta name="twitter:description" content="The Information About Network & Browser for connection to The Internet">
   <meta name="twitter:image" content="https://creative-community.space/ver/card.png">
 
-  <script src="/ver/js/menu.js"></script>
-  <script src="/ver/js/modal.js"></script>
-  <script src="/profile/userMedia/script.js"></script>
-  <script src="/profile/userMedia/window.js"></script>
+  <script src="../ver/js/menu.js"></script>
+  <script src="../ver/js/modal.js"></script>
+  <script src="userMedia/script.js"></script>
+  <script src="userMedia/window.js"></script>
   <script type="text/javascript">
     menuJSON('index.json')
 
@@ -40,9 +40,9 @@
   </script>
 
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/ver/css/menu.css" />
-  <link rel="stylesheet" href="/ver/css/log.css" />
-  <link rel="stylesheet" href="/ver/css/modal.css" />
+  <link rel="stylesheet" href="../ver/css/menu.css" />
+  <link rel="stylesheet" href="../ver/css/log.css" />
+  <link rel="stylesheet" href="../ver/css/modal.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -56,10 +56,6 @@
       </a>
     </menu>
   </header>
-
-  <footer>
-    <button type="button" onclick="clearAll()">すべて削除 Delete All</button>
-  </footer>
 
   <ul id="log">
     <li id="battery">
@@ -94,7 +90,7 @@
 
     <li id="info">
       <span>
-        <button id="status" type="button" onclick="setLOG()">(Online or Offline?)</button>
+        <button id="status" type="button" onclick="openModal()">(Online or Offline?)</button>
       </span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
@@ -109,13 +105,16 @@
       </span>
       <?php require('yourinfo.php'); ?>
     </li>
-    <script src="/ver/js/login.js"></script>
   </ul>
 
   <dialog id="modal">
     <button id="closeModal">Close 閉じる</button>
     <section id="about"></section>
   </dialog>
+
+  <footer>
+    <button type="button" onclick="clearAll()">すべて削除 Delete All</button>
+  </footer>
 </body>
 
 </html>

@@ -42,6 +42,7 @@
 
 #modal {
   background: #fff;
+  border-radius: 0.75rem;
   position: fixed;
   margin: 0;
   top: 50%;
