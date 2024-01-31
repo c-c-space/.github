@@ -34,8 +34,10 @@ select,
   border: 0.1rem solid;
   border-radius: 3rem;
   font-size: 100%;
+  text-align: start;
   padding: 0.4rem 0.55rem;
   margin: 0.125rem;
+  word-break: break-all;
 }
 
 #hello a,
