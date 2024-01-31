@@ -1,6 +1,13 @@
 'use strict'
 
 const storage = localStorage;
+const fontSize = document.querySelector('#fontSize')
+const bgcolorForm = document.querySelector('#bgcolor')
+const colorForm = document.querySelector('#color')
+
+fontSize.onchange = setfontSize;
+bgcolorForm.onchange = setBGcolor;
+colorForm.onchange = setCcolor;
 
 if (!storage.getItem('fontSize')) {
   setfontSize()
@@ -11,19 +18,16 @@ if (!storage.getItem('fontSize')) {
 }
 
 function setfontSize() {
-  const fontSize = document.querySelector('#fontSize')
   storage.setItem('fontSize', fontSize.value)
   setStyles()
 }
 
 function setBGcolor() {
-  const bgcolorForm = document.querySelector('#bgcolor')
   storage.setItem('bgcolor', bgcolorForm.value)
   setStyles()
 }
 
 function setCcolor() {
-  const colorForm = document.querySelector('#color')
   storage.setItem('color', colorForm.value)
   setStyles()
 }
@@ -32,10 +36,6 @@ function setStyles() {
   const currentSize = storage.getItem('fontSize')
   const currentBG = storage.getItem('bgcolor')
   const currentColor = storage.getItem('color')
-
-  const fontSize = document.querySelector('#fontSize')
-  const bgcolorForm = document.querySelector('#bgcolor')
-  const colorForm = document.querySelector('#color')
 
   fontSize.value = currentSize;
   bgcolorForm.value = currentBG;
@@ -62,7 +62,3 @@ function setStyles() {
     "Color:", currentColor
   )
 }
-
-fontSize.onchange = setfontSize;
-bgcolorForm.onchange = setBGcolor;
-colorForm.onchange = setCcolor;
