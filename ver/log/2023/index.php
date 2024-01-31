@@ -38,8 +38,8 @@
       }
     }
   </script>
-
-  <link rel="icon" href="/ver/icon.png" type="image/png">
+  
+  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/log.css" />
   <link rel="stylesheet" href="/ver/css/selectmonth.css" />
