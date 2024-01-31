@@ -132,23 +132,13 @@
 
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       const pc = document.querySelector('#hello')
-      pc.style.pointerEvents = "none";
-      pc.style.userSelect = "none";
 
       if (localStorage.getItem('yourInfo')) {
-        function zoom(event) {
-          event.preventDefault();
-          scale += event.deltaY * -0.005;
-
-          // Restrict scale
-          scale = Math.min(Math.max(0.5, scale), 2);
-
-          // Apply scale transform
-          pc.style.transform = `scale(${scale})`;
-        }
-
-        let scale = 1;
-        document.body.onwheel = zoom;
+        pc.style.pointerEvents = "auto";
+        pc.style.userSelect = "auto";
+      } else {
+        pc.style.pointerEvents = "none";
+        pc.style.userSelect = "none";
       }
 
       const COLOURS = ['#EEE'];
