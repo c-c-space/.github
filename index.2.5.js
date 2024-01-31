@@ -24,8 +24,7 @@ document.addEventListener('readystatechange', event => {
       // ローカルストレージに yourInfo 情報がある場合
       fetchHTML('hello/welcome.php', '#hello h1')
       yourStrage.innerHTML =
-        '<u>You Posted</u><br/>' +
-        '<nav>';
+        '<u>You Posted</u><br/>';
 
       // sign 情報を表示
       if (!localStorage.getItem('sign')) {
@@ -38,7 +37,7 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        ' Colors & Symbols that Suit You<br/>';
+        '<i> Colors & Symbols that Suit You</i><br/>';
 
       // goout 情報を表示
       if (!localStorage.getItem('goout')) {
@@ -51,7 +50,7 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        ' Locations where you were<br/>';
+        '<i> Locations where you were</i><br/>';
 
       // heard 情報を表示
       if (!localStorage.getItem('heard')) {
@@ -64,12 +63,12 @@ document.addEventListener('readystatechange', event => {
       }
 
       yourStrage.innerHTML +=
-        ' things you heard<br/>';
+        '<i> things you heard</i><br/>';
 
       // yourInfo 情報を表示
       const yourInfo = JSON.parse(localStorage.getItem('yourInfo'));
       yourStrage.innerHTML +=
-        `</nav><small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
+        `<small><br/>by ${yourInfo.os}<br>${yourInfo.ip} ${yourInfo.port}</small>`;
 
       // ローカルストレージの情報をすべて削除
       nextBtn.textContent = "すべて削除 Delete All";
