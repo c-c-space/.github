@@ -103,7 +103,7 @@
         める
       </p>
       <p>
-        <small>2月29日 ~ 3月4日頃</small><br />
+        <small>3月1日 ~ 3月4日頃</small><br />
         <ruby>
           草木 <rp>(</rp>
           <rt>くさき</rt>
