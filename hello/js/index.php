@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+
+  <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     async function fetchHTML(url = '', query = '') {
       fetch(url)
@@ -66,6 +68,28 @@
 </head>
 
 <body>
+  <header id="menu" hidden>
+    <button><b></b></button>
+    <menu id="contents">
+      <a href="#" onclick="window.history.back(); return false;">
+        <p>creative-community.space</p>
+        <u>↩︎</u>
+      </a>
+      <a href="/hello/" target="_parent">
+        <i>Hello</i>
+        <b>Speech to Text to Text to Speech</b>
+      </a>
+      <a href="/hello/all/" target="_parent">
+        <i>24 Sekki</i>
+        <b>二十四節気</b>
+      </a>
+      <a href="/hello/all/color.php" target="_parent">
+        <i>The Collection of Traditional Seasonal Colors of Japan</i>
+        <b>日本の伝統的な季節の色</b>
+      </a>
+    </menu>
+  </header>
+  
   <main id="hello">
     <details id="recognition"></details>
     <details id="synthesis"></details>
