@@ -30,7 +30,6 @@
   <meta property="og:description" content="Speech Recognition & Text to Speech">
   
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="creative-community.space">
   <meta property="twitter:url" content="https://creative-community.space/hello/js/">
   <meta name="twitter:title" content="音声認識・音声合成 | Web Speech API">
@@ -71,10 +70,6 @@
   <header id="menu" hidden>
     <button><b></b></button>
     <menu id="contents">
-      <a href="#" onclick="window.history.back(); return false;">
-        <p>creative-community.space</p>
-        <u>↩︎</u>
-      </a>
       <a href="/hello/" target="_parent">
         <i>Hello</i>
         <b>Speech to Text to Text to Speech</b>

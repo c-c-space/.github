@@ -21,11 +21,11 @@ document.addEventListener('readystatechange', event => {
         removeEach.remove()
       });
     }
+
+    fetchHTML('profile/yourinfo.html', '#modal section')
   } else if (event.target.readyState === 'complete') {
     const nextBtn = document.querySelector('#submit-btn')
     const yourStrage = document.querySelector('#hello h2')
-
-    fetchHTML('profile/yourinfo.html', '#modal section')
 
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
@@ -35,11 +35,11 @@ document.addEventListener('readystatechange', event => {
       // sign 情報を表示
       if (!localStorage.getItem('sign')) {
         yourStrage.innerHTML +=
-          '<a href="/sign/">0</a>';
+          '<a href="/sign/collection/">0</a>';
       } else {
         const yourSign = JSON.parse(localStorage.getItem('sign'))
         yourStrage.innerHTML +=
-          `<a href="/sign/">${yourSign.length}</a>`;
+          `<a href="/sign/collection/">${yourSign.length}</a>`;
       }
 
       yourStrage.innerHTML +=

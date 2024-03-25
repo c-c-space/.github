@@ -69,13 +69,13 @@ fclose($fp);
         <p>creative-community.space</p>
         <u>↩︎</u>
       </a>
-      <a href="../profile/" target="_parent">
-        <i>The Information About Network & Browser</i>
-        <b>通信情報／ブラウザ等情報</b>
-      </a>
       <a href="log/" target="_parent">
         <i>HTTP/1.1 on 195.179.236.11</i>
         <b>アクセス履歴 | Access Log</b>
+      </a>
+      <a href="../profile/" target="_parent">
+        <i>The Information About Network & Browser</i>
+        <b>通信情報／ブラウザ等情報</b>
       </a>
     </menu>
   </header>
