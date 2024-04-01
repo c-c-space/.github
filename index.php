@@ -170,6 +170,7 @@
 
           <nav>
               <button type="submit" class="submit">Submit</button>
+              <button type="button" onclick="whoisForm()">Close</button>
           </nav>
       </form>
     </section>
