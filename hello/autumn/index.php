@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="/ver/css/controls.css" />
-  <link rel="stylesheet" href="/ver/css/modal.css" />
+  <link rel="stylesheet" href="/ver/css/modal.v1.css" />
   <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" href="../css/www.css" media="print" />
 </head>

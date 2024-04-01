@@ -42,7 +42,7 @@
   <link rel="icon" href="../ver/icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="../ver/css/menu.css" />
   <link rel="stylesheet" href="../ver/css/log.css" />
-  <link rel="stylesheet" href="../ver/css/modal.css" />
+  <link rel="stylesheet" href="../ver/css/modal.v1.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
