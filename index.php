@@ -49,6 +49,7 @@
   <script src="members/assets/js/localStorage.js"></script>
   <link rel="stylesheet" href="members/assets/css/style.css" />
   <link rel="stylesheet" href="members/assets/css/submitForm.css" />
+  <link rel="stylesheet" href="members/assets/css/submitForm.css" />
 </head>
 
 <body>

@@ -1,18 +1,25 @@
 {
   "contents": [
     {
+      "date": "The Life of __ | at the Age of **",
+      "name": "〓〓の年齢 〇〇歳のころの出来事",
+      "url": "/members/",
+      "ver": "ver.1.1",
+      "hidden": true
+    },
+    {
       "date": "The Information About Network & Browser",
       "name": "通信情報／ブラウザ等情報",
       "url": "/profile/",
       "ver": "ver.2.2",
-      "hidden": false
+      "hidden": true
     },
     {
       "date": "Your Drawing is Seems So Beautiful",
       "name": "Thank You for Visiting",
       "url": "/profile/thankyou/",
       "ver": "ver.2.0",
-      "hidden": false
+      "hidden": true
     }
   ]
 }
