@@ -25,7 +25,8 @@ document.addEventListener('readystatechange', event => {
       whoisForm.style.height = "100vw";
       whoisForm.style.maxHeight = "75vh";
       const whoisInfo = document.querySelector('#whois .data');
-      whoisInfo.style.top = "75%";
+      whoisInfo.style.top = "auto";
+      whoisInfo.style.bottom = "0";
     } else {
       fetchHTML('profile/yourinfo.html', '#modal section')
     }
