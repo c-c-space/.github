@@ -20,11 +20,12 @@ document.addEventListener('readystatechange', event => {
       removetAll.forEach((removeEach) => {
         removeEach.remove()
       });
-      const whoisForm = document.querySelector('#modal section');
+
+      const whoisForm = document.querySelector('#whois');
       whoisForm.style.height = "100vw";
       whoisForm.style.maxHeight = "75vh";
       const whoisInfo = document.querySelector('#whois .data');
-      whoisInfo.style.bottom = "0";
+      whoisInfo.style.top = "75%";
     } else {
       fetchHTML('profile/yourinfo.html', '#modal section')
     }

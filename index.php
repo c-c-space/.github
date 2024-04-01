@@ -114,7 +114,7 @@
   <dialog id="modal">
     <button id="closeModal">Close 閉じる</button>
     <section>
-      <aside id="whois" style="width: 100%; height: 100%;">
+      <aside id="whois">
           <p class="age">0.000000000</p>
           <p class="data">
               <span class="name">WHOIS</span>
@@ -122,7 +122,7 @@
           </p>
       </aside>
 
-      <form id="form" style="width: 100%; height: 100%;" method="post" action="#" hidden>
+      <form id="form" method="post" action="#" hidden>
           <section>
               <fieldset class="submit">
                   <legend class="label">Your Name</legend>
