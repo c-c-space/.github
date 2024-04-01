@@ -116,7 +116,7 @@
     <button id="closeModal">Close 閉じる</button>
     <section>
       <aside id="whois">
-          <p class="age">0.000000000</p>
+          <code class="age">0.000000000</code>
           <p class="data">
               <span class="name">WHOIS</span>
               <time>DD MMM YYYY</time>
