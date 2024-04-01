@@ -193,7 +193,9 @@
 
   <script type="text/javascript">
     function forMobile() {
-      document.querySelector('#sketch').remove()
+      window.addEventListener("load", (event) => {
+        document.querySelector('#sketch').remove()
+      });
     }
 
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
