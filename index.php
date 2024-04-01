@@ -8,8 +8,8 @@
   <meta name="author" content="creative-community.space">
   <meta name="reply-to" content="pehu@creative-community.space">
 
-  <script src="index.2.8.js"></script>
-  <?php require('ver/icon/all.html'); ?>
+  <script src="index.3.0.js"></script>
+  <?php require ('ver/icon/all.html'); ?>
 
   <title>Index | creative-community.space</title>
   <meta name="description" content="このウェブサイトは、誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトです。">
@@ -43,6 +43,12 @@
   <link rel="stylesheet" href="ver/css/controls.css" />
   <link rel="stylesheet" href="profile/thankyou/style.css">
   <link rel="stylesheet" href="profile/thankyou/www.css" media="print" />
+
+  <!-- WHOIS -->
+  <script src="members/assets/js/script.v1.0.js"></script>
+  <script src="members/assets/js/localStorage.js"></script>
+  <link rel="stylesheet" href="members/assets/css/style.css" />
+  <link rel="stylesheet" href="members/assets/css/submitForm.css" />
 </head>
 
 <body>
@@ -51,7 +57,7 @@
     <menu id="contents">
       <a href="/ver/" target="_parent">
         <p>Index | creative-community.space</p>
-        <u>ver.2.8</u>
+        <u>ver.3.0</u>
       </a>
     </menu>
   </header>
@@ -60,7 +66,7 @@
     <article>
       <section id="speech">
         <h1>
-          <?php require('hello/greeting.php'); ?>
+          <?php require ('hello/greeting.php'); ?>
           <strong><?php echo $greeting; ?></strong>
           <br>
           IP <code><?php echo $_SERVER["REMOTE_ADDR"]; ?></code>
@@ -96,7 +102,7 @@
   <main id="yourinfo" class="hsl" hidden>
     <form id="login" method="post">
       <button onclick="openModal()" type="button">あなたの通信情報／ブラウザ等情報</button>
-      <p><?php require('profile/yourinfo.php'); ?></p>
+      <p><?php require ('profile/yourinfo.php'); ?></p>
       <section>
         <button type="submit" id="enter-btn">Enter</button>
         <button type="button" id="back-btn">Back</button>

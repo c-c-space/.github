@@ -20,17 +20,17 @@ document.addEventListener('readystatechange', event => {
       removetAll.forEach((removeEach) => {
         removeEach.remove()
       });
+      fetchHTML('members/form.html', '#modal section')
+    } else {
+      fetchHTML('profile/yourinfo.html', '#modal section')
     }
-
-    fetchHTML('profile/yourinfo.html', '#modal section')
   } else if (event.target.readyState === 'complete') {
     const nextBtn = document.querySelector('#submit-btn')
     const yourStrage = document.querySelector('#hello h2')
 
     if (localStorage.getItem('yourInfo')) {
       // ローカルストレージに yourInfo 情報がある場合
-      yourStrage.innerHTML =
-        '<u>You Posted</u><br/>';
+      yourStrage.innerHTML = '<u>You Posted</u><br/>';
 
       // sign 情報を表示
       if (!localStorage.getItem('sign')) {
