@@ -113,7 +113,66 @@
 
   <dialog id="modal">
     <button id="closeModal">Close 閉じる</button>
-    <section></section>
+    <section>
+      <aside id="whois" style="width: 100%; height: 100%;">
+          <p class="age">0.000000000</p>
+          <p class="data">
+              <span class="name">WHOIS</span>
+              <time>DD MMM YYYY</time>
+          </p>
+      </aside>
+
+      <form id="form" style="width: 100%; height: 100%;" method="post" action="#" hidden>
+          <section>
+              <fieldset class="submit">
+                  <legend class="label">Your Name</legend>
+                  <input type="text" name="name" id="name" required>
+                  <span class="validity"></span>
+              </fieldset>
+              <fieldset class="submit">
+                  <legend class="label">Email</legend>
+                  <input type="email" name="email" id="email" required>
+                  <span class="validity"></span>
+              </fieldset>
+          </section>
+
+          <fieldset class="submit">
+              <legend class="label">Date of birth</legend>
+              <p id="dateValue">
+                  <time class="year">0000</time>
+                  <time class="month">00</time>
+                  <time class="day">00</time>
+                  <time class="time">00:00</time>
+              </p>
+              <select id="yearForm" name="year" required>
+                  <option selected disabled>YYYY</option>
+              </select>
+              <select id="monthForm" name="month" required>
+                  <option selected disabled>MMM</option>
+                  <option value="01">JAN</option>
+                  <option value="02">FEB</option>
+                  <option value="03">MAR</option>
+                  <option value="04">APR</option>
+                  <option value="05">MAY</option>
+                  <option value="06">JUN</option>
+                  <option value="07">JUL</option>
+                  <option value="08">AUG</option>
+                  <option value="09">SEP</option>
+                  <option value="10">OCT</option>
+                  <option value="11">NOV</option>
+                  <option value="12">DEC</option>
+              </select>
+              <select id="dateForm" name="day" required>
+                  <option selected disabled>DD</option>
+              </select>
+              <input type="time" name="time" id="timeForm" required>
+          </fieldset>
+
+          <nav>
+              <button type="submit" class="submit">Submit</button>
+          </nav>
+      </form>
+    </section>
   </dialog>
 
   <footer id="now" class="hsl">

@@ -23,11 +23,8 @@ document.addEventListener('readystatechange', event => {
       const whoisForm = document.querySelector('#modal section');
       whoisForm.style.height = "100vw";
       whoisForm.style.maxHeight = "75vh";
-      const closeModal = document.querySelector('#closeModal');
-      closeModal.style.position = "absolute";
-      closeModal.style.bottom = "0";
-
-      fetchHTML('members/form.html', '#modal section')
+      const whoisInfo = document.querySelector('#whois .date');
+      whoisInfo.style.bottom = "0";
     } else {
       fetchHTML('profile/yourinfo.html', '#modal section')
     }
