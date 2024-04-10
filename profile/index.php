@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="index.v2.22.js"></script>
+  <script src="index.v3.2.js"></script>
 
   <!-- HTML Meta Tags -->
   <title>通信情報／ブラウザ等情報 | creative-community.space</title>
@@ -103,7 +103,7 @@
       <span>
         <button type="button" onclick="openModal()">通信情報／ブラウザ等情報</button>
       </span>
-      <?php require('yourinfo.php'); ?>
+      <?php require ('yourinfo.php'); ?>
     </li>
   </ul>
 

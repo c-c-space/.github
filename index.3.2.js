@@ -51,19 +51,6 @@ document.addEventListener('readystatechange', event => {
       yourStrage.innerHTML +=
         ' Colors & Symbols that Suit You<br/>';
 
-      // goout 情報を表示
-      if (!localStorage.getItem('goout')) {
-        yourStrage.innerHTML +=
-          '<a href="/map/">0</a>';
-      } else {
-        const goout = JSON.parse(localStorage.getItem('goout'))
-        yourStrage.innerHTML +=
-          `<a href="/map/profile/">${goout.length}</a>`;
-      }
-
-      yourStrage.innerHTML +=
-        ' Locations where you were<br/>';
-
       // heard 情報を表示
       if (!localStorage.getItem('heard')) {
         yourStrage.innerHTML +=
@@ -71,7 +58,7 @@ document.addEventListener('readystatechange', event => {
       } else {
         const heard = JSON.parse(localStorage.getItem('heard'))
         yourStrage.innerHTML +=
-          `<a href="/map/heard/www/">${heard.length}</a>`;
+          `<a href="/map/">${heard.length}</a>`;
       }
 
       yourStrage.innerHTML +=

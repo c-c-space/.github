@@ -20,26 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mapHeard.innerHTML += `
     <span>あなたが聞いた言葉</span>
     <span>
-    <button class="color bgcolor" onclick="location.assign('/map/heard/')">things that i (we) heard</button>
+    <button class="color bgcolor" onclick="location.assign('/map/')">things that i (we) heard</button>
     </span>
     <span></span>
     <span>You Posted <b>${youHeard.length}</b> things you heard</span>
     `;
     info.before(mapHeard)
-  }
-
-  if (localStorage.getItem('goout')) {
-    const yourLocation = JSON.parse(localStorage.getItem('goout'))
-    const yourMap = document.createElement("li")
-    yourMap.innerHTML += `
-    <span>あなたがいた場所のコレクション</span>
-    <span>
-    <button class="color bgcolor" onclick="location.assign('/map/profile/')">Go Out</button>
-    </span>
-    <span></span>
-    <span>You Posted <b>${yourLocation.length}</b> Locations</span>
-    `;
-    info.before(yourMap)
   }
 
   if (localStorage.getItem('sign')) {
