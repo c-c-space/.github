@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const youHeard = JSON.parse(localStorage.getItem('heard'))
     const mapHeard = document.createElement("li")
     mapHeard.innerHTML += `
-    <span>あなたが聞いた言葉</span>
+    <span>あなたが聞いたこと</span>
     <span>
     <button class="color bgcolor" onclick="location.assign('/map/')">things that i (we) heard</button>
     </span>
