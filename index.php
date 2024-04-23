@@ -45,10 +45,10 @@
   <link rel="stylesheet" href="profile/thankyou/www.css" media="print" />
 
   <!-- WHOIS -->
-  <script src="members/assets/js/script.v1.0.js"></script>
-  <script src="members/assets/js/localStorage.js"></script>
-  <link rel="stylesheet" href="members/assets/css/style.v1.css" />
-  <link rel="stylesheet" href="members/assets/css/form.v1.css" />
+  <script src="members/assets/js/script.js?v=0"></script>
+  <script src="members/assets/js/localStorage.js?v=0"></script>
+  <link rel="stylesheet" href="members/assets/css/style.css?v=0" />
+  <link rel="stylesheet" href="members/assets/css/form.css?v=0" />
 </head>
 
 <body>
