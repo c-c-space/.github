@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <link rel="icon" href="/ver/icon/favicon.png">
 
-  <script src="index.js?v=1"></script>
+  <script src="index.js?v=1.1"></script>
 
   <meta property="og:type" content="website">
   <title>通信情報／ブラウザ等情報 | creative-community.space</title>
@@ -86,18 +86,21 @@
 
       <li id="info">
         <span>
-          <button id="status" type="button" onclick="openModal()">(Online or Offline?)</button>
+          <button id="status" type="button" onclick="geoFindMe()">(Online or Offline?)</button>
         </span>
-        <span id="lang">LANGUAGE <b></b></span>
-        <span></span>
+        <span id="lang">LANGUAGE <i></i></span>
         <span id="voice"></span>
+        <span id="findMe"></span>
       </li>
+      <script src="js/findme.js"></script>
 
-      <li>
+      <li id="yourinfo">
         <span>
           <button type="button" onclick="openModal()">通信情報／ブラウザ等情報</button>
         </span>
-        <?php require ('yourinfo.php'); ?>
+        <span>IP <code id="ip"></code></span>
+        <span>PORT <code id="hqdn"></code></span>
+        <span><small id="os"></small></span>
       </li>
     </ul>
   </main>

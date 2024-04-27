@@ -61,10 +61,18 @@ document.addEventListener('readystatechange', event => {
 
     if (localStorage.getItem('uttr')) {
       const yourUTTR = JSON.parse(localStorage.getItem('uttr'))
-      const lang = document.querySelector('#lang b')
+      const lang = document.querySelector('#lang i')
       lang.textContent = yourUTTR.yourLang;
       const voice = document.querySelector('#voice')
       voice.textContent = yourUTTR.voice;
     }
+
+    const yourinfoJson = JSON.parse(localStorage.getItem('yourInfo'))
+    const ip = document.querySelector('#ip')
+    const hqdn = document.querySelector('#hqdn')
+    const os = document.querySelector('#os')
+    ip.textContent = yourinfoJson.ip;
+    hqdn.textContent = yourinfoJson.port;
+    os.innerHTML =  "You Entered here by " + yourinfoJson.os + " at " + yourinfoJson.timestamp;
   }
 }, false)
