@@ -77,7 +77,7 @@
             Now is The Season named<br />
             <a></a> (<b></b>) in <i></i>
         </h2>
-        <article></article>
+        <article id="submit"></article>
     </main>
 
     <main id="hello" hidden>
