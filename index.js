@@ -1,5 +1,16 @@
 'use strict'
 
+if (!localStorage.getItem('yourInfo')) {
+    switch (document.readyState) {
+        case "loading":
+            const head = document.querySelector('head')
+            const hslJS = document.createElement("script")
+            hslJS.src = 'profile/thankyou/hsl.js';
+            head.appendChild(hslJS)
+            break;
+    }
+}
+
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
     creatVoises('#speechAPI', 'ja|en')

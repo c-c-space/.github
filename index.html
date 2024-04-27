@@ -105,7 +105,7 @@
         </form>
     </main>
     <script src="ver/js/login.js?v=0"></script>
-    <script src="profile/userMedia/script.js?v=0"></script>
+    <script src="profile/js/userMedia.js?v=0"></script>
 
     <dialog id="modal">
         <button id="closeModal">Close 閉じる</button>
@@ -172,54 +172,72 @@
         </section>
     </dialog>
 
+    <div id="sketch"></div>
     <p class="hue hsl" hidden>Hue <span id="huecount"></span></p>
     <p class="saturation hsl" hidden>Saturation <span id="saturationcount"></span></p>
     <p class="lightness hsl" hidden>Lightness <span id="lightnesscount"></span></p>
-    <div id="sketch"></div>
+
     <script>
+        function setColors() {
+            if (localStorage.getItem('bgcolor')) {
+                document.body.style.background = localStorage.getItem('bgcolor')
+            } else {
+                document.body.style.background = '#fff';
+            }
+            if (localStorage.getItem('color')) {
+                document.body.style.color = localStorage.getItem('color')
+            } else {
+                document.body.style.color = '#000';
+            }
+        }
         function forPC() {
             window.addEventListener("load", (event) => {
-                const pc = document.querySelector('#hello')
-                pc.style.pointerEvents = "none";
-                pc.style.userSelect = "none";
+                if (!localStorage.getItem('yourInfo')) {
+                    const pc = document.querySelector('#hello')
+                    pc.style.pointerEvents = "none";
+                    pc.style.userSelect = "none";
 
-                const COLOURS = ['#EEE'];
-                let radius = 0;
+                    const COLOURS = ['#EEE'];
+                    let radius = 0;
 
-                Sketch.create({
-                    container: document.getElementById('sketch'),
-                    autoclear: false,
-                    retina: 'auto',
+                    Sketch.create({
+                        container: document.getElementById('sketch'),
+                        autoclear: false,
+                        retina: 'auto',
 
-                    update: function () {
-                        radius = 2 + abs(sin(this.millis * 0.002) * 25)
-                    },
+                        update: function () {
+                            radius = 2 + abs(sin(this.millis * 0.002) * 25)
+                        },
 
-                    touchmove: function () {
-                        for (let i = this.touches.length - 1, touch; i >= 0; i--) {
-                            touch = this.touches[i];
-                            this.lineCap = 'round';
-                            this.lineJoin = 'round';
-                            this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
-                            this.lineWidth = radius;
-                            this.beginPath()
-                            this.moveTo(touch.ox, touch.oy)
-                            this.lineTo(touch.x, touch.y)
-                            this.stroke()
+                        touchmove: function () {
+                            for (let i = this.touches.length - 1, touch; i >= 0; i--) {
+                                touch = this.touches[i];
+                                this.lineCap = 'round';
+                                this.lineJoin = 'round';
+                                this.fillStyle = this.strokeStyle = COLOURS[i % COLOURS.length];
+                                this.lineWidth = radius;
+                                this.beginPath()
+                                this.moveTo(touch.ox, touch.oy)
+                                this.lineTo(touch.x, touch.y)
+                                this.stroke()
+                            }
                         }
-                    }
-                })
-            });
+                    })
+                } else {
+                    setColors()
+                }
+            }, false)
         }
 
         function forMobile() {
-            window.addEventListener("load", (event) => {
-                // document.querySelector('#sketch').remove()
+            window.addEventListener("load", () => {
+                if (localStorage.getItem('yourInfo')) {
+                    setColors()
+                }
             });
         }
     </script>
-    <script src="profile/thankyou/hsl.js"></script>
-    <script src="profile/thankyou/sketch.js"></script>
+    <script src="profile/thankyou/sketch.js?v=1"></script>
     <script src="ver/js/isMobile.js?v=1"></script>
 
     <footer id="now" class="hsl">
