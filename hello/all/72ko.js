@@ -10,7 +10,9 @@ async function koJSON(requestURL) {
 }
 
 function createKo(obj) {
-    const article = document.querySelector('#log article')
+    const submit = document.querySelector('#submit')
+    const article = document.createElement('article')
+    submit.appendChild(article)
     const sekkiName = document.querySelector('#log h1 b')
     const sekkiDate = document.querySelector('#log h1 code')
     const sekkiAbout = document.querySelector('#log h2')

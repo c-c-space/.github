@@ -10,7 +10,7 @@ async function helloCSV(csv) {
             let rate = comma[4].replaceAll('"', "");
             let hello = comma[5].replaceAll('"', "");
             const section = document.createElement('section')
-            document.querySelector('#log article').appendChild(section)
+            document.querySelector('#submit').appendChild(section)
 
             const code = document.createElement('code')
             code.textContent = `${voice} (${lang})`;

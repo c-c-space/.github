@@ -82,7 +82,7 @@ body,
   padding: 1rem;
 }
 
-#log article,
+#submit,
 #hello {
   max-height: 100%;
   overflow: auto;
@@ -121,6 +121,9 @@ h1,
 
 #log article .ko {
   flex: 1 300px;
+}
+
+#log article#submit article {
   order: 1;
 }
 
@@ -135,7 +138,7 @@ h1,
   padding: 0.5rem;
 }
 
-#log article,
+#log article#submit,
 #hello {
   padding: 0.5rem 0.5rem 4rem 0.5rem;
 }
@@ -148,7 +151,7 @@ h1,
   display: none;
 }
 
-#log article,
+#submit,
 #now {
   position: absolute;
 }
@@ -162,7 +165,7 @@ h1,
   z-index: 10;
 }
 
-#log article {
+#submit {
   top: 0;
   left: 0;
   right: 0;
