@@ -33,9 +33,10 @@ async function helloCSV(csv) {
                 speechSynthesis.speak(uttr)
 
                 const output = document.querySelector('#log h1 b')
+                const logH2 = document.querySelector('#log h2')
                 output.innerText = hello;
-
-                lastModified.innerText = comma[0].replaceAll('"', "");
+                logH2.innerText = comma[0].replaceAll('"', "");
+                lastModified.innerText = 'Pitch (音域) | ' + pitch + ' Rate (速度)' + rate;
             }, false)
         }, false)
     let posts = data.length;
