@@ -36,7 +36,7 @@ async function helloCSV(csv) {
                 const logH2 = document.querySelector('#log h2')
                 output.innerText = hello;
                 logH2.innerText = comma[0].replaceAll('"', "");
-                lastModified.innerText = 'Pitch (音域) | ' + pitch + ' Rate (速度)' + rate;
+                lastModified.innerText = 'Pitch (音域) ' + pitch + ' | Rate (速度)' + rate;
             }, false)
         }, false)
     let posts = data.length;
