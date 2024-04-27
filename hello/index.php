@@ -33,10 +33,10 @@
     <meta property="og:image" content="<?php echo $url . $season . " /summary.png"; ?>">
     <meta name="twitter:image" content="<?php echo $url . $season . " /summary.png"; ?>">
 
-    <script src="index.js"></script>
-    <script src="all/index.js"></script>
-    <script src="all/colorSize.js"></script>
-    <link rel="stylesheet" href="index.css" />
+    <script src="index.js?v=1"></script>
+    <script src="all/index.js?v=1"></script>
+    <script src="all/colorSize.js?v=1"></script>
+    <link rel="stylesheet" href="index.css?v=1" />
 
     <link rel="stylesheet" href="../ver/css/menu.css?v=1" />
     <link rel="stylesheet" href="../ver/css/controls.css?v=1" />

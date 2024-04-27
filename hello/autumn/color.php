@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="icon" href="/ver/icon/favicon.png">
-  <link rel="stylesheet" href="../all/color.css" />
+  <link rel="stylesheet" href="../all/color.css?v=1" />
 
   <meta property="og:type" content="website">
   <title>日本の伝統的な秋の色</title>
@@ -46,7 +46,7 @@
       <b>↩︎</b>
     </button>
   </main>
-  <script src="../all/color.js"></script>
+  <script src="../all/color.js?v=1"></script>
   <script type="text/javascript">
     indexJSON('../autumn/color.json');
   </script>
