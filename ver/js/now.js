@@ -1,3 +1,4 @@
+'use strict'
 // #showDate に 現在の日付・#showTime に 現在の時刻を表示
 
 document.addEventListener('DOMContentLoaded', function () {

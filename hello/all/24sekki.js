@@ -6,88 +6,37 @@ async function sekkiJSON(requestURL) {
   const jsonSekki = await response.text()
 
   const sekkiAll = JSON.parse(jsonSekki)
-  sekkiIndex(sekkiAll)
-  sekkiSelect(sekkiAll)
+  collection(sekkiAll)
 }
 
-function sekkiIndex(obj) {
-  let ul = document.querySelector('#log ul')
-  const allSekki = obj.sekki;
-  for (const sekki of allSekki) {
-    let li = document.createElement('li')
-    let date = document.createElement('p')
-    date.setAttribute('data-description', sekki.description)
-    date.innerHTML = `
-    <date>${sekki.start}</date> -
-    <date>${sekki.end}</date>
-    `;
+function collection(obj) {
+  const sekkiName = document.querySelector('#log h1 b')
+  const sekkiDate = document.querySelector('#log h1 code')
+  const sekkiAbout = document.querySelector('#log h2')
 
-    let button = document.createElement('button')
-    button.type = 'button';
-    button.setAttribute('data-name', sekki.name)
-    button.setAttribute('data-note', sekki.note)
-    button.setAttribute('data-description', sekki.description)
-    button.setAttribute('data-yomi', sekki.yomi)
-    button.innerText = sekki.name + ' ' + sekki.yomi;
-    ul.appendChild(li)
-    li.appendChild(date)
-    li.appendChild(button)
+  sekkiName.textContent = thisSeason;
+  sekkiDate.textContent = thisDate;
+  sekkiAbout.textContent = thisDescription;
 
-    button.addEventListener('click', function () {
-      const uttr = new SpeechSynthesisUtterance()
-      uttr.text = this.dataset.yomi + ' ' + this.dataset.description;
-      uttr.lang = "ja-JP";
-      uttr.pitch = 0.9;
-      uttr.rate = 0.9;
-      speechSynthesis.speak(uttr)
+  document.querySelector('#about h3 strong').textContent = thisSeason;
+  document.querySelector('#about small').textContent = thisDate;
+  document.querySelector('#about p').textContent = thisDescription;
 
-      const sekkiName = document.querySelector('#log h1 b')
-      sekkiName.innerText = this.innerText;
-
-      const sekkiDates = document.querySelector('#lastModified')
-      sekkiDates.innerText = this.dataset.description;
-
-      const sekkiAbout = document.querySelector('#log h2')
-      sekkiAbout.innerText = this.dataset.note;
-    }, false)
-  }
-}
-
-function sekkiSelect(obj) {
   let select = document.querySelector('#sekki')
   if (localStorage.getItem('yourInfo')) {
-    const allSekki = obj.sekki;
-
-    for (const sekki of allSekki) {
+    for (const sekki of obj.sekki) {
       let option = document.createElement('option')
       option.value = sekki.value;
       option.innerText = `${sekki.name}（${sekki.start} - ${sekki.end}）`;
       select.appendChild(option)
     }
-    
+
     const optionAll = document.querySelectorAll("#sekki option")
     select.addEventListener('change', function () {
       const index = this.selectedIndex;
-      location.assign(optionAll[index].value)
+      location.assign(`?sekki=${optionAll[index].value}`)
     })
   } else {
     document.querySelector('#collection').remove()
   }
 }
-
-// 発話の停止・一時停止・再開
-const cancelBtn = document.querySelector('#cancel-btn')
-const pauseBtn = document.querySelector('#pause-btn')
-const resumeBtn = document.querySelector('#resume-btn')
-
-cancelBtn.addEventListener('click', function () {
-  speechSynthesis.cancel()
-})
-
-pauseBtn.addEventListener('click', function () {
-  speechSynthesis.pause()
-})
-
-resumeBtn.addEventListener('click', function () {
-  speechSynthesis.resume()
-})

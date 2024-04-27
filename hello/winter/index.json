@@ -1,0 +1,18 @@
+{
+  "contents": [
+    {
+      "date": "November 8 - February 3",
+      "name": "冬 winter",
+      "url": "/hello/winter/",
+      "ver": "ver.2.2",
+      "hidden": true
+    },
+    {
+      "date": "The Collection of Traditional Seasonal Colors of Japan",
+      "name": "日本の伝統的な冬の色",
+      "url": "/hello/winter/color.html",
+      "ver": "ver.2.0",
+      "hidden": true
+    }
+  ]
+}

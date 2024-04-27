@@ -1,0 +1,46 @@
+#modal {
+  font-family: "Arial Narrow", "ipag", Arial, sans-serif;
+}
+
+#modal font {
+  font-size: 125%;
+}
+
+#modal small {
+  font-weight: 500;
+}
+
+#modal h1 {
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+hr {
+  border: none;
+  margin: 1rem;
+}
+
+#closeModal {
+  position: relative;
+  margin: 0 0 0.5rem 0.5rem;
+  z-index: 100;
+  float: right;
+}
+
+#modal {
+  background: #fff;
+  border: 0.15rem solid;
+  border-radius: 0.75rem;
+  overflow: auto;
+  width: 95%;
+  max-width: 750px;
+  max-height: 95%;
+}
+
+#modal h1 u,
+#modal p u {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  line-height: 125%;
+}

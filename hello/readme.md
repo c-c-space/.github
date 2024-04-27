@@ -6,8 +6,8 @@
 
 ***
 
-* [Speech Recognition](js/recognition.html)
-* [Speech Synthesis](js/synthesis.html)
+* [Speech Recognition](js/recognition.js)
+* [Speech Synthesis](js/synthesis.js)
 
 Create Posts with Speech to Text using Speech Recognition
 and Read Posts with Text to Speech using Speech Synthesis
@@ -30,7 +30,7 @@ Add Posts to a CSV files for each *Timeframe* in the directories of **24 Sekki**
 ***
 
 ### On This Textboard, Posts are created and read every 24 Sekki to representing the changing seasons.
-[24 Sekki](all/index.php) divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.
+[24 Sekki](all/index.html) divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.
 
 [^1]:二十四節気は、四季「春」「夏」「秋」「冬」それぞれを太陽の動きをもとに6つに分け、季節をあらわす名前をつけたもの。
 

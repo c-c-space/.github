@@ -28,6 +28,7 @@ fclose($fp);
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="icon/favicon.png" type="image/png">
 
   <script type="text/javascript">
     if (!localStorage.getItem('yourInfo')) {
@@ -54,11 +55,9 @@ fclose($fp);
   <meta name="twitter:description" content="<?php echo $description; ?>">
   <meta name="twitter:image" content="<?php echo $url; ?>card.png">
 
-  <script src="js/menu.js"></script>
-
-  <link rel="icon" href="icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="style.css" />
+  <script src="js/menu.js?v=1"></script>
+  <link rel="stylesheet" href="css/menu.css?v=1" />
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 
 <body>

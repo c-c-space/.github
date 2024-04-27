@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="creative-community.space">
+    <meta name="reply-to" content="pehu@creative-community.space">
+    <link rel="icon" href="/ver/icon/favicon.png">
+
+    <link rel="stylesheet" href="../index.css" />
+    <script src="../all/index.js"></script>
+    <script src="../all/72ko.js"></script>
+    <script src="../all/colorSize.js?v=1"></script>
+    <script>
+        thisSeason = "二十四節気";
+        thisDate = "24 Sekki";
+        thisDescription = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
+
+        document.addEventListener('DOMContentLoaded', function () {
+            koJSON('../spring/sekki.json')
+            koJSON('../summer/sekki.json')
+            koJSON('../autumn/sekki.json')
+            koJSON('../winter/sekki.json')
+        });
+    </script>
+
+    <meta property="og:type" content="website">
+    <title>二十四節気 | 24 Sekki</title>
+    <meta property="og:title" content="二十四節気 | 24 Sekki">
+    <meta name="description"
+        content="divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.">
+    <meta property="og:description"
+        content="divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="creative-community.space">
+    <meta property="og:url" content="https://creative-community.space/hello/all/">
+    <meta property="og:image" content="https://creative-community.space/hello/all/summary.png">
+    <meta name="twitter:image" content="https://creative-community.space/hello/all/summary.png">
+
+    <link rel="stylesheet" href="../../ver/css/menu.css?v=1" />
+    <link rel="stylesheet" href="../../ver/css/controls.css?v=1" />
+    <script src="../../ver/js/menu.js?v=1"></script>
+    <script src="../../ver/js/speechAPI.js?v=1"></script>
+    <script>
+        menuJSON('index.json')
+    </script></head>
+
+<body>
+    <header id="menu" class="bgcolor color" hidden>
+        <button><b></b></button>
+        <menu id="contents">
+            <a href="#" onclick="window.history.back(); return false;">
+                <p>creative-community.space</p>
+                <u>↩︎</u>
+            </a>
+        </menu>
+    </header>
+
+    <main id="log">
+        <h1>
+            <code id="lastModified">24 Sekki</code><br />
+            <b>二十四節気</b>
+        </h1>
+        <h2>divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.</h2>
+        <article></article>
+        <section hidden id="color-size"></section>
+    </main>
+
+    <footer id="now">
+        <nav class="controls">
+            <input id="cancel-btn" value="⏹" type="button" onclick="speechCancel()" />
+            <input id="pause-btn" value="⏸" type="button" onclick="speechPause()" />
+            <input id="resume-btn" value="⏯" type="button" onclick="speechResume()" />
+        </nav>
+    </footer>
+</body>
+
+</html>

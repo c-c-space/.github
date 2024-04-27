@@ -1,7 +1,5 @@
 'use strict'
 
-// ダイアログの開閉 (/ver/css/modal.v1.css と併用)
-
 document.addEventListener('DOMContentLoaded', function () {
     const dialogModal = document.querySelector('#modal')
     const closeModal = document.querySelector('#closeModal')

@@ -1,0 +1,18 @@
+{
+  "contents": [
+    {
+      "date": "24 Sekki",
+      "name": "二十四節気",
+      "url": "/hello/all/",
+      "ver": "ver.2.2",
+      "hidden": true
+    },
+    {
+      "date": "The Collection of Traditional Seasonal Colors of Japan",
+      "name": "日本の伝統的な季節の色",
+      "url": "/hello/all/color.html",
+      "ver": "ver.2.0",
+      "hidden": true
+    }
+  ]
+}

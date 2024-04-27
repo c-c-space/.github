@@ -6,86 +6,9 @@ body {
     max-height: -webkit-fill-available;
 }
 
-hr {
-    border: none;
-    margin: 1rem;
-}
-
-dialog section {
-    line-height: 175%;
-}
-
 #sketch,
 #userMedia {
     mix-blend-mode: difference;
-}
-
-main,
-#now {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
-main {
-    top: 0;
-    height: 100%;
-}
-
-main,
-#now {
-    z-index: 10;
-}
-
-#now {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    bottom: 0;
-    pointer-events: none;
-    user-select: none;
-}
-
-#hello small,
-#yourinfo p span {
-    display: block;
-}
-
-#yourinfo p span,
-#now {
-    padding: 0.5rem;
-}
-
-main {
-    padding: 1rem;
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-#hello small {
-    margin: 1rem 0;
-}
-
-#hello article {
-    width: 95%;
-    margin: 2rem auto;
-}
-
-#hello nav,
-#hello a,
-#hello u {
-    pointer-events: auto;
-    user-select: auto;
-}
-
-#hello .hide {
-    display: none;
-}
-
-#hello u {
-    cursor: help;
 }
 
 #hello a {
@@ -94,7 +17,121 @@ main {
     text-decoration: none;
 }
 
+#hello u {
+    cursor: help;
+}
+
+#hello small,
+#yourinfo span {
+    display: block;
+}
+
+#hello,
+#hello nav,
+#now {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+#hello nav {
+    width: 100%;
+}
+
 #hello {
+    vertical-align: top;
+    justify-content: center;
+}
+
+#now {
+    justify-content: space-between;
+}
+
+#hello nav {
+    place-self: start;
+}
+
+#hello[hidden],
+#hello .hide {
+    display: none;
+}
+
+main,
+main article,
+#hello nav,
+#login,
+#now {
+    padding: 0.5rem;
+}
+
+#hello h2 a {
+    margin: 0.25rem;
+}
+
+#hello small,
+#yourinfo span {
+    margin: 1rem 0;
+}
+
+#hello article {
+    max-width: 95%;
+    padding-bottom: 2.5rem;
+}
+
+#hello input,
+#hello select,
+#hello a,
+#hello u,
+#hello button {
+    pointer-events: auto;
+    user-select: auto;
+}
+
+#now,
+#userMedia {
+    pointer-events: none;
+    user-select: none;
+}
+
+main,
+#now,
+#sketch {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#sketch {
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+main {
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#whois {
+    height: 100vw;
+    max-height: 75vh;
+}
+
+#whois .data {
+    top: 92.5%;
+}
+
+#now {
+    bottom: 0;
+    z-index: 10;
+}
+
+/* フォントの指定 */
+article {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -112,6 +149,18 @@ code,
 #hello h1,
 #hello h2 {
     font-size: 250%;
+}
+
+@media (orientation: portrait) {
+
+    #hello h1,
+    #hello h2 {
+        font-size: 150%;
+    }
+}
+
+#yourinfo h3 {
+    font-size: 125%;
 }
 
 #hello u,
@@ -137,19 +186,10 @@ code,
 
 #hello h1,
 #hello h2,
-#hello small,
-#yourinfo p {
+#hello small {
     line-height: 150%;
 }
 
 #hello button {
     text-align: left;
-}
-
-@media (orientation: portrait) {
-
-    #hello h1,
-    #hello h2 {
-        font-size: 150%;
-    }
 }

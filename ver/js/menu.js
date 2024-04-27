@@ -2,7 +2,7 @@
 
 // #menuの生成(/ver/css/menu.css を併用) と フェッチ操作
 
-async function fetchHTML(url = '', query = '') {
+async function fetchHTML(url, query) {
   fetch(url)
     .then(response => response.text())
     .then(html => {
@@ -10,7 +10,7 @@ async function fetchHTML(url = '', query = '') {
     })
 }
 
-async function fetchText(url = '', query = '') {
+async function fetchText(url, query) {
   fetch(url)
     .then(response => response.text())
     .then(text => {
@@ -33,29 +33,40 @@ function menuContents(obj) {
 
   for (const content of contentsORG) {
     const contentA = document.createElement('a')
-    const contentB = document.createElement('b')
-    const contentI = document.createElement('i')
-    const contentU = document.createElement('u')
-
     contentA.href = content.url;
-    contentI.textContent = content.date;
-    contentB.textContent = content.name;
-    contentU.textContent = content.ver;
-    contentU.hidden = content.hidden;
-
     contents.appendChild(contentA)
+
+    const contentI = document.createElement('i')
+    contentI.textContent = content.date;
     contentA.appendChild(contentI)
+
+    const contentB = document.createElement('b')
+    contentB.textContent = content.name;
     contentA.appendChild(contentB)
-    contentA.appendChild(contentU)
+
+    if (!content.hidden) {
+      const contentU = document.createElement('u')
+      contentU.textContent = content.ver;
+      contentA.appendChild(contentU)
+    }
+  }
+
+  // Add .randomRGBbg
+  const menuAll = document.querySelectorAll('#contents a')
+  for (const contentEach of menuAll) {
+    contentEach.addEventListener('mouseenter', function (event) {
+      event.target.style.background = randomRGB()
+    });
+
+    contentEach.addEventListener('mouseleave', function (event) {
+      event.target.style.background = "";
+    });
   }
 }
 
 document.addEventListener('readystatechange', event => {
   if (event.target.readyState === 'interactive') {
     const menu = document.querySelector('#menu')
-    const button = document.querySelector('#menu button')
-    const box = document.body;
-
     if (localStorage.getItem('yourInfo')) {
       menu.hidden = false;
       menu.style.display = "grid";
@@ -63,32 +74,20 @@ document.addEventListener('readystatechange', event => {
       menu.hidden = true;
       menu.style.display = "none";
     }
-
+  } else if (event.target.readyState === 'complete') {
+    const button = document.querySelector('#menu button')
     button.addEventListener('click', function () {
       menu.classList.toggle('active')
-      box.classList.toggle('open')
+      document.body.classList.toggle('open')
     });
-  } else if (event.target.readyState === 'complete') {
-    // Add .randomRGBbg
-
-    function random(number) {
-      return Math.floor(Math.random() * (number + 1))
-    }
-
-    function randomRGB() {
-      let random255 = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-      return random255;
-    }
-
-    const randomRGBbg = document.querySelectorAll('#contents a')
-    for (const ii of randomRGBbg) {
-      ii.addEventListener('mouseenter', function (event) {
-        event.target.style.background = randomRGB()
-      });
-
-      ii.addEventListener('mouseleave', function (event) {
-        event.target.style.background = "";
-      });
-    }
   }
 });
+
+function random(number) {
+  return Math.floor(Math.random() * (number + 1))
+}
+
+function randomRGB() {
+  let random255 = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  return random255;
+}

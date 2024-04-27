@@ -2,10 +2,6 @@ body {
   background: #000;
 }
 
-dialog section {
-  line-height: 175%;
-}
-
 #menu,
 #log {
   filter: invert();
@@ -35,15 +31,19 @@ footer button {
   flex: 2 500px;
 }
 
+#closeModal {
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  font-size: 125%;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
 #log button,
 footer button {
-  appearance: none;
-  outline: none;
-  border: solid 2px;
+  border: solid 0.1rem;
   border-radius: 1rem;
   padding: 0.25rem 0.5rem;
-  pointer-events: auto;
-  user-select: auto;
   cursor: pointer;
 }
 

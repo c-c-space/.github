@@ -1,0 +1,129 @@
+#log,
+#now {
+    color: #000;
+    font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+    font-size: 100%;
+}
+
+#log li:nth-last-child(1) span:first-of-type {
+    font-family: "ipag", "Arial Narrow", Arial, monospace;
+    font-weight: 500;
+    transform: scale(1, 1.25);
+}
+
+button,
+select,
+code {
+    appearance: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+}
+
+button,
+select,
+code,
+#log li a {
+    color: inherit;
+}
+
+#log li b {
+    font-size: 150%;
+}
+
+body {
+    display: grid;
+}
+
+#log,
+#now {
+    display: flex;
+    gap: 0.25rem;
+}
+
+#log {
+    flex-flow: row-reverse wrap-reverse;
+    align-items: stretch;
+    justify-content: flex-start;
+    list-style: none inside;
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+}
+
+#now {
+    place-self: end center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#log li,
+#log li span,
+#log li:nth-last-child(1) {
+    padding: 0.25rem;
+}
+
+#log li {
+    font-size: 75%;
+    flex: 1 250px;
+    transition: all 1000ms ease;
+}
+
+#log li:nth-last-child(1) {
+    font-size: 100%;
+    flex: 2 500px;
+}
+
+#log li span {
+    display: block;
+}
+
+#log li span:first-of-type {
+    float: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#log li span:nth-of-type(2),
+#log li span:nth-of-type(3) {
+    float: right;
+}
+
+#log li span:last-of-type {
+    clear: both;
+    width: 100%;
+}
+
+#log li,
+#log li span {
+    word-wrap: break-word;
+}
+
+#ip,
+#os,
+code,
+#log li span:last-of-type {
+    word-break: break-all;
+}
+
+#now select,
+#now button {
+    border: 0.1rem solid;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 125%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+
+#now select:focus,
+#now select:focus {
+    filter: drop-shadow(0 0 0.1rem);
+}
+
+#now select:active,
+#now select:active {
+    filter: invert(1);
+}

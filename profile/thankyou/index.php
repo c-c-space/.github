@@ -6,25 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- HTML Meta Tags -->
-  <title>Thank You | creative-community.space</title>
-  <meta name="description" content="OMG! Your Drawing is Seems So Beautiful">
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://creative-community.space/profile/thankyou/">
   <meta property="og:type" content="website">
+  <title>Thank You | creative-community.space</title>
   <meta property="og:title" content="Thank You | creative-community.space">
+  <meta name="description" content="OMG! Your Drawing is Seems So Beautiful">
   <meta property="og:description" content="OMG! Your Drawing is Seems So Beautiful">
-  <meta property="og:image" content="https://creative-community.space/profile/thankyou/card.png">
 
-  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="creative-community.space">
-  <meta property="twitter:url" content="https://creative-community.space/profile/thankyou/">
-  <meta name="twitter:title" content="Thank You | creative-community.space">
-  <meta name="twitter:description" content="OMG! Your Drawing is Seems So Beautiful">
+  <meta property="og:url" content="https://creative-community.space/profile/thankyou/">
+  <meta property="og:image" content="https://creative-community.space/profile/thankyou/card.png">
   <meta name="twitter:image" content="https://creative-community.space/profile/thankyou/card.png">
 
+  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/ver/css/menu.css" />
   <script src="/ver/js/menu.js"></script>
   <script type="text/javascript">
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -33,8 +28,6 @@
     menuJSON('index.json')
   </script>
 
-  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/ver/css/menu.css" />
   <link rel="stylesheet" href="style.css" />
   <style>
     #sketch {

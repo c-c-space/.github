@@ -3,14 +3,14 @@
     {
       "date": "The Information About Network & Browser",
       "name": "通信情報／ブラウザ等情報",
-      "url": "/profile/",
+      "url": "profile/",
       "ver": "ver.2.2",
       "hidden": true
     },
     {
       "date": "Your Drawing is Seems So Beautiful",
       "name": "Thank You for Visiting",
-      "url": "/profile/thankyou/",
+      "url": "profile/thankyou/",
       "ver": "ver.2.0",
       "hidden": true
     }

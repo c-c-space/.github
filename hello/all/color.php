@@ -2,32 +2,36 @@
 <html lang="ja">
 
 <head>
-  <?php
-  $title = '日本の伝統的な季節の色';
-  $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="/ver/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../all/color.css" />
 
-  require('../head.php');
-  require('../greeting.php');
-  ?>
-
-  <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
-  <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
-
-  <link rel="stylesheet" href="../css/colors.css" />
+  <meta property="og:type" content="website">
+  <title>日本の伝統的な季節の色</title>
+  <meta property="og:title" content="日本の伝統的な季節の色">
+  <meta name="description" content="The Collection of Traditional Seasonal Colors of Japan">
+  <meta property="og:description" content="The Collection of Traditional Seasonal Colors of Japan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="og:url" content="https://creative-community.space/hello/all/color.php">
+  <meta content="https://creative-community.space/hello/all/color.png" property="og:image">
+  <meta content="https://creative-community.space/hello/all/color.png" name="twitter:image:src">
 </head>
 
 <body>
   <dialog id="modal">
     <h1>
       <ruby>
-        <b id="name"><?php echo $title; ?></b>
+        <b id="name">日本の伝統的な季節の色</b>
         <rp>(</rp>
         <rt id="yomi"></rt>
         <rp>)</rp>
       </ruby>
     </h1>
     <code id="hex"></code>
-    <p id="note"><?php echo $thisDescription; ?></p>
+    <p id="note">The Collection of Traditional Seasonal Colors of Japan</p>
     <p id="description" class="noprint">
       <small>ウェブサイトを出力する</small><br>
       <a href="#" onclick="window.print();">WWW to Print</a>
@@ -38,11 +42,11 @@
   </dialog>
   <main>
     <ul id="color"></ul>
-    <button id="backBtn" type="button" onclick="window.location.replace('/hello/all/');">
+    <button id="backBtn" type="button" onclick="history.back(); return false;">
       <b>↩︎</b>
     </button>
   </main>
-  <script src="colors.js"></script>
+  <script src="../all/color.js"></script>
   <script type="text/javascript">
     indexJSON('../spring/color.json');
     indexJSON('../summer/color.json');

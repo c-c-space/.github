@@ -1,0 +1,18 @@
+{
+  "contents": [
+    {
+      "date": "February 4 - May 4",
+      "name": "春 spring",
+      "url": "/hello/spring/",
+      "ver": "ver.2.2",
+      "hidden": true
+    },
+    {
+      "date": "The Collection of Traditional Seasonal Colors of Japan",
+      "name": "日本の伝統的な春の色",
+      "url": "/hello/spring/color.html",
+      "ver": "ver.2.0",
+      "hidden": true
+    }
+  ]
+}

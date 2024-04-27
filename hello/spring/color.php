@@ -2,34 +2,36 @@
 <html lang="ja">
 
 <head>
-  <?php
-  $season = "spring";
-  $thisSeason = "春";
-  $thisDate = "February 4 - May 4";
-  $title = '日本の伝統的な' . $thisSeason . 'の色';
-  $thisDescription = "The Collection of Traditional Seasonal Colors of Japan";
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="/ver/icon/favicon.png">
+  <link rel="stylesheet" href="../all/color.css" />
 
-  require('../head.php');
-  ?>
-
-  <meta content="<?php echo $url . "/summary.png"; ?>" property="og:image">
-  <meta content="<?php echo $url . "/summary.png"; ?>" name="twitter:image:src">
-
-  <link rel="stylesheet" href="../css/colors.css" />
+  <meta property="og:type" content="website">
+  <title>日本の伝統的な春の色</title>
+  <meta property="og:title" content="日本の伝統的な春の色">
+  <meta name="description" content="The Collection of Traditional Seasonal Colors of Japan">
+  <meta property="og:description" content="The Collection of Traditional Seasonal Colors of Japan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="creative-community.space">
+  <meta property="og:url" content="https://creative-community.space/hello/spring/color.php">
+  <meta content="https://creative-community.space/hello/spring/color.png" property="og:image">
+  <meta content="https://creative-community.space/hello/spring/color.png" name="twitter:image:src">
 </head>
 
 <body>
   <dialog id="modal">
     <h1>
       <ruby>
-        <b id="name"><?php echo $title; ?></b>
+        <b id="name">日本の伝統的な春の色</b>
         <rp>(</rp>
-        <rt id="yomi"><?php echo $season . ' | ' . $thisDate; ?></rt>
+        <rt id="yomi">SPRING | FEBRUARY 4 - MAY 4</rt>
         <rp>)</rp>
       </ruby>
     </h1>
     <code id="hex"></code>
-    <p id="note"><?php echo $thisDescription; ?></p>
+    <p id="note">The Collection of Traditional Seasonal Colors of Japan</p>
     <p id="description" class="noprint">
       <small>ウェブサイトを出力する</small><br>
       <a href="#" onclick="window.print();">WWW to Print</a>
@@ -40,12 +42,14 @@
   </dialog>
   <main>
     <ul id="color"></ul>
-    <button id="backBtn" type="button" onclick="window.location.replace('/hello/<?php echo $season; ?>/');">
+    <button id="backBtn" type="button" onclick="history.back(); return false;">
       <b>↩︎</b>
     </button>
   </main>
-  <script src="../all/colors.js"></script>
+  <script src="../all/color.js"></script>
   <script type="text/javascript">
-    indexJSON('color.json');
+    indexJSON('../spring/color.json');
   </script>
 </body>
+
+</html>

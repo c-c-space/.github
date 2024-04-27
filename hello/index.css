@@ -1,0 +1,163 @@
+#log {
+  font-family: "ipag", "Arial Narrow", monospace;
+}
+
+#hello {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+code {
+  font-family: inherit;
+}
+
+h3 {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#readme {
+  font-size: 120%;
+  width: 90vw;
+  max-width: 33.333rem;
+}
+
+label {
+  font-size: 90%;
+  line-height: 150%;
+}
+
+#lastModified {
+  font-size: 45%;
+}
+
+#modal p {
+  line-height: 222%;
+}
+
+#log h1,
+#log h2,
+#login-btn,
+#modal p u {
+  filter: invert();
+  mix-blend-mode: difference;
+}
+
+#log h2 a {
+  color: inherit;
+}
+
+#modal #about small {
+  display: inline-block;
+  text-decoration: underline wavy;
+}
+
+body {
+  position: fixed;
+}
+
+body,
+#log {
+  width: 100vw;
+}
+
+body,
+#log {
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#log article,
+#hello {
+  width: 100%;
+}
+
+#log h2 {
+  padding: 1rem;
+}
+
+#log article,
+#hello {
+  max-height: 100%;
+  overflow: auto;
+}
+
+body,
+h1,
+#log {
+  display: grid;
+  place-content: center;
+}
+
+#log article,
+#log article section,
+#now,
+#next {
+  display: flex;
+}
+
+#log article {
+  gap: 1rem;
+  place-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#log article section {
+  gap: 0.5rem;
+  flex-flow: column;
+  place-items: flex-start;
+}
+
+#now,
+#next {
+  place-items: flex-end;
+  justify-content: space-between;
+}
+
+#log,
+#now {
+  padding: 0.5rem;
+}
+
+#log article,
+#hello {
+  padding: 0.5rem 0.5rem 4rem 0.5rem;
+}
+
+#hello form {
+  margin: 1rem 0;
+}
+
+#login-btn {
+  margin-bottom: 2.5rem;
+}
+
+#log[hidden] {
+  display: none;
+}
+
+#log article,
+#now {
+  position: absolute;
+}
+
+#login-btn {
+  position: relative;
+}
+
+#login-btn,
+#now {
+  z-index: 10;
+}
+
+#log article {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#now {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
