@@ -1,11 +1,5 @@
 'use strict'
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.style.background = "#000";
-  document.body.style.padding = "0";
-  document.body.style.margin = "0";
-}, false);
-
 window.addEventListener('load', () => {
   document.addEventListener('mousemove', touchHSL)
   document.addEventListener('touchstart', touchHSL)
