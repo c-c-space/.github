@@ -123,17 +123,24 @@ h1,
   flex: 1 calc(100% / 6 - 1rem);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 
   #log article .ko {
     flex: 1 calc(100% / 3 - 1rem);
   }
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 750px) {
 
   #log article .ko {
     flex: 1 calc(100% / 2 - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #log article .ko {
+    flex: 1 calc(100% - 1rem);
   }
 }
 
