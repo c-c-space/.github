@@ -120,7 +120,21 @@ h1,
 }
 
 #log article .ko {
-  flex: 1 300px;
+  flex: 1 calc(100% / 6 - 1rem);
+}
+
+@media screen and (max-width: 1200px) {
+
+  #log article .ko {
+    flex: 1 calc(100% / 3 - 1rem);
+  }
+}
+
+@media (orientation: portrait) {
+
+  #log article .ko {
+    flex: 1 calc(100% / 2 - 1rem);
+  }
 }
 
 #log article#submit article {
