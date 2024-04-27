@@ -71,6 +71,12 @@ body,
   width: 100%;
 }
 
+#hello form {
+  margin: 1rem auto;
+  width: 95%;
+  max-width: 750px;
+}
+
 #log h2 {
   padding: 1rem;
 }
