@@ -84,7 +84,7 @@ document.addEventListener('readystatechange', event => {
                 setLOG()
             }, false)
         }
-        fetchText('README.md', '#howto')
+        fetchText('readme.md', '#howto')
     } else if (event.target.readyState === 'complete') {
         const d = new Date(),
             mm = d.getMonth() + 1,
