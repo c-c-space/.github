@@ -56,7 +56,8 @@ body {
 }
 
 body,
-#log {
+#log,
+#hello {
   width: 100vw;
 }
 
@@ -66,8 +67,7 @@ body,
   max-height: -webkit-fill-available;
 }
 
-#log article,
-#hello {
+#log article {
   width: 100%;
 }
 
