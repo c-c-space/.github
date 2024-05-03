@@ -40,13 +40,13 @@ document.addEventListener('readystatechange', event => {
                 const voiceIndex = document.querySelector('#voice-select')
                 const selectVoice = voiceIndex.selectedIndex;
                 const thisPitch = document.querySelector("#pitch").value;
-                const thisRate = document.querySelector("#rate").dataset.lang;
+                const thisRate = document.querySelector("#rate").value;
 
                 let thisHello = {
                     timestamp: new Date().toLocaleString(),
                     hello: thisText.innerText,
                     voice: voiceIndex.options[selectVoice].value,
-                    lang: voiceIndex.options[selectVoice].lang,
+                    lang: voiceIndex.options[selectVoice].dataset.lang,
                     pitch: thisPitch,
                     rate: thisRate
                 }
