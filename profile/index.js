@@ -34,7 +34,7 @@ document.addEventListener('readystatechange', event => {
       const emotions = document.createElement("li")
       emotions.innerHTML += `
       <span>
-      <button class="color bgcolor" onclick="location.assign('/org/')">● ◐ ◑ ○</button>
+      <button class="color bgcolor" onclick="location.assign('/org/')">○ ◐ ● ◑</button>
       </span>
       <span>月の満ち欠けと感情（その強さ）</span>
       <span></span>
