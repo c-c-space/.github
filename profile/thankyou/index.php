@@ -28,7 +28,7 @@
     menuJSON('index.json')
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=1.0" />
   <style>
     #sketch {
       filter: invert();

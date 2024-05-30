@@ -1,15 +1,22 @@
 {
   "contents": [
     {
-      "date": "Colors and Symbols that Suit You",
+      "date": "Colors & Symbols that Suit You",
       "name": "自分の気持ちを知る・表す",
       "url": "/sign/",
       "ver": "",
       "hidden": true
     },
     {
-      "date": "things that i (we) heard",
-      "name": "私（わたしたち）が聞いたこと",
+      "date": "Emoji that Your Emotions",
+      "name": "月の満ち欠けと感情（その強さ）",
+      "url": "/org/",
+      "ver": "",
+      "hidden": true
+    },
+    {
+      "date": "things that you heard",
+      "name": "あなたが聞いたこと",
       "url": "/map/",
       "ver": "",
       "hidden": true
