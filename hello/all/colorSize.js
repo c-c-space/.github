@@ -30,12 +30,12 @@ document.addEventListener('readystatechange', event => {
         <p>
         <label for="color">文字の色</label>
         <select class="color bgcolor" id="color">
-            <option value="#000" selected>Text Color</option>
+            <option value="#111" selected>Text Color</option>
         </select>
         <br/>
         <label for="bgcolor">背景の色</label>
         <select class="color bgcolor" id="bgcolor">
-            <option value="#fff" selected>Background Color</option>
+            <option value="#eee" selected>Background Color</option>
         </select>
         </p>
         <p>
