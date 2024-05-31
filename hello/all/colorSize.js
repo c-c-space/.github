@@ -35,7 +35,7 @@ document.addEventListener('readystatechange', event => {
         <br/>
         <label for="bgcolor">背景の色</label>
         <select class="color bgcolor" id="bgcolor">
-            <option value="#eee" selected>Background Color</option>
+            <option value="#fff" selected>Background Color</option>
         </select>
         </p>
         <p>
