@@ -10,7 +10,7 @@ async function csvtojson(csv) {
     const data = text.trim().split('\n')
         .map(line => line.split(',').map(x => x.trim()))
         .map(comma => {
-            if (data.length <= 0) {
+            if (!data.length == 0) {
                 let voice = comma[1].replaceAll('"', "");
                 let lang = comma[2].replaceAll('"', "");
                 let pitch = comma[3].replaceAll('"', "");
