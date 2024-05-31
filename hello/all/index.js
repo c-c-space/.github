@@ -7,10 +7,11 @@ let helloAll = {
 async function csvtojson(csv) {
     const response = await fetch(csv + '?' + Date.now())
     const text = await response.text()
-    const data = text.trim().split('\n')
-        .map(line => line.split(',').map(x => x.trim()))
-        .map(comma => {
-            if (!data.length == 0) {
+    console.log(text.length)
+    if (!text.length == 0) {
+        const data = text.trim().split('\n')
+            .map(line => line.split(',').map(x => x.trim()))
+            .map(comma => {
                 let voice = comma[1].replaceAll('"', "");
                 let lang = comma[2].replaceAll('"', "");
                 let pitch = comma[3].replaceAll('"', "");
@@ -27,8 +28,8 @@ async function csvtojson(csv) {
                     timestamp: timestamp
                 };
                 helloAll.index.push(helloThis);
-            }
-        }, false)
+            }, false)
+    }
 }
 
 window.addEventListener('load', () => {
