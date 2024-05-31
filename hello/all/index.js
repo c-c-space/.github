@@ -4,37 +4,34 @@ let helloAll = {
     index: []
 };
 
-let posts = 0;
-
 async function csvtojson(csv) {
     const response = await fetch(csv + '?' + Date.now())
     const text = await response.text()
     const data = text.trim().split('\n')
         .map(line => line.split(',').map(x => x.trim()))
         .map(comma => {
-            let voice = comma[1].replaceAll('"', "");
-            let lang = comma[2].replaceAll('"', "");
-            let pitch = comma[3].replaceAll('"', "");
-            let rate = comma[4].replaceAll('"', "");
-            let hello = comma[5].replaceAll('"', "");
-            let timestamp = comma[0].replaceAll('"', "");
+            if (data.length <= 0) {
+                let voice = comma[1].replaceAll('"', "");
+                let lang = comma[2].replaceAll('"', "");
+                let pitch = comma[3].replaceAll('"', "");
+                let rate = comma[4].replaceAll('"', "");
+                let hello = comma[5].replaceAll('"', "");
+                let timestamp = comma[0].replaceAll('"', "");
 
-            let helloThis = {
-                voice: voice,
-                lang: lang,
-                pitch: pitch,
-                rate: rate,
-                hello: hello,
-                timestamp: timestamp
-            };
-            helloAll.index.push(helloThis);
+                let helloThis = {
+                    voice: voice,
+                    lang: lang,
+                    pitch: pitch,
+                    rate: rate,
+                    hello: hello,
+                    timestamp: timestamp
+                };
+                helloAll.index.push(helloThis);
+            }
         }, false)
-    posts + data.length;
 }
 
 window.addEventListener('load', () => {
-    console.log(posts)
-
     for (const post of shuffle(helloAll.index)) {
         const section = document.createElement('section')
         document.querySelector('#submit').appendChild(section)
