@@ -16,11 +16,11 @@ if (localStorage.getItem('yourInfo')) {
         case "loading":
             const head = document.querySelector('head')
             const recognitionJS = document.createElement("script")
-            recognitionJS.src = 'js/recognition.js';
+            recognitionJS.src = 'js/recognition.js' + '?' + Date.now();
             head.appendChild(recognitionJS)
 
             const synthesisJS = document.createElement("script")
-            synthesisJS.src = 'js/synthesis.js';
+            synthesisJS.src = 'js/synthesis.js' + '?' + Date.now();
             head.appendChild(synthesisJS)
             break;
     }
@@ -84,7 +84,7 @@ document.addEventListener('readystatechange', event => {
                 setLOG()
             }, false)
         }
-        fetchText('readme.md', '#howto')
+        fetchText('README.md', '#howto')
     } else if (event.target.readyState === 'complete') {
         const d = new Date(),
             mm = d.getMonth() + 1,
@@ -267,7 +267,7 @@ document.addEventListener('readystatechange', event => {
             timeframeI.textContent = timeframe;
         }
 
-        helloCSV(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
+        csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
 
         const lastModified = document.querySelector('#lastModified');
         lastModified.innerHTML =

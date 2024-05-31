@@ -34,23 +34,21 @@ if (location.search) {
         thisDescription = "Spring rains and seed sowing";
     }
 
+    csvtojson(`${thisSekki}/morning.csv`)
+    csvtojson(`${thisSekki}/afternoon.csv`)
+    csvtojson(`${thisSekki}/evening.csv`)
+    csvtojson(`${thisSekki}/night.csv`)
+
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').remove()
-    }, false)
-
-    window.addEventListener('load', () => {
         koJSON(`${thisSekki}/ko.json`)
-        helloCSV(`${thisSekki}/morning.csv`)
-        helloCSV(`${thisSekki}/afternoon.csv`)
-        helloCSV(`${thisSekki}/evening.csv`)
-        helloCSV(`${thisSekki}/night.csv`)
     }, false)
 } else {
     thisSeason = "春 spring";
     thisDate = "February 4 - May 4";
     thisDescription = "「はる」は万物が発る季節";
 
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         koJSON('sekki.json')
     }, false)
 }

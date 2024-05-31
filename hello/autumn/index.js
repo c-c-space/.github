@@ -34,23 +34,21 @@ if (location.search) {
         thisDescription = "The Season of Frost";
     }
 
+    csvtojson(`${thisSekki}/morning.csv`)
+    csvtojson(`${thisSekki}/afternoon.csv`)
+    csvtojson(`${thisSekki}/evening.csv`)
+    csvtojson(`${thisSekki}/night.csv`)
+
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').remove()
-    }, false)
-
-    window.addEventListener('load', () => {
         koJSON(`${thisSekki}/ko.json`)
-        helloCSV(`${thisSekki}/morning.csv`)
-        helloCSV(`${thisSekki}/afternoon.csv`)
-        helloCSV(`${thisSekki}/evening.csv`)
-        helloCSV(`${thisSekki}/night.csv`)
     }, false)
 } else {
     thisSeason = "秋 autumn";
     thisDate = "August 8 - November 7";
     thisDescription = "「あき」は草木が紅（あか）く染まる季節";
 
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         koJSON('sekki.json')
     }, false)
 }

@@ -1,4 +1,12 @@
-async function helloCSV(csv) {
+'use strict'
+
+let helloAll = {
+    index: []
+};
+
+let posts = 0;
+
+async function csvtojson(csv) {
     const response = await fetch(csv + '?' + Date.now())
     const text = await response.text()
     const data = text.trim().split('\n')
@@ -9,35 +17,62 @@ async function helloCSV(csv) {
             let pitch = comma[3].replaceAll('"', "");
             let rate = comma[4].replaceAll('"', "");
             let hello = comma[5].replaceAll('"', "");
-            const section = document.createElement('section')
-            document.querySelector('#submit').appendChild(section)
+            let timestamp = comma[0].replaceAll('"', "");
 
-            const code = document.createElement('code')
-            code.textContent = `${voice} (${lang})`;
-            section.appendChild(code)
-
-            const button = document.createElement('button')
-            section.appendChild(button)
-            button.textContent = comma[0].replaceAll('"', "");
-            button.setAttribute('type', 'button');
-            button.addEventListener('click', function () {
-                const uttr = new SpeechSynthesisUtterance()
-                uttr.text = hello;
-                uttr.lang = lang;
-                uttr.voice = speechSynthesis
-                    .getVoices()
-                    .filter(voice => voice.name === voice)[0]
-
-                uttr.pitch = pitch;
-                uttr.rate = rate;
-                speechSynthesis.speak(uttr)
-
-                const output = document.querySelector('#log h1 b')
-                const logH2 = document.querySelector('#log h2')
-                output.innerText = hello;
-                logH2.innerText = comma[0].replaceAll('"', "");
-                lastModified.innerText = 'Pitch (音域) ' + pitch + ' | Rate (速度)' + rate;
-            }, false)
+            let helloThis = {
+                voice: voice,
+                lang: lang,
+                pitch: pitch,
+                rate: rate,
+                hello: hello,
+                timestamp: timestamp
+            };
+            helloAll.index.push(helloThis);
         }, false)
-    let posts = data.length;
+    posts + data.length;
+}
+
+window.addEventListener('load', () => {
+    console.log(posts)
+
+    for (const post of shuffle(helloAll.index)) {
+        const section = document.createElement('section')
+        document.querySelector('#submit').appendChild(section)
+        const code = document.createElement('code')
+        code.textContent = `${post.voice} (${post.lang})`;
+        section.appendChild(code)
+
+        const button = document.createElement('button')
+        button.setAttribute('type', 'button')
+        button.textContent = post.timestamp;
+        section.appendChild(button)
+
+        button.addEventListener('click', function () {
+            const uttr = new SpeechSynthesisUtterance()
+            uttr.text = post.hello;
+            uttr.lang = post.lang;
+            uttr.voice = speechSynthesis
+                .getVoices()
+                .filter(voice => voice.name === post.voice)[0]
+
+            uttr.pitch = post.pitch;
+            uttr.rate = post.rate;
+            speechSynthesis.speak(uttr)
+
+            const output = document.querySelector('#log h1 b')
+            const logH2 = document.querySelector('#log h2')
+            output.innerText = post.hello;
+            logH2.innerText = post.timestamp;
+            lastModified.innerText = 'Pitch (音域) ' + post.pitch + ' | Rate (速度)' + post.rate;
+        }, false)
+    }
+}, false)
+
+function shuffle(arrays) {
+    const array = arrays.slice();
+    for (let i = array.length - 1; i >= 0; i--) {
+        const shuffleArr = Math.floor(Math.random() * (i + 1));
+        [array[i], array[shuffleArr]] = [array[shuffleArr], array[i]];
+    }
+    return array;
 }

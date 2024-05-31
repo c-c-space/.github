@@ -34,23 +34,21 @@ if (location.search) {
         thisDescription = "Hottest time of the year";
     }
 
+    csvtojson(`${thisSekki}/morning.csv`)
+    csvtojson(`${thisSekki}/afternoon.csv`)
+    csvtojson(`${thisSekki}/evening.csv`)
+    csvtojson(`${thisSekki}/night.csv`)
+
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').remove()
-    }, false)
-
-    window.addEventListener('load', () => {
         koJSON(`${thisSekki}/ko.json`)
-        helloCSV(`${thisSekki}/morning.csv`)
-        helloCSV(`${thisSekki}/afternoon.csv`)
-        helloCSV(`${thisSekki}/evening.csv`)
-        helloCSV(`${thisSekki}/night.csv`)
     }, false)
 } else {
     thisSeason = "夏 summer";
     thisDate = "May 5 - August 7";
     thisDescription = "「なつ」は熱（ねつ）の季節";
 
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         koJSON('sekki.json')
     }, false)
 }

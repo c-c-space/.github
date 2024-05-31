@@ -33,18 +33,18 @@
     <meta property="og:image" content="<?php echo $url . $season . " /summary.png"; ?>">
     <meta name="twitter:image" content="<?php echo $url . $season . " /summary.png"; ?>">
 
-    <script src="index.js?v=1.11"></script>
-    <script src="all/index.js?v=1"></script>
+    <script src="index.js?v=1.23"></script>
+    <script src="all/index.js?v=1.1"></script>
     <script src="all/colorSize.js?v=1"></script>
-    <link rel="stylesheet" href="index.css?v=1" />
-
-    <link rel="stylesheet" href="../ver/css/menu.css?v=1" />
-    <link rel="stylesheet" href="../ver/css/controls.css?v=1" />
-    <link rel="stylesheet" href="../ver/css/modal.css?v=1" />
     <script src="../ver/js/menu.js?v=1"></script>
     <script src="../ver/js/modal.js?v=1"></script>
     <script src="../ver/js/login.js?v=1"></script>
     <script src="../ver/js/speechAPI.js?v=1"></script>
+
+    <link rel="stylesheet" href="index.css?v=1" />
+    <link rel="stylesheet" href="../ver/css/menu.css?v=1" />
+    <link rel="stylesheet" href="../ver/css/controls.css?v=1" />
+    <link rel="stylesheet" href="../ver/css/modal.css?v=1" />
 </head>
 
 <body>
@@ -112,14 +112,12 @@
                 <div class="range">
                     <label for="pitch">Pitch</label>
                     <code class="pitch-value"></code>
-                    <input id="pitch" class="color bgcolor" name="pitch" type="range" min="0" max="2" value="1"
-                        step="0.1" />
+                    <input id="pitch" class="color bgcolor" name="pitch" type="range" min="0" max="2" value="1" step="0.1" />
                 </div>
                 <div class="range">
                     <label for="rate">Rate</label>
                     <code class="rate-value"></code>
-                    <input id="rate" class="color bgcolor" name="rate" type="range" min="0.1" max="2" value="1"
-                        step="0.1" />
+                    <input id="rate" class="color bgcolor" name="rate" type="range" min="0.1" max="2" value="1" step="0.1" />
                 </div>
             </section>
             <hr>
