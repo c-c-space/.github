@@ -180,7 +180,9 @@ document.addEventListener('readystatechange', event => {
         async function getAllCSV() {
             csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
             await new Promise(() => {
-                viewAll()
+                setTimeout(() => {
+                    viewAll()
+                }, 2000);
             })
         }
 
