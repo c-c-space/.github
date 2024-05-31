@@ -34,12 +34,13 @@ if (location.search) {
         thisDescription = "Coldest time of the year";
     }
 
+    csvtojson(`${thisSekki}/morning.csv?${Date.now()}`)
+    csvtojson(`${thisSekki}/afternoon.csv?${Date.now()}`)
+    csvtojson(`${thisSekki}/evening.csv?${Date.now()}`)
+    csvtojson(`${thisSekki}/night.csv?${Date.now()}`)
+
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').textContent = "";
-        csvtojson(`${thisSekki}/morning.csv`)
-        csvtojson(`${thisSekki}/afternoon.csv`)
-        csvtojson(`${thisSekki}/evening.csv`)
-        csvtojson(`${thisSekki}/night.csv`)
         koJSON(`${thisSekki}/ko.json`)
     }, false)
 } else {

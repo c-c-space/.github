@@ -43,6 +43,7 @@ function shuffle(arrays) {
 
 window.addEventListener('load', () => {
     console.log(shuffle(helloAll.index))
+
     for (const post of shuffle(helloAll.index)) {
         const section = document.createElement('section')
         document.querySelector('#submit').appendChild(section)
