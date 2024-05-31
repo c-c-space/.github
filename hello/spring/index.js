@@ -34,12 +34,20 @@ if (location.search) {
         thisDescription = "Spring rains and seed sowing";
     }
 
-    function getAllCSV() {
+    function resolveAfter2Seconds() {
+        return new Promise(() => {
+            setTimeout(() => {
+                viewAll()
+            }, 2000);
+        });
+    }
+
+    async function asyncCall() {
         csvtojson(`${thisSekki}/morning.csv`)
         csvtojson(`${thisSekki}/afternoon.csv`)
         csvtojson(`${thisSekki}/evening.csv`)
         csvtojson(`${thisSekki}/night.csv`)
-        return viewAll();
+        const result = await resolveAfter2Seconds();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -47,10 +55,7 @@ if (location.search) {
         koJSON(`${thisSekki}/ko.json`)
         sekkiJSON('sekki.json')
         colorJSON('color.json')
-    }, false)
-
-    window.addEventListener('load', () => {
-        getAllCSV()
+        asyncCall()
     }, false)
 } else {
     thisSeason = "春 Spring";
