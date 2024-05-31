@@ -42,6 +42,8 @@ if (location.search) {
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').textContent = "";
         koJSON(`${thisSekki}/ko.json`)
+        sekkiJSON('sekki.json')
+        colorJSON('color.json')
     }, false)
 
     window.addEventListener('load', () => {
@@ -54,5 +56,7 @@ if (location.search) {
 
     document.addEventListener('DOMContentLoaded', () => {
         koJSON('sekki.json')
+        sekkiJSON('sekki.json')
+        colorJSON('color.json')
     }, false)
 }
