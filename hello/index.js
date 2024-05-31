@@ -177,7 +177,14 @@ document.addEventListener('readystatechange', event => {
             colorJSON('/hello/winter/color.json')
         }
 
-        csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
+        async function getAllCSV() {
+            csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
+            await new Promise(() => {
+                viewAll()
+            })
+        }
+
+        getAllCSV()
 
         const loginBtn = document.querySelector('#login-btn')
         const helloForm = document.querySelector('#hello form')
@@ -274,7 +281,5 @@ document.addEventListener('readystatechange', event => {
             'Last Modified <time datetime="'
             + document.lastModified + '">'
             + document.lastModified + '</time>';
-
-        viewAll()
     }
 }, false)

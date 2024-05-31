@@ -34,20 +34,14 @@ if (location.search) {
         thisDescription = "The Season of Frost";
     }
 
-    function resolveAfter2Seconds() {
-        return new Promise(() => {
-            setTimeout(() => {
-                viewAll()
-            }, 2000);
-        });
-    }
-
-    async function asyncCall() {
+    async function getAllCSV() {
         csvtojson(`${thisSekki}/morning.csv`)
         csvtojson(`${thisSekki}/afternoon.csv`)
         csvtojson(`${thisSekki}/evening.csv`)
         csvtojson(`${thisSekki}/night.csv`)
-        const result = await resolveAfter2Seconds();
+        await new Promise(() => {
+            viewAll()
+        })
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -55,7 +49,7 @@ if (location.search) {
         koJSON(`${thisSekki}/ko.json`)
         sekkiJSON('sekki.json')
         colorJSON('color.json')
-        asyncCall()
+        getAllCSV()
     }, false)
 } else {
     thisSeason = "秋 Autumn";
