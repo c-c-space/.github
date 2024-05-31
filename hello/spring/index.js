@@ -34,14 +34,20 @@ if (location.search) {
         thisDescription = "Spring rains and seed sowing";
     }
 
+    function viewTheCollection() {
+        return new Promise(() => {
+            setTimeout(() => {
+                viewAll()
+            }, 2000);
+        });
+    }
+
     async function getAllCSV() {
         csvtojson(`${thisSekki}/morning.csv`)
         csvtojson(`${thisSekki}/afternoon.csv`)
         csvtojson(`${thisSekki}/evening.csv`)
         csvtojson(`${thisSekki}/night.csv`)
-        await new Promise(() => {
-            viewAll()
-        })
+        await viewTheCollection();
     }
 
     document.addEventListener('DOMContentLoaded', () => {

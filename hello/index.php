@@ -35,7 +35,7 @@
 
     <script src="all/index.js?v=2.0"></script>
     <script src="all/colorSize.js?v=1"></script>
-    <script src="index.js?v=2.22"></script>
+    <script src="index.js?v=2.2"></script>
     <script src="../ver/js/menu.js?v=1"></script>
     <script src="../ver/js/modal.js?v=1"></script>
     <script src="../ver/js/login.js?v=1"></script>
