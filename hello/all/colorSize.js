@@ -67,15 +67,21 @@ document.addEventListener('readystatechange', event => {
 
         if (localStorage.getItem('color')) {
             setStyle('color', localStorage.getItem('color'))
+        } else {
+            setStyle('color', colorSelect.value)
         }
 
         if (localStorage.getItem('bgcolor')) {
             setStyle('bgcolor', localStorage.getItem('bgcolor'))
+        } else {
+            setStyle('bgcolor', bgcolorSelect.value)
         }
 
         if (localStorage.getItem('fontSize')) {
             setStyle('fontSize', localStorage.getItem('fontSize'))
             fontSize.value = localStorage.getItem('fontSize')
+        } else {
+            setStyle('fontSize', fontSize.value)
         }
 
         function setStyle(style, value) {
