@@ -177,13 +177,17 @@ document.addEventListener('readystatechange', event => {
             colorJSON('/hello/winter/color.json')
         }
 
-        async function getAllCSV() {
-            csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
-            await new Promise(() => {
+        function viewTheCollection() {
+            return new Promise(() => {
                 setTimeout(() => {
                     viewAll()
                 }, 2000);
-            })
+            });
+        }
+
+        async function getAllCSV() {
+            csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
+            await viewTheCollection();
         }
 
         getAllCSV()
