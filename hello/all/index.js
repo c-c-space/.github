@@ -36,6 +36,7 @@ window.addEventListener('load', () => {
     for (const post of shuffle(helloAll.index)) {
         const section = document.createElement('section')
         document.querySelector('#submit').appendChild(section)
+
         const code = document.createElement('code')
         code.textContent = `${post.voice} (${post.lang})`;
         section.appendChild(code)

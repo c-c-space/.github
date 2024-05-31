@@ -34,13 +34,12 @@ if (location.search) {
         thisDescription = "The Season of Frost";
     }
 
-    csvtojson(`${thisSekki}/morning.csv`)
-    csvtojson(`${thisSekki}/afternoon.csv`)
-    csvtojson(`${thisSekki}/evening.csv`)
-    csvtojson(`${thisSekki}/night.csv`)
-
     document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('#about i').remove()
+        document.querySelector('#about i').textContent = "";
+        csvtojson(`${thisSekki}/morning.csv`)
+        csvtojson(`${thisSekki}/afternoon.csv`)
+        csvtojson(`${thisSekki}/evening.csv`)
+        csvtojson(`${thisSekki}/night.csv`)
         koJSON(`${thisSekki}/ko.json`)
     }, false)
 } else {
