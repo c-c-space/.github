@@ -43,6 +43,10 @@ if (location.search) {
         document.querySelector('#about i').textContent = "";
         koJSON(`${thisSekki}/ko.json`)
     }, false)
+
+    window.addEventListener('load', () => {
+        viewAll()
+    }, false)
 } else {
     thisSeason = "冬 winter";
     thisDate = "November 8 - February 3";

@@ -43,8 +43,12 @@ if (location.search) {
         document.querySelector('#about i').textContent = "";
         koJSON(`${thisSekki}/ko.json`)
     }, false)
+
+    window.addEventListener('load', () => {
+        viewAll()
+    }, false)
 } else {
-    thisSeason = "春 spring";
+    thisSeason = "春 Spring";
     thisDate = "February 4 - May 4";
     thisDescription = "「はる」は万物が発る季節";
 

@@ -5,26 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="author" content="creative-community.space">
-    <meta name="reply-to" content="pehu@creative-community.space">
-    <link rel="icon" href="/ver/icon/favicon.png">
-
-    <link rel="stylesheet" href="../index.css?v=1" />
-    <script src="../all/index.js?v=1"></script>
-    <script src="../all/72ko.js?v=1"></script>
-    <script src="../all/colorSize.js?v=1"></script>
-    <script>
-        thisSeason = "二十四節気";
-        thisDate = "24 Sekki";
-        thisDescription = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
-
-        document.addEventListener('DOMContentLoaded', function () {
-            koJSON('../spring/sekki.json')
-            koJSON('../summer/sekki.json')
-            koJSON('../autumn/sekki.json')
-            koJSON('../winter/sekki.json')
-        });
-    </script>
 
     <meta property="og:type" content="website">
     <title>二十四節気 | 24 Sekki</title>
@@ -40,13 +20,34 @@
     <meta property="og:image" content="https://creative-community.space/hello/all/summary.png">
     <meta name="twitter:image" content="https://creative-community.space/hello/all/summary.png">
 
+    <meta name="author" content="creative-community.space">
+    <meta name="reply-to" content="pehu@creative-community.space">
+    <link rel="icon" href="/ver/icon/favicon.png">
+    <link rel="stylesheet" href="../index.css?v=1" />
+
+    <script src="../all/72ko.js?v=1"></script>
+    <script src="../all/colorSize.js?v=1"></script>
+    <script>
+        thisSeason = "二十四節気";
+        thisDate = "24 Sekki";
+        thisDescription = "divided each of the Four Seasons into 6 according to the ecliptic longitude of the Sun.";
+
+        document.addEventListener('DOMContentLoaded', function () {
+            koJSON('../spring/sekki.json')
+            koJSON('../summer/sekki.json')
+            koJSON('../autumn/sekki.json')
+            koJSON('../winter/sekki.json')
+        });
+    </script>
+
     <link rel="stylesheet" href="../../ver/css/menu.css?v=1" />
     <link rel="stylesheet" href="../../ver/css/controls.css?v=1" />
     <script src="../../ver/js/menu.js?v=1"></script>
     <script src="../../ver/js/speechAPI.js?v=1"></script>
     <script>
         menuJSON('index.json')
-    </script></head>
+    </script>
+</head>
 
 <body>
     <header id="menu" class="bgcolor color" hidden>

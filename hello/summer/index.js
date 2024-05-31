@@ -43,8 +43,12 @@ if (location.search) {
         document.querySelector('#about i').textContent = "";
         koJSON(`${thisSekki}/ko.json`)
     }, false)
+
+    window.addEventListener('load', () => {
+        viewAll()
+    }, false)
 } else {
-    thisSeason = "夏 summer";
+    thisSeason = "夏 Summer";
     thisDate = "May 5 - August 7";
     thisDescription = "「なつ」は熱（ねつ）の季節";
 

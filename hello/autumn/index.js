@@ -43,8 +43,12 @@ if (location.search) {
         document.querySelector('#about i').textContent = "";
         koJSON(`${thisSekki}/ko.json`)
     }, false)
+
+    window.addEventListener('load', () => {
+        viewAll()
+    }, false)
 } else {
-    thisSeason = "秋 autumn";
+    thisSeason = "秋 Autumn";
     thisDate = "August 8 - November 7";
     thisDescription = "「あき」は草木が紅（あか）く染まる季節";
 

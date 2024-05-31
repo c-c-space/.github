@@ -41,7 +41,7 @@ function shuffle(arrays) {
     return array;
 }
 
-window.addEventListener('load', () => {
+function viewAll() {
     console.log(shuffle(helloAll.index))
 
     for (const post of shuffle(helloAll.index)) {
@@ -76,4 +76,4 @@ window.addEventListener('load', () => {
             lastModified.innerText = 'Pitch (音域) ' + post.pitch + ' | Rate (速度)' + post.rate;
         }, false)
     }
-}, false)
+}

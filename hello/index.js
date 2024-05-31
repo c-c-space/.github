@@ -274,5 +274,7 @@ document.addEventListener('readystatechange', event => {
             'Last Modified <time datetime="'
             + document.lastModified + '">'
             + document.lastModified + '</time>';
+
+        viewAll()
     }
 }, false)
