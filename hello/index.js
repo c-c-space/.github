@@ -127,8 +127,6 @@ if (hh >= 6 && hh <= 11) {
     greeting = "Good Night おやすみ";
 }
 
-csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
-
 function changeHidden() {
     const mainAll = document.querySelectorAll('main')
     mainAll.forEach(main => {
@@ -178,6 +176,8 @@ document.addEventListener('readystatechange', event => {
             sikiDate = "November 8 - February 3";
             colorJSON('/hello/winter/color.json')
         }
+
+        csvtojson(siki + '/' + sekki + '/' + timeframe + '.csv?' + Date.now())
 
         const loginBtn = document.querySelector('#login-btn')
         const helloForm = document.querySelector('#hello form')
