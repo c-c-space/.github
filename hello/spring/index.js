@@ -34,10 +34,10 @@ if (location.search) {
         thisDescription = "Spring rains and seed sowing";
     }
 
-    csvtojson(`${thisSekki}/morning.csv?${Date.now()}`)
-    csvtojson(`${thisSekki}/afternoon.csv?${Date.now()}`)
-    csvtojson(`${thisSekki}/evening.csv?${Date.now()}`)
-    csvtojson(`${thisSekki}/night.csv?${Date.now()}`)
+    csvtojson(`${thisSekki}/morning.csv`)
+    csvtojson(`${thisSekki}/afternoon.csv`)
+    csvtojson(`${thisSekki}/evening.csv`)
+    csvtojson(`${thisSekki}/night.csv`)
 
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#about i').textContent = "";
