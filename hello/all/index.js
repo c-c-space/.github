@@ -32,7 +32,17 @@ async function csvtojson(csv) {
     }
 }
 
+function shuffle(arrays) {
+    const array = arrays.slice();
+    for (let i = array.length - 1; i >= 0; i--) {
+        const shuffleArr = Math.floor(Math.random() * (i + 1));
+        [array[i], array[shuffleArr]] = [array[shuffleArr], array[i]];
+    }
+    return array;
+}
+
 window.addEventListener('load', () => {
+    console.log(shuffle(helloAll.index))
     for (const post of shuffle(helloAll.index)) {
         const section = document.createElement('section')
         document.querySelector('#submit').appendChild(section)
@@ -66,12 +76,3 @@ window.addEventListener('load', () => {
         }, false)
     }
 }, false)
-
-function shuffle(arrays) {
-    const array = arrays.slice();
-    for (let i = array.length - 1; i >= 0; i--) {
-        const shuffleArr = Math.floor(Math.random() * (i + 1));
-        [array[i], array[shuffleArr]] = [array[shuffleArr], array[i]];
-    }
-    return array;
-}
