@@ -39,6 +39,7 @@ if (location.search) {
         csvtojson(`${thisSekki}/afternoon.csv`)
         csvtojson(`${thisSekki}/evening.csv`)
         csvtojson(`${thisSekki}/night.csv`)
+        return viewAll();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -49,7 +50,7 @@ if (location.search) {
     }, false)
 
     window.addEventListener('load', () => {
-        getAllCSV().then(viewAll);
+        getAllCSV()
     }, false)
 } else {
     thisSeason = "夏 Summer";
