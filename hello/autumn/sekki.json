@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "立秋",
-      "yomi": "(りっしゅう)",
+      "yomi": "りっしゅう",
       "value": "risshu",
       "start": "August 8",
       "end": "August 22",
@@ -11,7 +11,7 @@
     },
     {
       "name": "処暑",
-      "yomi": "(しょしょ)",
+      "yomi": "しょしょ",
       "value": "shosho",
       "start": "August 23",
       "end": "September 7",
@@ -20,7 +20,7 @@
     },
     {
       "name": "白露",
-      "yomi": "(はくろ)",
+      "yomi": "はくろ",
       "value": "hakuro",
       "start": "September 8",
       "end": "September 22",
@@ -29,7 +29,7 @@
     },
     {
       "name": "秋分",
-      "yomi": "(しゅうぶん)",
+      "yomi": "しゅうぶん",
       "value": "shuubun",
       "start": "September 23",
       "end": "October 7",
@@ -38,7 +38,7 @@
     },
     {
       "name": "寒露",
-      "yomi": "(かんろ)",
+      "yomi": "かんろ",
       "value": "kanro",
       "start": "October 8",
       "end": "October 23",
@@ -47,7 +47,7 @@
     },
     {
       "name": "霜降",
-      "yomi": "(そうこう)",
+      "yomi": "そうこう",
       "value": "soukou",
       "start": "October 24",
       "end": "November 7",

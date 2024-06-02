@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "立春",
-      "yomi": "(りっしゅん)",
+      "yomi": "りっしゅん",
       "value": "risshun",
       "start": "February 4",
       "end": "February 18",
@@ -11,7 +11,7 @@
     },
     {
       "name": "雨水",
-      "yomi": "(うすい)",
+      "yomi": "うすい",
       "value": "usui",
       "start": "February 19",
       "end": "March 4",
@@ -20,7 +20,7 @@
     },
     {
       "name": "啓蟄",
-      "yomi": "(けいちつ)",
+      "yomi": "けいちつ",
       "value": "keichitsu",
       "start": "March 5",
       "end": "March 19",
@@ -29,7 +29,7 @@
     },
     {
       "name": "春分",
-      "yomi": "(しゅんぶん)",
+      "yomi": "しゅんぶん",
       "value": "shunbun",
       "start": "March 20",
       "end": "April 3",
@@ -38,7 +38,7 @@
     },
     {
       "name": "清明",
-      "yomi": "(せいめい)",
+      "yomi": "せいめい",
       "value": "seimei",
       "start": "April 4",
       "end": "April 18",
@@ -47,7 +47,7 @@
     },
     {
       "name": "穀雨",
-      "yomi": "(こくう)",
+      "yomi": "こくう",
       "value": "kokuu",
       "start": "April 19",
       "end": "May 4",

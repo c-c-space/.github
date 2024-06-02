@@ -2,16 +2,16 @@
   "sekki": [
     {
       "name": "款冬華",
-      "yomi": "(ふきのはなさく)",
+      "yomi": "ふきのはなさく",
       "value": "Fuki no hana saku",
       "start": "January 20",
       "end": "January 24",
-      "note": "蕗の薹が蕾を出す",
+      "note": "フキノトウが蕾を出す",
       "description": "Butterbur sprouts bud"
     },
     {
       "name": "水沢腹堅",
-      "yomi": "(さわみずこおりつめる)",
+      "yomi": "さわみずこおりつめる",
       "value": "Sawamizu kōri tsumeru",
       "start": "January 25",
       "end": "January 29",
@@ -20,7 +20,7 @@
     },
     {
       "name": "鶏始乳",
-      "yomi": "(にわとりはじめてとやにつく)",
+      "yomi": "にわとりはじめてとやにつく",
       "value": "Niwatori hajimete toya ni tsuku",
       "start": "January 30",
       "end": "February 3",

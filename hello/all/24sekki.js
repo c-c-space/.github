@@ -1,5 +1,11 @@
 'use strict'
 
+let thisSekki,
+  thisSeason,
+  thisDate,
+  thisDescription,
+  thisHello;
+
 async function sekkiJSON(requestURL) {
   const request = new Request(requestURL)
   const response = await fetch(request)
@@ -19,8 +25,8 @@ function collection(obj) {
   sekkiAbout.textContent = thisDescription;
 
   document.querySelector('#about h3 strong').textContent = thisSeason;
-  document.querySelector('#about small').textContent = thisDate;
-  document.querySelector('#about p').textContent = thisDescription;
+  document.querySelector('#about small').textContent = thisDescription;
+  document.querySelector('#about p').textContent = thisHello;
 
   let select = document.querySelector('#sekki')
   if (localStorage.getItem('yourInfo')) {
@@ -40,3 +46,30 @@ function collection(obj) {
     document.querySelector('#collection').remove()
   }
 }
+
+async function getAllCSV() {
+  csvtojson(`${thisSekki}/morning.csv`)
+  csvtojson(`${thisSekki}/afternoon.csv`)
+  csvtojson(`${thisSekki}/evening.csv`)
+  csvtojson(`${thisSekki}/night.csv`)
+  await viewTheCollection();
+}
+
+function viewTheCollection() {
+  return new Promise(() => {
+    setTimeout(() => {
+      viewAll()
+    }, 2000);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  sekkiJSON('sekki.json')
+  colorJSON('color.json')
+  if (location.search) {
+    koJSON(`${thisSekki}/ko.json`)
+    getAllCSV()
+  } else {
+    koJSON('sekki.json')
+  }
+}, false)

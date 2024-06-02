@@ -2,16 +2,16 @@
   "sekki": [
     {
       "name": "蟷螂生",
-      "yomi": "(つかまきりしょうず)",
+      "yomi": "かまきりしょうず",
       "value": "Kamakiri shōzu",
       "start": "June 5",
       "end": "June 9",
-      "note": "螳螂が生まれ出る",
+      "note": "かまきりが生まれ出る",
       "description": "Praying mantises are born"
     },
     {
       "name": "腐草為蛍",
-      "yomi": "(くされたるくさほたるとなる)",
+      "yomi": "くされたるくさほたるとなる",
       "value": "Kusaretaru kusa hotaru to naru",
       "start": "June 10",
       "end": "June 15",
@@ -20,7 +20,7 @@
     },
     {
       "name": "梅子黄",
-      "yomi": "(うめのみきばむ)",
+      "yomi": "うめのみきばむ",
       "value": "Ume no mi kibamu",
       "start": "June 16",
       "end": "June 20",

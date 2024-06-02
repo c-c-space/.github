@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "鴻雁来",
-      "yomi": "(こうがんきたる)",
+      "yomi": "こうがんきたる",
       "value": "Kōgan kitaru",
       "start": "October 8",
       "end": "October 13",
@@ -11,7 +11,7 @@
     },
     {
       "name": "菊花開",
-      "yomi": "(きくのはなひらく)",
+      "yomi": "きくのはなひらく",
       "value": "Kiku no hana hiraku",
       "start": "October 14",
       "end": "October 18",
@@ -20,7 +20,7 @@
     },
     {
       "name": "蟋蟀在戸",
-      "yomi": "(きりぎりすとにあり)",
+      "yomi": "きりぎりすとにあり",
       "value": "Kirigirisu to ni ari",
       "start": "October 19",
       "end": "October 23",

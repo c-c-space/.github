@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "涼風至",
-      "yomi": "(すずかぜいたる)",
+      "yomi": "すずかぜいたる",
       "value": "Suzukaze itaru",
       "start": "August 8",
       "end": "August 12",
@@ -11,7 +11,7 @@
     },
     {
       "name": "寒蝉鳴",
-      "yomi": "(ひぐらしなく)",
+      "yomi": "ひぐらしなく",
       "value": "Higurashi naku",
       "start": "August 13",
       "end": "August 17",
@@ -20,7 +20,7 @@
     },
     {
       "name": "蒙霧升降",
-      "yomi": "(ふかききりまとう)",
+      "yomi": "ふかききりまとう",
       "value": "Fukaki kiri matō",
       "start": "August 18",
       "end": "August 22",

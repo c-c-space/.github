@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "閉塞成冬",
-      "yomi": "(そらさむくふゆとなる)",
+      "yomi": "そらさむくふゆとなる",
       "value": "Sora samuku fuyu to naru",
       "start": "December 7",
       "end": "December 11",
@@ -11,7 +11,7 @@
     },
     {
       "name": "熊蟄穴",
-      "yomi": "(くまあなにこもる)",
+      "yomi": "くまあなにこもる",
       "value": "Kuma ana ni komoru",
       "start": "December 12",
       "end": "December 16",
@@ -20,7 +20,7 @@
     },
     {
       "name": "鱖魚群",
-      "yomi": "(さけのうおむらがる)",
+      "yomi": "さけのうおむらがる",
       "value": "Sake no uo muragaru",
       "start": "December 17",
       "end": "December 21",

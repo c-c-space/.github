@@ -33,15 +33,15 @@
     <meta property="og:image" content="<?php echo $url . $season . " /summary.png"; ?>">
     <meta name="twitter:image" content="<?php echo $url . $season . " /summary.png"; ?>">
 
-    <script src="all/index.js?v=2.0"></script>
+    <script src="all/index.js?v=2.2"></script>
     <script src="all/colorSize.js?v=1.1"></script>
     <script src="index.js?v=2.2"></script>
+    <link rel="stylesheet" href="index.css?v=2.0" />
+
     <script src="../ver/js/menu.js?v=1"></script>
     <script src="../ver/js/modal.js?v=1"></script>
     <script src="../ver/js/login.js?v=1"></script>
     <script src="../ver/js/speechAPI.js?v=1"></script>
-
-    <link rel="stylesheet" href="index.css?v=1" />
     <link rel="stylesheet" href="../ver/css/menu.css?v=1" />
     <link rel="stylesheet" href="../ver/css/controls.css?v=1" />
     <link rel="stylesheet" href="../ver/css/modal.css?v=1" />

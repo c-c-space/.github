@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "立夏",
-      "yomi": "(りっか)",
+      "yomi": "りっか",
       "value": "rikka",
       "start": "May 5",
       "end": "May 19",
@@ -11,7 +11,7 @@
     },
     {
       "name": "小満",
-      "yomi": "(しょうまん)",
+      "yomi": "しょうまん",
       "value": "shouman",
       "start": "May 20",
       "end": "Jun 4",
@@ -20,16 +20,16 @@
     },
     {
       "name": "芒種",
-      "yomi": "(ぼうしゅ)",
+      "yomi": "ぼうしゅ",
       "value": "boushu",
       "start": "Jun 5",
       "end": "Jun 20",
-      "note": "稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。",
+      "note": "稲の穂先のように芒（とげのようなもの）のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。",
       "description": "Time to plant rice seedlings"
     },
     {
       "name": "夏至",
-      "yomi": "(げし)",
+      "yomi": "げし",
       "value": "geshi",
       "start": "Jun 21",
       "end": "July 6",
@@ -38,7 +38,7 @@
     },
     {
       "name": "小暑",
-      "yomi": "(しょうしょ)",
+      "yomi": "しょうしょ",
       "value": "shousho",
       "start": "July 7",
       "end": "July 22",
@@ -47,7 +47,7 @@
     },
     {
       "name": "大暑",
-      "yomi": "(たいしょ)",
+      "yomi": "たいしょ",
       "value": "taisho",
       "start": "July 23",
       "end": "August 7",

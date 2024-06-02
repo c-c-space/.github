@@ -2,16 +2,16 @@
   "sekki": [
     {
       "name": "山茶始開",
-      "yomi": "(つばきはじめてひらく)",
+      "yomi": "つばきはじめてひらく",
       "value": "Tsubaki hajimete hiraku",
       "start": "November 8",
       "end": "November 12",
-      "note": "山茶花が咲き始める",
+      "note": "サザンカが咲き始める",
       "description": "Camellias bloom"
     },
     {
       "name": "地始凍",
-      "yomi": "(ちはじめてこおる)",
+      "yomi": "ちはじめてこおる",
       "value": "Chi hajimete kōru",
       "start": "November 13",
       "end": "November 17",
@@ -20,7 +20,7 @@
     },
     {
       "name": "金盞香",
-      "yomi": "(きんせんかさく)",
+      "yomi": "きんせんかさく",
       "value": "Kinsenka saku",
       "start": "November 18",
       "end": "November 21",

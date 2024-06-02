@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "温風至",
-      "yomi": "(あつかぜいたる)",
+      "yomi": "あつかぜいたる",
       "value": "Atsukaze itaru",
       "start": "July 7",
       "end": "July 12",
@@ -11,7 +11,7 @@
     },
     {
       "name": "蓮始開",
-      "yomi": "(はすはじめてひらく)",
+      "yomi": "はすはじめてひらく",
       "value": "Hasu hajimete hiraku",
       "start": "July 13",
       "end": "July 17",
@@ -20,7 +20,7 @@
     },
     {
       "name": "鷹乃学習",
-      "yomi": "(たかすなわちわざをならう)",
+      "yomi": "たかすなわちわざをならう",
       "value": "Taka sunawachi waza o narau",
       "start": "July 18",
       "end": "July 22",

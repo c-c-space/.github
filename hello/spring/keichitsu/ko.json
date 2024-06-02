@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "蟄虫啓戸",
-      "yomi": "(すごもりむしとをひらく)",
+      "yomi": "すごもりむしとをひらく",
       "value": "Sugomori mushito o hiraku",
       "start": "March 5",
       "end": "March 9",
@@ -11,7 +11,7 @@
     },
     {
       "name": "桃始笑",
-      "yomi": "(ももはじめてさく)",
+      "yomi": "ももはじめてさく",
       "value": "Momo hajimete saku",
       "start": "March 10",
       "end": "March 14",
@@ -20,7 +20,7 @@
     },
     {
       "name": "菜虫化蝶",
-      "yomi": "(なむしちょうとなる)",
+      "yomi": "なむしちょうとなる",
       "value": "Namushi chō to naru",
       "start": "March 15",
       "end": "March 19",

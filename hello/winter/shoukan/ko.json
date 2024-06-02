@@ -2,16 +2,16 @@
   "sekki": [
     {
       "name": "芹乃栄",
-      "yomi": "(せりすなわちさかう)",
+      "yomi": "せりすなわちさかう",
       "value": "Seri sunawachi sakau",
       "start": "January 6",
       "end": "January 10",
-      "note": "芹がよく生育する",
+      "note": "セリがよく生育する",
       "description": "Parsley flourishes"
     },
     {
       "name": "水泉動",
-      "yomi": "(しみずあたたかをふくむ)",
+      "yomi": "しみずあたたかをふくむ",
       "value": "Shimizu atataka o fukumu",
       "start": "January 11",
       "end": "January 15",
@@ -20,11 +20,11 @@
     },
     {
       "name": "雉始雊",
-      "yomi": "(きじはじめてなく)",
+      "yomi": "きじはじめてなく",
       "value": "Kiji hajimete naku",
       "start": "January 16",
       "end": "January 19",
-      "note": "雄の雉が鳴き始める",
+      "note": "オスのキジが鳴き始める",
       "description": "Male pheasants begin crying"
     }
   ]

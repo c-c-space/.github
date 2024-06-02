@@ -34,7 +34,7 @@ if ($datetime >= '01-06' and $datetime <= '01-19') {
   $sekkiName = "大寒";
   $date = "January 20 - February 3";
   $description = "Coldest time of the year";
-  $hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
+  $hello = "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。";
 } elseif ($datetime >= '02-04' and $datetime < '02-18') {
   $sekki = "risshun";
   $sekkiName = "立春";
@@ -88,7 +88,7 @@ if ($datetime >= '01-06' and $datetime <= '01-19') {
   $sekkiName = "芒種";
   $date = "Jun 5 - Jun 20";
   $description = "Time to plant rice seedlings";
-  $hello = "稲の穂先のように芒(とげのようなもの)のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。";
+  $hello = "稲の穂先のように芒（とげのようなもの）のある穀物の種まきをする頃という意味だが、現在の種まきは大分早まっている。梅の実が熟し、梅雨のじめじめした空模様がはじまる。";
 } elseif ($datetime >= '06-21' and $datetime <= '07-06') {
   $sekki = "geshi";
   $sekkiName = "夏至";

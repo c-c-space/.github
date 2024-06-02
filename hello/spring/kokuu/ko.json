@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "葭始生",
-      "yomi": "(あしはじめてしょうず)",
+      "yomi": "あしはじめてしょうず",
       "value": "Ashi hajimete shōzu",
       "start": "April 19",
       "end": "April 24",
@@ -11,7 +11,7 @@
     },
     {
       "name": "霜止出苗",
-      "yomi": "(しもやみてなえいずる)",
+      "yomi": "しもやみてなえいずる",
       "value": "Shimo yamite nae izuru",
       "start": "April 25",
       "end": "April 29",
@@ -20,7 +20,7 @@
     },
     {
       "name": "牡丹華",
-      "yomi": "(ぼたんはなさく)",
+      "yomi": "ぼたんはなさく",
       "value": "Botan hana saku",
       "start": "April 30",
       "end": "May 4",

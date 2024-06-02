@@ -7,7 +7,6 @@ let helloAll = {
 async function csvtojson(csv) {
     const response = await fetch(csv + '?' + Date.now())
     const text = await response.text()
-    console.log(text.length)
     if (!text.length == 0) {
         const data = text.trim().split('\n')
             .map(line => line.split(',').map(x => x.trim()))
@@ -42,8 +41,6 @@ function shuffle(arrays) {
 }
 
 function viewAll() {
-    console.log(shuffle(helloAll.index))
-
     for (const post of shuffle(helloAll.index)) {
         const section = document.createElement('section')
         document.querySelector('#submit').appendChild(section)

@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "雀始巣",
-      "yomi": "(すずめはじめてすくう)",
+      "yomi": "すずめはじめてすくう",
       "value": "Suzume hajimete sukū",
       "start": "March 20",
       "end": "March 24",
@@ -11,7 +11,7 @@
     },
     {
       "name": "櫻始開",
-      "yomi": "(さくらはじめてひらく)",
+      "yomi": "さくらはじめてひらく",
       "value": "Sakura hajimete saku",
       "start": "March 25",
       "end": "March 29",
@@ -20,8 +20,8 @@
     },
     {
       "name": "雷乃発声",
-      "yomi": "(かみなりすなわちこえをはっす)",
-      "value": "Rainbows appear after rain",
+      "yomi": "かみなりすなわちこえをはっす",
+      "value": "Kaminari sunawachi koe o hassu",
       "start": "March 30",
       "end": "April 3",
       "note": "遠くで雷の音がし始める",

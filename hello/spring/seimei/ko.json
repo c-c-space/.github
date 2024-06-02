@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "玄鳥至",
-      "yomi": "(つばめきたる)",
+      "yomi": "つばめきたる",
       "value": "Tsubame kitaru",
       "start": "April 4",
       "end": "April 8",
@@ -11,7 +11,7 @@
     },
     {
       "name": "鴻雁北",
-      "yomi": "(こうがんかえる)",
+      "yomi": "こうがんかえる",
       "value": "Kōgan kaeru",
       "start": "April 9",
       "end": "April 13",
@@ -20,7 +20,7 @@
     },
     {
       "name": "虹始見",
-      "yomi": "(にじはじめてあらわる)",
+      "yomi": "にじはじめてあらわる",
       "value": "Niji hajimete arawaru",
       "start": "April 14",
       "end": "April 18",

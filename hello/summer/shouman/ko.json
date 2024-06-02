@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "蚕起食桑",
-      "yomi": "(かいこおきてくわをはむ)",
+      "yomi": "かいこおきてくわをはむ",
       "value": "Kaiko okite kuwa o hamu",
       "start": "May 20",
       "end": "May 25",
@@ -11,7 +11,7 @@
     },
     {
       "name": "紅花栄",
-      "yomi": "(べにばなさかう)",
+      "yomi": "べにばなさかう",
       "value": "Benibana sakau",
       "start": "May 26",
       "end": "May 30",
@@ -20,7 +20,7 @@
     },
     {
       "name": "麦秋至",
-      "yomi": "(むぎのときいたる)",
+      "yomi": "むぎのときいたる",
       "value": "Mugi no toki itaru",
       "start": "May 31",
       "end": "Jun 4",

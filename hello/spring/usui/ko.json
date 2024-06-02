@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "土脉潤起",
-      "yomi": "(つちのしょううるおいおこる)",
+      "yomi": "つちのしょううるおいおこる",
       "value": "Tsuchi no shō uruoi okoru",
       "start": "February 19",
       "end": "February 23",
@@ -11,7 +11,7 @@
     },
     {
       "name": "霞始靆",
-      "yomi": "(かすみはじめてたなびく)",
+      "yomi": "かすみはじめてたなびく",
       "value": "Kasumi hajimete tanabiku",
       "start": "February 24",
       "end": "February 28",
@@ -20,7 +20,7 @@
     },
     {
       "name": "草木萌動",
-      "yomi": "(そうもくめばえいずる)",
+      "yomi": "そうもくめばえいずる",
       "value": "Sōmoku mebae izuru",
       "start": "March 1",
       "end": "March 4",

@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "東風解凍",
-      "yomi": "(はるかぜこおりをとく)",
+      "yomi": "はるかぜこおりをとく",
       "value": "Harukaze kōri o toku",
       "start": "February 4",
       "end": "February 8",
@@ -11,7 +11,7 @@
     },
     {
       "name": "黄鶯睍睆",
-      "yomi": "(うぐいすなく)",
+      "yomi": "うぐいすなく",
       "value": "Kōō kenkan su",
       "start": "February 9",
       "end": "February 13",
@@ -20,7 +20,7 @@
     },
     {
       "name": "魚上氷",
-      "yomi": "(うおこおりをいずる)",
+      "yomi": "うおこおりをいずる",
       "value": "Uo kōri o izuru",
       "start": "February 14",
       "end": "February 18",

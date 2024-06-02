@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "霜始降",
-      "yomi": "(しもはじめてふる)",
+      "yomi": "しもはじめてふる",
       "value": "Shimo hajimete furu",
       "start": "October 24",
       "end": "October 28",
@@ -11,7 +11,7 @@
     },
     {
       "name": "霎時施",
-      "yomi": "(こさめときどきふる)",
+      "yomi": "こさめときどきふる",
       "value": "Kosame tokidoki furu",
       "start": "October 29",
       "end": "November 2",
@@ -20,7 +20,7 @@
     },
     {
       "name": "楓蔦黄",
-      "yomi": "(もみじつたきばむ)",
+      "yomi": "もみじつたきばむ",
       "value": "Momiji tsuta kibamu",
       "start": "November 3",
       "end": "November 7",

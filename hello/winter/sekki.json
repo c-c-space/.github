@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "立冬",
-      "yomi": "(りっとう)",
+      "yomi": "りっとう",
       "value": "rittou",
       "start": "November 8",
       "end": "November 21",
@@ -11,7 +11,7 @@
     },
     {
       "name": "小雪",
-      "yomi": "(しょうせつ)",
+      "yomi": "しょうせつ",
       "value": "shousetsu",
       "start": "November 22",
       "end": "December 6",
@@ -20,7 +20,7 @@
     },
     {
       "name": "大雪",
-      "yomi": "(たいせつ)",
+      "yomi": "たいせつ",
       "value": "taisetsu",
       "start": "December 7",
       "end": "December 21",
@@ -29,7 +29,7 @@
     },
     {
       "name": "冬至",
-      "yomi": "(とうじ)",
+      "yomi": "とうじ",
       "value": "touji",
       "start": "December 22",
       "end": "January 5",
@@ -38,7 +38,7 @@
     },
     {
       "name": "小寒",
-      "yomi": "(しょうかん)",
+      "yomi": "しょうかん",
       "value": "shoukan",
       "start": "January 6",
       "end": "January 19",
@@ -47,11 +47,11 @@
     },
     {
       "name": "大寒",
-      "yomi": "(だいかん)",
+      "yomi": "だいかん",
       "value": "daikan",
       "start": "January 20",
       "end": "February 3",
-      "note": "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。春はもう目前。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。",
+      "note": "一年で一番寒さの厳しい頃。逆の見方をすれば、これからは暖かくなると言うこと。蕗の花が咲き、鶏が卵を産みはじめ、春の足音が聞こえはじめる。",
       "description": "Coldest time of the year"
     }
   ]

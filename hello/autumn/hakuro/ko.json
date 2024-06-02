@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "草露白",
-      "yomi": "(くさのつゆしろし)",
+      "yomi": "くさのつゆしろし",
       "value": "Kusa no tsuyu shiroshi",
       "start": "September 8",
       "end": "September 12",
@@ -11,16 +11,16 @@
     },
     {
       "name": "鶺鴒鳴",
-      "yomi": "(せきれいなく)",
+      "yomi": "せきれいなく",
       "value": "Sekirei naku",
       "start": "September 13",
       "end": "September 17",
-      "note": "鶺鴒が鳴き始める",
+      "note": "セキレイが鳴き始める",
       "description": "Wagtails sing"
     },
     {
       "name": "玄鳥去",
-      "yomi": "(つばめさる)",
+      "yomi": "つばめさる",
       "value": "Tsubame saru",
       "start": "September 18",
       "end": "September 22",

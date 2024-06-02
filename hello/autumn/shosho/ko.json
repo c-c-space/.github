@@ -2,7 +2,7 @@
   "sekki": [
     {
       "name": "綿柎開",
-      "yomi": "(わたのはなしべひらく)",
+      "yomi": "わたのはなしべひらく",
       "value": "Wata no hana shibe hiraku",
       "start": "August 23",
       "end": "August 27",
@@ -11,7 +11,7 @@
     },
     {
       "name": "天地始粛",
-      "yomi": "(てんちはじめてさむし)",
+      "yomi": "てんちはじめてさむし",
       "value": "Tenchi hajimete samushi",
       "start": "August 28",
       "end": "September 2",
@@ -20,7 +20,7 @@
     },
     {
       "name": "禾乃登",
-      "yomi": "(こくものすなわちみのる)",
+      "yomi": "こくものすなわちみのる",
       "value": "Kokumono sunawachi minoru",
       "start": "September 3",
       "end": "September 7",
